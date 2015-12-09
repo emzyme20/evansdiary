@@ -1,19 +1,52 @@
 ﻿.logo {
-    font-size: 2em;
-    font-weight: bold;
-    color: white;
-    font-family: "Open Sans", Helvetica, sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+  color: white;
+  font-family: "Open Sans", Helvetica, sans-serif;
 }
 
-@media only screen and (max-width :480px)
+@media only screen and (max-width: 480px)
 {
-    h4.back-light {
-        font-size: 10px;
+  h4.back-light {
+    font-size: 10px;
+  }
+  .carousel-indicators {
+    margin-bottom: 0;
+  }
+  .carousel-caption {
+    bottom: 5px;
+  }
+}
+
+.container {
+  margin: 0 auto;
+}
+
+ul.flat {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  span {
+    display: block;
+    margin: 0.5em 0 0;
+    text-align: center;
+    font-size: 14px;
+
+    @media screen and (min-width: 768px) {
+      margin: 1em 0 1em;
+      font-size: 16px;
     }
-    .carousel-indicators {
-        margin-bottom: 0;
-    }
-    .carousel-caption {
-        bottom: 5px;
-    }
+  }
 }
