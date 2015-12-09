@@ -181,6 +181,7 @@
     <Content Include="Content\images\carousel\image1.png" />
     <Content Include="Content\images\carousel\image2.png" />
     <Content Include="Content\images\carousel\image3.png" />
+    <Content Include="Content\images\thediary.png" />
     <Content Include="Content\Theme\css\prettyPhoto.css" />
     <Content Include="Content\Theme\css\style.css" />
     <Content Include="Content\Theme\img\1.jpg" />
