@@ -181,6 +181,10 @@
     <Content Include="Content\images\carousel\image1.png" />
     <Content Include="Content\images\carousel\image2.png" />
     <Content Include="Content\images\carousel\image3.png" />
+    <Content Include="Content\images\diary\year_1.jpg" />
+    <Content Include="Content\images\diary\year_2.jpg" />
+    <Content Include="Content\images\diary\year_3.jpg" />
+    <Content Include="Content\images\diary\year_4.jpg" />
     <Content Include="Content\images\thediary.png" />
     <Content Include="Content\Theme\css\prettyPhoto.css" />
     <Content Include="Content\Theme\css\style.css" />
@@ -261,6 +265,7 @@
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Content\style.less" />
+    <Content Include="Content\styles\_variables.less" />
     <None Include="Scripts\jquery-2.1.3.intellisense.js" />
     <Content Include="Scripts\jquery-2.1.3.js" />
     <Content Include="Scripts\jquery-2.1.3.min.js" />
@@ -297,7 +302,9 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="packages.config" />
+    <Content Include="packages.config">
+      <SubType>Designer</SubType>
+    </Content>
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <PropertyGroup>

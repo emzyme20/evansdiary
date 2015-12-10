@@ -1,4 +1,6 @@
-﻿.logo {
+﻿@import "styles/_variables";
+
+.logo {
   font-size: 2em;
   font-weight: bold;
   color: white;
@@ -50,3 +52,130 @@ ul.flat {
     }
   }
 }
+
+ul.image-nav-list {
+  /* 2 col */
+  .columns2() {
+    li {
+      float: left;
+      padding: 0 3% 1em;
+      width: 50%;
+    }
+
+      li:nth-child(2n+1) {
+        clear: left;
+      }
+
+    &.odd li:last-child {
+      margin-left: auto;
+      margin-right: auto;
+      float: none;
+    }
+  }
+  /* 3 col */
+  .columns3() {
+    li {
+      padding: 0 2% 1.3em;
+      width: 33.3333%;
+      float: left;
+    }
+
+      li:nth-child(2n+1) {
+        clear: none;
+      }
+
+      li:nth-child(3n+1) {
+        clear: left;
+      }
+
+    &.has-2 li {
+      width: 50%;
+      margin: 0;
+    }
+
+    &.has-4 li:last-child, &.has-7 li:last-child, &.has-10 li:last-child, &.has-13 li:last-child, &.has-16 li:last-child, &.has-19 li:last-child, &.has-22 li:last-child, &.has-25 li:last-child, &.has-28 li:last-child, &.has-31 li:last-child, &.has-34 li:last-child, &.has-37 li:last-child, &.has-40 li:last-child, &.has-43 li:last-child, &.has-46 li:last-child, &.has-49 li:last-child, &.has-52 li:last-child, &.has-55 li:last-child, &.has-58 li:last-child, &.has-61 li:last-child, &.has-64 li:last-child, &.has-67 li:last-child, &.has-70 li:last-child, &.has-73 li:last-child, &.has-76 li:last-child, &.has-79 li:last-child, &.has-82 li:last-child, &.has-85 li:last-child, &.has-88 li:last-child, &.has-91 li:last-child, &.has-94 li:last-child, &.has-97 li:last-child, &.has-100 li:last-child, &.has-103 li:last-child, &.has-106 li:last-child, &.has-109 li:last-child, &.has-112 li:last-child, &.has-115 li:last-child, &.has-118 li:last-child, &.has-121 li:last-child, &.has-124 li:last-child, &.has-127 li:last-child, &.has-130 li:last-child, &.has-133 li:last-child, &.has-136 li:last-child, &.has-139 li:last-child, &.has-142 li:last-child, &.has-145 li:last-child, &.has-148 li:last-child, &.has-151 li:last-child, &.has-154 li:last-child, &.has-157 li:last-child, &.has-160 li:last-child, &.has-163 li:last-child, &.has-166 li:last-child, &.has-169 li:last-child, &.has-172 li:last-child, &.has-175 li:last-child, &.has-178 li:last-child, &.has-181 li:last-child, &.has-184 li:last-child, &.has-187 li:last-child, &.has-190 li:last-child, &.has-193 li:last-child, &.has-196 li:last-child, &.has-199 li:last-child, &.has-202 li:last-child, &.has-205 li:last-child, &.has-208 li:last-child, &.has-211 li:last-child, &.has-214 li:last-child, &.has-217 li:last-child, &.has-220 li:last-child, &.has-223 li:last-child, &.has-226 li:last-child, &.has-229 li:last-child, &.has-232 li:last-child, &.has-235 li:last-child, &.has-238 li:last-child, &.has-241 li:last-child, &.has-244 li:last-child, &.has-247 li:last-child, &.has-250 li:last-child, &.has-253 li:last-child, &.has-256 li:last-child, &.has-259 li:last-child, &.has-262 li:last-child, &.has-265 li:last-child, &.has-268 li:last-child, &.has-271 li:last-child, &.has-274 li:last-child, &.has-277 li:last-child, &.has-280 li:last-child, &.has-283 li:last-child, &.has-286 li:last-child, &.has-289 li:last-child, &.has-292 li:last-child, &.has-295 li:last-child, &.has-298 li:last-child {
+      margin-left: auto;
+      margin-right: auto;
+      float: none;
+    }
+
+    &.has-5 li:nth-last-child(2), &.has-8 li:nth-last-child(2), &.has-11 li:nth-last-child(2), &.has-14 li:nth-last-child(2), &.has-17 li:nth-last-child(2), &.has-20 li:nth-last-child(2), &.has-23 li:nth-last-child(2), &.has-26 li:nth-last-child(2), &.has-29 li:nth-last-child(2), &.has-32 li:nth-last-child(2), &.has-35 li:nth-last-child(2), &.has-38 li:nth-last-child(2), &.has-41 li:nth-last-child(2), &.has-44 li:nth-last-child(2), &.has-47 li:nth-last-child(2), &.has-50 li:nth-last-child(2), &.has-53 li:nth-last-child(2), &.has-56 li:nth-last-child(2), &.has-59 li:nth-last-child(2), &.has-62 li:nth-last-child(2), &.has-65 li:nth-last-child(2), &.has-68 li:nth-last-child(2), &.has-71 li:nth-last-child(2), &.has-74 li:nth-last-child(2), &.has-77 li:nth-last-child(2), &.has-80 li:nth-last-child(2), &.has-83 li:nth-last-child(2), &.has-86 li:nth-last-child(2), &.has-89 li:nth-last-child(2), &.has-92 li:nth-last-child(2), &.has-95 li:nth-last-child(2), &.has-98 li:nth-last-child(2), &.has-101 li:nth-last-child(2), &.has-104 li:nth-last-child(2), &.has-107 li:nth-last-child(2), &.has-110 li:nth-last-child(2), &.has-113 li:nth-last-child(2), &.has-116 li:nth-last-child(2), &.has-119 li:nth-last-child(2), &.has-122 li:nth-last-child(2), &.has-125 li:nth-last-child(2), &.has-128 li:nth-last-child(2), &.has-131 li:nth-last-child(2), &.has-134 li:nth-last-child(2), &.has-137 li:nth-last-child(2), &.has-140 li:nth-last-child(2), &.has-143 li:nth-last-child(2), &.has-146 li:nth-last-child(2), &.has-149 li:nth-last-child(2), &.has-152 li:nth-last-child(2), &.has-155 li:nth-last-child(2), &.has-158 li:nth-last-child(2), &.has-161 li:nth-last-child(2), &.has-164 li:nth-last-child(2), &.has-167 li:nth-last-child(2), &.has-170 li:nth-last-child(2), &.has-173 li:nth-last-child(2), &.has-176 li:nth-last-child(2), &.has-179 li:nth-last-child(2), &.has-182 li:nth-last-child(2), &.has-185 li:nth-last-child(2), &.has-188 li:nth-last-child(2), &.has-191 li:nth-last-child(2), &.has-194 li:nth-last-child(2), &.has-197 li:nth-last-child(2), &.has-200 li:nth-last-child(2), &.has-203 li:nth-last-child(2), &.has-206 li:nth-last-child(2), &.has-209 li:nth-last-child(2), &.has-212 li:nth-last-child(2), &.has-215 li:nth-last-child(2), &.has-218 li:nth-last-child(2), &.has-221 li:nth-last-child(2), &.has-224 li:nth-last-child(2), &.has-227 li:nth-last-child(2), &.has-230 li:nth-last-child(2), &.has-233 li:nth-last-child(2), &.has-236 li:nth-last-child(2), &.has-239 li:nth-last-child(2), &.has-242 li:nth-last-child(2), &.has-245 li:nth-last-child(2), &.has-248 li:nth-last-child(2), &.has-251 li:nth-last-child(2), &.has-254 li:nth-last-child(2), &.has-257 li:nth-last-child(2), &.has-260 li:nth-last-child(2), &.has-263 li:nth-last-child(2), &.has-266 li:nth-last-child(2), &.has-269 li:nth-last-child(2), &.has-272 li:nth-last-child(2), &.has-275 li:nth-last-child(2), &.has-278 li:nth-last-child(2), &.has-281 li:nth-last-child(2), &.has-284 li:nth-last-child(2), &.has-287 li:nth-last-child(2), &.has-290 li:nth-last-child(2), &.has-293 li:nth-last-child(2), &.has-296 li:nth-last-child(2), &.has-299 li:nth-last-child(2) {
+      margin-left: 16%;
+    }
+  }
+
+  @media screen and (max-width: @mq-xs) {
+    .columns2;
+  }
+
+  @media screen and (min-width: @mq-xs) and (max-width: @mq-sm) {
+    .columns2;
+  }
+
+  @media screen and (min-width: @mq-sm) and (max-width: @mq-md) {
+    .columns3;
+  }
+
+  @media screen and (min-width: @mq-md) and (max-width: @mq-lg) {
+    .columns3;
+  }
+
+  @media screen and (min-width: @mq-lg) and (max-width: @mq-xl) {
+    .columns3;
+
+    &.has-2 li {
+      width: 40%;
+      float: left;
+    }
+
+      &.has-2 li:first-child {
+        margin-left: 10%;
+      }
+  }
+  /* 4 col */
+  @media screen and (min-width: @mq-xl) {
+    li {
+      padding: 0 1% 1.5em;
+      width: 25%;
+      float: left;
+    }
+
+    li:nth-child(3n+1) {
+      clear: none;
+    }
+
+    li:nth-child(4n+1) {
+      clear: left;
+    }
+
+    &.has-2 li {
+      width: 28%;
+    }
+
+    &.has-2 li:first-child {
+      margin-left: 22%;
+    }
+
+    &.has-3 li {
+      width: 28%;
+    }
+
+    &.has-3 li:first-child {
+      margin-left: 8%;
+    }
+
+    &.has-5 li:last-child, &.has-9 li:last-child, &.has-13 li:last-child, &.has-17 li:last-child, &.has-21 li:last-child, &.has-25 li:last-child, &.has-29 li:last-child, &.has-33 li:last-child, &.has-37 li:last-child, &.has-41 li:last-child, &.has-45 li:last-child, &.has-49 li:last-child, &.has-53 li:last-child, &.has-57 li:last-child, &.has-61 li:last-child, &.has-65 li:last-child, &.has-69 li:last-child, &.has-73 li:last-child, &.has-77 li:last-child, &.has-81 li:last-child, &.has-85 li:last-child, &.has-89 li:last-child, &.has-93 li:last-child, &.has-97 li:last-child, &.has-101 li:last-child, &.has-105 li:last-child, &.has-109 li:last-child, &.has-113 li:last-child, &.has-117 li:last-child, &.has-121 li:last-child, &.has-125 li:last-child, &.has-129 li:last-child, &.has-133 li:last-child, &.has-137 li:last-child, &.has-141 li:last-child, &.has-145 li:last-child, &.has-149 li:last-child, &.has-153 li:last-child, &.has-157 li:last-child, &.has-161 li:last-child, &.has-165 li:last-child, &.has-169 li:last-child, &.has-173 li:last-child, &.has-177 li:last-child, &.has-181 li:last-child, &.has-185 li:last-child, &.has-189 li:last-child, &.has-193 li:last-child, &.has-197 li:last-child, &.has-201 li:last-child, &.has-205 li:last-child, &.has-209 li:last-child, &.has-213 li:last-child, &.has-217 li:last-child, &.has-221 li:last-child, &.has-225 li:last-child, &.has-229 li:last-child, &.has-233 li:last-child, &.has-237 li:last-child, &.has-241 li:last-child, &.has-245 li:last-child, &.has-249 li:last-child, &.has-253 li:last-child, &.has-257 li:last-child, &.has-261 li:last-child, &.has-265 li:last-child, &.has-269 li:last-child, &.has-273 li:last-child, &.has-277 li:last-child, &.has-281 li:last-child, &.has-285 li:last-child, &.has-289 li:last-child, &.has-293 li:last-child, &.has-297 li:last-child, &.has-301 li:last-child {
+      margin-left: auto;
+      margin-right: auto;
+      float: none;
+    }
+
+    &.has-6 li:nth-last-child(2), &.has-10 li:nth-last-child(2), &.has-14 li:nth-last-child(2), &.has-18 li:nth-last-child(2), &.has-22 li:nth-last-child(2), &.has-26 li:nth-last-child(2), &.has-30 li:nth-last-child(2), &.has-34 li:nth-last-child(2), &.has-38 li:nth-last-child(2), &.has-42 li:nth-last-child(2), &.has-46 li:nth-last-child(2), &.has-50 li:nth-last-child(2), &.has-54 li:nth-last-child(2), &.has-58 li:nth-last-child(2), &.has-62 li:nth-last-child(2), &.has-66 li:nth-last-child(2), &.has-70 li:nth-last-child(2), &.has-74 li:nth-last-child(2), &.has-78 li:nth-last-child(2), &.has-82 li:nth-last-child(2), &.has-86 li:nth-last-child(2), &.has-90 li:nth-last-child(2), &.has-94 li:nth-last-child(2), &.has-98 li:nth-last-child(2), &.has-102 li:nth-last-child(2), &.has-106 li:nth-last-child(2), &.has-110 li:nth-last-child(2), &.has-114 li:nth-last-child(2), &.has-118 li:nth-last-child(2), &.has-122 li:nth-last-child(2), &.has-126 li:nth-last-child(2), &.has-130 li:nth-last-child(2), &.has-134 li:nth-last-child(2), &.has-138 li:nth-last-child(2), &.has-142 li:nth-last-child(2), &.has-146 li:nth-last-child(2), &.has-150 li:nth-last-child(2), &.has-154 li:nth-last-child(2), &.has-158 li:nth-last-child(2), &.has-162 li:nth-last-child(2), &.has-166 li:nth-last-child(2), &.has-170 li:nth-last-child(2), &.has-174 li:nth-last-child(2), &.has-178 li:nth-last-child(2), &.has-182 li:nth-last-child(2), &.has-186 li:nth-last-child(2), &.has-190 li:nth-last-child(2), &.has-194 li:nth-last-child(2), &.has-198 li:nth-last-child(2), &.has-202 li:nth-last-child(2), &.has-206 li:nth-last-child(2), &.has-210 li:nth-last-child(2), &.has-214 li:nth-last-child(2), &.has-218 li:nth-last-child(2), &.has-222 li:nth-last-child(2), &.has-226 li:nth-last-child(2), &.has-230 li:nth-last-child(2), &.has-234 li:nth-last-child(2), &.has-238 li:nth-last-child(2), &.has-242 li:nth-last-child(2), &.has-246 li:nth-last-child(2), &.has-250 li:nth-last-child(2), &.has-254 li:nth-last-child(2), &.has-258 li:nth-last-child(2), &.has-262 li:nth-last-child(2), &.has-266 li:nth-last-child(2), &.has-270 li:nth-last-child(2), &.has-274 li:nth-last-child(2), &.has-278 li:nth-last-child(2), &.has-282 li:nth-last-child(2), &.has-286 li:nth-last-child(2), &.has-290 li:nth-last-child(2), &.has-294 li:nth-last-child(2), &.has-298 li:nth-last-child(2), &.has-302 li:nth-last-child(2) {
+      margin-left: 25%;
+    }
+
+    &.has-7 li:nth-last-child(3), &.has-11 li:nth-last-child(3), &.has-15 li:nth-last-child(3), &.has-19 li:nth-last-child(3), &.has-23 li:nth-last-child(3), &.has-27 li:nth-last-child(3), &.has-31 li:nth-last-child(3), &.has-35 li:nth-last-child(3), &.has-39 li:nth-last-child(3), &.has-43 li:nth-last-child(3), &.has-47 li:nth-last-child(3), &.has-51 li:nth-last-child(3), &.has-55 li:nth-last-child(3), &.has-59 li:nth-last-child(3), &.has-63 li:nth-last-child(3), &.has-67 li:nth-last-child(3), &.has-71 li:nth-last-child(3), &.has-75 li:nth-last-child(3), &.has-79 li:nth-last-child(3), &.has-83 li:nth-last-child(3), &.has-87 li:nth-last-child(3), &.has-91 li:nth-last-child(3), &.has-95 li:nth-last-child(3), &.has-99 li:nth-last-child(3), &.has-103 li:nth-last-child(3), &.has-107 li:nth-last-child(3), &.has-111 li:nth-last-child(3), &.has-115 li:nth-last-child(3), &.has-119 li:nth-last-child(3), &.has-123 li:nth-last-child(3), &.has-127 li:nth-last-child(3), &.has-131 li:nth-last-child(3), &.has-135 li:nth-last-child(3), &.has-139 li:nth-last-child(3), &.has-143 li:nth-last-child(3), &.has-147 li:nth-last-child(3), &.has-151 li:nth-last-child(3), &.has-155 li:nth-last-child(3), &.has-159 li:nth-last-child(3), &.has-163 li:nth-last-child(3), &.has-167 li:nth-last-child(3), &.has-171 li:nth-last-child(3), &.has-175 li:nth-last-child(3), &.has-179 li:nth-last-child(3), &.has-183 li:nth-last-child(3), &.has-187 li:nth-last-child(3), &.has-191 li:nth-last-child(3), &.has-195 li:nth-last-child(3), &.has-199 li:nth-last-child(3), &.has-203 li:nth-last-child(3), &.has-207 li:nth-last-child(3), &.has-211 li:nth-last-child(3), &.has-215 li:nth-last-child(3), &.has-219 li:nth-last-child(3), &.has-223 li:nth-last-child(3), &.has-227 li:nth-last-child(3), &.has-231 li:nth-last-child(3), &.has-235 li:nth-last-child(3), &.has-239 li:nth-last-child(3), &.has-243 li:nth-last-child(3), &.has-247 li:nth-last-child(3), &.has-251 li:nth-last-child(3), &.has-255 li:nth-last-child(3), &.has-259 li:nth-last-child(3), &.has-263 li:nth-last-child(3), &.has-267 li:nth-last-child(3), &.has-271 li:nth-last-child(3), &.has-275 li:nth-last-child(3), &.has-279 li:nth-last-child(3), &.has-283 li:nth-last-child(3), &.has-287 li:nth-last-child(3), &.has-291 li:nth-last-child(3), &.has-295 li:nth-last-child(3), &.has-299 li:nth-last-child(3), &.has-303 li:nth-last-child(3) {
+      margin-left: 12.5%;
+    }
+  }
+}  
