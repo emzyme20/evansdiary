@@ -3,7 +3,7 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 
 var files = './Content/**/*.scss*';
-var output = './Content';
+var output = './Content/css/';
 var source = './Content';
 
 var sassOptions = {

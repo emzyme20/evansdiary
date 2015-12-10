@@ -1,0 +1,22 @@
+﻿@model EvansDiary.Web.ViewModels.YearViewModel
+
+@{
+    var dateTimeHelper = new System.Globalization.DateTimeFormatInfo();
+}
+
+<div class="diary-nav container">
+    <div class="box">
+        <ul class="flat image-nav-list">
+            @for (var monthDigit = 1; monthDigit <= 12; monthDigit++)
+            {
+                var imgSrc = string.Format("/Content/images/diary/years/{0}/m{1}.jpg", Model.Year, monthDigit);
+                var monthName = dateTimeHelper.GetMonthName(monthDigit);
+
+                <li>
+                    <a href="/year/@Model.Year/month/@monthName"><img src="@imgSrc" alt="@monthName" title="@monthName" /></a>
+                    <span>@monthName</span>
+                </li>
+            }
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,20 @@
+﻿@model EvansDiary.Web.ViewModels.YearViewModel
+
+<div class="diary-nav container">
+    <div class="box">
+        <ul class="flat image-nav-list">
+            @for (var week = 0; week <= 52; week++)
+            {
+                var imgSrc = string.Format("/Content/images/diary/years/{0}/w{1}.jpg", Model.Year, week);
+                var description = week == 0
+                    ? "Week 0 - The Birth"
+                    : "Week " + week;
+                
+                <li>
+                <a href="/year/@Model.Year/week/@week"><img src="@imgSrc" alt="Week @week" title="Week @week" /></a>
+                    <span>@description</span>
+                </li>
+            }
+        </ul>
+    </div>
+</div>

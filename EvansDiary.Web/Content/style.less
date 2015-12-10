@@ -45,6 +45,7 @@ ul.flat {
     margin: 0.5em 0 0;
     text-align: center;
     font-size: 14px;
+    color: #19224f;
 
     @media screen and (min-width: 768px) {
       margin: 1em 0 1em;
@@ -80,13 +81,13 @@ ul.image-nav-list {
       float: left;
     }
 
-      li:nth-child(2n+1) {
-        clear: none;
-      }
+    li:nth-child(2n+1) {
+      clear: none;
+    }
 
-      li:nth-child(3n+1) {
-        clear: left;
-      }
+    li:nth-child(3n+1) {
+      clear: left;
+    }
 
     &.has-2 li {
       width: 50%;
@@ -179,3 +180,9 @@ ul.image-nav-list {
     }
   }
 }  
+
+ul.image-nav-list a:hover img, ul.image-nav-list a.selected img {
+  -ms-transform: scale(1.05, 1.05);
+  -webkit-transform: scale(1.05, 1.05);
+  transform: scale(1.05, 1.05);
+}

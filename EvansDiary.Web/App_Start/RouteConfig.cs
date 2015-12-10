@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 using System.Web.Routing;
 
 namespace EvansDiary.Web
@@ -16,14 +12,27 @@ namespace EvansDiary.Web
             routes.MapRoute(
                 "Diary",
                 "diary",
-                new { controller = "Home", action = "Diary", id = UrlParameter.Optional }
-                );
+                new { controller = "Diary", action = "Index", id = UrlParameter.Optional });
+
+            routes.MapRoute(
+                "Years",
+                "diary/year/{year}",
+                new { controller = "Diary", action = "Year", id = UrlParameter.Optional });
+
+            routes.MapRoute(
+                "Years",
+                "diary/year/{year}/week/{week}",
+                new { controller = "Diary", action = "Week", id = UrlParameter.Optional });
+
+            routes.MapRoute(
+                "Years",
+                "diary/year/{year}/{month}",
+                new { controller = "Diary", action = "Week", id = UrlParameter.Optional });
 
             routes.MapRoute(
                 name: "Default",
                 url: "",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
-            );
+                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional });
         }
     }
 }
