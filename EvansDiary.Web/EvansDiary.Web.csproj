@@ -209,7 +209,7 @@
     <Content Include="Content\images\diary\year_2.jpg" />
     <Content Include="Content\images\diary\year_3.jpg" />
     <Content Include="Content\images\diary\year_4.jpg" />
-    <Content Include="Content\images\thediary.png" />
+    <Content Include="Content\images\the-diary.png" />
     <Content Include="Content\Theme\css\prettyPhoto.css" />
     <Content Include="Content\Theme\css\style.css" />
     <Content Include="Content\Theme\img\1.jpg" />
@@ -326,7 +326,6 @@
     <Content Include="Views\Diary\_Monthly.cshtml" />
     <Content Include="Views\Diary\Week.cshtml" />
     <Content Include="Views\Diary\Month.cshtml" />
-    <Content Include="Views\Diary\Entry.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

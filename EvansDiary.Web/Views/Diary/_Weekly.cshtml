@@ -2,16 +2,16 @@
 
 <div class="diary-nav container">
     <div class="box">
-        <ul class="flat image-nav-list">
+        <ul class="flat pure-g image-nav-list">
             @for (var week = 0; week <= 52; week++)
             {
                 var imgSrc = string.Format("/Content/images/diary/years/{0}/w{1}-main.jpg", Model.Year, week);
                 var description = week == 0
                     ? "Week 0 - The Birth"
                     : "Week " + week;
-                
-                <li>
-                <a href="/diary/year/@Model.Year/week/@week"><img src="@imgSrc" alt="Week @week" title="Week @week" /></a>
+
+                <li class="pure-u-1-2 pure-u-sm-1-4">
+                    <a href="/diary/year/@Model.Year/week/@week"><img src="@imgSrc" alt="Week @week" title="Week @week" /></a>
                     <span>@description</span>
                 </li>
             }

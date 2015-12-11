@@ -10,7 +10,7 @@
 
     <p>Use the links below to read about Evan's development up to his @Model.Birthday birthday</p>
     @{
-        Html.RenderPartial(Model.Age == 1
+        @Html.Partial(Model.Age == 1
             ? "_Weekly"
             : "_Monthly", Model);
     }

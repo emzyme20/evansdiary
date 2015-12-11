@@ -6,13 +6,13 @@
 
 <div class="diary-nav container">
     <div class="box">
-        <ul class="flat image-nav-list">
+        <ul class="flat pure-g image-nav-list">
             @for (var monthDigit = 1; monthDigit <= 12; monthDigit++)
             {
                 var imgSrc = string.Format("/Content/images/diary/years/{0}/m{1}.jpg", Model.Year, monthDigit);
                 var monthName = dateTimeHelper.GetMonthName(monthDigit);
 
-                <li>
+                <li class="pure-u-1-2 pure-u-sm-1-4">
                     <a href="/diary/year/@Model.Year/month/@monthName"><img src="@imgSrc" alt="@monthName" title="@monthName" /></a>
                     <span>@monthName</span>
                 </li>
