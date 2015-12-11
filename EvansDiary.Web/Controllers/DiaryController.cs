@@ -1,6 +1,6 @@
 ﻿using System.Web.Mvc;
 
-using EvansDiary.Web.Interfaces;
+using EvansDiary.Interfaces;
 using EvansDiary.Web.ViewModels;
 
 namespace EvansDiary.Web.Controllers
@@ -9,7 +9,7 @@ namespace EvansDiary.Web.Controllers
     {
         private readonly IStaticContentDelivery _contentDelivery;
 
-        public DiaryController(IStaticContentDelivery contentDelivery)
+        public DiaryController(IStaticContentDelivery contentDelivery) 
         {
             _contentDelivery = contentDelivery;
         }
@@ -19,9 +19,9 @@ namespace EvansDiary.Web.Controllers
             return View();
         }
 
-        public ActionResult Year(int year)
+        public ActionResult Month(int year, string month)
         {
-            return View(new YearViewModel(year));
+            return View();
         }
 
         public ActionResult Week(int year, int week)
@@ -31,9 +31,9 @@ namespace EvansDiary.Web.Controllers
             return View(new DiaryEntryViewModel(diaryEntry));
         }
 
-        public ActionResult Month(int year, string month)
+        public ActionResult Year(int year)
         {
-            return View();
+            return View(new YearViewModel(year));
         }
     }
 }

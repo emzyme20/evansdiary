@@ -20,14 +20,14 @@ namespace EvansDiary.Web
                 new { controller = "Diary", action = "Year", id = UrlParameter.Optional });
 
             routes.MapRoute(
-                "Years",
+                "Weeks",
                 "diary/year/{year}/week/{week}",
                 new { controller = "Diary", action = "Week", id = UrlParameter.Optional });
 
             routes.MapRoute(
-                "Years",
+                "Months",
                 "diary/year/{year}/{month}",
-                new { controller = "Diary", action = "Week", id = UrlParameter.Optional });
+                new { controller = "Diary", action = "Month", id = UrlParameter.Optional });
 
             routes.MapRoute(
                 name: "Default",

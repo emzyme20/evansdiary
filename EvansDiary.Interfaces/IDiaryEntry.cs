@@ -1,15 +1,17 @@
 ﻿using System.Collections.Generic;
 
-namespace EvansDiary.Web.Interfaces
+namespace EvansDiary.Interfaces
 {
     public interface IDiaryEntry
     {
         string EntryOne { get; set; }
 
-        string EntryTag { get; set; }
-
         string EntryTwo { get; set; }
 
-        List<IAssociatedImage> ImagesForEntry { get; set; }
+        List<IAssociatedImage> Images { get; set; }
+
+        string Tag { get; set; }
+
+        string Title { get; set; }
     }
 }

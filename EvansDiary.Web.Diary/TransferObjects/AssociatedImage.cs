@@ -1,4 +1,4 @@
-﻿using EvansDiary.Web.Interfaces;
+﻿using EvansDiary.Interfaces;
 
 namespace EvansDiary.Web.Diary.TransferObjects
 {

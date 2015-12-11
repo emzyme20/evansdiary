@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-using EvansDiary.Web.Interfaces;
+using EvansDiary.Interfaces;
 
 namespace EvansDiary.Web.Diary.TransferObjects
 {
@@ -8,15 +8,17 @@ namespace EvansDiary.Web.Diary.TransferObjects
     {
         public DiaryEntry()
         {
-            ImagesForEntry = new List<IAssociatedImage>();
+            Images = new List<IAssociatedImage>();
         }
 
         public string EntryOne { get; set; }
 
-        public string EntryTag { get; set; }
+        public string Tag { get; set; }
 
         public string EntryTwo { get; set; }
 
-        public List<IAssociatedImage> ImagesForEntry { get; set; }
+        public List<IAssociatedImage> Images { get; set; }
+
+        public string Title { get; set; }
     }
 }

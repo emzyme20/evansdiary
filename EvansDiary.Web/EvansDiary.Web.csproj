@@ -47,6 +47,14 @@
       <HintPath>..\packages\SimpleInjector.3.1.1\lib\net45\SimpleInjector.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="SimpleInjector.Integration.Web, Version=3.1.1.0, Culture=neutral, PublicKeyToken=984cb50dea722e99, processorArchitecture=MSIL">
+      <HintPath>..\packages\SimpleInjector.Integration.Web.3.1.1\lib\net40\SimpleInjector.Integration.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SimpleInjector.Integration.Web.Mvc, Version=3.1.1.0, Culture=neutral, PublicKeyToken=984cb50dea722e99, processorArchitecture=MSIL">
+      <HintPath>..\packages\SimpleInjector.Integration.Web.Mvc.3.1.1\lib\net40\SimpleInjector.Integration.Web.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -189,7 +197,14 @@
     <Content Include="Content\images\carousel\image1.png" />
     <Content Include="Content\images\carousel\image2.png" />
     <Content Include="Content\images\carousel\image3.png" />
-    <Content Include="Content\images\diary\years\2005\w0.jpg" />
+    <Content Include="Content\images\diary\years\2005\w0-main.jpg" />
+    <Content Include="Content\images\diary\years\2005\w0_before_birth.jpg" />
+    <Content Include="Content\images\diary\years\2005\w0_caroline_first_hold.jpg" />
+    <Content Include="Content\images\diary\years\2005\w0_midwife.jpg" />
+    <Content Include="Content\images\diary\years\2005\w1-main.jpg" />
+    <Content Include="Content\images\diary\years\2005\w1_emmas_mum.jpg" />
+    <Content Include="Content\images\diary\years\2005\w1_emma_evan_bed.jpg" />
+    <Content Include="Content\images\diary\years\2005\w1_evans_foot.jpg" />
     <Content Include="Content\images\diary\year_1.jpg" />
     <Content Include="Content\images\diary\year_2.jpg" />
     <Content Include="Content\images\diary\year_3.jpg" />
@@ -311,6 +326,7 @@
     <Content Include="Views\Diary\_Monthly.cshtml" />
     <Content Include="Views\Diary\Week.cshtml" />
     <Content Include="Views\Diary\Month.cshtml" />
+    <Content Include="Views\Diary\Entry.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -322,13 +338,13 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\EvansDiary.Interfaces\EvansDiary.Interfaces.csproj">
+      <Project>{53F373C8-79D2-4E99-8D92-2AFF2604714A}</Project>
+      <Name>EvansDiary.Interfaces</Name>
+    </ProjectReference>
     <ProjectReference Include="..\EvansDiary.Web.Diary\EvansDiary.Web.Diary.csproj">
       <Project>{447A92CA-A529-4BBB-B77C-181D5D11EC45}</Project>
       <Name>EvansDiary.Web.Diary</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\EvansDiary.Web.Interfaces\EvansDiary.Web.Interfaces.csproj">
-      <Project>{3C245B20-9F39-4D14-9013-33E83E9CF6EC}</Project>
-      <Name>EvansDiary.Web.Interfaces</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

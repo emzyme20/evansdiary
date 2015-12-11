@@ -1,4 +1,4 @@
-﻿namespace EvansDiary.Web.Interfaces
+﻿namespace EvansDiary.Interfaces
 {
     public interface IStaticContentDelivery
     {

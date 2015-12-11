@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EvansDiary.Web", "EvansDiar
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EvansDiary.Web.Diary", "EvansDiary.Web.Diary\EvansDiary.Web.Diary.csproj", "{447A92CA-A529-4BBB-B77C-181D5D11EC45}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EvansDiary.Web.Interfaces", "EvansDiary.Web.Interfaces\EvansDiary.Web.Interfaces.csproj", "{3C245B20-9F39-4D14-9013-33E83E9CF6EC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EvansDiary.Interfaces", "EvansDiary.Interfaces\EvansDiary.Interfaces.csproj", "{53F373C8-79D2-4E99-8D92-2AFF2604714A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{447A92CA-A529-4BBB-B77C-181D5D11EC45}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{447A92CA-A529-4BBB-B77C-181D5D11EC45}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{447A92CA-A529-4BBB-B77C-181D5D11EC45}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3C245B20-9F39-4D14-9013-33E83E9CF6EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3C245B20-9F39-4D14-9013-33E83E9CF6EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3C245B20-9F39-4D14-9013-33E83E9CF6EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3C245B20-9F39-4D14-9013-33E83E9CF6EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53F373C8-79D2-4E99-8D92-2AFF2604714A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53F373C8-79D2-4E99-8D92-2AFF2604714A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53F373C8-79D2-4E99-8D92-2AFF2604714A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53F373C8-79D2-4E99-8D92-2AFF2604714A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

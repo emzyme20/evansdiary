@@ -30,6 +30,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MarkdownDeep, Version=1.5.4615.26275, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MarkdownDeep.NET.1.5\lib\.NetFramework 3.5\MarkdownDeep.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -50,17 +54,20 @@
     <Compile Include="TransferObjects\DiaryEntry.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\EvansDiary.Web.Interfaces\EvansDiary.Web.Interfaces.csproj">
-      <Project>{3C245B20-9F39-4D14-9013-33E83E9CF6EC}</Project>
-      <Name>EvansDiary.Web.Interfaces</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="Resources\Year2005.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Year2005.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EvansDiary.Interfaces\EvansDiary.Interfaces.csproj">
+      <Project>{53F373C8-79D2-4E99-8D92-2AFF2604714A}</Project>
+      <Name>EvansDiary.Interfaces</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

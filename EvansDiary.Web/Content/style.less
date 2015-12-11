@@ -186,3 +186,38 @@ ul.image-nav-list a:hover img, ul.image-nav-list a.selected img {
   -webkit-transform: scale(1.05, 1.05);
   transform: scale(1.05, 1.05);
 }
+
+.pure-img-responsive {
+  max-width: 100%;
+  height: auto;
+
+  @media screen and (max-width: @mq-md) {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.content-subhead {
+    margin: 20px 0;
+    font-weight: 300;
+    color: #888;
+    font-size: 16px;
+}
+
+.diary-entries {
+  p {
+    line-height: 25px;
+  }
+
+  aside {
+    padding: 1em 0.5em;
+    color: white;
+    width: 100%;
+    font-size: 80%;
+    text-align: center;
+
+    span {
+      color:#aaa;
+    }
+  }
+}

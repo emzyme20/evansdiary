@@ -61,20 +61,42 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Emma.
+        ///   Looks up a localized string similar to My experience of the birth is totally different to that of Caroline&apos;s. When I think back, parts of it are now starting to blur and I need reminding from those that were present to relive certain events. I guess the pain relief through drugs and that of my natural pain relief are part of the reasons for me not remembering it. I personally handled being pregnant and going through the labour better than I would have handled being the partner who felt completely helpless at times.
+        ///    
+        ///For two days I was havi [rest of string was truncated]&quot;;.
         /// </summary>
-        public static string w0One {
+        public static string y1w0One {
             get {
-                return ResourceManager.GetString("w0One", resourceCulture);
+                return ResourceManager.GetString("y1w0One", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Caroline.
+        ///   Looks up a localized string similar to Watching your loved one go through the pain of labour when there is virtually nothing you can do to alleviate her pain is heart-wrenching. As the labour drags on and on sapping every ounce of her energy and Christmas Day fades into Boxing day it&apos;s hard to imagine that this little baby will ever actually be born...  
+        ///    
+        ///The first signs of labour started early on the morning of Christmas Eve. Emma&apos;s waters appeared to break so she phoned the hospital and they advised her to come in due to risk of infectio [rest of string was truncated]&quot;;.
         /// </summary>
-        public static string w0Two {
+        public static string y1w0Two {
             get {
-                return ResourceManager.GetString("w0Two", resourceCulture);
+                return ResourceManager.GetString("y1w0Two", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to My recollection of days and times became completely muddled after the birth of Evan. I was wheeled up to the postnatal ward at 7am in the morning and because we then went to bed it actually feels like I was in hospital for a day longer than I actually was. I didn&apos;t get much sleep at all and 2 hours later I woke up feeling terrible. My right leg was still completely dead and I couldn&apos;t move at all. When Evan started to cry I couldn&apos;t tend to him because of my problems with the epidural and I didn&apos;t have a nu [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string y1w1One {
+            get {
+                return ResourceManager.GetString("y1w1One", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Emma and Evan were taken up to the postnatal ward at about 7am and we were all thoroughly exhausted. Her mum and I waited until they were both settled and then went home for some well-earned sleep! The drive home was weird. It was about -3 outside and the car was frozen solid. To me it was the end of a very long night but in reality the day was just starting. As I started to drive the emotion of it all really hit me and I had tears streaming down my face all the way home. I slumped into bed and managed to g [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string y1w1Two {
+            get {
+                return ResourceManager.GetString("y1w1Two", resourceCulture);
             }
         }
     }
