@@ -123,9 +123,9 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 
-        ///      
-        ///    .
+        ///   Looks up a localized string similar to After the recent evening events with Evan and his sleeping problems we decided it was probably best if Caroline moved downstairs to sleep on the futon. I was not very receptive to this suggestion but I do understand how much Caroline needs her sleep for University as she struggles to stay awake in lectures anyway!  
+        ///
+        ///We had our first visit from the health visitor this week as we were no longer being cared for by the midwives. Evan certainly doesn&apos;t have a problem eating and breast feeding is going smoothl [rest of string was truncated]&quot;;.
         /// </summary>
         public static string y1w3One {
             get {
@@ -134,13 +134,129 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 
-        ///      
-        ///    .
+        ///   Looks up a localized string similar to Monday of this week was the end of my Christmas holiday and time for me to go back to Uni. Emma wasn&apos;t looking forward to it at all but thankfully my timetable is fairly light and as long as I&apos;m able to study at home I don&apos;t have to be there all that much. One thing that did worry me though was the sleep I was getting. At night times it was taking 1-2 hours to get Evan off to sleep then I found that I kept waking up with his little kicks and fidgets. Then of course he&apos;d wake up screaming several times a nig [rest of string was truncated]&quot;;.
         /// </summary>
         public static string y1w3Two {
             get {
                 return ResourceManager.GetString("y1w3Two", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to I conquered one of my fears this week! I went to the mother and baby group to get Evan weighed and I also stayed for the session, which happened to be on sleep and routine! Routine?!? - Evan doesn&apos;t have one, so that&apos;s the next task to try and introduce, initially by going to bed at the same time every night and doing the same things to get him prepared for sleep time. Evan weighed in at 10lb 1oz and little chubby chops is starting to grow out of his vests. A pile of clothes that he is too big for has been  [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string y1w4One {
+            get {
+                return ResourceManager.GetString("y1w4One", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to At last I&apos;m starting to notice some real changes in Evan&apos;s behaviour now. In the beginning he was extremely insecure, we often had no clue why he would be crying and have a very hard time settling him. He was not very responsive at all. I have a couple of books about baby development and I read a little each week. Of course every baby is different but it was a little frustrating when he didn&apos;t seem to be exhibiting any of the behaviours I was reading about.  
+        ///
+        ///But this past week we&apos;ve had more success. We [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string y1w4Two {
+            get {
+                return ResourceManager.GetString("y1w4Two", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Evan must have had a growth spurt recently, he put on 10 ounces this week when I weighed him at the Mother and Baby group. He weighs 10lb 11oz now and we started having issues with the nappies leaking so we decided to move him into the big boy nappies. We probably should have moved him up to the next size earlier to save us wasting nappies but I wasn&apos;t aware that the weights overlapped and I was trying to wait until Evan was 11lbs before moving onto the next!  
+        ///
+        ///The swing that my mum bought for us last we [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string y1w5One {
+            get {
+                return ResourceManager.GetString("y1w5One", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to On Tuesday Emma had an appointment at the Dentist so I had Evan on my own. This was only the second time since his birth that Emma had been away from him for any length of time. Of course, he grizzled lots! I decided to take him for our usual walk as that has always settled him but this time it was not to be. He was really screaming and in my flap I just forgot everything - his hat, a muslin, mitts! So he was probably cold. To my embarrassment he just screamed all the way around the housing estate! He did f [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string y1w5Two {
+            get {
+                return ResourceManager.GetString("y1w5Two", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to I have finally started to feel much better now, the mother of all periods has gone and everything appears to have healed. My mum took me for my hospital scan this week and Evan had his first ride in a lift, he pulled his funny little face that he does when he&apos;s about to have a whiney cry and I was thinking oh god not in here. My mum just looked at him and said something like &quot;You can stop that right now!&quot; and to my surprise he did. Do you think I have that effect on him?!?!  
+        ///
+        ///That day Evan got to visit h [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string y1w6One {
+            get {
+                return ResourceManager.GetString("y1w6One", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Emma has been exclusively breast-feeding Evan since birth but sometimes she needs to go out somewhere where she can&apos;t take him along. When that happens she has to try to get him fed before she goes and get back quick as he&apos;s still feeding pretty much every two hours!  
+        ///
+        ///So this week she thought she&apos;d try expressing so we could try a bottle feed. I&apos;ll let Emma go into details about the expressing :-) Well a couple of days later we had a couple of ounces of milk (!) and we tried it out - he seemed to love i [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string y1w6Two {
+            get {
+                return ResourceManager.GetString("y1w6Two", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to My little boy is growing so much, he has outgrown most of his baby clothes and me being a naughty mummy have spent all of his toys and clothes monthly allowance for the next 2 months already and it wasn&apos;t on the clothes we needed! He is looking so much older and definitely doesn&apos;t look like a new born anymore. He weighed 11lb 12oz this week which is a great weight so even though at times I feel like my boobs are drained and not satisfying him, he is certainly gaining the weight that he needs.  
+        ///
+        ///This week [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string y1w7One {
+            get {
+                return ResourceManager.GetString("y1w7One", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The things we do to placate our babies... One morning in the week Emma had had a rough night and was really tired so I took Evan in the front carrier so she could get some undisturbed sleep. We were milling around the house quite happily and I got peckish so I went to get myself some cereal and went back upstairs to do some stuff at the computer. Evan had other ideas :/ He started to cry so I stood up and jigged him a bit. It still didn&apos;t work so I turned on Avril Lavigne and jigged a bit more. In the meant [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string y1w7Two {
+            get {
+                return ResourceManager.GetString("y1w7Two", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to We have found a formula milk that Evan will drink (we hope it wasn&apos;t a one off) and he quite easily drank 8oz. It&apos;s nice for Caroline to have some bonding time with Evan and it really is lovely watching him feed with those gorgeous little eyes looking up at you. I don&apos;t always have expressed breast milk at hand and sometimes I feel like my boobs have nothing in them so having formula available will be very handy. It&apos;s especially useful for when we go to visit friends because it can be terribly lonely having [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string y1w8One {
+            get {
+                return ResourceManager.GetString("y1w8One", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Have you ever noticed how much conflicting advice is banded around about babies? And the more you read and the more people you talk to the more confusion there is. Evan is almost 2 months old now and he still can&apos;t get himself to sleep. 9 times out of 10 the only way we&apos;ll get him asleep is to let him fall asleep after a feed, on our chests, or in our arms to music. If he&apos;s fast asleep then we can put him down to bed and sometimes he&apos;ll stay asleep for a while - but usually he wakes within a few minutes. Wh [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string y1w8Two {
+            get {
+                return ResourceManager.GetString("y1w8Two", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string y1w9One {
+            get {
+                return ResourceManager.GetString("y1w9One", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string y1w9Two {
+            get {
+                return ResourceManager.GetString("y1w9Two", resourceCulture);
             }
         }
     }
