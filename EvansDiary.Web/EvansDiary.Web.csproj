@@ -198,13 +198,8 @@
     <Content Include="Content\images\carousel\image2.png" />
     <Content Include="Content\images\carousel\image3.png" />
     <Content Include="Content\images\diary\years\2005\w0-main.jpg" />
-    <Content Include="Content\images\diary\years\2005\w0_before_birth.jpg" />
-    <Content Include="Content\images\diary\years\2005\w0_caroline_first_hold.jpg" />
-    <Content Include="Content\images\diary\years\2005\w0_midwife.jpg" />
     <Content Include="Content\images\diary\years\2005\w1-main.jpg" />
-    <Content Include="Content\images\diary\years\2005\w1_emmas_mum.jpg" />
-    <Content Include="Content\images\diary\years\2005\w1_emma_evan_bed.jpg" />
-    <Content Include="Content\images\diary\years\2005\w1_evans_foot.jpg" />
+    <Content Include="Content\images\diary\years\2005\w2-main.jpg" />
     <Content Include="Content\images\diary\year_1.jpg" />
     <Content Include="Content\images\diary\year_2.jpg" />
     <Content Include="Content\images\diary\year_3.jpg" />

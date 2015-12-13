@@ -41,10 +41,10 @@ namespace EvansDiary.Web.Diary
                         EntryTwo = md.Transform(Year2005.y1w0Two),
                         Images = new List<IAssociatedImage>
                         {
-                            new AssociatedImage("/Content/images/diary/years/2005/w0-main.jpg", "Emma holding Evan for the first time"),
-                            new AssociatedImage("/Content/images/diary/years/2005/w0_midwife.jpg", "Our wonderful midwife, Valeska"),
-                            new AssociatedImage("/Content/images/diary/years/2005/w0_before_birth.jpg", "Emma in the labour ward, before the birth"),
-                            new AssociatedImage("/Content/images/diary/years/2005/w0_caroline_first_hold.jpg", "Caroline with Evan a few minutes after the birth")
+                            new AssociatedImage("w0-emma-first-hold_n1knip", "Emma holding Evan for the first time"),
+                            new AssociatedImage("w0_midwife_gpdp3v", "Our wonderful midwife, Valeska"),
+                            new AssociatedImage("w0_before_birth_qzqa9r", "Emma in the labour ward, before the birth"),
+                            new AssociatedImage("w0_caroline_first_hold_mgodvl", "Caroline with Evan a few minutes after the birth")
                         }
                     });
 
@@ -59,10 +59,28 @@ namespace EvansDiary.Web.Diary
                         EntryTwo = md.Transform(Year2005.y1w1Two),
                         Images = new List<IAssociatedImage>
                         {
-                            new AssociatedImage("/Content/images/diary/years/2005/w1-main.jpg", "Caroline's first view of Evan in hospital, just a few hours old"),
-                            new AssociatedImage("/Content/images/diary/years/2005/w1_emmas_mum.jpg", "Emma's Mum with Evan"),
-                            new AssociatedImage("/Content/images/diary/years/2005/w1_emma_evan_bed.jpg", "Emma and Evan, peaceful in hospital"),
-                            new AssociatedImage("/Content/images/diary/years/2005/w1_evans_foot.jpg", "What a cute footsie!")
+                            new AssociatedImage("w1_evan_peaceful_hqreul", "Caroline's first view of Evan in hospital, just a few hours old"),
+                            new AssociatedImage("w1_emmas_mum_psbo4x", "Emma's Mum with Evan"),
+                            new AssociatedImage("w1_emma_evan_bed_s7904r", "Emma and Evan, peaceful in hospital"),
+                            new AssociatedImage("w1_evans_foot_a5kkre", "What a cute footsie!")
+                        }
+                    });
+
+            _diaryEntries
+                .Add(
+                    "2005-2",
+                    new DiaryEntry
+                    {
+                        Title = "2nd - 8th January 2005",
+                        Tag = "2",
+                        EntryOne = md.Transform(Year2005.y1w2One),
+                        EntryTwo = md.Transform(Year2005.y1w2Two),
+                        Images = new List<IAssociatedImage>
+                        {
+                            new AssociatedImage("w2_sleepy_baby_vvnnrh", "Such a hard life"),
+                            new AssociatedImage("w2_ooh_looking_at_emma_jzyu66", "One of Evan's cute little expressions! 'Hello mummy!'"),
+                            new AssociatedImage("w2_being_changed_ctnjl4", "Evan grumbling at having his nappy changed"),
+                            new AssociatedImage("w2_hard_life_jxyqgs", "Sleepy baby")
                         }
                     });
         }

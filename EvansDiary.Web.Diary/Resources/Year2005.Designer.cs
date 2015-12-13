@@ -99,5 +99,49 @@ namespace EvansDiary.Web.Diary.Resources {
                 return ResourceManager.GetString("y1w1Two", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to After the crazy hectic first week at home, most people we knew had managed to see Evan and the daily visits had died down. I had been warned in pregnancy to expect my washing machine to be busy and I am starting to see that now. On average we are doing 2 loads a day when before having Evan I&apos;d only have the washing machine on 3 times a week! I just hope my washing machine survives the extra workload as even before Evan I noticed it was starting to groan lots.  
+        ///
+        ///The long hard nights started this week and  [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string y1w2One {
+            get {
+                return ResourceManager.GetString("y1w2One", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to I&apos;m not exactly sure if week two was better or worse than the first week. It was nice that the visiting died down a bit and we were able to get used to a new life of three, but it was also hard dealing with Evans ever-increasing crying.  
+        ///
+        ///It doesn&apos;t matter how many books you read, or what advice people give you, every baby is different. I kept reading how babies need to be calmed when they are crying by gentle rocking and speaking softly buy none of that worked with Evan. Quite the opposite in fact. I fo [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string y1w2Two {
+            get {
+                return ResourceManager.GetString("y1w2Two", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 
+        ///      
+        ///    .
+        /// </summary>
+        public static string y1w3One {
+            get {
+                return ResourceManager.GetString("y1w3One", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 
+        ///      
+        ///    .
+        /// </summary>
+        public static string y1w3Two {
+            get {
+                return ResourceManager.GetString("y1w3Two", resourceCulture);
+            }
+        }
     }
 }
