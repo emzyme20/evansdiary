@@ -83,6 +83,198 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to My little boy is growing ever so quickly, we went to see his grandma this week as it&apos;s been 5 weeks since our last visit and she couldn&apos;t believe how much he had changed. He has pretty much out grown most of his clothes so we&apos;re washing daily just to make sure he has something to wear. His clothes and toys allowance will definitely be spent on the former this month!  
+        ///
+        ///I took Evan to see my work colleagues for the first time this week. He was on his best behaviour, he played, smiled, let people hold him a [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string y1w10One {
+            get {
+                return ResourceManager.GetString("y1w10One", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to We&apos;re starting to be able to see some developmental changes in Evan&apos;s behaviour now. He&apos;s been sucking at his fist for a week or two already but sometimes he manages to be a little more dextrous and actually put his fingers in his mouth and suck those. He hasn&apos;t quite found his thumb yet though!  
+        ///
+        ///He&apos;s also &quot;talking&quot; a lot more now. He started saying &quot;gurrr&quot; a lot a couple of weeks back but now he has a new gurgle where he really sounds like he&apos;s trying to laugh and he tends to do this in direct response [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string y1w10Two {
+            get {
+                return ResourceManager.GetString("y1w10Two", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This week the long awaited &quot;Baby Massage&quot; class started, it&apos;s only on for 4 weeks but it&apos;s just another opportunity to get us out of the house for a few hours to see other babies. Doing the little walk to Somerfield on our own is getting a bit boring and I really think it will do Evan good to get out and about more. We&apos;ve been doing massage with Evan for several weeks now so this class was mainly for the social aspect as well as just making sure I am doing it correctly. The class is run free by the local he [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string y1w11One {
+            get {
+                return ResourceManager.GetString("y1w11One", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Evan has been exercising his new found vocal chords for a little while now but this week he discovered a new trick. He was lying on the change mat after I&apos;d changed his nappy and I was chatting to Emma and suddenly he just let out this loud shout that really made me jump! We both looked at each other and then at him and he just smiled, cutie.  
+        ///
+        ///A few weeks ago we had a visit from one of our friends and she had bought us a nice set of baby vests with one for every day of the week. I often see these types  [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string y1w11Two {
+            get {
+                return ResourceManager.GetString("y1w11Two", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to I introduced Evan to a new environment this week, we went to &quot;Teddies Music Club&quot;. Teddies is run once a week and is more suited to children at toddler age as they can interact more. I think it is also good for babies as it gives them new experiences, but they won&apos;t be able to sing along to the songs and do some of the actions, however it gets us out of the house for a little bit. I didn&apos;t realise this, but Evan had never heard anyone clap - hmm, unless me clapping when Spurs score on TV whilst Evan was in  [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string y1w12One {
+            get {
+                return ResourceManager.GetString("y1w12One", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ooh we had a bit of a &apos;mare this week - the first time I caused an injury to Evan! There were tears... baby tears, Emma tears and there were screams! How did this happen? Well it all started with some baby fingernails and a pair of clippers :/ I&apos;m sure you can guess the rest!  
+        ///
+        ///Due to the little &quot;jazz hands&quot; thing he tends to do when he&apos;s feeding (see the piccy in week 6) it&apos;s usually quite easy to trim his nails as he&apos;s fairly relaxed and sleepy when he&apos;s been feeding for a while and he splays his finge [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string y1w12Two {
+            get {
+                return ResourceManager.GetString("y1w12Two", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This week I introduced Evan to his cardboard books. He hasn&apos;t figured out how to hold them or eat them but he does like to look at the pictures. He woke me up at 6am one day this week and showed no signs of wanting to go back to sleep so we made a coffee for mummy and I plonked him in between my legs so that he was able to sit up. My legs were supporting him on both sides and from that position we sat and read all about racing cars and also about Little Bear&apos;s adventures. I&apos;ve read that babies do like to ha [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string y1w13One {
+            get {
+                return ResourceManager.GetString("y1w13One", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Over the last few weeks Evan has started to chew things more. He started off mainly chewing his fist (which he still does - a lot!) but now he&apos;s started chewing everything else too - his toys, his clothes, and his muslin! He&apos;s taken quite a liking to his muslin and he buries his face in it and giggles! We discovered this week that it will actually keep him amused for quite a while!  
+        ///
+        ///Another discovery we made this week is that Evan has started showing an interest in the TV. Is that normal for young babie [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string y1w13Two {
+            get {
+                return ResourceManager.GetString("y1w13Two", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This week Evan had another trip to the injection nurse! I wasn&apos;t looking forward to this because I still had images of what happened last time. Caroline came with us this time to make sure we were both ok :). He had to sit on my lap instead of lying on the bed and it was probably for the best because I didn&apos;t see his face when he cried so it didn&apos;t make me cry. I had to hold his leg down for the nurse, which wasn&apos;t what I really wanted to do, I just wanted to be able to comfort him. Caroline let him hold he [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string y1w14One {
+            get {
+                return ResourceManager.GetString("y1w14One", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Emma already mentioned that Evan has a new trick of arching up his back. Sometimes this can be a real nuisance. A few days ago we had him in the pushchair while we were eating dinner. It was tilted upwards and we hadn&apos;t strapped him in (never needed to before). Suddenly he started to arch his back and wiggled so much that I actually thought he was going to fall out! Now he gets strapped in everywhere! But one place that we can&apos;t strap him is our laps. He frequently sits on our laps now and watches TV or he  [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string y1w14Two {
+            get {
+                return ResourceManager.GetString("y1w14Two", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to As we mentioned a few weeks ago, Evan is now in the big bath as he is now a big boy! He is even starting to outgrow the bath support that we use there so I am not sure what we will do then. The big bath is helping us all to feel comfortable and prepare for our first swimming session with Evan as he needs to get used to having water on his face. It just so happens that he now gets ever so excited at bath times that this week he has learned that flapping his arms and kicking his feet makes splashes... lots of [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string y1w15One {
+            get {
+                return ResourceManager.GetString("y1w15One", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to We had a monumental event this week (kinda) - Evan crawled! Okay so it was backwards, but he still crawled :) I had him on his belly for tummy time on the change mat and he tends to wriggle around a lot these days and I noticed that he was shuffling himself downwards towards the back of the mat! I watched him and sure enough he managed to shuffle all the way back down until his legs were on carpet and he got a bit stuck and I had to slide him back up. He&apos;s done it several times since then.  
+        ///
+        ///I&apos;ve noticed [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string y1w15Two {
+            get {
+                return ResourceManager.GetString("y1w15Two", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string y1w16One {
+            get {
+                return ResourceManager.GetString("y1w16One", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string y1w16Two {
+            get {
+                return ResourceManager.GetString("y1w16Two", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string y1w17One {
+            get {
+                return ResourceManager.GetString("y1w17One", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string y1w17Two {
+            get {
+                return ResourceManager.GetString("y1w17Two", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string y1w18One {
+            get {
+                return ResourceManager.GetString("y1w18One", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string y1w18Two {
+            get {
+                return ResourceManager.GetString("y1w18Two", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string y1w19One {
+            get {
+                return ResourceManager.GetString("y1w19One", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string y1w19Two {
+            get {
+                return ResourceManager.GetString("y1w19Two", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to My recollection of days and times became completely muddled after the birth of Evan. I was wheeled up to the postnatal ward at 7am in the morning and because we then went to bed it actually feels like I was in hospital for a day longer than I actually was. I didn&apos;t get much sleep at all and 2 hours later I woke up feeling terrible. My right leg was still completely dead and I couldn&apos;t move at all. When Evan started to cry I couldn&apos;t tend to him because of my problems with the epidural and I didn&apos;t have a nu [rest of string was truncated]&quot;;.
         /// </summary>
         public static string y1w1One {
@@ -97,6 +289,60 @@ namespace EvansDiary.Web.Diary.Resources {
         public static string y1w1Two {
             get {
                 return ResourceManager.GetString("y1w1Two", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string y1w20One {
+            get {
+                return ResourceManager.GetString("y1w20One", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string y1w20Two {
+            get {
+                return ResourceManager.GetString("y1w20Two", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string y1w21One {
+            get {
+                return ResourceManager.GetString("y1w21One", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string y1w21Two {
+            get {
+                return ResourceManager.GetString("y1w21Two", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string y1w22One {
+            get {
+                return ResourceManager.GetString("y1w22One", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string y1w22Two {
+            get {
+                return ResourceManager.GetString("y1w22Two", resourceCulture);
             }
         }
         
@@ -243,7 +489,9 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to This week was probably one of my worst weeks so far. We were due for our checks with our GP and if Evan was all healthy he&apos;d also have his first dose of injections.  
+        ///
+        ///We had both been given the all clear from the GP and Evan had his routine injections. The nurse was very nice and had prepared both injections beforehand to give to Evan as quickly as she could to make it less traumatic for us both. It was horrible having to watch, he was a very brave boy and it wasn&apos;t until the first injection was almost f [rest of string was truncated]&quot;;.
         /// </summary>
         public static string y1w9One {
             get {
@@ -252,7 +500,9 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to It&apos;s been quite a week this week. On Tuesday Evan had to go get some jabs done and usually I would go along with them but I had to stay in and wait for a delivery. I heard all about it when they got back and mummy and baby were both rather traumatised.  
+        ///
+        ///To make matters worse it was on this day that Emma realised that Evan was actually constipated! Because I am at Uni a lot I don&apos;t change him all that much so I didn&apos;t really notice that he&apos;d not done a poo in a while. Sometimes Emma can be a little overl [rest of string was truncated]&quot;;.
         /// </summary>
         public static string y1w9Two {
             get {
