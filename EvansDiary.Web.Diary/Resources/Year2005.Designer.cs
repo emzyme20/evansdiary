@@ -203,7 +203,7 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to I haven&apos;t been able to take Evan to the mother and baby group for the past 2 weeks due to his injections the first Wednesday and then me having a tummy bug last week, so I was really looking forward to weighing him this week. He&apos;s certainly eating well and I knew he had put on some weight because he&apos;s now starting to fit into his 6-9 month clothes and he&apos;s only 3 and a half months old now! The last time I weighed him at week 13 he&apos;d just crossed over the 1 stone mark and Caroline was betting he&apos;d be 15llbs  [rest of string was truncated]&quot;;.
         /// </summary>
         public static string y1w16One {
             get {
@@ -212,7 +212,9 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to What&apos;s your worst nightmare when you have a new baby? Well, I suppose there are a million things but one of them might be a washing machine breakdown. Our washing machine has been making strange noises for a while now and it finally packed up at the end of last week. We rushed down to the local store the next morning to buy another one but we had to wait until Thursday for delivery which left us without a machine for almost a week!  
+        ///
+        ///Now this coupled with our little poo problem is not a Good Thing! For s [rest of string was truncated]&quot;;.
         /// </summary>
         public static string y1w16Two {
             get {
@@ -343,6 +345,42 @@ namespace EvansDiary.Web.Diary.Resources {
         public static string y1w22Two {
             get {
                 return ResourceManager.GetString("y1w22Two", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string y1w23One {
+            get {
+                return ResourceManager.GetString("y1w23One", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string y1w23Two {
+            get {
+                return ResourceManager.GetString("y1w23Two", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string y1w24One {
+            get {
+                return ResourceManager.GetString("y1w24One", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string y1w24Two {
+            get {
+                return ResourceManager.GetString("y1w24Two", resourceCulture);
             }
         }
         
