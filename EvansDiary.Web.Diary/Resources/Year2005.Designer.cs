@@ -385,6 +385,24 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string y1w25One {
+            get {
+                return ResourceManager.GetString("y1w25One", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string y1w25Two {
+            get {
+                return ResourceManager.GetString("y1w25Two", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to After the crazy hectic first week at home, most people we knew had managed to see Evan and the daily visits had died down. I had been warned in pregnancy to expect my washing machine to be busy and I am starting to see that now. On average we are doing 2 loads a day when before having Evan I&apos;d only have the washing machine on 3 times a week! I just hope my washing machine survives the extra workload as even before Evan I noticed it was starting to groan lots.  
         ///
         ///The long hard nights started this week and  [rest of string was truncated]&quot;;.

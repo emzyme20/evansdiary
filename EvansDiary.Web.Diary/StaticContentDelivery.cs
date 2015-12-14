@@ -481,6 +481,25 @@ namespace EvansDiary.Web.Diary
                         }
                     });
 
+
+            _diaryEntries
+                .Add(
+                    "2005-25",
+                    new DiaryEntry
+                    {
+                        Title = "",
+                        Tag = "25",
+                        EntryOne = md.Transform(Year2005.y1w25One),
+                        EntryTwo = md.Transform(Year2005.y1w25Two),
+                        Images = new List<IAssociatedImage>
+                        {
+                            new AssociatedImage("", ""), 
+                            new AssociatedImage("", ""), 
+                            new AssociatedImage("", ""), 
+                            new AssociatedImage("", "")
+                        }
+                    });
+
             _diaryEntries
                 .Add(
                     "2005-",
