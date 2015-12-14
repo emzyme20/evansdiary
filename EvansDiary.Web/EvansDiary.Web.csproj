@@ -199,6 +199,13 @@
     <Content Include="Content\images\carousel\image3.png" />
     <Content Include="Content\images\diary\years\2005\w0-main.jpg" />
     <Content Include="Content\images\diary\years\2005\w1-main.jpg" />
+    <Content Include="Content\images\diary\years\2005\w10-main.jpg" />
+    <Content Include="Content\images\diary\years\2005\w11-main.jpg" />
+    <Content Include="Content\images\diary\years\2005\w12-main.jpg" />
+    <Content Include="Content\images\diary\years\2005\w13-main.jpg" />
+    <Content Include="Content\images\diary\years\2005\w14-main.jpg" />
+    <Content Include="Content\images\diary\years\2005\w15-main.jpg" />
+    <Content Include="Content\images\diary\years\2005\w16-main.jpg" />
     <Content Include="Content\images\diary\years\2005\w2-main.jpg" />
     <Content Include="Content\images\diary\years\2005\w3-main.jpg" />
     <Content Include="Content\images\diary\years\2005\w4-main.jpg" />
@@ -206,6 +213,7 @@
     <Content Include="Content\images\diary\years\2005\w6-main.jpg" />
     <Content Include="Content\images\diary\years\2005\w7-main.jpg" />
     <Content Include="Content\images\diary\years\2005\w8-main.jpg" />
+    <Content Include="Content\images\diary\years\2005\w9-main.jpg" />
     <Content Include="Content\images\diary\year_1.jpg" />
     <Content Include="Content\images\diary\year_2.jpg" />
     <Content Include="Content\images\diary\year_3.jpg" />
