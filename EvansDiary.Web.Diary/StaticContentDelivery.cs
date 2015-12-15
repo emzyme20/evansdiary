@@ -60,7 +60,7 @@ namespace EvansDiary.Web.Diary
                         Images = new List<IAssociatedImage>
                         {
                             new AssociatedImage("w1_evan_peaceful_hqreul", "Caroline's first view of Evan in hospital, just a few hours old"),
-                            new AssociatedImage("w1_emmas_mum_psbo4x", "Emma's Mum with Evan"),
+                            new AssociatedImage("w1_emmas_mum_psbo4x", "Emma's mum with Evan"),
                             new AssociatedImage("w1_emma_evan_bed_s7904r", "Emma and Evan, peaceful in hospital"),
                             new AssociatedImage("w1_evans_foot_a5kkre", "What a cute footsie!")
                         }
@@ -171,7 +171,7 @@ namespace EvansDiary.Web.Diary
                             new AssociatedImage("w7_whats_this_tgq4zu", "hmmm... what's this?"),
                             new AssociatedImage("w7_cute_with_tears_lrhjcn", "So cute, even with tears!"),
                             new AssociatedImage("w7_smiling_for_nan_oyz3gu", "Yep, I can hold it Mum!"),
-                            new AssociatedImage("w7_holding_bottle_qdmcu5", "Evan smiling at Caroline's Mum")
+                            new AssociatedImage("w7_holding_bottle_qdmcu5", "Evan smiling at Caroline's mum")
                         }
                     });
 
@@ -469,16 +469,16 @@ namespace EvansDiary.Web.Diary
                     "2005-24",
                     new DiaryEntry
                     {
-                        Title = "",
+                        Title = "5th - 11th June 2005",
                         Tag = "24",
                         EntryOne = md.Transform(Year2005.y1w24One),
                         EntryTwo = md.Transform(Year2005.y1w24Two),
                         Images = new List<IAssociatedImage>
                         {
-                            new AssociatedImage("", ""),
-                            new AssociatedImage("", ""),
-                            new AssociatedImage("", ""),
-                            new AssociatedImage("", "")
+                            new AssociatedImage("", "Yes... the grass tickles my toes!"), // w24_happy_baby (main)
+                            new AssociatedImage("", "Evan sharing a big cuddle with Grandma"), // w24_big_cuddles
+                            new AssociatedImage("", "Evan with Caroline's best friend Mel"), // w24_mel
+                            new AssociatedImage("", "Evan asleep on Vicky's shoulder") // w24_vicky
                         }
                     });
 
@@ -488,13 +488,47 @@ namespace EvansDiary.Web.Diary
                     "2005-25",
                     new DiaryEntry
                     {
-                        Title = "",
+                        Title = "12th - 18th June 2005",
                         Tag = "25",
                         EntryOne = md.Transform(Year2005.y1w25One),
-                        EntryTwo = md.Transform(Year2005.y1w25Two),
                         Images = new List<IAssociatedImage>
                         {
+                            new AssociatedImage("", "Mmm tasty pushchair, it gets the 'Toes-Up' from me Mum!"), //w25_pushchair
+                            new AssociatedImage("", "Trendy boy"), //w25_trendy (main)
                             new AssociatedImage("", ""), 
+                            new AssociatedImage("", "")
+                        }
+                    });
+
+            _diaryEntries
+                .Add(
+                    "2005-26",
+                    new DiaryEntry
+                    {
+                        Title = "19th - 25th June 2005",
+                        Tag = "26",
+                        EntryOne = md.Transform(Year2005.y1w26One),
+                        EntryTwo = md.Transform(Year2005.y1w26Two),
+                        Images = new List<IAssociatedImage>
+                        {
+                            new AssociatedImage("", "It's a hard life"), //w26_zonked
+                            new AssociatedImage("", "I don't need Mummy's support"), //w26_sitting_up
+                            new AssociatedImage("", "Play time on a lazy Sunday morning"), //w26_lazy_morning (main)
+                            new AssociatedImage("", "Gimme dat ice-cream!")//w26_ice-cream
+                        }
+                    });
+
+            _diaryEntries
+                .Add(
+                    "2005-27",
+                    new DiaryEntry
+                    {
+                        Title = "26th June - 2nd July 2005",
+                        Tag = "27",
+                        EntryOne = md.Transform(Year2005.y1w27One),
+                        Images = new List<IAssociatedImage>
+                        {
+                            new AssociatedImage("", "Caroline has a hair cut - 'Bout time we had a pic of her again!"), //w27_carolines_new_hair (main)
                             new AssociatedImage("", ""), 
                             new AssociatedImage("", ""), 
                             new AssociatedImage("", "")
@@ -503,21 +537,38 @@ namespace EvansDiary.Web.Diary
 
             _diaryEntries
                 .Add(
-                    "2005-",
+                    "2005-28",
                     new DiaryEntry
                     {
-                        Title = "",
-                        Tag = "",
-                        EntryOne = md.Transform(Year2005.y1w14One),
-                        EntryTwo = md.Transform(Year2005.y1w14Two),
+                        Title = "3rd - 9th July 2005",
+                        Tag = "28",
+                        EntryOne = md.Transform(Year2005.y1w28One),
                         Images = new List<IAssociatedImage>
                         {
-                            new AssociatedImage("", ""), 
-                            new AssociatedImage("", ""), 
+                            new AssociatedImage("", "Yes! Mummy has put stuff in my hair..."), //w28_hair_style
+                            new AssociatedImage("", "Evan showing how well he sits up. He'll sit and play for ages now"), //w28_cool_dude (main)
                             new AssociatedImage("", ""), 
                             new AssociatedImage("", "")
                         }
                     });
+
+            //_diaryEntries
+            //    .Add(
+            //        "2005-",
+            //        new DiaryEntry
+            //        {
+            //            Title = "",
+            //            Tag = "",
+            //            EntryOne = md.Transform(Year2005.y1w14One),
+            //            EntryTwo = md.Transform(Year2005.y1w14Two),
+            //            Images = new List<IAssociatedImage>
+            //            {
+            //                new AssociatedImage("", ""), 
+            //                new AssociatedImage("", ""), 
+            //                new AssociatedImage("", ""), 
+            //                new AssociatedImage("", "")
+            //            }
+            //        });
         }
     }
 }

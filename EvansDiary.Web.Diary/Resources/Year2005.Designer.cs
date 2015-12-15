@@ -245,7 +245,7 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Caroline returned to University this week and we have really enjoyed having her at home over the past 5 weeks so she was missed - even though she only had to go in for 2 days. I had to cancel a visit to see Evan&apos;s Great Grandmother in Birmingham again (3rd time now) and I feel really bad as she hasn&apos;t seen him now since he was 6 weeks old.  
+        ///   Looks up a localized string similar to Caroline returned to University this week and we have really enjoyed having her at home over the past 5 weeks so she was missed - even though she only had to go in for 2 days. I had to cancel a visit to see Evan&apos;s great grandmother in Birmingham again (3rd time now) and I feel really bad as she hasn&apos;t seen him now since he was 6 weeks old.  
         ///
         ///The weather has been really nice this week and we were able to introduce Evan to grass - I think he really liked the feel of it on his bare feet. He does like it out [rest of string was truncated]&quot;;.
         /// </summary>
@@ -383,7 +383,7 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to This week we tried some new foods with Evan and also introduced breakfast. We tried Evan on sweet potato and pear, both of which he really liked. We started to do combination meals as well like carrot and sweet potato followed by pear and baby rice for dessert. I have been taken my time with new foods to make sure that Evan doesn&apos;t get overloaded with new flavours. I didn&apos;t want to try something new everyday but give Evan a couple of days to get used to a new flavour. We&apos;ve been trying to film all the new t [rest of string was truncated]&quot;;.
         /// </summary>
         public static string y1w24One {
             get {
@@ -392,7 +392,9 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to We had an exciting time this week when we took Evan swimming for the very first time! The local sports centre has a baby pool so we took him there. Emma was very anxious about the whole thing and she held him tightly and just sat in the corner of the pool. At first Evan seemed quite oblivious to the water. He just sat there in her arms chewing his fist and looking around as usual. We were quite surprised because of his antics in the bath.  
+        ///
+        ///So with a little persuasion I was able to convince Emma to let m [rest of string was truncated]&quot;;.
         /// </summary>
         public static string y1w24Two {
             get {
@@ -401,7 +403,9 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Evan saw his grandma several times this week because I really wanted to make use of my free time whilst I am off on maternity leave. I am probably going to have to return to work at the end of the year after all so I have to make sure I enjoy my time with Evan whilst we have it.  
+        ///
+        ///It felt like Evan&apos;s and my birthday all in one this week. I had plans to buy him a new stroller type buggy now that we are approaching summer as I really wanted to get a pushchair that could be front facing with Evan sitting up [rest of string was truncated]&quot;;.
         /// </summary>
         public static string y1w25One {
             get {
@@ -410,11 +414,51 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Evan is sitting up much better now and he likes to reach out to toys nearby when he is sitting up. This is a good thing because I don&apos;t have to have top class reactions times for anticipating when he is going to fall. I tried filming him alone with the camcorder this week and that was a disaster because he wanted to eat it and he was being very playful. I didn&apos;t realise how far away I was from him and when he lost his balance sitting up, he started to fall backwards. I threw out my arm but ended up grasping [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string y1w26One {
+            get {
+                return ResourceManager.GetString("y1w26One", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Over the last couple of weeks we&apos;ve been trying to establish more of a routine for Evan - regular feed times, nap times and bed time in the evening. But just lately he&apos;s really started to fuss in the evenings. I think he&apos;s got to that age where he really knows that if he screams his head off Emma comes running and I think he&apos;s playing us good!  
+        ///
+        ///At the end of last week we took him round to Emma&apos;s mums and we made the mistake of trying him out in the travel cot - boy did he throw a paddy! After that I dec [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string y1w26Two {
+            get {
+                return ResourceManager.GetString("y1w26Two", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Evan has the most adorable fluffy blonde hair and one day this week I just had the urge to put some hair wax in his hair. I tried to hide this from Caroline but she noticed as soon as I walked into the room :). &quot;What have you put in his hair you naughty Mummy!&quot; she said... He did look really cute with his hair doing a trendy scruffy look.  
+        ///
+        ///Evan is developing really well and his routine is really starting to go smoothly. He&apos;s on 3 meals a day and now only has breast feeds throughout the night when he wak [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string y1w27One {
+            get {
+                return ResourceManager.GetString("y1w27One", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This week Evan decided to throw his dinner at his mummy! I haven&apos;t bought a high chair, though we&apos;ll be going to the shops soon because Evan is outgrowing all the other chairs that we use for feeding. We&apos;ve started feeding him in his bouncer and beside the fact that he has now figured out how to bounce himself, there is also no plastic tray and he can lean forward towards me. He caught me by surprise one afternoon and this time flicked the spoon out of my hand missing him, the chair, the floor but hitting m [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string y1w28One {
+            get {
+                return ResourceManager.GetString("y1w28One", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to .
         /// </summary>
-        public static string y1w25Two {
+        public static string y1w29One {
             get {
-                return ResourceManager.GetString("y1w25Two", resourceCulture);
+                return ResourceManager.GetString("y1w29One", resourceCulture);
             }
         }
         
@@ -437,6 +481,33 @@ namespace EvansDiary.Web.Diary.Resources {
         public static string y1w2Two {
             get {
                 return ResourceManager.GetString("y1w2Two", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string y1w30One {
+            get {
+                return ResourceManager.GetString("y1w30One", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string y1w31One {
+            get {
+                return ResourceManager.GetString("y1w31One", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string y1w32One {
+            get {
+                return ResourceManager.GetString("y1w32One", resourceCulture);
             }
         }
         

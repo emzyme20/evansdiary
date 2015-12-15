@@ -19,7 +19,10 @@
         }
         @if (!Model.EntryOne.IsNullOrWhiteSpace())
         {
-            <h2 class="content-subhead">Emma's Entry</h2>
+            if (!Model.EntryTwo.IsNullOrWhiteSpace())
+            {
+                <h2 class="content-subhead">Emma's Entry</h2>
+            }
             @Html.Raw(Model.EntryOne)
 
             if (Model.EntryOneAdditionalImage != null)
