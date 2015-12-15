@@ -22,6 +22,14 @@ namespace EvansDiary.Web.ViewModels
             }
         }
 
+        public IAssociatedImage EntryOneAdditionalImage
+        {
+            get
+            {
+                return _diaryEntry.EntryOneAdditionalImage;
+            }
+        }
+
         public string EntryTwo
         {
             get

@@ -6,6 +6,8 @@ namespace EvansDiary.Interfaces
     {
         string EntryOne { get; set; }
 
+        IAssociatedImage EntryOneAdditionalImage { get; set; }
+
         string EntryTwo { get; set; }
 
         List<IAssociatedImage> Images { get; set; }

@@ -21,8 +21,17 @@
         {
             <h2 class="content-subhead">Emma's Entry</h2>
             @Html.Raw(Model.EntryOne)
+
+            if (Model.EntryOneAdditionalImage != null)
+            {
+                <div class="pure-g">
+                    <div class="pure-u-1 additional-image">
+                        <img class="pure-img-responsive" src="@Model.EntryOneAdditionalImage.GetUrl()" alt="@Model.EntryOneAdditionalImage.Caption">
+                    </div>
+                </div>
+            }
         }
-        
+
         <div class="pure-g">
             <div class="pure-u-1-2 pure-u-md-1-4">
                 <img class="pure-img-responsive" src="@imageOne.GetUrl()" alt="@imageOne.Caption">

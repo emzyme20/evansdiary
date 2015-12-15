@@ -223,7 +223,9 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to This week was the first week that we didn&apos;t see a gain in Evan&apos;s weight. In fact he had actually lost 4 ounces when I weighed him. I spoke to the Health Visitor at the clinic and she said that they don&apos;t like to see a drop in weight but Evan looked really healthy so they would just see how he was when I go to weight him next week.  
+        ///
+        ///This week at the Mother and Baby group they introduced us to Baby Yoga! It was quite fun and Evan seemed to enjoy it at first but then he got hungry and demanded boob halfway [rest of string was truncated]&quot;;.
         /// </summary>
         public static string y1w17One {
             get {
@@ -232,7 +234,9 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to After having spent _**weeks**_ painting Evan&apos;s room while Emma was pregnant Evan finally got to experience it for himself this week! Up until now he had only slept either in the bed with Emma or had little naps in the pram and had never been in his cot!  
+        ///
+        ///But the time and money has paid off as he seems to like his room and his cot. Some days are better than others of course and there are days when he just screams when we try to put him down to sleep and he can&apos;t calm himself down but most of the time he  [rest of string was truncated]&quot;;.
         /// </summary>
         public static string y1w17Two {
             get {
@@ -241,7 +245,9 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Caroline returned to University this week and we have really enjoyed having her at home over the past 5 weeks so she was missed - even though she only had to go in for 2 days. I had to cancel a visit to see Evan&apos;s Great Grandmother in Birmingham again (3rd time now) and I feel really bad as she hasn&apos;t seen him now since he was 6 weeks old.  
+        ///
+        ///The weather has been really nice this week and we were able to introduce Evan to grass - I think he really liked the feel of it on his bare feet. He does like it out [rest of string was truncated]&quot;;.
         /// </summary>
         public static string y1w18One {
             get {
@@ -250,7 +256,9 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to It&apos;s nice to watch babies grow and develop and learn new things. I remember when Evan was first born and everyone was always saying &quot;Hold his head!&quot; but even then he could lift his head up a little. Now he has far better neck control - around 90% I&apos;d say.  
+        ///
+        ///Both of us tend to carry him in a similar position - in one arm facing in with his head looking back over our shoulder. I&apos;m left-armed and Emma is right-armed but other than that it&apos;s pretty similar. What we were always finding is that his neck was st [rest of string was truncated]&quot;;.
         /// </summary>
         public static string y1w18Two {
             get {
@@ -259,7 +267,9 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Evan was Mr Cool Dude this week :). We had some lovely weather and seeing as it was a bank holiday and the shops would be busy we decided to walk to Mothercare. We both sneezed quite a bit on the way so I do hope he is not going to inherit my hayfever allergies... We borrowed some hats from our friend Sue but Evan has outgrown them already so I decided to splash out on some new hats for my cutie pie and to help with his light sensitivity we have bought him some Baby Banz sunglasses - they look fab!  
+        ///
+        ///Eva [rest of string was truncated]&quot;;.
         /// </summary>
         public static string y1w19One {
             get {
@@ -268,7 +278,7 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Last week I was saying how much better Evan&apos;s neck control is and how he hardly ever lets his head flop down onto us now. Well, he likes to prove me wrong! Evan is a pukey boy - he really could puke for England in the World Puking Olympics if there was such a thing! This week he was up on Emma&apos;s shoulder after a feed and she was giving him his usual pat on the back to wind him when out blurted a couple of gallons of puke! That&apos;s not the best part though - he then plopped his face right down into it! It cove [rest of string was truncated]&quot;;.
         /// </summary>
         public static string y1w19Two {
             get {
@@ -295,7 +305,9 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Evan and I attended a new group this week called Twinkles. We have outgrown the new mums group and over the past few weeks the health visitors have been hinting that we might scare off new mums because we all know each other. This new group is for babies and toddlers and it was really busy so at least I know Evan will get the contact with other children that he needs.  
+        ///
+        ///I still went to the new mums group to attend the weigh in and will probably do so until after I start weaning as I want to ensure that E [rest of string was truncated]&quot;;.
         /// </summary>
         public static string y1w20One {
             get {
@@ -304,7 +316,9 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Evan is getting better and sitting up and not only that but he&apos;s starting to stand up too. Of course we have to hold him so he doesn&apos;t fall over but he holds himself up on his legs and straightens out his whole body. Sometimes he&apos;ll even lift a foot as though he&apos;s going to take a step but I think we&apos;re a way off that stage yet...  
+        ///
+        ///Over the last couple of weeks we&apos;ve been changing Evan&apos;s routine a little bit. We&apos;re trying to get him used to a more regular bed time and being in his cot. One of Emma&apos;s frie [rest of string was truncated]&quot;;.
         /// </summary>
         public static string y1w20Two {
             get {
@@ -313,7 +327,7 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to I have started to notice these little patches of dry skin appearing on Evan&apos;s body. We managed to get rid of one that he has had for months on his shoulder by applying Sudocrem at every nappy change. However, this little persistent one on the head just refuses to go away so this week I decided to take him to the Doctors to find out what it was as I didn&apos;t want it to be on all his baby photos! Our GP thinks Evan may have a mild form of baby eczema so she has given me a prescription for some Canesten cream -  [rest of string was truncated]&quot;;.
         /// </summary>
         public static string y1w21One {
             get {
@@ -322,7 +336,7 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Evan made a new discovery this week - one I was hoping he wouldn&apos;t make for a little while longer yet - yup, he found his willy!! He&apos;s been getting more adventurous with his hands of late and he can lift his legs right up which tips his pelvis upwards too. He was playing in the bath and suddenly I heard this little scream from Emma - &quot;Oh No, he&apos;s got his willy!!!!&quot;. I came running in to have a look and sure enough there he was giving it a good old tug! Looked rather painful to me but what would I know about [rest of string was truncated]&quot;;.
         /// </summary>
         public static string y1w21Two {
             get {
@@ -331,7 +345,7 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to We had a lot of new events this week with Evan. He is now exploring further south and now likes to grab his feet and chatter to himself—I&apos;m not sure if he actually knows that it&apos;s himself grabbing those little tootsies. Our evening routine is ticking along nicely and Evan has started falling asleep whilst I read him his bed time story, it must be all the frantic kicking and splashing that has worn him out from his bath earlier. He seems to know whenever his nappy is off now and we had an incident earlier wh [rest of string was truncated]&quot;;.
         /// </summary>
         public static string y1w22One {
             get {
@@ -340,7 +354,7 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Earlier this week we had some scorching hot weather and one evening we were sitting in the lounge and Evan was getting so hot that we decided to just strip him off and let him have some nekkid time. There&apos;s just something so scrumptious about a naked baby! We had the patio door open and there was a light breeze so (much to Emma&apos;s disapproval) I took him outside to play in the garden. &quot;Oh he&apos;ll get grass up his bum!!&quot;, she moaned but Evan didn&apos;t seem to mind one bit. He loved it and two of the cats came out  [rest of string was truncated]&quot;;.
         /// </summary>
         public static string y1w22Two {
             get {
@@ -349,7 +363,7 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to I was very nervous about the idea of weaning Evan and my original plans were to return to work in the summer and Caroline would look after Evan instead. That would have been perfect because Caroline being the cook could prepare all his foods. Now that my plans are different I then realised that I would be around at weaning time and I am actually very glad I didn&apos;t miss this momentous period in Evans development. I actually look forward to feed time and when we get to try him on new foods. I decided to prepa [rest of string was truncated]&quot;;.
         /// </summary>
         public static string y1w23One {
             get {
@@ -358,7 +372,9 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to The weaning continues... we&apos;ve introduced two new foods this week - carrot and banana. No, not at the same time! We tried the banana first and that probably wasn&apos;t the best option as it was really difficult to mash properly! It got all lumpy and kinda slimy and this proved quite a problem. Every time we gave him a mouthful that was a bit too lumpy he&apos;d pull thus funny face, make a kind of gagging noise and poke his tongue out. Highly amusing I thought.  
+        ///
+        ///We thought the banana was tricky; nothing compared [rest of string was truncated]&quot;;.
         /// </summary>
         public static string y1w23Two {
             get {
