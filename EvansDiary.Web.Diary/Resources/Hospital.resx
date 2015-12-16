@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="DayOne" xml:space="preserve">
+    <value>I seem to remember having a niggling tummy ache in the morning but this all stated at lunchtime. I groaned to Emma about having a rough tummy complaining that I really wasn't due on yet but didn't think much of it. My usual routine with period pain is to make myself a hot water bottle and curl up with a cup of coffee and that's exactly what I did. I made a coffee and grabbed myself and kitkat and took it upstairs. I had a feeling this was gonna be a bitch of a period so I changed out of my jeans into my trackie bottoms (wise move) and then came back down to make myself a hot water bottle.  
+
+#The Collapse 
+
+Something happened right there, I felt immediately faint and the pain was most unusual. I just had to go lie down. As every minute passed the pain worsened - it was like a period pain but way way way worse. Emma came in and looked at me and said she was just about to feed Evan. I stayed there for around 20 minutes or so with Emma popping in every now and then to make sure my groans were not of me dying.  During that time I decided that this seemed too intense for period pain so I shouted to Emma that I wanted to go to hospital. "For period pain??" she asked?  
+
+I think she thought I was being a drama queen; she didn't want to go and of course it took time as she had to finish his feed, change his nappy, get his bag ready... Meanwhile I felt like I was suffocating and I had to get some air so I tried hobbling my way outside. I made it as far as the stairs before being overwhelmed with nausea. "You wanna be sick in this?", said Emma holding up the mop bucket! "Mrphf" I think was my response followed by the lunch I had just eaten. The puking made us both realise that I was not putting this on. I got into the car and we made our way to A&amp;E.  
+
+#A&amp;E 
+
+I felt dazed, as though my energy was being drained away from me. When we got there I told Emma that there was no way I was going to be able to walk in. Poor love, she had to get me a wheelchair as well as try to push Evan! She got me signed in and came to sit with me. I could feel my head just flopping. I remember her saying that we were probably going to have to wait about three hours. I honestly didn't care at that point - I felt like I was just going to collapse out of my chair, in fact, the pain was so bad that I was actually hoping I would pass out.  
+
+I don't think we had to wait long at all, and Emma wheeled me in to see the nurse. I told her about the pain and I don't really know what happened next but I was being wheeled through into the ward area of A&amp;E. Those good folks gave me a good dose of morphine which finally gave me some relief from the pain. We were there for ages, Emma was being great trying to keep Evan amused as he gradually got more bored and tired. He eventually fell asleep in the pushchair, cutie. I was examined a few times and it was decided that I probably had a bowel problem and I was admitted to Ward 8 - the Surgery ward.  
+
+#The Surgery Ward
+
+I was given more morphine here and I really started to feel better. This ward was a little disconcerting through as I was opposite a little waiting area. There was a man here who was storming around getting stroppy with the doctors - "I'm in agony here!" he exclaimed as he walked around the room! Idiot, I'll show him agony I thought to myself... What is it with people like that? There was also a girl in a bed near me who was complaining of a suspected appendicitis. The doctor did not think that was the case and after he left her friends were telling her that she should have screamed when he pulled the pressure away and not on the downward stroke! Now in fact that is the true indication of appendicitis but if you don't have it why on earth would you try to pretend you do?? Jeez...  
+
+I was examined by three different doctors in here including an anal exam by a man! Oh joy! The doctors there concluded that it was more likely that I was suffering from a gynaecological problem which may be related to my endometriosis and so they transferred me to Ward 20. Made sense to me.  
+
+#The Gynaecological Ward
+
+So off on another trolly ride - it was really late at night by now and Emma had gone home to relieve our neighbour who was able to look after Evan at such short notice earlier in the evening. The morphine had kicked in so I was feeling much more comfortable. I had a whole new team of doctors come and poke my belly. I remember the registrar Dr Kroone (nice lady) saying that usually any operations would be done in the mornings but that they were going to discuss whether or not theatre would be necessary that night. I could hear them discussing me at length. One of the doctors said that I was not in much pain now so obviously the problem had gone away. Dr Kroone insisted that my tummy felt and sounded exactly as it had all evening and that the morphine was simply relieving my symptoms. At 3am I was taken to theatre to go check it out. I wasn't nervous as I've had several operations before and I felt a little relieved as I felt sure that I had cyst trouble. The end of a very long day.  
+
+The people on this ward kept Emma well informed of what was happening. She accepted the offer of phone calls at any hour and they obliged this night by phoning at 1am, 3am and 7am - coupled with Evan waking Emma up at 5am, this reminded Emma of the sleepless nights she had with a new born baby only 6 months ago.</value>
+  </data>
+  <data name="DayTwo" xml:space="preserve">
+    <value>#Post-Op
+
+I was returned to the ward at 7am. I don't remember much this day, I was asleep most of the day and I can't really remember Emma and Evan being there just about all day.  
+
+Usually the first few hours post-op are groggy but patients slowly recover during the day and are sometimes sitting up or even moving around by the end of the day. Emma says she knew I wasn't getting better and was really worried about me when she went home. _She called my mother for support and that in turn brought forward my mum's visit from Sunday to Saturday (the next day). Emma had obviously said something that had really scared my mother too._</value>
+  </data>
+</root>

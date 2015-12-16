@@ -17,6 +17,7 @@ namespace EvansDiary.Web.Bootstrap
             var container = new Container();
 
             container.RegisterSingleton<IStaticContentDelivery, StaticContentDelivery>();
+            container.RegisterSingleton<IStaticHospitalContentDelivery, StaticHospitalContentDelivery>();
 
             ConfigureContainerIntegration(container);
 

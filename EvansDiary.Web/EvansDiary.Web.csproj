@@ -177,6 +177,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Bootstrap\Bootstrap.cs" />
+    <Compile Include="Controllers\HospitalController.cs" />
     <Compile Include="Controllers\DiaryController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
@@ -186,6 +187,7 @@
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="ViewModels\HospitalDiaryEntryViewModel.cs" />
     <Compile Include="ViewModels\DiaryEntryViewModel.cs" />
     <Compile Include="ViewModels\YearViewModel.cs" />
   </ItemGroup>
@@ -337,6 +339,7 @@
     <Content Include="Views\Diary\_Monthly.cshtml" />
     <Content Include="Views\Diary\Week.cshtml" />
     <Content Include="Views\Diary\Month.cshtml" />
+    <Content Include="Views\Hospital\Day.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

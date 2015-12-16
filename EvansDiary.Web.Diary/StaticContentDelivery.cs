@@ -206,7 +206,7 @@ namespace EvansDiary.Web.Diary
                         {
                             new AssociatedImage("w9_getting_stronger_uktkk6", "Getting stronger"),
                             new AssociatedImage("w9_peekaboo_dx59ff", "Peek-a-boo"),
-                            new AssociatedImage("w9_hello_billy_wcbpep", "Hello Billy, my name's Evan!"), 
+                            new AssociatedImage("w9_hello_billy_wcbpep", "Hello Billy, my name's Evan!"),
                             new AssociatedImage("w9_all_smiles_mtztcb", "All smiles")
                         }
                     });
@@ -300,7 +300,7 @@ namespace EvansDiary.Web.Diary
                             new AssociatedImage("w14_hide_seek_hcspuy", "Pillow Den")
                         }
                     });
-            
+
             _diaryEntries
                 .Add(
                     "2005-15",
@@ -314,7 +314,7 @@ namespace EvansDiary.Web.Diary
                         {
                             new AssociatedImage("w15_sleeping_beauty_hhqwdv", "Sleeping Beauty?"),
                             new AssociatedImage("w15_splish_splash_xrayyn", "Splish! Splash!"),
-                            new AssociatedImage("w15_teddies_vgopcb", "Teddy zone"), 
+                            new AssociatedImage("w15_teddies_vgopcb", "Teddy zone"),
                             new AssociatedImage("w15_baby_hidden_jsbymt", "There's a baby in there")
                         }
                     });
@@ -331,7 +331,7 @@ namespace EvansDiary.Web.Diary
                         Images = new List<IAssociatedImage>
                         {
                             new AssociatedImage("w16_sunday_best_u9gro7", "Evan looking all smart"),
-                            new AssociatedImage("w16_grandmas_swing_r2pd47", "I still like my swing Grandma"), 
+                            new AssociatedImage("w16_grandmas_swing_r2pd47", "I still like my swing Grandma"),
                             new AssociatedImage("w16_commando_iucohe", "Practicing for the Commandos!"),
                             new AssociatedImage("w16_best_seller_sgifxh", "Reading the latest best seller")
                         }
@@ -349,7 +349,7 @@ namespace EvansDiary.Web.Diary
                         Images = new List<IAssociatedImage>
                         {
                             new AssociatedImage("", "Evan watching Dillon Donkey"), //w12_look_dillon
-                            new AssociatedImage("", ""), 
+                            new AssociatedImage("", ""),
                             new AssociatedImage("", "Evan didn't like his cot at first..."), // w17_cot_cry
                             new AssociatedImage("", "... but he likes his cot now :)") // w17_zonko (main)
                         }
@@ -367,7 +367,7 @@ namespace EvansDiary.Web.Diary
                         Images = new List<IAssociatedImage>
                         {
                             new AssociatedImage("", "Evan with his curious expression"), // w18_ooh_whassat
-                            new AssociatedImage("", ""), 
+                            new AssociatedImage("", ""),
                             new AssociatedImage("", "Sitting on the grass with Mummy"), // w18_sitting_grass (main)
                             new AssociatedImage("", "")
                         }
@@ -385,7 +385,7 @@ namespace EvansDiary.Web.Diary
                         Images = new List<IAssociatedImage>
                         {
                             new AssociatedImage("", "Evan in his cool new shades"), //w19_baby_banz
-                            new AssociatedImage("", ""), 
+                            new AssociatedImage("", ""),
                             new AssociatedImage("", "Story time :)"), // w19_book (main)
                             new AssociatedImage("", "")
                         }
@@ -463,7 +463,7 @@ namespace EvansDiary.Web.Diary
                             new AssociatedImage("", "Quiet please, I'm concentrating!") // w23_computer (main)
                         }
                     });
-            
+
             _diaryEntries
                 .Add(
                     "2005-24",
@@ -495,7 +495,7 @@ namespace EvansDiary.Web.Diary
                         {
                             new AssociatedImage("", "Mmm tasty pushchair, it gets the 'Toes-Up' from me Mum!"), //w25_pushchair
                             new AssociatedImage("", "Trendy boy"), //w25_trendy (main)
-                            new AssociatedImage("", ""), 
+                            new AssociatedImage("", ""),
                             new AssociatedImage("", "")
                         }
                     });
@@ -514,7 +514,7 @@ namespace EvansDiary.Web.Diary
                             new AssociatedImage("", "It's a hard life"), //w26_zonked
                             new AssociatedImage("", "I don't need Mummy's support"), //w26_sitting_up
                             new AssociatedImage("", "Play time on a lazy Sunday morning"), //w26_lazy_morning (main)
-                            new AssociatedImage("", "Gimme dat ice-cream!")//w26_ice-cream
+                            new AssociatedImage("", "Gimme dat ice-cream!") //w26_ice-cream
                         }
                     });
 
@@ -529,8 +529,8 @@ namespace EvansDiary.Web.Diary
                         Images = new List<IAssociatedImage>
                         {
                             new AssociatedImage("", "Caroline has a hair cut - 'Bout time we had a pic of her again!"), //w27_carolines_new_hair (main)
-                            new AssociatedImage("", ""), 
-                            new AssociatedImage("", ""), 
+                            new AssociatedImage("", ""),
+                            new AssociatedImage("", ""),
                             new AssociatedImage("", "")
                         }
                     });
@@ -547,10 +547,118 @@ namespace EvansDiary.Web.Diary
                         {
                             new AssociatedImage("", "Yes! Mummy has put stuff in my hair..."), //w28_hair_style
                             new AssociatedImage("", "Evan showing how well he sits up. He'll sit and play for ages now"), //w28_cool_dude (main)
-                            new AssociatedImage("", ""), 
+                            new AssociatedImage("", ""),
                             new AssociatedImage("", "")
                         }
                     });
+
+            _diaryEntries
+                .Add(
+                    "2005-29",
+                    new DiaryEntry
+                    {
+                        Title = "10th - 16th July 2005",
+                        Tag = "29",
+                        EntryOne = md.Transform(Year2005.y1w29One),
+                        EntryTwo = md.Transform(Year2005.y1w29Two),
+                        Images = new List<IAssociatedImage>
+                        {
+                            new AssociatedImage("", "Amidst all the horror - Evan enjoys the heat wave"), //w29_heat_wave
+                            new AssociatedImage("", "Evan enjoying his new big boy toys"), //w29_new_toys
+                            new AssociatedImage("", "Any resemblance?"), //w29_any_resemblance
+                            new AssociatedImage("", "")
+                        }
+                    });
+
+            //_diaryEntries
+            //    .Add(
+            //        "2005-",
+            //        new DiaryEntry
+            //        {
+            //            Title = "",
+            //            Tag = "",
+            //            EntryOne = md.Transform(Year2005.y1w14One),
+            //            EntryTwo = md.Transform(Year2005.y1w14Two),
+            //            Images = new List<IAssociatedImage>
+            //            {
+            //                new AssociatedImage("", ""), 
+            //                new AssociatedImage("", ""), 
+            //                new AssociatedImage("", ""), 
+            //                new AssociatedImage("", "")
+            //            }
+            //        });
+
+            //_diaryEntries
+            //    .Add(
+            //        "2005-",
+            //        new DiaryEntry
+            //        {
+            //            Title = "",
+            //            Tag = "",
+            //            EntryOne = md.Transform(Year2005.y1w14One),
+            //            EntryTwo = md.Transform(Year2005.y1w14Two),
+            //            Images = new List<IAssociatedImage>
+            //            {
+            //                new AssociatedImage("", ""), 
+            //                new AssociatedImage("", ""), 
+            //                new AssociatedImage("", ""), 
+            //                new AssociatedImage("", "")
+            //            }
+            //        });
+
+            //_diaryEntries
+            //    .Add(
+            //        "2005-",
+            //        new DiaryEntry
+            //        {
+            //            Title = "",
+            //            Tag = "",
+            //            EntryOne = md.Transform(Year2005.y1w14One),
+            //            EntryTwo = md.Transform(Year2005.y1w14Two),
+            //            Images = new List<IAssociatedImage>
+            //            {
+            //                new AssociatedImage("", ""), 
+            //                new AssociatedImage("", ""), 
+            //                new AssociatedImage("", ""), 
+            //                new AssociatedImage("", "")
+            //            }
+            //        });
+
+            //_diaryEntries
+            //    .Add(
+            //        "2005-",
+            //        new DiaryEntry
+            //        {
+            //            Title = "",
+            //            Tag = "",
+            //            EntryOne = md.Transform(Year2005.y1w14One),
+            //            EntryTwo = md.Transform(Year2005.y1w14Two),
+            //            Images = new List<IAssociatedImage>
+            //            {
+            //                new AssociatedImage("", ""), 
+            //                new AssociatedImage("", ""), 
+            //                new AssociatedImage("", ""), 
+            //                new AssociatedImage("", "")
+            //            }
+            //        });
+
+            //_diaryEntries
+            //    .Add(
+            //        "2005-",
+            //        new DiaryEntry
+            //        {
+            //            Title = "",
+            //            Tag = "",
+            //            EntryOne = md.Transform(Year2005.y1w14One),
+            //            EntryTwo = md.Transform(Year2005.y1w14Two),
+            //            Images = new List<IAssociatedImage>
+            //            {
+            //                new AssociatedImage("", ""), 
+            //                new AssociatedImage("", ""), 
+            //                new AssociatedImage("", ""), 
+            //                new AssociatedImage("", "")
+            //            }
+            //        });
 
             //_diaryEntries
             //    .Add(

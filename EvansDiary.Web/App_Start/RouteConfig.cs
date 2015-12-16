@@ -12,27 +12,32 @@ namespace EvansDiary.Web
             routes.MapRoute(
                 "Diary",
                 "diary",
-                new { controller = "Diary", action = "Index", id = UrlParameter.Optional });
+                new { controller = "Diary", action = "Index" });
 
             routes.MapRoute(
                 "Years",
                 "diary/year/{year}",
-                new { controller = "Diary", action = "Year", id = UrlParameter.Optional });
+                new { controller = "Diary", action = "Year" });
 
             routes.MapRoute(
                 "Weeks",
                 "diary/year/{year}/week/{week}",
-                new { controller = "Diary", action = "Week", id = UrlParameter.Optional });
+                new { controller = "Diary", action = "Week" });
 
             routes.MapRoute(
                 "Months",
                 "diary/year/{year}/{month}",
-                new { controller = "Diary", action = "Month", id = UrlParameter.Optional });
+                new { controller = "Diary", action = "Month" });
 
             routes.MapRoute(
-                name: "Default",
-                url: "",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional });
+                "Hospital-Diary",
+                "hospital/day/{day}",
+                new { controller = "Hospital", action = "Day" });
+
+            routes.MapRoute(
+                "Home",
+                "",
+                new { controller = "Home", action = "Index" });
         }
     }
 }

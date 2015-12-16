@@ -44,16 +44,28 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\Hospital.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Hospital.resx</DependentUpon>
+    </Compile>
     <Compile Include="Resources\Year2005.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Year2005.resx</DependentUpon>
     </Compile>
     <Compile Include="StaticContentDelivery.cs" />
+    <Compile Include="StaticHospitalContentDelivery.cs" />
     <Compile Include="TransferObjects\AssociatedImage.cs" />
     <Compile Include="TransferObjects\DiaryEntry.cs" />
+    <Compile Include="TransferObjects\HospitalEntry.cs" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Resources\Hospital.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Hospital.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Resources\Year2005.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>

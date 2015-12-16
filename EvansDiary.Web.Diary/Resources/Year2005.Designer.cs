@@ -454,11 +454,22 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to This was a weird week and one I found hard to cope with. Not having Caroline around was horrible and Evan and I missed her dearly. My family and friends were brilliant this week helping with Evan so that I could sit vigil beside Caroline&apos;s bed in hospital. She was moved into intensive care this week and it meant that no children were allowed at all, so I couldn&apos;t even take Evan in with me if I was stuck for a baby sitter. I felt terrible leaving Evan for hours on end but I needed to be with Caroline for whe [rest of string was truncated]&quot;;.
         /// </summary>
         public static string y1w29One {
             get {
                 return ResourceManager.GetString("y1w29One", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to I think I can confidently say that I have just experienced the worst week of my entire life. As Emma mentioned, I had to go into hospital, for my own benefit I&apos;ve started writing a hospital diary which can be seen [here](../../../../hospital/day/1) if interested.  
+        ///
+        ///I must admit that I&apos;ve been probably less than helpful with Evan so far over the past six months. I&apos;ve thrown myself into my University work and pretty much let Emma do all the _mum_ stuff. A few feeds and changes has been about the basis of m [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string y1w29Two {
+            get {
+                return ResourceManager.GetString("y1w29Two", resourceCulture);
             }
         }
         
