@@ -570,6 +570,127 @@ namespace EvansDiary.Web.Diary
                         }
                     });
 
+            _diaryEntries
+                .Add(
+                    "2005-30",
+                    new DiaryEntry
+                    {
+                        Title = "17th - 23rd July 2005",
+                        Tag = "30",
+                        EntryOne = md.Transform(Year2005.y1w30One),
+                        EntryTwo = md.Transform(Year2005.y1w30Two),
+                        Images = new List<IAssociatedImage>
+                        {
+                            new AssociatedImage("", "hmmm... definitely room to grow"), //w30_high_chair
+                            new AssociatedImage("", "Evan getting psyched up for the collapse"), //w30_stacking_cups (main)
+                            new AssociatedImage("", ""), 
+                            new AssociatedImage("", "")
+                        }
+                    });
+
+            _diaryEntries
+                .Add(
+                    "2005-31",
+                    new DiaryEntry
+                    {
+                        Title = "24th - 30th July 2005",
+                        Tag = "31",
+                        EntryOne = md.Transform(Year2005.y1w31One),
+                        Images = new List<IAssociatedImage>
+                        {
+                            new AssociatedImage("", "I show my affection to mummy with lots of dribble"), //w31_i_love_mummy (main)
+                            new AssociatedImage("", "eep! here they come!"), //w31_all_fall_down
+                            new AssociatedImage("", ""), 
+                            new AssociatedImage("", "")
+                        }
+                    });
+
+            _diaryEntries
+                .Add(
+                    "2005-32",
+                    new DiaryEntry
+                    {
+                        Title = "31st July - 6th August 2005",
+                        Tag = "32",
+                        EntryOne = md.Transform(Year2005.y1w32One),
+                        Images = new List<IAssociatedImage>
+                        {
+                            new AssociatedImage("", "Evan is self-sufficient when it comes to the bottle"), //w32_bottle_feed (main)
+                            new AssociatedImage("", "So... is this team any good Mum?"), //w32_team_mascot
+                            new AssociatedImage("", ""), 
+                            new AssociatedImage("", "")
+                        }
+                    });
+
+            _diaryEntries
+                .Add(
+                    "2005-33",
+                    new DiaryEntry
+                    {
+                        Title = "7th - 13th August 2005",
+                        Tag = "33",
+                        EntryOne = md.Transform(Year2005.y1w33One),
+                        Images = new List<IAssociatedImage>
+                        {
+                            new AssociatedImage("", "Evan enjoying a fun afternoon with his friends"), //w33_evan_and_friends
+                            new AssociatedImage("", "Evan having a good suck on his first ever piece of toast"), //w33_sucking_toast (main)
+                            new AssociatedImage("", ""), 
+                            new AssociatedImage("", "")
+                        }
+                    });
+
+            _diaryEntries
+                .Add(
+                    "2005-34",
+                    new DiaryEntry
+                    {
+                        Title = "14th - 20th August 2005",
+                        Tag = "34",
+                        EntryOne = md.Transform(Year2005.y1w34One),
+                        Images = new List<IAssociatedImage>
+                        {
+                            new AssociatedImage("", "Evan is eyeing up the camera for dinner"), //w34_cheeky_chappy (main)
+                            new AssociatedImage("", ""), 
+                            new AssociatedImage("", ""), 
+                            new AssociatedImage("", "")
+                        }
+                    });
+
+            _diaryEntries
+                .Add(
+                    "2005-35",
+                    new DiaryEntry
+                    {
+                        Title = "21st - 27th August 2005",
+                        Tag = "35",
+                        EntryOne = md.Transform(Year2005.y1w35One),
+                        Images = new List<IAssociatedImage>
+                        {
+                            new AssociatedImage("", "Evan posing for the camera, or is he eyeing up a sleeping cat?"), //w35_professional_pose
+                            new AssociatedImage("", "Evan showing an increasing desire to grab the camera"), //w35_nice_n_clean (main)
+                            new AssociatedImage("", ""), 
+                            new AssociatedImage("", "")
+                        }
+                    });
+
+            //_diaryEntries
+            //    .Add(
+            //        "2005-",
+            //        new DiaryEntry
+            //        {
+            //            Title = "",
+            //            Tag = "",
+            //            EntryOne = md.Transform(Year2005.y1w14One),
+            //            EntryTwo = md.Transform(Year2005.y1w14Two),
+            //            Images = new List<IAssociatedImage>
+            //            {
+            //                new AssociatedImage("", ""), 
+            //                new AssociatedImage("", ""), 
+            //                new AssociatedImage("", ""), 
+            //                new AssociatedImage("", "")
+            //            }
+            //        });
+
             //_diaryEntries
             //    .Add(
             //        "2005-",

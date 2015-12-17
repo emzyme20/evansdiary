@@ -496,7 +496,9 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Evan&apos;s highchair arrived this week and we started feeding him in that, safely strapped in and no chance of bouncing around and making himself sick :). He really liked it though and he loves it when the cats hang around at our feet thinking it&apos;s feeding time for them also.  
+        ///
+        ///We had a projectile puking incident this week! I&apos;d just finished giving Evan his bottle and he must have had some trapped air or something like that because the moment I sat him upright on my knee to be winded, he just brought up a co [rest of string was truncated]&quot;;.
         /// </summary>
         public static string y1w30One {
             get {
@@ -505,7 +507,16 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to This has been a strange week for me as it was my first week at home out of hospital. As I have been so incapacitated Emma has had to do everything with Evan and around the house - I can&apos;t even do nappy changes as leaning forward hurts too much. I missed Evan in hospital and he changed quite a lot in those two weeks but because I can barely interact with him even now I feel a bit disconnected. Aside from the physical pain, I have also felt drained of energy and haven&apos;t had the energy to pull silly faces at h [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string y1w30Two {
+            get {
+                return ResourceManager.GetString("y1w30Two", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to I did my last morning boob feed last Wednesday (20th July) and I am really starting to notice them drying up. I am expecting it to take roughly 2 weeks. At the moment it is very strange and uncomfortable at times. The boob that had the last feed is coping a lot better than the one that was not relieved... As the ducts dry up, it makes your boob look really weird instead of having engorgement all over, you tend to find that just parts of the boob are engorged. Evan seems to really like to grab at my boobs so [rest of string was truncated]&quot;;.
         /// </summary>
         public static string y1w31One {
             get {
@@ -514,11 +525,76 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to This was another stressful, hectic week. We had our anniversary and enjoyed a lovely meal at a Chinese restaurant in the Village near to where my mum lives so that she could baby sit for us. It was a successful evening and Evan slept ok in his travel cot.  
+        ///
+        ///Our week then deviated from normality. Caroline attended a nurses appointment for a scheduled dressing change on her surgery wound only to find out that she needed to return to hospital for some antibiotics as the wound had become infected. It was not [rest of string was truncated]&quot;;.
         /// </summary>
         public static string y1w32One {
             get {
                 return ResourceManager.GetString("y1w32One", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Evan had an afternoon at his friend Alex&apos;s house this week. He also had the pleasure of spending time with Megan as she had travelled all the way from Bath to visit family and friends. It&apos;s lovely to see babies playing together and they absolutely adore other babies. Megan and Alex are both crawling and Evan was quite content with his little bum shuffle, and didn&apos;t mind it when Alex crawled all over him - it actually made him giggle! I think Evan will do fine at nursery when he starts next month, though he  [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string y1w33One {
+            get {
+                return ResourceManager.GetString("y1w33One", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Caroline came home from hospital at the start of this week and hopefully that&apos;s the end of this nightmare. Whilst in hospital Caroline was able to rest and her surgical wounds are now looking so much better. Caroline had bought some special cream that you can rub into scars that will hopefully soften them and make them fade. She bought from the US and so to make the shipping a one off, she bought 5 tubes of it, unfortunately for her she has shown an allergic reaction to the cream. Waste not want not - I&apos;ve  [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string y1w34One {
+            get {
+                return ResourceManager.GetString("y1w34One", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to I think Evan has lost that natural swimming reflex that he had when he was younger and we unfortunately haven&apos;t been able to take him swimming as much as we had liked over the summer period. When we first took him swimming a few months ago, if you went into the water with him lying on your hand belly down, he would flap his arms and legs in this swimming reflex. He doesn&apos;t do this anymore when we take him. He was a little subdued this week in the swimming pool and just wanted to cuddle me and grab the lane  [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string y1w35One {
+            get {
+                return ResourceManager.GetString("y1w35One", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string y1w36One {
+            get {
+                return ResourceManager.GetString("y1w36One", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string y1w37One {
+            get {
+                return ResourceManager.GetString("y1w37One", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string y1w38One {
+            get {
+                return ResourceManager.GetString("y1w38One", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string y1w39One {
+            get {
+                return ResourceManager.GetString("y1w39One", resourceCulture);
             }
         }
         
@@ -539,6 +615,33 @@ namespace EvansDiary.Web.Diary.Resources {
         public static string y1w3Two {
             get {
                 return ResourceManager.GetString("y1w3Two", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string y1w40One {
+            get {
+                return ResourceManager.GetString("y1w40One", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string y1w41One {
+            get {
+                return ResourceManager.GetString("y1w41One", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string y1w42One {
+            get {
+                return ResourceManager.GetString("y1w42One", resourceCulture);
             }
         }
         
