@@ -336,7 +336,7 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Evan made a new discovery this week - one I was hoping he wouldn&apos;t make for a little while longer yet - yup, he found his willy!! He&apos;s been getting more adventurous with his hands of late and he can lift his legs right up which tips his pelvis upwards too. He was playing in the bath and suddenly I heard this little scream from Emma - &quot;Oh No, he&apos;s got his willy!!!!&quot;. I came running in to have a look and sure enough there he was giving it a good old tug! Looked rather painful to me but what would I know about [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to Evan made a new discovery this week - one I was hoping he wouldn&apos;t make for a little while longer yet - yup, he found his willy!! He&apos;s been getting more adventurous with his hands of late and he can lift his legs right up which tips his pelvis upwards too. He was playing in the bath and suddenly I heard this little scream from Emma - *&quot;Oh No, he&apos;s got his willy!!!!&quot;*. I came running in to have a look and sure enough there he was giving it a good old tug! Looked rather painful to me but what would I know abo [rest of string was truncated]&quot;;.
         /// </summary>
         public static string y1w21Two {
             get {

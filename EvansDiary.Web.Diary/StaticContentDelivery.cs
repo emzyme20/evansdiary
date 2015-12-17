@@ -348,10 +348,10 @@ namespace EvansDiary.Web.Diary
                         EntryTwo = md.Transform(Year2005.y1w17Two),
                         Images = new List<IAssociatedImage>
                         {
-                            new AssociatedImage("", "Evan watching Dillon Donkey"), //w12_look_dillon
-                            new AssociatedImage("", ""),
-                            new AssociatedImage("", "Evan didn't like his cot at first..."), // w17_cot_cry
-                            new AssociatedImage("", "... but he likes his cot now :)") // w17_zonko (main)
+                            new AssociatedImage("w17_look_dillon_kufrlr", "Evan watching Dillon Donkey"),
+                            new AssociatedImage("w17_very_happy_n8obt8", "Happy Baby"),
+                            new AssociatedImage("w17_cot_cry_oto9v3", "Evan didn't like his cot at first..."),
+                            new AssociatedImage("w17_zonko_tytzud", "... but he likes his cot now :)")
                         }
                     });
 
@@ -366,10 +366,10 @@ namespace EvansDiary.Web.Diary
                         EntryTwo = md.Transform(Year2005.y1w18Two),
                         Images = new List<IAssociatedImage>
                         {
-                            new AssociatedImage("", "Evan with his curious expression"), // w18_ooh_whassat
-                            new AssociatedImage("", ""),
-                            new AssociatedImage("", "Sitting on the grass with Mummy"), // w18_sitting_grass (main)
-                            new AssociatedImage("", "")
+                            new AssociatedImage("w18_ooh_whassat_knacas", "Evan with his curious expression"),
+                            new AssociatedImage("w18_sitting_strong_vv7q7o", "How does that Tottenham song go?"),
+                            new AssociatedImage("w18_sitting_grass_n0iesr", "Sitting on the grass with Mummy"), 
+                            new AssociatedImage("w18_chubby_chops_nch5nc", "Look at his cute chubby cheeks!")
                         }
                     });
 
@@ -384,10 +384,10 @@ namespace EvansDiary.Web.Diary
                         EntryTwo = md.Transform(Year2005.y1w19Two),
                         Images = new List<IAssociatedImage>
                         {
-                            new AssociatedImage("", "Evan in his cool new shades"), //w19_baby_banz
-                            new AssociatedImage("", ""),
-                            new AssociatedImage("", "Story time :)"), // w19_book (main)
-                            new AssociatedImage("", "")
+                            new AssociatedImage("w19_baby_banz_vkuvma", "Evan in his cool new baby banz"),
+                            new AssociatedImage("w19_book_ktfben", "Story time :)"),
+                            new AssociatedImage("w19_tummy_batn3n", "Look at this tummy strength!"),
+                            new AssociatedImage("w19_fist_emluef", "Oh wait!? There's my fist.")
                         }
                     });
 
@@ -402,10 +402,10 @@ namespace EvansDiary.Web.Diary
                         EntryTwo = md.Transform(Year2005.y1w20Two),
                         Images = new List<IAssociatedImage>
                         {
-                            new AssociatedImage("", "Gorgeous Mummy and baby"), // w20_gorgeous (main)
-                            new AssociatedImage("", "Evan playing with the cats"), // w20_cats
-                            new AssociatedImage("", "Look Mum! I'm standing up!"), // w20_standing
-                            new AssociatedImage("", "")
+                            new AssociatedImage("w20_gorgeous_e1ic6v", "Gorgeous Mummy and baby"),
+                            new AssociatedImage("w20_standing_wb05ej", "Look Mum! I'm standing up!"),
+                            new AssociatedImage("w20_cats_agynzg", "Evan playing with the cats"),
+                            new AssociatedImage("w20_cats_unsure_jkisxh", "Poppy thinks twice")
                         }
                     });
 
@@ -420,10 +420,10 @@ namespace EvansDiary.Web.Diary
                         EntryTwo = md.Transform(Year2005.y1w21Two),
                         Images = new List<IAssociatedImage>
                         {
-                            new AssociatedImage("", "Evan and his Uncle Neil"), // w21_uncle_neil
-                            new AssociatedImage("", "Toy or Foot?.... It's a hard life"), // w21_foot_or_toy (originally on week 22)
-                            new AssociatedImage("", "Evan learning to drink from a cup"), // w21_cup_drinking (main)
-                            new AssociatedImage("", "")
+                            new AssociatedImage("w21_uncle_neil_zw7sq6", "Evan and his Uncle Neil"),
+                            new AssociatedImage("w21_foot_or_toy_nnrdhh", "Toy or Foot?.... It's a hard life"), 
+                            new AssociatedImage("w21_cup_drinking_cmtiso", "Evan learning to drink from a cup"), 
+                            new AssociatedImage("w21_yes_its_me_cvqbl3", "Yes, you keep looking at me")
                         }
                     });
 
@@ -438,10 +438,10 @@ namespace EvansDiary.Web.Diary
                         EntryTwo = md.Transform(Year2005.y1w22Two),
                         Images = new List<IAssociatedImage>
                         {
-                            new AssociatedImage("", "hmm... now what do I play with?"), // w22_swim_trunks
-                            new AssociatedImage("", "Oooh what's this? - Evan in his new 'Bumbo Seat'"), // w22_bumbo
-                            new AssociatedImage("", "Don't look at my willy!!"), // w22_nekkid
-                            new AssociatedImage("", "Mmmmm, baby rice & formula :/") // w22_baby_rice (main)
+                            new AssociatedImage("w22_swim_trunks_xjz012", "hmm... now what do I play with?"),
+                            new AssociatedImage("w22_bumbo_yq6rid", "Oooh what's this? - Evan in his new 'Bumbo Seat'"),
+                            new AssociatedImage("w22_nekkid_xx4ip1", "Evan letting it all hang out"),
+                            new AssociatedImage("w22_baby_rice_uy0nyu", "Mmmmm, baby rice & formula :/") 
                         }
                     });
 
@@ -457,10 +457,10 @@ namespace EvansDiary.Web.Diary
                         EntryTwo = md.Transform(Year2005.y1w23Two),
                         Images = new List<IAssociatedImage>
                         {
-                            new AssociatedImage("", "I can see that bottom!"), // w23_cheeky_bottom 
-                            new AssociatedImage("", "This is my great nanny!"), // w23_great_grandmother
-                            new AssociatedImage("", "Evan even managed to get carrot on his nose!"), // w23_carrot
-                            new AssociatedImage("", "Quiet please, I'm concentrating!") // w23_computer (main)
+                            new AssociatedImage("w23_cheeky_bottom_bmu0br", "I can see that bottom!"), 
+                            new AssociatedImage("w23_great_grandmother_wimpnn", "This is my great nanny!"),
+                            new AssociatedImage("w23_carrot_gkqncr", "Evan even managed to get carrot on his nose!"),
+                            new AssociatedImage("w23_computer_anr207", "Quiet please, I'm concentrating!")
                         }
                     });
 
@@ -475,10 +475,10 @@ namespace EvansDiary.Web.Diary
                         EntryTwo = md.Transform(Year2005.y1w24Two),
                         Images = new List<IAssociatedImage>
                         {
-                            new AssociatedImage("", "Yes... the grass tickles my toes!"), // w24_happy_baby (main)
-                            new AssociatedImage("", "Evan sharing a big cuddle with Grandma"), // w24_big_cuddles
-                            new AssociatedImage("", "Evan with Caroline's best friend Mel"), // w24_mel
-                            new AssociatedImage("", "Evan asleep on Vicky's shoulder") // w24_vicky
+                            new AssociatedImage("w24_happy_baby_ng0web", "Yes... the grass tickles my toes!"), 
+                            new AssociatedImage("w24_big_cuddles_unbchl", "Evan sharing a big cuddle with Grandma"), 
+                            new AssociatedImage("w24_mel_smzrqq", "Evan with Caroline's best friend Mel"), 
+                            new AssociatedImage("w24_vicky_n1s1zh", "Evan asleep on Vicky's shoulder") 
                         }
                     });
 
