@@ -2,13 +2,13 @@
 @model EvansDiary.Web.ViewModels.DiaryEntryViewModel
 
 @{
-    ViewBag.Title = Model.Title ?? string.Empty;
+    ViewBag.Title = string.Format("Year 2005 - Week {0}", Model.Tag);
 }
 
 <section id="diary-page">
-    <h2>Week @(Model.Tag)</h2>
+    <h2>@ViewBag.Title</h2>
 
-    <h3>@ViewBag.Title</h3>
+    <h3>@Model.Title</h3>
 
     <div class="diary-entries container content">
         @{

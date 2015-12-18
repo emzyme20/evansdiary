@@ -746,15 +746,15 @@ namespace EvansDiary.Web.Diary
                     "2005-40",
                     new DiaryEntry
                     {
-                        Title = "25th September -  1st October 2005",
+                        Title = "25th September - 1st October 2005",
                         Tag = "40",
                         EntryOne = md.Transform(Year2005.y1w40One),
                         Images = new List<IAssociatedImage>
                         {
-                            new AssociatedImage("w40_new_toys", "But I want these toys mummy..."), 
-                            new AssociatedImage("w40_finger_foods", "Teaching Evan how to eat finger foods - this was before he mashed them everywhere!"), 
-                            new AssociatedImage("", ""), 
-                            new AssociatedImage("", "")
+                            new AssociatedImage("w40_new_toys_hftsfo", "But I want these toys mummy..."), 
+                            new AssociatedImage("w40_finger_foods_scd7hi", "Teaching Evan how to eat finger foods - this was before he mashed them everywhere!"), 
+                            new AssociatedImage("w40_finger_foods2_if3sk0", "This biscuit is as big as him"), 
+                            new AssociatedImage("w40_tears_jkqy78", "Tears of freedom?")
                         }
                     });
 
@@ -768,210 +768,199 @@ namespace EvansDiary.Web.Diary
                         EntryOne = md.Transform(Year2005.y1w41One),
                         Images = new List<IAssociatedImage>
                         {
-                            new AssociatedImage("w41_standing_alone", "Woohoo - Look at him now"), 
-                            new AssociatedImage("w41_activity_table", "Evan enjoying his new found freedom at his new activity table"), 
-                            new AssociatedImage("", ""), 
-                            new AssociatedImage("w41_picture_for_mummy", "Our first picture that Evan made at nursery (pasta shapes glued to paper) ")
+                            new AssociatedImage("w41_standing_alone_lw9vke", "Woohoo - Look at him now"), 
+                            new AssociatedImage("w41_activity_table_f8nsb2", "Evan enjoying his new found freedom at his new activity table"), 
+                            new AssociatedImage("w41_keys_st6umh", "So, that's where my keys are"), 
+                            new AssociatedImage("w41_picture_for_mummy_bepmwe", "Our first picture that Evan made at nursery (pasta shapes glued to paper) ")
                         }
                     });
 
-            //_diaryEntries
-            //    .Add(
-            //        "2005-",
-            //        new DiaryEntry
-            //        {
-            //            Title = "",
-            //            Tag = "",
-            //            EntryOne = md.Transform(Year2005.y1w14One),
-            //            EntryTwo = md.Transform(Year2005.y1w14Two),
-            //            Images = new List<IAssociatedImage>
-            //            {
-            //                new AssociatedImage("", ""), 
-            //                new AssociatedImage("", ""), 
-            //                new AssociatedImage("", ""), 
-            //                new AssociatedImage("", "")
-            //            }
-            //        });
+            _diaryEntries
+                .Add(
+                    "2005-42",
+                    new DiaryEntry
+                    {
+                        Title = "9th - 15th October 2005",
+                        Tag = "42",
+                        EntryOne = md.Transform(Year2005.y1w42One),
+                        Images = new List<IAssociatedImage>
+                        {
+                            new AssociatedImage("w42_evan_impression_skoa4q", "My impression of Evan"), 
+                            new AssociatedImage("w42_play_biting_wv7jjb", "Play biting or fighting?"), 
+                            new AssociatedImage("w42_mischievious_ceqpqe", "What are you up to?"), 
+                            new AssociatedImage("w42_ball_pit_r70zbv", "Playing with friends")
+                        }
+                    });
 
-            //_diaryEntries
-            //    .Add(
-            //        "2005-",
-            //        new DiaryEntry
-            //        {
-            //            Title = "",
-            //            Tag = "",
-            //            EntryOne = md.Transform(Year2005.y1w14One),
-            //            EntryTwo = md.Transform(Year2005.y1w14Two),
-            //            Images = new List<IAssociatedImage>
-            //            {
-            //                new AssociatedImage("", ""), 
-            //                new AssociatedImage("", ""), 
-            //                new AssociatedImage("", ""), 
-            //                new AssociatedImage("", "")
-            //            }
-            //        });
+            _diaryEntries
+                .Add(
+                    "2005-43",
+                    new DiaryEntry
+                    {
+                        Title = "16th - 22nd October 2005",
+                        Tag = "43",
+                        EntryOne = md.Transform(Year2005.y1w43One),
+                        Images = new List<IAssociatedImage>
+                        {
+                            new AssociatedImage("w43_first_shoes_osqu8g", "First pair of shoes"), 
+                            new AssociatedImage("w43_first_shoes_closeup_podqjj", "So cute!"), 
+                            new AssociatedImage("w43_need_a_haircut_kkisqy", "Someone needs a hair cut"), 
+                            new AssociatedImage("w43_tired_baby_eh8lcd", "Aww bless him")
+                        }
+                    });
 
-            //_diaryEntries
-            //    .Add(
-            //        "2005-",
-            //        new DiaryEntry
-            //        {
-            //            Title = "",
-            //            Tag = "",
-            //            EntryOne = md.Transform(Year2005.y1w14One),
-            //            EntryTwo = md.Transform(Year2005.y1w14Two),
-            //            Images = new List<IAssociatedImage>
-            //            {
-            //                new AssociatedImage("", ""), 
-            //                new AssociatedImage("", ""), 
-            //                new AssociatedImage("", ""), 
-            //                new AssociatedImage("", "")
-            //            }
-            //        });
+            _diaryEntries
+                .Add(
+                    "2005-44",
+                    new DiaryEntry
+                    {
+                        Title = "23rd - 29th October 2005",
+                        Tag = "44",
+                        EntryOne = md.Transform(Year2005.y1w44One),
+                        Images = new List<IAssociatedImage>
+                        {
+                            new AssociatedImage("w44_sept_filler_image2_rfjglh", "Healthy baby"), 
+                            new AssociatedImage("w44_poorly_baby_tjdx4i", "Poorly baby"), 
+                            new AssociatedImage("w44_double_poorly_aj2k4o", "Everyone is ill this week"), 
+                            new AssociatedImage("w44_sept_filler_image_lqajad", "A lot of baths this week")
+                        }
+                    });
 
-            //_diaryEntries
-            //    .Add(
-            //        "2005-",
-            //        new DiaryEntry
-            //        {
-            //            Title = "",
-            //            Tag = "",
-            //            EntryOne = md.Transform(Year2005.y1w14One),
-            //            EntryTwo = md.Transform(Year2005.y1w14Two),
-            //            Images = new List<IAssociatedImage>
-            //            {
-            //                new AssociatedImage("", ""), 
-            //                new AssociatedImage("", ""), 
-            //                new AssociatedImage("", ""), 
-            //                new AssociatedImage("", "")
-            //            }
-            //        });
+            _diaryEntries
+                .Add(
+                    "2005-45",
+                    new DiaryEntry
+                    {
+                        Title = "30th October - 5th November 2005",
+                        Tag = "45",
+                        EntryOne = md.Transform(Year2005.y1w45One),
+                        Images = new List<IAssociatedImage>
+                        {
+                            new AssociatedImage("w45_is_this_bath_lrvv5l", "Is this bath for me?"), 
+                            new AssociatedImage("w45_for_me_zayvh1", "Evan loves to peer into the bath as it is filling up"), 
+                            new AssociatedImage("w45_new_trick_j2p3jd", "Evan's new trick is to drink from the cups as the water trickles through!"), 
+                            new AssociatedImage("w45_loves_a_bath_pnx3it", "Delightful :)")
+                        }
+                    });
 
-            //_diaryEntries
-            //    .Add(
-            //        "2005-",
-            //        new DiaryEntry
-            //        {
-            //            Title = "",
-            //            Tag = "",
-            //            EntryOne = md.Transform(Year2005.y1w14One),
-            //            EntryTwo = md.Transform(Year2005.y1w14Two),
-            //            Images = new List<IAssociatedImage>
-            //            {
-            //                new AssociatedImage("", ""), 
-            //                new AssociatedImage("", ""), 
-            //                new AssociatedImage("", ""), 
-            //                new AssociatedImage("", "")
-            //            }
-            //        });
+            _diaryEntries
+                .Add(
+                    "2005-46",
+                    new DiaryEntry
+                    {
+                        Title = "6th - 12th November 2005",
+                        Tag = "46",
+                        EntryOne = md.Transform(Year2005.y1w46One),
+                        Images = new List<IAssociatedImage>
+                        {
+                            new AssociatedImage("w46_camera_fascination_g336ah", "Evan proving how difficult it is to photograph him these days"), 
+                            new AssociatedImage("w46_prebath_play_time_ykp6n7", "Pre-bath play time"), 
+                            new AssociatedImage("w46_what_ya_doing_oqbptf", "Evan is interested in everything we do"), 
+                            new AssociatedImage("w46_hurry_up_gdhtbu", "Hurry up bath!")
+                        }
+                    });
 
-            //_diaryEntries
-            //    .Add(
-            //        "2005-",
-            //        new DiaryEntry
-            //        {
-            //            Title = "",
-            //            Tag = "",
-            //            EntryOne = md.Transform(Year2005.y1w14One),
-            //            EntryTwo = md.Transform(Year2005.y1w14Two),
-            //            Images = new List<IAssociatedImage>
-            //            {
-            //                new AssociatedImage("", ""), 
-            //                new AssociatedImage("", ""), 
-            //                new AssociatedImage("", ""), 
-            //                new AssociatedImage("", "")
-            //            }
-            //        });
+            _diaryEntries
+                .Add(
+                    "2005-47",
+                    new DiaryEntry
+                    {
+                        Title = "13th - 19th November 2005",
+                        Tag = "47",
+                        EntryOne = md.Transform(Year2005.y1w47One),
+                        Images = new List<IAssociatedImage>
+                        {
+                            new AssociatedImage("w47_before_haircut_qpvsrj", "Before hair cut"), 
+                            new AssociatedImage("w47_after_haircut_rp8ntl", "After hair cut"), 
+                            new AssociatedImage("w47_wax_weciuo", "Showing interest in some product"), 
+                            new AssociatedImage("w47_lush_xpbspn", "Just beautiful")
+                        }
+                    });
 
-            //_diaryEntries
-            //    .Add(
-            //        "2005-",
-            //        new DiaryEntry
-            //        {
-            //            Title = "",
-            //            Tag = "",
-            //            EntryOne = md.Transform(Year2005.y1w14One),
-            //            EntryTwo = md.Transform(Year2005.y1w14Two),
-            //            Images = new List<IAssociatedImage>
-            //            {
-            //                new AssociatedImage("", ""), 
-            //                new AssociatedImage("", ""), 
-            //                new AssociatedImage("", ""), 
-            //                new AssociatedImage("", "")
-            //            }
-            //        });
+            _diaryEntries
+                .Add(
+                    "2005-48",
+                    new DiaryEntry
+                    {
+                        Title = "20th - 26th November 2005",
+                        Tag = "48",
+                        EntryOne = md.Transform(Year2005.y1w48One),
+                        Images = new List<IAssociatedImage>
+                        {
+                            new AssociatedImage("w48_inquisitive_toilet_zqubt8", "A toilet lock is now a necessity"), 
+                            new AssociatedImage("w48_cheeky_hlo7ri", "Cheeky look"), 
+                            new AssociatedImage("w48_dribbler_v81hyc", "Dribbletastic"), 
+                            new AssociatedImage("w48_not_a_toy_bnpgvj", "Obsessed much with the camera Evan?")
+                        }
+                    });
 
-            //_diaryEntries
-            //    .Add(
-            //        "2005-",
-            //        new DiaryEntry
-            //        {
-            //            Title = "",
-            //            Tag = "",
-            //            EntryOne = md.Transform(Year2005.y1w14One),
-            //            EntryTwo = md.Transform(Year2005.y1w14Two),
-            //            Images = new List<IAssociatedImage>
-            //            {
-            //                new AssociatedImage("", ""), 
-            //                new AssociatedImage("", ""), 
-            //                new AssociatedImage("", ""), 
-            //                new AssociatedImage("", "")
-            //            }
-            //        });
+            _diaryEntries
+                .Add(
+                    "2005-49",
+                    new DiaryEntry
+                    {
+                        Title = "27th November - 3rd December 2005",
+                        Tag = "49",
+                        EntryOne = md.Transform(Year2005.y1w49One),
+                        Images = new List<IAssociatedImage>
+                        {
+                            new AssociatedImage("w49_strong_legs_kqhxmb", "Strong legs"), 
+                            new AssociatedImage("w49_stocky_chap_kcrkxk", "Stocky chappy"), 
+                            new AssociatedImage("w49_peek-a-boo_dsiiiv", "Playing peek-a-boo"), 
+                            new AssociatedImage("w49_shopping_pdsjvf", "Helping to unpack, does not mean eat it first!")
+                        }
+                    });
 
-            //_diaryEntries
-            //    .Add(
-            //        "2005-",
-            //        new DiaryEntry
-            //        {
-            //            Title = "",
-            //            Tag = "",
-            //            EntryOne = md.Transform(Year2005.y1w14One),
-            //            EntryTwo = md.Transform(Year2005.y1w14Two),
-            //            Images = new List<IAssociatedImage>
-            //            {
-            //                new AssociatedImage("", ""), 
-            //                new AssociatedImage("", ""), 
-            //                new AssociatedImage("", ""), 
-            //                new AssociatedImage("", "")
-            //            }
-            //        });
+            _diaryEntries
+                .Add(
+                    "2005-50",
+                    new DiaryEntry
+                    {
+                        Title = "4th - 10th December 2005",
+                        Tag = "50",
+                        EntryOne = md.Transform(Year2005.y1w50One),
+                        Images = new List<IAssociatedImage>
+                        {
+                            new AssociatedImage("w50_introducing_nneldz", "Introducing Noodle, the new addition to our growing family"), 
+                            new AssociatedImage("w50_first_nativity_o74tfp", "Getting ready for Evan's first nativity performance"), 
+                            new AssociatedImage("w50_first_nativity2_ubugj2", "Evan is the second one in from the left on the front row"), 
+                            new AssociatedImage("w50_noodle_fmwilp", "Settling in very well")
+                        }
+                    });
 
-            //_diaryEntries
-            //    .Add(
-            //        "2005-",
-            //        new DiaryEntry
-            //        {
-            //            Title = "",
-            //            Tag = "",
-            //            EntryOne = md.Transform(Year2005.y1w14One),
-            //            EntryTwo = md.Transform(Year2005.y1w14Two),
-            //            Images = new List<IAssociatedImage>
-            //            {
-            //                new AssociatedImage("", ""), 
-            //                new AssociatedImage("", ""), 
-            //                new AssociatedImage("", ""), 
-            //                new AssociatedImage("", "")
-            //            }
-            //        });
+            _diaryEntries
+                .Add(
+                    "2005-51",
+                    new DiaryEntry
+                    {
+                        Title = "11th - 17th December 2005",
+                        Tag = "51",
+                        EntryOne = md.Transform(Year2005.y1w51One),
+                        Images = new List<IAssociatedImage>
+                        {
+                            new AssociatedImage("", ""), 
+                            new AssociatedImage("", ""), 
+                            new AssociatedImage("", ""), 
+                            new AssociatedImage("", "")
+                        }
+                    });
 
-            //_diaryEntries
-            //    .Add(
-            //        "2005-",
-            //        new DiaryEntry
-            //        {
-            //            Title = "",
-            //            Tag = "",
-            //            EntryOne = md.Transform(Year2005.y1w14One),
-            //            EntryTwo = md.Transform(Year2005.y1w14Two),
-            //            Images = new List<IAssociatedImage>
-            //            {
-            //                new AssociatedImage("", ""), 
-            //                new AssociatedImage("", ""), 
-            //                new AssociatedImage("", ""), 
-            //                new AssociatedImage("", "")
-            //            }
-            //        });
+            _diaryEntries
+                .Add(
+                    "2005-52",
+                    new DiaryEntry
+                    {
+                        Title = "",
+                        Tag = "52",
+                        EntryOne = md.Transform(Year2005.y1w52One),
+                        Images = new List<IAssociatedImage>
+                        {
+                            new AssociatedImage("", ""), 
+                            new AssociatedImage("", ""), 
+                            new AssociatedImage("", ""), 
+                            new AssociatedImage("", "")
+                        }
+                    });
         }
     }
 }

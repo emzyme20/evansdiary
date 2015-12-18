@@ -641,7 +641,9 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Evan and I actually settled back into our work routine fairly quickly this time round. I was certain that we would have problems reintroducing Evan to nursery as Evan was only there for one week before being off sick for a week with me. I am glad that this was not the case though. He seemed fine and actually started sleeping a bit better in the day time at nursery this week.  
+        ///
+        ///My mum was released from hospital this week, but not even 24 hours later when she had a visit from her GP, they decided to send h [rest of string was truncated]&quot;;.
         /// </summary>
         public static string y1w42One {
             get {
@@ -650,7 +652,7 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Evan absolutely adores the cats and he just won&apos;t leave them alone now. If he is on the floor and they come into view, he&apos;s off, following them around laughing and being generally noisy. He doesn&apos;t mean to scare them, he just wants to be able to touch them. The problem is, he is quite heavy handed and also very loud and excitable around them that it just scares them. If we are there to help him stroke them, it&apos;s ok, but most of the time he just follows them as they are just that little too quick for him. He [rest of string was truncated]&quot;;.
         /// </summary>
         public static string y1w43One {
             get {
@@ -659,7 +661,7 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to This was my 5th week back at work and it was another chaotic one. Evan already had a cough and I just put it down to the start of Autumn and that it was just something minor. By the time Sunday came though, Evan was sleeping lots and not as playful as usual. Throughout the night Evan&apos;s coughing became worse that it actually woke the whole house up several times and I was having to get up to calm him every 45 minutes or so. This prompted Caroline to move her bed downstairs. Evan and I still made it into nurs [rest of string was truncated]&quot;;.
         /// </summary>
         public static string y1w44One {
             get {
@@ -668,7 +670,9 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Evan is fully recovered from his bronchitis and he also regained his big appetite this week. Caroline and I still have the remnants of our colds but I am just glad that Evan is ok.  
+        ///
+        ///Evan can really object to things when he wants to. We think he&apos;ll be a &quot;foot stamper&quot; for sure when he has tantrums when he is older. He already swings his arms and bounces on his legs! Sometimes the only thing I can do to get his attention is to give him something new as a distraction. Handing him a toy does nothing apart f [rest of string was truncated]&quot;;.
         /// </summary>
         public static string y1w45One {
             get {
@@ -677,7 +681,9 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to We&apos;ve had some major achievements this week with Evan. He can now stand on his own without holding on for long periods of time. This has happened ever so quickly, at first it was just a second or two before flopping to the floor. By the end of the week he was able to stand for 22 seconds!  
+        ///
+        ///I think sometimes he doesn&apos;t realise he is doing it. He&apos;ll be holding onto the table or me playing with a toy. He will then grasp the toy with both hands, standing alone. He then has this startled look as he suddenly  [rest of string was truncated]&quot;;.
         /// </summary>
         public static string y1w46One {
             get {
@@ -686,7 +692,7 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to As the sayings go *&quot;You wait hours for a bus and then 3 come along at once&quot;*, or *&quot;bad things always happen in three&apos;s&quot;*. Well, this week we had our third illness with Evan. I had noticed towards the end of last week that he was pooing a lot more than usual and it was getting rather smelly. Over the weekend it peaked and Evan did about 6 poos in one day. I took him to nursery on the Monday and told them I was worried and that I would be contacting a Doctor that day. By the time I collected him, his poor lit [rest of string was truncated]&quot;;.
         /// </summary>
         public static string y1w47One {
             get {
@@ -695,7 +701,9 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to We had one funny incident with Evan this week. We were out doing our weekly shop and the lady at the McDonalds inside Asda gave us this balloon tied onto a plastic stick for Evan to play with. I thought it would be ok under supervision so I let him play with it and he happily banged it around all over the place, giggling when he inadvertently bonked it against either my head or his own.  
+        ///
+        ///The balloon was still in the house one evening when we arrived home and we were playing with it again in front of Eva [rest of string was truncated]&quot;;.
         /// </summary>
         public static string y1w48One {
             get {
@@ -704,7 +712,7 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to I was playing with Evan this week after his evening bath and he escaped my grasp as I was drying him. I just let him sit a few feet away bouncing happily on his feet as he knelt down. I was playing with his little bath cups and I started gently tossing them into the air so that they fell all over the floor and he was beside himself, in extreme giggles. I started to laugh because he was. He was laughing so much I could see his eyes watering. I carried on playing with the cups when suddenly I smelt it. No way [rest of string was truncated]&quot;;.
         /// </summary>
         public static string y1w49One {
             get {
@@ -733,7 +741,9 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to We have a new member of the family and Evan absolutely adores him. His name is Noodle and he&apos;s Caroline&apos;s early Christmas present. He&apos;s really little and Evan *(although harmless)* scares him because his movements are so loud and jerky.  
+        ///
+        ///I had a half day this week to attend Evan&apos;s nativity play. Evan was forming part of the rainbow and his colour was yellow. I had to provide yellow clothes for him to wear, I couldn&apos;t find yellow trousers so in the end he wore cream trousers and a yellow t-shirt. They al [rest of string was truncated]&quot;;.
         /// </summary>
         public static string y1w50One {
             get {
@@ -742,7 +752,9 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to We popped round to our next door neighbour this week to deliver our Christmas card and we decided to give her a bottle of wine as a thank you for all the help we have had from her. We decided to stay for a glass of wine to catch up and she was very fortunate to witness a first time event from Evan. He&apos;s certainly not shy in new places and was crawling and playing all over her lounge floor being a little cutie as usual.  
+        ///
+        ///Evan stood up and suddenly started to walk around in a circle whilst we all clapped  [rest of string was truncated]&quot;;.
         /// </summary>
         public static string y1w51One {
             get {
