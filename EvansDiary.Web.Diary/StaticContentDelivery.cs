@@ -493,10 +493,10 @@ namespace EvansDiary.Web.Diary
                         EntryOne = md.Transform(Year2005.y1w25One),
                         Images = new List<IAssociatedImage>
                         {
-                            new AssociatedImage("", "Mmm tasty pushchair, it gets the 'Toes-Up' from me Mum!"), //w25_pushchair
-                            new AssociatedImage("", "Trendy boy"), //w25_trendy (main)
-                            new AssociatedImage("", ""),
-                            new AssociatedImage("", "")
+                            new AssociatedImage("w25_pushchair_lspemu", "Mmm tasty pushchair, it gets the 'Toes-Up' from me Mum!"),
+                            new AssociatedImage("w25_trendy_cd6ogm", "Trendy boy"),
+                            new AssociatedImage("w25_car_arudgn", "Still prefers to eat his toys"),
+                            new AssociatedImage("w25_asleep_at_dinner_xrarxa", "Boob or bottle, both seem to send him to sleep")
                         }
                     });
 
@@ -511,10 +511,10 @@ namespace EvansDiary.Web.Diary
                         EntryTwo = md.Transform(Year2005.y1w26Two),
                         Images = new List<IAssociatedImage>
                         {
-                            new AssociatedImage("", "It's a hard life"), //w26_zonked
-                            new AssociatedImage("", "I don't need Mummy's support"), //w26_sitting_up
-                            new AssociatedImage("", "Play time on a lazy Sunday morning"), //w26_lazy_morning (main)
-                            new AssociatedImage("", "Gimme dat ice-cream!") //w26_ice-cream
+                            new AssociatedImage("w26_lazy_sunday_cf7yyf", "Lazy Sunday morning..."),
+                            new AssociatedImage("w26_lazy_sunday2_yojgye", "...LOVE..."),
+                            new AssociatedImage("w26_lazy_sunday4_qxibmn", "...him..."),
+                            new AssociatedImage("w26_lazy_sunday3_cvua3k", "...SO MUCH!")
                         }
                     });
 
@@ -528,10 +528,10 @@ namespace EvansDiary.Web.Diary
                         EntryOne = md.Transform(Year2005.y1w27One),
                         Images = new List<IAssociatedImage>
                         {
-                            new AssociatedImage("", "Caroline has a hair cut - 'Bout time we had a pic of her again!"), //w27_carolines_new_hair (main)
-                            new AssociatedImage("", ""),
-                            new AssociatedImage("", ""),
-                            new AssociatedImage("", "")
+                            new AssociatedImage("w27_carolines_new_hair_pybyio", "Caroline has a hair cut - 'Bout time we had a pic of her again!"),
+                            new AssociatedImage("w27_zonked_qyvx2a", "It's a hard life"),
+                            new AssociatedImage("w27_sitting_up_rxcgde", "I don't need Mummy's support"),
+                            new AssociatedImage("w27_ice-cream_rmuye6", "Gimme dat ice-cream!")
                         }
                     });
 
@@ -545,10 +545,10 @@ namespace EvansDiary.Web.Diary
                         EntryOne = md.Transform(Year2005.y1w28One),
                         Images = new List<IAssociatedImage>
                         {
-                            new AssociatedImage("", "Yes! Mummy has put stuff in my hair..."), //w28_hair_style
-                            new AssociatedImage("", "Evan showing how well he sits up. He'll sit and play for ages now"), //w28_cool_dude (main)
-                            new AssociatedImage("", ""),
-                            new AssociatedImage("", "")
+                            new AssociatedImage("w28_hair_style_hatwjl", "Yes! Mummy has put stuff in my hair..."),
+                            new AssociatedImage("w28_cool_dude_d6c1du", "Evan showing how well he sits up. He'll sit and play for ages now"),
+                            new AssociatedImage("w28_how_many_fingers_lflgva", "How mny fingers?"),
+                            new AssociatedImage("w28_lush_baby_xhua1l", "Fluffy blonde hair and gorgeous blue eyes")
                         }
                     });
 
@@ -563,10 +563,10 @@ namespace EvansDiary.Web.Diary
                         EntryTwo = md.Transform(Year2005.y1w29Two),
                         Images = new List<IAssociatedImage>
                         {
-                            new AssociatedImage("", "Amidst all the horror - Evan enjoys the heat wave"), //w29_heat_wave
-                            new AssociatedImage("", "Evan enjoying his new big boy toys"), //w29_new_toys
-                            new AssociatedImage("", "Any resemblance?"), //w29_any_resemblance
-                            new AssociatedImage("", "")
+                            new AssociatedImage("w29_heat_wave_ngftvr", "Amidst all the horror - Evan enjoys the heat wave"),
+                            new AssociatedImage("w29_new_toys_kcmuqv", "Evan enjoying his new big boy toys"),
+                            new AssociatedImage("w29_any_resemblance_h0ybcw", "Any resemblance?"),
+                            new AssociatedImage("w29_power_nap_sempgs", "Power nap")
                         }
                     });
 
@@ -581,10 +581,10 @@ namespace EvansDiary.Web.Diary
                         EntryTwo = md.Transform(Year2005.y1w30Two),
                         Images = new List<IAssociatedImage>
                         {
-                            new AssociatedImage("", "hmmm... definitely room to grow"), //w30_high_chair
-                            new AssociatedImage("", "Evan getting psyched up for the collapse"), //w30_stacking_cups (main)
-                            new AssociatedImage("", ""), 
-                            new AssociatedImage("", "")
+                            new AssociatedImage("w30_high_chair_zui889", "hmmm... definitely room to grow"),
+                            new AssociatedImage("w30_stacking_cups_nw83vy", "Evan getting psyched up for the collapse"), 
+                            new AssociatedImage("w30_tower_crash_m44ihu", "...Boom!"), 
+                            new AssociatedImage("w30_always_happy_m0vpfh", "Love how happy he is.")
                         }
                     });
 
@@ -598,10 +598,10 @@ namespace EvansDiary.Web.Diary
                         EntryOne = md.Transform(Year2005.y1w31One),
                         Images = new List<IAssociatedImage>
                         {
-                            new AssociatedImage("", "I show my affection to mummy with lots of dribble"), //w31_i_love_mummy (main)
-                            new AssociatedImage("", "eep! here they come!"), //w31_all_fall_down
-                            new AssociatedImage("", ""), 
-                            new AssociatedImage("", "")
+                            new AssociatedImage("w31_dribble_kiss_v1lb7o", "Kiss?"),
+                            new AssociatedImage("w31_euuw_dribble_lmnqf9", "I show my affection to mummy with lots of dribble"),
+                            new AssociatedImage("w31_got_you_mqwo2u", "Got you..."), 
+                            new AssociatedImage("w31_want_one_s96t4l", "Now you!")
                         }
                     });
 
@@ -615,10 +615,10 @@ namespace EvansDiary.Web.Diary
                         EntryOne = md.Transform(Year2005.y1w32One),
                         Images = new List<IAssociatedImage>
                         {
-                            new AssociatedImage("", "Evan is self-sufficient when it comes to the bottle"), //w32_bottle_feed (main)
-                            new AssociatedImage("", "So... is this team any good Mum?"), //w32_team_mascot
-                            new AssociatedImage("", ""), 
-                            new AssociatedImage("", "")
+                            new AssociatedImage("w32_bottle_feed_nrtgjv", "Evan is self-sufficient when it comes to the bottle"),
+                            new AssociatedImage("w32_team_mascot_cn9m4k", "So... is this team any good Mum?"),
+                            new AssociatedImage("w32_all_fall_down_yidzjx", "eep! here they come!"),
+                            new AssociatedImage("w32_scrambled_egg_t4pm66", "Evan is not a fan of scrambled egg")
                         }
                     });
 
@@ -632,10 +632,10 @@ namespace EvansDiary.Web.Diary
                         EntryOne = md.Transform(Year2005.y1w33One),
                         Images = new List<IAssociatedImage>
                         {
-                            new AssociatedImage("", "Evan enjoying a fun afternoon with his friends"), //w33_evan_and_friends
-                            new AssociatedImage("", "Evan having a good suck on his first ever piece of toast"), //w33_sucking_toast (main)
-                            new AssociatedImage("", ""), 
-                            new AssociatedImage("", "")
+                            new AssociatedImage("w33_evan_and_friends_uzmyhc", "Evan enjoying a fun afternoon with his friends"), 
+                            new AssociatedImage("w33_sucking_toast_ftgyye", "Evan having a good suck on his first ever piece of toast"),
+                            new AssociatedImage("w33_biceps_wknqsk", "Look at those biceps!"), 
+                            new AssociatedImage("w33_funny_boy_pggzmj", "Funny boy")
                         }
                     });
 
@@ -649,10 +649,10 @@ namespace EvansDiary.Web.Diary
                         EntryOne = md.Transform(Year2005.y1w34One),
                         Images = new List<IAssociatedImage>
                         {
-                            new AssociatedImage("", "Evan is eyeing up the camera for dinner"), //w34_cheeky_chappy (main)
-                            new AssociatedImage("", ""), 
-                            new AssociatedImage("", ""), 
-                            new AssociatedImage("", "")
+                            new AssociatedImage("w34_cheeky_chappy_wj2nlc", "Evan is eyeing up the camera for dinner"),
+                            new AssociatedImage("w34_hello_fluffy_emky6d", "Hello fluffy cat"),
+                            new AssociatedImage("w34_hello_vwlpvf", "Hello!"), 
+                            new AssociatedImage("w34_tongue_hvlflr", "Evan can stick out his tongue")
                         }
                     });
 
@@ -666,12 +666,186 @@ namespace EvansDiary.Web.Diary
                         EntryOne = md.Transform(Year2005.y1w35One),
                         Images = new List<IAssociatedImage>
                         {
-                            new AssociatedImage("", "Evan posing for the camera, or is he eyeing up a sleeping cat?"), //w35_professional_pose
-                            new AssociatedImage("", "Evan showing an increasing desire to grab the camera"), //w35_nice_n_clean (main)
+                            new AssociatedImage("w35_professional_pose_lfm62g", "Evan posing for the camera, or is he eyeing up a sleeping cat?"), 
+                            new AssociatedImage("w35_nice_n_clean_qkvuku", "Evan showing an increasing desire to grab the camera"), 
+                            new AssociatedImage("w35_hiding_pjaeo8", "I'm hiding"), 
+                            new AssociatedImage("w35_big_boy_ltjyw8", "35 weeks and he's almost as big as Emma")
+                        }
+                    });
+
+            _diaryEntries
+                .Add(
+                    "2005-36",
+                    new DiaryEntry
+                    {
+                        Title = "28th August - 3rd September 2005",
+                        Tag = "36",
+                        EntryOne = md.Transform(Year2005.y1w36One),
+                        Images = new List<IAssociatedImage>
+                        {
+                            new AssociatedImage("w36_where_are_we_xizm58", "Where are we?"), 
+                            new AssociatedImage("w36_what_is_this_u0kvtn", "What is this?"), 
+                            new AssociatedImage("w36_strange_feeling_pt8twn", "The sand feels cold on Evan's toes"),
+                            new AssociatedImage("w36_sand_feels_good_nd9v2f", "Evan loves it")
+                        }
+                    });
+
+            _diaryEntries
+                .Add(
+                    "2005-37",
+                    new DiaryEntry
+                    {
+                        Title = "4th - 10th September 2005",
+                        Tag = "37",
+                        EntryOne = md.Transform(Year2005.y1w37One),
+                        Images = new List<IAssociatedImage>
+                        {
+                            new AssociatedImage("w37_tickle_time_zwaq1u", "It's tickle time"), 
+                            new AssociatedImage("w37_choosing_toys_jvjujr", "Let me choose the toys today"), 
+                            new AssociatedImage("w37_yummy_bath_water_zlugqo", "Yummy bath water"), 
+                            new AssociatedImage("w37_all_fours_ctlk6z", "Almost ready to crawl")
+                        }
+                    });
+
+            _diaryEntries
+                .Add(
+                    "2005-38",
+                    new DiaryEntry
+                    {
+                        Title = "11th - 17th September 2005",
+                        Tag = "38",
+                        EntryOne = md.Transform(Year2005.y1w38One),
+                        Images = new List<IAssociatedImage>
+                        {
+                            new AssociatedImage("w38_new_seat_oormsl", "Evan sprawling out in his new seat"), 
+                            new AssociatedImage("w38_dintons_pastures_qpqyxj", "Having a break from picking blackberries"), 
+                            new AssociatedImage("w38_cutest_foot_xbg42k", "I could just eat his feet"),
+                            new AssociatedImage("w38_play_pen_dn51mb", "Staying safe in the play pen")
+                        }
+                    });
+
+            _diaryEntries
+                .Add(
+                    "2005-39",
+                    new DiaryEntry
+                    {
+                        Title = "18th - 24th September 2005",
+                        Tag = "39",
+                        EntryOne = md.Transform(Year2005.y1w39One),
+                        Images = new List<IAssociatedImage>
+                        {
+                            new AssociatedImage("w39_crawling_v14frs", "I can crawl!"), 
+                            new AssociatedImage("w39_camera_hunt_bkxsza", "Taking pictures is tricky now he crawls"), 
+                            new AssociatedImage("w39_my_seat_wyssfe", "It's my seat now"), 
+                            new AssociatedImage("w39_where_is_on_kgozrx", "How do I turn this back on?")
+                        }
+                    });
+
+            _diaryEntries
+                .Add(
+                    "2005-40",
+                    new DiaryEntry
+                    {
+                        Title = "25th September -  1st October 2005",
+                        Tag = "40",
+                        EntryOne = md.Transform(Year2005.y1w40One),
+                        Images = new List<IAssociatedImage>
+                        {
+                            new AssociatedImage("w40_new_toys", "But I want these toys mummy..."), 
+                            new AssociatedImage("w40_finger_foods", "Teaching Evan how to eat finger foods - this was before he mashed them everywhere!"), 
                             new AssociatedImage("", ""), 
                             new AssociatedImage("", "")
                         }
                     });
+
+            _diaryEntries
+                .Add(
+                    "2005-41",
+                    new DiaryEntry
+                    {
+                        Title = "2nd - 8th October 2005",
+                        Tag = "41",
+                        EntryOne = md.Transform(Year2005.y1w41One),
+                        Images = new List<IAssociatedImage>
+                        {
+                            new AssociatedImage("w41_standing_alone", "Woohoo - Look at him now"), 
+                            new AssociatedImage("w41_activity_table", "Evan enjoying his new found freedom at his new activity table"), 
+                            new AssociatedImage("", ""), 
+                            new AssociatedImage("w41_picture_for_mummy", "Our first picture that Evan made at nursery (pasta shapes glued to paper) ")
+                        }
+                    });
+
+            //_diaryEntries
+            //    .Add(
+            //        "2005-",
+            //        new DiaryEntry
+            //        {
+            //            Title = "",
+            //            Tag = "",
+            //            EntryOne = md.Transform(Year2005.y1w14One),
+            //            EntryTwo = md.Transform(Year2005.y1w14Two),
+            //            Images = new List<IAssociatedImage>
+            //            {
+            //                new AssociatedImage("", ""), 
+            //                new AssociatedImage("", ""), 
+            //                new AssociatedImage("", ""), 
+            //                new AssociatedImage("", "")
+            //            }
+            //        });
+
+            //_diaryEntries
+            //    .Add(
+            //        "2005-",
+            //        new DiaryEntry
+            //        {
+            //            Title = "",
+            //            Tag = "",
+            //            EntryOne = md.Transform(Year2005.y1w14One),
+            //            EntryTwo = md.Transform(Year2005.y1w14Two),
+            //            Images = new List<IAssociatedImage>
+            //            {
+            //                new AssociatedImage("", ""), 
+            //                new AssociatedImage("", ""), 
+            //                new AssociatedImage("", ""), 
+            //                new AssociatedImage("", "")
+            //            }
+            //        });
+
+            //_diaryEntries
+            //    .Add(
+            //        "2005-",
+            //        new DiaryEntry
+            //        {
+            //            Title = "",
+            //            Tag = "",
+            //            EntryOne = md.Transform(Year2005.y1w14One),
+            //            EntryTwo = md.Transform(Year2005.y1w14Two),
+            //            Images = new List<IAssociatedImage>
+            //            {
+            //                new AssociatedImage("", ""), 
+            //                new AssociatedImage("", ""), 
+            //                new AssociatedImage("", ""), 
+            //                new AssociatedImage("", "")
+            //            }
+            //        });
+
+            //_diaryEntries
+            //    .Add(
+            //        "2005-",
+            //        new DiaryEntry
+            //        {
+            //            Title = "",
+            //            Tag = "",
+            //            EntryOne = md.Transform(Year2005.y1w14One),
+            //            EntryTwo = md.Transform(Year2005.y1w14Two),
+            //            Images = new List<IAssociatedImage>
+            //            {
+            //                new AssociatedImage("", ""), 
+            //                new AssociatedImage("", ""), 
+            //                new AssociatedImage("", ""), 
+            //                new AssociatedImage("", "")
+            //            }
+            //        });
 
             //_diaryEntries
             //    .Add(

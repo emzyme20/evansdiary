@@ -563,7 +563,7 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to This week Caroline made Evan a fish pie and we are no longer using the little ice cube sized potions for main meals as he would be having about 3 or 4 of them by now. Instead we are using much bigger single containers and I probably think that these are a little too much for Evan at the moment but I&apos;m sure it won&apos;t be for long. All it means is that we have some leftovers because he gets bored *(though he always has room for some pudding!)* He enjoyed the fish pie and it was very fishy indeed with quite a st [rest of string was truncated]&quot;;.
         /// </summary>
         public static string y1w36One {
             get {
@@ -572,7 +572,7 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to We have a tooth! I noticed Evan&apos;s gum looked a lot paler this week and realised that it was the tooth coming up through the gums. He&apos;s had his grumpy moments this week - more so than I have experienced so far and he&apos;s also had a couple of days when he didn&apos;t want much dinner or evening bottle. I figured that this was finally the teething that we&apos;d thought we were experiencing all those months ago. It&apos;s quite funny actually, as we have been putting dentinox on Evan&apos;s gums on and off since he was 3 months. I&apos; [rest of string was truncated]&quot;;.
         /// </summary>
         public static string y1w37One {
             get {
@@ -581,7 +581,9 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to This is my penultimate week at home with Evan so I decided to get Evan weighed as I don&apos;t know when I&apos;ll next be able to do it. He is definitely big enough for his new car seat now as he weighed in at 20lb 4oz, which is a few grams over the 9 kilo requirement.  
+        ///
+        ///We took Evan swimming again this week and at first we thought it would be a nightmare as the water was much colder than it had been on previous visits and Evan&apos;s teeth started to chatter at first. He was ever so excitable though and he got some g [rest of string was truncated]&quot;;.
         /// </summary>
         public static string y1w38One {
             get {
@@ -590,7 +592,7 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Well this is it... The time has come for me to return to work. Unfortunately as much as I love spending time with Evan and being his full time carer, I have to pay the bills and if I am to ensure that Evan has lots of great things, I need to earn some money. I think nursery will be good for Evan because he loves the social aspect and playing with different toys that he doesn&apos;t have at home and seeing other babies. I think he would have become bored at home with me as I certainly wouldn&apos;t be able to do the k [rest of string was truncated]&quot;;.
         /// </summary>
         public static string y1w39One {
             get {
@@ -619,7 +621,9 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to When I started preparing myself for the inevitable return to work, nothing I thought up actually came close to comparing to the real deal! I was hoping that I would be kept really busy to keep my mind off of Evan. My work did ok on that part except for not having my own PC for my first day back, I&apos;ll forgive them for that as they gave me a brand new shiny lush PC the very next day. I did think a lot about Evan and I think I only telephoned them once in his first week so that&apos;s not bad.  
+        ///
+        ///Going on our exp [rest of string was truncated]&quot;;.
         /// </summary>
         public static string y1w40One {
             get {
@@ -628,7 +632,7 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to If someone had told me beforehand about the events that would happen this week I probably would have laughed. I had just completed my first week back at work after 10 months off and when I go into Evan on Sunday morning this week, his eye is oozing with puss. I tried to keep the eye clean but within minutes of wiping it, the infectious gunk had returned. I was sure Evan needed to see a Doctor so I sent a mobile text to warn my boss that I wouldn&apos;t be in on Monday. Little did I realise that this would actual [rest of string was truncated]&quot;;.
         /// </summary>
         public static string y1w41One {
             get {
@@ -642,6 +646,69 @@ namespace EvansDiary.Web.Diary.Resources {
         public static string y1w42One {
             get {
                 return ResourceManager.GetString("y1w42One", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string y1w43One {
+            get {
+                return ResourceManager.GetString("y1w43One", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string y1w44One {
+            get {
+                return ResourceManager.GetString("y1w44One", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string y1w45One {
+            get {
+                return ResourceManager.GetString("y1w45One", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string y1w46One {
+            get {
+                return ResourceManager.GetString("y1w46One", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string y1w47One {
+            get {
+                return ResourceManager.GetString("y1w47One", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string y1w48One {
+            get {
+                return ResourceManager.GetString("y1w48One", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string y1w49One {
+            get {
+                return ResourceManager.GetString("y1w49One", resourceCulture);
             }
         }
         
@@ -662,6 +729,33 @@ namespace EvansDiary.Web.Diary.Resources {
         public static string y1w4Two {
             get {
                 return ResourceManager.GetString("y1w4Two", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string y1w50One {
+            get {
+                return ResourceManager.GetString("y1w50One", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string y1w51One {
+            get {
+                return ResourceManager.GetString("y1w51One", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string y1w52One {
+            get {
+                return ResourceManager.GetString("y1w52One", resourceCulture);
             }
         }
         
