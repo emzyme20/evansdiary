@@ -938,10 +938,10 @@ namespace EvansDiary.Web.Diary
                         EntryOne = md.Transform(Year2005.y1w51One),
                         Images = new List<IAssociatedImage>
                         {
-                            new AssociatedImage("", ""), 
-                            new AssociatedImage("", ""), 
-                            new AssociatedImage("", ""), 
-                            new AssociatedImage("", "")
+                            new AssociatedImage("w51_swings_d3rhkt", "Loves the swings in the park"), 
+                            new AssociatedImage("w51_matching_hair_fss2zx", "Evan's new haircut gets styled like Mummy's"), 
+                            new AssociatedImage("w51_grandma_babysits_adsgxu", "Evan loves it when Grandma feeds him"), 
+                            new AssociatedImage("w51_bathroom_fun_lqcbex", "Evan loves bathroom time")
                         }
                     });
 
@@ -950,15 +950,19 @@ namespace EvansDiary.Web.Diary
                     "2005-52",
                     new DiaryEntry
                     {
-                        Title = "",
+                        Title = "18th - 25th December 2005",
                         Tag = "52",
                         EntryOne = md.Transform(Year2005.y1w52One),
                         Images = new List<IAssociatedImage>
                         {
-                            new AssociatedImage("", ""), 
-                            new AssociatedImage("", ""), 
-                            new AssociatedImage("", ""), 
-                            new AssociatedImage("", "")
+                            new AssociatedImage("w52_first_christmas_u0u9z1", "Evan gets his hands on his presents"), 
+                            new AssociatedImage("w52_noisy_toys_mlb0pt", "New toys seem to be going down well"), 
+                            new AssociatedImage("w52_christmas_dinner_rjveug", "Evan is not sure about the crackers and hats"), 
+                            new AssociatedImage("w52_it_snows_mphjz5", "It snows at Christmas!"),
+                            new AssociatedImage("w52_happy_birthday_s115yz", "Happy 1st Birthday Evan"), 
+                            new AssociatedImage("w52_end_of_the_year_tapbny", "Birthday hug"), 
+                            new AssociatedImage("w52_birthday_presents_xv4b6l", "You are supposed to push it Evan, not climb it"), 
+                            new AssociatedImage("w52_still_loves_camera_e7dxmy", "Yes, Yes, we all know you still love the camera")
                         }
                     });
         }

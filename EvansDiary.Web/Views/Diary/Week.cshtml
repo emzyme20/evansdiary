@@ -1,8 +1,9 @@
-﻿@using Microsoft.Ajax.Utilities
+﻿@using EvansDiary.Interfaces
+@using Microsoft.Ajax.Utilities
 @model EvansDiary.Web.ViewModels.DiaryEntryViewModel
 
 @{
-    ViewBag.Title = string.Format("Year 2005 - Week {0}", Model.Tag);
+    ViewBag.Title = string.Format("Year {0} - Week {1}", Model.Year, Model.Tag);
 }
 
 <section id="diary-page">
@@ -17,6 +18,11 @@
             var imageThree = Model.GetImage(2);
             var imageFour = Model.GetImage(3);
         }
+        @if (Model.ImageBlocks > 1)
+        {
+            @Html.Partial("_Images", new List<IAssociatedImage> { imageOne, imageTwo, imageThree, imageFour })
+        }
+        
         @if (!Model.EntryOne.IsNullOrWhiteSpace())
         {
             if (!Model.EntryTwo.IsNullOrWhiteSpace())
@@ -35,32 +41,15 @@
             }
         }
 
-        <div class="pure-g">
-            <div class="pure-u-1-2 pure-u-md-1-4">
-                <img class="pure-img-responsive" src="@imageOne.GetUrl()" alt="@imageOne.Caption">
-                <aside class="photo-box-caption">
-                    <span>@imageOne.Caption</span>
-                </aside>
-            </div>
-            <div class="pure-u-1-2 pure-u-md-1-4">
-                <img class="pure-img-responsive" src="@imageTwo.GetUrl()" alt="@imageTwo.Caption">
-                <aside class="photo-box-caption">
-                    <span>@imageTwo.Caption</span>
-                </aside>
-            </div>
-            <div class="pure-u-1-2 pure-u-md-1-4">
-                <img class="pure-img-responsive" src="@imageThree.GetUrl()" alt="@imageThree.Caption">
-                <aside class="photo-box-caption">
-                    <span>@imageThree.Caption</span>
-                </aside>
-            </div>
-            <div class="pure-u-1-2 pure-u-md-1-4">
-                <img class="pure-img-responsive" src="@imageFour.GetUrl()" alt="@imageFour.Caption">
-                <aside class="photo-box-caption">
-                    <span>@imageFour.Caption</span>
-                </aside>
-            </div>
-        </div>
+        @if (Model.ImageBlocks > 1)
+        {
+            imageOne = Model.GetImage(4);
+            imageTwo = Model.GetImage(5);
+            imageThree = Model.GetImage(6);
+            imageFour = Model.GetImage(7);
+        }
+        
+        @Html.Partial("_Images", new List<IAssociatedImage> { imageOne, imageTwo, imageThree, imageFour })
 
         @if (!Model.EntryTwo.IsNullOrWhiteSpace())
         {
@@ -68,5 +57,4 @@
             @Html.Raw(Model.EntryTwo)
         }
     </div>
-
 </section>

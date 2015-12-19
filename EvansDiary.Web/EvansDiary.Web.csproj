@@ -246,6 +246,8 @@
     <Content Include="Content\images\diary\years\2005\w49-main.jpg" />
     <Content Include="Content\images\diary\years\2005\w5-main.jpg" />
     <Content Include="Content\images\diary\years\2005\w50-main.jpg" />
+    <Content Include="Content\images\diary\years\2005\w51-main.jpg" />
+    <Content Include="Content\images\diary\years\2005\w52-main.jpg" />
     <Content Include="Content\images\diary\years\2005\w6-main.jpg" />
     <Content Include="Content\images\diary\years\2005\w7-main.jpg" />
     <Content Include="Content\images\diary\years\2005\w8-main.jpg" />
@@ -374,6 +376,7 @@
     <Content Include="Views\Diary\Week.cshtml" />
     <Content Include="Views\Diary\Month.cshtml" />
     <Content Include="Views\Hospital\Day.cshtml" />
+    <Content Include="Views\Diary\_Images.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

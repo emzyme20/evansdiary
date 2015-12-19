@@ -28,7 +28,7 @@ namespace EvansDiary.Web.Controllers
         {
             var diaryEntry = _contentDelivery.GetEntry(string.Format("{0}-{1}", year, week));
 
-            return View(new DiaryEntryViewModel(diaryEntry));
+            return View(new DiaryEntryViewModel(1, diaryEntry));
         }
 
         public ActionResult Year(int year)

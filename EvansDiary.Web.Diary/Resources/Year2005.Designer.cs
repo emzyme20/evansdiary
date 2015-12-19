@@ -752,9 +752,9 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to We popped round to our next door neighbour this week to deliver our Christmas card and we decided to give her a bottle of wine as a thank you for all the help we have had from her. We decided to stay for a glass of wine to catch up and she was very fortunate to witness a first time event from Evan. He&apos;s certainly not shy in new places and was crawling and playing all over her lounge floor being a little cutie as usual.  
+        ///   Looks up a localized string similar to We popped over to our next door neighbour this week to deliver our Christmas card and we decided to give her a bottle of wine as a thank you for all the help we have had from her. We decided to stay for a glass of wine to catch up and she was very fortunate to witness a first time event from Evan. He&apos;s certainly not shy in new places and was crawling and playing all over her lounge floor being a little cutie as usual.  
         ///
-        ///Evan stood up and suddenly started to walk around in a circle whilst we all clapped  [rest of string was truncated]&quot;;.
+        ///Evan stood up and suddenly started to walk around in a circle whilst we all clapped a [rest of string was truncated]&quot;;.
         /// </summary>
         public static string y1w51One {
             get {
@@ -763,7 +763,7 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to This was Evan&apos;s last week in his first year and it&apos;s amazing how quickly time flies by when watching your baby grow into a little boy. This final week started with a birthday party for Alex - one of Evan&apos;s baby buddies. We managed to get most of the gang together for one final meet before Christmas and it was lovely. All the babies are walking now, though Evan is still very wobbly and he would still prefer to crawl at times where as the others are very much mobile and walking very steadily. His first steps  [rest of string was truncated]&quot;;.
         /// </summary>
         public static string y1w52One {
             get {

@@ -1,0 +1,36 @@
+﻿@using EvansDiary.Web.Diary.TransferObjects
+@model IList<EvansDiary.Interfaces.IAssociatedImage>
+
+@{
+    var imageOne = Model.ElementAtOrDefault(0) ?? new AssociatedImage(string.Empty, string.Empty);
+    var imageTwo = Model.ElementAtOrDefault(1) ?? new AssociatedImage(string.Empty, string.Empty);
+    var imageThree = Model.ElementAtOrDefault(2) ?? new AssociatedImage(string.Empty, string.Empty);
+    var imageFour = Model.ElementAtOrDefault(3) ?? new AssociatedImage(string.Empty, string.Empty);
+}
+
+<div class="pure-g">
+    <div class="pure-u-1-2 pure-u-md-1-4">
+        <img class="pure-img-responsive" src="@imageOne.GetUrl()" alt="@imageOne.Caption">
+        <aside class="photo-box-caption">
+            <span>@imageOne.Caption</span>
+        </aside>
+    </div>
+    <div class="pure-u-1-2 pure-u-md-1-4">
+        <img class="pure-img-responsive" src="@imageTwo.GetUrl()" alt="@imageTwo.Caption">
+        <aside class="photo-box-caption">
+            <span>@imageTwo.Caption</span>
+        </aside>
+    </div>
+    <div class="pure-u-1-2 pure-u-md-1-4">
+        <img class="pure-img-responsive" src="@imageThree.GetUrl()" alt="@imageThree.Caption">
+        <aside class="photo-box-caption">
+            <span>@imageThree.Caption</span>
+        </aside>
+    </div>
+    <div class="pure-u-1-2 pure-u-md-1-4">
+        <img class="pure-img-responsive" src="@imageFour.GetUrl()" alt="@imageFour.Caption">
+        <aside class="photo-box-caption">
+            <span>@imageFour.Caption</span>
+        </aside>
+    </div>
+</div>
