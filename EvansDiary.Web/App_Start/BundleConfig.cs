@@ -35,11 +35,11 @@ namespace EvansDiary.Web
                     "~/Scripts/respond.js"));
 
             bundles.Add(
-                new ScriptBundle("~/bundles/theme").Include(
+                new ScriptBundle("~/bundles/themes").Include(
                     "~/Scripts/Theme/*.js"));
 
             bundles.Add(
-                new StyleBundle("~/Content/theme").Include(
+                new StyleBundle("~/Content/themes").Include(
                     "~/Content/Theme/css/*.css"));
 
             bundles.Add(
