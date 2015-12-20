@@ -12,7 +12,8 @@ namespace EvansDiary.Web.Diary
     {
         public StaticContentDelivery()
         {
-            InitialiseStaticContent();
+            InitialiseYearOneContent();
+            InitialiseYearTwoContent();
         }
 
         protected Dictionary<string, IDiaryEntry> _diaryEntries = new Dictionary<string, IDiaryEntry>();
@@ -26,7 +27,255 @@ namespace EvansDiary.Web.Diary
             return new DiaryEntry();
         }
 
-        public void InitialiseStaticContent()
+        public void InitialiseYearTwoContent()
+        {
+            var md = new Markdown {ExtraMode = true, SafeMode = false};
+
+            _diaryEntries
+                .Add(
+                    "2006-january",
+                    new DiaryEntry
+                    {
+                        Tag = "January (2006)",
+                        EntryOne = md.Transform(Year2006.y2m1One),
+                        Images = new List<IAssociatedImage>
+                        {
+                            new AssociatedImage("jan_sleepy_jzhlg8", "Tired Mummy and Baby"),
+                            new AssociatedImage("jan_scary_funny_bxnmmm", "Scary? No... funny"),
+                            new AssociatedImage("jan_quiet_time_kuqcs8", "Red cheeks evidence of Evan's new teeth coming through"),
+                            new AssociatedImage("jan_cheeky_chappy_xsqflo", "Adorable cheeky chappy")
+                        }
+                    });
+
+            _diaryEntries
+                .Add(
+                    "2006-february",
+                    new DiaryEntry
+                    {
+                        Tag = "February (2006)",
+                        EntryOne = md.Transform(Year2006.y2m2One),
+                        Images = new List<IAssociatedImage>
+                        {
+                            new AssociatedImage("feb_watching_outside_fc2kmb", "More interested in the dogs outside"),
+                            new AssociatedImage("feb_retro_toys_srwv4d", "Evan has found Caroline's Commodore 64 joy sticks!"),
+                            new AssociatedImage("feb_pillow_play_rppadc", "Creature Comforts! Evan likes to have his pillows near by"),
+                            new AssociatedImage("feb_feeding_himself_doktg7", "Evan sitting on his stool demonstrating self-service"),
+                            new AssociatedImage("feb_gorgeous_ligjbj", "Evan with his mummy"),
+                            new AssociatedImage("feb_cat_play_cz16fy", "Noodle play??"),
+                            new AssociatedImage("feb_camera_oezvfg", "Evan is still clearly obssessed with the camera"),
+                            new AssociatedImage("feb_playing_olgrm5", "Catching a sneaky picture of Evan whilst he is unaware")
+                        }
+                    });
+
+            //_diaryEntries
+            //    .Add(
+            //        "2005-2",
+            //        new DiaryEntry
+            //        {
+            //            Title = "2nd - 8th January 2005",
+            //            Tag = "2",
+            //            EntryOne = md.Transform(Year2005.y1w2One),
+            //            EntryTwo = md.Transform(Year2005.y1w2Two),
+            //            Images = new List<IAssociatedImage>
+            //            {
+            //                new AssociatedImage("w2_sleepy_baby_vvnnrh", "Such a hard life"),
+            //                new AssociatedImage("w2_ooh_looking_at_emma_jzyu66",
+            //                    "One of Evan's cute little expressions! 'Hello mummy!'"),
+            //                new AssociatedImage("w2_being_changed_ctnjl4", "Evan grumbling at having his nappy changed"),
+            //                new AssociatedImage("w2_resting_ao0kl8", "Both of us having a rest")
+            //            }
+            //        });
+
+            //_diaryEntries
+            //    .Add(
+            //        "2005-3",
+            //        new DiaryEntry
+            //        {
+            //            Title = "9th - 15th January 2005",
+            //            Tag = "3",
+            //            EntryOne = md.Transform(Year2005.y1w3One),
+            //            EntryTwo = md.Transform(Year2005.y1w3Two),
+            //            Images = new List<IAssociatedImage>
+            //            {
+            //                new AssociatedImage("w3_zonked_sekjad", "Completely zonked out! Too much boob! :-)"),
+            //                new AssociatedImage("w3_matching_socks_inodja", "Outfit includes matching socks"),
+            //                new AssociatedImage("w3_playgym_uv93jb", "A rare moment amusing himself on the play gym"),
+            //                new AssociatedImage("w3_wind_struggles_pihf4z", "Practicing different winding techniques")
+            //            }
+            //        });
+
+
+            //_diaryEntries
+            //    .Add(
+            //        "2005-4",
+            //        new DiaryEntry
+            //        {
+            //            Title = "16th - 22nd January 2005",
+            //            Tag = "4",
+            //            EntryOne = md.Transform(Year2005.y1w4One),
+            //            EntryTwo = md.Transform(Year2005.y1w4Two),
+            //            Images = new List<IAssociatedImage>
+            //            {
+            //                new AssociatedImage("w4_keep_rocking_boo6gx",
+            //                    "Evan letting Grandma know that she'll need to rock him for longer!"),
+            //                new AssociatedImage("w4_right_mitt_lgnu1a", "Have you seen my left mitt?"),
+            //                new AssociatedImage("w4_mindy_awckvt",
+            //                    "Emma's mums dog Mindy is very intrigued by this new creature!"),
+            //                new AssociatedImage("w4_left_mitt_yelxko", "Where's my right mitt now?!?")
+            //            }
+            //        });
+
+            //_diaryEntries
+            //    .Add(
+            //        "2005-5",
+            //        new DiaryEntry
+            //        {
+            //            Title = "23rd - 29th January 2005",
+            //            Tag = "5",
+            //            EntryOne = md.Transform(Year2005.y1w5One),
+            //            EntryTwo = md.Transform(Year2005.y1w5Two),
+            //            Images = new List<IAssociatedImage>
+            //            {
+            //                new AssociatedImage("w5_smiling_now_icxvs3", "Look Mummy, I can smile now"),
+            //                new AssociatedImage("w5_sofa_snooze_mmnknc", "No trouble sleeping on the sofa"),
+            //                new AssociatedImage("w5_baldy_s19zos", "I know you're looking at my bald patch, stop it!"),
+            //                new AssociatedImage("w5_nice_and_warm_f1sreg", "All nice and warm in here")
+            //            }
+            //        });
+
+            //_diaryEntries
+            //    .Add(
+            //        "2005-6",
+            //        new DiaryEntry
+            //        {
+            //            Title = "30th January - 5th February 2005",
+            //            Tag = "6",
+            //            EntryOne = md.Transform(Year2005.y1w6One),
+            //            EntryTwo = md.Transform(Year2005.y1w6Two),
+            //            Images = new List<IAssociatedImage>
+            //            {
+            //                new AssociatedImage("w6_giggles_uyubtv", "Evan likes his change mat a lot for some reason!"),
+            //                new AssociatedImage("w6_jazz_hands_yrqdum", "Evan doing his 'Jazz Hands'"),
+            //                new AssociatedImage("w6_tootsies_o96rio", "Thumbs Up! Oh no, that's tootsies!"),
+            //                new AssociatedImage("w6_cutest_sleeper_ymiern", "Just the cutest little sleeper")
+            //            }
+            //        });
+
+            //_diaryEntries
+            //    .Add(
+            //        "2005-7",
+            //        new DiaryEntry
+            //        {
+            //            Title = "6th - 12th February 2005",
+            //            Tag = "7",
+            //            EntryOne = md.Transform(Year2005.y1w7One),
+            //            EntryTwo = md.Transform(Year2005.y1w7Two),
+            //            Images = new List<IAssociatedImage>
+            //            {
+            //                new AssociatedImage("w7_whats_this_tgq4zu", "hmmm... what's this?"),
+            //                new AssociatedImage("w7_cute_with_tears_lrhjcn", "So cute, even with tears!"),
+            //                new AssociatedImage("w7_smiling_for_nan_oyz3gu", "Yep, I can hold it Mum!"),
+            //                new AssociatedImage("w7_holding_bottle_qdmcu5", "Evan smiling at Caroline's mum")
+            //            }
+            //        });
+
+            //_diaryEntries
+            //    .Add(
+            //        "2005-8",
+            //        new DiaryEntry
+            //        {
+            //            Title = "13th - 19th February 2005",
+            //            Tag = "8",
+            //            EntryOne = md.Transform(Year2005.y1w8One),
+            //            EntryTwo = md.Transform(Year2005.y1w8Two),
+            //            Images = new List<IAssociatedImage>
+            //            {
+            //                new AssociatedImage("w8_are_you_sure_co5zvs", "Are you sure you want me to pick you up?"),
+            //                new AssociatedImage("w8_yes_i_am_sure_mrakwh", "Yes, I'm sure!"),
+            //                new AssociatedImage("w8_tummy_time_e1kkre", "Evan, demonstrating the benefits of tummy time"),
+            //                new AssociatedImage("w8_stuffed_i2nrmd", "Stuffed from a good feed")
+            //            }
+            //        });
+
+            //_diaryEntries
+            //    .Add(
+            //        "2005-9",
+            //        new DiaryEntry
+            //        {
+            //            Title = "20th - 26th February 2005",
+            //            Tag = "9",
+            //            EntryOne = md.Transform(Year2005.y1w9One),
+            //            EntryTwo = md.Transform(Year2005.y1w9Two),
+            //            Images = new List<IAssociatedImage>
+            //            {
+            //                new AssociatedImage("w9_getting_stronger_uktkk6", "Getting stronger"),
+            //                new AssociatedImage("w9_peekaboo_dx59ff", "Peek-a-boo"),
+            //                new AssociatedImage("w9_hello_billy_wcbpep", "Hello Billy, my name's Evan!"),
+            //                new AssociatedImage("w9_all_smiles_mtztcb", "All smiles")
+            //            }
+            //        });
+
+            //_diaryEntries
+            //    .Add(
+            //        "2005-10",
+            //        new DiaryEntry
+            //        {
+            //            Title = "27th February - 5th March 2005",
+            //            Tag = "10",
+            //            EntryOne = md.Transform(Year2005.y1w10One),
+            //            EntryTwo = md.Transform(Year2005.y1w10Two),
+            //            Images = new List<IAssociatedImage>
+            //            {
+            //                new AssociatedImage("w10_tight_trousers_suiujs",
+            //                    "Yes, my trousers are far too tight, and No, I'm not happy about it!"),
+            //                new AssociatedImage("w10_lovely_eyes_a4yh6m", "Lovely eyes with long lashes"),
+            //                new AssociatedImage("w10_new_hat_g1wahu", "Do you like my new hat?"),
+            //                new AssociatedImage("w10_double_tummy_time_bvmitx", "Double tummy time")
+            //            }
+            //        });
+
+            //_diaryEntries
+            //    .Add(
+            //        "2005-11",
+            //        new DiaryEntry
+            //        {
+            //            Title = "6th - 12th March 2005",
+            //            Tag = "11",
+            //            EntryOne = md.Transform(Year2005.y1w11One),
+            //            EntryTwo = md.Transform(Year2005.y1w11Two),
+            //            Images = new List<IAssociatedImage>
+            //            {
+            //                new AssociatedImage("w11_bath_time_z5heur", "Evan, showing his happy face during bath time"),
+            //                new AssociatedImage("w11_grumpy_face_jgckvx",
+            //                    "Evan, doing his best impression of Emma with his grumpy face!"),
+            //                new AssociatedImage("w11_munching_molly_ihbt63",
+            //                    "Evan about to munch on Molly Moo Moo (a toy cow!)"),
+            //                new AssociatedImage("w11_less_sick_iqgjbk", "Finally, the milk reflux has subsided")
+            //            }
+            //        });
+
+            //_diaryEntries
+            //    .Add(
+            //        "2005-12",
+            //        new DiaryEntry
+            //        {
+            //            Title = "13th - 19th March 2005",
+            //            Tag = "12",
+            //            EntryOne = md.Transform(Year2005.y1w12One),
+            //            EntryTwo = md.Transform(Year2005.y1w12Two),
+            //            Images = new List<IAssociatedImage>
+            //            {
+            //                new AssociatedImage("w12_chewing_fist_cwrcel",
+            //                    "Evan demonstrating his new fist-chewing ability"),
+            //                new AssociatedImage("w12_frown_glysqn", "Loving the frown"),
+            //                new AssociatedImage("w12_holding_billy_noce4r",
+            //                    "Evan likes to carry his toys around with him these days"),
+            //                new AssociatedImage("w12_just_hanging_ogacsw", "Just hanging...")
+            //            }
+            //        });
+        }
+
+        public void InitialiseYearOneContent()
         {
             var md = new Markdown { ExtraMode = true, SafeMode = false };
 
@@ -36,7 +285,7 @@ namespace EvansDiary.Web.Diary
                     new DiaryEntry
                     {
                         Title = "26th December 2004",
-                        Tag = "0",
+                        Tag = "The Birth!",
                         EntryOne = md.Transform(Year2005.y1w0One),
                         EntryTwo = md.Transform(Year2005.y1w0Two),
                         Images = new List<IAssociatedImage>
@@ -54,7 +303,7 @@ namespace EvansDiary.Web.Diary
                     new DiaryEntry
                     {
                         Title = "26th December 2004 - 1st January 2005",
-                        Tag = "1",
+                        Tag = "Week 1",
                         EntryOne = md.Transform(Year2005.y1w1One),
                         EntryTwo = md.Transform(Year2005.y1w1Two),
                         Images = new List<IAssociatedImage>
@@ -72,7 +321,7 @@ namespace EvansDiary.Web.Diary
                     new DiaryEntry
                     {
                         Title = "2nd - 8th January 2005",
-                        Tag = "2",
+                        Tag = "Week Week 2",
                         EntryOne = md.Transform(Year2005.y1w2One),
                         EntryTwo = md.Transform(Year2005.y1w2Two),
                         Images = new List<IAssociatedImage>
@@ -90,7 +339,7 @@ namespace EvansDiary.Web.Diary
                     new DiaryEntry
                     {
                         Title = "9th - 15th January 2005",
-                        Tag = "3",
+                        Tag = "Week 3",
                         EntryOne = md.Transform(Year2005.y1w3One),
                         EntryTwo = md.Transform(Year2005.y1w3Two),
                         Images = new List<IAssociatedImage>
@@ -109,7 +358,7 @@ namespace EvansDiary.Web.Diary
                     new DiaryEntry
                     {
                         Title = "16th - 22nd January 2005",
-                        Tag = "4",
+                        Tag = "Week 4",
                         EntryOne = md.Transform(Year2005.y1w4One),
                         EntryTwo = md.Transform(Year2005.y1w4Two),
                         Images = new List<IAssociatedImage>
@@ -127,7 +376,7 @@ namespace EvansDiary.Web.Diary
                     new DiaryEntry
                     {
                         Title = "23rd - 29th January 2005",
-                        Tag = "5",
+                        Tag = "Week 5",
                         EntryOne = md.Transform(Year2005.y1w5One),
                         EntryTwo = md.Transform(Year2005.y1w5Two),
                         Images = new List<IAssociatedImage>
@@ -145,7 +394,7 @@ namespace EvansDiary.Web.Diary
                     new DiaryEntry
                     {
                         Title = "30th January - 5th February 2005",
-                        Tag = "6",
+                        Tag = "Week 6",
                         EntryOne = md.Transform(Year2005.y1w6One),
                         EntryTwo = md.Transform(Year2005.y1w6Two),
                         Images = new List<IAssociatedImage>
@@ -163,7 +412,7 @@ namespace EvansDiary.Web.Diary
                     new DiaryEntry
                     {
                         Title = "6th - 12th February 2005",
-                        Tag = "7",
+                        Tag = "Week 7",
                         EntryOne = md.Transform(Year2005.y1w7One),
                         EntryTwo = md.Transform(Year2005.y1w7Two),
                         Images = new List<IAssociatedImage>
@@ -181,7 +430,7 @@ namespace EvansDiary.Web.Diary
                     new DiaryEntry
                     {
                         Title = "13th - 19th February 2005",
-                        Tag = "8",
+                        Tag = "Week 8",
                         EntryOne = md.Transform(Year2005.y1w8One),
                         EntryTwo = md.Transform(Year2005.y1w8Two),
                         Images = new List<IAssociatedImage>
@@ -199,7 +448,7 @@ namespace EvansDiary.Web.Diary
                     new DiaryEntry
                     {
                         Title = "20th - 26th February 2005",
-                        Tag = "9",
+                        Tag = "Week 9",
                         EntryOne = md.Transform(Year2005.y1w9One),
                         EntryTwo = md.Transform(Year2005.y1w9Two),
                         Images = new List<IAssociatedImage>
@@ -217,7 +466,7 @@ namespace EvansDiary.Web.Diary
                     new DiaryEntry
                     {
                         Title = "27th February - 5th March 2005",
-                        Tag = "10",
+                        Tag = "Week 10",
                         EntryOne = md.Transform(Year2005.y1w10One),
                         EntryTwo = md.Transform(Year2005.y1w10Two),
                         Images = new List<IAssociatedImage>
@@ -235,7 +484,7 @@ namespace EvansDiary.Web.Diary
                     new DiaryEntry
                     {
                         Title = "6th - 12th March 2005",
-                        Tag = "11",
+                        Tag = "Week 11",
                         EntryOne = md.Transform(Year2005.y1w11One),
                         EntryTwo = md.Transform(Year2005.y1w11Two),
                         Images = new List<IAssociatedImage>
@@ -253,7 +502,7 @@ namespace EvansDiary.Web.Diary
                     new DiaryEntry
                     {
                         Title = "13th - 19th March 2005",
-                        Tag = "12",
+                        Tag = "Week 12",
                         EntryOne = md.Transform(Year2005.y1w12One),
                         EntryTwo = md.Transform(Year2005.y1w12Two),
                         Images = new List<IAssociatedImage>
@@ -271,7 +520,7 @@ namespace EvansDiary.Web.Diary
                     new DiaryEntry
                     {
                         Title = "20th - 26th March 2005",
-                        Tag = "13",
+                        Tag = "Week 13",
                         EntryOne = md.Transform(Year2005.y1w13One),
                         EntryTwo = md.Transform(Year2005.y1w13Two),
                         Images = new List<IAssociatedImage>
@@ -289,7 +538,7 @@ namespace EvansDiary.Web.Diary
                     new DiaryEntry
                     {
                         Title = "27th March - 2nd April 2005",
-                        Tag = "14",
+                        Tag = "Week 14",
                         EntryOne = md.Transform(Year2005.y1w14One),
                         EntryTwo = md.Transform(Year2005.y1w14Two),
                         Images = new List<IAssociatedImage>
@@ -307,7 +556,7 @@ namespace EvansDiary.Web.Diary
                     new DiaryEntry
                     {
                         Title = "3rd - 9th April 2005",
-                        Tag = "15",
+                        Tag = "Week 15",
                         EntryOne = md.Transform(Year2005.y1w15One),
                         EntryTwo = md.Transform(Year2005.y1w15Two),
                         Images = new List<IAssociatedImage>
@@ -325,7 +574,7 @@ namespace EvansDiary.Web.Diary
                     new DiaryEntry
                     {
                         Title = "10th - 16th April 2005",
-                        Tag = "16",
+                        Tag = "Week 16",
                         EntryOne = md.Transform(Year2005.y1w16One),
                         EntryTwo = md.Transform(Year2005.y1w16Two),
                         Images = new List<IAssociatedImage>
@@ -343,7 +592,7 @@ namespace EvansDiary.Web.Diary
                     new DiaryEntry
                     {
                         Title = "17th - 23rd April 2005",
-                        Tag = "17",
+                        Tag = "Week 17",
                         EntryOne = md.Transform(Year2005.y1w17One),
                         EntryTwo = md.Transform(Year2005.y1w17Two),
                         Images = new List<IAssociatedImage>
@@ -361,7 +610,7 @@ namespace EvansDiary.Web.Diary
                     new DiaryEntry
                     {
                         Title = "24th - 30th April 2005",
-                        Tag = "18",
+                        Tag = "Week 18",
                         EntryOne = md.Transform(Year2005.y1w18One),
                         EntryTwo = md.Transform(Year2005.y1w18Two),
                         Images = new List<IAssociatedImage>
@@ -379,7 +628,7 @@ namespace EvansDiary.Web.Diary
                     new DiaryEntry
                     {
                         Title = "1st - 7th May 2005",
-                        Tag = "19",
+                        Tag = "Week 19",
                         EntryOne = md.Transform(Year2005.y1w19One),
                         EntryTwo = md.Transform(Year2005.y1w19Two),
                         Images = new List<IAssociatedImage>
@@ -397,7 +646,7 @@ namespace EvansDiary.Web.Diary
                     new DiaryEntry
                     {
                         Title = "8th - 14th May 2005",
-                        Tag = "20",
+                        Tag = "Week 20",
                         EntryOne = md.Transform(Year2005.y1w20One),
                         EntryTwo = md.Transform(Year2005.y1w20Two),
                         Images = new List<IAssociatedImage>
@@ -415,7 +664,7 @@ namespace EvansDiary.Web.Diary
                     new DiaryEntry
                     {
                         Title = "15th - 21st May 2005",
-                        Tag = "21",
+                        Tag = "Week 21",
                         EntryOne = md.Transform(Year2005.y1w21One),
                         EntryTwo = md.Transform(Year2005.y1w21Two),
                         Images = new List<IAssociatedImage>
@@ -433,7 +682,7 @@ namespace EvansDiary.Web.Diary
                     new DiaryEntry
                     {
                         Title = "22nd - 28th May 2005",
-                        Tag = "22",
+                        Tag = "Week 22",
                         EntryOne = md.Transform(Year2005.y1w22One),
                         EntryTwo = md.Transform(Year2005.y1w22Two),
                         Images = new List<IAssociatedImage>
@@ -451,7 +700,7 @@ namespace EvansDiary.Web.Diary
                     new DiaryEntry
                     {
                         Title = "29th May - 4th June 2005",
-                        Tag = "23",
+                        Tag = "Week 23",
                         EntryOne = md.Transform(Year2005.y1w23One),
                         EntryOneAdditionalImage = new AssociatedImage("w23_the_party_u8scfn", "The Party"),
                         EntryTwo = md.Transform(Year2005.y1w23Two),
@@ -470,7 +719,7 @@ namespace EvansDiary.Web.Diary
                     new DiaryEntry
                     {
                         Title = "5th - 11th June 2005",
-                        Tag = "24",
+                        Tag = "Week 24",
                         EntryOne = md.Transform(Year2005.y1w24One),
                         EntryTwo = md.Transform(Year2005.y1w24Two),
                         Images = new List<IAssociatedImage>
@@ -489,7 +738,7 @@ namespace EvansDiary.Web.Diary
                     new DiaryEntry
                     {
                         Title = "12th - 18th June 2005",
-                        Tag = "25",
+                        Tag = "Week 25",
                         EntryOne = md.Transform(Year2005.y1w25One),
                         Images = new List<IAssociatedImage>
                         {
@@ -506,7 +755,7 @@ namespace EvansDiary.Web.Diary
                     new DiaryEntry
                     {
                         Title = "19th - 25th June 2005",
-                        Tag = "26",
+                        Tag = "Week 26",
                         EntryOne = md.Transform(Year2005.y1w26One),
                         EntryTwo = md.Transform(Year2005.y1w26Two),
                         Images = new List<IAssociatedImage>
@@ -524,7 +773,7 @@ namespace EvansDiary.Web.Diary
                     new DiaryEntry
                     {
                         Title = "26th June - 2nd July 2005",
-                        Tag = "27",
+                        Tag = "Week 27",
                         EntryOne = md.Transform(Year2005.y1w27One),
                         Images = new List<IAssociatedImage>
                         {
@@ -541,7 +790,7 @@ namespace EvansDiary.Web.Diary
                     new DiaryEntry
                     {
                         Title = "3rd - 9th July 2005",
-                        Tag = "28",
+                        Tag = "Week 28",
                         EntryOne = md.Transform(Year2005.y1w28One),
                         Images = new List<IAssociatedImage>
                         {
@@ -558,7 +807,7 @@ namespace EvansDiary.Web.Diary
                     new DiaryEntry
                     {
                         Title = "10th - 16th July 2005",
-                        Tag = "29",
+                        Tag = "Week 29",
                         EntryOne = md.Transform(Year2005.y1w29One),
                         EntryTwo = md.Transform(Year2005.y1w29Two),
                         Images = new List<IAssociatedImage>
@@ -576,7 +825,7 @@ namespace EvansDiary.Web.Diary
                     new DiaryEntry
                     {
                         Title = "17th - 23rd July 2005",
-                        Tag = "30",
+                        Tag = "Week 30",
                         EntryOne = md.Transform(Year2005.y1w30One),
                         EntryTwo = md.Transform(Year2005.y1w30Two),
                         Images = new List<IAssociatedImage>
@@ -594,7 +843,7 @@ namespace EvansDiary.Web.Diary
                     new DiaryEntry
                     {
                         Title = "24th - 30th July 2005",
-                        Tag = "31",
+                        Tag = "Week 31",
                         EntryOne = md.Transform(Year2005.y1w31One),
                         Images = new List<IAssociatedImage>
                         {
@@ -611,7 +860,7 @@ namespace EvansDiary.Web.Diary
                     new DiaryEntry
                     {
                         Title = "31st July - 6th August 2005",
-                        Tag = "32",
+                        Tag = "Week 32",
                         EntryOne = md.Transform(Year2005.y1w32One),
                         Images = new List<IAssociatedImage>
                         {
@@ -628,7 +877,7 @@ namespace EvansDiary.Web.Diary
                     new DiaryEntry
                     {
                         Title = "7th - 13th August 2005",
-                        Tag = "33",
+                        Tag = "Week 33",
                         EntryOne = md.Transform(Year2005.y1w33One),
                         Images = new List<IAssociatedImage>
                         {
@@ -645,7 +894,7 @@ namespace EvansDiary.Web.Diary
                     new DiaryEntry
                     {
                         Title = "14th - 20th August 2005",
-                        Tag = "34",
+                        Tag = "Week 34",
                         EntryOne = md.Transform(Year2005.y1w34One),
                         Images = new List<IAssociatedImage>
                         {
@@ -662,7 +911,7 @@ namespace EvansDiary.Web.Diary
                     new DiaryEntry
                     {
                         Title = "21st - 27th August 2005",
-                        Tag = "35",
+                        Tag = "Week 35",
                         EntryOne = md.Transform(Year2005.y1w35One),
                         Images = new List<IAssociatedImage>
                         {
@@ -679,7 +928,7 @@ namespace EvansDiary.Web.Diary
                     new DiaryEntry
                     {
                         Title = "28th August - 3rd September 2005",
-                        Tag = "36",
+                        Tag = "Week 36",
                         EntryOne = md.Transform(Year2005.y1w36One),
                         Images = new List<IAssociatedImage>
                         {
@@ -696,7 +945,7 @@ namespace EvansDiary.Web.Diary
                     new DiaryEntry
                     {
                         Title = "4th - 10th September 2005",
-                        Tag = "37",
+                        Tag = "Week 37",
                         EntryOne = md.Transform(Year2005.y1w37One),
                         Images = new List<IAssociatedImage>
                         {
@@ -713,7 +962,7 @@ namespace EvansDiary.Web.Diary
                     new DiaryEntry
                     {
                         Title = "11th - 17th September 2005",
-                        Tag = "38",
+                        Tag = "Week 38",
                         EntryOne = md.Transform(Year2005.y1w38One),
                         Images = new List<IAssociatedImage>
                         {
@@ -730,7 +979,7 @@ namespace EvansDiary.Web.Diary
                     new DiaryEntry
                     {
                         Title = "18th - 24th September 2005",
-                        Tag = "39",
+                        Tag = "Week 39",
                         EntryOne = md.Transform(Year2005.y1w39One),
                         Images = new List<IAssociatedImage>
                         {
@@ -747,7 +996,7 @@ namespace EvansDiary.Web.Diary
                     new DiaryEntry
                     {
                         Title = "25th September - 1st October 2005",
-                        Tag = "40",
+                        Tag = "Week 40",
                         EntryOne = md.Transform(Year2005.y1w40One),
                         Images = new List<IAssociatedImage>
                         {
@@ -764,7 +1013,7 @@ namespace EvansDiary.Web.Diary
                     new DiaryEntry
                     {
                         Title = "2nd - 8th October 2005",
-                        Tag = "41",
+                        Tag = "Week 41",
                         EntryOne = md.Transform(Year2005.y1w41One),
                         Images = new List<IAssociatedImage>
                         {
@@ -781,7 +1030,7 @@ namespace EvansDiary.Web.Diary
                     new DiaryEntry
                     {
                         Title = "9th - 15th October 2005",
-                        Tag = "42",
+                        Tag = "Week 42",
                         EntryOne = md.Transform(Year2005.y1w42One),
                         Images = new List<IAssociatedImage>
                         {
@@ -798,7 +1047,7 @@ namespace EvansDiary.Web.Diary
                     new DiaryEntry
                     {
                         Title = "16th - 22nd October 2005",
-                        Tag = "43",
+                        Tag = "Week 43",
                         EntryOne = md.Transform(Year2005.y1w43One),
                         Images = new List<IAssociatedImage>
                         {
@@ -815,7 +1064,7 @@ namespace EvansDiary.Web.Diary
                     new DiaryEntry
                     {
                         Title = "23rd - 29th October 2005",
-                        Tag = "44",
+                        Tag = "Week 44",
                         EntryOne = md.Transform(Year2005.y1w44One),
                         Images = new List<IAssociatedImage>
                         {
@@ -832,7 +1081,7 @@ namespace EvansDiary.Web.Diary
                     new DiaryEntry
                     {
                         Title = "30th October - 5th November 2005",
-                        Tag = "45",
+                        Tag = "Week 45",
                         EntryOne = md.Transform(Year2005.y1w45One),
                         Images = new List<IAssociatedImage>
                         {
@@ -849,7 +1098,7 @@ namespace EvansDiary.Web.Diary
                     new DiaryEntry
                     {
                         Title = "6th - 12th November 2005",
-                        Tag = "46",
+                        Tag = "Week 46",
                         EntryOne = md.Transform(Year2005.y1w46One),
                         Images = new List<IAssociatedImage>
                         {
@@ -866,7 +1115,7 @@ namespace EvansDiary.Web.Diary
                     new DiaryEntry
                     {
                         Title = "13th - 19th November 2005",
-                        Tag = "47",
+                        Tag = "Week 47",
                         EntryOne = md.Transform(Year2005.y1w47One),
                         Images = new List<IAssociatedImage>
                         {
@@ -883,7 +1132,7 @@ namespace EvansDiary.Web.Diary
                     new DiaryEntry
                     {
                         Title = "20th - 26th November 2005",
-                        Tag = "48",
+                        Tag = "Week 48",
                         EntryOne = md.Transform(Year2005.y1w48One),
                         Images = new List<IAssociatedImage>
                         {
@@ -900,7 +1149,7 @@ namespace EvansDiary.Web.Diary
                     new DiaryEntry
                     {
                         Title = "27th November - 3rd December 2005",
-                        Tag = "49",
+                        Tag = "Week 49",
                         EntryOne = md.Transform(Year2005.y1w49One),
                         Images = new List<IAssociatedImage>
                         {
@@ -917,7 +1166,7 @@ namespace EvansDiary.Web.Diary
                     new DiaryEntry
                     {
                         Title = "4th - 10th December 2005",
-                        Tag = "50",
+                        Tag = "Week 50",
                         EntryOne = md.Transform(Year2005.y1w50One),
                         Images = new List<IAssociatedImage>
                         {
@@ -934,7 +1183,7 @@ namespace EvansDiary.Web.Diary
                     new DiaryEntry
                     {
                         Title = "11th - 17th December 2005",
-                        Tag = "51",
+                        Tag = "Week 51",
                         EntryOne = md.Transform(Year2005.y1w51One),
                         Images = new List<IAssociatedImage>
                         {
@@ -951,7 +1200,7 @@ namespace EvansDiary.Web.Diary
                     new DiaryEntry
                     {
                         Title = "18th - 25th December 2005",
-                        Tag = "52",
+                        Tag = "Week 52",
                         EntryOne = md.Transform(Year2005.y1w52One),
                         Images = new List<IAssociatedImage>
                         {

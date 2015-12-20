@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="y2m1One" xml:space="preserve">
+    <value>This month saw the change over to Evan nearly always walking and not so much of the crawling anymore. By the end of his first week back at nursery there was no stopping him.   
+
+As a result of his increased walking, especially as he is still unsteady some of the time, we are seeing more bumps and bruises than ever before. He is ever so confident and will quite happily eat bits of food off of your plate and then walk around the room chomping away. He'll even twist and turn a lot especially when holding a toy of some sort. He can dance up and down on his feet as well and he is definitely aware of music and dancing. His little baby bop is absolutely adorable. He is more aware of children's TV these days, he still recognises and likes the theme tunes to the TV programs that we watch but he stops and wanders over to the TV when channels like CBeebies are on, one of his favourites at the moment is Boogie Beebies.  
+
+We had our worst accident to date this month and it was one that happened when he lost his balance and slipped on the slippery bathroom floor. I was running a bath for Evan and hadn't taken his clothes off so he was wandering around still with his socks on. We have a small tiled ledge that runs the width of the bathroom and he was leaning against it while waving a toy around, when he slipped and fell. We couldn't cushion the fall as he fell away from us but when Caroline picked him up she passed him over to me saying *"He needs mummy's special cuddles"*. I couldn't believe it when I glanced down at him to assess the damage as blood was pouring from his mouth. I had to hold my hand to catch it all. It took a while to stem the flow and the cause of such bleeding was what I now know to be a fairly common mouth injury in small children. He had separated the bit of loose skin that joins your upper lip to your gum. It took several days to reattach itself properly and cleaning his teeth was a real nightmare to make sure we didn't catch it and make it bleed again...  
+
+Evan has a new game and it is one that both Caroline and I really like. He likes to put all his toys away into his toy boxes, actually he just puts everything he can find into his toy boxes, but at least it's a start! It is really cute when I tip all his Lego out onto the floor and all he wants to do is put them back away. He does get bored after a while, so we only usually get half of the tidying up done before he gets distracted.  
+
+I had to take Evan for his MMR this month, and I was dreading it as I had to go alone with him. For all his other injections I was able to take someone along with me for support. He didn't actually cry until the nurse started injecting the fluid in and that's what used to make me scream when Caroline had to inject the fertility drugs into me. The initial prick is nothing to worry about, it's the nasty evil fluid that stings! Evan buried his head into my chest and let out this real hearty traumatic cry, luckily enough it only took me a minute or so to calm him down. I accepted the plaster, but I now wish I'd not bothered because it didn't really bleed after we had removed the cotton ball and the plaster was a pain to remove later on that evening when Evan was in the bath. I don't think he has anymore injections now until pre-school age so we're both happy about that!  
+
+Evan had a new experience this month learning what things he must remember not to do. We were giving him a new hair cut and these can take quite a time and rather messy in the process. I was sitting in front of him keeping him amused whilst Caroline did the snipping. The occasional clump of hair dropped down in front of him and before I could stop him, on this one instance, he picked it up and instinctively ate it! Big mistake.... he then pulled this funny face in disgust and pushed his tongue out with all the hair on it. I then spent the next few minutes trying to get it all out of his mouth, poor baby...</value>
+  </data>
+  <data name="y2m2One" xml:space="preserve">
+    <value>It doesn't feel like only a year ago I was a new mum doing the whole mother and baby thing going to my weekly weigh-in clinics to make sure that Evan was getting enough breast milk and developing as he should. Time really has flown by; sometimes I really miss it. This month has been a stressful month and it has taken its toll on all of us. Some days I just wish it wasn't such a rush and that Evan and I could once again just spend some quality time together. It doesn't seem right that Saturday and Sunday are the only days that we truly have to ourselves, I miss him dearly at work. I think the long hours and lack of sleep because Evan has had a niggling cough and cold that refused to abate attributed to my illnesses. It all seemed to happen at once and fortunately Caroline escaped it all so she was able to look after us. Evan and I had been battling between us to rid ourselves of the common cold bug that was going round with little success. I thought I was finally getting better when I fell ill with a gastric virus. It was awful, I had kept Evan home from nursery as well because he had had a fever and vomiting episode the previous day. I was so ill that day that I had to call Caroline home from University and I slept for the best part of 24 hours. Even when I have been ill before, I have been able to get up to Evan when he needed me but it was unfamiliar territory with this illness, I could here Evan stirring in his cot from his nap and I just couldn't bring myself to get out of bed. I was stuck and I was so glad that it would only take Caroline 20 minutes to get home. It was probably good that I kept my distance because I certainly didn't want Evan to get my stomach virus.  
+
+I took some more pictures of Evan into work this month as they get displayed by my screen saver when my PC is idle. I wish I had time and most importantly good day light to take more photos of Evan. I have roughly 600 pictures that were taken during the first 9 months of his life. In the past 3 months coinciding with my return to work, I have only managed to take just over 100 pictures! He's changed so much that it really does show when you compare the pictures.  
+
+Evan finally has a new tooth!! For months we have had only 6 *(4 at the top and 2 at the bottom)*, but now we have a third at the bottom. I was expecting a few more to be honest as his teething has been playing havoc with his bottom and he's also been getting really hot and flushed around his cheeks.  
+
+Evan has changed how he plays whilst in the bath and shower. When he showers with us he now likes to try and drink the water as it sprays down. In the bath he likes to place all his cups and ducks along the edge of the bath, lining them neatly into a row before knocking off. He also likes to launch his toys out of the bath and he finds it increasingly funny when the toys still contain water and they land on one of his mummies!  
+
+Evan has started to lean up against things and he also likes to sit on chair like items like the stool or bathroom ledge. He still has a lot to learn though as he doesn't understand much about heights. He managed to launch himself off of the stool this month onto his head sending the whole of his body toppling over. I saw it all happening in slow motion but could quite stop it from happening, I caught him in mid air but I wasn't quick enough to stop the initial impact. He is showing a desire to walk forwards down the stairs, but again I don't think he is quite ready for that. He has managed once or twice to go down the stairs backwards, bum first.  
+
+I took Evan to an indoor soft play area this month called *"Snakes and Ladders"*. I'd taken him to a smaller one a few months back and he was quite nervous and clingy but I thought that was probably because he couldn't walk when all the other children could. He was terrified and he absolutely hated it. I couldn't get him to set a foot onto the soft play mats at all, it was as if he hated the feel of it on his skin. He would sit on the carpet area and play with the ball pen balls or push the rid on cars around but as soon as I took him anywhere near the soft play structures he would stiffen his limbs and cling on to me for dear life crying his poor little eyes out. It was awful to see him so traumatised and I felt like this bad mummy. I thought he would love it, I just hope I haven't traumatised him for life. I couldn't even get him to like the ball pen area and I know he likes these because he played in the ball pen that Megan had at her house. The bouncy castle was a failure as well, Evan hasn't really liked engine noises like the sound of a vacuum cleaner and that is what the bouncy castle sounded like. I placed Evan through the gap onto the bouncy castle and he freaked out launching himself into my arms and crying this really traumatised stuttered cry. We stayed for roughly an hour playing on the carpet and it felt really awkward because Evan was the only child who didn't like it and the looks I was getting from some of the other parents made me just want to hide under a rock. I'll leave it a few months before trying that again, my poor little baby boy.</value>
+  </data>
+</root>

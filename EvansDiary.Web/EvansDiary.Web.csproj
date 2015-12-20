@@ -252,6 +252,8 @@
     <Content Include="Content\images\diary\years\2005\w7-main.jpg" />
     <Content Include="Content\images\diary\years\2005\w8-main.jpg" />
     <Content Include="Content\images\diary\years\2005\w9-main.jpg" />
+    <Content Include="Content\images\diary\years\2006\m01.jpg" />
+    <Content Include="Content\images\diary\years\2006\m02.jpg" />
     <Content Include="Content\images\diary\year_1.jpg" />
     <Content Include="Content\images\diary\year_2.jpg" />
     <Content Include="Content\images\diary\year_3.jpg" />
@@ -381,7 +383,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Content\images\diary\years\2006\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config">

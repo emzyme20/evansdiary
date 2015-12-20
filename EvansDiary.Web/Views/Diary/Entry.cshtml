@@ -3,14 +3,17 @@
 @model EvansDiary.Web.ViewModels.DiaryEntryViewModel
 
 @{
-    ViewBag.Title = string.Format("Year {0} - {1}{2}", Model.Year, Model.Year == 1 ? "Week " : string.Empty, Model.Tag);
+    ViewBag.Title = string.Format("Year {0} - {1}", Model.Year, Model.Tag);
 }
 
 <section id="diary-page">
     <h2>@ViewBag.Title</h2>
 
-    <h3>@Model.Title</h3>
-
+    @if (!Model.Title.IsNullOrWhiteSpace())
+    {
+        <h3>@Model.Title</h3>
+    }
+    
     <div class="diary-entries container content">
         @{
             var imageOne = Model.GetImage(0);

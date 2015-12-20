@@ -4,6 +4,6 @@
     {
         IDiaryEntry GetEntry(string key);
 
-        void InitialiseStaticContent();
+        void InitialiseYearOneContent();
     }
 }

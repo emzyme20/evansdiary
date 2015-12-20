@@ -15,7 +15,7 @@
                 var imgSrc = string.Format("/Content/images/diary/years/{0}/m{1:00}.jpg", Model.Year, monthDigit);
 
                 <li class="pure-u-1-2 pure-u-sm-1-4">
-                    @using (Html.ScopedActionLink<DiaryController>(x => x.Month(Model.Year, monthName)))
+                    @using (Html.ScopedActionLink<DiaryController>(x => x.Month(Model.Year, monthName.ToLowerInvariant())))
                     {
                         <img src="@imgSrc" alt="@monthName" title="@monthName"/>
                     }
