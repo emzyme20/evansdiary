@@ -1,5 +1,8 @@
-﻿using System.Web.Mvc;
+﻿using System;
+using System.Web.Mvc;
 using System.Web.Routing;
+using EvansDiary.Web.Controllers;
+using EvansDiary.Web.Diary.Extensions;
 
 namespace EvansDiary.Web
 {
@@ -9,35 +12,12 @@ namespace EvansDiary.Web
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
-            routes.MapRoute(
-                "Diary",
-                "diary",
-                new { controller = "Diary", action = "Index" });
-
-            routes.MapRoute(
-                "Years",
-                "diary/year/{year}",
-                new { controller = "Diary", action = "Year" });
-
-            routes.MapRoute(
-                "Weeks",
-                "diary/year/{year}/week/{week}",
-                new { controller = "Diary", action = "Week" });
-
-            routes.MapRoute(
-                "Months",
-                "diary/year/{year}/{month}",
-                new { controller = "Diary", action = "Month" });
-
-            routes.MapRoute(
-                "Hospital-Diary",
-                "hospital/day/{day}",
-                new { controller = "Hospital", action = "Day" });
-
-            routes.MapRoute(
-                "Home",
-                "",
-                new { controller = "Home", action = "Index" });
+            routes.MapRoute<DiaryController>(c => c.Index(), "diary");
+            routes.MapRoute<DiaryController>(c => c.Year(0), "diary/year/{year}");
+            routes.MapRoute<DiaryController>(c => c.Week(0, 0), "diary/year/{year}/week/{week}");
+            routes.MapRoute<DiaryController>(c => c.Month(0, string.Empty), "diary/year/{year}/{month}");
+            routes.MapRoute<HospitalController>(c => c.Day(0), "hospital/day/{day}");
+            routes.MapRoute<HomeController>(c => c.Index(), "");
         }
     }
 }

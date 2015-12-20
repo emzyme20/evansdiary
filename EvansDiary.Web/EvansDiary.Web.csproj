@@ -375,13 +375,13 @@
     <Content Include="Views\Diary\Year.cshtml" />
     <Content Include="Views\Diary\_Weekly.cshtml" />
     <Content Include="Views\Diary\_Monthly.cshtml" />
-    <Content Include="Views\Diary\Week.cshtml" />
-    <Content Include="Views\Diary\Month.cshtml" />
+    <Content Include="Views\Diary\Entry.cshtml" />
     <Content Include="Views\Hospital\Day.cshtml" />
     <Content Include="Views\Diary\_Images.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Content\images\diary\years\2006\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config">

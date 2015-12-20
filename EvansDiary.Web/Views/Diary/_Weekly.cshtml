@@ -1,4 +1,6 @@
-﻿@model EvansDiary.Web.ViewModels.YearViewModel
+﻿@using EvansDiary.Web.Controllers
+@using EvansDiary.Web.Diary.Extensions
+@model EvansDiary.Web.ViewModels.YearViewModel
 
 <div class="diary-nav container">
     <div class="box">
@@ -11,7 +13,10 @@
                     : "Week " + week;
 
                 <li class="pure-u-1-2 pure-u-sm-1-4">
-                    <a href="/diary/year/@Model.Year/week/@week"><img src="@imgSrc" alt="Week @week" title="Week @week" /></a>
+                    @using (Html.ScopedActionLink<DiaryController>(x => x.Week(Model.Year, week)))
+                    {
+                        <img src="@imgSrc" alt="Week @week" title="Week @week" />
+                    }
                     <span>@description</span>
                 </li>
             }

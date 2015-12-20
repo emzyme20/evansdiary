@@ -3,7 +3,7 @@
 @model EvansDiary.Web.ViewModels.DiaryEntryViewModel
 
 @{
-    ViewBag.Title = string.Format("Year {0} - Week {1}", Model.Year, Model.Tag);
+    ViewBag.Title = string.Format("Year {0} - {1}{2}", Model.Year, Model.Year == 1 ? "Week " : string.Empty, Model.Tag);
 }
 
 <section id="diary-page">

@@ -1,4 +1,6 @@
-﻿@model EvansDiary.Web.ViewModels.YearViewModel
+﻿@using EvansDiary.Web.Controllers
+@using EvansDiary.Web.Diary.Extensions
+@model EvansDiary.Web.ViewModels.YearViewModel
 
 @{
     var dateTimeHelper = new System.Globalization.DateTimeFormatInfo();
@@ -9,11 +11,14 @@
         <ul class="flat pure-g image-nav-list">
             @for (var monthDigit = 1; monthDigit <= 12; monthDigit++)
             {
-                var imgSrc = string.Format("/Content/images/diary/years/{0}/m{1}.jpg", Model.Year, monthDigit);
                 var monthName = dateTimeHelper.GetMonthName(monthDigit);
+                var imgSrc = string.Format("/Content/images/diary/years/{0}/m{1:00}.jpg", Model.Year, monthDigit);
 
                 <li class="pure-u-1-2 pure-u-sm-1-4">
-                    <a href="/diary/year/@Model.Year/month/@monthName"><img src="@imgSrc" alt="@monthName" title="@monthName" /></a>
+                    @using (Html.ScopedActionLink<DiaryController>(x => x.Month(Model.Year, monthName)))
+                    {
+                        <img src="@imgSrc" alt="@monthName" title="@monthName"/>
+                    }
                     <span>@monthName</span>
                 </li>
             }

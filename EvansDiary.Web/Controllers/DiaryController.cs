@@ -21,14 +21,16 @@ namespace EvansDiary.Web.Controllers
 
         public ActionResult Month(int year, string month)
         {
-            return View();
+            var diaryEntry = _contentDelivery.GetEntry(string.Format("{0}-{1}", year, month));
+
+            return View("Entry", new DiaryEntryViewModel(2, diaryEntry));
         }
 
         public ActionResult Week(int year, int week)
         {
             var diaryEntry = _contentDelivery.GetEntry(string.Format("{0}-{1}", year, week));
 
-            return View(new DiaryEntryViewModel(1, diaryEntry));
+            return View("Entry", new DiaryEntryViewModel(1, diaryEntry));
         }
 
         public ActionResult Year(int year)
