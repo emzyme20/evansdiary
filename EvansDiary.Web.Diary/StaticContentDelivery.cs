@@ -1816,11 +1816,11 @@ namespace EvansDiary.Web.Diary
                                 Entry = md.Transform(Year2007.y3Jan),
                                 Images = new List<IAssociatedImage>
                                 {
-                                    new AssociatedImage("jan_train_play",
+                                    new AssociatedImage("jan_train_play_g0yxef",
                                         "Mummy helps build it, but only Evan gets to play!"),
-                                    new AssociatedImage("jan_play_watching", "Evan finally notices he's being watched"),
-                                    new AssociatedImage("", ""),
-                                    new AssociatedImage("", "")
+                                    new AssociatedImage("jan_play_watching_buhgti", "Evan finally notices he's being watched"),
+                                    new AssociatedImage("jan_tv_gneum1", "Catching up on some TV before bed time"),
+                                    new AssociatedImage("jan_noodle_cuddle_skcpkx", "Having a cuddle with Noodle")
                                 }
                             }
                         }
