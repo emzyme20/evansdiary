@@ -85,6 +85,7 @@
     <Compile Include="TransferObjects\AssociatedImage.cs" />
     <Compile Include="TransferObjects\DiaryEntry.cs" />
     <Compile Include="TransferObjects\HospitalEntry.cs" />
+    <Compile Include="TransferObjects\TimeLineEntry.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources\Hospital.resx">

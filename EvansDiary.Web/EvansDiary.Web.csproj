@@ -43,10 +43,6 @@
       <HintPath>..\packages\dotless.1.4.4\lib\dotless.Core.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="ServiceStack.Text, Version=4.0.50.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ServiceStack.Text.4.0.50\lib\net40\ServiceStack.Text.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="SimpleInjector, Version=3.1.1.0, Culture=neutral, PublicKeyToken=984cb50dea722e99, processorArchitecture=MSIL">
       <HintPath>..\packages\SimpleInjector.3.1.1\lib\net45\SimpleInjector.dll</HintPath>
       <Private>True</Private>
@@ -192,7 +188,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="ViewModels\HospitalDiaryEntryViewModel.cs" />
-    <Compile Include="ViewModels\DiaryEntryViewModel.cs" />
     <Compile Include="ViewModels\TimelineViewModel.cs" />
     <Compile Include="ViewModels\YearViewModel.cs" />
   </ItemGroup>
@@ -259,8 +254,6 @@
     <Content Include="Content\images\diary\years\2005\w9-main.jpg" />
     <Content Include="Content\images\diary\years\2006\m01.jpg" />
     <Content Include="Content\images\diary\years\2006\m02.jpg" />
-    <Content Include="Content\images\diary\year_1.jpg" />
-    <Content Include="Content\images\diary\year_2.jpg" />
     <Content Include="Content\images\diary\year_3.jpg" />
     <Content Include="Content\images\diary\year_4.jpg" />
     <Content Include="Content\images\the-diary.png" />
@@ -382,7 +375,6 @@
     <Content Include="Views\Diary\Year.cshtml" />
     <Content Include="Views\Diary\_Weekly.cshtml" />
     <Content Include="Views\Diary\_Monthly.cshtml" />
-    <Content Include="Views\Diary\Entry.cshtml" />
     <Content Include="Views\Hospital\Day.cshtml" />
     <Content Include="Views\Diary\_Images.cshtml" />
     <Content Include="Views\Diary\Timeline.cshtml" />

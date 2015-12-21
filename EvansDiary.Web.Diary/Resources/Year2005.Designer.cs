@@ -136,7 +136,7 @@ namespace EvansDiary.Web.Diary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Ooh we had a bit of a &apos;mare this week - the first time I caused an injury to Evan! There were tears... baby tears, Emma tears and there were screams! How did this happen? Well it all started with some baby fingernails and a pair of clippers :/ I&apos;m sure you can guess the rest!  
         ///
-        ///Due to the little &quot;jazz hands&quot; thing he tends to do when he&apos;s feeding (see the piccy in week 6) it&apos;s usually quite easy to trim his nails as he&apos;s fairly relaxed and sleepy when he&apos;s been feeding for a while and he splays his finge [rest of string was truncated]&quot;;.
+        ///Due to the little &quot;jazz hands&quot; thing he tends to do when he&apos;s feeding *(see the piccy in week 6)* it&apos;s usually quite easy to trim his nails as he&apos;s fairly relaxed and sleepy when he&apos;s been feeding for a while and he splays his fin [rest of string was truncated]&quot;;.
         /// </summary>
         public static string y1w12Two {
             get {
@@ -154,9 +154,9 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Over the last few weeks Evan has started to chew things more. He started off mainly chewing his fist (which he still does - a lot!) but now he&apos;s started chewing everything else too - his toys, his clothes, and his muslin! He&apos;s taken quite a liking to his muslin and he buries his face in it and giggles! We discovered this week that it will actually keep him amused for quite a while!  
+        ///   Looks up a localized string similar to Over the last few weeks Evan has started to chew things more. He started off mainly chewing his fist *(which he still does - a lot!)* but now he&apos;s started chewing everything else too - his toys, his clothes, and his muslin! He&apos;s taken quite a liking to his muslin and he buries his face in it and giggles! We discovered this week that it will actually keep him amused for quite a while!  
         ///
-        ///Another discovery we made this week is that Evan has started showing an interest in the TV. Is that normal for young babie [rest of string was truncated]&quot;;.
+        ///Another discovery we made this week is that Evan has started showing an interest in the TV. Is that normal for young bab [rest of string was truncated]&quot;;.
         /// </summary>
         public static string y1w13Two {
             get {
@@ -174,7 +174,7 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Emma already mentioned that Evan has a new trick of arching up his back. Sometimes this can be a real nuisance. A few days ago we had him in the pushchair while we were eating dinner. It was tilted upwards and we hadn&apos;t strapped him in (never needed to before). Suddenly he started to arch his back and wiggled so much that I actually thought he was going to fall out! Now he gets strapped in everywhere! But one place that we can&apos;t strap him is our laps. He frequently sits on our laps now and watches TV or he  [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to Emma already mentioned that Evan has a new trick of arching up his back. Sometimes this can be a real nuisance. A few days ago we had him in the pushchair while we were eating dinner. It was tilted upwards and we hadn&apos;t strapped him in *(never needed to before)*. Suddenly he started to arch his back and wiggled so much that I actually thought he was going to fall out! Now he gets strapped in everywhere! But one place that we can&apos;t strap him is our laps. He frequently sits on our laps now and watches TV or h [rest of string was truncated]&quot;;.
         /// </summary>
         public static string y1w14Two {
             get {
@@ -805,7 +805,7 @@ namespace EvansDiary.Web.Diary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Emma has been exclusively breast-feeding Evan since birth but sometimes she needs to go out somewhere where she can&apos;t take him along. When that happens she has to try to get him fed before she goes and get back quick as he&apos;s still feeding pretty much every two hours!  
         ///
-        ///So this week she thought she&apos;d try expressing so we could try a bottle feed. I&apos;ll let Emma go into details about the expressing :-) Well a couple of days later we had a couple of ounces of milk (!) and we tried it out - he seemed to love i [rest of string was truncated]&quot;;.
+        ///So this week she thought she&apos;d try expressing so we could try a bottle feed. I&apos;ll let Emma go into details about the expressing :-) Well a couple of days later we had a couple of ounces of milk **(!)** and we tried it out - he seemed to lo [rest of string was truncated]&quot;;.
         /// </summary>
         public static string y1w6Two {
             get {
@@ -834,7 +834,7 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to We have found a formula milk that Evan will drink (we hope it wasn&apos;t a one off) and he quite easily drank 8oz. It&apos;s nice for Caroline to have some bonding time with Evan and it really is lovely watching him feed with those gorgeous little eyes looking up at you. I don&apos;t always have expressed breast milk at hand and sometimes I feel like my boobs have nothing in them so having formula available will be very handy. It&apos;s especially useful for when we go to visit friends because it can be terribly lonely having [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to We have found a formula milk that Evan will drink *(we hope it wasn&apos;t a one off)* and he quite easily drank 8oz. It&apos;s nice for Caroline to have some bonding time with Evan and it really is lovely watching him feed with those gorgeous little eyes looking up at you. I don&apos;t always have expressed breast milk at hand and sometimes I feel like my boobs have nothing in them so having formula available will be very handy. It&apos;s especially useful for when we go to visit friends because it can be terribly lonely havi [rest of string was truncated]&quot;;.
         /// </summary>
         public static string y1w8One {
             get {

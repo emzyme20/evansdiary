@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
 
 using EvansDiary.Interfaces;
 
@@ -7,24 +6,26 @@ namespace EvansDiary.Web.ViewModels
 {
     public class TimelineViewModel
     {
-        private readonly List<IDiaryEntry> _diaryEntries;
+        private readonly List<ITimeLineEntry> _timeline;
 
-        public TimelineViewModel(int year, List<IDiaryEntry> diaryEntries)
+        public TimelineViewModel(int year, IDiaryEntry diaryEntry)
         {
             Year = year;
-            _diaryEntries = diaryEntries;
-            Tag = diaryEntries.First().Tag;
+            _timeline = diaryEntry.Timeline;
+            Tag = diaryEntry.Tag;
+            Headline = diaryEntry.Headline;
         }
 
         public string Tag { get; set; }
+        public string Headline { get; set; }
 
         public int Year { get; set; }
 
-        public IEnumerable<IDiaryEntry> GetEntries()
+        public IEnumerable<ITimeLineEntry> GetEntries()
         {
-            foreach (var diaryEntry in _diaryEntries)
+            foreach (var entry in _timeline)
             {
-                yield return diaryEntry;
+                yield return entry;
             }
         }
     }

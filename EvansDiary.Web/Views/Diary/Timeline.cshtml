@@ -8,29 +8,48 @@
 <section id="diary-page">
     <h2>@ViewBag.Title</h2>
 
-    @foreach (var diaryEntry in Model.GetEntries())
+    @if (!string.IsNullOrWhiteSpace(Model.Headline))
     {
-        var imageOne = diaryEntry.GetImage(0);
-        var imageTwo = diaryEntry.GetImage(1);
-        var imageThree = diaryEntry.GetImage(2);
-        var imageFour = diaryEntry.GetImage(3);
-        var imageBlocks = diaryEntry.Images.Count() / 4;
-        <div class="diary-entries container content multiple">
-            <h2 class="content-subhead">@diaryEntry.Title</h2>
+        <h3>@Model.Headline</h3>
+    }
 
-            @Html.Partial("_Images", new List<IAssociatedImage> { imageOne, imageTwo, imageThree, imageFour })
+    @foreach (var entry in Model.GetEntries())
+    {
+        var imageOne = entry.GetImage(0);
+        var imageTwo = entry.GetImage(1);
+        var imageThree = entry.GetImage(2);
+        var imageFour = entry.GetImage(3);
+        var imageBlocks = entry.Images.Count() / 4;
+        <div class="diary-entries container content">
+            @if (imageBlocks > 0)
+            {
+                @Html.Partial("_Images", new List<IAssociatedImage> {imageOne, imageTwo, imageThree, imageFour})
+            }
 
-            @Html.Raw(diaryEntry.EntryOne)
+            @if (!string.IsNullOrWhiteSpace(entry.Subheading))
+            {
+                <h2 class="content-subhead">@entry.Subheading</h2>
+            }
+
+            @Html.Raw(entry.Entry)
+            
+            @if (entry.SingleImage != null)
+            {
+            <div class="pure-g">
+                <div class="pure-u-1 additional-image">
+                    <img class="pure-img-responsive" src="@entry.SingleImage.GetUrl()" alt="@entry.SingleImage.Caption">
+                </div>
+            </div>
+            }
 
             @if (imageBlocks > 1)
             {
-                imageOne = diaryEntry.GetImage(4);
-                imageTwo = diaryEntry.GetImage(5);
-                imageThree = diaryEntry.GetImage(6);
-                imageFour = diaryEntry.GetImage(7);
+                imageOne = entry.GetImage(4);
+                imageTwo = entry.GetImage(5);
+                imageThree = entry.GetImage(6);
+                imageFour = entry.GetImage(7);
+                @Html.Partial("_Images", new List<IAssociatedImage> {imageOne, imageTwo, imageThree, imageFour})
             }
-
-            @Html.Partial("_Images", new List<IAssociatedImage> { imageOne, imageTwo, imageThree, imageFour })
         </div>
     }
 </section>

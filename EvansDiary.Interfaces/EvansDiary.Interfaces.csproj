@@ -44,6 +44,7 @@
     <Compile Include="IHospitalEntry.cs" />
     <Compile Include="IStaticContentDelivery.cs" />
     <Compile Include="IStaticHospitalContentDelivery.cs" />
+    <Compile Include="ITimeLineEntry.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
