@@ -1551,12 +1551,16 @@ namespace EvansDiary.Web.Diary
                                 Entry = md.Transform(Year2006.y2Mar),
                                 Images = new List<IAssociatedImage>
                                 {
-                                    new AssociatedImage("mar_bed_hair", "Good morning scruffy head!"),
+                                    new AssociatedImage("mar_bed_hair_xcmrd3", "Good morning scruffy head!"),
                                     new AssociatedImage(
-                                        "mar_feeds_himself",
+                                        "mar_feeds_himself_bxo8hr",
                                         "Evan likes to feed himself when he is not being lazy"),
-                                    new AssociatedImage("mar_domesticated", "Now where did I put that washing?"),
-                                    new AssociatedImage("", "")
+                                    new AssociatedImage("mar_domesticated_mzth6a", "Now where did I put that washing?"),
+                                    new AssociatedImage("mar_food_tasting_ueslch", "Evan is very keen to try new foods"),
+                                    new AssociatedImage("mar_indoor_car_gpbppv", "Getting the car ready"),
+                                    new AssociatedImage("mar_congestion_fqunat", "Congestion ahead"),
+                                    new AssociatedImage("mar_winding_ckbbyb", "Getting the burps out!"),
+                                    new AssociatedImage("mar_pants_pxhyk4", "You are supposed to hang out the washing, not wear it!")
                                 }
                             }
                         }
@@ -1575,11 +1579,15 @@ namespace EvansDiary.Web.Diary
                                 Entry = md.Transform(Year2006.y2Apr),
                                 Images = new List<IAssociatedImage>
                                 {
-                                    new AssociatedImage("", ""),
-                                    new AssociatedImage("apr_odds_farm", "Evan enjoying a ride about at Odds Farm Park"),
-                                    new AssociatedImage("apr_stacking_bricks",
+                                    new AssociatedImage("apr_england_hat_xnsst7", "Start them supporting young"),
+                                    new AssociatedImage("apr_odds_farm_e5pwwp", "Evan enjoying a ride about at Odds Farm Park"),
+                                    new AssociatedImage("apr_stacking_bricks_aj9gkv",
                                         "Evan showing off his stacking skills - his max is 10 so far!"),
-                                    new AssociatedImage("apr_piggy_back", "Evan loves Mummy's piggy back ride")
+                                    new AssociatedImage("apr_piggy_back_kifssv", "Evan loves Mummy's piggy back ride"),
+                                    new AssociatedImage("apr_tower_mhruu7", "Evan needs help to complete his duplo towers"),
+                                    new AssociatedImage("apr_collecting_stones_b28vrc", "Collecting stones in the garden"),
+                                    new AssociatedImage("apr_climbing_frame_gjwf0i", "The swing doubles up as a climbing frame"),
+                                    new AssociatedImage("apr_swing_high_ziughk", "A trip to the park swing is necessary for maximum height")
                                 }
                             }
                         }
@@ -1598,12 +1606,16 @@ namespace EvansDiary.Web.Diary
                                 Entry = md.Transform(Year2006.y2May),
                                 Images = new List<IAssociatedImage>
                                 {
-                                    new AssociatedImage("", ""),
-                                    new AssociatedImage("may_worl_cup_ready", "Evan's all ready for the World Cup!"),
-                                    new AssociatedImage("may_pink_hair",
+                                    new AssociatedImage("may_pink_hair_jfk9bz",
                                         "Maybe he wants to be patriotic by dying his hair!"),
-                                    new AssociatedImage("may_sleepy_lunch",
-                                        "Oh such a hard life! Evan couldn't even wait for pudding this day...")
+                                    new AssociatedImage("may_sleepy_lunch_nqrz4h",
+                                        "Oh such a hard life! Evan couldn't even wait for pudding this day..."),
+                                    new AssociatedImage("may_world_cup_ready_rbt1dc", "Evan's all ready for the World Cup!"),
+                                    new AssociatedImage("may_plane_spotting_kful3h", "Spotting some planes (Evan says pwane)"),
+                                    new AssociatedImage("may_make_shift_chair_lwviam", "Our makeshift chair for Evan"),
+                                    new AssociatedImage("may_new_car_yc3cn9", "Evan finally gets out in his new car"),
+                                    new AssociatedImage("may_happy_in_car_qbumwz", "Beep! Beep!"),
+                                    new AssociatedImage("may_play_for_country_vsdcvn", "Love a baby in a football kit")
                                 }
                             }
                         }
@@ -1622,12 +1634,16 @@ namespace EvansDiary.Web.Diary
                                 Entry = md.Transform(Year2006.y2Jun),
                                 Images = new List<IAssociatedImage>
                                 {
-                                    new AssociatedImage("jun_lovely_smile", "Evan being just a happy chappy!"),
-                                    new AssociatedImage("jun_wellplace_zoo",
+                                    new AssociatedImage("jun_lovely_smile_hnyiew", "Evan being just a happy chappy!"),
+                                    new AssociatedImage("jun_wellplace_zoo_njrvo6",
                                         "Evan loved his trip to see all the animals at the Zoo!"),
-                                    new AssociatedImage("jun_beach_ball",
+                                    new AssociatedImage("jun_beach_ball_ozvt4w",
                                         "The beach ball was a huge success at the beach"),
-                                    new AssociatedImage("", "")
+                                    new AssociatedImage("jun_seaside_otmnzs", "Playing against the waves"),
+                                    new AssociatedImage("jun_road_trip_wlms6r", "Going on a road trip"),
+                                    new AssociatedImage("jun_rice_krispies_u292ln", "That's one way to eat your cereal"),
+                                    new AssociatedImage("jun_gardener_x7tq7z", "Checking on the strawberries"),
+                                    new AssociatedImage("jun_football_skills_hl0e6i", "Football skills!")
                                 }
                             }
                         }
@@ -1646,10 +1662,14 @@ namespace EvansDiary.Web.Diary
                                 Entry = md.Transform(Year2006.y2Jul),
                                 Images = new List<IAssociatedImage>
                                 {
-                                    new AssociatedImage("", ""),
-                                    new AssociatedImage("july_booster", "Evan loves eating at the table with us"),
-                                    new AssociatedImage("july_slide", "'Wow!' was Evan's reaction to his new slide"),
-                                    new AssociatedImage("july_legoland", "Oooh! look at this Mummy")
+                                    new AssociatedImage("jul_trampoline_fkiuhs", "Evan loves his new trampoline"),
+                                    new AssociatedImage("july_booster_n61rho", "Evan loves eating at the table with us"),
+                                    new AssociatedImage("july_slide_c3ijt0", "'Wow!' was Evan's reaction to his new slide"),
+                                    new AssociatedImage("jul_legoland_tarjvl", "Oooh! look at this Mummy"),
+                                    new AssociatedImage("jul_slide_done_fd30gj", "Little rest after sliding"),
+                                    new AssociatedImage("jul_queue_entertainment_ud6t2j", "Keeping a child entertained in a queue is a challenge"),
+                                    new AssociatedImage("jul_paddling_pool_pvcxcg", "This is more fun than swimming!"),
+                                    new AssociatedImage("jul_legoland_ride_h1okgq", "Enjoying the train ride")
                                 }
                             }
                         }
@@ -1668,12 +1688,16 @@ namespace EvansDiary.Web.Diary
                                 Entry = md.Transform(Year2006.y2Aug),
                                 Images = new List<IAssociatedImage>
                                 {
-                                    new AssociatedImage("aug_doggy_kiss", "errghh yuk... Doggy kiss!"),
-                                    new AssociatedImage("aug_flying_closeup",
+                                    new AssociatedImage("aug_doggy_kiss_fve16x", "errghh yuk... Doggy kiss!"),
+                                    new AssociatedImage("aug_flying_closeup_kwuunw",
                                         "Evan decides to launch himself on Mummy whilst she's not looking!"),
-                                    new AssociatedImage("aug_group_photo",
+                                    new AssociatedImage("aug_group_photo_prxlhp",
                                         "Evan and his friends - this scene took only one attempt"),
-                                    new AssociatedImage("", "")
+                                    new AssociatedImage("aug_water_feature_eprop8", "Playing with the water feature at Nanny's"),
+                                    new AssociatedImage("aug_new_tower_gp39ft", "A new way to build a tower"),
+                                    new AssociatedImage("aug_model_pose_xfyllo", "Always has such a cheeky look"),
+                                    new AssociatedImage("aug_concentration_unmbjm", "His little tongue sneaks out when he is concentrating"),
+                                    new AssociatedImage("aug_ball_on_slide_umjjv2", "Even balls can have fun on the slide")
                                 }
                             }
                         }
@@ -1692,10 +1716,10 @@ namespace EvansDiary.Web.Diary
                                 Entry = md.Transform(Year2006.y2Sep),
                                 Images = new List<IAssociatedImage>
                                 {
-                                    new AssociatedImage("sept_ikea_chair", "At last! we have a chair"),
-                                    new AssociatedImage("sept_slippers", "See Mum, I told you these were the right size"),
-                                    new AssociatedImage("sept_legoland", "Come on, you know you want to get closer..."),
-                                    new AssociatedImage("", "")
+                                    new AssociatedImage("sept_ikea_chair_tszca5", "At last! we have a chair"),
+                                    new AssociatedImage("sept_slippers_u2vmtm", "See Mum, I told you these were the right size"),
+                                    new AssociatedImage("sept_legoland_ommape", "Come on, you know you want to get closer..."),
+                                    new AssociatedImage("sept_hello_dog_mzv1gc", "Evan likes to watch Holly the dog next door")
                                 }
                             }
                         }
@@ -1714,12 +1738,11 @@ namespace EvansDiary.Web.Diary
                                 Entry = md.Transform(Year2006.y2Oct),
                                 Images = new List<IAssociatedImage>
                                 {
-                                    new AssociatedImage("oct_ball_play", "Isn't he just adorable?!?!"),
-                                    new AssociatedImage("oct_who_needs_toys",
+                                    new AssociatedImage("oct_ball_play_bzpuep", "Isn't he just adorable?!?!"),
+                                    new AssociatedImage("oct_who_needs_toys_kpwdhv",
                                         "Who needs toys, when we have Nanny's potatoes and spoons?"),
-                                    new AssociatedImage("oct_nanny_smiles", "Evan enjoying a rare sit down moment..."),
-                                    new AssociatedImage("oct_wheres_holly",
-                                        "Evan always looks for our neighbours dog when outside")
+                                    new AssociatedImage("oct_serious_oze2j5", "Evan enjoying a rare sit down moment...."),
+                                    new AssociatedImage("oct_nanny_smiles_rfuwm3", "....always ends up laughing")
                                 }
                             }
                         }
@@ -1738,10 +1761,10 @@ namespace EvansDiary.Web.Diary
                                 Entry = md.Transform(Year2006.y2Nov),
                                 Images = new List<IAssociatedImage>
                                 {
-                                    new AssociatedImage("nov_bin_pose", "Ignore the bin mummy, just look at me!"),
-                                    new AssociatedImage("nov_cute_hair", "Mummy always finds Evan when he is hiding"),
-                                    new AssociatedImage("", ""),
-                                    new AssociatedImage("", "")
+                                    new AssociatedImage("nov_bin_pose_yneutu", "Ignore the bin mummy, just look at me!"),
+                                    new AssociatedImage("nov_cute_hair_sk4ev7", "Mummy always finds Evan when he is hiding"),
+                                    new AssociatedImage("nov_ice_cream_wiajqy", "Sharing some ice-cream"),
+                                    new AssociatedImage("nov_casual_lcxpck", "Hello cutie")
                                 }
                             }
                         }
@@ -1760,12 +1783,16 @@ namespace EvansDiary.Web.Diary
                                 Entry = md.Transform(Year2006.y2Dec),
                                 Images = new List<IAssociatedImage>
                                 {
-                                    new AssociatedImage("dec_cooking",
+                                    new AssociatedImage("dec_cooking_aqkbfl",
                                         "Alex, I really think we're missing the point here"),
-                                    new AssociatedImage("dec_xmas_dinner",
+                                    new AssociatedImage("dec_xmas_dinner_nschli",
                                         "Don't think we're wearing these hats all day!"),
-                                    new AssociatedImage("dec_xmas_presents", "I don't need any help this year"),
-                                    new AssociatedImage("", "")
+                                    new AssociatedImage("dec_xmas_presents_vhhquw", "I don't need any help this year"),
+                                    new AssociatedImage("dec_together_cdlhbx", "Another amazing year"),
+                                    new AssociatedImage("dec_pudding_bbrqlo", "Evan loves a pudding!"),
+                                    new AssociatedImage("dec_neil_look_v4njvg", "Discussing presents with Neil"),
+                                    new AssociatedImage("dec_computer_ofmkbg", "Playing on the computer"),
+                                    new AssociatedImage("dec_birthday_ow1hy8", "Grandma helping Evan open presents")
                                 }
                             }
                         }
