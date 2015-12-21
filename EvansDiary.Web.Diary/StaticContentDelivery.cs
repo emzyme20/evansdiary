@@ -16,6 +16,7 @@ namespace EvansDiary.Web.Diary
         {
             InitialiseYearOneContent();
             InitialiseYearTwoContent();
+            InitialiseYearThreeContent();
         }
 
         public IDiaryEntry GetEntry(string key)
@@ -27,7 +28,7 @@ namespace EvansDiary.Web.Diary
             return new DiaryEntry();
         }
 
-        public void InitialiseYearOneContent()
+        protected void InitialiseYearOneContent()
         {
             var md = new Markdown { ExtraMode = true, SafeMode = false };
 
@@ -966,7 +967,7 @@ namespace EvansDiary.Web.Diary
                     });
         }
 
-        public void InitialiseYearTwoContent()
+        protected void InitialiseYearTwoContent()
         {
             var md = new Markdown { ExtraMode = true, SafeMode = false };
 
@@ -1168,5 +1169,203 @@ namespace EvansDiary.Web.Diary
                         }
                     });
         }
+
+        protected void InitialiseYearThreeContent()
+        {
+            var md = new Markdown { ExtraMode = true, SafeMode = false };
+
+            _diaryEntries
+                .Add(
+                    "2007-january",
+                    new DiaryEntry
+                    {
+                        Tag = "January (2007)",
+                        EntryOne = md.Transform(Year2007.y3Jan),
+                        Images = new List<IAssociatedImage>
+                        {
+                            new AssociatedImage("jan_train_play", "Mummy helps build it, but only Evan gets to play!"),
+                            new AssociatedImage("jan_play_watching", "Evan finally notices he's being watched"),
+                            new AssociatedImage("", ""),
+                            new AssociatedImage("", "")
+                        }
+                    });
+
+            _diaryEntries
+                .Add(
+                    "2007-february",
+                    new DiaryEntry
+                    {
+                        Tag = "February (2007)",
+                        EntryOne = md.Transform(Year2007.y3Feb),
+                        Images = new List<IAssociatedImage>
+                        {
+                            new AssociatedImage("feb_wellies_indoors", "Can you spot the other obsession?... Wellies indoors!?"),
+                            new AssociatedImage("feb_well_done", "Evan always congratulates himself with a clap and a 'Well Done'"),
+                            new AssociatedImage("", ""),
+                            new AssociatedImage("", "")
+                        }
+                    });
+
+            _diaryEntries
+                .Add(
+                    "2007-march",
+                    new DiaryEntry
+                    {
+                        Tag = "March (2007)",
+                        EntryOne = md.Transform(Year2007.y3Mar),
+                        Images = new List<IAssociatedImage>
+                        {
+                            new AssociatedImage("mar_beale_park", "Evan enjoys a picnic at Beale Park"),
+                            new AssociatedImage("mar_long_grass", "Evan experiences the fun of playing in long grass"),
+                            new AssociatedImage("mar_closeup", "As you can see Evan's lip is recovering well - still a cutie!"),
+                            new AssociatedImage("", "")
+                        }
+                    });
+
+            _diaryEntries
+                .Add(
+                    "2007-april",
+                    new DiaryEntry
+                    {
+                        Tag = "April (2007)",
+                        EntryOne = md.Transform(Year2007.y3Apr),
+                        Images = new List<IAssociatedImage>
+                        {
+                            new AssociatedImage("apr_fridge_magnets", "Evan's favourite toy at Nanny's is her fridge magnets!"),
+                            new AssociatedImage("apr_lego_castle", "Can you see us?"),
+                            new AssociatedImage("apr_lego_jeep", "We've just been spotting dinosaurs"),
+                            new AssociatedImage("", "")
+                        }
+                    });
+
+            _diaryEntries
+                .Add(
+                    "2007-may",
+                    new DiaryEntry
+                    {
+                        Tag = "May (2007)",
+                        EntryOne = md.Transform(Year2007.y3May),
+                        Images = new List<IAssociatedImage>
+                        {
+                            new AssociatedImage("may_footy_skills", "Evan demonstrating his much improved football skills"),
+                            new AssociatedImage("may_head_first", "This way is much more fun for Evan, and more scary for me!"),
+                            new AssociatedImage("may_sore_thumb", "Evan's experience with a plaster for the bit of finger nail he pulled off"),
+                            new AssociatedImage("", "")
+                        }
+                    });
+
+            _diaryEntries
+                .Add(
+                    "2007-june",
+                    new DiaryEntry
+                    {
+                        Tag = "June (2007)",
+                        EntryOne = md.Transform(Year2007.y3Jun),
+                        Images = new List<IAssociatedImage>
+                        {
+                            new AssociatedImage("", ""),
+                            new AssociatedImage("", ""),
+                            new AssociatedImage("", ""),
+                            new AssociatedImage("", "")
+                        }
+                    });
+
+            _diaryEntries
+                .Add(
+                    "2007-july",
+                    new DiaryEntry
+                    {
+                        Tag = "July (2007)",
+                        EntryOne = md.Transform(Year2007.y3Jul),
+                        Images = new List<IAssociatedImage>
+                        {
+                            new AssociatedImage("", ""),
+                            new AssociatedImage("", ""),
+                            new AssociatedImage("", ""),
+                            new AssociatedImage("", "")
+                        }
+                    });
+
+            _diaryEntries
+                .Add(
+                    "2007-august",
+                    new DiaryEntry
+                    {
+                        Tag = "August (2007)",
+                        EntryOne = md.Transform(Year2007.y3Aug),
+                        Images = new List<IAssociatedImage>
+                        {
+                            new AssociatedImage("", ""),
+                            new AssociatedImage("", ""),
+                            new AssociatedImage("", ""),
+                            new AssociatedImage("", "")
+                        }
+                    });
+
+            _diaryEntries
+                .Add(
+                    "2007-september",
+                    new DiaryEntry
+                    {
+                        Tag = "September (2007)",
+                        EntryOne = md.Transform(Year2007.y3Sep),
+                        Images = new List<IAssociatedImage>
+                        {
+                            new AssociatedImage("", ""),
+                            new AssociatedImage("", ""),
+                            new AssociatedImage("", ""),
+                            new AssociatedImage("", "")
+                        }
+                    });
+
+            _diaryEntries
+                .Add(
+                    "2007-october",
+                    new DiaryEntry
+                    {
+                        Tag = "October (2007)",
+                        EntryOne = md.Transform(Year2007.y3Oct),
+                        Images = new List<IAssociatedImage>
+                        {
+                            new AssociatedImage("", ""),
+                            new AssociatedImage("", ""),
+                            new AssociatedImage("", ""),
+                            new AssociatedImage("", ""),
+                        }
+                    });
+
+            _diaryEntries
+                .Add(
+                    "2007-november",
+                    new DiaryEntry
+                    {
+                        Tag = "November (2007)",
+                        EntryOne = md.Transform(Year2007.y3Nov),
+                        Images = new List<IAssociatedImage>
+                        {
+                            new AssociatedImage("", ""),
+                            new AssociatedImage("", ""),
+                            new AssociatedImage("", ""),
+                            new AssociatedImage("", "")
+                        }
+                    });
+
+            _diaryEntries
+                .Add(
+                    "2007-december",
+                    new DiaryEntry
+                    {
+                        Tag = "December (2007)",
+                        EntryOne = md.Transform(Year2007.y3Dec),
+                        Images = new List<IAssociatedImage>
+                        {
+                            new AssociatedImage("", ""),
+                            new AssociatedImage("", ""),
+                            new AssociatedImage("", ""),
+                            new AssociatedImage("", "")
+                        }
+                    });
+        }
+   
     }
 }

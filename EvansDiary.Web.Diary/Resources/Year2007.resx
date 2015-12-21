@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="y3Jan" xml:space="preserve">
+    <value>We all went to the dentist this month for our 6 month check up. Last time Evan didn't have as many teeth so a simple smile and giggle was enough to let the dentist check them. This time around he's got all of his child teeth except for the final set of molars. I'd been practicing with Evan for the week before opening our mouths and saying *"Aaaah"*. I thought we had it sussed but when we attempted to do it for the dentist Evan became shy and refused.  
+
+Caroline went in first, while I amused Evan in the waiting room. We were having so much fun until drama erupted in style. He managed to stumble on the carpet and fell into the base of the waiting room seats. They had these carpeted bases and it resulted in Evan getting a nasty carpet burn graze on his forehead that stayed for several days. We did manage to let the dentist see his teeth afterwards and she said he had a lovely set.  
+
+Evan has been having visits to the next room at nursery as he is now the oldest in his current room and the other children are much younger than him. There was a little group of them that loved playing together and one by one they have all been moving up into the 2-3 year old room - Evan being the last one to move. He loves the visits because he much prefers to play with the older children. I feel sorry for the little girls in that room, it's so noisy and there are only 2 or 3 girls in total! The boys are quite boisterous.  
+
+We had our first down pour of snow this month since the mini blizzard we had on Evan's 1st birthday. Evan was mesmerised by all the white stuff and it stayed longer on the ground this time. He loved it, we left for work later than usual because we spent several minutes making pretty footprint patterns in the snow. It was great, though it only lasted for the day. We arrived at nursery and it was a battle to get him inside and we used a snowball as bait. The only downside was him then throwing it at one of the nursery ladies! Everyone saw the funny side of it. Apparently he had a lovely day playing in the snow at every opportunity - I wish I'd been able to enjoy it with him.  
+
+Evan is becoming quite the little chatterbox these days and in the car he can be quite demanding. He insists on you answering him every time and if you don't he'll just repeat Mummy over and over again until you respond. Sometimes I'll look at him waiting for him to continue the conversation but he insists on you saying the words *"Yes, Evan?"*. It's hard work, but he loves to chat *(wonder where he gets that from!).*  
+
+We have abandoned the naughty step, instead we now use a naughty corner. We use the steps to help put his shoes on, so it had a conflict on interests there. We didn't want Evan to think he was being disciplined when we wanted to put his shoes on. The steps also have a lot of things that distract him and we started to notice that he'd just sit there and play with the phone or coats whilst he was sitting out his 2 minutes. This also meant we had no form of time out when he was naughty upstairs as we didn't have any steps handy. We've decided that a naughty corner is more appropriate and we have places that can be used whether we are upstairs or downstairs. He really hates the naughty corner as well and we're starting to see it working because he shows signs of regret when his time out ends and he always apologises.</value>
+  </data>
+  <data name="y3Feb" xml:space="preserve">
+    <value>I've been a bit repetitive of late when it comes to the music that I've been listening to in the car when there is nothing interesting to listen to on the radio. I've especially enjoyed listening to a mix CD that I compiled with some Snow Patrol, The Feeling and The Kooks - oh and some retro song that I heard on the radio (Ain't Nobody by Rufus &amp; Chaka Khan). Evan seems to enjoy it to as he always bops his legs and gets his Piglet teddy bear dancing in the car when the songs are playing. This month however I started to notice him singing along to them - he actually gets some of the words right and it's really amazing. He even recognises them when they come on the radio. He's started singing a lot in general, his favourite songs from TV are the Bob the Builder theme tune and Postman Pat.  
+
+Swimming is now on hold for the foreseeable future, we'll probably try him again in the summer. We've been going to Windsor recently as it has a fairly big family pool and it's more local than the Langley one. It has a cool wave machine as well, but Evan finds that a little scary. On a recent visit to Windsor Leisure Centre Evan decided that he really didn't want to go swimming. We had a battle to get his armbands on and that just made the whole situation worse and I don't think he ever recovered. I persevered with him, cuddling him, carrying him, trying to relax him a little and although it worked for about 5 minutes, he then spent the next 20 minutes crying. In the end he grabbed my hand and said *"Mummy, home..."* so we went home. That was one of the most expensive 30 minutes I have had recently, so we won't be doing that for a while. I may look into swimming lessons to help build up his confidence, but again, I'll wait until the summer before trying that.  
+
+We had more snow this month and Evan remembered it! He absolutely loved it, especially when our neighbour came over to have a mini snowball fight with us one morning. It's a real shame it did not hang around for any length of time - I love the snow. I blame Global Warming for it only lasting a day!  
+
+The constant *"No!"* to everything has become rather irritating lately and we decided to do something about it, so every time Evan said *"No"* for whatever reason, he spent 2 minutes in the naughty corner. We were getting *"No"* 20 times a day for silly things, for example I'd say to Evan, *"would you like some milk Evan?"* and he'd reply with *"no"*.  I knew he didn't mean it, but I went along with it and put it away, he'd then cry and throw a tantrum saying *"My milk!"*. It was getting really ridiculous. I was surprised at how quickly he learned that the naughty corner came after behaving like that. By the end of the first day, he'd stopped - we still get the occasional episode, but nothing like it was.  
+
+We ventured out into the garden this month to start the pruning in time for Spring. It was so dirty, yukky yukky... Evan absolutely loved being able to run around, though he was a little intrigued by the broken fence panel that now gives us access to our neighbour's garden. I hope that gets fixed soon otherwise I can see that being a nightmare.  
+
+We had a little accident this month with Evan that resulted in a visit to Accident &amp; Emergency. Evan and I had just returned home from work and we were saying hello to Caroline in the hallway. I was just having a cuddle and conversation when Evan started to play up and force his way between us to get attention. We tried to move him out of the way and he somehow managed to get caught up in my legs and feet and he fell over hitting his head on the groove of the front door that goes inwards. He fell unexpectedly and his head took all the impact. I managed to pick him up in an instant and as horrified to see the huge bump appear instantly on his temple. The most disturbing memory I have is of his eyes disappearing and rolling around, it was as if he'd lost consciousness. I was terrified and it took what seemed like ages for him to cry. A cold compress wasn't helping and in the end I grabbed a bottle of milk and we rushed him to A&amp;E. We were there for a few hours so that they could just watch him and by the end of the night he was running around causing chaos showing off a great big shiner of a bruise on the side of his head. I was relieved the following morning when Evan woke up. Head injuries are really awful and the smallest bump can be very dangerous.  
+
+Evan is really getting into his puzzles at the moment, surprisingly he's actually rather good at them and can figure out some of the basic ones all by himself. He only needs the occasional prompt from me for the more complicated puzzles. If I hand him a piece, he can usually figure out where it goes.</value>
+  </data>
+  <data name="y3Mar" xml:space="preserve">
+    <value>Now that Spring has finally settled we've started compiling a list of places that we'd like to take Evan to this year. We're hoping to do something with Evan every weekend so that he doesn't get bored, whether it's going to see family and friends, visiting a local attraction like the indoor play area or going out of our way to visit something completely new. I'm looking forward to Marwell Zoo as it's been so long since I've been to a Zoo and I'm looking forward to seeing the Giraffes and Elephants *(Hopefully they'll have some!).*  
+
+The first place we visited this year was Beale Park. We went with some friends who have a son near Evan's age hoping that they'd play together. He was older than Evan and he was influencing Evan's choices very early on. Everything that this little boy did, Evan wanted to do - even launching sticks and stones into the ponds, which was frowned upon! The best attraction at Beale Park was probably the steam train that you can ride on, though Caroline will probably disagree as this made her sneeze a lot because she didn't like the smell. They had lots of wildlife for us to see, but not the sorts of animals that you'll see at a Zoo, we saw lots of birds, owls and farm animals. There were other animals but I spent most of my time chasing Evan around as all he wanted to do was run off. There was a Giant play area with a sand pit and lots of play houses and ride on toys to play with. I spent ages at this area especially pushing Evan really high on the swing - he loved it. It was a really long day but Evan seemed to enjoy himself, and that's the plan.  
+
+Evan spent two weekends with his grandma this month because Caroline and I had made plans to go Ice-Skating one weekend with some friends and we also had her work's Christmas Party in Bristol. One of the weekends tied in nicely as it was my mum's birthday, so we were all able to spend some time with her and then Evan stayed a little longer. I'd been planning for a few months to do a Photo Book of Evan as one of her presents. It came out really nice, though some of the pages had the pictures and text a little too close to the edge, something I'll be wary of next time I design one. It contained a selection of images, ones my mum had already seen and a load of new ones. I was worried it would just be repeating pictures she'd already seen and had copies of, but she seemed to really like it.  
+
+We had another visit to A&amp;E this month. I was at work when I got the phone call that every mother dreads. Evan fell into a door frame at nursery splitting open his lip and it was quite deep. Debbie was very calm on the phone saying that it may need some stitches and that I should come to see him as soon as possible. I wasn't sure what to expect and I thought he'd be back at nursery in the afternoon. How wrong I was :). As soon as I saw him, I started crying, the cut went down into his chin and it was still bleeding when I got there. I just picked him up and drove him to A&amp;E as quickly as I could. I phoned Caroline on my *"hands free"* and I struggled to get any coherent words out. I told her not to worry and that I'd call her later, I'm so glad she ignored my advice because I needed her there really. When the Doctor's took a look at his face they said he needed proper stitches as the stick on butterfly ones would fall off and he'd be left with a larger scar. I didn't understand at first what they were saying when they were discussing the possibility of him having to wait until the next day for the stitches. Then they explained that to do stitches on a child as young as Evan, he'd need to have a general anaesthetic. I was horrified and speechless.  
+
+We had to wait until the afternoon because he'd eaten some food at 9am and you needed to have an empty stomach before he could go to the Operating Room. Caroline went in with him because I didn't want to witness them putting him to sleep. He cuddled her and they applied the anaesthetic that way; she said he just groaned and then fell asleep. The procedure didn't take too long, but he had to spend a while in the recovery room. He was very grumpy and upset when Caroline went to collect him and he cried a lot for the next 90 minutes. We finally managed to get him to drink and eat and then we were allowed to take him home. We monitored him closely for the next 48 hours because the anaesthetic stays in your body for that amount of time. I know this won't be the last time, but I certainly didn't expect this to happen when he was only 2. He still remembers the event and talks about falling over and hurting his lip. He had dissolvable stitches because if he hadn't, he would have had another general anaesthetic to remove the stitches.  
+
+We witnessed another milestone this month. I'd just bathed Evan and I was trying to put a little talc on him afterwards. He thought this was a really funny game, so I spent the next 10 minutes chasing a naked baby around tickling him and dabbing talc on him. We were finally exhausted and Evan said *"Poo Mummy"*. I said *"Ok, lets quickly put a nappy on then"* but he said *"No Mummy, potty".* I was really surprised as he hadn't wanted to use the potty at all lately so I watched him pull it out, though he faced it away from me. I just sat and waited for him to finish. When he stood up, we both peered in and he'd done his first wee! I gave him a great big kiss and a cuddle and we clapped lots. I doubt this will be a regular event, but it's a start.</value>
+  </data>
+  <data name="y3Apr" xml:space="preserve">
+    <value>We had an interesting start to this month when we visited Caroline's mum for the Easter weekend. She'd been planning a little visit to a public garden that has lots of flowers and special gardens for the public to come and see. I hadn't really thought too much about it until the actual day. Usually when we go out with Evan, there is two of us on hand to deal with him as he does have a tendency to wander and get upto general mischief. Today was going to be slighty different as Caroline's mum now requires a wheelchair when out and about for long periods of time so I was given the task to handle Evan, the pushchair and all the bags whilst Caroline handled her mother in the wheelchair. This day could have been a sketch out of Benny Hill because at one point Evan had me running round the gardens chasing him and abandoning the pushchair. Evan is definitely showing his independence at the moment, he wanted to be in control of pushing the pushchair even when we were trying to squeeze between groups of people and ponds! I was beginning to wish we were at home when things took a turn for the worse. We'd just navigated down this woodchip path when Caroline had the wheelchair wheels stuck and I was behind them with the pushchair. Evan slipped out of my grip and walked passed them and I got the pushchair stuck trying to follow him. Everything happened so quickly, one second I shouted for Evan to stop *(he totally ignored that request)*, then I ran but before I could get to him he just stepped straight into the baby pond *(luckily for us it was only the baby one)*. I caught him just as he slipped on the plastic base, he fell in up to his waist and my foot slipped partially in too. I screamed and everyone around us gasped in horror too as I pulled out this drenched baby. He response was *"Oh dear, wet"* - yes no kidding!  
+
+We didn't have anything with us, nappies or spare clothes as we haven't really found the need for them now that he is much older. We were just removing his wet clothes and debating the next action we could take when a lovely lady wandered over to us to ask if we had any clothes for him. She gave us a spare pair of jogging bottoms to use as her son was of a similar age. I couldn't thank her enough, we were able to stay for a little while longer and Evan was quite content to stay in his pushchair as he had no shoes or socks and his nappy was fat and wet because it had absorbed the pond water.  
+
+The deadline to get the annual passes for Legoland was the end of April, so we went to Legoland again this month. Evan is now at the next height range, so he can go on more of the rides. We only had two minor incidents that day, both around the same time. Once again Evan slipped out of my grasp and I thought he was with us, when suddenly I realised that neither one of us had him. I can't explain the feelings I experienced for the next few minutes, my heart was in my throat and I just panicked. I ran back the way we came shouting his name and fortunately for us, he'd not wandered far and he did come when he heard me shout. I don't think he realised he was lost and if he had then it may have been a worse situation for us all. I don't think I recovered from this incident all day. The second incident slightly more embarrassing for me was on the ride we were queuing for when he got lost. When we reached the front there was only two spaces left. Caroline took Evan on and I stayed in the queue because he could then get a second ride with me free. This seemed like a good idea until I got in and Caroline transferred him to me. When she left, Evan just cried his eyes out calling *"My Mummy"* and pointing to Caroline as she wandered off. I couldn't console him and in the end we had to leave the ride. The ride assistants were saying *"Oh I guess he wants his mummy"*, I just smiled and said *"yeah, I guess so"*, thinking to myself I AM HIS MUMMY... I have no idea why he cried and Caroline was equally puzzled when she saw that we weren't on the ride as it went round.  
+
+Evan has been going through a phase lately that I can only describe as him trying to push us to see how much protesting and refusals he can get away with. The main issue has been at the dinner table when it comes to food time. He's not too keen on meat at the moment especially mince, he'd rather eat pasta and ham every day if he had his way. I served him up a meal that is probably not his favourite but it's not horrible either - Chilli and rice. I'm not going to cook any more mince meals for a while but I didn't want to waste them either so he has to finish what is in the freezer. He just refused to eat this meal and we had tantrums like I have never seen before. I think he spent 2 hours at the table that day before finally eating his meal and all three of us were exhausted afterwards. He hasn't tried that since so I think it was worth enduring the pain as it showed him that he wouldn't rule us.  
+
+We finished this month with a BBQ at our friends house. We had a great time, Evan was well behaved and we all had a nice time. The last time we were there, we spent the whole time chasing him around because he was still a bit wobbly on his feet and we were worried about him hurting himself in their garden. This time round, he was fine. We played football with him and they also have a new dog that is much more friendly, so he would play with her and leave the other dog alone. If only I had the digital camcorder handy when we'd just packed up outside for the evening. Evan was standing in the kitchen asking to go outside to play football. I said it was too late and that it was time to start getting ready for bed, Evan however, decided he had other ideas. He wandered into the utility room and stood by the back door, so I left him. I only investigated when I heard this clattering noise and when I glanced in, I just screamed in shock as all I saw was a pair of legs dangling from the dog flap. I grabbed his legs and pulled him back in, how was I to know that he'd be that sneaky in finding a way outside! Cheeky monkey...</value>
+  </data>
+  <data name="y3May" xml:space="preserve">
+    <value>May has been the month of first times. Caroline went to Wales with her Karate club for a week of intensive training. I was really looking forward to this as it meant I was going to have to do everything by myself. We're a really good team and you only realise how much each other does when you're left alone to do it all. She went on the Bank Holiday weekend so Evan and I were left to our devices on the Bank Holiday Monday :). I spent a few hours cooking all the food required for the weeks lunches and the evening meals for Evan and I. I always feel the urge to do house maintenance when Caroline isn't around as it's usually something which she doesn't allow and this was no exception. 2 hours later, I had some university certificates up on the wall, which now have to stay on the wall because I also have them covering up 2 holes in the wall where my first attempts went wrong! Evan was playing with his Bob the Builder puzzles whilst I was doing DIY* (also remembering why we don't really do any)* when I hit my thumb with the hammer, he was very caring when he saw it happen because he wandered over to examine my thumb saying *"Oh dear, mummy hurt finger".*  
+
+Evan had an appointment with an Allergy Clinic this week to run some tests to see whether his intolerance to tomatoes is actually an allergy. I decided to take a nappy with me just in case as it was an afternoon appointment and he hadn't done a poo all day. I was secretly hoping that he'd hold out though and risked not taking wipes because I couldn't fit them in my bag. He really liked the play area at the hospital and it must have excited him so much that he poo'd. I only realised when we walked in to see the Doctor because it really did smell. That room was unbearable for our 15 minute consultation. The allergy test consisted of several blobs of solution and one real sample of tomato placed on the inside of his forearm. The Doctor drew markings next to each blob so we knew which one was which and then he used a spiky utensil to make a pin prick in his arm over the solutions. Evan was unfazed by this and just thought the Doctor was tickling him. We then went off to wait for the solutions to react with his skin.  
+
+I was then challenged with changing Evan's nappy. All was going well until I realised I had no wipes, the only thing I had available was some facial wipes! These had to do, Evan's bum smelled all fresh and rosey after that!  
+
+The results of the allergy concluded that he doesn't have an allergic reaction, but his body is showing an intolerance to them. There is not a lot that we can do about it except try him on tomatoes again when he is 5 to see if he is still sick. If he's sick still, then we can probably conclude that he won't be able eat tomatoes at all in the future.  
+
+I had some bad news to take this month as my nan died. Even though she was 93, it was still a shock for me when I found out. She always seemed ok when I went to visit, maybe that was because I always had Evan with me as that always made her happy. She rarely knew who I was these days, often mistaking me for my mum, but it was still nice to see her. Evan would usually just run up and down dancing and jumping. I used to get him to sing to her and she'd clap her hands to him. After my nan survived the operation last year to fix her broken leg, I really thought she'd survive so much more, I didn't realise that it was to be her downfall eventually. Even though it was hard to visit her lately because she didn't know who you were, I still miss her deeply. I'm already forgetting what she looked like and the images I do have seem to clash, one minute I see a flash that represents the frail lady I've been used to seeing recently and then I see a flash of her as I wish she had stayed with dark black hair and her strong personality. I don't think she had a very good quality of life lately and I feel bad for wanting her to stick around just for us. She was my nan though and I loved her no matter what. Just like when she was going to have an operation, we all gathered round her just in case she didn't survive, I wish I'd been able to say goodbye this time. You never know when will be the last time you see someone and I remember my last visit vividly and as we always did, Evan and I said goodbye and waved and then I looked back saying *"See you soon nan, take care.."* little did I realise that that was not going to be the case. It's times like this when you feel like you need to be around family more, it makes me hate the distance between my mum and I and I wish we only lived 15 minutes away from each other so that we could see each other weekly.  
+
+Evan and I took the long drive to Birmingham this month to see my nan who lives there. We'd had this trip planned for a month so it wasn't a last minute trip arranged after my other nan died. I haven't seen Nan Olive since November, a little longer than I had planned because I'd changed jobs and our weekends had been really busy lately so I was worried that Evan might be shy around her. He was absolutely fine though, she greeted us at the gate and he didn't hesitate to go hand in hand with her down her garden path whilst I unloaded the car. It was a really lovely day and Evan was such a good little boy. It won't be as long until the next visit as we'll see her again next month at my brother's wedding.  
+
+Let's hope June brings happier memories... I'm dedicating this entry to my Nan Yates, who I lost this month. She'll never be forgotten and I just only wish I had some pictures to remember her by as I'm worried that over time her image in my memories will fade.</value>
+  </data>
+  <data name="y3Jun" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="y3Jul" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="y3Aug" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="y3Sep" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="y3Oct" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="y3Nov" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="y3Dec" xml:space="preserve">
+    <value></value>
+  </data>
+</root>

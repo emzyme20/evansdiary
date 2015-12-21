@@ -3,7 +3,5 @@
     public interface IStaticContentDelivery
     {
         IDiaryEntry GetEntry(string key);
-
-        void InitialiseYearOneContent();
     }
 }
