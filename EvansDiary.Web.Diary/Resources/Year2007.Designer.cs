@@ -117,11 +117,40 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to We finally made the trip to a Zoo as this is one place I wanted to go to last year but we never quite made it. Evan absolutely loved it, although I was disappointed that he didn&apos;t get to see his favourite animal &quot;the Elephant&quot; because Marwell Zoo doesn&apos;t have them. Next time, we&apos;ll take him to Colchester Zoo as I believe they have Elephants there. We didn&apos;t arrive until after lunch time, but we still managed to squeeze the whole Zoo in. The weather was fantastic, possibly a little too hot as the poor animal [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string y3Jun_10th {
+            get {
+                return ResourceManager.GetString("y3Jun_10th", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to __*&quot;Bienvenue à l&apos;édition en Français!&quot;*__  
+        ///
+        ///Well - not quite! The month sort of started with a French event and ended with one. My speech is somewhat better but I can&apos;t really write it. We were invited to a BBQ at Caroline&apos;s brother&apos;s house at the end of May. This BBQ was special as her relatives from France had travelled down for a long weekend and this would be the first time that I met them. It was a really lovely day despite the terrible weather that we had and I just wish I could have chatted with  [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string y3Jun_1st {
+            get {
+                return ResourceManager.GetString("y3Jun_1st", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to .
         /// </summary>
-        internal static string y3Jun {
+        internal static string y3Jun_22nd {
             get {
-                return ResourceManager.GetString("y3Jun", resourceCulture);
+                return ResourceManager.GetString("y3Jun_22nd", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string y3Jun_29th {
+            get {
+                return ResourceManager.GetString("y3Jun_29th", resourceCulture);
             }
         }
         

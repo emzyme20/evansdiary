@@ -12,8 +12,12 @@ namespace EvansDiary.Interfaces
 
         List<IAssociatedImage> Images { get; set; }
 
+        List<IDiaryEntry> Timeline { get; set; }
+
         string Tag { get; set; }
 
         string Title { get; set; }
+
+        IAssociatedImage GetImage(int index);
     }
 }

@@ -1,0 +1,36 @@
+﻿@using EvansDiary.Interfaces
+@model TimelineViewModel
+
+@{
+    ViewBag.Title = string.Format("Year {0} - {1}", Model.Year, Model.Tag);
+}
+
+<section id="diary-page">
+    <h2>@ViewBag.Title</h2>
+
+    @foreach (var diaryEntry in Model.GetEntries())
+    {
+        var imageOne = diaryEntry.GetImage(0);
+        var imageTwo = diaryEntry.GetImage(1);
+        var imageThree = diaryEntry.GetImage(2);
+        var imageFour = diaryEntry.GetImage(3);
+        var imageBlocks = diaryEntry.Images.Count() / 4;
+        <div class="diary-entries container content multiple">
+            <h2 class="content-subhead">@diaryEntry.Title</h2>
+
+            @Html.Partial("_Images", new List<IAssociatedImage> { imageOne, imageTwo, imageThree, imageFour })
+
+            @Html.Raw(diaryEntry.EntryOne)
+
+            @if (imageBlocks > 1)
+            {
+                imageOne = diaryEntry.GetImage(4);
+                imageTwo = diaryEntry.GetImage(5);
+                imageThree = diaryEntry.GetImage(6);
+                imageFour = diaryEntry.GetImage(7);
+            }
+
+            @Html.Partial("_Images", new List<IAssociatedImage> { imageOne, imageTwo, imageThree, imageFour })
+        </div>
+    }
+</section>

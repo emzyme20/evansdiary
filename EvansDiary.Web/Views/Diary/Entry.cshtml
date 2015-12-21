@@ -1,6 +1,6 @@
 ﻿@using EvansDiary.Interfaces
-@using Microsoft.Ajax.Utilities
-@model EvansDiary.Web.ViewModels.DiaryEntryViewModel
+
+@model DiaryEntryViewModel
 
 @{
     ViewBag.Title = string.Format("Year {0} - {1}", Model.Year, Model.Tag);
@@ -9,7 +9,7 @@
 <section id="diary-page">
     <h2>@ViewBag.Title</h2>
 
-    @if (!Model.Title.IsNullOrWhiteSpace())
+    @if (!string.IsNullOrWhiteSpace(Model.Title))
     {
         <h3>@Model.Title</h3>
     }
@@ -26,9 +26,9 @@
             @Html.Partial("_Images", new List<IAssociatedImage> { imageOne, imageTwo, imageThree, imageFour })
         }
         
-        @if (!Model.EntryOne.IsNullOrWhiteSpace())
+        @if (!string.IsNullOrWhiteSpace(Model.EntryOne))
         {
-            if (!Model.EntryTwo.IsNullOrWhiteSpace())
+            if (!string.IsNullOrWhiteSpace(Model.EntryTwo))
             {
                 <h2 class="content-subhead">Emma's Entry</h2>
             }
@@ -54,7 +54,7 @@
         
         @Html.Partial("_Images", new List<IAssociatedImage> { imageOne, imageTwo, imageThree, imageFour })
 
-        @if (!Model.EntryTwo.IsNullOrWhiteSpace())
+        @if (!string.IsNullOrWhiteSpace(Model.EntryTwo))
         {
             <h2 class="content-subhead">Caroline's Entry</h2>
             @Html.Raw(Model.EntryTwo)

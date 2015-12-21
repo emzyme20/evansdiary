@@ -1,5 +1,4 @@
-﻿@using Microsoft.Ajax.Utilities
-@model EvansDiary.Web.ViewModels.HospitalDiaryEntryViewModel
+﻿@model HospitalDiaryEntryViewModel
 
 @{
     ViewBag.Title = Model.Title ?? string.Empty;
@@ -31,7 +30,7 @@
             </ul>
         }
         
-        @if (!Model.Entry.IsNullOrWhiteSpace())
+        @if (!string.IsNullOrWhiteSpace(Model.Entry))
         {
             @Html.Raw(Model.Entry)
         }

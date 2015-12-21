@@ -1,4 +1,5 @@
-﻿using System.Web.Mvc;
+﻿using System.Linq;
+using System.Web.Mvc;
 
 using EvansDiary.Interfaces;
 using EvansDiary.Web.ViewModels;
@@ -23,14 +24,20 @@ namespace EvansDiary.Web.Controllers
         {
             var diaryEntry = _contentDelivery.GetEntry(string.Format("{0}-{1}", year, month));
 
-            return View("Entry", new DiaryEntryViewModel(2, diaryEntry));
+            if (diaryEntry.Timeline != null && diaryEntry.Timeline.Any())
+            {
+                // This is a different diary view that has dated entries and not just a master entry for the entire month.
+                return View("Timeline", new TimelineViewModel(year - 2004, diaryEntry.Timeline));
+
+            }
+            return View("Entry", new DiaryEntryViewModel(year - 2004, diaryEntry));
         }
 
         public ActionResult Week(int year, int week)
         {
             var diaryEntry = _contentDelivery.GetEntry(string.Format("{0}-{1}", year, week));
 
-            return View("Entry", new DiaryEntryViewModel(1, diaryEntry));
+            return View("Entry", new DiaryEntryViewModel(year - 2004, diaryEntry));
         }
 
         public ActionResult Year(int year)

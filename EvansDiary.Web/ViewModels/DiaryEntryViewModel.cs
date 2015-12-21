@@ -45,8 +45,7 @@ namespace EvansDiary.Web.ViewModels
 
         public IAssociatedImage GetImage(int index)
         {
-            var image = _diaryEntry.Images.ElementAtOrDefault(index);
-            return image ?? new AssociatedImage(string.Empty, string.Empty);
+            return _diaryEntry.GetImage(index);
         }
     }
 }

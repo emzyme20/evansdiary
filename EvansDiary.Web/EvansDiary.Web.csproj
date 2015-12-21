@@ -43,6 +43,10 @@
       <HintPath>..\packages\dotless.1.4.4\lib\dotless.Core.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="ServiceStack.Text, Version=4.0.50.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ServiceStack.Text.4.0.50\lib\net40\ServiceStack.Text.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="SimpleInjector, Version=3.1.1.0, Culture=neutral, PublicKeyToken=984cb50dea722e99, processorArchitecture=MSIL">
       <HintPath>..\packages\SimpleInjector.3.1.1\lib\net45\SimpleInjector.dll</HintPath>
       <Private>True</Private>
@@ -189,6 +193,7 @@
     <Compile Include="Startup.cs" />
     <Compile Include="ViewModels\HospitalDiaryEntryViewModel.cs" />
     <Compile Include="ViewModels\DiaryEntryViewModel.cs" />
+    <Compile Include="ViewModels\TimelineViewModel.cs" />
     <Compile Include="ViewModels\YearViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -380,6 +385,7 @@
     <Content Include="Views\Diary\Entry.cshtml" />
     <Content Include="Views\Hospital\Day.cshtml" />
     <Content Include="Views\Diary\_Images.cshtml" />
+    <Content Include="Views\Diary\Timeline.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
