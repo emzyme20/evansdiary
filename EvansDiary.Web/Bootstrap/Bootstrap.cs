@@ -6,7 +6,6 @@ using EvansDiary.Interfaces;
 using EvansDiary.Web.Diary;
 
 using SimpleInjector;
-using SimpleInjector.Integration.Web.Mvc;
 
 namespace EvansDiary.Web.Bootstrap
 {
@@ -30,7 +29,9 @@ namespace EvansDiary.Web.Bootstrap
 
             container.RegisterMvcIntegratedFilterProvider();
 
-            DependencyResolver.SetResolver(new SimpleInjectorDependencyResolver(container));
+            // http://stackoverflow.com/questions/34418477/mvc-website-on-a-shared-hosting-environment-with-restricted-trust
+            DependencyResolver.SetResolver(new CustomSimpleInjectorDependencyResolver(container));
+            //DependencyResolver.SetResolver(new SimpleInjectorDependencyResolver(container));
         }
     }
 }
