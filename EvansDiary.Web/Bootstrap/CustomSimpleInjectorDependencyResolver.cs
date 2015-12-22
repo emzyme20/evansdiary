@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Security;
 using System.Web.Mvc;
 
 using SimpleInjector;
@@ -9,7 +8,7 @@ using SimpleInjector.Integration.Web.Mvc;
 
 namespace EvansDiary.Web.Bootstrap
 {
-    [SecuritySafeCritical]
+    //[SecuritySafeCritical]
     public class CustomSimpleInjectorDependencyResolver : IDependencyResolver
     {
         /// <summary>
