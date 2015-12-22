@@ -9,7 +9,7 @@ using SimpleInjector.Integration.Web.Mvc;
 
 namespace EvansDiary.Web.Bootstrap
 {
-    //[SecuritySafeCritical]
+    [SecuritySafeCritical]
     public class CustomSimpleInjectorDependencyResolver : IDependencyResolver
     {
         /// <summary>
