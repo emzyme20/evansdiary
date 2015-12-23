@@ -6,7 +6,7 @@ using EvansDiary.Web.Diary.TransferObjects;
 
 using MarkdownDeep;
 
-namespace EvansDiary.Web.Diary
+namespace EvansDiary.Web.Diary.StaticContent
 {
     public class StaticHospitalContentDelivery : IStaticHospitalContentDelivery
     {

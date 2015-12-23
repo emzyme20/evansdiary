@@ -1,5 +1,9 @@
 ﻿@import "styling/_variables";
 
+p {
+  text-align: justify;
+}
+
 .logo {
   font-size: 2em;
   font-weight: bold;
@@ -229,6 +233,14 @@ ul.image-nav-list a:hover img, ul.image-nav-list a.selected img {
       margin: 0 auto;
     }
   }
+}
+
+/* 
+  Adjacent sibling selector 
+  Add some top margin to the second diary entry
+*/
+.diary-entries + .diary-entries {
+  margin-top: 2em;
 }
 
 .diary-nav {

@@ -80,8 +80,8 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Year2007.resx</DependentUpon>
     </Compile>
-    <Compile Include="StaticContentDelivery.cs" />
-    <Compile Include="StaticHospitalContentDelivery.cs" />
+    <Compile Include="StaticContent\StaticContentDelivery.cs" />
+    <Compile Include="StaticContent\StaticHospitalContentDelivery.cs" />
     <Compile Include="TransferObjects\AssociatedImage.cs" />
     <Compile Include="TransferObjects\DiaryEntry.cs" />
     <Compile Include="TransferObjects\HospitalEntry.cs" />

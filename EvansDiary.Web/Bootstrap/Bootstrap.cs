@@ -4,6 +4,7 @@ using System.Web.Mvc;
 
 using EvansDiary.Interfaces;
 using EvansDiary.Web.Diary;
+using EvansDiary.Web.Diary.StaticContent;
 
 using SimpleInjector;
 using SimpleInjector.Integration.Web.Mvc;

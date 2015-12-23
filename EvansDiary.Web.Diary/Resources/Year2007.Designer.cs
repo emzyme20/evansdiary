@@ -137,7 +137,9 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Mr brother and his fiancé Pascale got married at the end of June. We did try to get Evan there in one piece, it all went pear shaped when I arrived to collect him from nursery the night before only to see that he was now sporting a nice black eye. Evan had decided it would be a good idea to dive on some pillows earlier in the day, the only issue being he missed them.  
+        ///
+        ///The wedding happened to be on the day before we flew to France for our small break. We left it a little late to leave because we wanted t [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string y3Jun_22nd {
             get {
@@ -146,7 +148,7 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to The trip to France was our first holiday in 7 years and our first holiday with Evan. No more relaxing in the sun holidays for us! Evan was so excited about the aeroplane, though Caroline did wonder how he&apos;d react when he saw that they were bigger *(much bigger)* than the toy ones that he is used to playing with. We arrived at the airport with a fair amount of time to spare and were informed the flight was delayed. Evan had a real issue with the baggage as he didn&apos;t like his toys disappearing down the convey [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string y3Jun_29th {
             get {
