@@ -12,6 +12,8 @@ namespace EvansDiary.Interfaces
 
         string Subheading { get; set; }
 
+        bool SwitchImageBlockPosition { get; set; }
+
         IAssociatedImage GetImage(int index);
     }
 }

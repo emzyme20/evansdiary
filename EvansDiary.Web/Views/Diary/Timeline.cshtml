@@ -21,7 +21,7 @@
         var imageFour = entry.GetImage(3);
         var imageBlocks = entry.Images.Count / 4;
         <div class="diary-entries container content">
-            @if (imageBlocks > 0)
+            @if (!entry.SwitchImageBlockPosition && imageBlocks > 0)
             {
                 @Html.Partial("_Images", new List<IAssociatedImage> {imageOne, imageTwo, imageThree, imageFour})
             }
@@ -48,7 +48,11 @@
                 imageTwo = entry.GetImage(5);
                 imageThree = entry.GetImage(6);
                 imageFour = entry.GetImage(7);
-                @Html.Partial("_Images", new List<IAssociatedImage> {imageOne, imageTwo, imageThree, imageFour})
+                @Html.Partial("_Images", new List<IAssociatedImage> { imageOne, imageTwo, imageThree, imageFour })
+            }
+            else if (entry.SwitchImageBlockPosition)
+            {
+                @Html.Partial("_Images", new List<IAssociatedImage> { imageOne, imageTwo, imageThree, imageFour })
             }
         </div>
     }

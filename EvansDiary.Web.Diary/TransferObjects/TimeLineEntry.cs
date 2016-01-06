@@ -15,6 +15,8 @@ namespace EvansDiary.Web.Diary.TransferObjects
         public IAssociatedImage SingleImage { get; set; }
         public List<IAssociatedImage> Images { get; set; }
         public string Subheading { get; set; }
+        public bool SwitchImageBlockPosition { get; set; }
+        
         public IAssociatedImage GetImage(int index)
         {
             return Images.ElementAtOrDefault(index) ?? new AssociatedImage(string.Empty, string.Empty);

@@ -1974,6 +1974,100 @@ namespace EvansDiary.Web.Diary.StaticContent
                         }
                     });
 
+            _diaryEntries
+                .Add(
+                    "2007-july",
+                    new DiaryEntry
+                    {
+                        Tag = "July (2007)",
+                        Timeline = new List<ITimeLineEntry>
+                        {
+                            new TimeLineEntry
+                            {
+                                Subheading = "7th July 2007",
+                                Entry = md.Transform(Year2007.y3Jul_7th),
+                                Images = new List<IAssociatedImage>
+                                {
+                                    new AssociatedImage("july_lego_fun", "Evan is starting to appreciate his lego more now he is older"),
+                                    new AssociatedImage("july_sleepy_boys", "Evan and Noodle decide that they just can't go on anymore"),
+                                    new AssociatedImage("", ""),
+                                    new AssociatedImage("", "")
+                                }
+                            },
+                            new TimeLineEntry
+                            {
+                                Subheading = "10th July 2007",
+                                Entry = md.Transform(Year2007.y3Jul_10th),
+                                SingleImage = new AssociatedImage("july_giant_bubbles", "Evan masters the giant bubble making machine")
+                            },
+                            new TimeLineEntry
+                            {
+                                Subheading = "14th July 2007",
+                                Entry = md.Transform(Year2007.y3Jul_14th),
+                                SwitchImageBlockPosition = true,
+                                Images = new List<IAssociatedImage>
+                                {
+                                    new AssociatedImage("july_first_festival", "Evan's first festival!"),
+                                    new AssociatedImage("july_cardboard_bob", "Evan shows off his cardboard Bob the Builder!"),
+                                    new AssociatedImage("july_legoland_swings", "Evan rides the swings alone this time"),
+                                    new AssociatedImage("", "")
+                                }
+                            },
+                            new TimeLineEntry
+                            {
+                                Subheading = "30th July 2007",
+                                Entry = md.Transform(Year2007.y3Jul_30th),
+                                SingleImage = new AssociatedImage("july_learning_the_game", "Just like Caroline, Evan is going to be ruthless at Monopoly!")
+                            }
+                        }
+                    });
+
+            //_diaryEntries
+            //    .Add(
+            //        "2007-",
+            //        new DiaryEntry
+            //        {
+            //            Tag = "July (2007)",
+            //            Timeline = new List<ITimeLineEntry>
+            //            {
+            //                new TimeLineEntry
+            //                {
+            //                    Subheading = "7th July 2007",
+            //                    Entry = md.Transform(Year2007.y3Jul_7th),
+            //                    SingleImage = new AssociatedImage("june_reunion", "The BBQ Reunion"),
+            //                    Images = new List<IAssociatedImage>
+            //                    {
+            //                        new AssociatedImage("", ""),
+            //                        new AssociatedImage("", ""),
+            //                        new AssociatedImage("", "")
+            //                    }
+            //                }
+            //            }
+            //        });
+
+            //_diaryEntries
+            //    .Add(
+            //        "2007-",
+            //        new DiaryEntry
+            //        {
+            //            Tag = "July (2007)",
+            //            Timeline = new List<ITimeLineEntry>
+            //            {
+            //                new TimeLineEntry
+            //                {
+            //                    Subheading = "7th July 2007",
+            //                    Entry = md.Transform(Year2007.y3Jul_7th),
+            //                    SingleImage = new AssociatedImage("june_reunion", "The BBQ Reunion"),
+            //                    Images = new List<IAssociatedImage>
+            //                    {
+            //                        new AssociatedImage("", ""),
+            //                        new AssociatedImage("", ""),
+            //                        new AssociatedImage("", "")
+            //                    }
+            //                }
+            //            }
+            //        });
+
         }   
     }
 }

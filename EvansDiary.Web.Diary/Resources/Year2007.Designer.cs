@@ -72,15 +72,6 @@ namespace EvansDiary.Web.Diary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to .
         /// </summary>
-        internal static string y3Aug {
-            get {
-                return ResourceManager.GetString("y3Aug", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to .
-        /// </summary>
         internal static string y3Dec {
             get {
                 return ResourceManager.GetString("y3Dec", resourceCulture);
@@ -108,11 +99,46 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Evan has shown signs of really picking up on things that we do around him lately. A few months ago we were watching my ladies football team play their final home game of the season. I had to take Evan with me because Caroline was away at a Karate event. We took his ball and played football on the pitch when it wasn&apos;t in use - he absolutely loved that. Every time I cheered for the team, Evan shouted *&quot;Come on Tottenham&quot;* making everyone in the stand laugh at how cute he was. We were all cheering for Burnham, [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string y3Jul {
+        internal static string y3Jul_10th {
             get {
-                return ResourceManager.GetString("y3Jul", resourceCulture);
+                return ResourceManager.GetString("y3Jul_10th", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to My First Festival - Aged 2. How many of us can say that? Evan has just been to his first festival *&quot;Legoland Live&quot;.* We&apos;ve had these annual passes for Legoland, so we thought we&apos;d try and make a note of some events that would be good to go to throughout the summer. Today was a special festival with all the favourite stars of children&apos;s TV *(Barney, Lazy Town, Pingu, Bob the Builder and lots more).*  
+        ///
+        ///Because of the annual passes, we didn&apos;t feel the need to go early and get our money&apos;s worth because our e [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string y3Jul_14th {
+            get {
+                return ResourceManager.GetString("y3Jul_14th", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Happy Birthday to me.... or Happy Birthday to Evan?  
+        ///
+        ///Today was my 28th birthday - wow I&apos;m getting old, so close to the big 30! It was a Monday and we weren&apos;t doing anything special so I went to work as usual, stopping off at my local Krispy Kreme doughnut shop to collect 4 dozen doughnuts for the guys at work. I saved 3 doughnuts to take home as I knew we hadn&apos;t arranged a birthday cake so I planned to put some candles on my doughnuts and have a makeshift birthday cake.  
+        ///
+        ///I wasn&apos;t sure if Evan would  [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string y3Jul_30th {
+            get {
+                return ResourceManager.GetString("y3Jul_30th", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Evan had a birthday party to go to today as a friend from nursery was having her 3rd birthday. I wasn&apos;t particularly prepared for this as we&apos;d only just come back from our holiday in France. Nevertheless, I still managed to get a present and card during my lunch break in the week leading up to the date. I wasn&apos;t sure what to expect, but I figured it would be something like the birthday party that he went to at Christmas time.  
+        ///
+        ///Evan had a nice sleep in the car on the way to the party so I hoped he&apos;d last [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string y3Jul_7th {
+            get {
+                return ResourceManager.GetString("y3Jul_7th", resourceCulture);
             }
         }
         
@@ -189,15 +215,6 @@ namespace EvansDiary.Web.Diary.Resources {
         internal static string y3Oct {
             get {
                 return ResourceManager.GetString("y3Oct", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to .
-        /// </summary>
-        internal static string y3Sep {
-            get {
-                return ResourceManager.GetString("y3Sep", resourceCulture);
             }
         }
     }
