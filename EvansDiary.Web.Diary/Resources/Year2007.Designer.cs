@@ -223,6 +223,30 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Evan would like to share with you *(just in case you haven&apos;t already seen it)* his favourite advert on TV in the UK. A few weeks ago we were watching [Ant &amp; Dec&apos;s Saturday Night Takeaway](http://www.itv.com/saturdaynighttakeaway) when the latest advert for Cadbury&apos;s Dairy Milk came on. He absolutely loved it, he loves animals any way, but this Gorilla playing the drums was something different.  
+        ///
+        ///Ever since that first viewing he now just expects me to make the Gorilla appear when we switch on the TV. He c [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string y3Oct_27th {
+            get {
+                return ResourceManager.GetString("y3Oct_27th", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to *Pants?! - What Pants...?*  
+        ///
+        ///Evan has been wearing pants recently in an attempt to finally get him out of nappies in the day time. This is one benefits of being at nursery because he saw all his friends wearing pants and knickers and going to the toilet by themselves that he decided he wanted to do it as well.  
+        ///
+        ///All was going well, we had Evan staying dry all day and then he&apos;d only wear a nappy in the afternoon for the journey home in the car. He is only doing a wee on the toilet at the moment as we h [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string y3Oct_5th {
+            get {
+                return ResourceManager.GetString("y3Oct_5th", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Oh the joys of nits. I collected Evan from nursery this evening and was told that he&apos;d spent a lot of time scratching his head. With his hair being so fair it didn&apos;t take me long to spot the little bugs crawling through his hair. __*(Shudder)*__ It&apos;s been a very long time since I saw a nit and at first I didn&apos;t think they looked like them but after a phone call to my mum we decided that they probably are. Aren&apos;t mums great, they always seem to know what to do in new circumstances like this. My mum never fai [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string y3Sep_18th {

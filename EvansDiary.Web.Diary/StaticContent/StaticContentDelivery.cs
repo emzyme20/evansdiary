@@ -2092,6 +2092,34 @@ namespace EvansDiary.Web.Diary.StaticContent
                         }
                     });
 
+            _diaryEntries
+                .Add(
+                    "2007-october",
+                    new DiaryEntry
+                    {
+                        Tag = "October (2007)",
+                        Timeline = new List<ITimeLineEntry>
+                        {
+                            new TimeLineEntry
+                            {
+                                Subheading = "5th October 2007 - Potty Training",
+                                Entry = md.Transform(Year2007.y3Oct_5th),
+                                Images = new List<IAssociatedImage>
+                                {
+                                    new AssociatedImage("oct_nanny_giggles", "I'm not sure they are getting much of the story read there"),
+                                    new AssociatedImage("oct_cheeky_boy", "Evan shows off his typical cheeky look"),
+                                    new AssociatedImage("", ""),
+                                    new AssociatedImage("", "")
+                                }
+                            },
+                            new TimeLineEntry
+                            {
+                                Subheading = "27th October 2007 - Cadbury's Gorilla",
+                                Entry = md.Transform(Year2007.y3Oct_27th)
+                            }
+                        }
+                    });
+
             //_diaryEntries
             //    .Add(
             //        "2007-",

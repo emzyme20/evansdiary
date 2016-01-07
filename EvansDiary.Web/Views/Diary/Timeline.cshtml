@@ -20,10 +20,10 @@
         var imageThree = entry.GetImage(2);
         var imageFour = entry.GetImage(3);
         var imageBlocks = entry.Images.Count / 4;
-        <div class="diary-entries container content">
+        <div class="diary-entry container content">
             @if (!entry.SwitchImageBlockPosition && imageBlocks > 0)
             {
-                @Html.Partial("_Images", new List<IAssociatedImage> {imageOne, imageTwo, imageThree, imageFour})
+                @Html.Partial("_Images", new List<IAssociatedImage> { imageOne, imageTwo, imageThree, imageFour })
             }
 
             @if (!string.IsNullOrWhiteSpace(entry.Subheading))
@@ -32,14 +32,14 @@
             }
 
             @Html.Raw(entry.Entry)
-            
+
             @if (entry.SingleImage != null)
             {
-            <div class="pure-g">
-                <div class="pure-u-1 additional-image">
-                    <img class="pure-img-responsive" src="@entry.SingleImage.GetUrl()" alt="@entry.SingleImage.Caption">
+                <div class="pure-g">
+                    <div class="pure-u-1 additional-image">
+                        <img class="pure-img-responsive" src="@entry.SingleImage.GetUrl()" alt="@entry.SingleImage.Caption">
+                    </div>
                 </div>
-            </div>
             }
 
             @if (imageBlocks > 1)
@@ -57,3 +57,27 @@
         </div>
     }
 </section>
+
+@section PageScripts {
+
+    <script type="text/javascript">
+
+        // document ready...
+        $(function () {
+            var embeddedImages = $('.diary-entry p a img');
+
+            var embeddedImage;
+            if (embeddedImages.length > 0) {
+                // Get the image element from the array as a jQuery element
+                embeddedImage = embeddedImages.eq(0);
+                embeddedImage.addClass("pure-img-responsive");
+
+                var parentParagraph = embeddedImage.closest("p");
+                if (parentParagraph) {
+                    parentParagraph.addClass("center");
+                }
+            }
+        });
+
+    </script>
+}
