@@ -70,6 +70,28 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to A success at last! I took Evan to the indoor play area Snakes and Ladder today. It&apos;s been a long time since we last went and I was interested to see how well he settled this time round. In the past it usually takes him a while to start playing as he&apos;ll be quite clingy to me to start with.  
+        ///
+        ///He was much better this time round, he spent the whole time playing with everything, with one exception at first *- the bouncy castle of course.*  
+        ///
+        ///I was determined to try and coax Evan into the bouncy castle becau [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string y3Aug_18th {
+            get {
+                return ResourceManager.GetString("y3Aug_18th", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to It&apos;s 10 years today! Caroline and I celebrated our 10th anniversary. We&apos;d hoped to do something really special this year, originally planning to get married now that it has finally become legal to do so in the UK. We weren&apos;t able to do this due to a number of reasons, lack of time and changes financially. It is something we are still committed to do but probably when we&apos;re not spending £900 a month on nursery fees for Evan. Getting married will give us equal rights and it will mean that Evan really does hav [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string y3Aug_2nd {
+            get {
+                return ResourceManager.GetString("y3Aug_2nd", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to .
         /// </summary>
         internal static string y3Dec {
@@ -201,20 +223,20 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Oh the joys of nits. I collected Evan from nursery this evening and was told that he&apos;d spent a lot of time scratching his head. With his hair being so fair it didn&apos;t take me long to spot the little bugs crawling through his hair. __*(Shudder)*__ It&apos;s been a very long time since I saw a nit and at first I didn&apos;t think they looked like them but after a phone call to my mum we decided that they probably are. Aren&apos;t mums great, they always seem to know what to do in new circumstances like this. My mum never fai [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string y3Nov {
+        internal static string y3Sep_18th {
             get {
-                return ResourceManager.GetString("y3Nov", resourceCulture);
+                return ResourceManager.GetString("y3Sep_18th", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to I mentioned to Evan a few weeks ago that Roary the racing car was going to be at Legoland. That probably wasn&apos;t the wisest move I have made as Evan doesn&apos;t really understand weeks, though he is starting to grasp days of the week and weekends now. As a result of that mishap, he&apos;s been talking about Legoland and Roary for a while now. Well the day is finally here, today was the day to go and see Roary. Caroline&apos;s family were off to Legoland this weekend as well so we made plans to meet up with them as it&apos;s mu [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string y3Oct {
+        internal static string y3Sep_23rd {
             get {
-                return ResourceManager.GetString("y3Oct", resourceCulture);
+                return ResourceManager.GetString("y3Sep_23rd", resourceCulture);
             }
         }
     }

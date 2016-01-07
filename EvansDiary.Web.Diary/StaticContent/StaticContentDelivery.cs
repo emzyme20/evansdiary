@@ -2002,7 +2002,7 @@ namespace EvansDiary.Web.Diary.StaticContent
                             },
                             new TimeLineEntry
                             {
-                                Subheading = "14th July 2007",
+                                Subheading = "14th July 2007 - Legoland Live Festival",
                                 Entry = md.Transform(Year2007.y3Jul_14th),
                                 SwitchImageBlockPosition = true,
                                 Images = new List<IAssociatedImage>
@@ -2018,6 +2018,76 @@ namespace EvansDiary.Web.Diary.StaticContent
                                 Subheading = "30th July 2007",
                                 Entry = md.Transform(Year2007.y3Jul_30th),
                                 SingleImage = new AssociatedImage("july_learning_the_game", "Just like Caroline, Evan is going to be ruthless at Monopoly!")
+                            }
+                        }
+                    });
+
+            _diaryEntries
+                .Add(
+                    "2007-august",
+                    new DiaryEntry
+                    {
+                        Tag = "August (2007)",
+                        Timeline = new List<ITimeLineEntry>
+                        {
+                            new TimeLineEntry
+                            {
+                                Subheading = "2nd August 2007",
+                                Entry = md.Transform(Year2007.y3Aug_2nd),
+                                Images = new List<IAssociatedImage>
+                                {
+                                    new AssociatedImage("aug_memorial_flowers", "Any image like this saddens me, but it's worse when you know the person"),
+                                    new AssociatedImage("aug_becky_trevor", "Becky and Trevor having a laugh at the pub"),
+                                    new AssociatedImage("", ""),
+                                    new AssociatedImage("", "")
+                                }
+                            },
+                            new TimeLineEntry
+                            {
+                                Subheading = "18th August 2007",
+                                Entry = md.Transform(Year2007.y3Aug_18th),
+                                Images = new List<IAssociatedImage>
+                                {
+                                    new AssociatedImage("", "Finally Evan enjoys the bouncy castle"),
+                                    new AssociatedImage("", ""),
+                                    new AssociatedImage("", ""),
+                                    new AssociatedImage("", "")
+                                }
+                            }
+                        }
+                    });
+
+            _diaryEntries
+                .Add(
+                    "2007-september",
+                    new DiaryEntry
+                    {
+                        Tag = "September (2007)",
+                        Timeline = new List<ITimeLineEntry>
+                        {
+                            new TimeLineEntry
+                            {
+                                Subheading = "18th September 2007",
+                                Entry = md.Transform(Year2007.y3Sep_18th),
+                                Images = new List<IAssociatedImage>
+                                {
+                                    new AssociatedImage("sept_peanut_playdough", "Evan has fun making edible playdough"),
+                                    new AssociatedImage("sept_football_skills", "Evan demonstrates where Tottenham have been going wrong this season"),
+                                    new AssociatedImage("", ""),
+                                    new AssociatedImage("", "")
+                                }
+                            },
+                            new TimeLineEntry
+                            {
+                                Subheading = "23rd September 2007 - Meeting the famous Roary",
+                                Entry = md.Transform(Year2007.y3Sep_23rd),
+                                Images = new List<IAssociatedImage>
+                                {
+                                    new AssociatedImage("sept_roary", "Evan finally gets to meet Roary!"),
+                                    new AssociatedImage("sept_fire_challenge", "Head to head fire challenge at Legoland.. Uncle Frank Won!"),
+                                    new AssociatedImage("", ""),
+                                    new AssociatedImage("", "")
+                                }
                             }
                         }
                     });
@@ -2038,28 +2108,6 @@ namespace EvansDiary.Web.Diary.StaticContent
             //                    Images = new List<IAssociatedImage>
             //                    {
             //                        new AssociatedImage("", ""),
-            //                        new AssociatedImage("", ""),
-            //                        new AssociatedImage("", "")
-            //                    }
-            //                }
-            //            }
-            //        });
-
-            //_diaryEntries
-            //    .Add(
-            //        "2007-",
-            //        new DiaryEntry
-            //        {
-            //            Tag = "July (2007)",
-            //            Timeline = new List<ITimeLineEntry>
-            //            {
-            //                new TimeLineEntry
-            //                {
-            //                    Subheading = "7th July 2007",
-            //                    Entry = md.Transform(Year2007.y3Jul_7th),
-            //                    SingleImage = new AssociatedImage("june_reunion", "The BBQ Reunion"),
-            //                    Images = new List<IAssociatedImage>
-            //                    {
             //                        new AssociatedImage("", ""),
             //                        new AssociatedImage("", ""),
             //                        new AssociatedImage("", "")
