@@ -223,6 +223,33 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Evan had a birthday party to go to today. We travelled to one of these giant indoor play centres in Newbury to celebrate the 3rd birthday of a friend of his at nursery. Evan seems to be a popular little boy at nursery as he keeps getting invited to birthday parties. I was a little concerned when we went in because of the issues we have getting him to do things, he gets really scared.. As expected when all the other children ran onto the climbing area, Evan just stood there refusing to go on. I even said I w [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string y3Nov_11th {
+            get {
+                return ResourceManager.GetString("y3Nov_11th", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Oh my! What a day... Evan and I spent the weekend with my mum, which was great fun - she spoilt us and it was lovely to spend some quality time with her. I had a home football match to play in the afternoon, so we came home Sunday morning just in time for me to drop Evan off at home to be with Caroline and then I set off for football. I managed the first half of the football game before I was called out of the dressing room at half time to see Caroline standing there without Evan. I immediately asked where  [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string y3Nov_18th {
+            get {
+                return ResourceManager.GetString("y3Nov_18th", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Today we went to see our neighbours as it was their little girl&apos;s 2nd birthday. She was having a little naked time before bed time when we arrived and I was amazed to see that at the age of 2 already completely potty trained *- take notes Evan!?* She was great, several times she just wandered over to her potty and went without even asking her parents. I think we need to rethink the whole potty training issue with Evan, I&apos;m going to pick a weekend later in this month to just really try to get him used to goi [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string y3Nov_2nd {
+            get {
+                return ResourceManager.GetString("y3Nov_2nd", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Evan would like to share with you *(just in case you haven&apos;t already seen it)* his favourite advert on TV in the UK. A few weeks ago we were watching [Ant &amp; Dec&apos;s Saturday Night Takeaway](http://www.itv.com/saturdaynighttakeaway) when the latest advert for Cadbury&apos;s Dairy Milk came on. He absolutely loved it, he loves animals any way, but this Gorilla playing the drums was something different.  
         ///
         ///Ever since that first viewing he now just expects me to make the Gorilla appear when we switch on the TV. He c [rest of string was truncated]&quot;;.

@@ -6,7 +6,7 @@
 }
 
 <section id="diary-page">
-    <h2>@ViewBag.Title</h2>
+    <h1>@ViewBag.Title</h1>
 
     @if (!string.IsNullOrWhiteSpace(Model.Headline))
     {
@@ -21,14 +21,14 @@
         var imageFour = entry.GetImage(3);
         var imageBlocks = entry.Images.Count / 4;
         <div class="diary-entry container content">
-            @if (!entry.SwitchImageBlockPosition && imageBlocks > 0)
-            {
-                @Html.Partial("_Images", new List<IAssociatedImage> { imageOne, imageTwo, imageThree, imageFour })
-            }
-
             @if (!string.IsNullOrWhiteSpace(entry.Subheading))
             {
                 <h2 class="content-subhead">@entry.Subheading</h2>
+            }
+
+            @if (!entry.SwitchImageBlockPosition && imageBlocks > 0)
+            {
+                @Html.Partial("_Images", new List<IAssociatedImage> { imageOne, imageTwo, imageThree, imageFour })
             }
 
             @Html.Raw(entry.Entry)

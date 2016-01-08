@@ -28,7 +28,7 @@ namespace EvansDiary.Web.Diary.StaticContent
             return new DiaryEntry();
         }
 
-        protected void InitialiseYearOneContent()
+        private void InitialiseYearOneContent()
         {
             var md = new Markdown { ExtraMode = true, SafeMode = false };
 
@@ -1479,7 +1479,7 @@ namespace EvansDiary.Web.Diary.StaticContent
                     });
         }
 
-        protected void InitialiseYearTwoContent()
+        private void InitialiseYearTwoContent()
         {
             var md = new Markdown { ExtraMode = true, SafeMode = false };
 
@@ -1799,7 +1799,7 @@ namespace EvansDiary.Web.Diary.StaticContent
                     });
         }
 
-        protected void InitialiseYearThreeContent()
+        private void InitialiseYearThreeContent()
         {
             var md = new Markdown { ExtraMode = true, SafeMode = false };
 
@@ -2116,6 +2116,47 @@ namespace EvansDiary.Web.Diary.StaticContent
                             {
                                 Subheading = "27th October 2007 - Cadbury's Gorilla",
                                 Entry = md.Transform(Year2007.y3Oct_27th)
+                            }
+                        }
+                    });
+
+            _diaryEntries
+                .Add(
+                    "2007-november",
+                    new DiaryEntry
+                    {
+                        Tag = "November (2007)",
+                        Timeline = new List<ITimeLineEntry>
+                        {
+                            new TimeLineEntry
+                            {
+                                Subheading = "2nd November - Amber turns 2",
+                                Entry = md.Transform(Year2007.y3Nov_2nd),
+                                SingleImage = new AssociatedImage("nov_ambers_birthday", "Nice and cosy on the sofa")
+                            },
+                            new TimeLineEntry
+                            {
+                                Subheading = "11th November - More birthday party fun",
+                                Entry = md.Transform(Year2007.y3Nov_11th),
+                                Images = new List<IAssociatedImage>
+                                {
+                                    new AssociatedImage("nov_abbie_birthday", "Evan finally settles in the soft play area with his friends"),
+                                    new AssociatedImage("", ""),
+                                    new AssociatedImage("", ""),
+                                    new AssociatedImage("", "")
+                                }
+                            },
+                            new TimeLineEntry
+                            {
+                                Subheading = "18th November - No raisins for you",
+                                Entry = md.Transform(Year2007.y3Nov_18th),
+                                Images = new List<IAssociatedImage>
+                                {
+                                    new AssociatedImage("nov_evan_izzy_neil", "Evan adores Izzy, I'm sure he wants his own dog!"),
+                                    new AssociatedImage("", ""),
+                                    new AssociatedImage("", ""),
+                                    new AssociatedImage("", "")
+                                }
                             }
                         }
                     });
