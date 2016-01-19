@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="y4Jan_1st" xml:space="preserve">
+    <value>Welcome to a brand new year! A new start for many of you, one that Evan and I are part of. The viewings for the sale of the house were not going well and with the market taking a downturn I made a decision in January to buy Caroline's half of the house meaning that I can now take my time to decorate the house and move in my own time when the markets are more lively.  
+
+I was having a hard time finding a house that was a similar size, for the same price. It was obvious to me that I'd be downgrading if I were to move right now. I do still plan to move away from Slough but this may have to wait a year or so to allow me to get the necessary home improvements done to make the house sellable. We really had let our house slip into a state of disrepair and I'm actually looking forward to doing the old girl up and making it look nice and liveable again.  
+
+The wallpaper in the hallway is finally down (bringing half the plaster with it in the process!). But seriously I have hated that wallpaper ever since we moved in a shocking 7 years ago and damn it felt good to finally strip it!  
+
+**Wishing you all a fabulous 2008!**</value>
+  </data>
+  <data name="y4Jan_22nd" xml:space="preserve">
+    <value>A night to remember! Evan went to stay with Grandma for a few days this week to allow me to travel to London with friends to watch my beloved Tottenham Hotspur face their arch rivals Arsenal in the Carling Cup Semi-final at White Hart Lane.  
+
+We left work at 4.30pm and drove into London, it took us roughly 2 and a half hours to get there but it was worth every minute.  
+
+I was feeling optimistic, Tottenham should have been 1 up from the first leg at Arsenal 2 weeks earlier and I just had a feeling that this would be the year to beat Arsenal. They haven't achieved that since 1999 so most people thought I was mad, but after last years debacle at White Hart Lane at the same stage against the same team when they were leading 2-0 only to throw it all away and let Arsenal draw the game at 2-2. I just had a feeling that the boys were out for revenge and that the same mistake would not be made.  
+
+I expected a win, but what I witnessed live was unbelievable. 1-0 up after a few minutes I was thinking scoring early could be bad as Tottenham are notoriously bad at holding onto a narrow lead. They needed more goals and boy were we in for a feast! 2-0 up at half time, with Arsenal now playing quite a few first team regulars I thought they would come out fighting. They did, but Juande Ramos's blue and white army had other ideas in mind. 3 more goals to be precise!  
+
+I was filming the end of the match on my phone, with the 30,000+ supporters all singing "We're Going to Wembley" when the 5th goal went in - absolutely fantastic.  
+
+This was without a doubt the best game I have ever seen Tottenham play live. Absolutely loved it and I was buzzing for days after this one. Is this the year for Tottenham to win something...? I'm optimistic and I hope they prove the critics wrong and beat Chelsea next month to lift the Carling Cup at Wembley.  
+
+Here's one of the goals for you to share the experience.  
+
+[![Tottenham's 5th Goal](http://res.cloudinary.com/dqg9nkccw/image/upload/v1452174261/gorilla_uhcslo.png)](https://www.youtube.com/watch?v=BJHAET455oA "Tottenham's 5th Goal filmed from the stands")
+
+Goal highlights from Sky Sports.
+
+[![Spurs vs Arsenal semi-final goal highlights](http://res.cloudinary.com/dqg9nkccw/image/upload/v1452174261/gorilla_uhcslo.png)](https://www.youtube.com/watch?v=8NY6CwIEpqE "Spurs vs Arsenal semi-final goal highlights")</value>
+  </data>
+  <data name="y4Feb" xml:space="preserve">
+    <value></value>
+  </data>
+</root>

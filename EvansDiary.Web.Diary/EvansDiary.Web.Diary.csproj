@@ -80,6 +80,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Year2007.resx</DependentUpon>
     </Compile>
+    <Compile Include="Resources\Year2008.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Year2008.resx</DependentUpon>
+    </Compile>
     <Compile Include="StaticContent\StaticContentDelivery.cs" />
     <Compile Include="StaticContent\StaticHospitalContentDelivery.cs" />
     <Compile Include="TransferObjects\AssociatedImage.cs" />
@@ -107,6 +112,11 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Year2007.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Year2008.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Year2008.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

@@ -17,6 +17,7 @@ namespace EvansDiary.Web.Diary.StaticContent
             InitialiseYearOneContent();
             InitialiseYearTwoContent();
             InitialiseYearThreeContent();
+            InitialiseYearFourContent();
         }
 
         public IDiaryEntry GetEntry(string key)
@@ -2161,19 +2162,118 @@ namespace EvansDiary.Web.Diary.StaticContent
                         }
                     });
 
+            _diaryEntries
+                .Add(
+                    "2007-december",
+                    new DiaryEntry
+                    {
+                        Tag = "December (2007)",
+                        Timeline = new List<ITimeLineEntry>
+                        {
+                            new TimeLineEntry
+                            {
+                                Subheading = "2nd December - 3 become 2",
+                                Entry = md.Transform(Year2007.y3Dec_2nd),
+                                Images = new List<IAssociatedImage>
+                                {
+                                    new AssociatedImage("dec_slide_start", "Is this going to have a happy ending?"),
+                                    new AssociatedImage("dec_slide_finish", "They seemed to like it!"),
+                                    new AssociatedImage("", ""),
+                                    new AssociatedImage("", "")
+                                }
+                            },
+                            new TimeLineEntry
+                            {
+                                Subheading = "14th December - King Evan",
+                                Entry = md.Transform(Year2007.y3Dec_14th),
+                                SingleImage = new AssociatedImage("dec_king", "Evan models his King outfit")
+                            },
+                            new TimeLineEntry
+                            {
+                                Subheading = "24th December - Birthday cake fun!",
+                                Entry = md.Transform(Year2007.y3Dec_24th),
+                                Images = new List<IAssociatedImage>
+                                {
+                                    new AssociatedImage("dec_cake_flat", "Is that a cake?"),
+                                    new AssociatedImage("dec_cake_rise", "Now that's more like it!"),
+                                    new AssociatedImage("", ""),
+                                    new AssociatedImage("", "")
+                                }
+                            },
+                            new TimeLineEntry
+                            {
+                                Subheading = "25th December - Evan remembers Christmas",
+                                Entry = md.Transform(Year2007.y3Dec_25th),
+                                Images = new List<IAssociatedImage>
+                                {
+                                    new AssociatedImage("dec_xmas", "Finally the waiting is over!"),
+                                    new AssociatedImage("", ""),
+                                    new AssociatedImage("", ""),
+                                    new AssociatedImage("", "")
+                                }
+                            },
+                            new TimeLineEntry
+                            {
+                                Subheading = "26th December - Evan turns 3",
+                                Entry = md.Transform(Year2007.y3Dec_26th),
+                                Images = new List<IAssociatedImage>
+                                {
+                                    new AssociatedImage("dec_whos_toys", "My my Evan, haven't you grown"),
+                                    new AssociatedImage("", ""),
+                                    new AssociatedImage("", ""),
+                                    new AssociatedImage("", "")
+                                }
+                            } 
+                        }
+                    });
+        }
+
+        private void InitialiseYearFourContent()
+        {
+            var md = new Markdown { ExtraMode = true, SafeMode = false };
+
+            _diaryEntries
+                .Add(
+                    "2008-january",
+                    new DiaryEntry
+                    {
+                        Tag = "January (2008)",
+                        Timeline = new List<ITimeLineEntry>
+                        {
+                            new TimeLineEntry
+                            {
+                                Subheading = "1st Januay - A new start for us!",
+                                Entry = md.Transform(Year2008.y4Jan_1st),
+                                SingleImage = new AssociatedImage("jan_wallpaper_fun", "Not exactly exciting to look at but it felt so good stripping wallpaper")
+                            },
+                            new TimeLineEntry
+                            {
+                                Subheading = "22nd January - Tottenham vs Arsenal Carling Cup Semi",
+                                Entry = md.Transform(Year2008.y4Jan_22nd),
+                                Images = new List<IAssociatedImage>
+                                {
+                                    new AssociatedImage("jan_tottenham_arsenal", "Tottenham vs Arsenal (Carling Cup semi-final)"),
+                                    new AssociatedImage("jan_end_of_game", "Players celebrate emphatic win over Arsenal 5-1"),
+                                    new AssociatedImage("", ""),
+                                    new AssociatedImage("", "")
+                                }
+                            }
+                        }
+                    });
+            
             //_diaryEntries
             //    .Add(
-            //        "2007-",
+            //        "2008-",
             //        new DiaryEntry
             //        {
-            //            Tag = "July (2007)",
+            //            Tag = " (2008)",
             //            Timeline = new List<ITimeLineEntry>
             //            {
             //                new TimeLineEntry
             //                {
-            //                    Subheading = "7th July 2007",
+            //                    Subheading = "",
             //                    Entry = md.Transform(Year2007.y3Jul_7th),
-            //                    SingleImage = new AssociatedImage("june_reunion", "The BBQ Reunion"),
+            //                    SingleImage = new AssociatedImage("", ""),
             //                    Images = new List<IAssociatedImage>
             //                    {
             //                        new AssociatedImage("", ""),
@@ -2184,7 +2284,6 @@ namespace EvansDiary.Web.Diary.StaticContent
             //                }
             //            }
             //        });
-
-        }   
+        }
     }
 }

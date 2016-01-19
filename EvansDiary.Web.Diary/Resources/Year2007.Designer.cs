@@ -92,11 +92,55 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to *&quot;I bring myrrh&quot;* was the line that Evan had to say in his nursery nativity play this year. Evan didn&apos;t falter when he appeared on the stage in his homemade King outfit. I wasn&apos;t sure when asked to supply the outfit whether he would wear it because he usually reacts funnily to odd looking clothes, but he really embraced this nativity play. He wanted to wear his King&apos;s crown every day.   
+        ///
+        ///Evan will be moving up to the Butterfly room at nursery when we return from the Christmas holiday period. He has been  [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string y3Dec {
+        internal static string y3Dec_14th {
             get {
-                return ResourceManager.GetString("y3Dec", resourceCulture);
+                return ResourceManager.GetString("y3Dec_14th", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to I tried to find a Roary the Racing car cake this year for Evan, but was unsuccessful in my attempts to get one made. So once again it fell on my hands to do the baking myself. I should have learned from the recent failure to make cup cakes that embarking on a real sized cake would ultimately fail on a much bigger scale.  
+        ///
+        ///Evan and I were visiting Grandma this Christmas so we decided to take all the baking ingredients and cook the cake at her house. I realised my mistake with the cup cakes was that I shou [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string y3Dec_24th {
+            get {
+                return ResourceManager.GetString("y3Dec_24th", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to It&apos;s Christmas! Evan was really into Christmas this year, it started as soon as I put up the Christmas tree. Within minutes he had been investigating the new addition to our living room and ended with him knocking the tree over. I was sitting at the table and saw it all happen in the patio window reflection. It didn&apos;t completely fall, because Evan somehow managed to catch it. The tree looked a little ruffled by the time I rescued it.  
+        ///
+        ///Evan knew it was Christmas and Birthday time this year and if you ask [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string y3Dec_25th {
+            get {
+                return ResourceManager.GetString("y3Dec_25th", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Today was Evan&apos;s 3rd birthday and most of his birthday presents had survived the Christmas day attempts by Evan to open more presents than he was supposed to. We had his uncle Neil, aunty Pascale and Izzy the dog join us today and we had lots of fun. Evan adores Izzy and as usual he wouldn&apos;t leave her alone. I bought him a car play mat for his birthday and Izzy became rather attached to it, using it as a bed to sleep on when she was tired.  
+        ///
+        ///The house will never be quiet again. What is it with noisy toys [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string y3Dec_26th {
+            get {
+                return ResourceManager.GetString("y3Dec_26th", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This has been an odd month for the Middlebrook&apos;s, the month started with some high and low points. Evan had another birthday party to go to, this time in the theme of Fireman Sam, which he loved. He had lots of fire engines to play with. Once again he seemed interested in playing with the toys and not actually getting involved with the party games going on.. I guess he just likes playing with the toys! It&apos;s all about familiarity. Hopefully as he gets older, he&apos;ll be more interested in the actual party event [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string y3Dec_2nd {
+            get {
+                return ResourceManager.GetString("y3Dec_2nd", resourceCulture);
             }
         }
         

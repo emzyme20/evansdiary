@@ -277,7 +277,6 @@
     <Content Include="Content\images\diary\years\2006\m11.jpg" />
     <Content Include="Content\images\diary\years\2006\m12.jpg" />
     <Content Include="Content\images\diary\years\2007\m01.jpg" />
-    <Content Include="Content\images\diary\year_3.jpg" />
     <Content Include="Content\images\diary\year_4.jpg" />
     <Content Include="Content\images\the-diary.png" />
     <Content Include="Content\Theme\css\prettyPhoto.css" />
