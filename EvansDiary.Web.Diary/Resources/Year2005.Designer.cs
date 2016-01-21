@@ -96,7 +96,7 @@ namespace EvansDiary.Web.Diary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to We&apos;re starting to be able to see some developmental changes in Evan&apos;s behaviour now. He&apos;s been sucking at his fist for a week or two already but sometimes he manages to be a little more dextrous and actually put his fingers in his mouth and suck those. He hasn&apos;t quite found his thumb yet though!  
         ///
-        ///He&apos;s also &quot;talking&quot; a lot more now. He started saying &quot;gurrr&quot; a lot a couple of weeks back but now he has a new gurgle where he really sounds like he&apos;s trying to laugh and he tends to do this in direct response [rest of string was truncated]&quot;;.
+        ///He&apos;s also talking *(making word like noises)* a lot more now. He started saying *&quot;gurrr&quot;* a lot a couple of weeks back but now he has a new gurgle where he really sounds like he&apos;s trying to laugh and he tends t [rest of string was truncated]&quot;;.
         /// </summary>
         public static string y1w10Two {
             get {
@@ -327,7 +327,7 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to I have started to notice these little patches of dry skin appearing on Evan&apos;s body. We managed to get rid of one that he has had for months on his shoulder by applying Sudocrem at every nappy change. However, this little persistent one on the head just refuses to go away so this week I decided to take him to the Doctors to find out what it was as I didn&apos;t want it to be on all his baby photos! Our GP thinks Evan may have a mild form of baby eczema so she has given me a prescription for some Canesten cream -  [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to I have started to notice these little patches of dry skin appearing on Evan&apos;s body. We managed to get rid of one that he has had for months on his shoulder by applying Sudocrem at every nappy change. However, this little persistent one on the head just refuses to go away so this week I decided to take him to the doctors to find out what it was as I didn&apos;t want it to be on all his baby photos! Our GP thinks Evan may have a mild form of baby eczema so she has given me a prescription for some Canesten cream -  [rest of string was truncated]&quot;;.
         /// </summary>
         public static string y1w21One {
             get {
@@ -792,9 +792,9 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to I have finally started to feel much better now, the mother of all periods has gone and everything appears to have healed. My mum took me for my hospital scan this week and Evan had his first ride in a lift, he pulled his funny little face that he does when he&apos;s about to have a whiney cry and I was thinking oh god not in here. My mum just looked at him and said something like &quot;You can stop that right now!&quot; and to my surprise he did. Do you think I have that effect on him?!?!  
+        ///   Looks up a localized string similar to I have finally started to feel much better now, the mother of all periods has gone and everything appears to have healed. My mum took me for my hospital scan this week and Evan had his first ride in a lift, he pulled his funny little face that he does when he&apos;s about to have a whiney cry and I was thinking oh god not in here. My mum just looked at him and said something like *&quot;You can stop that right now!&quot;* and to my surprise he did. Do you think I have that effect on him?!?!  
         ///
-        ///That day Evan got to visit h [rest of string was truncated]&quot;;.
+        ///That day Evan got to visit [rest of string was truncated]&quot;;.
         /// </summary>
         public static string y1w6One {
             get {
