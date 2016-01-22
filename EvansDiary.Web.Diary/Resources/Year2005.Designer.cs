@@ -105,7 +105,7 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to This week the long awaited &quot;Baby Massage&quot; class started, it&apos;s only on for 4 weeks but it&apos;s just another opportunity to get us out of the house for a few hours to see other babies. Doing the little walk to Somerfield on our own is getting a bit boring and I really think it will do Evan good to get out and about more. We&apos;ve been doing massage with Evan for several weeks now so this class was mainly for the social aspect as well as just making sure I am doing it correctly. The class is run free by the local he [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to This week the long awaited *&quot;Baby Massage&quot;* class started, it&apos;s only on for 4 weeks but it&apos;s just another opportunity to get us out of the house for a few hours to see other babies. Doing the little walk to Somerfield on our own is getting a bit boring and I really think it will do Evan good to get out and about more. We&apos;ve been doing massage with Evan for several weeks now so this class was mainly for the social aspect as well as just making sure I am doing it correctly. The class is run free by the local  [rest of string was truncated]&quot;;.
         /// </summary>
         public static string y1w11One {
             get {
@@ -125,7 +125,7 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to I introduced Evan to a new environment this week, we went to &quot;Teddies Music Club&quot;. Teddies is run once a week and is more suited to children at toddler age as they can interact more. I think it is also good for babies as it gives them new experiences, but they won&apos;t be able to sing along to the songs and do some of the actions, however it gets us out of the house for a little bit. I didn&apos;t realise this, but Evan had never heard anyone clap - hmm, unless me clapping when Spurs score on TV whilst Evan was in  [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to I introduced Evan to a new environment this week, we went to *&quot;Teddies Music Club&quot;*. Teddies is run once a week and is more suited to children at toddler age as they can interact more. I think it is also good for babies as it gives them new experiences, but they won&apos;t be able to sing along to the songs and do some of the actions, however it gets us out of the house for a little bit. I didn&apos;t realise this, but Evan had never heard anyone clap - hmm, unless me clapping when Spurs score on TV whilst Evan was i [rest of string was truncated]&quot;;.
         /// </summary>
         public static string y1w12One {
             get {
@@ -136,7 +136,7 @@ namespace EvansDiary.Web.Diary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Ooh we had a bit of a &apos;mare this week - the first time I caused an injury to Evan! There were tears... baby tears, Emma tears and there were screams! How did this happen? Well it all started with some baby fingernails and a pair of clippers :/ I&apos;m sure you can guess the rest!  
         ///
-        ///Due to the little &quot;jazz hands&quot; thing he tends to do when he&apos;s feeding *(see the piccy in week 6)* it&apos;s usually quite easy to trim his nails as he&apos;s fairly relaxed and sleepy when he&apos;s been feeding for a while and he splays his fin [rest of string was truncated]&quot;;.
+        ///Due to the little *&quot;jazz hands&quot;* thing he tends to do when he&apos;s feeding *(see the piccy in week 6)* it&apos;s usually quite easy to trim his nails as he&apos;s fairly relaxed and sleepy when he&apos;s been feeding for a while and he splays his f [rest of string was truncated]&quot;;.
         /// </summary>
         public static string y1w12Two {
             get {
@@ -192,9 +192,9 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to We had a monumental event this week (kinda) - Evan crawled! Okay so it was backwards, but he still crawled :) I had him on his belly for tummy time on the change mat and he tends to wriggle around a lot these days and I noticed that he was shuffling himself downwards towards the back of the mat! I watched him and sure enough he managed to shuffle all the way back down until his legs were on carpet and he got a bit stuck and I had to slide him back up. He&apos;s done it several times since then.  
+        ///   Looks up a localized string similar to We had a monumental event this week *(kinda)* - Evan crawled! Okay so it was backwards, but he still crawled :) I had him on his belly for tummy time on the change mat and he tends to wriggle around a lot these days and I noticed that he was shuffling himself downwards towards the back of the mat! I watched him and sure enough he managed to shuffle all the way back down until his legs were on carpet and he got a bit stuck and I had to slide him back up. He&apos;s done it several times since then.  
         ///
-        ///I&apos;ve noticed [rest of string was truncated]&quot;;.
+        ///I&apos;ve notic [rest of string was truncated]&quot;;.
         /// </summary>
         public static string y1w15Two {
             get {
@@ -223,9 +223,9 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to This week was the first week that we didn&apos;t see a gain in Evan&apos;s weight. In fact he had actually lost 4 ounces when I weighed him. I spoke to the Health Visitor at the clinic and she said that they don&apos;t like to see a drop in weight but Evan looked really healthy so they would just see how he was when I go to weight him next week.  
+        ///   Looks up a localized string similar to This week was the first week that we didn&apos;t see a gain in Evan&apos;s weight. In fact he had actually lost 4 ounces when I weighed him. I spoke to the Health Visitor at the clinic and she said that they don&apos;t like to see a drop in weight but Evan looked really healthy so they would just see how he was when I go to weigh him next week.  
         ///
-        ///This week at the Mother and Baby group they introduced us to Baby Yoga! It was quite fun and Evan seemed to enjoy it at first but then he got hungry and demanded boob halfway [rest of string was truncated]&quot;;.
+        ///This week at the Mother and Baby group they introduced us to Baby Yoga! It was quite fun and Evan seemed to enjoy it at first but then he got hungry and demanded boob halfway  [rest of string was truncated]&quot;;.
         /// </summary>
         public static string y1w17One {
             get {
@@ -245,9 +245,9 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Caroline returned to University this week and we have really enjoyed having her at home over the past 5 weeks so she was missed - even though she only had to go in for 2 days. I had to cancel a visit to see Evan&apos;s great grandmother in Birmingham again (3rd time now) and I feel really bad as she hasn&apos;t seen him now since he was 6 weeks old.  
+        ///   Looks up a localized string similar to Caroline returned to University this week and we have really enjoyed having her at home over the past 5 weeks so she was missed - even though she only had to go in for 2 days. I had to cancel a visit to see Evan&apos;s great grandmother in Birmingham again *(3rd time now)* and I feel really bad as she hasn&apos;t seen him now since he was 6 weeks old.  
         ///
-        ///The weather has been really nice this week and we were able to introduce Evan to grass - I think he really liked the feel of it on his bare feet. He does like it out [rest of string was truncated]&quot;;.
+        ///The weather has been really nice this week and we were able to introduce Evan to grass - I think he really liked the feel of it on his bare feet. He does like it o [rest of string was truncated]&quot;;.
         /// </summary>
         public static string y1w18One {
             get {
@@ -256,9 +256,9 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to It&apos;s nice to watch babies grow and develop and learn new things. I remember when Evan was first born and everyone was always saying &quot;Hold his head!&quot; but even then he could lift his head up a little. Now he has far better neck control - around 90% I&apos;d say.  
+        ///   Looks up a localized string similar to It&apos;s nice to watch babies grow and develop and learn new things. I remember when Evan was first born and everyone was always saying *&quot;Hold his head!&quot;* but even then he could lift his head up a little. Now he has far better neck control - around 90% I&apos;d say.  
         ///
-        ///Both of us tend to carry him in a similar position - in one arm facing in with his head looking back over our shoulder. I&apos;m left-armed and Emma is right-armed but other than that it&apos;s pretty similar. What we were always finding is that his neck was st [rest of string was truncated]&quot;;.
+        ///Both of us tend to carry him in a similar position - in one arm facing in with his head looking back over our shoulder. I&apos;m left-armed and Emma is right-armed but other than that it&apos;s pretty similar. What we were always finding is that his neck was  [rest of string was truncated]&quot;;.
         /// </summary>
         public static string y1w18Two {
             get {
