@@ -1840,12 +1840,12 @@ namespace EvansDiary.Web.Diary.StaticContent
                                 Entry = md.Transform(Year2007.y3Feb),
                                 Images = new List<IAssociatedImage>
                                 {
-                                    new AssociatedImage("feb_wellies_indoors",
+                                    new AssociatedImage("feb_wellies_indoors_ge8uwr",
                                         "Can you spot the other obsession?... Wellies indoors!?"),
-                                    new AssociatedImage("feb_well_done",
-                                        "Evan always congratulates himself with a clap and a 'Well Done'"),
-                                    new AssociatedImage("", ""),
-                                    new AssociatedImage("", "")
+                                    new AssociatedImage("feb_puzzles_zqhd0u", "No trouble finding all the pieces"),
+                                    new AssociatedImage("feb_all_done_uncxmv", "One completed puzzle"),
+                                    new AssociatedImage("feb_well_done_g1tyv7",
+                                        "Evan always congratulates himself with a clap and a 'Well Done'")
                                 }
                             }
                         }
@@ -1864,12 +1864,12 @@ namespace EvansDiary.Web.Diary.StaticContent
                                 Entry = md.Transform(Year2007.y3Mar),
                                 Images = new List<IAssociatedImage>
                                 {
-                                    new AssociatedImage("mar_beale_park", "Evan enjoys a picnic at Beale Park"),
-                                    new AssociatedImage("mar_long_grass",
-                                        "Evan experiences the fun of playing in long grass"),
-                                    new AssociatedImage("mar_closeup",
-                                        "As you can see Evan's lip is recovering well - still a cutie!"),
-                                    new AssociatedImage("", "")
+                                    new AssociatedImage("mar_beale_park_lkvbfs", "Evan enjoys a picnic at Beale Park"),
+                                    new AssociatedImage("mar_relaxed_xkidxc",
+                                        "Evan knows how to get comfy in his chair"),
+                                    new AssociatedImage("mar_bath_friends_leou2s",
+                                        "Evan has some bath friends"),
+                                    new AssociatedImage("mar_bath_smiles_wtvm5i", "Look at the face!")
                                 }
                             }
                         }
@@ -1888,11 +1888,17 @@ namespace EvansDiary.Web.Diary.StaticContent
                                 Entry = md.Transform(Year2007.y3Apr),
                                 Images = new List<IAssociatedImage>
                                 {
-                                    new AssociatedImage("apr_fridge_magnets",
+                                    new AssociatedImage("apr_exploring_ajj267", "Exploring the countryside"),
+                                    new AssociatedImage("apr_long_grass_z4giel",
+                                        "Evan experiences the fun of playing in long grass"),
+                                    new AssociatedImage("apr_monopoly_eks7td",
+                                        "Not quite ready to play monopoly to the rules"),
+                                    new AssociatedImage("apr_scar_smile_mse9by", "As you can see Evan's lip is recovering well - still a cutie!"),
+                                    new AssociatedImage("apr_fridge_magnets_gfpgzk",
                                         "Evan's favourite toy at Nanny's is her fridge magnets!"),
-                                    new AssociatedImage("apr_lego_castle", "Can you see us?"),
-                                    new AssociatedImage("apr_lego_jeep", "We've just been spotting dinosaurs"),
-                                    new AssociatedImage("", "")
+                                    new AssociatedImage("apr_legoland_castle_fqpugy", "Can you see us?"),
+                                    new AssociatedImage("apr_safari_car_rtvyrv", "We've just been spotting dinosaurs"),
+                                    new AssociatedImage("apr_passing_time_lltizn", "Evan finds something to do whilst waiting in the ride queues")
                                 }
                             }
                         }
