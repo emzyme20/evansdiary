@@ -336,7 +336,7 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Evan made a new discovery this week - one I was hoping he wouldn&apos;t make for a little while longer yet - yup, he found his willy!! He&apos;s been getting more adventurous with his hands of late and he can lift his legs right up which tips his pelvis upwards too. He was playing in the bath and suddenly I heard this little scream from Emma - *&quot;Oh No, he&apos;s got his willy!!!!&quot;*. I came running in to have a look and sure enough there he was giving it a good old tug! Looked rather painful to me but what would I know abo [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to Evan made a new discovery this week - one I was hoping he wouldn&apos;t make for a little while longer yet - yup, he found his willy!! He&apos;s been getting more adventurous with his hands of late and he can lift his legs right up which tips his pelvis upwards too. He was playing in the bath and suddenly I heard this little scream from Emma - *&quot;Oh No, he&apos;s got his willy!!!!&quot;*. I came running in to have a look and sure enough there he was giving it a good old tug! It looked rather painful to me but what would I know  [rest of string was truncated]&quot;;.
         /// </summary>
         public static string y1w21Two {
             get {
@@ -354,7 +354,7 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Earlier this week we had some scorching hot weather and one evening we were sitting in the lounge and Evan was getting so hot that we decided to just strip him off and let him have some nekkid time. There&apos;s just something so scrumptious about a naked baby! We had the patio door open and there was a light breeze so (much to Emma&apos;s disapproval) I took him outside to play in the garden. &quot;Oh he&apos;ll get grass up his bum!!&quot;, she moaned but Evan didn&apos;t seem to mind one bit. He loved it and two of the cats came out  [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to Earlier this week we had some scorching hot weather and one evening we were sitting in the lounge and Evan was getting so hot that we decided to just strip him off and let him have some nekkid time. There&apos;s just something so scrumptious about a naked baby! We had the patio door open and there was a light breeze so *(much to Emma&apos;s disapproval)* I took him outside to play in the garden. *&quot;Oh he&apos;ll get grass up his bum!!&quot;*, she moaned but Evan didn&apos;t seem to mind one bit. He loved it and two of the cats came  [rest of string was truncated]&quot;;.
         /// </summary>
         public static string y1w22Two {
             get {
@@ -372,9 +372,9 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to The weaning continues... we&apos;ve introduced two new foods this week - carrot and banana. No, not at the same time! We tried the banana first and that probably wasn&apos;t the best option as it was really difficult to mash properly! It got all lumpy and kinda slimy and this proved quite a problem. Every time we gave him a mouthful that was a bit too lumpy he&apos;d pull thus funny face, make a kind of gagging noise and poke his tongue out. Highly amusing I thought.  
+        ///   Looks up a localized string similar to The weaning continues... we&apos;ve introduced two new foods this week—carrot and banana. No, not at the same time! We tried the banana first and that probably wasn&apos;t the best option as it was really difficult to mash properly! It got all lumpy and kinda slimy and this proved quite a problem. Every time we gave him a mouthful that was a bit too lumpy he&apos;d pull thus funny face, make a kind of gagging noise and poke his tongue out. Highly amusing I thought.  
         ///
-        ///We thought the banana was tricky; nothing compared [rest of string was truncated]&quot;;.
+        ///We thought the banana was tricky; nothing compared t [rest of string was truncated]&quot;;.
         /// </summary>
         public static string y1w23Two {
             get {
@@ -383,7 +383,7 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to This week we tried some new foods with Evan and also introduced breakfast. We tried Evan on sweet potato and pear, both of which he really liked. We started to do combination meals as well like carrot and sweet potato followed by pear and baby rice for dessert. I have been taken my time with new foods to make sure that Evan doesn&apos;t get overloaded with new flavours. I didn&apos;t want to try something new everyday but give Evan a couple of days to get used to a new flavour. We&apos;ve been trying to film all the new t [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to This week we tried some new foods with Evan and also introduced breakfast. We tried Evan on sweet potato and pear, both of which he really liked. We started to do combination meals as well like carrot and sweet potato followed by pear and baby rice for dessert. I have been taking my time with new foods to make sure that Evan doesn&apos;t get overloaded with new flavours. I didn&apos;t want to try something new everyday but give Evan a couple of days to get used to a new flavour. We&apos;ve been trying to film all the new  [rest of string was truncated]&quot;;.
         /// </summary>
         public static string y1w24One {
             get {

@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 
 using EvansDiary.Interfaces;
 using EvansDiary.Web.Diary.Resources;
@@ -26,7 +27,11 @@ namespace EvansDiary.Web.Diary.StaticContent
             {
                 return _diaryEntries[key];
             }
-            return new DiaryEntry();
+
+            return new DiaryEntry
+            {
+                Timeline = new List<ITimeLineEntry>()
+            };
         }
 
         private void InitialiseYearOneContent()
