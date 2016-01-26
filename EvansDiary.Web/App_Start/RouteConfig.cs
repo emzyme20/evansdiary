@@ -1,5 +1,4 @@
-﻿using System;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 using System.Web.Routing;
 using EvansDiary.Web.Controllers;
 using EvansDiary.Web.Diary.Extensions;

@@ -192,9 +192,9 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to We had a monumental event this week *(kinda)* - Evan crawled! Okay so it was backwards, but he still crawled :) I had him on his belly for tummy time on the change mat and he tends to wriggle around a lot these days and I noticed that he was shuffling himself downwards towards the back of the mat! I watched him and sure enough he managed to shuffle all the way back down until his legs were on carpet and he got a bit stuck and I had to slide him back up. He&apos;s done it several times since then.  
+        ///   Looks up a localized string similar to We had a monumental event this week *(kinda)*, Evan crawled! Okay so it was backwards, but he still crawled :) I had him on his belly for tummy time on the change mat and he tends to wriggle around a lot these days and I noticed that he was shuffling himself downwards towards the back of the mat! I watched him and sure enough he managed to shuffle all the way back down until his legs were on carpet and he got a bit stuck and I had to slide him back up. He&apos;s done it several times since then.  
         ///
-        ///I&apos;ve notic [rest of string was truncated]&quot;;.
+        ///I&apos;ve notice [rest of string was truncated]&quot;;.
         /// </summary>
         public static string y1w15Two {
             get {
@@ -336,7 +336,7 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Evan made a new discovery this week - one I was hoping he wouldn&apos;t make for a little while longer yet - yup, he found his willy!! He&apos;s been getting more adventurous with his hands of late and he can lift his legs right up which tips his pelvis upwards too. He was playing in the bath and suddenly I heard this little scream from Emma - *&quot;Oh No, he&apos;s got his willy!!!!&quot;*. I came running in to have a look and sure enough there he was giving it a good old tug! It looked rather painful to me but what would I know  [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to Evan made a new discovery this week, one I was hoping he wouldn&apos;t make for a little while longer yet—yup, he found his willy!! He&apos;s been getting more adventurous with his hands of late and he can lift his legs right up which tips his pelvis upwards too. He was playing in the bath and suddenly I heard this little scream from Emma - *&quot;Oh No, he&apos;s got his willy!!!!&quot;*. I came running in to have a look and sure enough there he was giving it a good old tug! It looked rather painful to me but what would I know abo [rest of string was truncated]&quot;;.
         /// </summary>
         public static string y1w21Two {
             get {
@@ -425,7 +425,7 @@ namespace EvansDiary.Web.Diary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Over the last couple of weeks we&apos;ve been trying to establish more of a routine for Evan - regular feed times, nap times and bed time in the evening. But just lately he&apos;s really started to fuss in the evenings. I think he&apos;s got to that age where he really knows that if he screams his head off Emma comes running and I think he&apos;s playing us good!  
         ///
-        ///At the end of last week we took him round to Emma&apos;s mums and we made the mistake of trying him out in the travel cot - boy did he throw a paddy! After that I dec [rest of string was truncated]&quot;;.
+        ///At the end of last week we took him round to Emma&apos;s mums and we made the mistake of trying him out in the travel cot—boy did he throw a paddy! After that I decid [rest of string was truncated]&quot;;.
         /// </summary>
         public static string y1w26Two {
             get {
@@ -434,9 +434,9 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Evan has the most adorable fluffy blonde hair and one day this week I just had the urge to put some hair wax in his hair. I tried to hide this from Caroline but she noticed as soon as I walked into the room :). &quot;What have you put in his hair you naughty Mummy!&quot; she said... He did look really cute with his hair doing a trendy scruffy look.  
+        ///   Looks up a localized string similar to Evan has the most adorable fluffy blonde hair and one day this week I just had the urge to put some hair wax in his hair. I tried to hide this from Caroline but she noticed as soon as I walked into the room :). *&quot;What have you put in his hair you naughty Mummy!&quot;* she said... He did look really cute with his hair doing a trendy scruffy look.  
         ///
-        ///Evan is developing really well and his routine is really starting to go smoothly. He&apos;s on 3 meals a day and now only has breast feeds throughout the night when he wak [rest of string was truncated]&quot;;.
+        ///Evan is developing really well and his routine is really starting to go smoothly. He&apos;s on 3 meals a day and now only has breast feeds throughout the night when he w [rest of string was truncated]&quot;;.
         /// </summary>
         public static string y1w27One {
             get {
@@ -516,7 +516,7 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to I did my last morning boob feed last Wednesday (20th July) and I am really starting to notice them drying up. I am expecting it to take roughly 2 weeks. At the moment it is very strange and uncomfortable at times. The boob that had the last feed is coping a lot better than the one that was not relieved... As the ducts dry up, it makes your boob look really weird instead of having engorgement all over, you tend to find that just parts of the boob are engorged. Evan seems to really like to grab at my boobs so [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to I did my last morning boob feed last Wednesday *(20th July)* and I am really starting to notice them drying up. I am expecting it to take roughly 2 weeks. At the moment it is very strange and uncomfortable at times. The boob that had the last feed is coping a lot better than the one that was not relieved... As the ducts dry up, it makes your boob look really weird instead of having engorgement all over, you tend to find that just parts of the boob are engorged. Evan seems to really like to grab at them so I [rest of string was truncated]&quot;;.
         /// </summary>
         public static string y1w31One {
             get {
@@ -536,7 +536,7 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Evan had an afternoon at his friend Alex&apos;s house this week. He also had the pleasure of spending time with Megan as she had travelled all the way from Bath to visit family and friends. It&apos;s lovely to see babies playing together and they absolutely adore other babies. Megan and Alex are both crawling and Evan was quite content with his little bum shuffle, and didn&apos;t mind it when Alex crawled all over him - it actually made him giggle! I think Evan will do fine at nursery when he starts next month, though he  [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to Evan had an afternoon at his friend Alex&apos;s house this week. He also had the pleasure of spending time with Megan as she had travelled all the way from Bath to visit family and friends. It&apos;s lovely to see babies playing together and they absolutely adore other babies. Megan and Alex are both crawling and Evan was quite content with his little bum shuffle, and didn&apos;t mind it when Alex crawled all over him—it actually made him giggle! I think Evan will do fine at nursery when he starts next month, though he do [rest of string was truncated]&quot;;.
         /// </summary>
         public static string y1w33One {
             get {

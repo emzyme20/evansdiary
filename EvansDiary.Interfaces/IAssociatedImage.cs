@@ -6,6 +6,6 @@
 
         string Source { get; set; }
 
-        string GetUrl();
+        string GetUrl(double? width);
     }
 }

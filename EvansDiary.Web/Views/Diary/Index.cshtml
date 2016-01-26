@@ -1,5 +1,6 @@
 ﻿@using EvansDiary.Web.Controllers
 @using EvansDiary.Web.Diary.Extensions
+@using EvansDiary.Web.Diary.TransferObjects
 @{
     ViewBag.Title = "The Diary";
 }
@@ -32,21 +33,24 @@
                 <li class="pure-u-1-4">
                     @using (Html.ScopedActionLink<DiaryController>(x => x.Year(2005)))
                     {
-                        <img src="http://res.cloudinary.com/dqg9nkccw/image/upload/c_fill,w_520/w1_evan_peaceful_hqreul.png" alt="Year 1" title="Year 1"/>
+                        var yearOne = new AssociatedImage("w1_evan_peaceful_hqreul", "Year 1");
+                        <img class="pure-img-responsive" src="@yearOne.GetUrl(null)" alt="@yearOne.Caption" title="@yearOne.Caption">
                     }
                     <span>Year 1 - 2005</span>
                 </li>
                 <li class="pure-u-1-4">
                     @using (Html.ScopedActionLink<DiaryController>(x => x.Year(2006)))
                     {
-                        <img src="http://res.cloudinary.com/dqg9nkccw/image/upload/c_fill,w_520/feb_gorgeous_ligjbj.png" alt="Year 2" title="Year 2" />
+                        var yearTwo = new AssociatedImage("feb_gorgeous_ligjbj", "Year 2");
+                        <img class="pure-img-responsive" src="@yearTwo.GetUrl(null)" alt="@yearTwo.Caption" title="@yearTwo.Caption">
                     }
                     <span>Year 2 - 2006</span>
                 </li>
                 <li class="pure-u-1-4">
                     @using (Html.ScopedActionLink<DiaryController>(x => x.Year(2007)))
                     {
-                        <img src="http://res.cloudinary.com/dqg9nkccw/image/upload/c_fill,w_520/dec_together_cdlhbx.png" alt="Year 3" title="Year 3" />
+                        var yearThree = new AssociatedImage("dec_together_cdlhbx", "Year 3");
+                        <img class="pure-img-responsive" src="@yearThree.GetUrl(null)" alt="@yearThree.Caption" title="@yearThree.Caption">
                     }
                     <span>Year 3 - 2007</span>
                 </li>

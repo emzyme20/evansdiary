@@ -1,4 +1,6 @@
-﻿using EvansDiary.Interfaces;
+﻿using System.Text;
+
+using EvansDiary.Interfaces;
 
 namespace EvansDiary.Web.Diary.TransferObjects
 {
@@ -13,9 +15,20 @@ namespace EvansDiary.Web.Diary.TransferObjects
         public string Caption { get; set; }
 
         public string Source { get; set; }
-        public string GetUrl()
+        public string GetUrl(double? width)
         {
-            return "http://res.cloudinary.com/dqg9nkccw/image/upload/c_fill,w_520/" + Source + ".png";
+            var options = new StringBuilder(",q_90,w_");
+            if (width.HasValue)
+            {
+                options.Append(width);
+            }
+            else
+            {
+                options.Append("285");
+            }
+            options.Append("/");
+
+            return "http://res.cloudinary.com/dqg9nkccw/image/upload/c_fill" + options + Source + ".jpg";
         }
     }
 }
