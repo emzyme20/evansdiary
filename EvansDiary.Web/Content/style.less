@@ -59,6 +59,15 @@ ul.flat {
     height: auto;
     max-width: 100%;
     margin: 0 auto;
+
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0) scale(1.05, 1.05);
+
+    -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+       -ms-transition: all 0.5s ease;
+           transition: all 0.5s ease;
   }
 
   a {
@@ -209,8 +218,18 @@ ul.image-nav-list a:hover img, ul.image-nav-list a.selected img {
   /*-ms-transform: scale(1.05, 1.05);
   -webkit-transform: scale(1.05, 1.05);
   transform: scale(1.05, 1.05);*/
-  -webkit-backface-visibility: hidden;
-  -webkit-transform: translateZ(0) scale(1.05, 1.05);
+
+  /*-webkit-backface-visibility: hidden;
+  -webkit-transform: translateZ(0) scale(1.05, 1.05);*/
+  
+  /*filter: blur(0);
+  -webkit-filter: blur(0);*/
+
+  -webkit-transform: rotate(-10deg);
+     -moz-transform: rotate(-10deg);
+       -o-transform: rotate(-10deg);
+      -ms-transform: rotate(-10deg);
+          transform: rotate(-10deg);
 }
 
 .pure-img-responsive {
