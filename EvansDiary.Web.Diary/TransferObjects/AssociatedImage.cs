@@ -15,9 +15,9 @@ namespace EvansDiary.Web.Diary.TransferObjects
         public string Caption { get; set; }
 
         public string Source { get; set; }
-        public string GetUrl(double? width)
+        public string GetUrl(double? width, int? quality)
         {
-            var options = new StringBuilder(",q_90,w_");
+            var options = new StringBuilder(",w_");
             if (width.HasValue)
             {
                 options.Append(width);
@@ -25,6 +25,16 @@ namespace EvansDiary.Web.Diary.TransferObjects
             else
             {
                 options.Append("285");
+            }
+
+            if (quality.HasValue)
+            {
+                options.Append(",q_");
+                options.Append(quality);
+            }
+            else
+            {
+                options.Append(",q_90");
             }
             options.Append("/");
 

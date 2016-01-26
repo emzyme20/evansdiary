@@ -30,31 +30,31 @@
         <div class="box">
             <h2>The Years</h2>
             <ul class="flat pure-g image-nav-list">
-                <li class="pure-u-1-4">
+                <li class="pure-u-1-2 pure-u-sm-1-4">
                     @using (Html.ScopedActionLink<DiaryController>(x => x.Year(2005)))
                     {
                         var yearOne = new AssociatedImage("w1_evan_peaceful_hqreul", "Year 1");
-                        <img class="pure-img-responsive" src="@yearOne.GetUrl(null)" alt="@yearOne.Caption" title="@yearOne.Caption">
+                        <img class="pure-img-responsive" src="@yearOne.GetUrl(null, 100)" alt="@yearOne.Caption" title="@yearOne.Caption">
                     }
                     <span>Year 1 - 2005</span>
                 </li>
-                <li class="pure-u-1-4">
+                <li class="pure-u-1-2 pure-u-sm-1-4">
                     @using (Html.ScopedActionLink<DiaryController>(x => x.Year(2006)))
                     {
                         var yearTwo = new AssociatedImage("feb_gorgeous_ligjbj", "Year 2");
-                        <img class="pure-img-responsive" src="@yearTwo.GetUrl(null)" alt="@yearTwo.Caption" title="@yearTwo.Caption">
+                        <img class="pure-img-responsive" src="@yearTwo.GetUrl(null, 100)" alt="@yearTwo.Caption" title="@yearTwo.Caption">
                     }
                     <span>Year 2 - 2006</span>
                 </li>
-                <li class="pure-u-1-4">
+                <li class="pure-u-1-2 pure-u-sm-1-4">
                     @using (Html.ScopedActionLink<DiaryController>(x => x.Year(2007)))
                     {
                         var yearThree = new AssociatedImage("dec_together_cdlhbx", "Year 3");
-                        <img class="pure-img-responsive" src="@yearThree.GetUrl(null)" alt="@yearThree.Caption" title="@yearThree.Caption">
+                        <img class="pure-img-responsive" src="@yearThree.GetUrl(null, 100)" alt="@yearThree.Caption" title="@yearThree.Caption">
                     }
                     <span>Year 3 - 2007</span>
                 </li>
-                <li class="pure-u-1-4">
+                <li class="pure-u-1-2 pure-u-sm-1-4">
                     @using (Html.ScopedActionLink<DiaryController>(x => x.Year(2008)))
                     {
                         <img src="/Content/images/diary/year_4.jpg" alt="Year 4" title="Year 4" />
