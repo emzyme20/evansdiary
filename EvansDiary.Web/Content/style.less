@@ -274,11 +274,11 @@ ul.image-nav-list a:hover img, ul.image-nav-list a.selected img {
   margin-top: 1em;
 }
 
-.diary-nav {
+/*.diary-nav {
   li {
     padding-right: 1em;
   }
-}
+}*/
 
 .banner-static {
 //  @media screen and (min-width: @mq-lg) {
@@ -312,13 +312,13 @@ ul.image-nav-list a:hover img, ul.image-nav-list a.selected img {
 */
 
 ul.polaroids {
-  /*padding: 0;
-  margin: 0;*/
+  padding: 0;
+  margin: 0;
   list-style: none;
 
   img {
     display: block;
-    margin-bottom: 12px;
+    margin-bottom: 7px;
   }
 
   a {
@@ -328,11 +328,6 @@ ul.polaroids {
 
 ul.polaroids a:after {
   content: attr(title);
-  font-size: 16px;
-
-  @media screen and (max-width: @mq-md) {
-      font-size: 14px;
-    }
 }
 
 /* By default, we tilt all our images -2 degrees */
@@ -340,9 +335,9 @@ ul.polaroids a {
   background: #fff;
   display: inline;
   float: left;
-  margin: 0 0 27px 30px;
+  margin: 0 10px 20px 10px;
   width: auto;
-  padding: 10px 10px 15px;
+  padding: 7px;
   text-align: center;
   font-family: 'Permanent Marker', sans-serif;
   text-decoration: none;
@@ -352,6 +347,13 @@ ul.polaroids a {
   -moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
   -webkit-transform: rotate(-2deg);
   -moz-transform: rotate(-2deg);
+
+  @media screen and (max-width: @mq-xs) {
+    font-size: 12px;
+  }
+  @media screen and (min-width: @mq-xs) and (max-width: @mq-md) {
+    font-size: 14px;
+  }
 }
  
 /* Rotate all even images 2 degrees */
@@ -409,4 +411,20 @@ ul.polaroids a {
 ul.polaroids a {
   -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.5);
   -moz-box-shadow: 0 3px 6px rgba(0,0,0,.5);
+}
+
+/*
+  ---- Flipbook
+*/
+#rotating-item-wrapper {
+    position: relative;
+    width: 285px;
+    /*width: 980px;
+    height: 347px;*/
+}
+.rotating-item {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
 }

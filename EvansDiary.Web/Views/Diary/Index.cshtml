@@ -31,28 +31,28 @@
             <h2>The Years</h2>
             <ul class="polaroids pure-g">
                 <li class="pure-u-1-2 pure-u-md-1-4">
-                    @using (Html.ScopedActionLink<DiaryController>(x => x.Year(2005), new { title = "Year 1 - 2005" }))
+                    @using (Html.ScopedActionLink<DiaryController>(x => x.Year(2005), new { title = "Year 1" }))
                     {
                         var yearOne = new AssociatedImage("w1_evan_peaceful_hqreul", "Year 1 - 2005");
                         <img class="pure-img-responsive" src="@yearOne.GetUrl(null, 100)" alt="@yearOne.Caption" title="@yearOne.Caption">
                     }
                 </li>
                 <li class="pure-u-1-2 pure-u-md-1-4">
-                    @using (Html.ScopedActionLink<DiaryController>(x => x.Year(2006), new { title = "Year 2 - 2006" }))
+                    @using (Html.ScopedActionLink<DiaryController>(x => x.Year(2006), new { title = "Year 2" }))
                     {
                         var yearTwo = new AssociatedImage("feb_gorgeous_ligjbj", "Year 2 - 2006");
                         <img class="pure-img-responsive" src="@yearTwo.GetUrl(null, 100)" alt="@yearTwo.Caption" title="@yearTwo.Caption">
                     }
                 </li>
                 <li class="pure-u-1-2 pure-u-md-1-4">
-                    @using (Html.ScopedActionLink<DiaryController>(x => x.Year(2007), new { title = "Year 3 - 2007" }))
+                    @using (Html.ScopedActionLink<DiaryController>(x => x.Year(2007), new { title = "Year 3" }))
                     {
                         var yearThree = new AssociatedImage("dec_together_cdlhbx", "Year 3 - 2007");
                         <img class="pure-img-responsive" src="@yearThree.GetUrl(null, 100)" alt="@yearThree.Caption" title="@yearThree.Caption">
                     }
                 </li>
                 <li class="pure-u-1-2 pure-u-md-1-4">
-                    @using (Html.ScopedActionLink<DiaryController>(x => x.Year(2008), new { title = "Year 4 - 2008" }))
+                    @using (Html.ScopedActionLink<DiaryController>(x => x.Year(2008), new { title = "Year 4" }))
                     {
                         var yearFour = new AssociatedImage("dec_together_cdlhbx", "Year 4 - 2008");
                         <img class="pure-img-responsive" src="@yearFour.GetUrl(null, 100)" alt="@yearFour.Caption" title="@yearFour.Caption">
