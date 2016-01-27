@@ -8,18 +8,17 @@
 
 <div class="diary-nav container">
     <div class="box">
-        <ul class="flat pure-g image-nav-list">
+        <ul class="polaroids pure-g">
             @for (var monthDigit = 1; monthDigit <= 12; monthDigit++)
             {
                 var monthName = dateTimeHelper.GetMonthName(monthDigit);
                 var imgSrc = string.Format("/Content/images/diary/years/{0}/m{1:00}.jpg", Model.Year, monthDigit);
 
                 <li class="pure-u-1-2 pure-u-sm-1-4">
-                    @using (Html.ScopedActionLink<DiaryController>(x => x.Month(Model.Year, monthName.ToLowerInvariant())))
+                    @using (Html.ScopedActionLink<DiaryController>(x => x.Month(Model.Year, monthName.ToLowerInvariant()), new { title = @monthName }))
                     {
-                        <img src="@imgSrc" alt="@monthName" title="@monthName"/>
+                        <img class ="pure-img-responsive" src="@imgSrc" alt="@monthName" title="@monthName" />
                     }
-                    <span>@monthName</span>
                 </li>
             }
         </ul>

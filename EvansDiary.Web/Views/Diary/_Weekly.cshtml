@@ -4,7 +4,7 @@
 
 <div class="diary-nav container">
     <div class="box">
-        <ul class="flat pure-g image-nav-list">
+        <ul class="polaroids pure-g">
             @for (var week = 0; week <= 52; week++)
             {
                 var imgSrc = string.Format("/Content/images/diary/years/{0}/w{1}-main.jpg", Model.Year, week);
@@ -13,11 +13,10 @@
                     : "Week " + week;
 
                 <li class="pure-u-1-2 pure-u-sm-1-4">
-                    @using (Html.ScopedActionLink<DiaryController>(x => x.Week(Model.Year, week)))
+                    @using (Html.ScopedActionLink<DiaryController>(x => x.Week(Model.Year, week), new { title = @description }))
                     {
-                        <img src="@imgSrc" alt="Week @week" title="Week @week" />
+                        <img class="pure-img-responsive" src="@imgSrc" alt="Week @week" title="Week @week" />
                     }
-                    <span>@description</span>
                 </li>
             }
         </ul>
