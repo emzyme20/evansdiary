@@ -10,19 +10,19 @@
         <div class="carousel-inner">
             <div class="item active">
 
-                <img src="/content/images/carousel/image1.png" alt="carousel image"/>
+                <img src="http://res.cloudinary.com/dqg9nkccw/image/upload/c_fill,q_80/high-jump_ybhjc8.jpg" alt="Athletics Open Meet" />
                 <div class="carousel-caption">
                     <h4 class="back-light">Evan performing at his very first athletics open meet.</h4>
                 </div>
             </div>
             <div class="item">
-                <img src="/content/images/carousel/image2.png" alt="carousel image"/>
+                <img src="http://res.cloudinary.com/dqg9nkccw/image/upload/c_fill,q_80/ping-pong_qhfvzr.jpg" alt="Table Tennis in Bath" />
                 <div class="carousel-caption ">
                     <h4 class="back-light">Enjoying some family time in Bath City centre.</h4>
                 </div>
             </div>
             <div class="item">
-                <img src="/content/images/carousel/image3.png" alt="carousel image"/>
+                <img src="http://res.cloudinary.com/dqg9nkccw/image/upload/c_fill,q_80/triathalon_cyakep.jpg" alt="Kids Triathalon" />
                 <div class="carousel-caption ">
                     <h4 class="back-light">Fund raising for Tusk Trust by completing in his first Kids Triathalon.</h4>
                 </div>
@@ -35,13 +35,28 @@
             <li data-target="#carousel-home" data-slide-to="2"></li>
         </ol>
     </div>
+</section>
+<!--/.SLIDESHOW END-->
 
-    <h3>Flipbook through the ages</h3>
+<h3>Flipbook through the ages</h3>
 
-    <p>Here's a glimpse at Evan through the ages. Enjoy!</p>
+<p>Here's a glimpse at Evan through the ages. Enjoy!</p>
 
-    <div id="rotating-item-wrapper">
-        @{
+<div id="rotating-item-wrapper">
+    @*<img class="rotating-item" src="http://res.cloudinary.com/dqg9nkccw/image/upload/c_fill,w_285,q_80/.jpg" alt="flipbook image" width="980" height="347" />*@
+    <img class="rotating-item" src="http://res.cloudinary.com/dqg9nkccw/image/upload/c_fill,w_285,q_80/w1_evan_peaceful_hqreul.jpg" alt="flipbook image"/>
+    <img class="rotating-item" src="http://res.cloudinary.com/dqg9nkccw/image/upload/c_fill,w_285,q_80/w5_smiling_now_icxvs3.jpg" alt="flipbook image"/>
+    <img class="rotating-item" src="http://res.cloudinary.com/dqg9nkccw/image/upload/c_fill,w_285,q_80/w16_commando_iucohe.jpg" alt="flipbook image"/>
+    <img class="rotating-item" src="http://res.cloudinary.com/dqg9nkccw/image/upload/c_fill,w_285,q_80/w18_ooh_whassat_knacas.jpg" alt="flipbook image"/>
+    <img class="rotating-item" src="http://res.cloudinary.com/dqg9nkccw/image/upload/c_fill,w_285,q_80/w28_cool_dude_d6c1du.jpg" alt="flipbook image"/>
+    <img class="rotating-item" src="http://res.cloudinary.com/dqg9nkccw/image/upload/c_fill,w_285,q_80/w36_sand_feels_good_nd9v2f.jpg" alt="flipbook image"/>
+    <img class="rotating-item" src="http://res.cloudinary.com/dqg9nkccw/image/upload/c_fill,w_285,q_80/w47_after_haircut_rp8ntl.jpg" alt="flipbook image"/>
+    <img class="rotating-item" src="http://res.cloudinary.com/dqg9nkccw/image/upload/c_fill,w_285,q_80/mar_bed_hair_xcmrd3.jpg" alt="flipbook image"/>
+    <img class="rotating-item" src="http://res.cloudinary.com/dqg9nkccw/image/upload/c_fill,w_285,q_80/jun_lovely_smile_hnyiew.jpg" alt="flipbook image"/>
+    <img class="rotating-item" src="http://res.cloudinary.com/dqg9nkccw/image/upload/c_fill,w_285,q_80/aug_flying_closeup_kwuunw.jpg" alt="flipbook image"/>
+    <img class="rotating-item" src="http://res.cloudinary.com/dqg9nkccw/image/upload/c_fill,w_285,q_80/nov_cute_hair_sk4ev7.jpg" alt="flipbook image"/>
+    <img class="rotating-item" src="http://res.cloudinary.com/dqg9nkccw/image/upload/c_fill,w_285,q_80/apr_scar_smile_mse9by.jpg" alt="flipbook image"/>
+    @*@{
             // Get Evan's actual age, using 2004 will give the age he will be this year.
             var realTimeYears = DateTime.Now.Year - 2005;
 
@@ -51,13 +66,11 @@
                 {
                     var ageImage = new AssociatedImage(string.Format("age{0}part{1}", age, agePart), "Age " + age);
                     <img class="rotating-item" src="@ageImage.GetUrl(null, null)" alt="@ageImage.Caption"/>
-                    @*<img class="rotating-item" src="images/entrance.jpg" alt="photo of building across from our office" width="980" height="347" />*@
+
                 }
             }
-
-        }
-    </div>
-</section>
+        }*@
+</div>
 
 @section PageScripts {
 
@@ -73,7 +86,7 @@
                     var initialFadeIn = 1000;
 
                     // interval between items (in milliseconds)
-                    var itemInterval = 2000;
+                    var itemInterval = 2500;
 
                     // cross-fade time (in milliseconds)
                     var fadeTime = 1000;
