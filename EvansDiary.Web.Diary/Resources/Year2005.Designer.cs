@@ -572,7 +572,7 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to We have a tooth! I noticed Evan&apos;s gum looked a lot paler this week and realised that it was the tooth coming up through the gums. He&apos;s had his grumpy moments this week - more so than I have experienced so far and he&apos;s also had a couple of days when he didn&apos;t want much dinner or evening bottle. I figured that this was finally the teething that we&apos;d thought we were experiencing all those months ago. It&apos;s quite funny actually, as we have been putting dentinox on Evan&apos;s gums on and off since he was 3 months. I&apos; [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to We have a tooth! I noticed Evan&apos;s gum looked a lot paler this week and realised that it was the tooth coming up through the gums. He&apos;s had his grumpy moments this week—more so than I have experienced so far and he&apos;s also had a couple of days when he didn&apos;t want much dinner or evening bottle. I figured that this was finally the teething that we&apos;d thought we were experiencing all those months ago. It&apos;s quite funny actually, as we have been putting dentinox on Evan&apos;s gums on and off since he was 3 months. I&apos;ve [rest of string was truncated]&quot;;.
         /// </summary>
         public static string y1w37One {
             get {
@@ -621,7 +621,7 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to When I started preparing myself for the inevitable return to work, nothing I thought up actually came close to comparing to the real deal! I was hoping that I would be kept really busy to keep my mind off of Evan. My work did ok on that part except for not having my own PC for my first day back, I&apos;ll forgive them for that as they gave me a brand new shiny lush PC the very next day. I did think a lot about Evan and I think I only telephoned them once in his first week so that&apos;s not bad.  
+        ///   Looks up a localized string similar to When I started preparing myself for the inevitable return to work, nothing I thought up actually came close to comparing to the real deal! I was hoping that I would be kept really busy to keep my mind off of Evan. My work did ok on that part except for not having my own PC for my first day back, I&apos;ll forgive them for that as they gave me a lush brand new shiny PC the very next day. I did think a lot about Evan and I think I only telephoned them once in his first week so that&apos;s not bad.  
         ///
         ///Going on our exp [rest of string was truncated]&quot;;.
         /// </summary>
