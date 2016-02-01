@@ -1922,13 +1922,13 @@ namespace EvansDiary.Web.Diary.StaticContent
                                 Entry = md.Transform(Year2007.y3May),
                                 Images = new List<IAssociatedImage>
                                 {
-                                    new AssociatedImage("may_footy_skills",
+                                    new AssociatedImage("may_footy_skills_fqizxy",
                                         "Evan demonstrating his much improved football skills"),
-                                    new AssociatedImage("may_head_first",
+                                    new AssociatedImage("may_head_first_lepfke",
                                         "This way is much more fun for Evan, and more scary for me!"),
-                                    new AssociatedImage("may_sore_thumb",
+                                    new AssociatedImage("may_sore_thumb_pznyqp",
                                         "Evan's experience with a plaster for the bit of finger nail he pulled off"),
-                                    new AssociatedImage("", "")
+                                    new AssociatedImage("may_patio_seat_axvbky", "Garden bench?!? No Thanks, this is far more comfortable")
                                 }
                             }
                         }
