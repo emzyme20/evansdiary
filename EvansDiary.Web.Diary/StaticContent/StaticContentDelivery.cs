@@ -1946,25 +1946,33 @@ namespace EvansDiary.Web.Diary.StaticContent
                             {
                                 Subheading = "1st June 2007 - Family Reunion BBQ",
                                 Entry = md.Transform(Year2007.y3Jun_1st),
-                                SingleImage = new AssociatedImage("june_reunion", "The BBQ Reunion")
+                                Images = new List<IAssociatedImage>
+                                {
+                                    new AssociatedImage("june_small_group_rczm3m", "Caroline's mum with her relatives from France"),
+                                    new AssociatedImage("june_carlsberg_lira6t", "Anyone for Carlsberg?"),
+                                    new AssociatedImage("june_evan_dances_xog76l",
+                                        "Evan playing on the dance mat"),
+                                    new AssociatedImage("june_large_group_bpsivp", "BBQ reuinion group photo")
+                                }
                             },
                             new TimeLineEntry
                             {
                                 Subheading = "10th June 2007 - Marwell Zoo",
                                 Entry = md.Transform(Year2007.y3Jun_10th),
-                                SingleImage = new AssociatedImage("june_snow_leopard", "Beautiful Endangered Snow Leopard")
+                                SingleImage = new AssociatedImage("june_snow_leopard_yfmdgt", "Beautiful Endangered Snow Leopard")
                             },
                             new TimeLineEntry
                             {
                                 Subheading = "22nd June 2007 - Neil & Pascale's Wedding",
                                 Entry = md.Transform(Year2007.y3Jun_22nd),
+                                SwitchImageBlockPosition = true,
                                 Images = new List<IAssociatedImage>
                                 {
-                                    new AssociatedImage("", ""),
-                                    new AssociatedImage("", ""),
-                                    new AssociatedImage("june_happily_married",
+                                    new AssociatedImage("june_exploring_zdioh7", "Exploring the grounds keeping out of trouble"),
+                                    new AssociatedImage("june_suit_q90xgh", "The suit is on the large side!"),
+                                    new AssociatedImage("june_happily_married_fig3ti",
                                         "Evan shows his smart side (if you ignore the black eye that is)"),
-                                    new AssociatedImage("june_grandma_moment", "Evan shares a joke with Grandma")
+                                    new AssociatedImage("june_joke_with_grandma_rppq18", "Evan shares a joke with Grandma")
                                 }
                             },
                             new TimeLineEntry
@@ -1973,14 +1981,14 @@ namespace EvansDiary.Web.Diary.StaticContent
                                 Entry = md.Transform(Year2007.y3Jun_29th),
                                 Images = new List<IAssociatedImage>
                                 {
-                                    new AssociatedImage("june_river_washing", "The private river came in handy for washing the car seat cover"),
-                                    new AssociatedImage("june_jacques_bbq", "Jacques prepares a natural fire for the BBQ. The sausages were yummy!"),
-                                    new AssociatedImage("june_pleasant_walk", "Those little legs get tired easy, luckily Caroline saves the day"),
-                                    new AssociatedImage("june_evan_boat", "Evan is not sure what to think of the life jacket"),
-                                    new AssociatedImage("june_pascale_carry", "Pascale helped with the carrying when Evan got tired"),
-                                    new AssociatedImage("", ""),
-                                    new AssociatedImage("", ""),
-                                    new AssociatedImage("", "")
+                                    new AssociatedImage("june_river_washing_ua2nte", "The private river came in handy for washing the car seat cover"),
+                                    new AssociatedImage("june_jacques_bbq_nrwerj", "Jacques prepares a natural fire for the BBQ. The sausages were yummy!"),
+                                    new AssociatedImage("june_pleasant_walk_d3gev6", "Those little legs get tired easy, luckily Caroline saves the day"),
+                                    new AssociatedImage("june_evan_boat_xtbzve", "Evan is not sure what to think of the life jacket"),
+                                    new AssociatedImage("june_pascale_carry_zqndax", "Pascale helped with the carrying when Evan got tired"),
+                                    new AssociatedImage("june_wind_tears_nn1xob", "The wind was so strong it made Evan cry"),
+                                    new AssociatedImage("june_strong_Arms_btuf6b", "Evan makes up a new ball game, with a tree!"),
+                                    new AssociatedImage("june_room_to_run_mq46vh", "So much space for Evan to run around in")
                                 }
                             }
                         }
