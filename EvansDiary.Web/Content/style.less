@@ -241,11 +241,11 @@ ul.polaroids a:hover {
 #rotating-item-wrapper {
   margin: 0 auto;
   position: relative;
-  width: 285px;
+  //width: 285px;
   // Because of relative positioning, the height needs to be set to stop overlapping divs.
   // Height must include borders and shadows defined on children elements
   // (e.g. 214 image height + 10 + 10 border + 6 shadow)
-  height: 250px; 
+  //height: 250px; 
 }
 
 .rotating-item {
@@ -254,8 +254,83 @@ ul.polaroids a:hover {
   top: 0;
   left: 0;
 
-  border: 10px solid #fff;
-  -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+  //border: 10px solid #fff;
+  /*-webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
      -moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
-          box-shadow: 0 3px 6px rgba(0,0,0,.25);
+          box-shadow: 0 3px 6px rgba(0,0,0,.25);*/
+}
+
+/*
+  ---- Block Grid
+*/
+#about-me {
+  .block-grid {
+    margin: 0;
+  }
+
+  img {
+    width: 100%;
+    max-width: 110%;
+    -webkit-transition: all 0.25s ease-in;
+    -moz-transition: all 0.25s ease-in;
+    -o-transition: all 0.25s ease-in;
+    transition: all 0.25s ease-in;
+    height: auto;
+  }
+
+  h4 {
+    font-family: 'PT Serif', serif;
+    font-size: 4rem;
+    line-height: 1.2;
+    color: #58595B;
+    margin-bottom: 2rem;
+    width: 100%;
+
+    @media screen and (max-width: @mq-xs) {
+      font-size: 3.4rem;
+    }
+    @media screen and (min-width: @mq-md) and (max-width: @mq-lg) {
+      font-size: 2.4em;
+    }
+  }
+
+  p {
+    color: #58595B;
+    font-family: "Open Sans", Helvetica, sans-serif;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: unset;
+  }
+
+  .block {
+    padding: 0;
+    position: relative;
+    background: #FDE000;
+    overflow: hidden;
+    height: auto;
+
+    &:hover > .overlay {
+      -webkit-transition: all 0.25s ease-in;
+      -moz-transition: all 0.25s ease-in;
+      -o-transition: all 0.25s ease-in;
+      transition: all 0.25s ease-in;
+      left: 0;
+    }
+  }
+
+  .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding: 3rem;
+    background: rgba(253, 224, 0, 0.9);
+    bottom: 0;
+    left: -100%;
+    overflow: hidden;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+  }
 }
