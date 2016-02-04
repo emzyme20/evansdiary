@@ -632,7 +632,7 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to If someone had told me beforehand about the events that would happen this week I probably would have laughed. I had just completed my first week back at work after 10 months off and when I go into Evan on Sunday morning this week, his eye is oozing with puss. I tried to keep the eye clean but within minutes of wiping it, the infectious gunk had returned. I was sure Evan needed to see a Doctor so I sent a mobile text to warn my boss that I wouldn&apos;t be in on Monday. Little did I realise that this would actual [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to If someone had told me beforehand about the events that would happen this week I probably would have laughed. I had just completed my first week back at work after 10 months off, when I went into Evan on Sunday morning, his eye was oozing with puss. I tried to keep the eye clean but within minutes of wiping it, the infectious gunk had returned. I was sure Evan needed to see a Doctor so I sent a mobile text to warn my boss that I wouldn&apos;t be in on Monday. Little did I realise that this would actually end up  [rest of string was truncated]&quot;;.
         /// </summary>
         public static string y1w41One {
             get {

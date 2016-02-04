@@ -24,7 +24,7 @@ namespace EvansDiary.Web.Diary.TransferObjects
             }
             else
             {
-                options.Append("285");
+                options.Append("285,h_214");
             }
 
             if (quality.HasValue)
