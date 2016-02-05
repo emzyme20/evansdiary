@@ -692,7 +692,7 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to As the sayings go *&quot;You wait hours for a bus and then 3 come along at once&quot;*, or *&quot;bad things always happen in three&apos;s&quot;*. Well, this week we had our third illness with Evan. I had noticed towards the end of last week that he was pooing a lot more than usual and it was getting rather smelly. Over the weekend it peaked and Evan did about 6 poos in one day. I took him to nursery on the Monday and told them I was worried and that I would be contacting a Doctor that day. By the time I collected him, his poor lit [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to As the sayings go *&quot;You wait hours for a bus and then 3 come along at once&quot;*, or *&quot;bad things always happen in three&apos;s&quot;*. Well, this week we had our third illness with Evan. I had noticed towards the end of last week that he was pooing a lot more than usual and it was getting rather smelly. Over the weekend it peaked and Evan did roughly 6 in one day. I took him to nursery on the Monday and told them I was worried and that I would be contacting a Doctor that day. By the time I collected him, his poor little [rest of string was truncated]&quot;;.
         /// </summary>
         public static string y1w47One {
             get {
@@ -763,7 +763,7 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to This was Evan&apos;s last week in his first year and it&apos;s amazing how quickly time flies by when watching your baby grow into a little boy. This final week started with a birthday party for Alex - one of Evan&apos;s baby buddies. We managed to get most of the gang together for one final meet before Christmas and it was lovely. All the babies are walking now, though Evan is still very wobbly and he would still prefer to crawl at times where as the others are very much mobile and walking very steadily. His first steps  [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to This was Evan&apos;s last week in his first year and it&apos;s amazing how quickly time flies by when watching your baby grow into a little boy. This final week started with a birthday party for Alex—one of Evan&apos;s baby buddies. We managed to get most of the gang together for one final meet before Christmas and it was lovely. All the babies are walking now, though Evan is still very wobbly and he would still prefer to crawl at times where as the others are very much mobile and walking very steadily. His first steps we [rest of string was truncated]&quot;;.
         /// </summary>
         public static string y1w52One {
             get {
