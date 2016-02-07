@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
 
 using EvansDiary.Interfaces;
 using EvansDiary.Web.Diary.Resources;
@@ -1959,13 +1958,18 @@ namespace EvansDiary.Web.Diary.StaticContent
                             {
                                 Subheading = "10th June 2007 - Marwell Zoo",
                                 Entry = md.Transform(Year2007.y3Jun_10th),
-                                SingleImage = new AssociatedImage("june_snow_leopard_yfmdgt", "Beautiful Endangered Snow Leopard")
+                                Images = new List<IAssociatedImage>
+                                {
+                                    new AssociatedImage("june_zoo_day_out_w15jr6", "All set for our day at the zoo"),
+                                    new AssociatedImage("june_snow_leopard_yfmdgt", "Beautiful Endangered Snow Leopard"),
+                                    new AssociatedImage("june_giraffe_height_onpbaf", "Still a long way to go"),
+                                    new AssociatedImage("june_penguin_z2t4u7", "Poor little penguin looking far too hot")
+                                }                            
                             },
                             new TimeLineEntry
                             {
                                 Subheading = "22nd June 2007 - Neil & Pascale's Wedding",
                                 Entry = md.Transform(Year2007.y3Jun_22nd),
-                                SwitchImageBlockPosition = true,
                                 Images = new List<IAssociatedImage>
                                 {
                                     new AssociatedImage("june_exploring_zdioh7", "Exploring the grounds keeping out of trouble"),
