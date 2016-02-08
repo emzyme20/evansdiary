@@ -2012,36 +2012,47 @@ namespace EvansDiary.Web.Diary.StaticContent
                                 Entry = md.Transform(Year2007.y3Jul_7th),
                                 Images = new List<IAssociatedImage>
                                 {
-                                    new AssociatedImage("july_lego_fun", "Evan is starting to appreciate his lego more now he is older"),
-                                    new AssociatedImage("july_sleepy_boys", "Evan and Noodle decide that they just can't go on anymore"),
-                                    new AssociatedImage("", ""),
-                                    new AssociatedImage("", "")
+                                    new AssociatedImage("july_lego_fun_n2i5ym", "Evan is starting to appreciate his lego more now he is older"),
+                                    new AssociatedImage("july_sleepy_boys_mjlqcr", "Evan and Noodle decide that they just can't go on anymore"),
+                                    new AssociatedImage("july_water_feature_hhmegc", "Fascinated by Nanny's garden water feature"),
+                                    new AssociatedImage("july_rearrange_garden_tqsdvn", "Evan's new game—rearranging the garden ornaments")
                                 }
                             },
                             new TimeLineEntry
                             {
                                 Subheading = "10th July 2007",
                                 Entry = md.Transform(Year2007.y3Jul_10th),
-                                SingleImage = new AssociatedImage("july_giant_bubbles", "Evan masters the giant bubble making machine")
+                                Images = new List<IAssociatedImage>
+                                {
+                                    new AssociatedImage("july_bubble_machine_kzi6wz", "Introducing the bubble machine..."),
+                                    new AssociatedImage("july_make_bubbles_ihr1gc", "...getting used to how you turn the maker..."),
+                                    new AssociatedImage("july_watch_bubbles_dalmp0", "...huge bubbles start to float away..."),
+                                    new AssociatedImage("july_bubbles_fly_away_z9cvlc", "...Evan has mastered the art of making giant bubbles")
+                                }
                             },
                             new TimeLineEntry
                             {
                                 Subheading = "14th July 2007 - Legoland Live Festival",
                                 Entry = md.Transform(Year2007.y3Jul_14th),
-                                SwitchImageBlockPosition = true,
                                 Images = new List<IAssociatedImage>
                                 {
-                                    new AssociatedImage("july_first_festival", "Evan's first festival!"),
-                                    new AssociatedImage("july_cardboard_bob", "Evan shows off his cardboard Bob the Builder!"),
-                                    new AssociatedImage("july_legoland_swings", "Evan rides the swings alone this time"),
-                                    new AssociatedImage("", "")
+                                    new AssociatedImage("july_first_festival_fg5aa0", "Evan's first festival!"),
+                                    new AssociatedImage("july_cardboard_bob_ftsjh3", "Evan shows off his cardboard Bob the Builder!"),
+                                    new AssociatedImage("july_singing_along_efz6nd", "Singing along to all the songs"),
+                                    new AssociatedImage("july_legoland_swings_io9nwc", "Evan can now ride the swings solo")
                                 }
                             },
                             new TimeLineEntry
                             {
                                 Subheading = "30th July 2007",
                                 Entry = md.Transform(Year2007.y3Jul_30th),
-                                SingleImage = new AssociatedImage("july_learning_the_game", "Just like Caroline, Evan is going to be ruthless at Monopoly!")
+                                Images = new List<IAssociatedImage>
+                                {
+                                    new AssociatedImage("july_which_one_td321z", "Time to choose... hat, dog or ship"),
+                                    new AssociatedImage("july_this_one_jvbkyo", "The ship it is"),
+                                    new AssociatedImage("july_lets_play_ijulto", "Just like Caroline, Evan is going to be ruthless at Monopoly..."),
+                                    new AssociatedImage("july_cheating_fkgxeo", "... or he might steal from the bank like his Mum!")
+                                }
                             }
                         }
                     });
@@ -2107,10 +2118,10 @@ namespace EvansDiary.Web.Diary.StaticContent
                                 Entry = md.Transform(Year2007.y3Sep_23rd),
                                 Images = new List<IAssociatedImage>
                                 {
-                                    new AssociatedImage("sept_roary", "Evan finally gets to meet Roary!"),
-                                    new AssociatedImage("sept_fire_challenge", "Head to head fire challenge at Legoland.. Uncle Frank Won!"),
-                                    new AssociatedImage("", ""),
-                                    new AssociatedImage("", "")
+                                    new AssociatedImage("sept_meeting_roary_hnyhff", "Evan finally gets to meet Roary!"),
+                                    new AssociatedImage("sept_playing_fireman_qdabuv", "Head to head fire challenge at Legoland.. Uncle Frank Won!"),
+                                    new AssociatedImage("sept_solo_vq1ubc", "More swing action"),
+                                    new AssociatedImage("sept_lego_rides_ktul5f", "Enjoying the big wheel ride")
                                 }
                             }
                         }
