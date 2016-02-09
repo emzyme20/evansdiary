@@ -128,7 +128,7 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to We&apos;ve converted Evan&apos;s walker into his car now and he loves to ride on it. He loves it when mummy pushes him really fast steering him around the room. He can however drive himself somewhat more slowly using his feet correctly. He still has to master the steering though and he has no problems getting on and off it either. He has also mastered turning his walker full of bricks instead of crying when it hits the wall. He now anticipates the distance to the wall and turns it accordingly, most of the time he doe [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to We&apos;ve converted Evan&apos;s walker into his car now and he loves to ride on it. He loves it when I push him really fast steering him around the room. He can however drive himself somewhat more slowly using his feet correctly. He still has to master the steering though and he has no problems getting on and off it either. He has also mastered turning his walker full of bricks instead of crying when it hits the wall. He now anticipates the distance to the wall and turns it accordingly, most of the time he does it p [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string y2Mar {
             get {
