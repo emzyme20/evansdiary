@@ -137,7 +137,7 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Evan recently started showing signs of noticing things outside in particular he points to birds and makes *&quot;oohh&quot;* noises when they fly around and hop along the floor. This month showed a new interest for Evan, that of planes. He absolutely adores them and seeing as we live just off the flight path to Heathrow Airport we do get our fair share or aeroplanes flying above the house and some are usually a lot closer if they are coming in to land, as Heathrow is only about 20 minutes away from where we live. He  [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to Evan recently started showing signs of noticing things outside in particular he points to birds and makes *&quot;oohh&quot;* noises when they fly around and hop along the floor. This month Evan had a new interest outside—planes. He absolutely adores them and seeing as we live just off the flight path to Heathrow Airport we do get our fair share or aeroplanes flying above the house and some are usually a lot closer if they are coming in to land, as Heathrow is roughly 20 minutes away from where we live. He loves the p [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string y2May {
             get {
