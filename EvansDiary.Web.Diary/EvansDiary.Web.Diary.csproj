@@ -115,8 +115,8 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\Year2008.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Year2008.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Year2008.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

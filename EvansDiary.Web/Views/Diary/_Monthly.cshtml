@@ -4,17 +4,20 @@
 
 @{
     var dateTimeHelper = new System.Globalization.DateTimeFormatInfo();
+
+    var availableMonths = Model.Year == 2008 ? 3 : 12;
+    var gridClass = Model.Year == 2008 ? "pure-u-1-2 pure-u-sm-1-3" : "pure-u-1-2 pure-u-sm-1-4";
 }
 
 <div class="diary-nav container">
     <div class="box">
         <ul class="polaroids pure-g">
-            @for (var monthDigit = 1; monthDigit <= 12; monthDigit++)
+            @for (var monthDigit = 1; monthDigit <= availableMonths; monthDigit++)
             {
                 var monthName = dateTimeHelper.GetMonthName(monthDigit);
                 var imgSrc = string.Format("/Content/images/diary/years/{0}/m{1:00}.jpg", Model.Year, monthDigit);
 
-                <li class="pure-u-1-2 pure-u-sm-1-4">
+                <li class="@gridClass">
                     @using (Html.ScopedActionLink<DiaryController>(x => x.Month(Model.Year, monthName.ToLowerInvariant()), new { title = @monthName }))
                     {
                         <img class ="pure-img-responsive" src="@imgSrc" alt="@monthName" title="@monthName" />

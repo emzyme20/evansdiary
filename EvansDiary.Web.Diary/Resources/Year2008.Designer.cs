@@ -61,11 +61,57 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Today we took a long drive to Dunstable to visit our friends Mel and James and their little boy Sam who had just had his 1st birthday. Sam was about 5 months old when we last saw him and he was cruising around this time and very interested in Evan.  
+        ///
+        ///I&apos;ve been having difficulty getting Evan to do poo&apos;s on the toilet. He&apos;s been in pull-ups for a while and he&apos;ll quite happily go to the toilet for a wee but everything else seems to still get done in the pull-up. This has been stopping me from wanting to swi [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string y4Feb {
+        internal static string y4Feb_16th {
             get {
-                return ResourceManager.GetString("y4Feb", resourceCulture);
+                return ResourceManager.GetString("y4Feb_16th", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to We had a surprise visit from Caroline this week. She was going to come down to see us for a day but we had the pleasure of having her for the whole week because she&apos;d had a slight falling out with her mum. It&apos;s sad that she had the falling out, but Evan and I were the beneficiaries here because we had a lovely time with her.  Caroline and I get on very well, we just slotted right back into place. We know each other so well and generally find each others company pleasant. It did feel odd that this time round [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string y4Feb_17th {
+            get {
+                return ResourceManager.GetString("y4Feb_17th", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Evan is far more popular than I was when I was little. Today he went to his friend Joshua&apos;s birthday party at an indoor play centre called Mad House. This is the 4th party Evan has been to and he had a 5th one, but wasn&apos;t able to attend due to already having plans that day. I hope he stays a popular little chap because it&apos;s not nice having no friends at school!  
+        ///
+        ///He always takes a little while to get used to a new place and the same applied here. He was rather nervous to begin with and I had to accompany [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string y4Feb_23rd {
+            get {
+                return ResourceManager.GetString("y4Feb_23rd", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to We have another Middlebrook! Yes that&apos;s right, we thought there wouldn&apos;t be many of us left to continue the name but we&apos;re trying our hardest.  
+        ///
+        ///My brother and his wife had their first child this week, a little boy called Ryan Alex Middlebrook. He arrived 2 weeks early weighing 5lbs 14oz. He was so tiny compared to Evan and I was very nervous holding him and he was 5 days old by then!  
+        ///
+        ///Evan and I went to visit Ryan and Evan wasn&apos;t really interested in his cousin. He was more interested with Izzy the  [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string y4Feb_5th {
+            get {
+                return ResourceManager.GetString("y4Feb_5th", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Evan and I went to feed the ducks, swans and Canadian geese with my friend Craig and his family today. They live in Thatcham and have a lovely lake and play area near to their house. Evan was a little nervous at first because he&apos;d never met them but as soon as he saw a stack of different toys to play with and yet another guy to throw him around he was all settled as if it were home!  
+        ///
+        ///It was somewhat mucky where the ducks were and we all got covered in mud. Evan almost ran into a stream but he realised t [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string y4Feb_9th {
+            get {
+                return ResourceManager.GetString("y4Feb_9th", resourceCulture);
             }
         }
         
@@ -90,6 +136,19 @@ namespace EvansDiary.Web.Diary.Resources {
         internal static string y4Jan_22nd {
             get {
                 return ResourceManager.GetString("y4Jan_22nd", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Today Evan and I went to London Aquarium with my friend Craig and his daughter Hannah. This trip would give Evan his first experience of the train and the tube. It ended up giving us all a lot more than we bargained for!  
+        ///
+        ///Craig left me in charge of bringing the printed tickets—I&apos;m a woman you see and we&apos;re good at remembering the important things.  
+        ///
+        ///The day started early at 10am, with Evan using Craig&apos;s spare push chair as we gave ours away to my brother. The walk to the train station was pretty unev [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string y4Mar_9th {
+            get {
+                return ResourceManager.GetString("y4Mar_9th", resourceCulture);
             }
         }
     }
