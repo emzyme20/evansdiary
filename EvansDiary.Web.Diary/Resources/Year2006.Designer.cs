@@ -70,7 +70,7 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to All those nice things I was saying about Evan and nursery last month completely changed this month. We&apos;d lost a few of the nursery staff in Evan&apos;s room in July, some that I was rather fond of and Evan absolutely adored. He seems to have his favourites! This month I received a shock when our favourite member of staff, the lady in charge of Evan&apos;s room decided that she too wanted to leave and it was all rather sudden. There has been a lot of changes implemented in the nursery since the change in management an [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to All those nice things I was saying about Evan and nursery last month completely changed this month. We lost a few of the nursery staff in Evan&apos;s room in July, some that I was rather fond of and Evan absolutely adored. He seems to have his favourites! This month I received a shock when our favourite member of staff, the lady in charge of Evan&apos;s room decided that she too wanted to leave and it was all rather sudden. There has been a lot of changes implemented in the nursery since the change in management and  [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string y2Aug {
             get {
