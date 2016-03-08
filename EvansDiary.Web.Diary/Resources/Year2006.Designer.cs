@@ -155,7 +155,7 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to The cold nights have really crept up on us this month. Evan was still wearing his summer jacket in the day but I suddenly realised the need for a proper winter coat when I took Evan to watch a local football match one evening early this month. Caroline was out for the evening, so Evan had to come with me. I packed up a bottle of milk for him, hat, jacket and gloves and he even had 3 layers on under the jacket. I just couldn&apos;t keep him warm at all, where he had been drinking his milk, the fluid dripped on hi [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to The cold nights have really crept up on us this month. Evan was still wearing his summer jacket in the day but I suddenly realised the need for a proper winter coat when I took Evan to watch a local football match one evening early this month. Caroline was out for the evening, so Evan had to come with me. I packed up a bottle of milk for him, hat, jacket and gloves and he even had 3 layers on under the jacket. I just couldn&apos;t keep him warm at all; his lips even turned blue! His little teeth were chattering  [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string y2Oct {
             get {
