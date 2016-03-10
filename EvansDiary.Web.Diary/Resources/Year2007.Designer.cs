@@ -145,7 +145,7 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to I&apos;ve been a bit repetitive of late when it comes to the music that I&apos;ve been listening to in the car when there is nothing interesting to listen to on the radio. I&apos;ve especially enjoyed listening to a mix CD that I compiled with some Snow Patrol, The Feeling and The Kooks - oh and some retro song that I heard on the radio (Ain&apos;t Nobody by Rufus &amp; Chaka Khan). Evan seems to enjoy it to as he always bops his legs and gets his Piglet teddy bear dancing in the car when the songs are playing. This month however  [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to I&apos;ve been a bit repetitive of late when it comes to the music that I&apos;ve been listening to in the car when there is nothing interesting to listen to on the radio. I&apos;ve especially enjoyed listening to a mix CD that I compiled with some Snow Patrol, The Feeling and The Kooks—oh and some retro song that I heard on the radio (Ain&apos;t Nobody by Rufus &amp; Chaka Khan). Evan seems to enjoy it too as he always bops his legs and gets his Piglet teddy bear dancing in the car when the songs are playing. This month however I [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string y3Feb {
             get {
@@ -154,9 +154,9 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to We all went to the dentist this month for our 6 month check up. Last time Evan didn&apos;t have as many teeth so a simple smile and giggle was enough to let the dentist check them. This time around he&apos;s got all of his child teeth except for the final set of molars. I&apos;d been practicing with Evan for the week before opening our mouths and saying *&quot;Aaaah&quot;*. I thought we had it sussed but when we attempted to do it for the dentist Evan became shy and refused.  
+        ///   Looks up a localized string similar to We all went to the dentist this month for our 6 month check up. Last time Evan didn&apos;t have as many teeth so a simple smile and giggle was enough to let the dentist check them. This time around he has all of his child teeth except for the final set of molars. I&apos;d been practicing with Evan for the week before opening our mouths and saying *&quot;Aaaah&quot;*. I thought we had it sussed but when we attempted to do it for the dentist Evan became shy and refused.  
         ///
-        ///Caroline went in first, while I amused Evan in the w [rest of string was truncated]&quot;;.
+        ///Caroline went in first, while I amused Evan in the wai [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string y3Jan {
             get {

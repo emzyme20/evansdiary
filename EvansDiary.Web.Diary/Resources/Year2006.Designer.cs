@@ -79,9 +79,9 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to It&apos;s birthday time! This year has flown by and Evan has grown up so much. He&apos;s now this little boy who chats - a lot!  
+        ///   Looks up a localized string similar to It&apos;s birthday time! This year has flown by and Evan has grown up so much. He&apos;s now this little boy who chats—a lot!  
         ///
-        ///We popped over to our neighbours to deliver Christmas cards and presents one weekend this month and Evan had so much fun playing with their daughter, who is about 9 months younger than Evan. Watching them together is so much fun, she just hangs on to him and uses him to climb up onto her feet and he just seems to tower over her. He was so excited that he just kept rushing around when he [rest of string was truncated]&quot;;.
+        ///We popped over to our neighbours to deliver Christmas cards and presents one weekend this month and Evan had so much fun playing with their daughter, who is about 9 months younger than Evan. Watching them together is so much fun, she just hangs on to him and uses him to climb up onto her feet and he just seems to tower over her. He was so excited that he just kept rushing around when he m [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string y2Dec {
             get {
