@@ -209,7 +209,7 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to We finally made the trip to a Zoo as this is one place I wanted to go to last year but we never quite made it. Evan absolutely loved it, although I was disappointed that he didn&apos;t get to see his favourite animal &quot;the Elephant&quot; because Marwell Zoo doesn&apos;t have them. Next time, we&apos;ll take him to Colchester Zoo as I believe they have Elephants there. We didn&apos;t arrive until after lunch time, but we still managed to squeeze the whole Zoo in. The weather was fantastic, possibly a little too hot as the poor animal [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to We finally made the trip to a Zoo as this is one place I wanted to go to last year but we never quite made it. Evan absolutely loved it, although I was disappointed that he didn&apos;t get to see his favourite animal *&quot;the Elephant&quot;* because Marwell Zoo doesn&apos;t have them. We didn&apos;t arrive until after lunch time, but we still managed to squeeze the whole Zoo in. The weather was fantastic, possibly a little too hot as the poor animals spent a lot of the time under trees resting. The Giraffes were fantastic but the [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string y3Jun_10th {
             get {
@@ -220,7 +220,7 @@ namespace EvansDiary.Web.Diary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to __*&quot;Bienvenue à l&apos;édition en Français!&quot;*__  
         ///
-        ///Well - not quite! The month sort of started with a French event and ended with one. My speech is somewhat better but I can&apos;t really write it. We were invited to a BBQ at Caroline&apos;s brother&apos;s house at the end of May. This BBQ was special as her relatives from France had travelled down for a long weekend and this would be the first time that I met them. It was a really lovely day despite the terrible weather that we had and I just wish I could have chatted with  [rest of string was truncated]&quot;;.
+        ///Well—not quite! The month started and ended with a French event. My speech is somewhat better but I can&apos;t really write it. We were invited to a BBQ at Caroline&apos;s brother&apos;s house at the end of May. This BBQ was special as her relatives from France had travelled over for a long weekend and this would be the first time that I met them. It was a really lovely day despite the terrible weather that we had and I just wish I could have chatted with them, however they  [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string y3Jun_1st {
             get {
@@ -258,7 +258,7 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to May has been the month of first times. Caroline went to Wales with her Karate club for a week of intensive training. I was really looking forward to this as it meant I was going to have to do everything by myself. We&apos;re a really good team and you only realise how much each other does when you&apos;re left alone to do it all. She went on the Bank Holiday weekend so Evan and I were left to our devices on the Bank Holiday Monday :). I spent a few hours cooking all the food required for the weeks lunches and the eve [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to May has been the month of first times. Caroline went to Wales with her Karate club for a week of intensive training. I was really looking forward to this as it meant I was going to have to do everything by myself. We&apos;re a really good team and you only realise how much each other does when you&apos;re left alone to do it all. She went on the Bank Holiday weekend so Evan and I were left to our own devices on the Bank Holiday Monday :). I spent a few hours cooking all the food required for the weeks lunches and the [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string y3May {
             get {
