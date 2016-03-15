@@ -2106,10 +2106,10 @@ namespace EvansDiary.Web.Diary.StaticContent
                                 Entry = md.Transform(Year2007.y3Sep_18th),
                                 Images = new List<IAssociatedImage>
                                 {
-                                    new AssociatedImage("sept_peanut_playdough", "Evan has fun making edible playdough"),
-                                    new AssociatedImage("sept_football_skills", "Evan demonstrates where Tottenham have been going wrong this season"),
-                                    new AssociatedImage("", ""),
-                                    new AssociatedImage("", "")
+                                    new AssociatedImage("sept_peanut_playdough_abxvfo", "Evan has fun making edible playdough"),
+                                    new AssociatedImage("sept_dribbling_yaenuu", "Evan demonstrates where Tottenham have been going wrong this season"),
+                                    new AssociatedImage("sept_football_pk0guu", "Not bad for a 2 year old"),
+                                    new AssociatedImage("sept_swing_ocn7bq", "Evan still loves his swing in the garden")
                                 }
                             },
                             new TimeLineEntry
