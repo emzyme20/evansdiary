@@ -72,9 +72,9 @@ namespace EvansDiary.Web.Diary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to A success at last! I took Evan to the indoor play area Snakes and Ladder today. It&apos;s been a long time since we last went and I was interested to see how well he settled this time round. In the past it usually takes him a while to start playing as he&apos;ll be quite clingy to me to start with.  
         ///
-        ///He was much better this time round, he spent the whole time playing with everything, with one exception at first *- the bouncy castle of course.*  
+        ///He was much better this time round, he spent the whole time playing with everything, with one exception at first—*the bouncy castle.*  
         ///
-        ///I was determined to try and coax Evan into the bouncy castle becau [rest of string was truncated]&quot;;.
+        ///I was determined to try and coax Evan into the bouncy castle because I was sur [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string y3Aug_18th {
             get {

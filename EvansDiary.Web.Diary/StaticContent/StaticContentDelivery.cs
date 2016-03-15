@@ -2071,10 +2071,10 @@ namespace EvansDiary.Web.Diary.StaticContent
                                 Entry = md.Transform(Year2007.y3Aug_2nd),
                                 Images = new List<IAssociatedImage>
                                 {
-                                    new AssociatedImage("aug_memorial_flowers", "Any image like this saddens me, but it's worse when you know the person"),
-                                    new AssociatedImage("aug_becky_trevor", "Becky and Trevor having a laugh at the pub"),
-                                    new AssociatedImage("", ""),
-                                    new AssociatedImage("", "")
+                                    new AssociatedImage("aug_flowers_d8zoya", "Any image like this saddens me, but it's worse when you know the person"),
+                                    new AssociatedImage("aug_becky_trevor_bvx2p9", "Becky and Trevor having a laugh at the pub"),
+                                    new AssociatedImage("aug_becky_clare_spzqxk", "Becky was very popular and friendly to everyone"),
+                                    new AssociatedImage("aug_crossroad_ytfgeq", "The cross road showing the signs of the accident")
                                 }
                             },
                             new TimeLineEntry
@@ -2083,10 +2083,10 @@ namespace EvansDiary.Web.Diary.StaticContent
                                 Entry = md.Transform(Year2007.y3Aug_18th),
                                 Images = new List<IAssociatedImage>
                                 {
-                                    new AssociatedImage("", "Finally Evan enjoys the bouncy castle"),
-                                    new AssociatedImage("", ""),
-                                    new AssociatedImage("", ""),
-                                    new AssociatedImage("", "")
+                                    new AssociatedImage("aug-bouncy-castle_cuqqe5", "Finally Evan enjoys the bouncy castle"),
+                                    new AssociatedImage("aug_play_dough_s7qynr", "Enjoying the texture, not quite making shapes yet"),
+                                    new AssociatedImage("aug_nap_time_wsq13e", "Nap time for Evan!"),
+                                    new AssociatedImage("aug_block_stacking_xeulex", "Stacking blocks successfully")
                                 }
                             }
                         }
