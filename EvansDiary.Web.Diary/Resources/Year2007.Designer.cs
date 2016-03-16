@@ -74,7 +74,7 @@ namespace EvansDiary.Web.Diary.Resources {
         ///
         ///He was much better this time round, he spent the whole time playing with everything, with one exception at first—*the bouncy castle.*  
         ///
-        ///I was determined to try and coax Evan into the bouncy castle because I was sur [rest of string was truncated]&quot;;.
+        ///I was determined to try and coax Evan onto the bouncy castle because I was sur [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string y3Aug_18th {
             get {
@@ -165,7 +165,7 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Evan has shown signs of really picking up on things that we do around him lately. A few months ago we were watching my ladies football team play their final home game of the season. I had to take Evan with me because Caroline was away at a Karate event. We took his ball and played football on the pitch when it wasn&apos;t in use - he absolutely loved that. Every time I cheered for the team, Evan shouted *&quot;Come on Tottenham&quot;* making everyone in the stand laugh at how cute he was. We were all cheering for Burnham, [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to Evan has shown signs of really picking up on things that we do around him lately. A few months ago we were watching my ladies football team play their final home game of the season. I had to take Evan with me because Caroline was away at a Karate event. We took his ball and played football on the pitch when it wasn&apos;t in use—he absolutely loved that. Every time I cheered for the team, Evan shouted *&quot;Come on Tottenham&quot;* making everyone in the stand laugh at how cute he was. We were all cheering for Burnham, b [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string y3Jul_10th {
             get {
@@ -174,9 +174,9 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to My First Festival - Aged 2. How many of us can say that? Evan has just been to his first festival *&quot;Legoland Live&quot;.* We&apos;ve had these annual passes for Legoland, so we thought we&apos;d try and make a note of some events that would be good to go to throughout the summer. Today was a special festival with all the favourite stars of children&apos;s TV *(Barney, Lazy Town, Pingu, Bob the Builder and lots more).*  
+        ///   Looks up a localized string similar to My First Festival—Aged 2. How many of us can say that? Evan has just been to his first festival *&quot;Legoland Live&quot;.* We&apos;ve had these annual passes for Legoland, so we thought we&apos;d try and make a note of some events that would be good to go to throughout the summer. Today was a special festival with all the favourite stars of children&apos;s TV *(Barney, Lazy Town, Pingu, Bob the Builder and lots more).*  
         ///
-        ///Because of the annual passes, we didn&apos;t feel the need to go early and get our money&apos;s worth because our e [rest of string was truncated]&quot;;.
+        ///Because of the annual passes, we didn&apos;t feel the need to go early and get our money&apos;s worth because our ent [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string y3Jul_14th {
             get {
@@ -187,9 +187,9 @@ namespace EvansDiary.Web.Diary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Happy Birthday to me.... or Happy Birthday to Evan?  
         ///
-        ///Today was my 28th birthday - wow I&apos;m getting old, so close to the big 30! It was a Monday and we weren&apos;t doing anything special so I went to work as usual, stopping off at my local Krispy Kreme doughnut shop to collect 4 dozen doughnuts for the guys at work. I saved 3 doughnuts to take home as I knew we hadn&apos;t arranged a birthday cake so I planned to put some candles on my doughnuts and have a makeshift birthday cake.  
+        ///Today was my 28th birthday—so close to the big 30! It was a Monday and we weren&apos;t doing anything special so I went to work as usual, stopping off at my local Krispy Kreme doughnut shop to collect 4 dozen doughnuts for the guys at work. I saved 3 doughnuts to take home as I knew we hadn&apos;t arranged a birthday cake so I planned to put some candles on my doughnuts and have a makeshift birthday cake.  
         ///
-        ///I wasn&apos;t sure if Evan would  [rest of string was truncated]&quot;;.
+        ///I wasn&apos;t sure if Evan would understand, but he seem [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string y3Jul_30th {
             get {
@@ -318,7 +318,7 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Oh the joys of nits. I collected Evan from nursery this evening and was told that he&apos;d spent a lot of time scratching his head. With his hair being so fair it didn&apos;t take me long to spot the little bugs crawling through his hair. __*(Shudder)*__ It&apos;s been a very long time since I saw a nit and at first I didn&apos;t think they looked like them but after a phone call to my mum we decided that they probably are. Aren&apos;t mums great, they always seem to know what to do in new circumstances like this. My mum never fai [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to Oh the joys of nits. I collected Evan from nursery one evening and was told that he&apos;d spent a lot of time scratching his head. With his hair being so fair it didn&apos;t take me long to spot the little bugs crawling around. __*(Shudder)*__ It&apos;s been a very long time since I saw a nit and at first I didn&apos;t think they looked like them but after a phone call to my mum we decided that they probably were. Aren&apos;t mums great, they always seem to know what to do in new circumstances like this. My mum never fails me and  [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string y3Sep_18th {
             get {
@@ -327,7 +327,7 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to I mentioned to Evan a few weeks ago that Roary the racing car was going to be at Legoland. That probably wasn&apos;t the wisest move I have made as Evan doesn&apos;t really understand weeks, though he is starting to grasp days of the week and weekends now. As a result of that mishap, he&apos;s been talking about Legoland and Roary for a while now. Well the day is finally here, today was the day to go and see Roary. Caroline&apos;s family were off to Legoland this weekend as well so we made plans to meet up with them as it&apos;s mu [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to I mentioned to Evan last month that Roary the racing car was going to be at Legoland. That probably wasn&apos;t the wisest move I have made as Evan doesn&apos;t really understand weeks, though he is starting to grasp days of the week and weekends now. As a result of that mishap, he&apos;s been talking about Legoland and Roary for a while now. Well the day finally arrived this month, we were off to see Roary. Caroline&apos;s family were off to Legoland this weekend as well so we made plans to meet up with them as it&apos;s much bett [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string y3Sep_23rd {
             get {
