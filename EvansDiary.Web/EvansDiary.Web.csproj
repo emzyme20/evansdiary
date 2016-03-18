@@ -285,6 +285,11 @@
     <Content Include="Content\images\diary\years\2007\m07.jpg" />
     <Content Include="Content\images\diary\years\2007\m08.jpg" />
     <Content Include="Content\images\diary\years\2007\m09.jpg" />
+    <Content Include="Content\images\diary\years\2007\m10.jpg" />
+    <Content Include="Content\images\diary\years\2007\m11.jpg" />
+    <Content Include="Content\images\diary\years\2007\m12.jpg" />
+    <Content Include="Content\images\diary\years\2008\m01.jpg" />
+    <Content Include="Content\images\diary\years\2008\m02.jpg" />
     <Content Include="Content\images\grid\best-friends.jpg" />
     <Content Include="Content\images\grid\cockerel.jpg" />
     <Content Include="Content\images\grid\family.jpg" />
@@ -414,7 +419,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Content\images\diary\years\2008\" />
     <Folder Include="Properties\PublishProfiles\" />
   </ItemGroup>
   <ItemGroup>

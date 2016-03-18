@@ -116,7 +116,7 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Welcome to a brand new year! A new start for many of you, one that Evan and I are part of. The viewings for the sale of the house were not going well and with the market taking a downturn I made a decision in January to buy Caroline&apos;s half of the house meaning that I can now take my time to decorate the house and move in my own time when the markets are more lively.  
+        ///   Looks up a localized string similar to Welcome to a brand new year! A new start for many of you; one that Evan and I are part of. The viewings for the sale of the house were not going well and with the market taking a downturn I made a decision in January to buy Caroline&apos;s half of the house meaning that I can now take my time to decorate the house and move in my own time when the markets are more lively.  
         ///
         ///I was having a hard time finding a house that was a similar size, for the same price. It was obvious to me that I&apos;d be downgrading if I we [rest of string was truncated]&quot;;.
         /// </summary>
