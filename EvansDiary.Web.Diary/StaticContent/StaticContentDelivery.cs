@@ -2209,17 +2209,23 @@ namespace EvansDiary.Web.Diary.StaticContent
                                 Entry = md.Transform(Year2007.y3Dec_2nd),
                                 Images = new List<IAssociatedImage>
                                 {
-                                    new AssociatedImage("dec_slide_start", "Is this going to have a happy ending?"),
-                                    new AssociatedImage("dec_slide_finish", "They seemed to like it!"),
-                                    new AssociatedImage("", ""),
-                                    new AssociatedImage("", "")
+                                    new AssociatedImage("dec_slide_start_awd0x1", "Is this going to have a happy ending?"),
+                                    new AssociatedImage("dec_slide_finish_r7ry9j", "They seemed to like it!"),
+                                    new AssociatedImage("dec_garden_tm9zws", "Not sure who is having the most fun!"),
+                                    new AssociatedImage("dec_sofa_sleeps_nrbcmx", "Having a sneaky little nap")
                                 }
                             },
                             new TimeLineEntry
                             {
                                 Subheading = "14th December - King Evan",
                                 Entry = md.Transform(Year2007.y3Dec_14th),
-                                SingleImage = new AssociatedImage("dec_king", "Evan models his King outfit")
+                                Images = new List<IAssociatedImage>
+                                {
+                                    new AssociatedImage("dec_king_evan_bzdiwx", "Evan models his nativity outfit"),
+                                    new AssociatedImage("dec_king_myrrh_liwqtt", "Evan with his gift of myrrh"),
+                                    new AssociatedImage("dec_nativity_dinner_qdmhhy", "Nativity done, now onto the food!"),
+                                    new AssociatedImage("dec_evan_and_lucy_ofbfht", "This is Lucy, Evan adores her")
+                                }
                             },
                             new TimeLineEntry
                             {
