@@ -2378,10 +2378,14 @@ namespace EvansDiary.Web.Diary.StaticContent
                                 Entry = md.Transform(Year2008.y4Mar_9th),
                                 Images = new List<IAssociatedImage>
                                 {
-                                    new AssociatedImage("", ""),
-                                    new AssociatedImage("", ""),
-                                    new AssociatedImage("", ""),
-                                    new AssociatedImage("", "")
+                                    new AssociatedImage("mar_train_bwaz2k", "Evan's first trip on a train"),
+                                    new AssociatedImage("mar_craig_iry9yt", "This is Craig, he's an amazing friend"),
+                                    new AssociatedImage("mar_in_london_ij9dlv", "London Baby!"),
+                                    new AssociatedImage("mar_london_eye_mjoudd", "The London Eye"),
+                                    new AssociatedImage("mar_shark_rnir5t", "Evan loved the sharks!"),
+                                    new AssociatedImage("mar_ice-cream_yzusre", "Such a nice day for an ice-cream"),
+                                    new AssociatedImage("mar_hannah_crul2r", "Hannah had one too!"),
+                                    new AssociatedImage("mar_new_shark_lzbsx4", "Evan's new shark teddy gets introduced to the racing track—literally!!")
                                 }
                             }
                         }
