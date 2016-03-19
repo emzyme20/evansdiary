@@ -2331,10 +2331,10 @@ namespace EvansDiary.Web.Diary.StaticContent
                                 Entry = md.Transform(Year2008.y4Feb_16th),
                                 Images = new List<IAssociatedImage>
                                 {
-                                    new AssociatedImage("feb_evan_running", "Mind the slippery patches!"),
-                                    new AssociatedImage("feb_mel_james", "Doesn't James just look like a cool dude!"),
-                                    new AssociatedImage("", ""),
-                                    new AssociatedImage("", "")
+                                    new AssociatedImage("feb_sam_azfmt9", "Sam watches on as Evan plays with his toys"),
+                                    new AssociatedImage("feb_baby_toys_a2ks4w", "Evan playing nicely with Sam's toys"),
+                                    new AssociatedImage("feb_mel_james_p82zdb", "Doesn't James just look like a cool dude!"),
+                                    new AssociatedImage("feb_evan_running_lpkwka", "Mind the slippery patches!")
                                 }
                             },
                             new TimeLineEntry
@@ -2343,10 +2343,10 @@ namespace EvansDiary.Web.Diary.StaticContent
                                 Entry = md.Transform(Year2008.y4Feb_17th),
                                 Images = new List<IAssociatedImage>
                                 {
-                                    new AssociatedImage("feb_piano_mat", "Evan attempts to make some music, well I think that's what he calls it!"),
-                                    new AssociatedImage("feb_head_injury", "Check out the bandage mummy!!"),
-                                    new AssociatedImage("", ""),
-                                    new AssociatedImage("", "")
+                                    new AssociatedImage("feb_piano_mat_idwtyy", "Evan making his music"),
+                                    new AssociatedImage("feb_head_injury_n0ojue", "Check out the bandage mummy!!"),
+                                    new AssociatedImage("feb_plasticine_picture_mplmvx", "Evan playing with his plasticine picture maker"),
+                                    new AssociatedImage("feb_cute_face_bnwog1", "Caught taking a picture—cutie!")
                                 }
                             },
                             new TimeLineEntry
@@ -2355,10 +2355,10 @@ namespace EvansDiary.Web.Diary.StaticContent
                                 Entry = md.Transform(Year2008.y4Feb_23rd),
                                 Images = new List<IAssociatedImage>
                                 {
-                                    new AssociatedImage("feb_baby_slide", "This was just the baby slide!"),
-                                    new AssociatedImage("feb_party_food", "Why do we all do that with hula hoops as children?"),
-                                    new AssociatedImage("", ""),
-                                    new AssociatedImage("", "")
+                                    new AssociatedImage("feb_baby_slide_cq1bwn", "This was just the baby slide!"),
+                                    new AssociatedImage("feb_flying_balls_u0eblh", "Balls placed here would be taken by the air flowing out of the holes..."),
+                                    new AssociatedImage("feb_more_balls_jcejqo", "...So Evan found a way to get lots of balls!"),
+                                    new AssociatedImage("feb_party_food_rw7kvv", "Why do we all do that with hula hoops as children?")
                                 }
                             }
                         }
