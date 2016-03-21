@@ -125,9 +125,9 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Today was Evan&apos;s 3rd birthday and most of his birthday presents had survived the Christmas day attempts by Evan to open more presents than he was supposed to. We had his uncle Neil, aunty Pascale and Izzy the dog join us today and we had lots of fun. Evan adores Izzy and as usual he wouldn&apos;t leave her alone. I bought him a car play mat for his birthday and Izzy became rather attached to it, using it as a bed to sleep on when she was tired.  
+        ///   Looks up a localized string similar to Today was Evan&apos;s 3rd birthday and most of his birthday presents had survived the Christmas day attempts by Evan to open more presents than he was supposed to. We had his uncle Neil, auntie Pascale and Izzy the dog join us today and we had lots of fun. Evan adores Izzy and as usual he wouldn&apos;t leave her alone. I bought him a car play mat for his birthday and Izzy became rather attached to it, using it as a bed to sleep on when she was tired.  
         ///
-        ///The house will never be quiet again. What is it with noisy toys [rest of string was truncated]&quot;;.
+        ///What is it with noisy toys being the most fun, our house will  [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string y3Dec_26th {
             get {
@@ -276,7 +276,7 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Oh my! What a day... Evan and I spent the weekend with my mum, which was great fun - she spoilt us and it was lovely to spend some quality time with her. I had a home football match to play in the afternoon, so we came home Sunday morning just in time for me to drop Evan off at home to be with Caroline and then I set off for football. I managed the first half of the football game before I was called out of the dressing room at half time to see Caroline standing there without Evan. I immediately asked where  [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to Oh my! What a day... Evan and I spent the weekend with my mum, which was great fun—she spoilt us and it was lovely to spend some quality time with her. I had a home football match to play in the afternoon, so we came home Sunday morning just in time for me to drop Evan off at home to be with Caroline and then I set off for football. I managed the first half of the football game before I was called out of the dressing room at half time to see Caroline standing there without Evan. I immediately asked where Ev [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string y3Nov_18th {
             get {
@@ -285,7 +285,7 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Today we went to see our neighbours as it was their little girl&apos;s 2nd birthday. She was having a little naked time before bed time when we arrived and I was amazed to see that at the age of 2 already completely potty trained *- take notes Evan!?* She was great, several times she just wandered over to her potty and went without even asking her parents. I think we need to rethink the whole potty training issue with Evan, I&apos;m going to pick a weekend later in this month to just really try to get him used to goi [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to Today we went to see our neighbours as it was their little girl&apos;s 2nd birthday. She was having a little naked time before bed time when we arrived and I was amazed to see that at the age of 2 already completely potty trained*—take notes Evan!?* She was great, several times she just wandered over to her potty and went without even asking her parents. I think we need to rethink the whole potty training issue with Evan, I&apos;m going to pick a weekend later in this month to just really try to get him used to going [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string y3Nov_2nd {
             get {
@@ -305,11 +305,11 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to *Pants?! - What Pants...?*  
+        ///   Looks up a localized string similar to *Pants?!—What Pants...?*  
         ///
-        ///Evan has been wearing pants recently in an attempt to finally get him out of nappies in the day time. This is one benefits of being at nursery because he saw all his friends wearing pants and knickers and going to the toilet by themselves that he decided he wanted to do it as well.  
+        ///Evan has been wearing pants recently in an attempt to finally get him out of nappies in the day time. This is one benefits of being at nursery because he saw all his friends wearing underwear and going to the toilet by themselves that he decided he wanted to do it as well.  
         ///
-        ///All was going well, we had Evan staying dry all day and then he&apos;d only wear a nappy in the afternoon for the journey home in the car. He is only doing a wee on the toilet at the moment as we h [rest of string was truncated]&quot;;.
+        ///All was going well, we had Evan staying dry all day and then he&apos;d only wear a nappy in the afternoon for the journey home in the car. He is only doing a wee on the toilet at the moment as we have this re [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string y3Oct_5th {
             get {
