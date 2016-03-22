@@ -72,7 +72,7 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to We had a surprise visit from Caroline this week. She was going to come down to see us for a day but we had the pleasure of having her for the whole week because she&apos;d had a slight falling out with her mum. It&apos;s sad that she had the falling out, but Evan and I were the beneficiaries here because we had a lovely time with her.  Caroline and I get on very well, we just slotted right back into place. We know each other so well and generally find each others company pleasant. It did feel odd that this time round [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to We had a surprise visit from Caroline this week. She was going to come down to see us for a day but we had the pleasure of having her for the whole week because she&apos;d had a slight falling out with her mum. It&apos;s sad that she had the falling out, but Evan and I were the beneficiaries here because we had a lovely time with her.  Caroline and I get on very well, we just slotted right back into place. We know each other so well and generally find each others company pleasant. It did feel odd that this time we we [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string y4Feb_17th {
             get {
@@ -107,7 +107,7 @@ namespace EvansDiary.Web.Diary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Evan and I went to feed the ducks, swans and Canadian geese with my friend Craig and his family today. They live in Thatcham and have a lovely lake and play area near to their house. Evan was a little nervous at first because he&apos;d never met them but as soon as he saw a stack of different toys to play with and yet another guy to throw him around he was all settled as if it were home!  
         ///
-        ///It was somewhat mucky where the ducks were and we all got covered in mud. Evan almost ran into a stream but he realised t [rest of string was truncated]&quot;;.
+        ///It was a little mucky where the ducks were and we all got covered in mud. Evan almost ran into a stream but he realised t [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string y4Feb_9th {
             get {
@@ -118,7 +118,7 @@ namespace EvansDiary.Web.Diary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Welcome to a brand new year! A new start for many of you; one that Evan and I are part of. The viewings for the sale of the house were not going well and with the market taking a downturn I made a decision in January to buy Caroline&apos;s half of the house meaning that I can now take my time to decorate the house and move in my own time when the markets are more lively.  
         ///
-        ///I was having a hard time finding a house that was a similar size, for the same price. It was obvious to me that I&apos;d be downgrading if I we [rest of string was truncated]&quot;;.
+        ///I was having a hard time finding a house that was a similar size, for the same price. It was obvious to me that I&apos;d be downsizing if I wer [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string y4Jan_1st {
             get {
@@ -127,11 +127,11 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to A night to remember! Evan went to stay with Grandma for a few days this week to allow me to travel to London with friends to watch my beloved Tottenham Hotspur face their arch rivals Arsenal in the Carling Cup Semi-final at White Hart Lane.  
+        ///   Looks up a localized string similar to **What night to remember!** Evan went to stay with my mum for a few days this week to allow me to travel to London with friends to watch my beloved Tottenham Hotspur face their arch rivals Arsenal in the Carling Cup semi-final at White Hart Lane.  
         ///
         ///We left work at 4.30pm and drove into London, it took us roughly 2 and a half hours to get there but it was worth every minute.  
         ///
-        ///I was feeling optimistic, Tottenham should have been 1 up from the first leg at Arsenal 2 weeks earlier and I just had a feeling that [rest of string was truncated]&quot;;.
+        ///I was feeling optimistic, Tottenham should have been 1 up from the first leg at Arsenal 2 weeks earlier and I just had a feelin [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string y4Jan_22nd {
             get {
@@ -140,11 +140,11 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Today Evan and I went to London Aquarium with my friend Craig and his daughter Hannah. This trip would give Evan his first experience of the train and the tube. It ended up giving us all a lot more than we bargained for!  
+        ///   Looks up a localized string similar to Today Evan and I went to London Aquarium with my friend Craig and his daughter Hannah. This trip would give Evan his first experience on a train and the tube. It ended up giving us all a lot more than we bargained for!  
         ///
         ///Craig left me in charge of bringing the printed tickets—I&apos;m a woman you see and we&apos;re good at remembering the important things.  
         ///
-        ///The day started early at 10am, with Evan using Craig&apos;s spare push chair as we gave ours away to my brother. The walk to the train station was pretty unev [rest of string was truncated]&quot;;.
+        ///The day started early at 10am, with Evan using Craig&apos;s spare push chair as we gave ours away to my brother. The walk to the train station was pretty uneven [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string y4Mar_9th {
             get {
