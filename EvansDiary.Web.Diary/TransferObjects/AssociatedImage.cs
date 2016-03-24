@@ -15,7 +15,7 @@ namespace EvansDiary.Web.Diary.TransferObjects
         public string Caption { get; set; }
 
         public string Source { get; set; }
-        public string GetUrl(double? width, int? quality)
+        public string GetUrl(double? width, double? height, int? quality, string additionalOptions)
         {
             var options = new StringBuilder(",w_");
             if (width.HasValue)
@@ -24,7 +24,18 @@ namespace EvansDiary.Web.Diary.TransferObjects
             }
             else
             {
-                options.Append("285,h_214");
+                options.Append("285");
+            }
+
+            if (height.HasValue)
+            {
+                options
+                    .Append(",h_")
+                    .Append(height);
+            }
+            else
+            {
+                options.Append(",h_214");
             }
 
             if (quality.HasValue)
@@ -36,9 +47,17 @@ namespace EvansDiary.Web.Diary.TransferObjects
             {
                 options.Append(",q_90");
             }
+
+            if (!string.IsNullOrEmpty(additionalOptions))
+            {
+                options
+                    .Append(",")
+                    .Append(additionalOptions);
+            }
+
             options.Append("/");
 
-            return "http://res.cloudinary.com/dqg9nkccw/image/upload/c_fill" + options + Source + ".jpg";
+            return "http://res.cloudinary.com/dqg9nkccw/image/upload/c_fill,f_auto" + options + Source + ".jpg";
         }
     }
 }

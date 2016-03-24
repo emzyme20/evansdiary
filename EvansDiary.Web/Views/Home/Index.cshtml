@@ -1,4 +1,5 @@
-﻿@{
+﻿@model HomeViewModel
+@{
     ViewBag.Title = "Evan Middlebrook";
 }
 
@@ -83,21 +84,7 @@
         </div>
         <div class="pure-u-1 pure-u-sm-1-2 pure-u-md-1-3 block">
             <div id="rotating-item-wrapper">
-                <img class="rotating-item " src="http://res.cloudinary.com/dqg9nkccw/image/upload/w_380,h_380,q_80,c_fill,g_face/w1_evan_peaceful_hqreul.jpg" alt="flipbook image" />
-                <img class="rotating-item " src="http://res.cloudinary.com/dqg9nkccw/image/upload/w_380,h_380,q_80,c_fill,g_face/w5_smiling_now_icxvs3.jpg" alt="flipbook image" />
-                <img class="rotating-item " src="http://res.cloudinary.com/dqg9nkccw/image/upload/w_380,h_380,q_80,c_fill,g_face/w16_commando_iucohe.jpg" alt="flipbook image" />
-                <img class="rotating-item " src="http://res.cloudinary.com/dqg9nkccw/image/upload/w_380,h_380,q_80,c_fill,g_face/w18_ooh_whassat_knacas.jpg" alt="flipbook image" />
-                <img class="rotating-item " src="http://res.cloudinary.com/dqg9nkccw/image/upload/w_380,h_380,q_80,c_fill,g_face/w28_cool_dude_d6c1du.jpg" alt="flipbook image" />
-                <img class="rotating-item " src="http://res.cloudinary.com/dqg9nkccw/image/upload/w_380,h_380,q_80,c_fill,g_face/w36_sand_feels_good_nd9v2f.jpg" alt="flipbook image" />
-                <img class="rotating-item " src="http://res.cloudinary.com/dqg9nkccw/image/upload/w_380,h_380,q_80,c_fill,g_face/w47_after_haircut_rp8ntl.jpg" alt="flipbook image" />
-                <img class="rotating-item " src="http://res.cloudinary.com/dqg9nkccw/image/upload/w_380,h_380,q_80,c_fill,g_face/mar_bed_hair_xcmrd3.jpg" alt="flipbook image" />
-                <img class="rotating-item " src="http://res.cloudinary.com/dqg9nkccw/image/upload/w_380,h_380,q_80,c_fill,g_face/jun_lovely_smile_hnyiew.jpg" alt="flipbook image" />
-                <img class="rotating-item " src="http://res.cloudinary.com/dqg9nkccw/image/upload/w_380,h_380,q_80,c_fill,g_face/aug_flying_closeup_kwuunw.jpg" alt="flipbook image" />
-                <img class="rotating-item " src="http://res.cloudinary.com/dqg9nkccw/image/upload/w_380,h_380,q_80,c_fill,g_face/nov_cute_hair_sk4ev7.jpg" alt="flipbook image" />
-                <img class="rotating-item " src="http://res.cloudinary.com/dqg9nkccw/image/upload/w_380,h_380,q_80,c_fill,g_face/apr_scar_smile_mse9by.jpg" alt="flipbook image" />
-                <img class="rotating-item " src="http://res.cloudinary.com/dqg9nkccw/image/upload/w_380,h_380,q_80,c_fill,g_face/sept_swing_ocn7bq.jpg" alt="flipbook image" />
-                <img class="rotating-item " src="http://res.cloudinary.com/dqg9nkccw/image/upload/w_380,h_380,q_80,c_fill,g_face/nov_growing_up_zxwyzx.jpg" alt="flipbook image" />
-                <img class="rotating-item " src="http://res.cloudinary.com/dqg9nkccw/image/upload/w_380,h_380,q_80,c_fill,g_face/feb_messy_face_dh4a6a.jpg" alt="flipbook image" />
+                @Html.Partial("_Flipbook", Model.FlipbookItems)
             </div>
             <div class="overlay">
                 <h4>#Me</h4>
@@ -108,8 +95,13 @@
 </section>
 
 @section PageScripts {
-
+    @Scripts.Render("~/bundles/jquerycloudinary")
     <script type="text/javascript">
+
+        $(function () {
+            $.cloudinary.config("cloud_name", "dqg9nkccw");
+            $(".dynamic_image").cloudinary();
+        });
 
         // $(window).load runs after HTML and images have loaded. 
         // $(function () {} (document ready) runs when the DOM is ready not including images.
