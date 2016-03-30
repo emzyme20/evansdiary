@@ -99,6 +99,7 @@
     <script type="text/javascript">
 
         $(function () {
+            // Lazy load the flipbook images from cloudinary
             $.cloudinary.config("cloud_name", "dqg9nkccw");
             $(".dynamic_image").cloudinary();
         });
@@ -116,12 +117,11 @@
 
                     setInterval(function () {
                         $('#rotating-item-wrapper :first-child')
-                            .fadeOut(2500)
                             .next('img')
-                            .fadeIn()
+                            .show()
                             .end()
                             .appendTo('#rotating-item-wrapper');
-                    }, 3000); // 3 seconds
+                    }, 1000); // 1 second
                 }
             };
 
