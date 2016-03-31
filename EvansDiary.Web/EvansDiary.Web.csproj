@@ -177,7 +177,6 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Bootstrap\Bootstrap.cs" />
-    <Compile Include="Bootstrap\CustomSimpleInjectorDependencyResolver.cs" />
     <Compile Include="Controllers\HospitalController.cs" />
     <Compile Include="Controllers\DiaryController.cs" />
     <Compile Include="Controllers\HomeController.cs" />

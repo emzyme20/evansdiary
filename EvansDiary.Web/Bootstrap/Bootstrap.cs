@@ -30,8 +30,6 @@ namespace EvansDiary.Web.Bootstrap
 
             container.RegisterMvcIntegratedFilterProvider();
 
-            // http://stackoverflow.com/questions/34418477/mvc-website-on-a-shared-hosting-environment-with-restricted-trust
-            //DependencyResolver.SetResolver(new CustomSimpleInjectorDependencyResolver(container));
             DependencyResolver.SetResolver(new SimpleInjectorDependencyResolver(container));
         }
     }
