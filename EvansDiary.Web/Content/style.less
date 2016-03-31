@@ -250,11 +250,10 @@ ul.polaroids a:hover {
 #rotating-item-wrapper {
   margin: 0 auto;
   position: relative;
-  //width: 285px;
-  // Because of relative positioning, the height needs to be set to stop overlapping divs.
-  // Height must include borders and shadows defined on children elements
-  // (e.g. 214 image height + 10 + 10 border + 6 shadow)
-  //height: 250px; 
+  // The height must be set for this to work but I've made it responsive, so the height
+  // will now be set when we resize the window, it will match the height of the blocks 
+  // to the parent container of the rotating-item-wrapper (.flipbook) and this item will 
+  // use it's height
 }
 
 .rotating-item {

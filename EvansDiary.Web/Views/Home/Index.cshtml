@@ -82,7 +82,7 @@
                 <p>My creative side sees me painting my warhammer figures</p>
             </div>
         </div>
-        <div class="pure-u-1 pure-u-sm-1-2 pure-u-md-1-3 block">
+        <div class="pure-u-1 pure-u-sm-1-2 pure-u-md-1-3 block flipbook">
             <div id="rotating-item-wrapper">
                 @Html.Partial("_Flipbook", Model.FlipbookItems)
             </div>
@@ -97,11 +97,15 @@
 @section PageScripts {
     @Scripts.Render("~/bundles/jquerycloudinary")
     <script type="text/javascript">
-
         $(function () {
             // Lazy load the flipbook images from cloudinary
             $.cloudinary.config("cloud_name", "dqg9nkccw");
             $(".dynamic_image").cloudinary();
+
+            window.addEventListener('resize', function (event) {
+                var firstBlock = $('.block:first');
+                $('.flipbook').height(firstBlock.height());
+            });
         });
 
         // $(window).load runs after HTML and images have loaded. 
@@ -110,7 +114,11 @@
             var infiniteRotator =
             {
                 init: function () {
-                    $('#rotating-item-wrapper img:gt(1)').hide();
+                    $('#rotating-item-wrapper img:gt(0)').hide();
+                   
+                    // Set the initial height
+                    var firstBlock = $('.block:first');
+                    $('.flipbook').height(firstBlock.height());
 
                     // show first item
                     $('.rotating-item').eq(0).show();
@@ -127,6 +135,5 @@
 
             infiniteRotator.init();
         });
-
     </script>
 }
