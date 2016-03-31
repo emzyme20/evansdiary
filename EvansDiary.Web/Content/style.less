@@ -5,13 +5,22 @@ p {
 }
 
 .logo {
-  font-size: 2em;
+  font-size: 1.6em;
   font-weight: bold;
   color: white;
   font-family: "Open Sans", Helvetica, sans-serif;
 
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  
   @media screen and (max-width: @mq-md) {
     padding-left: 1em;
+  }
+
+  @media (min-width: @mq-sm) {
+    font-size: 2em;
   }
 }
 
