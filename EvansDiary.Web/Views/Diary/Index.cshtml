@@ -34,28 +34,40 @@
                     @using (Html.ScopedActionLink<DiaryController>(x => x.Year(2005), new { title = "Year 1" }))
                     {
                         var yearOne = new AssociatedImage("w1_evan_peaceful_hqreul", "Year 1 - 2005");
-                        <img class="pure-img-responsive" src="@yearOne.GetUrl(null, null, null, null)" alt="@yearOne.Caption" title="@yearOne.Caption">
+                        <img src="/Content/images/blank.jpg" class="dynamic_image pure-img-responsive"
+                             data-src="@(yearOne.Source)"
+                             data-width="285" data-height="214"
+                             data-crop="fill" data-quality="80" alt="@yearOne.Caption" title="@yearOne.Caption" />
                     }
                 </li>
                 <li class="pure-u-1-2 pure-u-md-1-4">
                     @using (Html.ScopedActionLink<DiaryController>(x => x.Year(2006), new { title = "Year 2" }))
                     {
                         var yearTwo = new AssociatedImage("feb_gorgeous_ligjbj", "Year 2 - 2006");
-                        <img class="pure-img-responsive" src="@yearTwo.GetUrl(null, null, null, null)" alt="@yearTwo.Caption" title="@yearTwo.Caption">
+                        <img src="/Content/images/blank.jpg" class="dynamic_image pure-img-responsive"
+                             data-src="@(yearTwo.Source)"
+                             data-width="285" data-height="214"
+                             data-crop="fill" data-quality="80" alt="@yearTwo.Caption" title="@yearTwo.Caption" />
                     }
                 </li>
                 <li class="pure-u-1-2 pure-u-md-1-4">
                     @using (Html.ScopedActionLink<DiaryController>(x => x.Year(2007), new { title = "Year 3" }))
                     {
                         var yearThree = new AssociatedImage("dec_together_cdlhbx", "Year 3 - 2007");
-                        <img class="pure-img-responsive" src="@yearThree.GetUrl(null, null, null, null)" alt="@yearThree.Caption" title="@yearThree.Caption">
+                        <img src="/Content/images/blank.jpg" class="dynamic_image pure-img-responsive"
+                             data-src="@(yearThree.Source)"
+                             data-width="285" data-height="214"
+                             data-crop="fill" data-quality="80" alt="@yearThree.Caption" title="@yearThree.Caption" />
                     }
                 </li>
                 <li class="pure-u-1-2 pure-u-md-1-4">
                     @using (Html.ScopedActionLink<DiaryController>(x => x.Year(2008), new { title = "Year 4" }))
                     {
                         var yearFour = new AssociatedImage("apr_legoland_2008_r84ovw", "Year 4 - 2008");
-                        <img class="pure-img-responsive" src="@yearFour.GetUrl(null, null, null, null)" alt="@yearFour.Caption" title="@yearFour.Caption">
+                        <img src="/Content/images/blank.jpg" class="dynamic_image pure-img-responsive"
+                             data-src="@(yearFour.Source)"
+                             data-width="285" data-height="214"
+                             data-crop="fill" data-quality="80" alt="@yearFour.Caption" title="@yearFour.Caption" />
                     }
                 </li>
             </ul>

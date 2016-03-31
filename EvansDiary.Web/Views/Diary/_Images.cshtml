@@ -10,25 +10,37 @@
 
 <div class="pure-g">
     <div class="pure-u-1-2 pure-u-sm-1-4">
-        <img class="pure-img-responsive" src="@imageOne.GetUrl(null, null, null, null)" alt="@imageOne.Caption">
+        <img src="/Content/images/blank.jpg" class="dynamic_image pure-img-responsive"
+             data-src="@(imageOne.Source)"
+             data-width="285" data-height="214"
+             data-crop="fill" data-quality="80" alt="@imageOne.Caption" />
         <aside class="photo-box-caption">
             <span>@imageOne.Caption</span>
         </aside>
     </div>
     <div class="pure-u-1-2 pure-u-sm-1-4">
-        <img class="pure-img-responsive" src="@imageTwo.GetUrl(null, null, null, null)" alt="@imageTwo.Caption">
+        <img src="/Content/images/blank.jpg" class="dynamic_image pure-img-responsive"
+             data-src="@(imageTwo.Source)"
+             data-width="285" data-height="214"
+             data-crop="fill" data-quality="80" alt="@imageTwo.Caption" />
         <aside class="photo-box-caption">
             <span>@imageTwo.Caption</span>
         </aside>
     </div>
     <div class="pure-u-1-2 pure-u-sm-1-4">
-        <img class="pure-img-responsive" src="@imageThree.GetUrl(null, null, null, null)" alt="@imageThree.Caption">
+        <img src="/Content/images/blank.jpg" class="dynamic_image pure-img-responsive"
+             data-src="@(imageThree.Source)"
+             data-width="285" data-height="214"
+             data-crop="fill" data-quality="80" alt="@imageThree.Caption" />
         <aside class="photo-box-caption">
             <span>@imageThree.Caption</span>
         </aside>
     </div>
     <div class="pure-u-1-2 pure-u-sm-1-4">
-        <img class="pure-img-responsive" src="@imageFour.GetUrl(null, null, null, null)" alt="@imageFour.Caption">
+        <img src="/Content/images/blank.jpg" class="dynamic_image pure-img-responsive"
+             data-src="@(imageFour.Source)"
+             data-width="285" data-height="214"
+             data-crop="fill" data-quality="80" alt="@imageFour.Caption" />
         <aside class="photo-box-caption">
             <span>@imageFour.Caption</span>
         </aside>

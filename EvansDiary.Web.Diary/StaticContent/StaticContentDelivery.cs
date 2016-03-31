@@ -733,7 +733,11 @@ namespace EvansDiary.Web.Diary.StaticContent
                             {
                                 Subheading = "Emma's Entry",
                                 Entry = md.Transform(Year2005.y1w23One),
-                                SingleImage = new AssociatedImage("w23_the_party_u8scfn", "The Party"),
+                                SingleImage = new AssociatedImage("w23_the_party_u8scfn", "The Party")
+                                {
+                                    Height = "397",
+                                    Width = "520"
+                                },
                                 Images = new List<IAssociatedImage>
                                 {
                                     new AssociatedImage("w23_cheeky_bottom_bmu0br", "I can see that bottom!"),

@@ -100,7 +100,7 @@
         $(function () {
             // Lazy load the flipbook images from cloudinary
             $.cloudinary.config("cloud_name", "dqg9nkccw");
-            $(".dynamic_image").cloudinary();
+            $(".dynamic_image").webpify();
 
             window.addEventListener('resize', function (event) {
                 var firstBlock = $('.block:first');

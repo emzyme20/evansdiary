@@ -2,10 +2,12 @@
 {
     public interface IAssociatedImage
     {
+        string Height { get; set; }
+
+        string Width { get; set; }
+
         string Caption { get; set; }
 
         string Source { get; set; }
-
-        string GetUrl(double? width, double? height, int? quality, string additionalOptions);
     }
 }

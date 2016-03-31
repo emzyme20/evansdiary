@@ -37,7 +37,10 @@
             {
                 <div class="pure-g">
                     <div class="pure-u-1 additional-image">
-                        <img class="pure-img-responsive" src="@entry.SingleImage.GetUrl(520, null, null, null)" alt="@entry.SingleImage.Caption">
+                        <img src="/Content/images/blank.jpg" class="dynamic_image pure-img-responsive"
+                             data-src="@(entry.SingleImage.Source)"
+                             data-width="@entry.SingleImage.Width" data-height="@entry.SingleImage.Height"
+                             data-crop="fill" data-quality="80" alt="@entry.SingleImage.Caption" />
                     </div>
                 </div>
             }
@@ -59,11 +62,15 @@
 </section>
 
 @section PageScripts {
-
+    @Scripts.Render("~/bundles/jquerycloudinary")
     <script type="text/javascript">
 
         // document ready...
         $(function () {
+            // Lazy load the images from cloudinary and optimise the format retrieved (get webp if browser supports the format)
+            $.cloudinary.config("cloud_name", "dqg9nkccw");
+            $(".dynamic_image").webpify();
+
             var embeddedImages = $('.diary-entry p a img');
 
             var embeddedImage;
