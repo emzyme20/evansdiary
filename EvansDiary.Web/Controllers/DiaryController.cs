@@ -9,7 +9,7 @@ namespace EvansDiary.Web.Controllers
     {
         private readonly IStaticContentDelivery _contentDelivery;
 
-        public DiaryController(IStaticContentDelivery contentDelivery) 
+        public DiaryController(IStaticContentDelivery contentDelivery)
         {
             _contentDelivery = contentDelivery;
         }
@@ -35,7 +35,12 @@ namespace EvansDiary.Web.Controllers
 
         public ActionResult Year(int year)
         {
-            return View(new YearViewModel(year));
+            var viewModel = new YearViewModel(year)
+            {
+                Images = _contentDelivery.GetImages(year)
+            };
+
+            return View(viewModel);
         }
     }
 }

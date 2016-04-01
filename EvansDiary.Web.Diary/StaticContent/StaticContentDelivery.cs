@@ -1,15 +1,16 @@
 ﻿using System.Collections.Generic;
-
 using EvansDiary.Interfaces;
 using EvansDiary.Web.Diary.Resources;
 using EvansDiary.Web.Diary.TransferObjects;
-
 using MarkdownDeep;
 
 namespace EvansDiary.Web.Diary.StaticContent
 {
     public class StaticContentDelivery : IStaticContentDelivery
     {
+        private readonly Dictionary<int, IEnumerable<IAssociatedImage>> _imageCollection =
+            new Dictionary<int, IEnumerable<IAssociatedImage>>();
+
         protected Dictionary<string, IDiaryEntry> _diaryEntries = new Dictionary<string, IDiaryEntry>();
 
         public StaticContentDelivery()
@@ -33,9 +34,155 @@ namespace EvansDiary.Web.Diary.StaticContent
             };
         }
 
+        public IEnumerable<IAssociatedImage> GetImages(int year)
+        {
+            return _imageCollection.ContainsKey(year) ? _imageCollection[year] : null;
+        }
+
+        private void InitialiseYearFourContent()
+        {
+            var md = new Markdown {ExtraMode = true, SafeMode = false};
+
+            _diaryEntries
+                .Add(
+                    "2008-january",
+                    new DiaryEntry
+                    {
+                        Tag = "January (2008)",
+                        Timeline = new List<ITimeLineEntry>
+                        {
+                            new TimeLineEntry
+                            {
+                                Subheading = "1st Januay - A new start for us!",
+                                Entry = md.Transform(Year2008.y4Jan_1st)
+                            },
+                            new TimeLineEntry
+                            {
+                                Subheading = "22nd January - Tottenham vs Arsenal Carling Cup Semi Final",
+                                Entry = md.Transform(Year2008.y4Jan_22nd)
+                            }
+                        }
+                    });
+
+            _diaryEntries
+                .Add(
+                    "2008-february",
+                    new DiaryEntry
+                    {
+                        Tag = "February (2008)",
+                        Timeline = new List<ITimeLineEntry>
+                        {
+                            new TimeLineEntry
+                            {
+                                Subheading = "5th February - Introducing the latest Middlebrook",
+                                Entry = md.Transform(Year2008.y4Feb_5th),
+                                Images = new List<IAssociatedImage>
+                                {
+                                    new AssociatedImage("feb_ryan_alex_gmwcd4", "Introducing Ryan Alex Middlebrook"),
+                                    new AssociatedImage("feb_park_efxahd", "Evan loves playing at the park!"),
+                                    new AssociatedImage("feb_interesting_vwl6yv",
+                                        "Evan contemplates how to get across this new piece of play equipment"),
+                                    new AssociatedImage("feb_dog_obsession_segxa3",
+                                        "Evan's love of dogs has not diminished!")
+                                }
+                            },
+                            new TimeLineEntry
+                            {
+                                Subheading = "9th February - Day out feeding the ducks",
+                                Entry = md.Transform(Year2008.y4Feb_9th),
+                                Images = new List<IAssociatedImage>
+                                {
+                                    new AssociatedImage("feb_ducks_m4uq4a", "We love feeding the ducks!"),
+                                    new AssociatedImage("feb_swing_craig_jbuura",
+                                        "Finally, someone to give my arms a rest—this boy loves going high!"),
+                                    new AssociatedImage("feb_tall_pmp6zr",
+                                        "Evan enjoying being the tallest for a change"),
+                                    new AssociatedImage("feb_messy_face_dh4a6a", "Chocolate pancakes for breakfast!")
+                                }
+                            },
+                            new TimeLineEntry
+                            {
+                                Subheading = "16th February - Visiting the Beadles",
+                                Entry = md.Transform(Year2008.y4Feb_16th),
+                                Images = new List<IAssociatedImage>
+                                {
+                                    new AssociatedImage("feb_sam_azfmt9", "Sam watches on as Evan plays with his toys"),
+                                    new AssociatedImage("feb_baby_toys_a2ks4w", "Evan playing nicely with Sam's toys"),
+                                    new AssociatedImage("feb_mel_james_p82zdb",
+                                        "Doesn't James just look like a cool dude!"),
+                                    new AssociatedImage("feb_evan_running_lpkwka", "Mind the slippery patches!")
+                                }
+                            },
+                            new TimeLineEntry
+                            {
+                                Subheading = "17th February - A visit from Caroline",
+                                Entry = md.Transform(Year2008.y4Feb_17th),
+                                Images = new List<IAssociatedImage>
+                                {
+                                    new AssociatedImage("feb_piano_mat_idwtyy", "Evan making his music"),
+                                    new AssociatedImage("feb_head_injury_n0ojue", "Check out the bandage mummy!!"),
+                                    new AssociatedImage("feb_plasticine_picture_mplmvx",
+                                        "Evan playing with his plasticine picture maker"),
+                                    new AssociatedImage("feb_cute_face_bnwog1", "Caught taking a picture—cutie!")
+                                }
+                            },
+                            new TimeLineEntry
+                            {
+                                Subheading = "23rd February - Celebrating another birthday",
+                                Entry = md.Transform(Year2008.y4Feb_23rd),
+                                Images = new List<IAssociatedImage>
+                                {
+                                    new AssociatedImage("feb_baby_slide_cq1bwn", "This was just the baby slide!"),
+                                    new AssociatedImage("feb_flying_balls_u0eblh",
+                                        "Balls placed here would be taken by the air flowing out of the holes..."),
+                                    new AssociatedImage("feb_more_balls_jcejqo",
+                                        "...So Evan found a way to get lots of balls!"),
+                                    new AssociatedImage("feb_party_food_rw7kvv",
+                                        "Why do we all do that with hula hoops as children?")
+                                }
+                            }
+                        }
+                    });
+
+            _diaryEntries
+                .Add(
+                    "2008-march",
+                    new DiaryEntry
+                    {
+                        Tag = "March (2008)",
+                        Timeline = new List<ITimeLineEntry>
+                        {
+                            new TimeLineEntry
+                            {
+                                Subheading = "9th March - Our London Adventure",
+                                Entry = md.Transform(Year2008.y4Mar_9th),
+                                Images = new List<IAssociatedImage>
+                                {
+                                    new AssociatedImage("mar_train_bwaz2k", "Evan's first trip on a train"),
+                                    new AssociatedImage("mar_craig_iry9yt", "This is Craig, he's an amazing friend"),
+                                    new AssociatedImage("mar_in_london_ij9dlv", "London Baby!"),
+                                    new AssociatedImage("mar_london_eye_mjoudd", "The London Eye"),
+                                    new AssociatedImage("mar_shark_rnir5t", "Evan loved the sharks!"),
+                                    new AssociatedImage("mar_ice-cream_yzusre", "Such a nice day for an ice-cream"),
+                                    new AssociatedImage("mar_hannah_crul2r", "Hannah had one too!"),
+                                    new AssociatedImage("mar_new_shark_lzbsx4",
+                                        "Evan's new shark teddy gets introduced to the racing track—literally!!")
+                                }
+                            }
+                        }
+                    });
+
+            _imageCollection.Add(2008, new[]
+            {
+                new AssociatedImage("", "January", "251"),
+                new AssociatedImage("", "February", "251"),
+                new AssociatedImage("", "March", "251")
+            });
+        }
+
         private void InitialiseYearOneContent()
         {
-            var md = new Markdown { ExtraMode = true, SafeMode = false };
+            var md = new Markdown {ExtraMode = true, SafeMode = false};
 
             _diaryEntries
                 .Add(
@@ -57,10 +204,13 @@ namespace EvansDiary.Web.Diary.StaticContent
                                 Entry = md.Transform(Year2005.y1w0Two),
                                 Images = new List<IAssociatedImage>
                                 {
-                                    new AssociatedImage("w0-emma-first-hold_n1knip", "Emma holding Evan for the first time"),
+                                    new AssociatedImage("w0-emma-first-hold_n1knip",
+                                        "Emma holding Evan for the first time"),
                                     new AssociatedImage("w0_midwife_gpdp3v", "Our wonderful midwife, Valeska"),
-                                    new AssociatedImage("w0_before_birth_qzqa9r", "Emma in the labour ward, before the birth"),
-                                    new AssociatedImage("w0_caroline_first_hold_mgodvl", "Caroline with Evan a few minutes after the birth")
+                                    new AssociatedImage("w0_before_birth_qzqa9r",
+                                        "Emma in the labour ward, before the birth"),
+                                    new AssociatedImage("w0_caroline_first_hold_mgodvl",
+                                        "Caroline with Evan a few minutes after the birth")
                                 }
                             }
                         }
@@ -86,7 +236,8 @@ namespace EvansDiary.Web.Diary.StaticContent
                                 Entry = md.Transform(Year2005.y1w1Two),
                                 Images = new List<IAssociatedImage>
                                 {
-                                    new AssociatedImage("w1_evan_peaceful_hqreul", "Caroline's first view of Evan in hospital, just a few hours old"),
+                                    new AssociatedImage("w1_evan_peaceful_hqreul",
+                                        "Caroline's first view of Evan in hospital, just a few hours old"),
                                     new AssociatedImage("w1_emmas_mum_psbo4x", "Emma's mum with Evan"),
                                     new AssociatedImage("w1_emma_evan_bed_s7904r", "Emma and Evan, peaceful in hospital"),
                                     new AssociatedImage("w1_evans_foot_a5kkre", "What a cute footsie!")
@@ -116,8 +267,10 @@ namespace EvansDiary.Web.Diary.StaticContent
                                 Images = new List<IAssociatedImage>
                                 {
                                     new AssociatedImage("w2_sleepy_baby_vvnnrh", "Such a hard life"),
-                                    new AssociatedImage("w2_ooh_looking_at_emma_jzyu66", "One of Evan's cute little expressions! 'Hello mummy!'"),
-                                    new AssociatedImage("w2_being_changed_ctnjl4", "Evan grumbling at having his nappy changed"),
+                                    new AssociatedImage("w2_ooh_looking_at_emma_jzyu66",
+                                        "One of Evan's cute little expressions! 'Hello mummy!'"),
+                                    new AssociatedImage("w2_being_changed_ctnjl4",
+                                        "Evan grumbling at having his nappy changed"),
                                     new AssociatedImage("w2_resting_ao0kl8", "Both of us having a rest")
                                 }
                             }
@@ -1486,11 +1639,594 @@ namespace EvansDiary.Web.Diary.StaticContent
                             }
                         }
                     });
+
+            _imageCollection.Add(2005, new[]
+            {
+                new AssociatedImage("w0-emma-first-hold_n1knip", "Week 0 - The Birth", "251"),
+                new AssociatedImage("w1_evan_peaceful_hqreul", "Week 1", "251"),
+                new AssociatedImage("w2_ooh_looking_at_emma_jzyu66", "Week 2", "251"),
+                new AssociatedImage("w3_playgym_uv93jb", "Week 3", "251"),
+                new AssociatedImage("w4_keep_rocking_boo6gx", "Week 4", "251"),
+                new AssociatedImage("w5_smiling_now_icxvs3", "Week 5", "251"),
+                new AssociatedImage("w6_giggles_uyubtv", "Week 6", "251"),
+                new AssociatedImage("w7_holding_bottle_qdmcu5", "Week 7", "251"),
+                new AssociatedImage("w8_tummy_time_e1kkre", "Week 8", "251"),
+                new AssociatedImage("w9_hello_billy_wcbpep", "Week 9", "251"),
+                new AssociatedImage("w10_new_hat_g1wahu", "Week 10", "251"),
+                new AssociatedImage("w11_bath_time_z5heur", "Week 11", "251"),
+                new AssociatedImage("w12_chewing_fist_cwrcel", "Week 12", "251"),
+                new AssociatedImage("w13_muslin_eswwzj", "Week 13", "251"),
+                new AssociatedImage("w14_new_cap_hk67gt", "Week 14", "251"),
+                new AssociatedImage("w15_sleeping_beauty_hhqwdv", "Week 15", "251"),
+                new AssociatedImage("w16_commando_iucohe", "Week 16", "251"),
+                new AssociatedImage("w17_zonko_tytzud", "Week 17", "251"),
+                new AssociatedImage("w18_sitting_grass_n0iesr", "Week 18", "251"),
+                new AssociatedImage("w19_book_ktfben", "Week 19", "251"),
+                new AssociatedImage("w20_gorgeous_e1ic6v", "Week 20", "251"),
+                new AssociatedImage("w21_cup_drinking_cmtiso", "Week 21", "251"),
+                new AssociatedImage("w22_baby_rice_uy0nyu", "Week 22", "251"),
+                new AssociatedImage("w23_computer_anr207", "Week 23", "251"),
+                new AssociatedImage("w24_happy_baby_ng0web", "Week 24", "251"),
+                new AssociatedImage("w25_trendy_cd6ogm", "Week 25", "251"),
+                new AssociatedImage("w26_lazy_sunday3_cvua3k", "Week 26", "251"),
+                new AssociatedImage("w27_sitting_up_rxcgde", "Week 27", "251"),
+                new AssociatedImage("w28_cool_dude_d6c1du", "Week 28", "251"),
+                new AssociatedImage("w29_heat_wave_ngftvr", "Week 29", "251"),
+                new AssociatedImage("w30_stacking_cups_nw83vy", "Week 30", "251"),
+                new AssociatedImage("w31_got_you_mqwo2u", "Week 31", "251"),
+                new AssociatedImage("w32_bottle_feed_nrtgjv", "Week 32", "251"),
+                new AssociatedImage("w33_sucking_toast_ftgyye", "Week 33", "251"),
+                new AssociatedImage("w34_hello_fluffy_emky6d", "Week 34", "251"),
+                new AssociatedImage("w35_nice_n_clean_qkvuku", "Week 35", "251"),
+                new AssociatedImage("w36_where_are_we_xizm58", "Week 36", "251"),
+                new AssociatedImage("w37_tickle_time_zwaq1u", "Week 37", "251"),
+                new AssociatedImage("w38_new_seat_oormsl", "Week 38", "251"),
+                new AssociatedImage("w39_camera_hunt_bkxsza", "Week 39", "251"),
+                new AssociatedImage("w40_finger_foods_scd7hi", "Week 40", "251"),
+                new AssociatedImage("w41_activity_table_f8nsb2", "Week 41", "251"),
+                new AssociatedImage("w42_evan_impression_skoa4q", "Week 42", "251"),
+                new AssociatedImage("w43_first_shoes_osqu8g", "Week 43", "251"),
+                new AssociatedImage("w44_poorly_baby_tjdx4i", "Week 44", "251"),
+                new AssociatedImage("w45_new_trick_j2p3jd", "Week 45", "251"),
+                new AssociatedImage("w46_camera_fascination_g336ah", "Week 46", "251"),
+                new AssociatedImage("w47_wax_weciuo", "Week 47", "251"),
+                new AssociatedImage("w48_inquisitive_toilet_zqubt8", "Week 48", "251"),
+                new AssociatedImage("w49_strong_legs_kqhxmb", "Week 49", "251"),
+                new AssociatedImage("w50_introducing_nneldz", "Week 50", "251"),
+                new AssociatedImage("w51_matching_hair_fss2zx", "Week 51", "251"),
+                new AssociatedImage("w52_still_loves_camera_e7dxmy", "Week 52", "251")
+            });
+        }
+
+        private void InitialiseYearThreeContent()
+        {
+            var md = new Markdown {ExtraMode = true, SafeMode = false};
+
+            _diaryEntries
+                .Add(
+                    "2007-january",
+                    new DiaryEntry
+                    {
+                        Tag = "January (2007)",
+                        Timeline = new List<ITimeLineEntry>
+                        {
+                            new TimeLineEntry
+                            {
+                                Entry = md.Transform(Year2007.y3Jan),
+                                Images = new List<IAssociatedImage>
+                                {
+                                    new AssociatedImage("jan_train_play_g0yxef",
+                                        "Mummy helps build it, but only Evan gets to play!"),
+                                    new AssociatedImage("jan_play_watching_buhgti",
+                                        "Evan finally notices he's being watched"),
+                                    new AssociatedImage("jan_tv_gneum1", "Catching up on some TV before bed time"),
+                                    new AssociatedImage("jan_noodle_cuddle_skcpkx", "Having a cuddle with Noodle")
+                                }
+                            }
+                        }
+                    });
+
+            _diaryEntries
+                .Add(
+                    "2007-february",
+                    new DiaryEntry
+                    {
+                        Tag = "February (2007)",
+                        Timeline = new List<ITimeLineEntry>
+                        {
+                            new TimeLineEntry
+                            {
+                                Entry = md.Transform(Year2007.y3Feb),
+                                Images = new List<IAssociatedImage>
+                                {
+                                    new AssociatedImage("feb_wellies_indoors_ge8uwr",
+                                        "Can you spot the other obsession?... Wellies indoors!?"),
+                                    new AssociatedImage("feb_puzzles_zqhd0u", "No trouble finding all the pieces"),
+                                    new AssociatedImage("feb_all_done_uncxmv", "One completed puzzle"),
+                                    new AssociatedImage("feb_well_done_g1tyv7",
+                                        "Evan always congratulates himself with a clap and a 'Well Done'")
+                                }
+                            }
+                        }
+                    });
+
+            _diaryEntries
+                .Add(
+                    "2007-march",
+                    new DiaryEntry
+                    {
+                        Tag = "March (2007)",
+                        Timeline = new List<ITimeLineEntry>
+                        {
+                            new TimeLineEntry
+                            {
+                                Entry = md.Transform(Year2007.y3Mar),
+                                Images = new List<IAssociatedImage>
+                                {
+                                    new AssociatedImage("mar_beale_park_lkvbfs", "Evan enjoys a picnic at Beale Park"),
+                                    new AssociatedImage("mar_relaxed_xkidxc",
+                                        "Evan knows how to get comfy in his chair"),
+                                    new AssociatedImage("mar_bath_friends_leou2s",
+                                        "Evan has some bath friends"),
+                                    new AssociatedImage("mar_bath_smiles_wtvm5i", "Look at the face!")
+                                }
+                            }
+                        }
+                    });
+
+            _diaryEntries
+                .Add(
+                    "2007-april",
+                    new DiaryEntry
+                    {
+                        Tag = "April (2007)",
+                        Timeline = new List<ITimeLineEntry>
+                        {
+                            new TimeLineEntry
+                            {
+                                Entry = md.Transform(Year2007.y3Apr),
+                                Images = new List<IAssociatedImage>
+                                {
+                                    new AssociatedImage("apr_exploring_ajj267", "Exploring the countryside"),
+                                    new AssociatedImage("apr_long_grass_z4giel",
+                                        "Evan experiences the fun of playing in long grass"),
+                                    new AssociatedImage("apr_monopoly_eks7td",
+                                        "Not quite ready to play monopoly to the rules"),
+                                    new AssociatedImage("apr_scar_smile_mse9by",
+                                        "As you can see Evan's lip is recovering well - still a cutie!"),
+                                    new AssociatedImage("apr_fridge_magnets_gfpgzk",
+                                        "Evan's favourite toy at Nanny's is her fridge magnets!"),
+                                    new AssociatedImage("apr_legoland_castle_fqpugy", "Can you see us?"),
+                                    new AssociatedImage("apr_safari_car_rtvyrv", "We've just been spotting dinosaurs"),
+                                    new AssociatedImage("apr_passing_time_lltizn",
+                                        "Evan finds something to do whilst waiting in the ride queues")
+                                }
+                            }
+                        }
+                    });
+
+            _diaryEntries
+                .Add(
+                    "2007-may",
+                    new DiaryEntry
+                    {
+                        Tag = "May (2007)",
+                        Timeline = new List<ITimeLineEntry>
+                        {
+                            new TimeLineEntry
+                            {
+                                Entry = md.Transform(Year2007.y3May),
+                                Images = new List<IAssociatedImage>
+                                {
+                                    new AssociatedImage("may_footy_skills_fqizxy",
+                                        "Evan demonstrating his much improved football skills"),
+                                    new AssociatedImage("may_head_first_lepfke",
+                                        "This way is much more fun for Evan, and more scary for me!"),
+                                    new AssociatedImage("may_sore_thumb_pznyqp",
+                                        "Evan's experience with a plaster for the bit of finger nail he pulled off"),
+                                    new AssociatedImage("may_patio_seat_axvbky",
+                                        "Garden bench?!? No Thanks, this is far more comfortable")
+                                }
+                            }
+                        }
+                    });
+
+            _diaryEntries
+                .Add(
+                    "2007-june",
+                    new DiaryEntry
+                    {
+                        Tag = "June (2007)",
+                        Timeline = new List<ITimeLineEntry>
+                        {
+                            new TimeLineEntry
+                            {
+                                Subheading = "1st June 2007 - Family Reunion BBQ",
+                                Entry = md.Transform(Year2007.y3Jun_1st),
+                                Images = new List<IAssociatedImage>
+                                {
+                                    new AssociatedImage("june_small_group_rczm3m",
+                                        "Caroline's mum with her relatives from France"),
+                                    new AssociatedImage("june_carlsberg_lira6t", "Anyone for Carlsberg?"),
+                                    new AssociatedImage("june_evan_dances_xog76l",
+                                        "Evan playing on the dance mat"),
+                                    new AssociatedImage("june_large_group_bpsivp", "BBQ reuinion group photo")
+                                }
+                            },
+                            new TimeLineEntry
+                            {
+                                Subheading = "10th June 2007 - Marwell Zoo",
+                                Entry = md.Transform(Year2007.y3Jun_10th),
+                                Images = new List<IAssociatedImage>
+                                {
+                                    new AssociatedImage("june_zoo_day_out_w15jr6", "All set for our day at the zoo"),
+                                    new AssociatedImage("june_snow_leopard_yfmdgt", "Beautiful Endangered Snow Leopard"),
+                                    new AssociatedImage("june_giraffe_height_onpbaf", "Still a long way to go"),
+                                    new AssociatedImage("june_penguin_z2t4u7", "Poor little penguin looking far too hot")
+                                }
+                            },
+                            new TimeLineEntry
+                            {
+                                Subheading = "22nd June 2007 - Neil & Pascale's Wedding",
+                                Entry = md.Transform(Year2007.y3Jun_22nd),
+                                Images = new List<IAssociatedImage>
+                                {
+                                    new AssociatedImage("june_exploring_zdioh7",
+                                        "Exploring the grounds keeping out of trouble"),
+                                    new AssociatedImage("june_suit_q90xgh", "The suit is on the large side!"),
+                                    new AssociatedImage("june_happily_married_fig3ti",
+                                        "Evan shows his smart side (if you ignore the black eye that is)"),
+                                    new AssociatedImage("june_joke_with_grandma_rppq18",
+                                        "Evan shares a joke with Grandma")
+                                }
+                            },
+                            new TimeLineEntry
+                            {
+                                Subheading = "29th June 2007 - Holiday in France",
+                                Entry = md.Transform(Year2007.y3Jun_29th),
+                                Images = new List<IAssociatedImage>
+                                {
+                                    new AssociatedImage("june_river_washing_ua2nte",
+                                        "The private river came in handy for washing the car seat cover"),
+                                    new AssociatedImage("june_jacques_bbq_nrwerj",
+                                        "Jacques prepares a natural fire for the BBQ. The sausages were yummy!"),
+                                    new AssociatedImage("june_pleasant_walk_d3gev6",
+                                        "Those little legs get tired easy, luckily Caroline saves the day"),
+                                    new AssociatedImage("june_evan_boat_xtbzve",
+                                        "Evan is not sure what to think of the life jacket"),
+                                    new AssociatedImage("june_pascale_carry_zqndax",
+                                        "Pascale helped with the carrying when Evan got tired"),
+                                    new AssociatedImage("june_wind_tears_nn1xob",
+                                        "The wind was so strong it made Evan cry"),
+                                    new AssociatedImage("june_strong_Arms_btuf6b",
+                                        "Evan makes up a new ball game, with a tree!"),
+                                    new AssociatedImage("june_room_to_run_mq46vh",
+                                        "So much space for Evan to run around in")
+                                }
+                            }
+                        }
+                    });
+
+            _diaryEntries
+                .Add(
+                    "2007-july",
+                    new DiaryEntry
+                    {
+                        Tag = "July (2007)",
+                        Timeline = new List<ITimeLineEntry>
+                        {
+                            new TimeLineEntry
+                            {
+                                Subheading = "7th July 2007",
+                                Entry = md.Transform(Year2007.y3Jul_7th),
+                                Images = new List<IAssociatedImage>
+                                {
+                                    new AssociatedImage("july_lego_fun_n2i5ym",
+                                        "Evan is starting to appreciate his lego more now he is older"),
+                                    new AssociatedImage("july_sleepy_boys_mjlqcr",
+                                        "Evan and Noodle decide that they just can't go on anymore"),
+                                    new AssociatedImage("july_water_feature_hhmegc",
+                                        "Fascinated by Nanny's garden water feature"),
+                                    new AssociatedImage("july_rearrange_garden_tqsdvn",
+                                        "Evan's new game—rearranging the garden ornaments")
+                                }
+                            },
+                            new TimeLineEntry
+                            {
+                                Subheading = "10th July 2007",
+                                Entry = md.Transform(Year2007.y3Jul_10th),
+                                Images = new List<IAssociatedImage>
+                                {
+                                    new AssociatedImage("july_bubble_machine_kzi6wz",
+                                        "Introducing the bubble machine..."),
+                                    new AssociatedImage("july_make_bubbles_ihr1gc",
+                                        "...getting used to how you turn the maker..."),
+                                    new AssociatedImage("july_watch_bubbles_dalmp0",
+                                        "...huge bubbles start to float away..."),
+                                    new AssociatedImage("july_bubbles_fly_away_z9cvlc",
+                                        "...Evan has mastered the art of making giant bubbles")
+                                }
+                            },
+                            new TimeLineEntry
+                            {
+                                Subheading = "14th July 2007 - Legoland Live Festival",
+                                Entry = md.Transform(Year2007.y3Jul_14th),
+                                Images = new List<IAssociatedImage>
+                                {
+                                    new AssociatedImage("july_first_festival_fg5aa0", "Evan's first festival!"),
+                                    new AssociatedImage("july_cardboard_bob_ftsjh3",
+                                        "Evan shows off his cardboard Bob the Builder!"),
+                                    new AssociatedImage("july_singing_along_efz6nd", "Singing along to all the songs"),
+                                    new AssociatedImage("july_legoland_swings_io9nwc",
+                                        "Evan can now ride the swings solo")
+                                }
+                            },
+                            new TimeLineEntry
+                            {
+                                Subheading = "30th July 2007",
+                                Entry = md.Transform(Year2007.y3Jul_30th),
+                                Images = new List<IAssociatedImage>
+                                {
+                                    new AssociatedImage("july_which_one_td321z", "Time to choose... hat, dog or ship"),
+                                    new AssociatedImage("july_this_one_jvbkyo", "The ship it is"),
+                                    new AssociatedImage("july_lets_play_ijulto",
+                                        "Just like Caroline, Evan is going to be ruthless at Monopoly..."),
+                                    new AssociatedImage("july_cheating_fkgxeo",
+                                        "... or he might steal from the bank like his Mum!")
+                                }
+                            }
+                        }
+                    });
+
+            _diaryEntries
+                .Add(
+                    "2007-august",
+                    new DiaryEntry
+                    {
+                        Tag = "August (2007)",
+                        Timeline = new List<ITimeLineEntry>
+                        {
+                            new TimeLineEntry
+                            {
+                                Subheading = "2nd August 2007",
+                                Entry = md.Transform(Year2007.y3Aug_2nd),
+                                Images = new List<IAssociatedImage>
+                                {
+                                    new AssociatedImage("aug_flowers_d8zoya",
+                                        "Any image like this saddens me, but it's worse when you know the person"),
+                                    new AssociatedImage("aug_becky_trevor_bvx2p9",
+                                        "Becky and Trevor having a laugh at the pub"),
+                                    new AssociatedImage("aug_becky_clare_spzqxk",
+                                        "Becky was very popular and friendly to everyone"),
+                                    new AssociatedImage("aug_crossroad_ytfgeq",
+                                        "The cross road showing the signs of the accident")
+                                }
+                            },
+                            new TimeLineEntry
+                            {
+                                Subheading = "18th August 2007",
+                                Entry = md.Transform(Year2007.y3Aug_18th),
+                                Images = new List<IAssociatedImage>
+                                {
+                                    new AssociatedImage("aug-bouncy-castle_cuqqe5",
+                                        "Finally Evan enjoys the bouncy castle"),
+                                    new AssociatedImage("aug_play_dough_s7qynr",
+                                        "Enjoying the texture, not quite making shapes yet"),
+                                    new AssociatedImage("aug_nap_time_wsq13e", "Nap time for Evan!"),
+                                    new AssociatedImage("aug_block_stacking_xeulex", "Stacking blocks successfully")
+                                }
+                            }
+                        }
+                    });
+
+            _diaryEntries
+                .Add(
+                    "2007-september",
+                    new DiaryEntry
+                    {
+                        Tag = "September (2007)",
+                        Timeline = new List<ITimeLineEntry>
+                        {
+                            new TimeLineEntry
+                            {
+                                Subheading = "18th September 2007",
+                                Entry = md.Transform(Year2007.y3Sep_18th),
+                                Images = new List<IAssociatedImage>
+                                {
+                                    new AssociatedImage("sept_peanut_playdough_abxvfo",
+                                        "Evan has fun making edible playdough"),
+                                    new AssociatedImage("sept_dribbling_yaenuu",
+                                        "Evan demonstrates where Tottenham have been going wrong this season"),
+                                    new AssociatedImage("sept_football_pk0guu", "Not bad for a 2 year old"),
+                                    new AssociatedImage("sept_swing_ocn7bq", "Evan still loves his swing in the garden")
+                                }
+                            },
+                            new TimeLineEntry
+                            {
+                                Subheading = "23rd September 2007 - Meeting the famous Roary",
+                                Entry = md.Transform(Year2007.y3Sep_23rd),
+                                Images = new List<IAssociatedImage>
+                                {
+                                    new AssociatedImage("sept_meeting_roary_hnyhff", "Evan finally gets to meet Roary!"),
+                                    new AssociatedImage("sept_playing_fireman_qdabuv",
+                                        "Head to head fire challenge at Legoland.. Uncle Frank Won!"),
+                                    new AssociatedImage("sept_solo_vq1ubc", "More swing action"),
+                                    new AssociatedImage("sept_lego_rides_ktul5f", "Enjoying the big wheel ride")
+                                }
+                            }
+                        }
+                    });
+
+            _diaryEntries
+                .Add(
+                    "2007-october",
+                    new DiaryEntry
+                    {
+                        Tag = "October (2007)",
+                        Timeline = new List<ITimeLineEntry>
+                        {
+                            new TimeLineEntry
+                            {
+                                Subheading = "5th October 2007 - Potty Training",
+                                Entry = md.Transform(Year2007.y3Oct_5th),
+                                Images = new List<IAssociatedImage>
+                                {
+                                    new AssociatedImage("oct_book_e1bo4g", "Evan sharing a story with his nanny"),
+                                    new AssociatedImage("oct_nanny_giggles_qqfav8",
+                                        "I'm not sure they are getting much of the story read there"),
+                                    new AssociatedImage("oct_cheeky_boy_dpoenp",
+                                        "Evan shows off his typical cheeky look"),
+                                    new AssociatedImage("oct_exploring_mvbmvn", "Evan is fascinated by the long grass")
+                                }
+                            },
+                            new TimeLineEntry
+                            {
+                                Subheading = "27th October 2007 - Cadbury's Gorilla",
+                                Entry = md.Transform(Year2007.y3Oct_27th)
+                            }
+                        }
+                    });
+
+            _diaryEntries
+                .Add(
+                    "2007-november",
+                    new DiaryEntry
+                    {
+                        Tag = "November (2007)",
+                        Timeline = new List<ITimeLineEntry>
+                        {
+                            new TimeLineEntry
+                            {
+                                Subheading = "2nd November - Amber turns 2",
+                                Entry = md.Transform(Year2007.y3Nov_2nd),
+                                Images = new List<IAssociatedImage>
+                                {
+                                    new AssociatedImage("nov_growing_up_zxwyzx", "Growing up fast!"),
+                                    new AssociatedImage("nov_amber_h8orb7", "Nice and cosy on the sofa"),
+                                    new AssociatedImage("nov_evan_izzy_t2bizu",
+                                        "Evan adores Izzy, I'm sure he wants his own dog!"),
+                                    new AssociatedImage("nov_ice-cream_xwuzuo",
+                                        "Showing some cute baby belly for ice-cream????")
+                                }
+                            },
+                            new TimeLineEntry
+                            {
+                                Subheading = "11th November - More birthday party fun",
+                                Entry = md.Transform(Year2007.y3Nov_11th),
+                                Images = new List<IAssociatedImage>
+                                {
+                                    new AssociatedImage("nov_abbie1_ezqa0c",
+                                        "Evan finally settles in the soft play area with his friends"),
+                                    new AssociatedImage("nov_abbie2_rifqjq", "Evan attempts to barracade Beth in"),
+                                    new AssociatedImage("nov_abbie3_j06k2c", "These huge objects were a huge hit!"),
+                                    new AssociatedImage("nov_abbie4_le9b9o",
+                                        "All quiet when the children sit down to eat")
+                                }
+                            },
+                            new TimeLineEntry
+                            {
+                                Subheading = "18th November - No raisins for you",
+                                Entry = md.Transform(Year2007.y3Nov_18th)
+                            }
+                        }
+                    });
+
+            _diaryEntries
+                .Add(
+                    "2007-december",
+                    new DiaryEntry
+                    {
+                        Tag = "December (2007)",
+                        Timeline = new List<ITimeLineEntry>
+                        {
+                            new TimeLineEntry
+                            {
+                                Subheading = "2nd December - 3 become 2",
+                                Entry = md.Transform(Year2007.y3Dec_2nd),
+                                Images = new List<IAssociatedImage>
+                                {
+                                    new AssociatedImage("dec_slide_start_awd0x1",
+                                        "Is this going to have a happy ending?"),
+                                    new AssociatedImage("dec_slide_finish_r7ry9j", "They seemed to like it!"),
+                                    new AssociatedImage("dec_garden_tm9zws", "Not sure who is having the most fun!"),
+                                    new AssociatedImage("dec_sofa_sleeps_nrbcmx", "Having a sneaky little nap")
+                                }
+                            },
+                            new TimeLineEntry
+                            {
+                                Subheading = "14th December - King Evan",
+                                Entry = md.Transform(Year2007.y3Dec_14th),
+                                Images = new List<IAssociatedImage>
+                                {
+                                    new AssociatedImage("dec_king_evan_bzdiwx", "Evan models his nativity outfit"),
+                                    new AssociatedImage("dec_king_myrrh_liwqtt", "Evan with his gift of myrrh"),
+                                    new AssociatedImage("dec_nativity_dinner_qdmhhy",
+                                        "Nativity done, now onto the food!"),
+                                    new AssociatedImage("dec_evan_and_lucy_ofbfht", "This is Lucy, Evan adores her")
+                                }
+                            },
+                            new TimeLineEntry
+                            {
+                                Subheading = "24th December - Birthday cake fun!",
+                                Entry = md.Transform(Year2007.y3Dec_24th),
+                                Images = new List<IAssociatedImage>
+                                {
+                                    new AssociatedImage("dec_grandma_hosts_ous9gu",
+                                        "It's Christmas at Grandma's this year"),
+                                    new AssociatedImage("dec_cake_flat_s82oro", "Is that a cake?"),
+                                    new AssociatedImage("dec_cake_rise_zwog8z", "Now that's more like it!"),
+                                    new AssociatedImage("lego_fire_engine_g76ixi",
+                                        "Evan's fire engine from legoland is still in one piece")
+                                }
+                            },
+                            new TimeLineEntry
+                            {
+                                Subheading = "25th December - Evan remembers Christmas",
+                                Entry = md.Transform(Year2007.y3Dec_25th),
+                                Images = new List<IAssociatedImage>
+                                {
+                                    new AssociatedImage("dec_xmas_amluwn", "Finally the waiting is over!"),
+                                    new AssociatedImage("dec_uncle_matt_pttpr6", "Uncle Matt watches on"),
+                                    new AssociatedImage("dec_playing_vsxobm", "Presents all opened, now time to play"),
+                                    new AssociatedImage("dec_toys_z8eaec",
+                                        "Chirpy the Spurs mascot has a look at the new cars")
+                                }
+                            },
+                            new TimeLineEntry
+                            {
+                                Subheading = "26th December - Evan turns 3",
+                                Entry = md.Transform(Year2007.y3Dec_26th),
+                                Images = new List<IAssociatedImage>
+                                {
+                                    new AssociatedImage("dec_birthday_exs6bd", "It's birthday time!"),
+                                    new AssociatedImage("dec_more_presents_iop2ii", "Happy 3rd birthday"),
+                                    new AssociatedImage("dec_lego_fan_mihkwr", "Lego features heavily again this year"),
+                                    new AssociatedImage("dec_whos_toys_uucvbn", "My my Evan, haven't you grown")
+                                }
+                            }
+                        }
+                    });
+
+            _imageCollection.Add(2007, new[]
+            {
+                new AssociatedImage("jan_play_watching_buhgti", "January", "251"),
+                new AssociatedImage("feb_well_done_g1tyv7", "February", "251"),
+                new AssociatedImage("mar_relaxed_xkidxc", "March", "251"),
+                new AssociatedImage("apr_scar_smile_mse9by", "April", "251"),
+                new AssociatedImage("may_head_first_lepfke", "May", "251"),
+                new AssociatedImage("june_evan_boat_xtbzve", "June", "251"),
+                new AssociatedImage("july_cardboard_bob_ftsjh3", "July", "251"),
+                new AssociatedImage("aug_block_stacking_xeulex", "August", "251"),
+                new AssociatedImage("sept_meeting_roary_hnyhff", "September", "251"),
+                new AssociatedImage("oct_nanny_giggles_qqfav8", "October", "251"),
+                new AssociatedImage("nov_abbie2_rifqjq", "November", "251"),
+                new AssociatedImage("dec_king_evan_bzdiwx", "December", "251")
+            });
         }
 
         private void InitialiseYearTwoContent()
         {
-            var md = new Markdown { ExtraMode = true, SafeMode = false };
+            var md = new Markdown {ExtraMode = true, SafeMode = false};
 
             _diaryEntries
                 .Add(
@@ -1569,7 +2305,8 @@ namespace EvansDiary.Web.Diary.StaticContent
                                     new AssociatedImage("mar_indoor_car_gpbppv", "Getting the car ready"),
                                     new AssociatedImage("mar_congestion_fqunat", "Congestion ahead"),
                                     new AssociatedImage("mar_winding_ckbbyb", "Getting the burps out!"),
-                                    new AssociatedImage("mar_pants_pxhyk4", "You are supposed to hang out the washing, not wear it!")
+                                    new AssociatedImage("mar_pants_pxhyk4",
+                                        "You are supposed to hang out the washing, not wear it!")
                                 }
                             }
                         }
@@ -1589,14 +2326,19 @@ namespace EvansDiary.Web.Diary.StaticContent
                                 Images = new List<IAssociatedImage>
                                 {
                                     new AssociatedImage("apr_england_hat_xnsst7", "Start them supporting young"),
-                                    new AssociatedImage("apr_odds_farm_e5pwwp", "Evan enjoying a ride about at Odds Farm Park"),
+                                    new AssociatedImage("apr_odds_farm_e5pwwp",
+                                        "Evan enjoying a ride about at Odds Farm Park"),
                                     new AssociatedImage("apr_stacking_bricks_aj9gkv",
                                         "Evan showing off his stacking skills - his max is 10 so far!"),
                                     new AssociatedImage("apr_piggy_back_kifssv", "Evan loves Mummy's piggy back ride"),
-                                    new AssociatedImage("apr_tower_mhruu7", "Evan needs help to complete his duplo towers"),
-                                    new AssociatedImage("apr_collecting_stones_b28vrc", "Collecting stones in the garden"),
-                                    new AssociatedImage("apr_climbing_frame_gjwf0i", "The swing doubles up as a climbing frame"),
-                                    new AssociatedImage("apr_swing_high_ziughk", "A trip to the park swing is necessary for maximum height")
+                                    new AssociatedImage("apr_tower_mhruu7",
+                                        "Evan needs help to complete his duplo towers"),
+                                    new AssociatedImage("apr_collecting_stones_b28vrc",
+                                        "Collecting stones in the garden"),
+                                    new AssociatedImage("apr_climbing_frame_gjwf0i",
+                                        "The swing doubles up as a climbing frame"),
+                                    new AssociatedImage("apr_swing_high_ziughk",
+                                        "A trip to the park swing is necessary for maximum height")
                                 }
                             }
                         }
@@ -1619,8 +2361,10 @@ namespace EvansDiary.Web.Diary.StaticContent
                                         "Maybe he wants to be patriotic by dying his hair!"),
                                     new AssociatedImage("may_sleepy_lunch_nqrz4h",
                                         "Oh such a hard life! Evan couldn't even wait for pudding this day..."),
-                                    new AssociatedImage("may_world_cup_ready_rbt1dc", "Evan's all ready for the World Cup!"),
-                                    new AssociatedImage("may_plane_spotting_kful3h", "Spotting some planes (Evan says pwane)"),
+                                    new AssociatedImage("may_world_cup_ready_rbt1dc",
+                                        "Evan's all ready for the World Cup!"),
+                                    new AssociatedImage("may_plane_spotting_kful3h",
+                                        "Spotting some planes (Evan says pwane)"),
                                     new AssociatedImage("may_make_shift_chair_lwviam", "Our makeshift chair for Evan"),
                                     new AssociatedImage("may_new_car_yc3cn9", "Evan finally gets out in his new car"),
                                     new AssociatedImage("may_happy_in_car_qbumwz", "Beep! Beep!"),
@@ -1673,10 +2417,12 @@ namespace EvansDiary.Web.Diary.StaticContent
                                 {
                                     new AssociatedImage("jul_trampoline_fkiuhs", "Evan loves his new trampoline"),
                                     new AssociatedImage("july_booster_n61rho", "Evan loves eating at the table with us"),
-                                    new AssociatedImage("july_slide_c3ijt0", "'Wow!' was Evan's reaction to his new slide"),
+                                    new AssociatedImage("july_slide_c3ijt0",
+                                        "'Wow!' was Evan's reaction to his new slide"),
                                     new AssociatedImage("jul_legoland_tarjvl", "Oooh! look at this Mummy"),
                                     new AssociatedImage("jul_slide_done_fd30gj", "Little rest after sliding"),
-                                    new AssociatedImage("jul_queue_entertainment_ud6t2j", "Keeping a child entertained in a queue is a challenge"),
+                                    new AssociatedImage("jul_queue_entertainment_ud6t2j",
+                                        "Keeping a child entertained in a queue is a challenge"),
                                     new AssociatedImage("jul_paddling_pool_pvcxcg", "This is more fun than swimming!"),
                                     new AssociatedImage("jul_legoland_ride_h1okgq", "Enjoying the train ride")
                                 }
@@ -1702,11 +2448,14 @@ namespace EvansDiary.Web.Diary.StaticContent
                                         "Evan decides to launch himself on Mummy whilst she's not looking!"),
                                     new AssociatedImage("aug_group_photo_prxlhp",
                                         "Evan and his friends - this scene took only one attempt"),
-                                    new AssociatedImage("aug_water_feature_eprop8", "Playing with the water feature at Nanny's"),
+                                    new AssociatedImage("aug_water_feature_eprop8",
+                                        "Playing with the water feature at Nanny's"),
                                     new AssociatedImage("aug_new_tower_gp39ft", "A new way to build a tower"),
                                     new AssociatedImage("aug_model_pose_xfyllo", "Always has such a cheeky look"),
-                                    new AssociatedImage("aug_concentration_unmbjm", "His little tongue sneaks out when he is concentrating"),
-                                    new AssociatedImage("aug_ball_on_slide_umjjv2", "Even balls can have fun on the slide")
+                                    new AssociatedImage("aug_concentration_unmbjm",
+                                        "His little tongue sneaks out when he is concentrating"),
+                                    new AssociatedImage("aug_ball_on_slide_umjjv2",
+                                        "Even balls can have fun on the slide")
                                 }
                             }
                         }
@@ -1726,9 +2475,12 @@ namespace EvansDiary.Web.Diary.StaticContent
                                 Images = new List<IAssociatedImage>
                                 {
                                     new AssociatedImage("sept_ikea_chair_tszca5", "At last! we have a chair"),
-                                    new AssociatedImage("sept_slippers_u2vmtm", "See Mum, I told you these were the right size"),
-                                    new AssociatedImage("sept_legoland_ommape", "Come on, you know you want to get closer..."),
-                                    new AssociatedImage("sept_hello_dog_mzv1gc", "Evan likes to watch Holly the dog next door")
+                                    new AssociatedImage("sept_slippers_u2vmtm",
+                                        "See Mum, I told you these were the right size"),
+                                    new AssociatedImage("sept_legoland_ommape",
+                                        "Come on, you know you want to get closer..."),
+                                    new AssociatedImage("sept_hello_dog_mzv1gc",
+                                        "Evan likes to watch Holly the dog next door")
                                 }
                             }
                         }
@@ -1771,7 +2523,8 @@ namespace EvansDiary.Web.Diary.StaticContent
                                 Images = new List<IAssociatedImage>
                                 {
                                     new AssociatedImage("nov_bin_pose_yneutu", "Ignore the bin mummy, just look at me!"),
-                                    new AssociatedImage("nov_cute_hair_sk4ev7", "Mummy always finds Evan when he is hiding"),
+                                    new AssociatedImage("nov_cute_hair_sk4ev7",
+                                        "Mummy always finds Evan when he is hiding"),
                                     new AssociatedImage("nov_ice_cream_wiajqy", "Sharing some ice-cream"),
                                     new AssociatedImage("nov_casual_lcxpck", "Hello cutie")
                                 }
@@ -1806,594 +2559,22 @@ namespace EvansDiary.Web.Diary.StaticContent
                             }
                         }
                     });
-        }
 
-        private void InitialiseYearThreeContent()
-        {
-            var md = new Markdown { ExtraMode = true, SafeMode = false };
-
-            _diaryEntries
-                .Add(
-                    "2007-january",
-                    new DiaryEntry
-                    {
-                        Tag = "January (2007)",
-                        Timeline = new List<ITimeLineEntry>
-                        {
-                            new TimeLineEntry
-                            {
-                                Entry = md.Transform(Year2007.y3Jan),
-                                Images = new List<IAssociatedImage>
-                                {
-                                    new AssociatedImage("jan_train_play_g0yxef",
-                                        "Mummy helps build it, but only Evan gets to play!"),
-                                    new AssociatedImage("jan_play_watching_buhgti", "Evan finally notices he's being watched"),
-                                    new AssociatedImage("jan_tv_gneum1", "Catching up on some TV before bed time"),
-                                    new AssociatedImage("jan_noodle_cuddle_skcpkx", "Having a cuddle with Noodle")
-                                }
-                            }
-                        }
-                    });
-
-            _diaryEntries
-                .Add(
-                    "2007-february",
-                    new DiaryEntry
-                    {
-                        Tag = "February (2007)",
-                        Timeline = new List<ITimeLineEntry>
-                        {
-                            new TimeLineEntry
-                            {
-                                Entry = md.Transform(Year2007.y3Feb),
-                                Images = new List<IAssociatedImage>
-                                {
-                                    new AssociatedImage("feb_wellies_indoors_ge8uwr",
-                                        "Can you spot the other obsession?... Wellies indoors!?"),
-                                    new AssociatedImage("feb_puzzles_zqhd0u", "No trouble finding all the pieces"),
-                                    new AssociatedImage("feb_all_done_uncxmv", "One completed puzzle"),
-                                    new AssociatedImage("feb_well_done_g1tyv7",
-                                        "Evan always congratulates himself with a clap and a 'Well Done'")
-                                }
-                            }
-                        }
-                    });
-
-            _diaryEntries
-                .Add(
-                    "2007-march",
-                    new DiaryEntry
-                    {
-                        Tag = "March (2007)",
-                        Timeline = new List<ITimeLineEntry>
-                        {
-                            new TimeLineEntry
-                            {
-                                Entry = md.Transform(Year2007.y3Mar),
-                                Images = new List<IAssociatedImage>
-                                {
-                                    new AssociatedImage("mar_beale_park_lkvbfs", "Evan enjoys a picnic at Beale Park"),
-                                    new AssociatedImage("mar_relaxed_xkidxc",
-                                        "Evan knows how to get comfy in his chair"),
-                                    new AssociatedImage("mar_bath_friends_leou2s",
-                                        "Evan has some bath friends"),
-                                    new AssociatedImage("mar_bath_smiles_wtvm5i", "Look at the face!")
-                                }
-                            }
-                        }
-                    });
-
-            _diaryEntries
-                .Add(
-                    "2007-april",
-                    new DiaryEntry
-                    {
-                        Tag = "April (2007)",
-                        Timeline = new List<ITimeLineEntry>
-                        {
-                            new TimeLineEntry
-                            {
-                                Entry = md.Transform(Year2007.y3Apr),
-                                Images = new List<IAssociatedImage>
-                                {
-                                    new AssociatedImage("apr_exploring_ajj267", "Exploring the countryside"),
-                                    new AssociatedImage("apr_long_grass_z4giel",
-                                        "Evan experiences the fun of playing in long grass"),
-                                    new AssociatedImage("apr_monopoly_eks7td",
-                                        "Not quite ready to play monopoly to the rules"),
-                                    new AssociatedImage("apr_scar_smile_mse9by", "As you can see Evan's lip is recovering well - still a cutie!"),
-                                    new AssociatedImage("apr_fridge_magnets_gfpgzk",
-                                        "Evan's favourite toy at Nanny's is her fridge magnets!"),
-                                    new AssociatedImage("apr_legoland_castle_fqpugy", "Can you see us?"),
-                                    new AssociatedImage("apr_safari_car_rtvyrv", "We've just been spotting dinosaurs"),
-                                    new AssociatedImage("apr_passing_time_lltizn", "Evan finds something to do whilst waiting in the ride queues")
-                                }
-                            }
-                        }
-                    });
-
-            _diaryEntries
-                .Add(
-                    "2007-may",
-                    new DiaryEntry
-                    {
-                        Tag = "May (2007)",
-                        Timeline = new List<ITimeLineEntry>
-                        {
-                            new TimeLineEntry
-                            {
-                                Entry = md.Transform(Year2007.y3May),
-                                Images = new List<IAssociatedImage>
-                                {
-                                    new AssociatedImage("may_footy_skills_fqizxy",
-                                        "Evan demonstrating his much improved football skills"),
-                                    new AssociatedImage("may_head_first_lepfke",
-                                        "This way is much more fun for Evan, and more scary for me!"),
-                                    new AssociatedImage("may_sore_thumb_pznyqp",
-                                        "Evan's experience with a plaster for the bit of finger nail he pulled off"),
-                                    new AssociatedImage("may_patio_seat_axvbky", "Garden bench?!? No Thanks, this is far more comfortable")
-                                }
-                            }
-                        }
-                    });
-
-            _diaryEntries
-                .Add(
-                    "2007-june",
-                    new DiaryEntry
-                    {
-                        Tag = "June (2007)",
-                        Timeline = new List<ITimeLineEntry>
-                        {
-                            new TimeLineEntry
-                            {
-                                Subheading = "1st June 2007 - Family Reunion BBQ",
-                                Entry = md.Transform(Year2007.y3Jun_1st),
-                                Images = new List<IAssociatedImage>
-                                {
-                                    new AssociatedImage("june_small_group_rczm3m", "Caroline's mum with her relatives from France"),
-                                    new AssociatedImage("june_carlsberg_lira6t", "Anyone for Carlsberg?"),
-                                    new AssociatedImage("june_evan_dances_xog76l",
-                                        "Evan playing on the dance mat"),
-                                    new AssociatedImage("june_large_group_bpsivp", "BBQ reuinion group photo")
-                                }
-                            },
-                            new TimeLineEntry
-                            {
-                                Subheading = "10th June 2007 - Marwell Zoo",
-                                Entry = md.Transform(Year2007.y3Jun_10th),
-                                Images = new List<IAssociatedImage>
-                                {
-                                    new AssociatedImage("june_zoo_day_out_w15jr6", "All set for our day at the zoo"),
-                                    new AssociatedImage("june_snow_leopard_yfmdgt", "Beautiful Endangered Snow Leopard"),
-                                    new AssociatedImage("june_giraffe_height_onpbaf", "Still a long way to go"),
-                                    new AssociatedImage("june_penguin_z2t4u7", "Poor little penguin looking far too hot")
-                                }                            
-                            },
-                            new TimeLineEntry
-                            {
-                                Subheading = "22nd June 2007 - Neil & Pascale's Wedding",
-                                Entry = md.Transform(Year2007.y3Jun_22nd),
-                                Images = new List<IAssociatedImage>
-                                {
-                                    new AssociatedImage("june_exploring_zdioh7", "Exploring the grounds keeping out of trouble"),
-                                    new AssociatedImage("june_suit_q90xgh", "The suit is on the large side!"),
-                                    new AssociatedImage("june_happily_married_fig3ti",
-                                        "Evan shows his smart side (if you ignore the black eye that is)"),
-                                    new AssociatedImage("june_joke_with_grandma_rppq18", "Evan shares a joke with Grandma")
-                                }
-                            },
-                            new TimeLineEntry
-                            {
-                                Subheading = "29th June 2007 - Holiday in France",
-                                Entry = md.Transform(Year2007.y3Jun_29th),
-                                Images = new List<IAssociatedImage>
-                                {
-                                    new AssociatedImage("june_river_washing_ua2nte", "The private river came in handy for washing the car seat cover"),
-                                    new AssociatedImage("june_jacques_bbq_nrwerj", "Jacques prepares a natural fire for the BBQ. The sausages were yummy!"),
-                                    new AssociatedImage("june_pleasant_walk_d3gev6", "Those little legs get tired easy, luckily Caroline saves the day"),
-                                    new AssociatedImage("june_evan_boat_xtbzve", "Evan is not sure what to think of the life jacket"),
-                                    new AssociatedImage("june_pascale_carry_zqndax", "Pascale helped with the carrying when Evan got tired"),
-                                    new AssociatedImage("june_wind_tears_nn1xob", "The wind was so strong it made Evan cry"),
-                                    new AssociatedImage("june_strong_Arms_btuf6b", "Evan makes up a new ball game, with a tree!"),
-                                    new AssociatedImage("june_room_to_run_mq46vh", "So much space for Evan to run around in")
-                                }
-                            }
-                        }
-                    });
-
-            _diaryEntries
-                .Add(
-                    "2007-july",
-                    new DiaryEntry
-                    {
-                        Tag = "July (2007)",
-                        Timeline = new List<ITimeLineEntry>
-                        {
-                            new TimeLineEntry
-                            {
-                                Subheading = "7th July 2007",
-                                Entry = md.Transform(Year2007.y3Jul_7th),
-                                Images = new List<IAssociatedImage>
-                                {
-                                    new AssociatedImage("july_lego_fun_n2i5ym", "Evan is starting to appreciate his lego more now he is older"),
-                                    new AssociatedImage("july_sleepy_boys_mjlqcr", "Evan and Noodle decide that they just can't go on anymore"),
-                                    new AssociatedImage("july_water_feature_hhmegc", "Fascinated by Nanny's garden water feature"),
-                                    new AssociatedImage("july_rearrange_garden_tqsdvn", "Evan's new game—rearranging the garden ornaments")
-                                }
-                            },
-                            new TimeLineEntry
-                            {
-                                Subheading = "10th July 2007",
-                                Entry = md.Transform(Year2007.y3Jul_10th),
-                                Images = new List<IAssociatedImage>
-                                {
-                                    new AssociatedImage("july_bubble_machine_kzi6wz", "Introducing the bubble machine..."),
-                                    new AssociatedImage("july_make_bubbles_ihr1gc", "...getting used to how you turn the maker..."),
-                                    new AssociatedImage("july_watch_bubbles_dalmp0", "...huge bubbles start to float away..."),
-                                    new AssociatedImage("july_bubbles_fly_away_z9cvlc", "...Evan has mastered the art of making giant bubbles")
-                                }
-                            },
-                            new TimeLineEntry
-                            {
-                                Subheading = "14th July 2007 - Legoland Live Festival",
-                                Entry = md.Transform(Year2007.y3Jul_14th),
-                                Images = new List<IAssociatedImage>
-                                {
-                                    new AssociatedImage("july_first_festival_fg5aa0", "Evan's first festival!"),
-                                    new AssociatedImage("july_cardboard_bob_ftsjh3", "Evan shows off his cardboard Bob the Builder!"),
-                                    new AssociatedImage("july_singing_along_efz6nd", "Singing along to all the songs"),
-                                    new AssociatedImage("july_legoland_swings_io9nwc", "Evan can now ride the swings solo")
-                                }
-                            },
-                            new TimeLineEntry
-                            {
-                                Subheading = "30th July 2007",
-                                Entry = md.Transform(Year2007.y3Jul_30th),
-                                Images = new List<IAssociatedImage>
-                                {
-                                    new AssociatedImage("july_which_one_td321z", "Time to choose... hat, dog or ship"),
-                                    new AssociatedImage("july_this_one_jvbkyo", "The ship it is"),
-                                    new AssociatedImage("july_lets_play_ijulto", "Just like Caroline, Evan is going to be ruthless at Monopoly..."),
-                                    new AssociatedImage("july_cheating_fkgxeo", "... or he might steal from the bank like his Mum!")
-                                }
-                            }
-                        }
-                    });
-
-            _diaryEntries
-                .Add(
-                    "2007-august",
-                    new DiaryEntry
-                    {
-                        Tag = "August (2007)",
-                        Timeline = new List<ITimeLineEntry>
-                        {
-                            new TimeLineEntry
-                            {
-                                Subheading = "2nd August 2007",
-                                Entry = md.Transform(Year2007.y3Aug_2nd),
-                                Images = new List<IAssociatedImage>
-                                {
-                                    new AssociatedImage("aug_flowers_d8zoya", "Any image like this saddens me, but it's worse when you know the person"),
-                                    new AssociatedImage("aug_becky_trevor_bvx2p9", "Becky and Trevor having a laugh at the pub"),
-                                    new AssociatedImage("aug_becky_clare_spzqxk", "Becky was very popular and friendly to everyone"),
-                                    new AssociatedImage("aug_crossroad_ytfgeq", "The cross road showing the signs of the accident")
-                                }
-                            },
-                            new TimeLineEntry
-                            {
-                                Subheading = "18th August 2007",
-                                Entry = md.Transform(Year2007.y3Aug_18th),
-                                Images = new List<IAssociatedImage>
-                                {
-                                    new AssociatedImage("aug-bouncy-castle_cuqqe5", "Finally Evan enjoys the bouncy castle"),
-                                    new AssociatedImage("aug_play_dough_s7qynr", "Enjoying the texture, not quite making shapes yet"),
-                                    new AssociatedImage("aug_nap_time_wsq13e", "Nap time for Evan!"),
-                                    new AssociatedImage("aug_block_stacking_xeulex", "Stacking blocks successfully")
-                                }
-                            }
-                        }
-                    });
-
-            _diaryEntries
-                .Add(
-                    "2007-september",
-                    new DiaryEntry
-                    {
-                        Tag = "September (2007)",
-                        Timeline = new List<ITimeLineEntry>
-                        {
-                            new TimeLineEntry
-                            {
-                                Subheading = "18th September 2007",
-                                Entry = md.Transform(Year2007.y3Sep_18th),
-                                Images = new List<IAssociatedImage>
-                                {
-                                    new AssociatedImage("sept_peanut_playdough_abxvfo", "Evan has fun making edible playdough"),
-                                    new AssociatedImage("sept_dribbling_yaenuu", "Evan demonstrates where Tottenham have been going wrong this season"),
-                                    new AssociatedImage("sept_football_pk0guu", "Not bad for a 2 year old"),
-                                    new AssociatedImage("sept_swing_ocn7bq", "Evan still loves his swing in the garden")
-                                }
-                            },
-                            new TimeLineEntry
-                            {
-                                Subheading = "23rd September 2007 - Meeting the famous Roary",
-                                Entry = md.Transform(Year2007.y3Sep_23rd),
-                                Images = new List<IAssociatedImage>
-                                {
-                                    new AssociatedImage("sept_meeting_roary_hnyhff", "Evan finally gets to meet Roary!"),
-                                    new AssociatedImage("sept_playing_fireman_qdabuv", "Head to head fire challenge at Legoland.. Uncle Frank Won!"),
-                                    new AssociatedImage("sept_solo_vq1ubc", "More swing action"),
-                                    new AssociatedImage("sept_lego_rides_ktul5f", "Enjoying the big wheel ride")
-                                }
-                            }
-                        }
-                    });
-
-            _diaryEntries
-                .Add(
-                    "2007-october",
-                    new DiaryEntry
-                    {
-                        Tag = "October (2007)",
-                        Timeline = new List<ITimeLineEntry>
-                        {
-                            new TimeLineEntry
-                            {
-                                Subheading = "5th October 2007 - Potty Training",
-                                Entry = md.Transform(Year2007.y3Oct_5th),
-                                Images = new List<IAssociatedImage>
-                                {
-                                    new AssociatedImage("oct_book_e1bo4g", "Evan sharing a story with his nanny"),
-                                    new AssociatedImage("oct_nanny_giggles_qqfav8", "I'm not sure they are getting much of the story read there"),
-                                    new AssociatedImage("oct_cheeky_boy_dpoenp", "Evan shows off his typical cheeky look"),
-                                    new AssociatedImage("oct_exploring_mvbmvn", "Evan is fascinated by the long grass")
-                                }
-                            },
-                            new TimeLineEntry
-                            {
-                                Subheading = "27th October 2007 - Cadbury's Gorilla",
-                                Entry = md.Transform(Year2007.y3Oct_27th)
-                            }
-                        }
-                    });
-
-            _diaryEntries
-                .Add(
-                    "2007-november",
-                    new DiaryEntry
-                    {
-                        Tag = "November (2007)",
-                        Timeline = new List<ITimeLineEntry>
-                        {
-                            new TimeLineEntry
-                            {
-                                Subheading = "2nd November - Amber turns 2",
-                                Entry = md.Transform(Year2007.y3Nov_2nd),
-                                Images = new List<IAssociatedImage>
-                                {
-                                    new AssociatedImage("nov_growing_up_zxwyzx", "Growing up fast!"),
-                                    new AssociatedImage("nov_amber_h8orb7", "Nice and cosy on the sofa"),
-                                    new AssociatedImage("nov_evan_izzy_t2bizu", "Evan adores Izzy, I'm sure he wants his own dog!"),
-                                    new AssociatedImage("nov_ice-cream_xwuzuo", "Showing some cute baby belly for ice-cream????")
-                                }
-                            },
-                            new TimeLineEntry
-                            {
-                                Subheading = "11th November - More birthday party fun",
-                                Entry = md.Transform(Year2007.y3Nov_11th),
-                                Images = new List<IAssociatedImage>
-                                {
-                                    new AssociatedImage("nov_abbie1_ezqa0c", "Evan finally settles in the soft play area with his friends"),
-                                    new AssociatedImage("nov_abbie2_rifqjq", "Evan attempts to barracade Beth in"),
-                                    new AssociatedImage("nov_abbie3_j06k2c", "These huge objects were a huge hit!"),
-                                    new AssociatedImage("nov_abbie4_le9b9o", "All quiet when the children sit down to eat")
-                                }
-                            },
-                            new TimeLineEntry
-                            {
-                                Subheading = "18th November - No raisins for you",
-                                Entry = md.Transform(Year2007.y3Nov_18th)
-                            }
-                        }
-                    });
-
-            _diaryEntries
-                .Add(
-                    "2007-december",
-                    new DiaryEntry
-                    {
-                        Tag = "December (2007)",
-                        Timeline = new List<ITimeLineEntry>
-                        {
-                            new TimeLineEntry
-                            {
-                                Subheading = "2nd December - 3 become 2",
-                                Entry = md.Transform(Year2007.y3Dec_2nd),
-                                Images = new List<IAssociatedImage>
-                                {
-                                    new AssociatedImage("dec_slide_start_awd0x1", "Is this going to have a happy ending?"),
-                                    new AssociatedImage("dec_slide_finish_r7ry9j", "They seemed to like it!"),
-                                    new AssociatedImage("dec_garden_tm9zws", "Not sure who is having the most fun!"),
-                                    new AssociatedImage("dec_sofa_sleeps_nrbcmx", "Having a sneaky little nap")
-                                }
-                            },
-                            new TimeLineEntry
-                            {
-                                Subheading = "14th December - King Evan",
-                                Entry = md.Transform(Year2007.y3Dec_14th),
-                                Images = new List<IAssociatedImage>
-                                {
-                                    new AssociatedImage("dec_king_evan_bzdiwx", "Evan models his nativity outfit"),
-                                    new AssociatedImage("dec_king_myrrh_liwqtt", "Evan with his gift of myrrh"),
-                                    new AssociatedImage("dec_nativity_dinner_qdmhhy", "Nativity done, now onto the food!"),
-                                    new AssociatedImage("dec_evan_and_lucy_ofbfht", "This is Lucy, Evan adores her")
-                                }
-                            },
-                            new TimeLineEntry
-                            {
-                                Subheading = "24th December - Birthday cake fun!",
-                                Entry = md.Transform(Year2007.y3Dec_24th),
-                                Images = new List<IAssociatedImage>
-                                {
-                                    new AssociatedImage("dec_grandma_hosts_ous9gu", "It's Christmas at Grandma's this year"),
-                                    new AssociatedImage("dec_cake_flat_s82oro", "Is that a cake?"),
-                                    new AssociatedImage("dec_cake_rise_zwog8z", "Now that's more like it!"),
-                                    new AssociatedImage("lego_fire_engine_g76ixi", "Evan's fire engine from legoland is still in one piece")
-                                    
-                                }
-                            },
-                            new TimeLineEntry
-                            {
-                                Subheading = "25th December - Evan remembers Christmas",
-                                Entry = md.Transform(Year2007.y3Dec_25th),
-                                Images = new List<IAssociatedImage>
-                                {
-                                    new AssociatedImage("dec_xmas_amluwn", "Finally the waiting is over!"),
-                                    new AssociatedImage("dec_uncle_matt_pttpr6", "Uncle Matt watches on"),
-                                    new AssociatedImage("dec_playing_vsxobm", "Presents all opened, now time to play"),
-                                    new AssociatedImage("dec_toys_z8eaec", "Chirpy the Spurs mascot has a look at the new cars")
-                                }
-                            },
-                            new TimeLineEntry
-                            {
-                                Subheading = "26th December - Evan turns 3",
-                                Entry = md.Transform(Year2007.y3Dec_26th),
-                                Images = new List<IAssociatedImage>
-                                {
-                                    new AssociatedImage("dec_birthday_exs6bd", "It's birthday time!"),
-                                    new AssociatedImage("dec_more_presents_iop2ii", "Happy 3rd birthday"),
-                                    new AssociatedImage("dec_lego_fan_mihkwr", "Lego features heavily again this year"),
-                                    new AssociatedImage("dec_whos_toys_uucvbn", "My my Evan, haven't you grown")
-                                }
-                            } 
-                        }
-                    });
-        }
-
-        private void InitialiseYearFourContent()
-        {
-            var md = new Markdown { ExtraMode = true, SafeMode = false };
-
-            _diaryEntries
-                .Add(
-                    "2008-january",
-                    new DiaryEntry
-                    {
-                        Tag = "January (2008)",
-                        Timeline = new List<ITimeLineEntry>
-                        {
-                            new TimeLineEntry
-                            {
-                                Subheading = "1st Januay - A new start for us!",
-                                Entry = md.Transform(Year2008.y4Jan_1st)
-                            },
-                            new TimeLineEntry
-                            {
-                                Subheading = "22nd January - Tottenham vs Arsenal Carling Cup Semi Final",
-                                Entry = md.Transform(Year2008.y4Jan_22nd)
-                            }
-                        }
-                    });
-
-            _diaryEntries
-                .Add(
-                    "2008-february",
-                    new DiaryEntry
-                    {
-                        Tag = "February (2008)",
-                        Timeline = new List<ITimeLineEntry>
-                        {
-                            new TimeLineEntry
-                            {
-                                Subheading = "5th February - Introducing the latest Middlebrook",
-                                Entry = md.Transform(Year2008.y4Feb_5th),
-                                Images = new List<IAssociatedImage>
-                                {
-                                    new AssociatedImage("feb_ryan_alex_gmwcd4", "Introducing Ryan Alex Middlebrook"),
-                                    new AssociatedImage("feb_park_efxahd", "Evan loves playing at the park!"),
-                                    new AssociatedImage("feb_interesting_vwl6yv", "Evan contemplates how to get across this new piece of play equipment"),
-                                    new AssociatedImage("feb_dog_obsession_segxa3", "Evan's love of dogs has not diminished!")
-                                }
-                            },
-                            new TimeLineEntry
-                            {
-                                Subheading = "9th February - Day out feeding the ducks",
-                                Entry = md.Transform(Year2008.y4Feb_9th),
-                                Images = new List<IAssociatedImage>
-                                {
-                                    new AssociatedImage("feb_ducks_m4uq4a", "We love feeding the ducks!"),
-                                    new AssociatedImage("feb_swing_craig_jbuura", "Finally, someone to give my arms a rest—this boy loves going high!"),
-                                    new AssociatedImage("feb_tall_pmp6zr", "Evan enjoying being the tallest for a change"),
-                                    new AssociatedImage("feb_messy_face_dh4a6a", "Chocolate pancakes for breakfast!")
-                                }
-                            },
-                            new TimeLineEntry
-                            {
-                                Subheading = "16th February - Visiting the Beadles",
-                                Entry = md.Transform(Year2008.y4Feb_16th),
-                                Images = new List<IAssociatedImage>
-                                {
-                                    new AssociatedImage("feb_sam_azfmt9", "Sam watches on as Evan plays with his toys"),
-                                    new AssociatedImage("feb_baby_toys_a2ks4w", "Evan playing nicely with Sam's toys"),
-                                    new AssociatedImage("feb_mel_james_p82zdb", "Doesn't James just look like a cool dude!"),
-                                    new AssociatedImage("feb_evan_running_lpkwka", "Mind the slippery patches!")
-                                }
-                            },
-                            new TimeLineEntry
-                            {
-                                Subheading = "17th February - A visit from Caroline",
-                                Entry = md.Transform(Year2008.y4Feb_17th),
-                                Images = new List<IAssociatedImage>
-                                {
-                                    new AssociatedImage("feb_piano_mat_idwtyy", "Evan making his music"),
-                                    new AssociatedImage("feb_head_injury_n0ojue", "Check out the bandage mummy!!"),
-                                    new AssociatedImage("feb_plasticine_picture_mplmvx", "Evan playing with his plasticine picture maker"),
-                                    new AssociatedImage("feb_cute_face_bnwog1", "Caught taking a picture—cutie!")
-                                }
-                            },
-                            new TimeLineEntry
-                            {
-                                Subheading = "23rd February - Celebrating another birthday",
-                                Entry = md.Transform(Year2008.y4Feb_23rd),
-                                Images = new List<IAssociatedImage>
-                                {
-                                    new AssociatedImage("feb_baby_slide_cq1bwn", "This was just the baby slide!"),
-                                    new AssociatedImage("feb_flying_balls_u0eblh", "Balls placed here would be taken by the air flowing out of the holes..."),
-                                    new AssociatedImage("feb_more_balls_jcejqo", "...So Evan found a way to get lots of balls!"),
-                                    new AssociatedImage("feb_party_food_rw7kvv", "Why do we all do that with hula hoops as children?")
-                                }
-                            }
-                        }
-                    });
-
-            _diaryEntries
-                .Add(
-                    "2008-march",
-                    new DiaryEntry
-                    {
-                        Tag = "March (2008)",
-                        Timeline = new List<ITimeLineEntry>
-                        {
-                            new TimeLineEntry
-                            {
-                                Subheading = "9th March - Our London Adventure",
-                                Entry = md.Transform(Year2008.y4Mar_9th),
-                                Images = new List<IAssociatedImage>
-                                {
-                                    new AssociatedImage("mar_train_bwaz2k", "Evan's first trip on a train"),
-                                    new AssociatedImage("mar_craig_iry9yt", "This is Craig, he's an amazing friend"),
-                                    new AssociatedImage("mar_in_london_ij9dlv", "London Baby!"),
-                                    new AssociatedImage("mar_london_eye_mjoudd", "The London Eye"),
-                                    new AssociatedImage("mar_shark_rnir5t", "Evan loved the sharks!"),
-                                    new AssociatedImage("mar_ice-cream_yzusre", "Such a nice day for an ice-cream"),
-                                    new AssociatedImage("mar_hannah_crul2r", "Hannah had one too!"),
-                                    new AssociatedImage("mar_new_shark_lzbsx4", "Evan's new shark teddy gets introduced to the racing track—literally!!")
-                                }
-                            }
-                        }
-                    });
+            _imageCollection.Add(2006, new[]
+            {
+                new AssociatedImage("jan_cheeky_chappy_xsqflo", "January", "251"),
+                new AssociatedImage("feb_feeding_himself_doktg7", "February", "251"),
+                new AssociatedImage("mar_bed_hair_xcmrd3", "March", "251"),
+                new AssociatedImage("apr_odds_farm_e5pwwp", "April", "251"),
+                new AssociatedImage("may_world_cup_ready_rbt1dc", "May", "251"),
+                new AssociatedImage("jun_lovely_smile_hnyiew", "June", "251"),
+                new AssociatedImage("jul_legoland_tarjvl", "July", "251"),
+                new AssociatedImage("aug_doggy_kiss_fve16x", "August", "251"),
+                new AssociatedImage("sept_legoland_ommape", "September", "251"),
+                new AssociatedImage("oct_nanny_smiles_rfuwm3", "October", "251"),
+                new AssociatedImage("nov_cute_hair_sk4ev7", "November", "251"),
+                new AssociatedImage("dec_xmas_dinner_nschli", "December", "251")
+            });
         }
     }
 }

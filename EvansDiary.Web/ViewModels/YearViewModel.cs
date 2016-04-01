@@ -1,4 +1,7 @@
-﻿namespace EvansDiary.Web.ViewModels
+﻿using System.Collections.Generic;
+using EvansDiary.Interfaces;
+
+namespace EvansDiary.Web.ViewModels
 {
     public class YearViewModel
     {
@@ -27,6 +30,10 @@
                 case 4:
                     Birthday = "fourth";
                     break;
+
+                default:
+                    Birthday = "first";
+                    break;
             }
         }
 
@@ -35,6 +42,8 @@
         public string Birthday { get; set; }
 
         public string Description { get; set; }
+
+        public IEnumerable<IAssociatedImage> Images { get; set; }
 
         public int Year { get; set; }
     }

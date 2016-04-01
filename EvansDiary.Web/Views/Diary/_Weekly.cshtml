@@ -2,22 +2,24 @@
 @using EvansDiary.Web.Diary.Extensions
 @model YearViewModel
 
+@{
+    var week = 0;
+}
 <div class="diary-nav container">
     <div class="box">
         <ul class="polaroids pure-g">
-            @for (var week = 0; week <= 52; week++)
+            @foreach (var image in Model.Images)
             {
-                var imgSrc = string.Format("/Content/images/diary/years/{0}/w{1}-main.jpg", Model.Year, week);
-                var description = week == 0
-                    ? "Week 0 - The Birth"
-                    : "Week " + week;
-
                 <li class="pure-u-1-2 pure-u-sm-1-4">
-                    @using (Html.ScopedActionLink<DiaryController>(x => x.Week(Model.Year, week), new { title = @description }))
+                    @using (Html.ScopedActionLink<DiaryController>(x => x.Week(Model.Year, @week), new {title = @image.Caption}))
                     {
-                        <img class="pure-img-responsive" src="@imgSrc" alt="Week @week" title="Week @week" />
+                        <img src="/Content/images/blank.jpg" class="dynamic_image pure-img-responsive"
+                             data-src="@image.Source"
+                             data-width="@image.Width"
+                             data-crop="fill" data-quality="80" alt="@image.Caption" title="@image.Caption"/>
                     }
                 </li>
+                week++;
             }
         </ul>
     </div>
