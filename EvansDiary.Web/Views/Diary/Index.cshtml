@@ -20,57 +20,68 @@
 
     <h2>@ViewBag.Title</h2>
     <h3>Where it all began</h3>
-    
+
     <p>Late in 2003 I decided that I wanted to start a family, a process that is not straight forward when you are not in a traditional relationship. Initially I was very naive and assumed that being a healthy female with no fertility issues using donor sperm that is in the top 2%, they only accept the best donors - no weak swimmers there! I just assumed that I would get pregnant on the first try. This obviously was not the case, we had a couple of aborted attempts due to the fact that fetility drugs given to a fertile woman equals over production! Christmas also interrupted one of my cycles as the clinic was closed and we missed the window of opportunity. When you consider how long it can take to get pregnant naturally and how long it takes some couples to conceive with the help of fertility doctors, I think 6 months from making the decision to then having a successful insemination is a real achievement.</p>
     <p>I like to think that I was always destined to conceive in March 2004, every egg that you create has the potential to create a unique being and the egg that my body released in March resulted in the lovely boy that I have today.</p>
     <p>On the 26th December 2004 at 4.05am Evan Oliver Middlebrook came into this world! I originally created this diary, to track his progress through the first year one week at a time, with further years being added on a monthly basis. It would give me something to look back at when he's all grown up and also it was a way for family members to share our adventures who were not able to see us regularly.</p>
     <p>It's a shame that I only captured the first few years like this but I had fun and I have many memories in picture and video form of us all growing as a family. Family is not for everyone, I certainly did not think I would want a family when I was growing up and through early adulthood. I can pin point the exact moment where something changed in me, a short break to Alton Towers in the Spring of 2003. I witnessed many families out enjoying a day of fun, I couldn't get the visions out of my head and as the months passed I started to feel like something was missing. Inside there was a feeling, a sad feeling one that I could not surpress or make go away. It's difficult to know for sure, it's not like you can try before you buy with children! I had to take the plunge and change my life forever. Thankfully when Evan was born; that feeling disappeared forever. For me it was exactly what my life needed.</p>
-    
+
     <div class="diary-nav container">
         <div class="box">
             <h2>The Years</h2>
             <ul class="polaroids pure-g">
                 <li class="pure-u-1-2 pure-u-md-1-4">
-                    @using (Html.ScopedActionLink<DiaryController>(x => x.Year(2005), new { title = "Year 1" }))
+                    @using (Html.ScopedActionLink<DiaryController>(x => x.Year(2005), new {title = "Year 1"}))
                     {
                         var yearOne = new AssociatedImage("w1_evan_peaceful_hqreul", "Year 1 - 2005");
                         <img src="/Content/images/blank.jpg" class="dynamic_image pure-img-responsive"
                              data-src="@(yearOne.Source)"
                              data-width="285" data-height="214"
-                             data-crop="fill" data-quality="80" alt="@yearOne.Caption" title="@yearOne.Caption" />
+                             data-crop="fill" data-quality="80" alt="@yearOne.Caption" title="@yearOne.Caption"/>
                     }
                 </li>
                 <li class="pure-u-1-2 pure-u-md-1-4">
-                    @using (Html.ScopedActionLink<DiaryController>(x => x.Year(2006), new { title = "Year 2" }))
+                    @using (Html.ScopedActionLink<DiaryController>(x => x.Year(2006), new {title = "Year 2"}))
                     {
                         var yearTwo = new AssociatedImage("feb_gorgeous_ligjbj", "Year 2 - 2006");
                         <img src="/Content/images/blank.jpg" class="dynamic_image pure-img-responsive"
                              data-src="@(yearTwo.Source)"
                              data-width="285" data-height="214"
-                             data-crop="fill" data-quality="80" alt="@yearTwo.Caption" title="@yearTwo.Caption" />
+                             data-crop="fill" data-quality="80" alt="@yearTwo.Caption" title="@yearTwo.Caption"/>
                     }
                 </li>
                 <li class="pure-u-1-2 pure-u-md-1-4">
-                    @using (Html.ScopedActionLink<DiaryController>(x => x.Year(2007), new { title = "Year 3" }))
+                    @using (Html.ScopedActionLink<DiaryController>(x => x.Year(2007), new {title = "Year 3"}))
                     {
                         var yearThree = new AssociatedImage("dec_together_cdlhbx", "Year 3 - 2007");
                         <img src="/Content/images/blank.jpg" class="dynamic_image pure-img-responsive"
                              data-src="@(yearThree.Source)"
                              data-width="285" data-height="214"
-                             data-crop="fill" data-quality="80" alt="@yearThree.Caption" title="@yearThree.Caption" />
+                             data-crop="fill" data-quality="80" alt="@yearThree.Caption" title="@yearThree.Caption"/>
                     }
                 </li>
                 <li class="pure-u-1-2 pure-u-md-1-4">
-                    @using (Html.ScopedActionLink<DiaryController>(x => x.Year(2008), new { title = "Year 4" }))
+                    @using (Html.ScopedActionLink<DiaryController>(x => x.Year(2008), new {title = "Year 4"}))
                     {
                         var yearFour = new AssociatedImage("apr_legoland_2008_r84ovw", "Year 4 - 2008");
                         <img src="/Content/images/blank.jpg" class="dynamic_image pure-img-responsive"
                              data-src="@(yearFour.Source)"
                              data-width="285" data-height="214"
-                             data-crop="fill" data-quality="80" alt="@yearFour.Caption" title="@yearFour.Caption" />
+                             data-crop="fill" data-quality="80" alt="@yearFour.Caption" title="@yearFour.Caption"/>
                     }
                 </li>
             </ul>
         </div>
     </div>
 </section>
+
+@section PageScripts {
+    @Scripts.Render("~/bundles/jquerycloudinary")
+    <script type="text/javascript">
+        $(function () {
+            // Lazy load the flipbook images from cloudinary
+            $.cloudinary.config("cloud_name", "dqg9nkccw");
+            $(".dynamic_image").webpify();
+        });
+    </script>
+}

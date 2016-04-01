@@ -174,9 +174,9 @@ namespace EvansDiary.Web.Diary.StaticContent
 
             _imageCollection.Add(2008, new[]
             {
-                new AssociatedImage("", "January", "251"),
-                new AssociatedImage("", "February", "251"),
-                new AssociatedImage("", "March", "251")
+                new AssociatedImage("jj-celebrate_eqikzx", "January", "251"),
+                new AssociatedImage("feb_messy_face_dh4a6a", "February", "251"),
+                new AssociatedImage("mar_ice-cream_yzusre", "March", "251")
             });
         }
 
