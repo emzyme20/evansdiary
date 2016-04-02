@@ -32,15 +32,6 @@
     @Styles.Render("~/Content/css")
     @Styles.Render("~/Content/styles")
     @Styles.Render("~/Content/themes")
-
-    @Scripts.Render("~/scripts/ed-init")
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/jqueryval")
-    @Scripts.Render("~/bundles/bootstrap")
-    @Scripts.Render("~/bundles/modernizr")
-    @Scripts.Render("~/bundles/themes")
-
-    @RenderSection("PageScripts", false)
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -72,7 +63,13 @@
         </footer>
     </div>
 
+    @Scripts.Render("~/scripts/ed-init")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jqueryval")
     @Scripts.Render("~/bundles/bootstrap")
-    @RenderSection("scripts", false)
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/themes")
+
+    @RenderSection("PageScripts", false)
 </body>
 </html>
