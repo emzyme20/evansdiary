@@ -98,10 +98,7 @@
     @Scripts.Render("~/bundles/jquerycloudinary")
     <script type="text/javascript">
         $(function () {
-            // Lazy load the flipbook images from cloudinary
-            $.cloudinary.config("cloud_name", "dqg9nkccw");
-            //$(".dynamic_image").cloudinary();
-            $(".dynamic_image").webpify();
+            ed.cloudinary.dynamicImages();
 
             window.addEventListener('resize', function (event) {
                 var firstBlock = $('.block:first');

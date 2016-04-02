@@ -25,12 +25,19 @@ namespace EvansDiary.Web
 
             bundles.Add(
                 new ScriptBundle("~/bundles/jquerycloudinary").Include(
-                    "~/Scripts/jquery.cloudinary*"));
+                    "~/Scripts/jquery.cloudinary*",
+                    "~/Scripts/application/ed.cloudinary.js"));
+
             // Use the development version of Modernizr to develop with and learn from. Then, when you're
             // ready for production, use the build tool at http://modernizr.com to pick only the tests you need.
             bundles.Add(
                 new ScriptBundle("~/bundles/modernizr").Include(
                     "~/Scripts/modernizr-*"));
+
+            /* Initialise javascript ed window variable namespace */
+            bundles.Add(
+                new Bundle("~/scripts/ed-init", new JsMinify())
+                    .Include("~/Scripts/application/ed.object-init.js"));
 
             bundles.Add(
                 new ScriptBundle("~/bundles/bootstrap").Include(
