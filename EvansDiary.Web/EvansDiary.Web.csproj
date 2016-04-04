@@ -343,6 +343,7 @@
     <Content Include="Views\Diary\_Images.cshtml" />
     <Content Include="Views\Diary\Timeline.cshtml" />
     <Content Include="Views\Home\_Flipbook.cshtml" />
+    <Content Include="Views\Shared\_GoogleFonts.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
