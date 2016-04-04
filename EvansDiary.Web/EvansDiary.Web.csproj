@@ -210,9 +210,6 @@
     <Content Include="Content\images\athletics-pictogram-64-216355.png" />
     <Content Include="Content\images\athletics-pictogram-72-216355.png" />
     <Content Include="Content\images\blank.jpg" />
-    <Content Include="Content\images\carousel\image1.png" />
-    <Content Include="Content\images\carousel\image2.png" />
-    <Content Include="Content\images\carousel\image3.png" />
     <Content Include="Content\images\grid\best-friends.jpg" />
     <Content Include="Content\images\grid\cockerel.jpg" />
     <Content Include="Content\images\grid\family.jpg" />
