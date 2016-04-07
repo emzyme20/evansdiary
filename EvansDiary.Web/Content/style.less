@@ -318,7 +318,7 @@ ul.polaroids a:hover {
     overflow: hidden;
     height: auto;
 
-    &:hover:not(.temporary-overlay) > .overlay {
+    &:hover > .overlay {
       -webkit-transition: all 0.25s ease-in;
       -moz-transition: all 0.25s ease-in;
       -o-transition: all 0.25s ease-in;
@@ -326,15 +326,7 @@ ul.polaroids a:hover {
       left: 0;
     }
   }
-  /*.temporary-overlay {
-    &:hover > .overlay {
-      -webkit-animation: temporary 0.25s ease-in 1 alternate;
-      -moz-animation: temporary 0.25s ease-in 1 alternate;
-      -o-animation: temporary 0.25s ease-in 1 alternate;
-      animation: temporary 0.25s ease-in 1 alternate;
-    }
-  }*/
-
+  
   .overlay {
     width: 100%;
     height: 100%;
