@@ -6,7 +6,6 @@ p {
 
 .logo {
   font-size: 1.6em;
-  font-weight: bold;
   color: white;
   font-family: "Open Sans", Helvetica, sans-serif;
 
@@ -297,6 +296,7 @@ ul.polaroids a:hover {
     @media screen and (max-width: @mq-xs) {
       font-size: 3.4rem;
     }
+
     @media screen and (min-width: @mq-md) and (max-width: @mq-lg) {
       font-size: 2.4em;
     }
@@ -318,7 +318,7 @@ ul.polaroids a:hover {
     overflow: hidden;
     height: auto;
 
-    &:hover > .overlay {
+    &:hover:not(.temporary-overlay) > .overlay {
       -webkit-transition: all 0.25s ease-in;
       -moz-transition: all 0.25s ease-in;
       -o-transition: all 0.25s ease-in;
@@ -326,6 +326,14 @@ ul.polaroids a:hover {
       left: 0;
     }
   }
+  /*.temporary-overlay {
+    &:hover > .overlay {
+      -webkit-animation: temporary 0.25s ease-in 1 alternate;
+      -moz-animation: temporary 0.25s ease-in 1 alternate;
+      -o-animation: temporary 0.25s ease-in 1 alternate;
+      animation: temporary 0.25s ease-in 1 alternate;
+    }
+  }*/
 
   .overlay {
     width: 100%;
