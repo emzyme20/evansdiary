@@ -294,6 +294,7 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Icon.png" />
+    <Content Include="robots.txt" />
     <Content Include="Scripts\application\ed.object-init.js" />
     <Content Include="Scripts\application\ed.cloudinary.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -319,6 +320,7 @@
     <Content Include="Scripts\Theme\custom.js" />
     <Content Include="Scripts\Theme\jquery.prettyPhoto.js" />
     <Content Include="Scripts\_references.js" />
+    <Content Include="sitemap.xml" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -343,6 +345,7 @@
     <Content Include="Views\Diary\Timeline.cshtml" />
     <Content Include="Views\Home\_Flipbook.cshtml" />
     <Content Include="Views\Shared\_GoogleFonts.cshtml" />
+    <Content Include="Views\Shared\_GoogleAnalytics.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
