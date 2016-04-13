@@ -204,12 +204,12 @@ namespace EvansDiary.Web.Diary.StaticContent
                                 Entry = md.Transform(Year2005.y1w0Two),
                                 Images = new List<IAssociatedImage>
                                 {
-                                    new AssociatedImage("w0-emma-first-hold_n1knip",
+                                    new AssociatedImage("w0_emma_first_hold_yxohgg",
                                         "Emma holding Evan for the first time"),
-                                    new AssociatedImage("w0_midwife_gpdp3v", "Our wonderful midwife, Valeska"),
-                                    new AssociatedImage("w0_before_birth_qzqa9r",
+                                    new AssociatedImage("w0_midwife_idbcyw", "Our wonderful midwife, Valeska"),
+                                    new AssociatedImage("w0_before_birth_cgiahd",
                                         "Emma in the labour ward, before the birth"),
-                                    new AssociatedImage("w0_caroline_first_hold_mgodvl",
+                                    new AssociatedImage("w0_caroline_first_hold_rgpgcj",
                                         "Caroline with Evan a few minutes after the birth")
                                 }
                             }
@@ -238,9 +238,9 @@ namespace EvansDiary.Web.Diary.StaticContent
                                 {
                                     new AssociatedImage("w1_evan_peaceful_n7d6jq",
                                         "Caroline's first view of Evan in hospital, just a few hours old"),
-                                    new AssociatedImage("w1_emmas_mum_psbo4x", "Emma's mum with Evan"),
-                                    new AssociatedImage("w1_emma_evan_bed_s7904r", "Emma and Evan, peaceful in hospital"),
-                                    new AssociatedImage("w1_evans_foot_a5kkre", "What a cute footsie!")
+                                    new AssociatedImage("w1_emmas_mum_lkfedi", "Emma's mum with Evan"),
+                                    new AssociatedImage("w1_emma_evan_bed_corysg", "Emma and Evan, peaceful in hospital"),
+                                    new AssociatedImage("w1_evans_foot_coxy5x", "What a cute footsie!")
                                 }
                             }
                         }
@@ -266,12 +266,12 @@ namespace EvansDiary.Web.Diary.StaticContent
                                 Entry = md.Transform(Year2005.y1w2Two),
                                 Images = new List<IAssociatedImage>
                                 {
-                                    new AssociatedImage("w2_sleepy_baby_vvnnrh", "Such a hard life"),
-                                    new AssociatedImage("w2_ooh_looking_at_emma_jzyu66",
+                                    new AssociatedImage("w2_sleepy_baby_ukesh5", "Such a hard life"),
+                                    new AssociatedImage("w2_ooh_looking_at_emma_zcxo7r",
                                         "One of Evan's cute little expressions! 'Hello mummy!'"),
-                                    new AssociatedImage("w2_being_changed_ctnjl4",
+                                    new AssociatedImage("w2_being_changed_joxhds",
                                         "Evan grumbling at having his nappy changed"),
-                                    new AssociatedImage("w2_resting_ao0kl8", "Both of us having a rest")
+                                    new AssociatedImage("w2_resting_nyyjod", "Both of us having a rest")
                                 }
                             }
                         }
@@ -297,11 +297,11 @@ namespace EvansDiary.Web.Diary.StaticContent
                                 Entry = md.Transform(Year2005.y1w3Two),
                                 Images = new List<IAssociatedImage>
                                 {
-                                    new AssociatedImage("w3_zonked_sekjad", "Completely zonked out! Too much boob! :-)"),
-                                    new AssociatedImage("w3_matching_socks_inodja", "Outfit includes matching socks"),
-                                    new AssociatedImage("w3_playgym_uv93jb",
+                                    new AssociatedImage("w3_zonked_k3isgq", "Completely zonked out! Too much boob! :-)"),
+                                    new AssociatedImage("w3_matching_socks_aj3lgg", "Outfit includes matching socks"),
+                                    new AssociatedImage("w3_playgym_ruptaf",
                                         "A rare moment amusing himself on the play gym"),
-                                    new AssociatedImage("w3_wind_struggles_pihf4z",
+                                    new AssociatedImage("w3_wind_struggles_s7c6zt",
                                         "Practicing different winding techniques")
                                 }
                             }
@@ -328,12 +328,12 @@ namespace EvansDiary.Web.Diary.StaticContent
                                 Entry = md.Transform(Year2005.y1w4Two),
                                 Images = new List<IAssociatedImage>
                                 {
-                                    new AssociatedImage("w4_keep_rocking_boo6gx",
+                                    new AssociatedImage("w4_keep_rocking_d66fey",
                                         "Evan letting Grandma know that she'll need to rock him for longer!"),
-                                    new AssociatedImage("w4_right_mitt_lgnu1a", "Have you seen my left mitt?"),
-                                    new AssociatedImage("w4_mindy_awckvt",
+                                    new AssociatedImage("w4_right_mitt_zgtpu1", "Have you seen my left mitt?"),
+                                    new AssociatedImage("w4_mindy_slamce",
                                         "Emma's mums dog Mindy is very intrigued by this new creature!"),
-                                    new AssociatedImage("w4_left_mitt_yelxko", "Where's my right mitt now?!?")
+                                    new AssociatedImage("w4_left_mitt_cflghg", "Where's my right mitt now?!?")
                                 }
                             }
                         }
@@ -360,10 +360,10 @@ namespace EvansDiary.Web.Diary.StaticContent
                                 Images = new List<IAssociatedImage>
                                 {
                                     new AssociatedImage("w5_smiling_now_kukeoj", "Look Mummy, I can smile now"),
-                                    new AssociatedImage("w5_sofa_snooze_mmnknc", "No trouble sleeping on the sofa"),
-                                    new AssociatedImage("w5_baldy_s19zos",
+                                    new AssociatedImage("w5_sofa_snooze_q63dnp", "No trouble sleeping on the sofa"),
+                                    new AssociatedImage("w5_baldy_g3x6t4",
                                         "I know you're looking at my bald patch, stop it!"),
-                                    new AssociatedImage("w5_nice_and_warm_f1sreg", "All nice and warm in here")
+                                    new AssociatedImage("w5_nice_and_warm_bhs0up", "All nice and warm in here")
                                 }
                             }
                         }
@@ -1642,11 +1642,11 @@ namespace EvansDiary.Web.Diary.StaticContent
 
             _imageCollection.Add(2005, new[]
             {
-                new AssociatedImage("w0-emma-first-hold_n1knip", "Week 0 - The Birth", "251"),
+                new AssociatedImage("w0_emma_first_hold_yxohgg", "Week 0 - The Birth", "251"),
                 new AssociatedImage("w1_evan_peaceful_n7d6jq", "Week 1", "251"),
-                new AssociatedImage("w2_ooh_looking_at_emma_jzyu66", "Week 2", "251"),
-                new AssociatedImage("w3_playgym_uv93jb", "Week 3", "251"),
-                new AssociatedImage("w4_keep_rocking_boo6gx", "Week 4", "251"),
+                new AssociatedImage("w2_ooh_looking_at_emma_zcxo7r", "Week 2", "251"),
+                new AssociatedImage("w3_playgym_ruptaf", "Week 3", "251"),
+                new AssociatedImage("w4_keep_rocking_d66fey", "Week 4", "251"),
                 new AssociatedImage("w5_smiling_now_kukeoj", "Week 5", "251"),
                 new AssociatedImage("w6_giggles_uyubtv", "Week 6", "251"),
                 new AssociatedImage("w7_holding_bottle_qdmcu5", "Week 7", "251"),
