@@ -2272,7 +2272,7 @@ namespace EvansDiary.Web.Diary.StaticContent
                                         "Creature Comforts! Evan likes to have his pillows near by"),
                                     new AssociatedImage("feb_feeding_himself_doktg7",
                                         "Evan sitting on his stool demonstrating self-service"),
-                                    new AssociatedImage("feb_gorgeous_ligjbj", "Evan with his mummy"),
+                                    new AssociatedImage("feb_gorgeous_vv00si", "Evan with his mummy"),
                                     new AssociatedImage("feb_cat_play_cz16fy", "Noodle play??"),
                                     new AssociatedImage("feb_camera_oezvfg",
                                         "Evan is still clearly obssessed with the camera"),
@@ -2368,7 +2368,7 @@ namespace EvansDiary.Web.Diary.StaticContent
                                     new AssociatedImage("may_make_shift_chair_lwviam", "Our makeshift chair for Evan"),
                                     new AssociatedImage("may_new_car_yc3cn9", "Evan finally gets out in his new car"),
                                     new AssociatedImage("may_happy_in_car_qbumwz", "Beep! Beep!"),
-                                    new AssociatedImage("may_play_for_country_vsdcvn", "Love a baby in a football kit")
+                                    new AssociatedImage("may_play_for_country_ybrtnf", "Love a baby in a football kit")
                                 }
                             }
                         }
