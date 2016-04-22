@@ -15,6 +15,8 @@ namespace EvansDiary.Web
             bundles.IgnoreList.Ignore("*.min.css");
             bundles.IgnoreList.Ignore("*.map");
 
+            bundles.UseCdn = true;
+
             // Style bundles
             bundles.Add(
                 new StyleBundle("~/Content/css").Include(
@@ -27,10 +29,12 @@ namespace EvansDiary.Web
                     "~/Content/style.less"));
 
             // Script bundles
-            bundles.Add(
-                new ScriptBundle("~/bundles/jquery").Include(
-                    "~/Scripts/jquery-{version}.js",
-                    "~/Scripts/jquery.validate*"));
+            var jquery = new ScriptBundle("~/bundles/jquery", "http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js")
+                .Include("~/Scripts/jquery-{version}.js");
+
+            jquery.CdnFallbackExpression = "window.jQuery";
+
+            bundles.Add(jquery);
             
             bundles.Add(
                 new ScriptBundle("~/bundles/jquerycloudinary").Include(
@@ -52,7 +56,8 @@ namespace EvansDiary.Web
                 new ScriptBundle("~/bundles/bootstrap").Include(
                     "~/Scripts/bootstrap.js",
                     "~/Scripts/respond.js",
-                    "~/Scripts/Theme/*.js"));
+                    "~/Scripts/Theme/*.js",
+                    "~/Scripts/jquery.validate*"));
             
             // Set EnableOptimizations to false for debugging. For more information,
             // visit http://go.microsoft.com/fwlink/?LinkId=301862
