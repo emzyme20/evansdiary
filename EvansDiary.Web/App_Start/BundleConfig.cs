@@ -15,14 +15,23 @@ namespace EvansDiary.Web
             bundles.IgnoreList.Ignore("*.min.css");
             bundles.IgnoreList.Ignore("*.map");
 
+            // Style bundles
+            bundles.Add(
+                new StyleBundle("~/Content/css").Include(
+                    "~/Content/bootstrap.css",
+                    "~/Content/site.css",
+                    "~/Content/Theme/css/*.css"));
+
+            bundles.Add(
+                new LessBundle("~/Content/styles").Include(
+                    "~/Content/style.less"));
+
+            // Script bundles
             bundles.Add(
                 new ScriptBundle("~/bundles/jquery").Include(
-                    "~/Scripts/jquery-{version}.js"));
-
-            bundles.Add(
-                new ScriptBundle("~/bundles/jqueryval").Include(
+                    "~/Scripts/jquery-{version}.js",
                     "~/Scripts/jquery.validate*"));
-
+            
             bundles.Add(
                 new ScriptBundle("~/bundles/jquerycloudinary").Include(
                     "~/Scripts/jquery.cloudinary*",
@@ -42,25 +51,9 @@ namespace EvansDiary.Web
             bundles.Add(
                 new ScriptBundle("~/bundles/bootstrap").Include(
                     "~/Scripts/bootstrap.js",
-                    "~/Scripts/respond.js"));
-
-            bundles.Add(
-                new ScriptBundle("~/bundles/themes").Include(
+                    "~/Scripts/respond.js",
                     "~/Scripts/Theme/*.js"));
-
-            bundles.Add(
-                new StyleBundle("~/Content/themes").Include(
-                    "~/Content/Theme/css/*.css"));
-
-            bundles.Add(
-                new StyleBundle("~/Content/css").Include(
-                    "~/Content/bootstrap.css",
-                    "~/Content/site.css"));
-
-            bundles.Add(
-                new LessBundle("~/Content/styles").Include(
-                    "~/Content/style.less"));
-
+            
             // Set EnableOptimizations to false for debugging. For more information,
             // visit http://go.microsoft.com/fwlink/?LinkId=301862
             BundleTable.EnableOptimizations = !HttpContext.Current.IsDebuggingEnabled;

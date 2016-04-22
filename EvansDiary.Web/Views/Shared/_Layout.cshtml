@@ -28,8 +28,7 @@
 
     @Styles.Render("~/Content/css")
     @Styles.Render("~/Content/styles")
-    @Styles.Render("~/Content/themes")
-
+    
     @Html.Partial("~/Views/Shared/_GoogleAnalytics.cshtml")
 </head>
 <body>
@@ -66,11 +65,9 @@
 
     @Scripts.Render("~/scripts/ed-init")
     @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/jqueryval")
     @Scripts.Render("~/bundles/bootstrap")
     @Scripts.Render("~/bundles/modernizr")
-    @Scripts.Render("~/bundles/themes")
-
+    
     @RenderSection("PageScripts", false)
 </body>
 </html>
