@@ -1898,7 +1898,7 @@ namespace EvansDiary.Web.Diary.StaticContent
                                         "Pascale helped with the carrying when Evan got tired"),
                                     new AssociatedImage("june_wind_tears_urt1tn",
                                         "The wind was so strong it made Evan cry"),
-                                    new AssociatedImage("june_strong_Arms_sb0gss",
+                                    new AssociatedImage("june_strong_arms_sb0gss",
                                         "Evan makes up a new ball game, with a tree!"),
                                     new AssociatedImage("june_room_to_run_cru2mp",
                                         "So much space for Evan to run around in")
