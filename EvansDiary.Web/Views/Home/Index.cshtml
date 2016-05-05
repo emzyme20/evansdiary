@@ -64,8 +64,10 @@
         <div class="pure-u-1 pure-u-sm-1-2 pure-u-md-1-3 block">
             <img src="/Content/images/grid/cockerel.jpg" alt="My Team" />
             <div class="overlay">
-                <h4>#MyTeam</h4>
-                <p>Like my mum, there's only one team for me. Come on you Spurs!</p>
+                <a href="@Url.Action("Index", "Athletics")">
+                    <h4>#MyTeam</h4>
+                    <p>Like my mum, there's only one team for me. Come on you Spurs!</p>
+                </a>
             </div>
         </div>
         <div class="pure-u-1 pure-u-sm-1-2 pure-u-md-1-3 block">
@@ -87,9 +89,9 @@
                 @Html.Partial("_Flipbook", Model.FlipbookItems)
             </div>
             @*<div class="overlay">
-                <h4>#Me</h4>
-                <p>This is a flip book of me growing up</p>
-            </div>*@
+                    <h4>#Me</h4>
+                    <p>This is a flip book of me growing up</p>
+                </div>*@
         </div>
     </div>
 </section>

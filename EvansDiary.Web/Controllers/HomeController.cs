@@ -7,7 +7,7 @@ namespace EvansDiary.Web.Controllers
 {
     public class HomeController : Controller
     {
-        private static readonly IEnumerable<FlipbookItemViewModel> Flipbook = new[]
+        private static readonly IEnumerable<FlipbookItemViewModel> _flipbook = new[]
         {
             new FlipbookItemViewModel(new AssociatedImage("w1_evan_peaceful_n7d6jq", "1 week"), "north"),
             new FlipbookItemViewModel(new AssociatedImage("w5_smiling_now_kukeoj", "5 weeks")),
@@ -60,7 +60,7 @@ namespace EvansDiary.Web.Controllers
         {
             var viewModel = new HomeViewModel
             {
-                FlipbookItems = Flipbook
+                FlipbookItems = _flipbook
             };
 
             return View(viewModel);
