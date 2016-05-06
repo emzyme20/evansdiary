@@ -25,6 +25,14 @@ namespace EvansDiary.Web
                     "~/Content/Theme/css/*.css"));
 
             bundles.Add(
+                new StyleBundle("~/Content/css/reset").Include(
+                    "~/Content/libs/timeline/reset.css"));
+
+            bundles.Add(
+                new StyleBundle("~/Content/css/timeline").Include(
+                    "~/Content/libs/timeline/timeline.css"));
+
+            bundles.Add(
                 new LessBundle("~/Content/styles").Include(
                     "~/Content/style.less"));
 

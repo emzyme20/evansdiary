@@ -219,6 +219,13 @@
     <Content Include="Content\images\grid\team-bath.jpg" />
     <Content Include="Content\images\grid\warhammer.jpg" />
     <Content Include="Content\images\the-diary.png" />
+    <Content Include="Content\images\timeline\icon-location.svg" />
+    <Content Include="Content\images\timeline\icon-movie.svg" />
+    <Content Include="Content\images\timeline\icon-picture.svg" />
+    <Content Include="Content\images\timeline\icon-event.svg" />
+    <Content Include="Content\images\timeline\icon-history.svg" />
+    <Content Include="Content\libs\timeline\reset.css" />
+    <Content Include="Content\libs\timeline\timeline.css" />
     <Content Include="Content\Theme\css\prettyPhoto.css" />
     <Content Include="Content\Theme\css\style.css" />
     <Content Include="Content\Theme\img\1.jpg" />
