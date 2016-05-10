@@ -17,7 +17,7 @@
                 <p class="read-more-wrap">
                     Evan's nursery 'Brightstart Nursery' held a mini olympics event where all the children were introduced to sporting events. Evan had already demonstrated with any activity that we would do together how competitive he was and how much he hated to lose.
                 </p>
-                <p class="center">
+                @*<p class="center">
                     @{ var image = new AssociatedImage("dec_together_glpge0", "The Sprint Race"); }
                     <span class="polaroid" title="@image.Caption">
                         <img src="/Content/images/blank.jpg" class="dynamic_image pure-img-responsive"
@@ -25,7 +25,31 @@
                              data-width="285" data-height="214"
                              data-crop="fill" data-quality="80" alt="@image.Caption" />
                     </span>
-                </p>
+                </p>*@
+                <ul class="polaroids pure-g">
+                    <li class="pure-u-1-2">
+                        @{
+                            var image = new AssociatedImage("2008_sprint_race_dzze6k", "Sprint Race");
+                        }
+                        <span class="polaroid" title="@image.Caption">
+                            <img src="/Content/images/blank.jpg" class="dynamic_image pure-img-responsive"
+                                 data-src="@(image.Source)"
+                                 data-width="285" data-height="214"
+                                 data-crop="fill" data-quality="80" alt="@image.Caption" />
+                        </span>
+                    </li>
+                    <li class="pure-u-1-2">
+                        @{
+                            image = new AssociatedImage("2008_medals_nl626v", "His Medals");
+                        }
+                        <span class="polaroid" title="@image.Caption">
+                            <img src="/Content/images/blank.jpg" class="dynamic_image pure-img-responsive"
+                                 data-src="@(image.Source)"
+                                 data-width="285" data-height="214"
+                                 data-crop="fill" data-quality="80" alt="@image.Caption" />
+                        </span>
+                    </li>
+                </ul>
                 <span class="cd-date">2008</span>
             </div>
         </div>
