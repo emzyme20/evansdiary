@@ -153,7 +153,46 @@ ul.polaroids {
   }
 }
 
-ul.polaroids a:after {
+.polaroid-container {
+  img {
+    display: block;
+    margin-bottom: 7px;
+  }
+  
+  span.polaroid {
+    background: #fff;
+    display: inline-block;
+    /*float: left;*/
+    margin: 0 10px 20px 10px;
+    //width: auto;
+    padding: 7px;
+    text-align: center;
+    font-family: 'Permanent Marker', sans-serif;
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    -webkit-transform: none;
+       -moz-transform: none;
+            transform: none;
+    /*position: relative;*/
+    top: -5px;
+
+    /* Add drop shadows and smooth out the transition (Safari only) */
+    -webkit-transition: -webkit-transform .15s linear;
+    -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+       -moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+            box-shadow: 0 3px 6px rgba(0,0,0,.25);
+
+    @media screen and (max-width: @mq-xs) {
+      font-size: 12px;
+    }
+    @media screen and (min-width: @mq-xs) and (max-width: @mq-md) {
+      font-size: 14px;
+    }
+  }
+}
+
+ul.polaroids a:after, .polaroid-container span.polaroid:after {
   content: attr(title);
 }
 

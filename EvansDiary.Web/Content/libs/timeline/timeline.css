@@ -43,7 +43,7 @@ body {
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
   font-size: 20px;
-  font-size: 1rem;
+  font-size: 1.25rem;
 }
 
 
@@ -187,12 +187,16 @@ header h1 {
     background: #c03b44;
 }
 
-.cd-timeline-img.cd-location {
+.cd-timeline-img.cd-event {
     background: #f0ca45;
 }
 
 .cd-timeline-img.cd-history {
   background: #1f8dd6;
+}
+
+.cd-timeline-img.cd-location {
+  background: #a564b5;
 }
 
 @media only screen and (min-width: 1170px) {
@@ -344,8 +348,8 @@ header h1 {
         font-size: 1.25rem;
     }
     .cd-timeline-content p {
-        font-size: 16px;
-        font-size: 1rem;
+        font-size: 14px;
+        font-size: 0.875rem;
     }
     .cd-timeline-content .cd-read-more,
     .cd-timeline-content .cd-date {
