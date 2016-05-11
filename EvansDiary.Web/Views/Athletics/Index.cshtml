@@ -2,6 +2,7 @@
 
 @{
     ViewBag.Title = "Evan's Athletics";
+    AssociatedImage image;
 }
 
 <section id="timeline">
@@ -12,24 +13,14 @@
             </div>
 
             <div class="cd-timeline-content polaroid-container">
-                <input type="checkbox" class="read-more-state" id="post-345" />
-                <h2>First Sports Day</h2>
+                <h2>Nursery Mini Olympics</h2>
                 <p class="read-more-wrap">
                     Evan's nursery 'Brightstart Nursery' held a mini olympics event where all the children were introduced to sporting events. Evan had already demonstrated with any activity that we would do together how competitive he was and how much he hated to lose.
                 </p>
-                @*<p class="center">
-                    @{ var image = new AssociatedImage("dec_together_glpge0", "The Sprint Race"); }
-                    <span class="polaroid" title="@image.Caption">
-                        <img src="/Content/images/blank.jpg" class="dynamic_image pure-img-responsive"
-                             data-src="@(image.Source)"
-                             data-width="285" data-height="214"
-                             data-crop="fill" data-quality="80" alt="@image.Caption" />
-                    </span>
-                </p>*@
                 <ul class="polaroids pure-g">
                     <li class="pure-u-1-2">
                         @{
-                            var image = new AssociatedImage("2008_sprint_race_dzze6k", "Sprint Race");
+                            image = new AssociatedImage("2008_sprint_race_dzze6k", "Sprint Race");
                         }
                         <span class="polaroid" title="@image.Caption">
                             <img src="/Content/images/blank.jpg" class="dynamic_image pure-img-responsive"
@@ -53,13 +44,14 @@
                 <span class="cd-date">2008</span>
             </div>
         </div>
+
         <div class="cd-timeline-block">
             <div class="cd-timeline-img cd-history">
                 <img src="/Content/images/timeline/icon-history.svg" alt="History">
             </div>
 
             <div class="cd-timeline-content">
-                <input type="checkbox" class="read-more-state" id="post-1" />
+                <input type="checkbox" class="read-more-state" id="post-1"/>
                 <h2>Showing interest in athletics</h2>
                 <p class="read-more-wrap">
                     Evan showed a keen interest in running from an early age. At any sporting event held from Nursery through to the Primary School ages he would put himself forward to run in the running race.
@@ -78,6 +70,29 @@
         </div>
 
         <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-event">
+                <img src="/Content/images/timeline/icon-event.svg" alt="Event">
+            </div>
+
+            <div class="cd-timeline-content polaroid-container">
+                <h2>First Sports Day</h2>
+                <p class="read-more-wrap">
+                    Evan's first sports day sees him qualify for the individual sprint race. The qualification events are held during school time in the weeks leading up to Sports Day. 
+                </p>
+                <p class="center">
+                    @{ image = new AssociatedImage("2010_sports_day_nh1cd7", "Sprint Race"); }
+                    <span class="polaroid" title="@image.Caption">
+                        <img src="/Content/images/blank.jpg" class="dynamic_image pure-img-responsive"
+                             data-src="@(image.Source)"
+                             data-width="350" 
+                             data-crop="fill" data-quality="80" alt="@image.Caption" />
+                    </span>
+                </p>
+                <span class="cd-date">2010</span>
+            </div>
+        </div>
+
+        <div class="cd-timeline-block">
             <div class="cd-timeline-img cd-history is-hidden">
                 <img src="/Content/images/timeline/icon-history.svg" alt="History">
             </div>
@@ -86,7 +101,7 @@
                 <h2>Tribe Athletics</h2>
                 <p>
                     We were given the details of an athletics club that runs at the University of Bath. This was pre 2012 Olympics, which has since inspired more young children to choose athletics so luckily the waiting list was not too long and we were able to get him in during 2011.
-                    The <a href="http://www.teambath.com/tribe-schools/tribe-activities-7-14-years/">'Tribe'</a> athletics club was fun way to introduce an array of track and field activities to young children.
+                    The <a href="http://www.teambath.com/tribe-schools/tribe-activities-7-14-years/" target="_blank">'Tribe'</a> athletics club was fun way to introduce an array of track and field activities to young children.
                 </p>
                 <span class="cd-date">2011</span>
             </div>
@@ -98,11 +113,11 @@
             </div>
 
             <div class="cd-timeline-content is-hidden">
-                <input type="checkbox" class="read-more-state" id="post-3" />
+                <input type="checkbox" class="read-more-state" id="post-3"/>
                 <h2>Team Bath 365 Athletics Club</h2>
                 <p class="read-more-wrap">
                     Evan was starting to outgrow Tribe and wanted to have a go at competing. Competing is particularly hard when you are not affiliated to an athletics club, you have to compete as an independent and research all the events and activities yourself.
-                    We decided to put Evan on the waiting list to join <a href="http://www.teambathac.org/join/junior/junior-9-11/">Team Bath 365</a>, at 8 years old he was still too young to join this club, which accepts children when they reach 9 as they would be competing in the youngest age category U11's.
+                    We decided to put Evan on the waiting list to join <a href="http://www.teambathac.org/join/junior/junior-9-11/" target="_blank">Team Bath 365</a>, at 8 years old he was still too young to join this club, which accepts children when they reach 9 as they would be competing in the youngest age category U11's.
                     <span class="read-more-target">
                         In the summer before his 9th birthday, we decided to take Evan along to a few open athletics meets to compete as an Independent just to get a feel for what it's like. You can get similar issues in athletics to those that actors get when they get 'Stage Fright' performing and the earlier you tackle this the better.
                     </span>
@@ -113,16 +128,41 @@
         </div>
 
         <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-event">
+                <img src="/Content/images/timeline/icon-event.svg" alt="Event">
+            </div>
+
+            <div class="cd-timeline-content polaroid-container">
+                <h2>Year 3 Sports Day</h2>
+                <p class="read-more-wrap">
+                    At 8 years old, Evan is proving to be a very confident sprinter. He loves all aspects of the 'Sports Day' event at school but it is only the running race at the end of the day that has any competitive element.
+                    Evan always qualifies as the fastest runner in his class/ house group and as a result he only gets to race the sprint. He has shown interest in also running the relay event but the policy of his primary school is
+                    that the same child cannot run both. The fastest runs the individual event and the next 4 fastest will run the relay.
+                </p>
+                <p class="center">
+                    @{ image = new AssociatedImage("2013_sports_day_xfblzc", "Sprint Race"); }
+                    <span class="polaroid" title="@image.Caption">
+                        <img src="/Content/images/blank.jpg" class="dynamic_image pure-img-responsive"
+                             data-src="@(image.Source)"
+                             data-width="350"
+                             data-crop="fill" data-quality="80" alt="@image.Caption" />
+                    </span>
+                </p>
+                <span class="cd-date">2013</span>
+            </div>
+        </div>
+
+        <div class="cd-timeline-block">
             <div class="cd-timeline-img cd-history is-hidden">
                 <img src="/Content/images/timeline/icon-history.svg" alt="History">
             </div>
 
             <div class="cd-timeline-content is-hidden">
-                <input type="checkbox" class="read-more-state" id="post-4" />
+                <input type="checkbox" class="read-more-state" id="post-4"/>
                 <h2>Talent Development Centre</h2>
                 <p class="read-more-wrap">
                     When Evan made it into the 365 athletics club, which is just a step up from Tribe but with older children, we decided to investigate if there were any other sessions that Evan could do to fine tune his natural ability.
-                    This is when we found out about the <a href="http://www.teambath.com/sport/youth-sport/talent-development-centre/">Talent Development Centre (TDC)</a>, which also operates out of the University of Bath.
+                    This is when we found out about the <a href="http://www.teambath.com/sport/youth-sport/talent-development-centre/" target="_blank">Talent Development Centre (TDC)</a>, which also operates out of the University of Bath.
                     <span class="read-more-target">
                         You are initially invited to an assessment day where they put you through a series of tests and activities (parents were not invited to watch).
                         If successful, you can then choose from a variety of sessions that you can then attend that focus on improving specific attributes. E.g. Speed and Agility, Strength, Power etc..
@@ -132,6 +172,48 @@
                 </p>
                 <label for="post-4" class="cd-read-more"></label>
                 <span class="cd-date">2014</span>
+            </div>
+
+            <div class="cd-timeline-block">
+                <div class="cd-timeline-img cd-event">
+                    <img src="/Content/images/timeline/icon-event.svg" alt="Event">
+                </div>
+
+                <div class="cd-timeline-content polaroid-container">
+                    <h2>Year 4 Sports Day</h2>
+                    <p class="read-more-wrap">
+                        Evan was back to his best this year. The 2013 year 3 sports day event was a wash out. We had booked the day off only to be alerted at the start of the day that due to the bad weather
+                        the event would be postponed. It was a little premature from the school as by the afternoon, the weather was absolutely fine. This year with Evan now 9, he was keen to get back to winning ways as the
+                        event the year before ended up being held indoors and Evan had a slip and recovered to finish only 2nd. You could tell that competing for Team Bath was having an effect on Evan. At the start of the race
+                        this year he remained focused, performing the kind of pre-race routine that Elite runners like Usain Bolt would go through—Evan even asked if he could wear his spikes! The children lining up next to Evan were just chatting and joking waiting for the race to start.
+                        Evan had an outstanding race, finishing comfortably 1st.
+                    </p>
+                    <ul class="polaroids pure-g">
+                        <li class="pure-u-1-2">
+                            @{
+                                image = new AssociatedImage("2014_sports_day_track_yetvkd", "Sprint Race");
+                            }
+                            <span class="polaroid" title="@image.Caption">
+                                <img src="/Content/images/blank.jpg" class="dynamic_image pure-img-responsive"
+                                     data-src="@(image.Source)"
+                                     data-width="285" 
+                                     data-crop="fill" data-quality="80" alt="@image.Caption" />
+                            </span>
+                        </li>
+                        <li class="pure-u-1-2">
+                            @{
+                                image = new AssociatedImage("2014_sports_day_field_ea7glo", "Egg and Spoon");
+                            }
+                            <span class="polaroid" title="@image.Caption">
+                                <img src="/Content/images/blank.jpg" class="dynamic_image pure-img-responsive"
+                                     data-src="@(image.Source)"
+                                     data-width="285" 
+                                     data-crop="fill" data-quality="80" alt="@image.Caption" />
+                            </span>
+                        </li>
+                    </ul>
+                    <span class="cd-date">2014</span>
+                </div>
             </div>
         </div>
     </div>
