@@ -2,7 +2,6 @@
 
 @{
     ViewBag.Title = "Evan's Athletics";
-    AssociatedImage image;
 }
 
 <section id="timeline">
@@ -20,7 +19,7 @@
                 <ul class="polaroids pure-g">
                     <li class="pure-u-1-2">
                         @{
-                            image = new AssociatedImage("2008_sprint_race_dzze6k", "Sprint Race");
+                            var image = new AssociatedImage("2008_sprint_race_dzze6k", "Sprint Race");
                         }
                         <span class="polaroid" title="@image.Caption">
                             <img src="/Content/images/blank.jpg" class="dynamic_image pure-img-responsive"
