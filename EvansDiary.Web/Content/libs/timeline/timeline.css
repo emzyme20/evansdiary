@@ -18,7 +18,7 @@ html * {
 }
 
 body {
-  background-color: #e9f0f5;
+  /*background-color: #e9f0f5;*/
 }
 
 #timeline {
@@ -26,6 +26,7 @@ body {
   /*font-family: "Droid Serif", "PT Serif", serif;*/
   font-family: "Open Sans", sans-serif;
   color: #7f8c97;
+  z-index: 2;
 }  
 
 #timeline a {
@@ -42,8 +43,24 @@ body {
 #timeline h2 {
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
-  font-size: 20px;
-  font-size: 1.25rem;
+  font-size: 14px;
+  font-size: 1.4rem;
+}
+
+@media (min-width: 321px) and (max-width: 48em){
+  #timeline h1,
+  #timeline h2 {
+    font-size: 20px;
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (min-width: 35.5em) {
+  #timeline h1,
+  #timeline h2 {
+    font-size: 26px;
+    font-size: 2.6rem;
+  }
 }
 
 
@@ -84,7 +101,7 @@ header {
 header h1 {
     color: white;
     font-size: 18px;
-    font-size: 1.125rem;
+    font-size: 1.8rem;
 }
 
 @media only screen and (min-width: 1170px) {
@@ -94,7 +111,7 @@ header h1 {
     }
     header h1 {
         font-size: 24px;
-        font-size: 1.5rem;
+        font-size: 2.4rem;
     }
 }
 
@@ -297,7 +314,21 @@ header h1 {
 .cd-timeline-content .cd-read-more,
 .cd-timeline-content .cd-date {
     font-size: 13px;
-    font-size: 0.8125rem;
+    font-size: 1.3rem;
+}
+
+@media (min-width: 321px) and (max-width: 48em){
+  .cd-timeline-content p {
+    font-size: 14px;
+    font-size: 1.4rem;
+  }
+}
+
+@media only screen and (min-width: 35.5em) {
+  .cd-timeline-content p {
+    font-size: 16px;
+    font-size: 1.6rem;
+  }
 }
 
 .cd-timeline-content .cd-read-more,
@@ -345,16 +376,16 @@ header h1 {
 @media only screen and (min-width: 768px) {
     .cd-timeline-content h2 {
         font-size: 20px;
-        font-size: 1.25rem;
+        font-size: 2rem;
     }
     .cd-timeline-content p {
         font-size: 14px;
-        font-size: 0.875rem;
+        font-size: 1.4rem;
     }
     .cd-timeline-content .cd-read-more,
     .cd-timeline-content .cd-date {
         font-size: 14px;
-        font-size: 0.875rem;
+        font-size: 1.4rem;
     }
 }
 
@@ -379,7 +410,7 @@ header h1 {
         left: 122%;
         top: 6px;
         font-size: 16px;
-        font-size: 1rem;
+        font-size: 1.6rem;
     }
     .cd-timeline-block:nth-child(even) .cd-timeline-content {
         float: right;

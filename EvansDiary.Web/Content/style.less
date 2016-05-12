@@ -323,17 +323,15 @@ ul.polaroids a:hover {
 
   h4 {
     font-family: 'PT Serif', serif;
+    font-size: 40px;
     font-size: 4rem;
     line-height: 1.2;
     color: #58595B;
     margin-bottom: 2rem;
     width: 100%;
 
-    @media screen and (max-width: @mq-xs) {
-      font-size: 3.4rem;
-    }
-
     @media screen and (min-width: @mq-md) and (max-width: @mq-lg) {
+      font-size: 24px;
       font-size: 2.4em;
     }
   }
@@ -341,7 +339,8 @@ ul.polaroids a:hover {
   p {
     color: #58595B;
     font-family: "Open Sans", Helvetica, sans-serif;
-    font-size: 1.25rem;
+    font-size: 12px;
+    font-size: 1.2rem;
     text-transform: uppercase;
     width: 100%;
     text-align: unset;
@@ -383,4 +382,25 @@ ul.polaroids a:hover {
       height: 100%;
     }
   }
+}
+
+.background-image {
+  background-image: url('images/timeline/background-splash.jpg');
+  background-size: cover;
+  display: block;
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
+  height: 800px;
+  left: 0;
+  position: fixed;
+  right: 0;
+  z-index: -1;
+}
+
+.layer {
+    /*background-color:rgba(248,247,216,0.7);*/ 
+    background-color:rgba(196,224,229,0.7); 
+    /*background-color:rgba(76,161,175,0.7);*/ 
+    width:100%; 
+    height:100%;
 }
