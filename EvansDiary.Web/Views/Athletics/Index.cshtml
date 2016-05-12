@@ -176,47 +176,84 @@
                 <label for="post-4" class="cd-read-more"></label>
                 <span class="cd-date">2014</span>
             </div>
+        </div>
 
-            <div class="cd-timeline-block">
-                <div class="cd-timeline-img cd-event">
-                    <img src="/Content/images/timeline/icon-event.svg" alt="Event">
-                </div>
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-event">
+                <img src="/Content/images/timeline/icon-event.svg" alt="Event">
+            </div>
 
-                <div class="cd-timeline-content polaroid-container">
-                    <h2>Year 4 Sports Day</h2>
-                    <p class="read-more-wrap">
-                        Evan was back to his best this year. The 2013 year 3 sports day event was a wash out. We had booked the day off only to be alerted at the start of the day that due to the bad weather
-                        the event would be postponed. It was a little premature from the school as by the afternoon, the weather was absolutely fine. This year with Evan now 9, he was keen to get back to winning ways as the
-                        event the year before ended up being held indoors and Evan had a slip and recovered to finish only 2nd. You could tell that competing for Team Bath was having an effect on Evan. At the start of the race
-                        this year he remained focused, performing the kind of pre-race routine that Elite runners like Usain Bolt would go through—Evan even asked if he could wear his spikes! The children lining up next to Evan were just chatting and joking waiting for the race to start.
-                        Evan had an outstanding race, finishing comfortably 1st.
+            <div class="cd-timeline-content polaroid-container">
+                <h2>Year 4 Sports Day</h2>
+                <p class="read-more-wrap">
+                    Evan was back to his best this year. The 2013 year 3 sports day event was a wash out. We had booked the day off only to be alerted at the start of the day that due to the bad weather
+                    the event would be postponed. It was a little premature from the school as by the afternoon, the weather was absolutely fine. This year with Evan now 9, he was keen to get back to winning ways as the
+                    event the year before ended up being held indoors and Evan had a slip and recovered to finish only 2nd. You could tell that competing for Team Bath was having an effect on Evan. At the start of the race
+                    this year he remained focused, performing the kind of pre-race routine that Elite runners like Usain Bolt would go through—Evan even asked if he could wear his spikes! The children lining up next to Evan were just chatting and joking waiting for the race to start.
+                    Evan had an outstanding race, finishing comfortably 1st.
+                </p>
+                <ul class="polaroids pure-g">
+                    <li class="pure-u-1-2">
+                        @{
+                            image = new AssociatedImage("2014_sports_day_track_yetvkd", "Sprint Race");
+                        }
+                        <span class="polaroid" title="@image.Caption">
+                            <img src="/Content/images/blank.jpg" class="dynamic_image pure-img-responsive"
+                                 data-src="@(image.Source)"
+                                 data-width="285"
+                                 data-crop="fill" data-quality="80" alt="@image.Caption" />
+                        </span>
+                    </li>
+                    <li class="pure-u-1-2">
+                        @{
+                            image = new AssociatedImage("2014_sports_day_field_ea7glo", "Egg and Spoon");
+                        }
+                        <span class="polaroid" title="@image.Caption">
+                            <img src="/Content/images/blank.jpg" class="dynamic_image pure-img-responsive"
+                                 data-src="@(image.Source)"
+                                 data-width="285"
+                                 data-crop="fill" data-quality="80" alt="@image.Caption" />
+                        </span>
+                    </li>
+                </ul>
+                <span class="cd-date">2014</span>
+            </div>
+        </div>
+
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-event">
+                <img src="/Content/images/timeline/icon-event.svg" alt="Event">
+            </div>
+
+            <div class="cd-timeline-content polaroid-container">
+                <input type="checkbox" class="read-more-state" id="post-4ab2" />
+                <h2>Junior Aquathlon</h2>
+                <p class="read-more-wrap">
+                    Evan thoroughly enjoyed his triathlon a few years ago but didn't enjoy the bike stage of it. We have since discovered that you can do various combinations of these kinds of events.
+                    As a result, Evan being a very good runner and swimmer decided to have a go at an aquathlon which combines his preferred events. We found an event local to us run by the <a href="http://hotchillitri.co.uk/" target="_blank">'Trowbridge Hotchilli Triathlon Club'</a>, which caters for all age groups.
+                    The day of the event was a horrible day (weather-wise), the transition stage was being held in the tennis courts, so athletes would have to run from the swimming pool along the concrete in bare feet before being able to change into trainers for the run.
+                    <span class="read-more-target">
+                        It rained quite heavily leading up to the race, however by the time Evan emerged from his 800m swim, it was just overcast. The concrete was very slippy, which saw several people slip over!
+                        Evan made it to the transition stage in one piece. The 1200m run was a real slog, it was cold and you tend to find that it's not so much of a race because of the long distance swim that gaps between the competitors build up and you are completing a time trial instead of a race.
+                        The athletes all wear tags around their ankles so that you know when they started and finished and from those times you can calculate the race time.
+                    </span>
+                </p>
+                <label for="post-4ab2" class="cd-read-more"></label>
+                <!-- To honour the padding on the paragraph below the floated element we need to clear and set the overflow to auto. The div is
+                     an invisible wrapper that butts up against the floated element and then the margins on the paragraph then work as expected
+                     against the wrapper div. -->
+                <div style="clear: both; overflow: auto;">
+                    <p class="center">
+                        @{ image = new AssociatedImage("2016_aquathlon_ybxjei", "The running stage"); }
+                        <span class="polaroid" title="@image.Caption">
+                            <img src="/Content/images/blank.jpg" class="dynamic_image pure-img-responsive"
+                                 data-src="@(image.Source)"
+                                 data-width="350"
+                                 data-crop="fill" data-quality="80" alt="@image.Caption" />
+                        </span>
                     </p>
-                    <ul class="polaroids pure-g">
-                        <li class="pure-u-1-2">
-                            @{
-                                image = new AssociatedImage("2014_sports_day_track_yetvkd", "Sprint Race");
-                            }
-                            <span class="polaroid" title="@image.Caption">
-                                <img src="/Content/images/blank.jpg" class="dynamic_image pure-img-responsive"
-                                     data-src="@(image.Source)"
-                                     data-width="285"
-                                     data-crop="fill" data-quality="80" alt="@image.Caption" />
-                            </span>
-                        </li>
-                        <li class="pure-u-1-2">
-                            @{
-                                image = new AssociatedImage("2014_sports_day_field_ea7glo", "Egg and Spoon");
-                            }
-                            <span class="polaroid" title="@image.Caption">
-                                <img src="/Content/images/blank.jpg" class="dynamic_image pure-img-responsive"
-                                     data-src="@(image.Source)"
-                                     data-width="285"
-                                     data-crop="fill" data-quality="80" alt="@image.Caption" />
-                            </span>
-                        </li>
-                    </ul>
-                    <span class="cd-date">2014</span>
                 </div>
+                <span class="cd-date">2016</span>
             </div>
         </div>
     </div>
