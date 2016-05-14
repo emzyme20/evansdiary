@@ -29,7 +29,7 @@ body {
   z-index: 2;
 }  
 
-#timeline a {
+#timeline a:not(.polaroid-link) {
   /*color: #acb7c0;*/
   text-decoration: none;
   font-family: "Open Sans", sans-serif;
