@@ -310,16 +310,25 @@
                         </span>
                     </li>
                     <li class="pure-u-1-2">
-                        @{
+                        @*@{
                             image = new AssociatedImage("2015_youtube_sprint_rn9kze", "Sprint Race Video");
-                        }
+                        }*@
 
-                        <a href="https://youtu.be/LUgBYkUAnn8" title="Year 5 - Sprint Race" class="polaroid-link" target="_blank">
+                        <div class="video-container">
+                            <span class="polaroid" title="Sprint Race Video">
+                                <iframe type="text/html"
+                                        width="350"
+                                        src="http://www.youtube.com/embed/LUgBYkUAnn8"
+                                        allowfullscreen=""></iframe>
+                            </span>
+                        </div>
+
+                        @*<a href="https://youtu.be/LUgBYkUAnn8" title="Year 5 - Sprint Race" class="polaroid-link" target="_blank">
                             <img src="/Content/images/blank.jpg" class="dynamic_image pure-img-responsive"
                                  data-src="@(image.Source)"
                                  data-width="350"
                                  data-crop="fill" data-quality="80" alt="@image.Caption" />
-                        </a>
+                        </a>*@
                     </li>
                 </ul>
                 <span class="cd-date">2015</span>
