@@ -12,6 +12,7 @@ namespace EvansDiary.Web
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute<AthleticsController>(c => c.Index(), "athletics");
+            routes.MapRoute<FamilyController>(c => c.Index(), "family");
             routes.MapRoute<DiaryController>(c => c.Index(), "diary");
             routes.MapRoute<DiaryController>(c => c.Year(0), "diary/year/{year}");
             routes.MapRoute<DiaryController>(c => c.Week(0, 0), "diary/year/{year}/week/{week}");

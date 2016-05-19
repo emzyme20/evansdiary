@@ -1,0 +1,23 @@
+﻿@{
+    ViewBag.Title = "Family";
+}
+
+<div class="background-image family-bg">
+    <div class="layer">
+    </div>
+</div>
+<section>
+    
+</section>
+
+@section PageScripts {
+    @Scripts.Render("~/bundles/jquerycloudinary")
+   
+    <script type="text/javascript">
+        $(function () {
+            ed.cloudinary.dynamicImages();
+
+            
+        });
+    </script>
+}

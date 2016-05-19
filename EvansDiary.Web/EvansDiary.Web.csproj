@@ -179,6 +179,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Bootstrap\Bootstrap.cs" />
+    <Compile Include="Controllers\FamilyController.cs" />
     <Compile Include="Controllers\AthleticsController.cs" />
     <Compile Include="Controllers\HospitalController.cs" />
     <Compile Include="Controllers\DiaryController.cs" />
@@ -213,6 +214,7 @@
     <Content Include="Content\images\athletics-pictogram-64-216355.png" />
     <Content Include="Content\images\athletics-pictogram-72-216355.png" />
     <Content Include="Content\images\blank.jpg" />
+    <Content Include="Content\images\family\beach.jpg" />
     <Content Include="Content\images\grid\best-friends.jpg" />
     <Content Include="Content\images\grid\cockerel.jpg" />
     <Content Include="Content\images\grid\family.jpg" />
@@ -356,6 +358,7 @@
     <Content Include="Views\Shared\_GoogleFonts.cshtml" />
     <Content Include="Views\Shared\_GoogleAnalytics.cshtml" />
     <Content Include="Views\Athletics\Index.cshtml" />
+    <Content Include="Views\Family\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
