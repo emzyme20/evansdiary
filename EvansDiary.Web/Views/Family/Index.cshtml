@@ -1,4 +1,5 @@
-﻿@{
+﻿@using EvansDiary.Web.Diary.TransferObjects
+@{
     ViewBag.Title = "Family";
 }
 
@@ -7,7 +8,41 @@
     </div>
 </div>
 <section>
-    
+    <div id="scatter">
+        <figure id="container">
+            <a href="#" id="estee">
+                @{
+                    var image = new AssociatedImage("aug_flying_closeup_pb8c59", "Family");
+                }
+                @*<span class="polaroid" title="@image.Caption">
+                    <img src="/Content/images/blank.jpg" class="dynamic_image pure-img-responsive"
+                         data-src="@(image.Source)"
+                         data-width="285" data-height="214"
+                         data-crop="fill" data-quality="80" alt="@image.Caption" />
+                </span>*@
+                <img src="/Content/images/blank.jpg" class="dynamic_image pure-img-responsive"
+                     data-src="@(image.Source)"
+                     data-width="285" data-height="214"
+                     data-crop="fill" data-quality="80" alt="@image.Caption"/>
+
+                @*<video poster="http://demosthenes.info/assets/images/estee.jpg">
+                    <source src="http://demosthenes.info/assets/videos/estee.mp4" type="video/mpeg">
+                    <source src="http://demosthenes.info/assets/videos/estee.webm" type="video/webm">
+                </video>*@
+            </a>
+            <a href="#" id="indre">
+                <img src="/Content/images/blank.jpg" class="dynamic_image pure-img-responsive"
+                     data-src="@(image.Source)"
+                     data-width="285" data-height="214"
+                     data-crop="fill" data-quality="80" alt="@image.Caption"/>
+
+                @*<video poster="http://demosthenes.info/assets/images/indre.jpg">
+                    <source src="http://demosthenes.info/assets/videos/indre.mp4" type="video/mpeg">
+                    <source src="http://demosthenes.info/assets/videos/indre.webm" type="video/webm">
+                </video>*@
+            </a>
+        </figure>
+    </div>
 </section>
 
 @section PageScripts {
