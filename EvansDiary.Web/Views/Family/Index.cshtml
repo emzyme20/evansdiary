@@ -8,40 +8,66 @@
     </div>
 </div>
 <section>
-    <div id="scatter">
-        <figure id="container">
-            <a href="#" id="estee">
-                @{
-                    var image = new AssociatedImage("aug_flying_closeup_pb8c59", "Family");
-                }
-                @*<span class="polaroid" title="@image.Caption">
-                    <img src="/Content/images/blank.jpg" class="dynamic_image pure-img-responsive"
-                         data-src="@(image.Source)"
-                         data-width="285" data-height="214"
-                         data-crop="fill" data-quality="80" alt="@image.Caption" />
-                </span>*@
+    <div class="puzzle pure-g">
+        <div class="piece pure-u-1-2 pure-u-sm-5-24">
+            @{
+                var image = new AssociatedImage("sand_dune_jumping_jk1all", "Leap of Faith");
+            }
+            <span class="polaroid" title="@image.Caption">
                 <img src="/Content/images/blank.jpg" class="dynamic_image pure-img-responsive"
                      data-src="@(image.Source)"
-                     data-width="285" data-height="214"
-                     data-crop="fill" data-quality="80" alt="@image.Caption"/>
+                     data-width="225"
+                     data-crop="fill" data-quality="80" alt="@image.Caption" />
+            </span>
+        </div>
 
-                @*<video poster="http://demosthenes.info/assets/images/estee.jpg">
-                    <source src="http://demosthenes.info/assets/videos/estee.mp4" type="video/mpeg">
-                    <source src="http://demosthenes.info/assets/videos/estee.webm" type="video/webm">
-                </video>*@
-            </a>
-            <a href="#" id="indre">
+        <div class="piece pure-u-1-2 pure-u-sm-3-24">
+            @{
+                image = new AssociatedImage("beach_r7zxeb", "Drawings in the Sand");
+            }
+            <span class="polaroid" title="@image.Caption">
                 <img src="/Content/images/blank.jpg" class="dynamic_image pure-img-responsive"
                      data-src="@(image.Source)"
-                     data-width="285" data-height="214"
-                     data-crop="fill" data-quality="80" alt="@image.Caption"/>
+                     data-width="200"
+                     data-crop="fill" data-quality="80" alt="@image.Caption" />
+            </span>
+        </div>
 
-                @*<video poster="http://demosthenes.info/assets/images/indre.jpg">
-                    <source src="http://demosthenes.info/assets/videos/indre.mp4" type="video/mpeg">
-                    <source src="http://demosthenes.info/assets/videos/indre.webm" type="video/webm">
-                </video>*@
-            </a>
-        </figure>
+        <div class="piece pure-u-1-2 pure-u-sm-8-24">
+            @{
+                image = new AssociatedImage("camping_bokp4f", "Watching the Red Arrows");
+            }
+            <span class="polaroid" title="@image.Caption">
+                <img src="/Content/images/blank.jpg" class="dynamic_image pure-img-responsive"
+                     data-src="@(image.Source)"
+                     data-width="300"
+                     data-crop="fill" data-quality="80" alt="@image.Caption" />
+            </span>
+        </div>
+
+        <div class="piece pure-u-1-2 pure-u-sm-3-24">
+            @{
+                image = new AssociatedImage("torch_hxqf13", "2012 London Olympics");
+            }
+            <span class="polaroid" title="@image.Caption">
+                <img src="/Content/images/blank.jpg" class="dynamic_image pure-img-responsive"
+                     data-src="@(image.Source)"
+                     data-width="250"
+                     data-crop="fill" data-quality="80" alt="@image.Caption" />
+            </span>
+        </div>
+
+        <div class="piece pure-u-1-2 pure-u-sm-5-24">
+            @{
+                image = new AssociatedImage("sand_dune_jumping_jk1all", "Leap of Faith");
+            }
+            <span class="polaroid" title="@image.Caption">
+                <img src="/Content/images/blank.jpg" class="dynamic_image pure-img-responsive"
+                     data-src="@(image.Source)"
+                     data-width="225"
+                     data-crop="fill" data-quality="80" alt="@image.Caption" />
+            </span>
+        </div>
     </div>
 </section>
 
