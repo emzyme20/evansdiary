@@ -21,6 +21,21 @@
             </div>
         }
     </div>
+
+    @* Using the polaroid images - does not vertically align photos and the spacing is out a little so the images don't fit as snuggly *@
+    @*<ul class="polaroid-container puzzle">
+        @foreach (var image in Model.Images)
+        {
+            <li class="piece">
+                <span class="polaroid" title="@image.Caption">
+                    <img src="/Content/images/blank.jpg" class="dynamic_image pure-img-responsive"
+                         data-src="@(image.Source)"
+                         data-width="@image.Width"
+                         data-crop="fill" data-quality="80" alt="@image.Caption" />
+                </span>
+            </li>
+        }
+    </ul>*@
 </section>
 
 @section PageScripts {
