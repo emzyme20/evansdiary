@@ -23,7 +23,6 @@ body {
 
 #timeline {
   font-size: 100%;
-  /*font-family: "Droid Serif", "PT Serif", serif;*/
   font-family: "Open Sans", sans-serif;
   color: #7f8c97;
   z-index: 2;
@@ -41,6 +40,7 @@ body {
 
 #timeline h1,
 #timeline h2 {
+  font-family: Merriweather, serif;
   font-size: 14px;
   font-size: 1.4rem;
 }
@@ -333,7 +333,7 @@ header h1 {
 
 .cd-timeline-content .cd-read-more,
 .cd-timeline-content .cd-date {
-    display: inline-block;
+  display: inline-block;
 }
 
 .cd-timeline-content p {
