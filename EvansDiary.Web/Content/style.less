@@ -3,8 +3,21 @@
 
 p {
   text-align: justify;
-  font-size: 1em;
+  font-size: 14px;
+  font-size: 1.4rem;
   line-height: 1.6em;
+
+  // up to extra small
+  @media screen and (max-width: @mq-xs) {
+    font-size: 13px;
+    font-size: 1.3rem;
+  }
+
+  // small to medium
+  @media screen and (min-width: @mq-sm) and (max-width: @mq-md) {
+    font-size: 16px;
+    font-size: 1.6rem;    
+  }
 }
 
 .logo {
@@ -35,26 +48,69 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 h1 {
-  font-size: 36px;
-
-  @media screen and (max-width: @mq-sm) {
-    font-size: 21px;
+  font-size: 26px;
+  font-size: 2.6rem; 
+  
+  // up to extra small
+  @media screen and (max-width: @mq-xs) {
+    font-size: 18px;
+    font-size: 1.8rem;
   }
 
+  // extra small to small
+  @media screen and (min-width: @mq-xs) and (max-width: @mq-sm) {
+    font-size: 22px;
+    font-size: 2.2rem;       
+  }
+
+  // small to medium
   @media screen and (min-width: @mq-sm) and (max-width: @mq-md) {
-     font-size: 24px;
+    font-size: 36px;
+    font-size: 3.6rem;       
   }
 }
 
-@media screen and (max-width: @mq-sm) {
-  h3 {
-    font-size: 18px;
+h2 {
+  font-size: 30px;
+  font-size: 3rem; 
+  
+  // up to extra small
+  @media screen and (max-width: @mq-xs) {
+    font-size: 26px;
+    font-size: 2.6rem;
   }
+
+  // small to medium
+  @media screen and (min-width: @mq-sm) and (max-width: @mq-md) {
+    font-size: 36px;
+    font-size: 3.6rem;       
+  }
+}
+
+h3 {
+  font-size: 20px;
+  font-size: 2rem;
+    
+  // up to extra small
+  @media screen and (max-width: @mq-xs) {
+    font-size: 14px;
+    font-size: 1.4rem;
+  }
+
+  // small to medium
+  @media screen and (min-width: @mq-sm) and (max-width: @mq-md) {
+    font-size: 26px;
+    font-size: 2.6rem;
+  }
+}
+
+h4 {
+  font-size: 1.8rem;
 }
 
 @media screen and (max-width: @mq-sm) {
   h4.back-light {
-    font-size: 10px;
+    font-size: 1rem;
     padding: 5px;
   }
   .carousel-indicators {
@@ -95,9 +151,18 @@ h1 {
   font-weight: 300;
   color: #888;
   font-size: 16px;
+  font-size: 1.6rem;
 
+  // up to small
   @media screen and (max-width: @mq-sm) {
     font-size: 14px;
+    font-size: 1.4rem;
+  }
+
+  // small to medium
+  @media screen and (min-width: @mq-sm) and (max-width: @mq-md) {
+    font-size: 18px;
+    font-size: 1.8rem;    
   }
 }
 
