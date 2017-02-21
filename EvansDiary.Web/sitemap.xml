@@ -19,6 +19,18 @@
   <priority>0.80</priority>
 </url>
 <url>
+  <loc>http://www.evanmiddlebrook.com/athletics</loc>
+  <lastmod>2017-02-14T21:00:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>1.0</priority>
+</url>
+<url>
+  <loc>http://www.evanmiddlebrook.com/family</loc>
+  <lastmod>2017-02-14T21:00:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>1.0</priority>
+</url>  
+<url>
   <loc>http://www.evanmiddlebrook.com/diary/year/2005</loc>
   <lastmod>2016-04-08T15:15:00+00:00</lastmod>
   <changefreq>yearly</changefreq>
