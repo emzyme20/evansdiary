@@ -1,8 +1,9 @@
-﻿@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,300italic|Merriweather:400italic|Permanent+Marker:400|PT+Serif:400);
+﻿@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400,700|Merriweather:300,400,400italic|Permanent+Marker:400|PT+Serif:400);
 @import "styling/_variables";
 
 p {
   text-align: justify;
+  font-weight: 400;
   font-size: 14px;
   font-size: 1.4rem;
   line-height: 1.6em;
@@ -18,6 +19,11 @@ p {
     font-size: 16px;
     font-size: 1.6rem;    
   }
+}
+
+p.italic, em {
+  font-weight: 300;
+  font-style: italic;
 }
 
 .logo {
@@ -41,6 +47,7 @@ p {
 
 h1,h2,h3,h4,h5,h6 {
   font-family: Merriweather;
+  font-weight: 400;
 }
 
 .carousel-caption h4 {
@@ -93,8 +100,8 @@ h3 {
     
   // up to extra small
   @media screen and (max-width: @mq-xs) {
-    font-size: 14px;
-    font-size: 1.4rem;
+    font-size: 16px;
+    font-size: 1.6rem;
   }
 
   // small to medium
@@ -434,13 +441,14 @@ ul.polaroids a:hover {
 
   h4 {
     font-family: 'PT Serif', serif;
+    //font-family: Merriweather, 'PT Serif', serif;
     font-size: 40px;
     font-size: 4rem;
     line-height: 1.2;
     color: #58595B;
     margin-bottom: 2rem;
     width: 100%;
-
+    
     @media screen and (min-width: @mq-md) and (max-width: @mq-lg) {
       font-size: 24px;
       font-size: 2.4em;
