@@ -805,7 +805,7 @@ namespace EvansDiary.Web.Diary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Emma has been exclusively breast-feeding Evan since birth but sometimes she needs to go out somewhere where she can&apos;t take him along. When that happens she has to try to get him fed before she goes and get back quick as he&apos;s still feeding pretty much every two hours!  
         ///
-        ///So this week she thought she&apos;d try expressing so we could try a bottle feed. I&apos;ll let Emma go into details about the expressing :-) Well a couple of days later we had a couple of ounces of milk **(!)** and we tried it out - he seemed to lo [rest of string was truncated]&quot;;.
+        ///So this week she thought she&apos;d try expressing so we could try a bottle feed. Well a couple of days later we had a couple of ounces of milk **(!)** and we tried it out - he seemed to love it! He had no problems taking the bottle at all. Jus [rest of string was truncated]&quot;;.
         /// </summary>
         public static string y1w6Two {
             get {
