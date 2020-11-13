@@ -37,16 +37,16 @@ namespace EvansDiary.Web
                     "~/Content/style.less"));
 
             // Script bundles
-            var jquery = new ScriptBundle("~/bundles/jquery", "http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js")
+            var jquery = new ScriptBundle("~/bundles/jquery", "http://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js")
                 .Include("~/Scripts/jquery-{version}.js");
 
             jquery.CdnFallbackExpression = "window.jQuery";
 
             bundles.Add(jquery);
-            
+
             bundles.Add(
                 new ScriptBundle("~/bundles/jquerycloudinary").Include(
-                    "~/Scripts/jquery.cloudinary*",
+                    "~/Scripts/cloudinary-jquery*",
                     "~/Scripts/application/ed.cloudinary.js"));
 
             // Use the development version of Modernizr to develop with and learn from. Then, when you're
@@ -66,7 +66,7 @@ namespace EvansDiary.Web
                     "~/Scripts/respond.js",
                     "~/Scripts/Theme/*.js",
                     "~/Scripts/jquery.validate*"));
-            
+
             // Set EnableOptimizations to false for debugging. For more information,
             // visit http://go.microsoft.com/fwlink/?LinkId=301862
             BundleTable.EnableOptimizations = !HttpContext.Current.IsDebuggingEnabled;

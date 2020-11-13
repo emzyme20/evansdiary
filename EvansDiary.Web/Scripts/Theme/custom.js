@@ -19,7 +19,7 @@
         main_fun: function () {
 
             //ADD REMOVE PADDING CLASS ON SCROLL
-            $(window).scroll(function () {
+            $(window).on("scroll", function () {
                 if ($(".navbar").offset().top >50) {
                     $(".navbar-fixed-top").addClass("navbar-pad-original");
                 } else {
@@ -29,7 +29,7 @@
             //SLIDESHOW SCRIPT
             $('.carousel').carousel({
                 interval: 5000 //TIME IN MILLI SECONDS
-            })
+            });
             // PRETTYPHOTO FUNCTION 
 
             $("a.preview").prettyPhoto({
@@ -53,8 +53,7 @@
 
     }
     // Initializing ///
-
-    $(document).ready(function () {
+    $(function () {
         mainApp.main_fun();
     });
 

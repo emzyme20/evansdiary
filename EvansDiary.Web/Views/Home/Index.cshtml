@@ -137,18 +137,18 @@
                 $('.flipbook').height(firstBlock.height());
             });
 
-            $('.rotating-item').hover(function (e) {
+            $('.rotating-item').on("hover", function (e) {
                 pauseSlider();
             },function() {
                 startSlider();
             });
 
-            $(document).on('touchstart', '.rotating-item', function (e) {
+            $('.rotating-item').on('touchstart', function (e) {
                 e.preventDefault();
                 pauseSlider();
             });
 
-            $(document).on('touchend', '.rotating-item', function (e) {
+            $('.rotating-item').on('touchend', function (e) {
                 e.preventDefault();
                 startSlider();
             });
@@ -156,7 +156,7 @@
 
         // $(window).load runs after HTML and images have loaded. 
         // $(function () {} (document ready) runs when the DOM is ready not including images.
-        $(window).load(function() {
+        $(window).on("load", function () {
             var infiniteRotator =
             {
                 init: function() {

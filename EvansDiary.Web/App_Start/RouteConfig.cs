@@ -1,5 +1,6 @@
 ﻿using System.Web.Mvc;
 using System.Web.Routing;
+
 using EvansDiary.Web.Controllers;
 using EvansDiary.Web.Diary.Extensions;
 
@@ -19,6 +20,11 @@ namespace EvansDiary.Web
             routes.MapRoute<DiaryController>(c => c.Month(0, string.Empty), "diary/year/{year}/{month}");
             routes.MapRoute<HospitalController>(c => c.Day(0), "hospital/day/{day}");
             routes.MapRoute<HomeController>(c => c.Index(), "");
+            //routes.MapRoute(
+            //    name: "Homepage",
+            //    url: "",
+            //    defaults: new { controller = "Content", action = "Index" }
+            //);
         }
     }
 }
