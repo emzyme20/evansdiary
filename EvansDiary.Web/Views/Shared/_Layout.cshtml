@@ -26,15 +26,13 @@
     <link rel="apple-touch-icon-precomposed" href="/Content/images/athletics-pictogram-57-216355.png">
     <link rel="icon" href="/Content/images/athletics-pictogram-32-216355.png" sizes="32x32">
 
-    @*@Styles.Render("~/Content/css/reset")*@
     @Styles.Render("~/Content/css")
     @Styles.Render("~/Content/styles")
     
     @Html.Partial("~/Views/Shared/_GoogleAnalytics.cshtml")
 </head>
 <body>
-<!--/.NAVBAR START-->
-<div class="container">
+    <div class="container">
         <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
             <div class="d-flex flex-grow-1 navbar-header">
                 <h1 class="logo">@Html.ActionLink("Evan's Diary", "Index", "Home", null, new { @class = "navbar-brand d-lg-inline-block" })</h1>
@@ -53,7 +51,6 @@
             </div>
         </nav>
     </div>
-    <!--/.NAVBAR END-->
 
     <div class="container body-content">
         @RenderBody()
