@@ -314,20 +314,17 @@ header h1 {
 .cd-timeline-content .cd-read-more,
 .cd-timeline-content .cd-date {
     font-size: 13px;
-    font-size: 1.3rem;
 }
 
 @media (min-width: 321px) and (max-width: 48em){
   .cd-timeline-content p {
     font-size: 14px;
-    font-size: 1.4rem;
   }
 }
 
 @media only screen and (min-width: 35.5em) {
   .cd-timeline-content p {
     font-size: 16px;
-    font-size: 1.6rem;
   }
 }
 
@@ -376,16 +373,13 @@ header h1 {
 @media only screen and (min-width: 768px) {
     .cd-timeline-content h2 {
         font-size: 20px;
-        font-size: 2rem;
     }
     .cd-timeline-content p {
         font-size: 14px;
-        font-size: 1.4rem;
     }
     .cd-timeline-content .cd-read-more,
     .cd-timeline-content .cd-date {
         font-size: 14px;
-        font-size: 1.4rem;
     }
 }
 
@@ -410,7 +404,6 @@ header h1 {
         left: 122%;
         top: 6px;
         font-size: 16px;
-        font-size: 1.6rem;
         /* Add border around the date (required when using a background) */
         background: white;
         border-radius: 0.25em;

@@ -18,13 +18,9 @@ namespace EvansDiary.Web
             routes.MapRoute<DiaryController>(c => c.Year(0), "diary/year/{year}");
             routes.MapRoute<DiaryController>(c => c.Week(0, 0), "diary/year/{year}/week/{week}");
             routes.MapRoute<DiaryController>(c => c.Month(0, string.Empty), "diary/year/{year}/{month}");
+            routes.MapRoute<HospitalController>(c => c.Index(), "hospital");
             routes.MapRoute<HospitalController>(c => c.Day(0), "hospital/day/{day}");
             routes.MapRoute<HomeController>(c => c.Index(), "");
-            //routes.MapRoute(
-            //    name: "Homepage",
-            //    url: "",
-            //    defaults: new { controller = "Content", action = "Index" }
-            //);
         }
     }
 }

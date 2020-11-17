@@ -9,16 +9,25 @@ namespace EvansDiary.Web.Controllers
     {
         private readonly IStaticHospitalContentDelivery _contentDelivery;
 
-        public HospitalController(IStaticHospitalContentDelivery contentDelivery) 
+        public HospitalController(IStaticHospitalContentDelivery contentDelivery)
         {
             _contentDelivery = contentDelivery;
         }
 
+        public ActionResult Index()
+        {
+            return View();
+        }
+
         public ActionResult Day(int day)
         {
-            var diaryEntry = _contentDelivery.GetEntry(day);
+            if (day == 0)
+            {
+                return RedirectToAction(nameof(Day), new { day = 1 });
+            }
 
-            return View(new HospitalDiaryEntryViewModel(day == 1, diaryEntry));
+            var diaryEntry = _contentDelivery.GetEntry(day);
+            return View(new HospitalDiaryEntryViewModel(diaryEntry));
         }
     }
 }

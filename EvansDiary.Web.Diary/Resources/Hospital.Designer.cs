@@ -61,13 +61,13 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ###Breathing Improvement
+        ///   Looks up a localized string similar to ####Breathing Improvement
         ///
         ///Until now I had been on 70% Oxygen with the mask. Even though I was awake and seemingly better, the fact that I needed so much Oxygen just to breathe was worrying. Apparently they had tried to drop it lower in the night and my sats (Oxygen Saturation) had dropped. In the morning they lowered to 60% and my sats remained stable. A step in the right direction if still a long way to go.  
         ///
-        ///###Oh Poo!
+        ///####Oh Poo!
         ///
-        ///The previous day I had eaten some solid(ish) food for the first time - a little [rest of string was truncated]&quot;;.
+        ///The previous day I had eaten some solid(ish) food for the first time - a litt [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string DayEight {
             get {
@@ -76,13 +76,13 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ###And I&apos;m Feeling Great...
+        ///   Looks up a localized string similar to ####And I&apos;m Feeling Great...
         ///
         ///Despite only four hours sleep I woke up feeling good! Laura and Leanne in the beds next to me and opposite were chatting and I joined in and had a cup of coffee. Even before I got up I could really feel the difference, I was going home today.  
         ///
-        ///###Shower Time, Yeah Baby!
+        ///####Shower Time, Yeah Baby!
         ///
-        ///After a crappy breakfast I decided to really freshen up and have a shower. The hospital was able to supply me with shampoo and shower gel which was handy because I didn&apos;t have any of that kind of stuff w [rest of string was truncated]&quot;;.
+        ///After a crappy breakfast I decided to really freshen up and have a shower. The hospital was able to supply me with shampoo and shower gel which was handy because I didn&apos;t have any of that kind of stuff [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string DayEleven {
             get {
@@ -93,9 +93,9 @@ namespace EvansDiary.Web.Diary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to *hello??*
         ///
-        ///###(Written by Emma)
+        ///####(Written by Emma)
         ///
-        ///This was probably the worst day of all for me. I had felt in control since Thursday and today Caroline&apos;s mum had arrived because she was ever so worried and she wanted to be able to visit Caroline everyday. I wasn&apos;t able to go to the hospital in the day because you are restricted to two visitors and today Caroline&apos;s mum and her brother Herve went. I spent the day with Evan at home. We made a collage of Caroline&apos;s pictures so that we could see her all the time and Evan ac [rest of string was truncated]&quot;;.
+        ///This was probably the worst day of all for me. I had felt in control since Thursday and today Caroline&apos;s mum had arrived because she was ever so worried and she wanted to be able to visit Caroline everyday. I wasn&apos;t able to go to the hospital in the day because you are restricted to two visitors and today Caroline&apos;s mum and her brother Herve went. I spent the day with Evan at home. We made a collage of Caroline&apos;s pictures so that we could see her all the time and Evan a [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string DayFive {
             get {
@@ -106,11 +106,11 @@ namespace EvansDiary.Web.Diary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to *huh?*
         ///
-        ///###(Written by Emma)
+        ///####(Written by Emma)
         ///
         ///Last night we left Caroline just before she was going off to the CT Lab. I did return later that evening (twice) with my mum. I am so glad I had my mum with me as none of us were still expecting Caroline to be intubated. The Doctors hadn&apos;t told us that she would likely remain intubated until her condition stabilised.  
         ///
-        ///She looked far more peaceful being intubated as she was just in what the Doctors described as a happy sleepy place. I cried when I saw her, you see stuff  [rest of string was truncated]&quot;;.
+        ///She looked far more peaceful being intubated as she was just in what the Doctors described as a happy sleepy place. I cried when I saw her, you see stuff [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string DayFour {
             get {
@@ -119,11 +119,11 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ###Full English Please!
+        ///   Looks up a localized string similar to ####Full English Please!
         ///
         ///I felt pretty good Friday morning and although I wasn&apos;t exactly looking forward to going back to the ward (so boring), I was pleased because I knew how much better I was and it also meant the end of being restricted by so many drips and lines.  
         ///
-        ///Laura had done her third night shift in a row. She was by far my favourite nurse :) I felt hungry in the morning and she said that I could get a cooked breakfast from the kitchens and this I did! Sausage, bacon, egg, hash brown, beans a [rest of string was truncated]&quot;;.
+        ///Laura had done her third night shift in a row. She was by far my favourite nurse :) I felt hungry in the morning and she said that I could get a cooked breakfast from the kitchens and this I did! Sausage, bacon, egg, hash brown, beans  [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string DayNine {
             get {
@@ -141,11 +141,11 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ###On the Mend at Last!
+        ///   Looks up a localized string similar to ####On the Mend at Last!
         ///
         ///I&apos;d had a rough night - I found it very difficult to sleep with the oxygen mask because the gas was cold on my face and it also blew into my eyes. Plus the discomfort of hardly being able to move and there was stuff going on in the ITU all night long - nurses milling about, alarms going off, being given drips, checks etc. Ugh!  
         ///
-        ///But still, I was awake and on the mend. I had some very exciting news that morning - I was going to have a shampoo!! Seriously, I was pleased about thi [rest of string was truncated]&quot;;.
+        ///But still, I was awake and on the mend. I had some very exciting news that morning - I was going to have a shampoo!! Seriously, I was pleased about th [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string DaySeven {
             get {
@@ -154,11 +154,11 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ###Out of CT
+        ///   Looks up a localized string similar to ####Out of CT
         ///
         ///I awoke from CT *(pah!)* to find a very uncomfortable tube down my throat, my lips were sore and numb, and course I couldn&apos;t speak. No change there then. Some nurses were around. *&quot;Hi Caroline, it&apos;s Tuesday&quot;*. What the fuck?? Where the hell did the weekend just go? I went down to CT on Saturday!!! Man if you&apos;ve never lost time like that let me tell you what a head-screw it is!  
         ///
-        ///I had either Emma or Mum with me, I don&apos;t remember which. I know I spent a lot of time with Emma that afternoon [rest of string was truncated]&quot;;.
+        ///I had either Emma or Mum with me, I don&apos;t remember which. I know I spent a lot of time with Emma that afternoo [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string DaySix {
             get {
@@ -167,11 +167,11 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ###A Bloody Awakening
+        ///   Looks up a localized string similar to ####A Bloody Awakening
         ///
         ///After finally managing to get back off to sleep again I was rudely awakened by the nurse at only 6am, she was giving me blood! I was to be given two units of blood. Apparently the main reason that my sats weren&apos;t quite tip-top was that my haemoglobin levels were low and that was restricting the oxygen I could take in.  
         ///
-        ///The blood needed around 2 hours per bag and it was a thick ol&apos; tube so I was a bit restricted. I sat up so I could read and I must have dislodged the line. The nu [rest of string was truncated]&quot;;.
+        ///The blood needed around 2 hours per bag and it was a thick ol&apos; tube so I was a bit restricted. I sat up so I could read and I must have dislodged the line. The n [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string DayTen {
             get {
@@ -180,11 +180,11 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ###Something has gone wrong!
+        ///   Looks up a localized string similar to ####Something has gone wrong!
         ///
         ///I had a hard night. I was feeling like crap and by the early hours of the morning I was convinced I couldn&apos;t breathe. I called the nurse who propped me up in bed and seemed to just leave me there. Something was seriously up with my chest.  
         ///
-        ///Turns out that she hadn&apos;t left me there - she had called the intensive care unit! I was suddenly surrounded by three scary looking doctors all having a good prod. I didn&apos;t really know where I was going - I was dazed. I was hooked up to  [rest of string was truncated]&quot;;.
+        ///Turns out that she hadn&apos;t left me there - she had called the intensive care unit! I was suddenly surrounded by three scary looking doctors all having a good prod. I didn&apos;t really know where I was going - I was dazed. I was hooked up to [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string DayThree {
             get {
@@ -193,11 +193,11 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ###Post-Op
+        ///   Looks up a localized string similar to ####Post-Op
         ///
         ///I was returned to the ward at 7am. I don&apos;t remember much this day, I was asleep most of the day and I can&apos;t really remember Emma and Evan being there just about all day.  
         ///
-        ///Usually the first few hours post-op are groggy but patients slowly recover during the day and are sometimes sitting up or even moving around by the end of the day. Emma says she knew I wasn&apos;t getting better and was really worried about me when she went home. *She called my mother for support and that in turn brought forwa [rest of string was truncated]&quot;;.
+        ///Usually the first few hours post-op are groggy but patients slowly recover during the day and are sometimes sitting up or even moving around by the end of the day. Emma says she knew I wasn&apos;t getting better and was really worried about me when she went home. *She called my mother for support and that in turn brought forw [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string DayTwo {
             get {

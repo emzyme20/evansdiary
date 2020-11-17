@@ -1,0 +1,38 @@
+﻿@{
+    ViewBag.Title = "Caroline's Hospital Diary";
+}
+
+<section id="diary-page">
+    <h2>@ViewBag.Title</h2>
+
+    <h4 class="sub-heading">Introduction</h4>
+
+    <div class="diary-entry container content">
+        <p>I'm not writing this diary to be morbid but as a reminder to myself of the reason why I want to ensure that I stay fit and healthy so that I never have to go through that again.</p>
+
+        <ul class="hospital-nav">
+            <li>@Html.ActionLink("Day 1 - A&E (Thursday 7th)", "Day", new { controller = "Hospital", day = 1 })</li>
+            <li>@Html.ActionLink("Day 2 - Gyny (Friday 8th)", "Day", new { controller = "Hospital", day = 2 })</li>
+            <li>@Html.ActionLink("Day 3 - Intensive Care (Saturday 9th)", "Day", new { controller = "Hospital", day = 3 })</li>
+            <li>@Html.ActionLink("Day 4 - Intensive Care (Sunday 10th)", "Day", new { controller = "Hospital", day = 4 })</li>
+            <li>@Html.ActionLink("Day 5 - Intensive Care (Monday 11th)", "Day", new { controller = "Hospital", day = 5 })</li>
+            <li>@Html.ActionLink("Day 6 - Intensive Care (Tuesday 12th)", "Day", new { controller = "Hospital", day = 6 })</li>
+            <li>@Html.ActionLink("Day 7 - Intensive Care (Wednesday 13th)", "Day", new { controller = "Hospital", day = 7 })</li>
+            <li>@Html.ActionLink("Day 8 - Intensive Care (Thursday 14th)", "Day", new { controller = "Hospital", day = 8 })</li>
+            <li>@Html.ActionLink("Day 9 - Gyny (Friday 15th)", "Day", new { controller = "Hospital", day = 9 })</li>
+            <li>@Html.ActionLink("Day 10 - Gyny (Saturday 16th)", "Day", new { controller = "Hospital", day = 10 })</li>
+            <li>@Html.ActionLink("Day 11 - Gyny (Sunday 17th)", "Day", new { controller = "Hospital", day = 11 })</li>
+        </ul>
+        
+        <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center">
+                <li class="page-item disabled">
+                    @Html.ActionLink("Previous", "Day", new { controller = "Hospital", day = 0 }, new { @class = "page-link", tabindex = "-1", aria_disabled = "true" })
+                </li>
+                <li class="page-item">
+                    @Html.ActionLink("Next", "Day", new { controller = "Hospital", day = 1 }, new { @class = "page-link" })
+                </li>
+            </ul>
+        </nav>
+    </div>
+</section>

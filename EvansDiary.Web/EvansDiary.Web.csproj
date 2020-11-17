@@ -362,6 +362,7 @@
     <Content Include="Views\Shared\_GoogleAnalytics.cshtml" />
     <Content Include="Views\Athletics\Index.cshtml" />
     <Content Include="Views\Family\Index.cshtml" />
+    <Content Include="Views\Hospital\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
