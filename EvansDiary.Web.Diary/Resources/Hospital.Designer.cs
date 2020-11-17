@@ -132,7 +132,7 @@ namespace EvansDiary.Web.Diary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to I seem to remember having a niggling tummy ache in the morning but this all stated at lunchtime. I groaned to Emma about having a rough tummy complaining that I really wasn&apos;t due on yet but didn&apos;t think much of it. My usual routine with period pain is to make myself a hot water bottle and curl up with a cup of coffee and that&apos;s exactly what I did. I made a coffee and grabbed myself and kitkat and took it upstairs. I had a feeling this was gonna be a bitch of a period so I changed out of my jeans into my tra [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to I seem to remember having a niggling tummy ache in the morning but this all stated at lunchtime. I groaned to Emma about having a rough tummy complaining that I really wasn&apos;t due on yet but didn&apos;t think much of it. My usual routine with period pain is to make myself a hot water bottle and curl up with a cup of coffee and that&apos;s exactly what I did. I made a coffee and grabbed myself a KitKat and took it upstairs. I had a feeling this was gonna be a bitch of a period so I changed out of my jeans into my track [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string DayOne {
             get {
@@ -143,9 +143,9 @@ namespace EvansDiary.Web.Diary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to ####On the Mend at Last!
         ///
-        ///I&apos;d had a rough night - I found it very difficult to sleep with the oxygen mask because the gas was cold on my face and it also blew into my eyes. Plus the discomfort of hardly being able to move and there was stuff going on in the ITU all night long - nurses milling about, alarms going off, being given drips, checks etc. Ugh!  
+        ///I&apos;d had a rough night - I found it very difficult to sleep with the oxygen mask because the gas was cold on my face and it also blew into my eyes. Plus the discomfort of hardly being able to move and there was stuff going on in the ITU all night long - nurses milling about, alarms going off, being given drips, checks etc. *Ugh!*  
         ///
-        ///But still, I was awake and on the mend. I had some very exciting news that morning - I was going to have a shampoo!! Seriously, I was pleased about th [rest of string was truncated]&quot;;.
+        ///But still, I was awake and on the mend. I had some very exciting news that morning - I was going to have a shampoo!! Seriously, I was pleased about  [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string DaySeven {
             get {
@@ -156,9 +156,9 @@ namespace EvansDiary.Web.Diary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to ####Out of CT
         ///
-        ///I awoke from CT *(pah!)* to find a very uncomfortable tube down my throat, my lips were sore and numb, and course I couldn&apos;t speak. No change there then. Some nurses were around. *&quot;Hi Caroline, it&apos;s Tuesday&quot;*. What the fuck?? Where the hell did the weekend just go? I went down to CT on Saturday!!! Man if you&apos;ve never lost time like that let me tell you what a head-screw it is!  
+        ///I awoke from CT *(pah!)* to find a very uncomfortable tube down my throat, my lips were sore and numb, and of course I couldn&apos;t speak. No change there then. Some nurses were around. *&quot;Hi Caroline, it&apos;s Tuesday&quot;*. What the fuck?? Where the hell did the weekend just go? I went down to CT on Saturday!!! Man if you&apos;ve never lost time like that let me tell you what a head-screw it is!  
         ///
-        ///I had either Emma or Mum with me, I don&apos;t remember which. I know I spent a lot of time with Emma that afternoo [rest of string was truncated]&quot;;.
+        ///I had either Emma or Mum with me, I don&apos;t remember which. I know I spent a lot of time with Emma that after [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string DaySix {
             get {
@@ -197,7 +197,7 @@ namespace EvansDiary.Web.Diary.Resources {
         ///
         ///I was returned to the ward at 7am. I don&apos;t remember much this day, I was asleep most of the day and I can&apos;t really remember Emma and Evan being there just about all day.  
         ///
-        ///Usually the first few hours post-op are groggy but patients slowly recover during the day and are sometimes sitting up or even moving around by the end of the day. Emma says she knew I wasn&apos;t getting better and was really worried about me when she went home. *She called my mother for support and that in turn brought forw [rest of string was truncated]&quot;;.
+        ///Usually the first few hours post-op are groggy but patients slowly recover during the day and are sometimes sitting up or even moving around by the end of the day. Emma says she knew I wasn&apos;t getting better and was really worried about me when she went home. She called my mother for support and that in turn brought forwa [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string DayTwo {
             get {
