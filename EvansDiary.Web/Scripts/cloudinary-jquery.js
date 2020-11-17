@@ -6112,7 +6112,7 @@ var identity = function identity(value) {
  * @class Util
  */
 
-var isArray = jQuery.isArray;
+var isArray = Array.isArray;
 var assign = jQuery.extend;
 var isPlainObject = jQuery.isPlainObject;
 /**
