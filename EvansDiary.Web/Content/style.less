@@ -132,11 +132,6 @@ h1 {
   }
 }
 
-.navbar-nav > li > a {
-  //padding: 0;
-  //line-height: 1em;
-}
-
 .diary-entry {
   aside {
     padding: 1em 0.5em;
@@ -430,12 +425,17 @@ ul.polaroids a:hover {
     overflow: hidden;
     height: auto;
 
-    &:hover > .overlay {
+    &:hover .overlay:first-of-type {
       -webkit-transition: all 0.25s ease-in;
       -moz-transition: all 0.25s ease-in;
       -o-transition: all 0.25s ease-in;
       transition: all 0.25s ease-in;
       left: 0;
+    }
+
+    a {
+      text-decoration: none;
+      display: block;      
     }
   }
 
@@ -452,12 +452,6 @@ ul.polaroids a:hover {
     -moz-transition: all 0.25s ease-in-out;
     -o-transition: all 0.25s ease-in-out;
     transition: all 0.25s ease-in-out;
-
-    a {
-      text-decoration: none;
-      display: block;
-      height: 100%;
-    }
   }
 }
 
