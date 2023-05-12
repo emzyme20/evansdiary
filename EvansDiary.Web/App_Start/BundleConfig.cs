@@ -37,7 +37,7 @@ namespace EvansDiary.Web
                     "~/Content/style.less"));
 
             // Script bundles
-            var jquery = new ScriptBundle("~/bundles/jquery", "http://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js")
+            var jquery = new Bundle("~/bundles/jquery", "http://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js")
                 .Include("~/Scripts/jquery-{version}.js");
 
             jquery.CdnFallbackExpression = "window.jQuery";
@@ -45,14 +45,14 @@ namespace EvansDiary.Web
             bundles.Add(jquery);
 
             bundles.Add(
-                new ScriptBundle("~/bundles/jquerycloudinary").Include(
+                new Bundle("~/bundles/jquerycloudinary").Include(
                     "~/Scripts/cloudinary-jquery*",
                     "~/Scripts/application/ed.cloudinary.js"));
 
             // Use the development version of Modernizr to develop with and learn from. Then, when you're
             // ready for production, use the build tool at http://modernizr.com to pick only the tests you need.
             bundles.Add(
-                new ScriptBundle("~/bundles/modernizr").Include(
+                new Bundle("~/bundles/modernizr").Include(
                     "~/Scripts/modernizr-*"));
 
             /* Initialise javascript ed window variable namespace */
@@ -61,7 +61,7 @@ namespace EvansDiary.Web
                     .Include("~/Scripts/application/ed.object-init.js"));
 
             bundles.Add(
-                new ScriptBundle("~/bundles/bootstrap").Include(
+                new Bundle("~/bundles/bootstrap").Include(
                     "~/Scripts/bootstrap.js",
                     "~/Scripts/respond.js",
                     "~/Scripts/Theme/*.js",

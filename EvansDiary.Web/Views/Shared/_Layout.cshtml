@@ -33,22 +33,20 @@
 </head>
 <body>
     <div class="container">
-        <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
-            <div class="d-flex flex-grow-1 navbar-header">
-                <h1 class="logo">@Html.ActionLink("Evan's Diary", "Index", "Home", null, new { @class = "navbar-brand d-lg-inline-block" })</h1>
-                <div class="w-100 text-right">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+        <nav class="navbar navbar-expand-sm navbar-dark fixed-top" style="background-color: #343a40;">
+            <div class="container-fluid">
+                @Html.ActionLink("Evan's Diary", "Index", "Home", null, new { @class = "navbar-brand" })
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ms-auto justify-content-end">
+                        @Html.ActionLink("Home", "Index", "Home", null, new { @class = "nav-link", aria_current = "page" })
+                        @Html.ActionLink("The Diary", "Index", "Diary", null, new { @class = "nav-link" })
+                        @Html.ActionLink("Athletics", "Index", "Athletics", null, new { @class = "nav-link" })
+                        @Html.ActionLink("Family", "Index", "Family", null, new { @class = "nav-link" })
+                    </div>
                 </div>
-            </div>
-            <div class="collapse navbar-collapse flex-grow-1 text-left" id="myNavbar">
-                <ul class="navbar-nav ml-auto flex-nowrap">
-                    <li class="nav-item">@Html.ActionLink("Home", "Index", "Home", null, new { @class = "nav-link m-2 menu-item nav-active py-0" })</li>
-                    <li class="nav-item">@Html.ActionLink("The Diary", "Index", "Diary", null, new { @class = "nav-link m-2 menu-item py-0" })</li>
-                    <li class="nav-item">@Html.ActionLink("Athletics", "Index", "Athletics", null, new { @class = "nav-link m-2 menu-item py-0" })</li>
-                    <li class="nav-item">@Html.ActionLink("Family", "Index", "Family", null, new { @class = "nav-link m-2 menu-item py-0" })</li>
-                </ul>
             </div>
         </nav>
     </div>
@@ -65,6 +63,17 @@
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @Scripts.Render("~/bundles/modernizr")
+    
+    <script type="text/javascript">
+        $(function () {
+            var a = document.querySelector(`a[href="${location.pathname}"].nav-link`);
+            if (a) {
+                a.classList.add("active");
+                a.setAttribute("aria-current", "page");
+            }
+        });
+
+    </script>
 
     @RenderSection("PageScripts", false)
 </body>
