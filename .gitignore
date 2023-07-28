@@ -6,6 +6,9 @@
 *.user
 *.sln.docstates
 
+# VS Cache
+/.vs/*/FileContentIndex
+
 # Build results
 
 [Dd]ebug/
