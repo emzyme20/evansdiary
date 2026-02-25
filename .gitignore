@@ -8,6 +8,8 @@
 
 # VS Cache
 /.vs/*/FileContentIndex
+.vs/
+*.dtbcache.json
 
 # Build results
 
