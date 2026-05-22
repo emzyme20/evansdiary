@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <style>
+        .flipbook-section {
+            max-width: 600px;
+            margin: 2rem auto;
+            text-align: center;
+        }
+        .flipbook-viewport {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 4 / 3;
+            background-color: #f5f5f5;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        .flipbook-viewport img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            opacity: 0;
+            transition: opacity 0.4s ease-in-out;
+            z-index: 1;
+        }
+        .flipbook-viewport img.active {
+            opacity: 1;
+            z-index: 2;
+        }
+        .flipbook-loading {
+            line-height: 300px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 1. The Component Container -->
+<div class="flipbook-section">
+    <h3>My Continuous Flipbook</h3>
+    
+    <!-- We build the images directly in HTML using standard Go template syntax -->
+    <div class="flipbook-viewport" id="flipbook">
+        {{if .FlipbookImages}}
+            {{range $index, $image := .FlipbookImages}}
+                <!-- Go injects the properties straight into standard HTML attributes safely -->
+                <img src="{{$image.Source}}" 
+                     alt="{{$image.Caption}}" 
+                     class="{{if eq $index 0}}active{{end}}"
+                     data-crop="fill" data-gravity="{{$image.Crop}}" data-quality="80" />
+            {{end}}
+        {{else}}
+            <div class="flipbook-loading">No images found.</div>
+        {{end}}
+    </div>
+</div>
+
+
+    <script>
+document.addEventListener('DOMContentLoaded', () => {
+    const container = document.getElementById('flipbook');
+    if (!container) return;
+
+    // Grab all the image elements that Go printed into the container
+    const images = container.querySelectorAll('img');
+    if (images.length === 0) return;
+
+    let currentIndex = 0;
+    const frameDelayMs = 1000; // Speed of the rotation
+
+    // Continuous rotation loop
+    setInterval(() => {
+        // Hide the current frame
+        images[currentIndex].classList.remove('active');
+        
+        // Advance index (looping back to 0 at the end)
+        currentIndex = (currentIndex + 1) % images.length;
+        
+        // Show the next frame
+        images[currentIndex].classList.add('active');
+    }, frameDelayMs);
+});
+</script>
+
+</body>
+</html>
