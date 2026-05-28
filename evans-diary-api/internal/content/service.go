@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"log"
 	"os"
+	"path/filepath"
 )
 
 var cloudName = "dqg9nkccw"
@@ -13,19 +14,32 @@ var cloudName = "dqg9nkccw"
 type ImageItem struct {
 	Caption string `json:"caption"`
 	Source  string `json:"source"`
-	Crop    string `json:"crop"`
+	Crop    *string `json:"crop,omitempty"`
 }
 
-// HomeSection groups the home specific layout properties
-type HomeSection struct {
+// FlipbookSection groups the flipbook specific layout properties
+type FlipbookSection struct {
 	Title       string      `json:"title"`
 	Description string      `json:"description"`
 	Images      []ImageItem `json:"images"`
 }
 
-// ContentSchema represents your overall JSON structure
-type ContentSchema struct {
-	Home HomeSection `json:"home"`
+type CarouselSection struct {
+	Images      []ImageItem `json:"images"`
+}
+
+func (f *FlipbookSection) SetImages(images []ImageItem) {
+	f.Images = images
+}
+
+func (c *CarouselSection) SetImages(images []ImageItem) {
+	c.Images = images
+}
+
+// HomeSchema represents your overall JSON structure
+type HomeSchema struct {
+	Flipbook FlipbookSection `json:"flipbook"`
+	Carousel CarouselSection `json:"carousel"`
 }
 
 type Service struct {
@@ -37,50 +51,80 @@ func NewService(dir string) *Service {
 }
 
 // LoadHomeContent loads the single English content file directly
-func (s *Service) LoadHomeContent() (*ContentSchema, error) {
-	var path = s.contentDir + "/home.json"
-	fileBytes, err := os.ReadFile(path)
+func (s *Service) LoadHomeContent() (*HomeSchema, error) {
+	flipbook, err := LoadJsonContent[FlipbookSection](s, "flipbook.json")
 	if err != nil {
-		return nil, fmt.Errorf("content file not found")
+		return nil, err
 	}
 
-	var data HomeSection
-	if err := json.Unmarshal(fileBytes, &data); err != nil {
-		log.Panicln("Heelloooo?")
-		return nil, fmt.Errorf("invalid json format")
+	carousel, err := LoadJsonContent[CarouselSection](s, "carousel.json")
+	if err != nil {
+		return nil, err
 	}
 
-	// 1. Initialize your final return structure with default values
-	var homeData ContentSchema
-	homeData.Home.Title = data.Title
-	homeData.Home.Description = data.Description
+	var content HomeSchema
+	content.Flipbook.Title = flipbook.Title
+	content.Flipbook.Description = flipbook.Description
 
-	// Pre-allocate slice memory size for performance based on your source data length
-	homeData.Home.Images = make([]ImageItem, 0, len(data.Images))
+	GenerateImageUrls(&content.Flipbook, flipbook.Images)
+	GenerateImageUrls(&content.Carousel, carousel.Images)
 
-	// 2. Loop through the raw images loaded from your JSON file
-	for _, item := range data.Images {
+	return &content, nil
+}
+
+type ImageSection interface {
+	SetImages([]ImageItem)
+}
+
+func GenerateImageUrls(section ImageSection, images []ImageItem) {
+	builtImages := make([]ImageItem, 0, len(images))
+
+	for _, item := range images {
 		path := item.Source
 
-		// Fallback gravity crop placement if the JSON string is blank
-		gravity := item.Crop
-		if gravity == "" {
-			gravity = "face"
-		}
+		var image ImageItem
 
-		// 3. Instantiate your clean, strongly-typed ImageItem struct object
-		image := ImageItem{
-			Crop:    item.Crop,
-			Caption: item.Caption,
-			// Construct the optimized Cloudinary delivery string using .webp extension formatting
-			Source: "https://res.cloudinary.com/" + cloudName + "/image/upload/c_fill,g_" + gravity + ",h_380,q_80,w_380/" + path + ".webp",
+		if item.Crop == nil {
+			image = ImageItem{
+				Caption: item.Caption,
+				Source:  "https://res.cloudinary.com/" + cloudName + "/image/upload/c_fill,q_80/" + path,
+			}
+		} else {
+			gravity := *item.Crop
+			if gravity == "" {
+				gravity = "face"
+			}
+
+			image = ImageItem{
+				Crop:    item.Crop,
+				Caption: item.Caption,
+				Source:  "https://res.cloudinary.com/" + cloudName + "/image/upload/c_fill,g_" + gravity + ",h_380,q_80,w_380/" + path + ".webp",
+			}
 		}
 
 		log.Println(image.Source)
-
-		// 4. Append the newly transformed structural item to your output array state
-		homeData.Home.Images = append(homeData.Home.Images, image)
+		builtImages = append(builtImages, image)
 	}
 
-	return &homeData, nil
+	section.SetImages(builtImages)
+}
+
+func (s *Service) LoadHomeSchema() (*HomeSchema, error) {
+	return s.LoadHomeContent()
+}
+
+func LoadJsonContent[T any](s *Service, fileName string) (T, error) {
+	var data T
+
+	path := filepath.Join(s.contentDir, fileName)
+	fileBytes, err := os.ReadFile(path)
+	if err != nil {
+		return data, fmt.Errorf("content file not found: %s", fileName)
+	}
+
+	if err := json.Unmarshal(fileBytes, &data); err != nil {
+		return data, fmt.Errorf("invalid json format in %s", fileName)
+	}
+
+	return data, nil
 }

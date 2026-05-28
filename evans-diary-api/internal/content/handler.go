@@ -15,7 +15,7 @@ func NewHandler(s *Service) *Handler {
 }
 
 func (h *Handler) GetHomeContent(c *gin.Context) {
-	data, err := h.service.LoadHomeContent()
+	data, err := h.service.LoadHomeSchema()
 	if err != nil {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": err.Error()})
 		return

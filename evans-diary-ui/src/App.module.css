@@ -1,66 +1,195 @@
-/* Stack your layout container tracking track */
+.homePage {
+  display: grid;
+  grid-template-rows: auto auto;
+}
+
+.heroSection {
+  position: relative;
+  width: 100%;
+  min-height: 52vh;
+  overflow: hidden;
+  border-bottom: 1px solid var(--border);
+}
+
+.heroTrack {
+  position: absolute;
+  inset: 0;
+}
+
+.heroImage {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 900ms ease;
+}
+
+.heroImage.active {
+  opacity: 1;
+}
+
+.heroCaptionWrap {
+  position: relative;
+  z-index: 2;
+  min-height: 52vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 32px;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.7) 0%,
+    rgba(0, 0, 0, 0.06) 62%
+  );
+}
+
+.pageTitle {
+  margin: 0;
+  color: #ffffff;
+  font-size: clamp(2rem, 3.6vw, 3rem);
+  letter-spacing: 0.02em;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
+}
+
+.heroCaption {
+  color: #f0f4f8;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.tilesSection {
+  padding: 24px;
+  background: linear-gradient(135deg, #f8fbff 0%, #fefaf3 100%);
+}
+
+.tilesSection img {
+  width: 100%;
+  max-width: 110%;
+  -webkit-transition: all 0.25s ease-in;
+  -moz-transition: all 0.25s ease-in;
+  -o-transition: all 0.25s ease-in;
+  transition: all 0.25s ease-in;
+  height: auto;
+}
+
+.tilesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.navTile {
+  aspect-ratio: 1 / 1;
+  border-radius: 14px;
+  border: 1px solid #d8dee7;
+  background: #ffffff;
+  box-shadow: 0 8px 20px rgba(18, 28, 45, 0.08);
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: left;
+  text-decoration: none;
+  color: #1e2b3b;
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.navTile:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(18, 28, 45, 0.15);
+}
+
+.navTile h2 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.navTile p {
+  margin-top: 8px;
+  color: #546276;
+  line-height: 1.35;
+}
+
+.flipbookTile {
+  cursor: default;
+  justify-content: space-between;
+}
+
 .flipbookViewport {
   position: relative;
   width: 100%;
-  max-width: 600px;
-  height: 400px;
-  margin: 0 auto;
+  height: 100%;
+  min-height: 0;
+  border-radius: 10px;
   overflow: hidden;
-  background-color: #f5f5f5;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: #f0f4f8;
 }
 
-/* Base style for every single card element image */
 .card {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
   opacity: 0;
-  transition: opacity 0.8s ease-in-out;
-  pointer-events: none;
+  transition: opacity 0.45s ease-in-out;
 }
 
-/* When an element contains BOTH card and active class properties */
 .card.active {
   opacity: 1;
-  z-index: 2;
-  pointer-events: auto;
 }
 
-/*.flipbookSection {
-    max-width: 600px;
-    margin: 2rem auto;
-    text-align: center;
+.flipbookCaption {
+  margin-top: 10px;
+  color: #1e2b3b;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  font-size: 0.75rem;
+  text-transform: uppercase;
 }
-.flipbookViewport {
-    position: relative;
-    width: 100%;
-    aspect-ratio: 4 / 3;
-    background-color: #f5f5f5;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+@media (max-width: 960px) {
+  .tilesGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .heroSection,
+  .heroCaptionWrap {
+    min-height: 42vh;
+  }
 }
-.flipbookViewport img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    opacity: 0;
-    transition: opacity 0.4s ease-in-out;
-    z-index: 1;
+
+@media (max-width: 640px) {
+  .tilesSection {
+    padding: 14px;
+  }
+
+  .tilesGrid {
+    gap: 10px;
+  }
+
+  .heroCaptionWrap {
+    padding: 18px;
+  }
+
+  .navTile {
+    padding: 14px;
+  }
+
+  .navTile h2 {
+    font-size: 1rem;
+  }
+
+  .navTile p {
+    font-size: 0.9rem;
+  }
 }
-.flipbookViewport img.active {
-    opacity: 1;
-    z-index: 2;
-}
-.flipbookLoading {
-    line-height: 300px;
-    color: #666;
-}*/
