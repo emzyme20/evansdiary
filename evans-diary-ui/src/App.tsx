@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import type { HomeSchema } from "./types";
 import styles from "./App.module.css";
 
 const homeTiles = [
   {
     title: "#Family",
-    href: "/Family",
+    href: "/family",
     description: "My family, we mean the world to each other",
     image: "/images/family.jpg",
     imageAlt: "My Family",
@@ -140,17 +141,31 @@ function App() {
         <div className={styles.tilesGrid}>
           {homeTiles.map((tile) => (
             <div className={styles.tile} key={`tile-${tile.title}`}>
-              <a className={styles.navTile} href={tile.href}>
-                <img
-                  src={tile.image}
-                  alt={tile.imageAlt}
-                  className={styles.tileImage}
-                />
-                <div className={styles.tileOverlay}>
-                  <h2>{tile.title}</h2>
-                  <p>{tile.description}</p>
+              {tile.href ? (
+                <Link className={styles.navTile} to={tile.href}>
+                  <img
+                    src={tile.image}
+                    alt={tile.imageAlt}
+                    className={styles.tileImage}
+                  />
+                  <div className={styles.tileOverlay}>
+                    <h2>{tile.title}</h2>
+                    <p>{tile.description}</p>
+                  </div>
+                </Link>
+              ) : (
+                <div className={styles.navTile} aria-disabled="true">
+                  <img
+                    src={tile.image}
+                    alt={tile.imageAlt}
+                    className={styles.tileImage}
+                  />
+                  <div className={styles.tileOverlay}>
+                    <h2>{tile.title}</h2>
+                    <p>{tile.description}</p>
+                  </div>
                 </div>
-              </a>
+              )}
             </div>
           ))}
 

@@ -263,3 +263,39 @@
     font-size: 0.9rem;
   }
 }
+
+/*
+-- Nav Bar Styles
+*/
+.navbar {
+  margin: 0 auto;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  color: #ffffff;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.navbar > .navbarContainer {
+  display: flex;
+  flex-wrap: inherit;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navBarMenu {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.navLink,
+.navItem {
+  flex: 1 1 auto;
+  text-align: center;
+}
