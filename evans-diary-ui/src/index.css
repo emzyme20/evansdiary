@@ -57,11 +57,23 @@
   margin: 0 auto;
   padding-top: var(--nav-height);
   text-align: center;
-  border-inline: 1px solid var(--border);
+  /*border-inline: 1px solid var(--border);*/
   min-height: 100svh;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
+}
+
+.appContent {
+  flex: 1 1 auto;
+}
+
+.siteFooter {
+  padding: 14px 16px;
+  border-top: 1px solid var(--border);
+  color: var(--text);
+  font-size: 0.85rem;
+  text-align: center;
 }
 
 body {

@@ -10,12 +10,17 @@ import FamilyPage from "./pages/FamilyPage.tsx";
 createRoot(document.getElementById("root")!).render(
   <BrowserRouter>
     <NavBar />
-    <Routes>
-      <Route path="/" element={<App />} />
-      <Route path="/family" element={<FamilyPage />} />
-      <Route path="/athletics" element={<AthleticsPage />} />
-      <Route path="/diary" element={<DiaryPage />} />
-      <Route path="*" element={<Navigate to="/" replace />} />
-    </Routes>
+    <main className="appContent">
+      <Routes>
+        <Route path="/" element={<App />} />
+        <Route path="/family" element={<FamilyPage />} />
+        <Route path="/athletics" element={<AthleticsPage />} />
+        <Route path="/diary" element={<DiaryPage />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
+      </Routes>
+    </main>
+    <footer className="siteFooter">
+      &copy; {new Date().getFullYear()} Evan&apos;s Diary. All rights reserved.
+    </footer>
   </BrowserRouter>,
 );
