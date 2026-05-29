@@ -5,10 +5,15 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "dev:static": "npm run sync:content && vite --mode static",
+    "dev:go": "vite --mode go",
+    "sync:content": "node ./scripts/sync-home-content.mjs",
+    "build": "npm run sync:content && tsc -b && vite build",
+    "build:static": "npm run sync:content && tsc -b && vite build --mode static",
+    "build:go": "tsc -b && vite build --mode go",
     "lint": "eslint .",
     "preview": "vite preview",
-    "start": "concurrently --kill-others \"npm run dev\" \"cd ../evans-diary-api && air\""
+    "start": "concurrently --kill-others \"npm run dev:go\" \"cd ../evans-diary-api && air\""
   },
   "dependencies": {
     "react": "^19.2.6",

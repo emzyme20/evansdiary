@@ -3,6 +3,9 @@ import { Link } from "react-router-dom";
 import type { HomeSchema } from "./types";
 import styles from "./App.module.css";
 
+const homeContentUrl =
+  import.meta.env.VITE_HOME_CONTENT_URL || "/content/home.json";
+
 const homeTiles = [
   {
     title: "#Family",
@@ -50,9 +53,9 @@ function App() {
 
   // Hook 1: Fetches the data EXACTLY ONCE on browser tab initialization mount
   useEffect(() => {
-    fetch("/api/content/home")
+    fetch(homeContentUrl)
       .then((res) => {
-        if (!res.ok) throw new Error("API network response failed");
+        if (!res.ok) throw new Error("Home content request failed");
         return res.json();
       })
       .then((data: HomeSchema) => setContent(data))
