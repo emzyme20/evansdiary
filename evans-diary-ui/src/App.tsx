@@ -45,6 +45,7 @@ function App() {
   const [content, setContent] = useState<HomeSchema | null>(null);
   const [carouselIndex, setCarouselIndex] = useState<number>(0);
   const [flipbookIndex, setFlipbookIndex] = useState<number>(0);
+  const [isHeroHovered, setIsHeroHovered] = useState<boolean>(false);
 
   // Hook 1: Fetches the data EXACTLY ONCE on browser tab initialization mount
   useEffect(() => {
@@ -67,12 +68,15 @@ function App() {
     )
       return;
 
-    const carouselInterval = setInterval(() => {
-      setCarouselIndex((prevIndex) => {
-        const totalImages = content.carousel.images.length;
-        return prevIndex === totalImages - 1 ? 0 : prevIndex + 1;
-      });
-    }, 4500);
+    let carouselInterval: ReturnType<typeof setInterval> | undefined;
+    if (!isHeroHovered) {
+      carouselInterval = setInterval(() => {
+        setCarouselIndex((prevIndex) => {
+          const totalImages = content.carousel.images.length;
+          return prevIndex === totalImages - 1 ? 0 : prevIndex + 1;
+        });
+      }, 4500);
+    }
 
     const flipbookInterval = setInterval(() => {
       setFlipbookIndex((prevIndex) => {
@@ -82,10 +86,10 @@ function App() {
     }, 1800);
 
     return () => {
-      clearInterval(carouselInterval);
+      if (carouselInterval) clearInterval(carouselInterval);
       clearInterval(flipbookInterval);
     };
-  }, [content]);
+  }, [content, isHeroHovered]);
 
   if (!content) return <p>Loading your grid engine profile layout...</p>;
 
@@ -94,7 +98,12 @@ function App() {
 
   return (
     <main className={styles.homePage}>
-      <section className={styles.heroSection} aria-label="Featured images">
+      <section
+        className={styles.heroSection}
+        aria-label="Featured images"
+        onMouseEnter={() => setIsHeroHovered(true)}
+        onMouseLeave={() => setIsHeroHovered(false)}
+      >
         <div className={styles.heroTrack}>
           {carouselImages.map((image, index) => (
             <img
@@ -109,41 +118,52 @@ function App() {
           <p className={styles.heroCaption}>
             {carouselImages[carouselIndex].caption}
           </p>
+          <div className={styles.carouselNav} aria-label="Carousel navigation">
+            {carouselImages.map((image, index) => {
+              const isActive = index === carouselIndex;
+              return (
+                <button
+                  type="button"
+                  key={`carousel-indicator-${image.source}`}
+                  className={`${styles.carouselNavButton} ${isActive ? styles.active : ""}`}
+                  onClick={() => setCarouselIndex(index)}
+                  aria-label={`Go to slide ${index + 1} of ${carouselImages.length}`}
+                  aria-current={isActive ? "true" : undefined}
+                />
+              );
+            })}
+          </div>
         </div>
       </section>
 
       <section className={styles.tilesSection} aria-label="Grid sections">
         <div className={styles.tilesGrid}>
           {homeTiles.map((tile) => (
-            <div key={`tile-${tile.title}`}>
-              <img
-                src={tile.image}
-                alt={tile.imageAlt}
-                className={styles.tileImage}
-              />
+            <div className={styles.tile} key={`tile-${tile.title}`}>
               <a className={styles.navTile} href={tile.href}>
-                <h2>{tile.title}</h2>
-                <p>{tile.description}</p>
+                <img
+                  src={tile.image}
+                  alt={tile.imageAlt}
+                  className={styles.tileImage}
+                />
+                <div className={styles.tileOverlay}>
+                  <h2>{tile.title}</h2>
+                  <p>{tile.description}</p>
+                </div>
               </a>
             </div>
           ))}
 
-          <article
-            className={`${styles.navTile} ${styles.flipbookTile}`}
-            aria-label="Flipbook preview"
-          >
-            <div className={styles.flipbookViewport} id="flipbook">
-              {flipbookImages.map((image, index) => (
-                <img
-                  src={image.source}
-                  alt={image.caption}
-                  className={`${styles.card} ${index === flipbookIndex ? styles.active : ""}`}
-                  key={`flipbook-${image.source}`}
-                />
-              ))}
-            </div>
-            <div className={styles.flipbookCaption}>Flipbook Preview</div>
-          </article>
+          <div className={styles.flipbookViewport} id="flipbook">
+            {flipbookImages.map((image, index) => (
+              <img
+                src={image.source}
+                alt={image.caption}
+                className={`${styles.card} ${index === flipbookIndex ? styles.active : ""}`}
+                key={`flipbook-${image.source}`}
+              />
+            ))}
+          </div>
         </div>
       </section>
     </main>
