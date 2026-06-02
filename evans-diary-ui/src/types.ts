@@ -15,3 +15,17 @@ export interface HomeSchema {
     }[];
   };
 }
+
+export interface HomeTile {
+  title: string;
+  href: string;
+  description: string;
+  image: string;
+  imageAlt: string;
+}
+
+export interface FamilyTile {
+  source: string;
+  caption: string;
+  width: number;
+}

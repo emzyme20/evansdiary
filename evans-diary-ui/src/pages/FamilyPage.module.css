@@ -1,0 +1,102 @@
+:global(body.familyPageBackground) {
+  background-image: url("/images/sand_drawing.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.page {
+  padding: clamp(1.25rem, 2vw + 1rem, 2.5rem);
+  background: transparent;
+}
+
+.grid {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: clamp(1rem, 1.5vw + 0.75rem, 2rem);
+  margin: 0;
+  padding: 0;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.polaroid {
+  width: max-content;
+  max-width: 100%;
+  margin: 0;
+  background: linear-gradient(180deg, #fffdf8 0%, #fff 100%);
+  border: 1px solid #d9d4cb;
+  border-radius: 2px;
+  padding: 0.75rem 0.75rem 1rem;
+  box-shadow:
+    0 2px 4px rgb(0 0 0 / 0.16),
+    0 14px 30px rgb(0 0 0 / 0.12);
+  transform-origin: center top;
+  transition:
+    transform 180ms ease,
+    box-shadow 220ms ease;
+}
+
+.item:nth-child(odd) .polaroid {
+  transform: rotate(-2deg);
+}
+
+.item:nth-child(even) .polaroid {
+  transform: rotate(2deg);
+}
+
+.item:nth-child(3n) .polaroid {
+  transform: rotate(-1deg);
+}
+
+.item:nth-child(4n) .polaroid {
+  transform: rotate(3deg);
+}
+
+.polaroid:hover {
+  transform: rotate(0deg) translateY(-4px) scale(1.015);
+  box-shadow:
+    0 4px 8px rgb(0 0 0 / 0.2),
+    0 18px 34px rgb(0 0 0 / 0.16);
+}
+
+.image {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ece7df;
+  filter: sepia(0.12) contrast(1.03) saturate(0.96);
+}
+
+.caption {
+  margin: 0.65rem 0 0;
+  text-align: center;
+  color: #40332b;
+  font-family: "Bradley Hand", "Segoe Print", "Comic Sans MS", cursive;
+  font-size: clamp(1rem, 0.4vw + 0.95rem, 1.18rem);
+  line-height: 1.15;
+  letter-spacing: 0.01em;
+  text-wrap: balance;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .polaroid {
+    width: max-content;
+  }
+
+  .image {
+    width: auto;
+    max-width: 100%;
+  }
+}
