@@ -17,16 +17,19 @@ function FamilyPage() {
         <ul className={styles.grid}>
           {familyTiles.map((tile) => {
             return (
-              <li key={`family-tile-${tile.source}`} className={styles.item}>
+              <li
+                key={`family-tile-${tile.image.source}`}
+                className={styles.item}
+              >
                 <figure className={styles.polaroid}>
                   <img
-                    src={getImageUrl(tile.source, tile.width)}
-                    alt={tile.caption}
-                    width={tile.width}
+                    src={getImageUrl(tile.image.source, tile.image.width)}
+                    alt={tile.image.caption}
+                    width={tile.image.width}
                     className={styles.image}
                   />
                   <figcaption className={styles.caption}>
-                    {tile.caption}
+                    {tile.image.caption}
                   </figcaption>
                 </figure>
               </li>
