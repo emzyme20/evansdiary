@@ -110,10 +110,32 @@
   width: 54px;
   height: 54px;
   border-radius: 50%;
-  font-size: 1.28rem;
   background: #0e1f3b;
   border: 3px solid #f2f8ff;
   box-shadow: 0 12px 28px rgba(5, 13, 29, 0.38);
+}
+
+.nodeIcon {
+  width: 24px;
+  height: 24px;
+}
+
+.timelineEntry[data-entry-type="Event"] .node {
+  color: #fff9de;
+  background: #f1c933;
+  border-color: #ffe9a0;
+}
+
+.timelineEntry[data-entry-type="Video"] .node {
+  color: #fff1f1;
+  background: #a3212f;
+  border-color: #ffc7cf;
+}
+
+.timelineEntry[data-entry-type="Blog"] .node {
+  color: #effff8;
+  background: #0e6e53;
+  border-color: #bbf1dd;
 }
 
 .card {
@@ -132,6 +154,18 @@
   text-transform: uppercase;
   letter-spacing: 0.16em;
   color: #3a5d87;
+}
+
+.timelineEntry[data-entry-type="Event"] .entryType {
+  color: #8a6500;
+}
+
+.timelineEntry[data-entry-type="Video"] .entryType {
+  color: #9f2431;
+}
+
+.timelineEntry[data-entry-type="Blog"] .entryType {
+  color: #0f6a52;
 }
 
 .entryHeading {

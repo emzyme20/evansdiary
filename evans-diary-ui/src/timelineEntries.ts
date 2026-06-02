@@ -156,7 +156,7 @@ He did exceptionally well and raised over £100 for them and he also raced very 
   },
   {
     year: 2015,
-    type: "Event",
+    type: "Video",
     heading: "Year 5 Sports Day",
     description: `Although there is no pressure to perform at sports day, Evan sometimes feels that he has to perform well because of his previous successes. He is a very competitive.`,
     images: [

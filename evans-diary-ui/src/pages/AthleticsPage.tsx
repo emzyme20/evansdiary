@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from "react";
+import { Calendar, FileText, Video, type LucideIcon } from "lucide-react";
 import { athleticsTimeline } from "../timelineEntries";
 import type { TimelineEntry } from "../types";
 import { getImageUrl } from "../utils";
@@ -6,10 +7,13 @@ import styles from "./AthleticsPage.module.css";
 
 const BLOG_PREVIEW_LENGTH = 250;
 
-const typeIcon: Record<TimelineEntry["type"], string> = {
-  Event: "📅",
-  Video: "📽️",
-  Blog: "📝",
+const typeIcon: Record<
+  TimelineEntry["type"],
+  { Icon: LucideIcon; label: string }
+> = {
+  Event: { Icon: Calendar, label: "Event" },
+  Video: { Icon: Video, label: "Video" },
+  Blog: { Icon: FileText, label: "Blog" },
 };
 
 function splitParagraphs(text: string): string[] {
@@ -113,6 +117,7 @@ function AthleticsPage() {
         <div className={styles.timeline}>
           {timeline.map((entry, index) => {
             const entryKey = `${entry.year}-${entry.heading}`;
+            const { Icon, label } = typeIcon[entry.type];
             const isEven = index % 2 === 0;
             const isVisible = visibleIndexes.has(index);
             const isBlogEntry = entry.type === "Blog";
@@ -132,13 +137,16 @@ function AthleticsPage() {
                   isVisible ? styles.visible : ""
                 }`}
                 data-timeline-index={index}
+                data-entry-type={entry.type}
               >
                 <div className={styles.yearWrap}>
                   <span className={styles.yearBadge}>{entry.year}</span>
                 </div>
 
                 <div className={styles.nodeWrap} aria-hidden="true">
-                  <span className={styles.node}>{typeIcon[entry.type]}</span>
+                  <span className={styles.node} title={label}>
+                    <Icon className={styles.nodeIcon} strokeWidth={2.25} />
+                  </span>
                 </div>
 
                 <div className={styles.card}>
@@ -219,7 +227,7 @@ function AthleticsPage() {
                     </ul>
                   ) : null}
 
-                  {entry.video ? (
+                  {entry.video && entry.video.source ? (
                     <ul
                       className={styles.mediaGrid}
                       aria-label={`${entry.heading} video`}
