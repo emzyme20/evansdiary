@@ -156,6 +156,19 @@ function AthleticsPage() {
                     )}
                   </div>
 
+                  {entry.link ? (
+                    <p className={styles.entryLinkWrap}>
+                      <a
+                        href={entry.link.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={styles.entryLink}
+                      >
+                        {entry.link.label}
+                      </a>
+                    </p>
+                  ) : null}
+
                   {isBlogEntry && hasBlogOverflow ? (
                     <button
                       type="button"
@@ -203,6 +216,30 @@ function AthleticsPage() {
                           </figure>
                         </li>
                       ))}
+                    </ul>
+                  ) : null}
+
+                  {entry.video ? (
+                    <ul
+                      className={styles.mediaGrid}
+                      aria-label={`${entry.heading} video`}
+                    >
+                      <li
+                        key={`${entry.heading}-${entry.video.source}`}
+                        className={styles.mediaItem}
+                      >
+                        <figure className={styles.polaroid}>
+                          <iframe
+                            src={entry.video.source}
+                            title={entry.video.caption}
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                          ></iframe>
+                          <figcaption className={styles.polaroidCaption}>
+                            {entry.video.caption}
+                          </figcaption>
+                        </figure>
+                      </li>
                     </ul>
                   ) : null}
                 </div>

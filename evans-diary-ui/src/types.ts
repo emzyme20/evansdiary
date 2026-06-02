@@ -39,6 +39,10 @@ export interface TimelineEntry {
   year: number;
   heading: string;
   description: string;
+  link?: {
+    href: string;
+    label: string;
+  };
   images?: Media[];
   video?: Media;
   type: "Event" | "Video" | "Blog";

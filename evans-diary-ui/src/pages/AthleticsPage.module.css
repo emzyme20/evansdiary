@@ -156,6 +156,27 @@
   margin-top: 0;
 }
 
+.entryLinkWrap {
+  margin: 0.7rem 0 0;
+}
+
+.entryLink {
+  color: #1d4f84;
+  font-weight: 700;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 2px;
+}
+
+.entryLink:hover {
+  color: #12375e;
+}
+
+.entryLink:focus-visible {
+  outline: 2px solid rgba(56, 97, 146, 0.9);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
 .readMoreButton {
   margin-top: 0.75rem;
   border: 1px solid rgba(105, 144, 188, 0.52);
