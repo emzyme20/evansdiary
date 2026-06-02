@@ -6,6 +6,10 @@
   background-attachment: fixed;
 }
 
+:global(body.familyPageBackground .siteFooter) {
+  color: var(--text-alt);
+}
+
 .page {
   padding: clamp(1.25rem, 2vw + 1rem, 2.5rem);
   background: transparent;
