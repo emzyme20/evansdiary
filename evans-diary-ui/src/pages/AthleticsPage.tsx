@@ -1,11 +1,17 @@
 import { useEffect, useMemo, useRef, useState } from "react";
-import { Calendar, FileText, Video, type LucideIcon } from "lucide-react";
+import {
+  Calendar,
+  FileText,
+  Video,
+  Image,
+  type LucideIcon,
+} from "lucide-react";
 import { athleticsTimeline } from "../timelineEntries";
 import type { TimelineEntry } from "../types";
 import { getImageUrl } from "../utils";
 import styles from "./AthleticsPage.module.css";
 
-const BLOG_PREVIEW_LENGTH = 250;
+const TEXT_PREVIEW_LENGTH = 250;
 
 const typeIcon: Record<
   TimelineEntry["type"],
@@ -14,6 +20,7 @@ const typeIcon: Record<
   Event: { Icon: Calendar, label: "Event" },
   Video: { Icon: Video, label: "Video" },
   Blog: { Icon: FileText, label: "Blog" },
+  Image: { Icon: Image, label: "Image" },
 };
 
 function splitParagraphs(text: string): string[] {
@@ -39,7 +46,7 @@ function AthleticsPage() {
   const [visibleIndexes, setVisibleIndexes] = useState<Set<number>>(
     () => new Set(),
   );
-  const [expandedBlogEntries, setExpandedBlogEntries] = useState<Set<string>>(
+  const [expandedTextEntries, setExpandedTextEntries] = useState<Set<string>>(
     () => new Set(),
   );
   const timelineRef = useRef<HTMLElement | null>(null);
@@ -120,14 +127,13 @@ function AthleticsPage() {
             const { Icon, label } = typeIcon[entry.type];
             const isEven = index % 2 === 0;
             const isVisible = visibleIndexes.has(index);
-            const isBlogEntry = entry.type === "Blog";
-            const isBlogExpanded = expandedBlogEntries.has(entryKey);
-            const hasBlogOverflow =
-              entry.description.length > BLOG_PREVIEW_LENGTH;
+            const isTextExpanded = expandedTextEntries.has(entryKey);
+            const hasTextOverflow =
+              entry.description.length > TEXT_PREVIEW_LENGTH;
             const paragraphs = splitParagraphs(entry.description);
             const previewText = getPreviewText(
               entry.description,
-              BLOG_PREVIEW_LENGTH,
+              TEXT_PREVIEW_LENGTH,
             );
 
             return (
@@ -153,7 +159,7 @@ function AthleticsPage() {
                   <p className={styles.entryType}>{entry.type}</p>
                   <h2 className={styles.entryHeading}>{entry.heading}</h2>
                   <div className={styles.entryBody}>
-                    {isBlogEntry && !isBlogExpanded ? (
+                    {!isTextExpanded ? (
                       <p>{previewText}</p>
                     ) : (
                       paragraphs.map((paragraph, paragraphIndex) => (
@@ -177,12 +183,12 @@ function AthleticsPage() {
                     </p>
                   ) : null}
 
-                  {isBlogEntry && hasBlogOverflow ? (
+                  {hasTextOverflow ? (
                     <button
                       type="button"
                       className={styles.readMoreButton}
                       onClick={() => {
-                        setExpandedBlogEntries((previous) => {
+                        setExpandedTextEntries((previous) => {
                           const next = new Set(previous);
                           if (next.has(entryKey)) {
                             next.delete(entryKey);
@@ -193,7 +199,7 @@ function AthleticsPage() {
                         });
                       }}
                     >
-                      {isBlogExpanded ? "Read less" : "Read more"}
+                      {isTextExpanded ? "Read less" : "Read more"}
                     </button>
                   ) : null}
 
@@ -213,6 +219,8 @@ function AthleticsPage() {
                                 image.source,
                                 image.width,
                                 image.height,
+                                image.fill,
+                                image.quality,
                               )}
                               alt={image.caption}
                               width={image.width}

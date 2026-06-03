@@ -138,6 +138,12 @@
   border-color: #bbf1dd;
 }
 
+.timelineEntry[data-entry-type="Image"] .node {
+  color: #e8f0fe;
+  background: #1a73e8;
+  border-color: #92c6f9;
+}
+
 .card {
   background: rgba(249, 252, 255, 0.94);
   border: 1px solid rgba(168, 196, 228, 0.72);
@@ -268,6 +274,13 @@
   transition:
     transform 180ms ease,
     box-shadow 220ms ease;
+}
+
+.polaroid iframe {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  border: 0;
 }
 
 .mediaItem:nth-child(odd) .polaroid {
@@ -481,5 +494,25 @@
   .polaroidImage {
     width: 100%;
     max-width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .mediaGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .polaroid {
+    width: 100%;
+    max-width: 85%;
+    overflow: hidden;
+  }
+
+  .polaroid iframe {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    aspect-ratio: 16 / 9;
+    border: 0;
   }
 }
