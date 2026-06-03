@@ -110,7 +110,7 @@ TDC is now known as Team Bath Futures.`,
 the event would be postponed. It was a little premature from the school as by the afternoon, the weather was absolutely fine. This year with Evan now 9, he was keen to get back to winning ways as the
 event the year before ended up being held indoors and Evan had a slip and recovered to finish only 2nd. You could tell that competing for Team Bath was having an effect on Evan. At the start of the race
 this year he remained focused, performing the kind of pre-race routine that Elite runners like Usain Bolt would go through—Evan even asked if he could wear his spikes! The children lining up next to Evan were just chatting and joking waiting for the race to start.
-Evan had an outstanding race, finishing comfortably 1st.`,
+Evan had an outstanding race, finishing a comfortable 1st.`,
     images: [
       {
         source: "2014_sports_day_track_yetvkd",
@@ -171,5 +171,100 @@ He did exceptionally well and raised over £100 for them and he also raced very 
       caption: "Sprint Race Video",
       width: 350,
     },
+  },
+  {
+    year: 2016,
+    type: "Event",
+    heading: "Junior Aquathlon",
+    description: `Evan thoroughly enjoyed his triathlon a few years ago but didn't enjoy the bike stage of it. We have since discovered that you can do various combinations of these kinds of events.
+As a result, Evan being a very good runner and swimmer decided to have a go at an aquathlon which combines his preferred events. We found an event local to us run by the Trowbridge Hotchilli Triathlon Club, which caters for all age groups.
+The day of the event was a horrible day (weather-wise), the transition stage was being held in the tennis courts, so athletes would have to run from the swimming pool along the concrete in bare feet before being able to change into trainers for the run.
+It rained quite heavily leading up to the race, however by the time Evan emerged from his 800m swim, it was just overcast. The concrete was very slippy, which saw several people slip over!
+Evan made it to the transition stage in one piece. The 1200m run was a real slog, it was cold and you tend to find that it's not so much of a race because of the long distance swim that gaps between the competitors build up and you are completing a time trial instead of a race.
+The athletes all wear tags around their ankles so that you know when they started and finished and from those times you can calculate the race time.`,
+    link: {
+      href: "https://www.britishtriathlon.org/clubs/trowbridge-hot-chilli-triathlon-club_1869",
+      label: "Contact Trowbridge Hot Chilli Triathlon Club",
+    },
+    images: [
+      {
+        source: "2016_aquathlon_ybxjei",
+        caption: "Run Stage",
+        width: 350,
+      },
+    ],
+  },
+  {
+    year: 2016,
+    type: "Video",
+    heading: "Year 6 Sports Day",
+    description: `Evan's last sports day of primary school, he wanted to go out with a bang. He ran well and the whole school acknowledged how good he is at running by chanting his name at the start of the race.
+His house team 'Sharks' overall performed poorly against the other house teams but Evan was pleased with the running race that he won.`,
+    images: [
+      {
+        source: "2016_sprint_vroti5",
+        caption: "Sprint Race",
+        width: 350,
+      },
+    ],
+    video: {
+      source: "http://www.youtube.com/embed/myLbwK4oh74",
+      caption: "Sprint Race Video",
+      width: 350,
+    },
+  },
+  {
+    year: 2016,
+    type: "Image",
+    heading: "Primary School Awards Ceremony",
+    description: `Evan won the award of 'Sports Person of the Year' voted for by his peers. He has represented his primary school for many sporting activities over the years.
+He is very pleased to have been rewarded with this award as he leaves the school to embark on a new chapter at secondary school.`,
+    images: [
+      {
+        source: "2016_sports_person_ecidnk",
+        caption: "Sports Person of the Year",
+        width: 350,
+      },
+    ],
+  },
+  {
+    year: 2016,
+    type: "Event",
+    heading: "Personal Best for the 100m",
+    description: `On the 11th September 2016, Evan represented Team Bath at an athletics open meet. He ran the 100m and competed in the javelin.
+He ran his personal best time of 14.5 seconds for the 100m finishing second in his race.`,
+    images: [
+      {
+        source: "2016_100m_pb_jmnsij",
+        caption: "100m montage",
+        width: 500,
+        quality: 100,
+      },
+      {
+        source: "2016_100m_pb_y6rmei",
+        caption: "100m PB",
+        width: 350,
+        quality: 100,
+      },
+    ],
+  },
+  {
+    year: 2016,
+    type: "Event",
+    heading: "Beechen Cliff - The Great Walk 2016",
+    description: `On the 12th October 2016, Evan took part in a school event to raise funds for his secondary school, it involved completing a course from the school grounds to a point in a neighboring town Bradgford Upon Avon. The course was a total of 21 miles and was split into phases to allow the whole school to take part. There were points along the course where different age groups would stop and turn around. The children started the walk at 8:20am and were set a deadline to turn around at mid-day to allow them to be back at the school by 3pm.
+In the weeks leading up to this event, Evan had been completing a cross-country run for his weekly PE lesson. The week before the event arrived, he came home with a slip that we had to sign that would allow him to go past the designated year 7 point and to also run the course with a group of other boys who had been selected based on their performance in the cross-country lessons throughout the term. This challenge was very exciting for Evan and he is always looking for something new to do to test his stamina and performance. We purchased a Camelbak back pack that allows you to run with fluid in your bag that you can drink without having to use bottles as he was keen to complete the course with a good time.
+Evan made a very good start on the day, with us tracking him using his mobile phone GPS, we established that he made it to Bradford Upon Avon and was already on his way back at 10am. His return journey was a lot harder. By mid-day his legs were starting to tire and he was suffering with aches and pains. This was the first time that Evan has ever run a distance like this and the resulting problems that effect your muscles when they are fatgiued. He continued at a much slower pace with the determination and desire that it is better to finish than not finish at all. He finished at roughly 1pm, an incredible achievement for an 11 year old running almost the distance of a marathon in a time that most adults would be proud of.`,
+    link: {
+      href: "https://uk.camelbak.com/hydration-packs/",
+      label: "Learn more about Camelbak hydration packs",
+    },
+    images: [
+      {
+        source: "2016_great_walk_daxbgs",
+        caption: "The Great Walk",
+        width: 350,
+      },
+    ],
   },
 ];

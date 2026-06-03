@@ -29,6 +29,8 @@ export interface Media {
   caption: string;
   width: number;
   height?: number;
+  quality?: number;
+  fill?: number;
 }
 
 export interface FamilyTile {
@@ -45,5 +47,5 @@ export interface TimelineEntry {
   };
   images?: Media[];
   video?: Media;
-  type: "Event" | "Video" | "Blog";
+  type: "Event" | "Video" | "Blog" | "Image";
 }
