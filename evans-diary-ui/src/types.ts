@@ -49,3 +49,8 @@ export interface TimelineEntry {
   video?: Media;
   type: "Event" | "Video" | "Blog" | "Image";
 }
+
+export interface DiaryNavTile {
+  image: Media;
+  location: string;
+}

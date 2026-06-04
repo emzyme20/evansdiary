@@ -1,0 +1,125 @@
+.page {
+  padding: clamp(1.25rem, 2vw + 1rem, 2.5rem);
+  background: transparent;
+}
+
+.bannerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
+  width: 100%;
+  box-sizing: border-box; /* keeps padding inside parent bounds */
+}
+
+.bannerWrapper {
+  width: 100%;
+  max-width: 750px; /* Maximum image size */
+}
+
+.bannerImage {
+  display: block; /* Removes unwanted inline spacing at the bottom */
+  width: 100%; /* Image shrinks when wrapper gets smaller than the image */
+  height: auto; /* Maintains the original aspect ratio to prevent squishing */
+}
+
+.textContainer {
+  text-align: left;
+}
+
+.textContainer p {
+  margin: 0.6rem 0 0;
+  line-height: 1.68;
+}
+
+.grid {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: clamp(0.8rem, 1.2vw, 1.25rem);
+  margin: 0.95rem 0 0;
+  padding: 0;
+  /*grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));*/
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.polaroid {
+  --tilt: 0deg;
+  width: max-content;
+  max-width: 85%;
+  margin: 0;
+  text-align: center;
+  background: linear-gradient(180deg, #fffdf8 0%, #fff 100%);
+  border: 1px solid #d9d4cb;
+  border-radius: 2px;
+  padding: 0.75rem 0.75rem 1rem;
+  box-shadow:
+    0 2px 4px rgb(0 0 0 / 0.16),
+    0 14px 30px rgb(0 0 0 / 0.12);
+  transform: rotate(var(--tilt));
+  transform-origin: center top;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  will-change: transform;
+  transition:
+    transform 180ms ease,
+    box-shadow 220ms ease;
+}
+
+.polaroidImage {
+  display: block;
+  width: auto;
+  max-width: min(100%, 285px);
+  height: auto;
+  margin-inline: auto;
+  border: 1px solid #ece7df;
+  filter: sepia(0.12) contrast(1.03) saturate(0.96);
+}
+
+.link:nth-child(odd) .polaroid {
+  --tilt: -2deg;
+}
+
+.link:nth-child(even) .polaroid {
+  --tilt: 2deg;
+}
+
+.link:nth-child(3n) .polaroid {
+  --tilt: -1deg;
+}
+
+.link:nth-child(4n) .polaroid {
+  --tilt: 3deg;
+}
+
+.polaroid:hover {
+  transform: rotate(var(--tilt)) scale(1.1);
+  box-shadow:
+    0 4px 8px rgb(0 0 0 / 0.2),
+    0 18px 34px rgb(0 0 0 / 0.16);
+}
+
+.link {
+  text-decoration: none;
+  color: unset;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: 2fr;
+  }
+
+  .polaroid {
+    width: max-content;
+  }
+
+  .polaroidImage {
+    width: auto;
+    max-width: 100%;
+  }
+}
