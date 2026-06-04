@@ -36,28 +36,29 @@
   list-style: none;
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: clamp(0.8rem, 1.2vw, 1.25rem);
+  gap: clamp(1.25rem, 1.2vw, 1.25rem);
   margin: 0.95rem 0 0;
   padding: 0;
-  /*grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));*/
 }
 
 .item {
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  min-width: 0;
 }
 
 .polaroid {
   --tilt: 0deg;
-  width: max-content;
-  max-width: 85%;
+  width: 100%;
+  max-width: 285px;
   margin: 0;
   text-align: center;
   background: linear-gradient(180deg, #fffdf8 0%, #fff 100%);
   border: 1px solid #d9d4cb;
   border-radius: 2px;
   padding: 0.75rem 0.75rem 1rem;
+  box-sizing: border-box;
   box-shadow:
     0 2px 4px rgb(0 0 0 / 0.16),
     0 14px 30px rgb(0 0 0 / 0.12);
@@ -73,27 +74,27 @@
 
 .polaroidImage {
   display: block;
-  width: auto;
-  max-width: min(100%, 285px);
+  width: 100%;
+  max-width: 100%;
   height: auto;
   margin-inline: auto;
   border: 1px solid #ece7df;
   filter: sepia(0.12) contrast(1.03) saturate(0.96);
 }
 
-.link:nth-child(odd) .polaroid {
+.item:nth-child(odd) .polaroid {
   --tilt: -2deg;
 }
 
-.link:nth-child(even) .polaroid {
+.item:nth-child(even) .polaroid {
   --tilt: 2deg;
 }
 
-.link:nth-child(3n) .polaroid {
+.item:nth-child(3n) .polaroid {
   --tilt: -1deg;
 }
 
-.link:nth-child(4n) .polaroid {
+.item:nth-child(4n) .polaroid {
   --tilt: 3deg;
 }
 
@@ -105,21 +106,32 @@
 }
 
 .link {
+  display: flex;
+  width: 100%;
+  min-width: 0;
+  justify-content: center;
   text-decoration: none;
   color: unset;
 }
 
+@media (min-width: 640px) and (max-width: 900px) {
+  .caption {
+    font-size: 14px;
+  }
+}
+
 @media (max-width: 600px) {
   .grid {
-    grid-template-columns: 2fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .polaroid {
-    width: max-content;
+    width: 100%;
+    max-width: 100%;
   }
 
   .polaroidImage {
-    width: auto;
+    width: 100%;
     max-width: 100%;
   }
 }

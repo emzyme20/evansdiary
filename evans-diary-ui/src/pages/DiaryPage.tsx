@@ -74,11 +74,11 @@ function DiaryPage() {
           <ul className={styles.grid} aria-label={`diary navigation tiles`}>
             {diaryNavTiles.map((tile) => {
               return (
-                <Link className={styles.link} to={tile.location}>
-                  <li
-                    key={`diary-nav-${tile.image.source}`}
-                    className={styles.item}
-                  >
+                <li
+                  key={`diary-nav-${tile.image.source}`}
+                  className={styles.item}
+                >
+                  <Link className={styles.link} to={tile.location}>
                     <figure className={styles.polaroid}>
                       <img
                         src={getImageUrl(
@@ -94,8 +94,8 @@ function DiaryPage() {
                         {tile.image.caption}
                       </figcaption>
                     </figure>
-                  </li>
-                </Link>
+                  </Link>
+                </li>
               );
             })}
           </ul>
