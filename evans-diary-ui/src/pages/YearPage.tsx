@@ -3,10 +3,9 @@ import { yearTiles } from "../yearTiles";
 import { PolaroidGrid } from "../components/PolaroidGrid";
 
 function YearPage() {
-  const indexOffset = yearTiles.mode === "month" ? 1 : 0;
-  const linkedTiles = yearTiles.images.map((image, index) => ({
-    image,
-    location: `${yearTiles.mode}/${index + indexOffset}`,
+  const linkedTiles = yearTiles.map((year, index) => ({
+    image: year.image,
+    location: `${year.mode}/${index + year.mode === "month" ? index + 1 : index}`,
   }));
 
   return (

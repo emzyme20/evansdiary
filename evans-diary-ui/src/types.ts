@@ -73,5 +73,5 @@ export interface YearPageParams {
   title: string;
   subtitle: string;
   content: string;
-  images: Media[];
+  image: Media;
 }
