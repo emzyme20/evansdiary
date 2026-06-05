@@ -1,7 +1,6 @@
 import { diaryNavTiles } from "../diaryNavTiles";
-import { getImageUrl } from "../utils";
-import { Link } from "react-router-dom";
 import styles from "./DiaryPage.module.css";
+import { PolaroidGrid } from "../components/PolaroidGrid";
 
 function DiaryPage() {
   return (
@@ -70,36 +69,7 @@ function DiaryPage() {
           </p>
         </div>
 
-        <section aria-label="Polaroid photos">
-          <ul className={styles.grid} aria-label={`diary navigation tiles`}>
-            {diaryNavTiles.map((tile) => {
-              return (
-                <li
-                  key={`diary-nav-${tile.image.source}`}
-                  className={styles.item}
-                >
-                  <Link className={styles.link} to={tile.location}>
-                    <figure className={styles.polaroid}>
-                      <img
-                        src={getImageUrl(
-                          tile.image.source,
-                          tile.image.width,
-                          tile.image.height,
-                        )}
-                        alt={tile.image.caption}
-                        width={tile.image.width}
-                        className={styles.polaroidImage}
-                      />
-                      <figcaption className={styles.caption}>
-                        {tile.image.caption}
-                      </figcaption>
-                    </figure>
-                  </Link>
-                </li>
-              );
-            })}
-          </ul>
-        </section>
+        <PolaroidGrid items={diaryNavTiles} />
       </section>
     </main>
   );

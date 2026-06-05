@@ -1,0 +1,47 @@
+.grid {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: clamp(1.25rem, 1.2vw, 1.25rem);
+  margin: 0.95rem 0 0;
+  padding: 0;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-width: 0;
+  --tilt: 0deg;
+}
+
+.item:nth-child(odd) {
+  --tilt: -2deg;
+}
+
+.item:nth-child(even) {
+  --tilt: 2deg;
+}
+
+.item:nth-child(3n) {
+  --tilt: -1deg;
+}
+
+.item:nth-child(4n) {
+  --tilt: 3deg;
+}
+
+.link {
+  display: flex;
+  width: 100%;
+  min-width: 0;
+  justify-content: center;
+  text-decoration: none;
+  color: unset;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

@@ -7,6 +7,7 @@ import NavBar from "./components/NavBar.tsx";
 import AthleticsPage from "./pages/AthleticsPage.tsx";
 import DiaryPage from "./pages/DiaryPage.tsx";
 import FamilyPage from "./pages/FamilyPage.tsx";
+import YearPage from "./pages/YearPage.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -19,6 +20,7 @@ createRoot(document.getElementById("root")!).render(
           <Route path="/athletics" element={<AthleticsPage />} />
           <Route path="/diary" element={<DiaryPage />} />
           <Route path="*" element={<Navigate to="/" replace />} />
+          <Route path="/diary/year/:year" element={<YearPage />} />
         </Routes>
       </main>
       <footer className="siteFooter">
