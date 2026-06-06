@@ -1,0 +1,33 @@
+.page {
+  padding: clamp(1.25rem, 2vw + 1rem, 2.5rem);
+  background: transparent;
+}
+
+.bannerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
+  width: 100%;
+  box-sizing: border-box; /* keeps padding inside parent bounds */
+}
+
+.bannerWrapper {
+  width: 100%;
+  max-width: 750px; /* Maximum image size */
+}
+
+.bannerImage {
+  display: block; /* Removes unwanted inline spacing at the bottom */
+  width: 100%; /* Image shrinks when wrapper gets smaller than the image */
+  height: auto; /* Maintains the original aspect ratio to prevent squishing */
+}
+
+.textContainer {
+  text-align: left;
+}
+
+.textContainer p {
+  margin: 0.6rem 0 0;
+  line-height: 1.68;
+}

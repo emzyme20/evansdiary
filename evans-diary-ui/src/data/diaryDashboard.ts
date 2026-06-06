@@ -1,6 +1,6 @@
-import type { DiaryNavTile } from "./types";
+import type { MediaLink } from "../types";
 
-export const diaryNavTiles: readonly DiaryNavTile[] = [
+export const dashboardTiles: readonly MediaLink[] = [
   {
     image: {
       source: "w1_evan_peaceful_n7d6jq",

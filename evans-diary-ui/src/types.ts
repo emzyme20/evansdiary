@@ -27,7 +27,7 @@ export interface HomeTile {
 export interface Media {
   source: string;
   caption: string;
-  width: number;
+  width?: number;
   height?: number;
   quality?: number;
   fill?: number;
@@ -50,7 +50,7 @@ export interface TimelineEntry {
   type: "Event" | "Video" | "Blog" | "Image";
 }
 
-export interface DiaryNavTile {
+export interface MediaLink {
   image: Media;
   location: string;
 }

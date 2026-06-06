@@ -1,11 +1,18 @@
 import styles from "./YearPage.module.css";
-import { yearTiles } from "../yearTiles";
+import { useParams } from "react-router-dom";
+import { DIARY_REGISTRY } from "../data/diaryStructure";
+import { getMonthName } from "../utils";
 import { PolaroidGrid } from "../components/PolaroidGrid";
 
 function YearPage() {
-  const linkedTiles = yearTiles.map((year, index) => ({
-    image: year.image,
-    location: `${year.mode}/${index + year.mode === "month" ? index + 1 : index}`,
+  const { year } = useParams<{ year: string }>();
+
+  const yearData = DIARY_REGISTRY[year!];
+
+  const linkedTiles = yearData.items.map((item, index) => ({
+    image: item,
+    location: `/diary/year/${year}/${yearData.mode === "month" ? getMonthName(index - 1) : `week/${index}`}`,
+    state: { caption: item.caption },
   }));
 
   return (

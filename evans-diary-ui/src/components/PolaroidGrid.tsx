@@ -6,6 +6,7 @@ import { PolaroidImage } from "./PolaroidImage";
 interface PolaroidGridData {
   image: Media;
   location: string;
+  state?: unknown;
 }
 
 interface ItemListProps<T extends PolaroidGridData> {
@@ -22,7 +23,11 @@ export function PolaroidGrid<T extends PolaroidGridData>({
           return (
             <li key={`diary-nav-${tile.image.source}`} className={styles.item}>
               {tile.location ? (
-                <Link className={styles.link} to={tile.location}>
+                <Link
+                  className={styles.link}
+                  to={tile.location}
+                  state={tile.state}
+                >
                   <PolaroidImage image={tile.image} />
                 </Link>
               ) : (

@@ -1,75 +1,167 @@
-import { diaryNavTiles } from "../diaryNavTiles";
 import styles from "./DiaryPage.module.css";
-import { PolaroidGrid } from "../components/PolaroidGrid";
+import { getDiaryHeading, getMonthName } from "../utils";
+import { useLocation, useParams } from "react-router-dom";
+import { DIARY_CONTENT_REGISTRY, DIARY_REGISTRY } from "../data/diaryStructure";
+import ReactMarkdown from "react-markdown";
+import { useEffect, useState } from "react";
+
+interface DiaryPageLocationState {
+  caption?: string;
+}
+
+interface DiaryPageLoadError {
+  key: string;
+  message: string;
+}
 
 function DiaryPage() {
+  const [contentA, setContentA] = useState<string>("");
+  const [contentB, setContentB] = useState<string>("");
+  const [loadedKey, setLoadedKey] = useState<string>("");
+  const [loadError, setLoadError] = useState<DiaryPageLoadError | null>(null);
+
+  const location = useLocation();
+  const { year, week, month } = useParams<{
+    year: string;
+    week: string;
+    month: string;
+  }>();
+
+  const yearData = year ? DIARY_REGISTRY[year] : undefined;
+  const selectedIndex =
+    week !== undefined
+      ? Number(week)
+      : yearData?.items.findIndex(
+          (_, index) =>
+            month !== undefined &&
+            getMonthName(index - 1).toLowerCase() === month.toLowerCase(),
+        );
+
+  const normalizedEntryIndex =
+    selectedIndex !== undefined &&
+    Number.isFinite(selectedIndex) &&
+    selectedIndex >= 0
+      ? String(selectedIndex).padStart(2, "0")
+      : undefined;
+
+  const key =
+    year && normalizedEntryIndex
+      ? `${year}-${normalizedEntryIndex}`
+      : undefined;
+
+  // Look up the specific meta asset paths instantly
+  const diaryEntry = key ? DIARY_CONTENT_REGISTRY[key] : null;
+  const errorMessage =
+    loadError && loadError?.key === key ? loadError.message : null;
+  const loading = Boolean(
+    diaryEntry && key && loadedKey !== key && !errorMessage,
+  );
+
+  useEffect(() => {
+    if (!diaryEntry || !key) return;
+
+    let cancelled = false;
+
+    const loadContent = async () => {
+      try {
+        const fetchMarkdown = async (path: string) => {
+          const response = await fetch(path);
+
+          if (!response.ok) {
+            throw new Error(`Failed to load content (${response.status})`);
+          }
+
+          return response.text();
+        };
+
+        const [textA, textB] = await Promise.all([
+          fetchMarkdown(diaryEntry.markdownPaths[0]),
+          diaryEntry.markdownPaths[1]
+            ? fetchMarkdown(diaryEntry.markdownPaths[1])
+            : Promise.resolve(""),
+        ]);
+
+        if (cancelled) return;
+
+        setContentA(textA);
+        setContentB(textB);
+        setLoadedKey(key);
+        setLoadError(null);
+      } catch (error) {
+        if (cancelled) return;
+
+        setContentA("");
+        setContentB("");
+        setLoadError({
+          key,
+          message:
+            error instanceof Error
+              ? error.message
+              : "Unable to load this diary entry.",
+        });
+      }
+    };
+
+    void loadContent();
+
+    return () => {
+      cancelled = true;
+    };
+  }, [diaryEntry, key]);
+
+  const routeState = location.state as DiaryPageLocationState | null;
+  const caption =
+    routeState?.caption ??
+    (selectedIndex !== undefined && selectedIndex >= 0
+      ? yearData?.items[selectedIndex]?.caption
+      : undefined) ??
+    "Diary Entry";
+
+  if (!diaryEntry) {
+    return (
+      <main className={styles.page}>
+        <section>
+          <h1>{getDiaryHeading(Number(year), caption)}</h1>
+          <h2>Entry not found</h2>
+        </section>
+      </main>
+    );
+  }
+
+  if (loading) return <div>Loading diary entries...</div>;
+
+  if (errorMessage) {
+    return (
+      <main className={styles.page}>
+        <section>
+          <h1>{getDiaryHeading(Number(year), caption)}</h1>
+          <h2>{diaryEntry.period}</h2>
+          <p>{errorMessage}</p>
+        </section>
+      </main>
+    );
+  }
+
   return (
     <main className={styles.page}>
-      <section>
-        <header className={styles.bannerContainer}>
-          <div className={styles.bannerWrapper}>
-            <img
-              className={styles.bannerImage}
-              src="/images/the-diary.png"
-              alt="The original diary"
-            />
+      <section className={styles.diaryEntry} aria-label="Diary entry content">
+        <h1>{getDiaryHeading(Number(year), caption)}</h1>
+        <h2>{diaryEntry.period}</h2>
+        <div>
+          <h3>Emma's Entry</h3>
+          <div className="markdown-body">
+            <ReactMarkdown>{contentA}</ReactMarkdown>
           </div>
-        </header>
-
-        <div className={styles.textContainer}>
-          <h1>The Diary</h1>
-          <h2>Where it all began</h2>
-
-          <p>
-            Late in 2003 I decided that I wanted to start a family, a process
-            that is not straight forward when you are not in a traditional
-            relationship. Initially I was very naive and assumed that being a
-            healthy female with no fertility issues using donor sperm that is in
-            the top 2%, they only accept the best donors—no weak swimmers there!
-            I just assumed that I would get pregnant on the first try. This
-            obviously was not the case, we had a couple of aborted attempts due
-            to the fact that fertility drugs given to a fertile woman equals
-            over production! Christmas also interrupted one of my cycles as the
-            clinic was closed and we missed the window of opportunity. When you
-            consider how long it can take to get pregnant naturally and how long
-            it takes some couples to conceive with the help of fertility
-            doctors, I think 6 months from making the decision to then having a
-            successful insemination is a real achievement.
-          </p>
-          <p>
-            I like to think that I was always destined to conceive in March
-            2004, every egg that you create has the potential to create a unique
-            being and the egg that my body released in March resulted in the
-            lovely boy that I have today.
-          </p>
-          <p>
-            On the 26th December 2004 at 4.05am Evan Oliver Middlebrook came
-            into this world! I originally created this diary, to track his
-            progress through the first year one week at a time, with further
-            years being added on a monthly basis. It would give me something to
-            look back at when he's all grown up and also it was a way for family
-            members to share our adventures who were not able to see us
-            regularly.
-          </p>
-          <p>
-            It's a shame that I only captured the first few years like this but
-            I had fun and I have many memories in picture and video form of us
-            all growing as a family. Family is not for everyone, I certainly did
-            not think I would want a family when I was growing up and through
-            early adulthood. I can pin point the exact moment where something
-            changed in me, a short break to Alton Towers in the Spring of 2003.
-            I witnessed many families out enjoying a day of fun, I couldn't get
-            the visions out of my head and as the months passed I started to
-            feel like something was missing. Inside there was a feeling, a sad
-            feeling one that I could not suppress or make go away. It's
-            difficult to know for sure, it's not like you can try before you buy
-            with children! I had to take the plunge and change my life forever.
-            Thankfully when Evan was born; that sad feeling disappeared. For me
-            it was exactly what my life needed.
-          </p>
         </div>
 
-        <PolaroidGrid items={diaryNavTiles} />
+        {diaryEntry.markdownPaths.length === 2 && (
+          <div>
+            <h3>Caroline's Entry</h3>
+            <div className="markdown-body">
+              <ReactMarkdown>{contentB}</ReactMarkdown>
+            </div>
+          </div>
+        )}
       </section>
     </main>
   );

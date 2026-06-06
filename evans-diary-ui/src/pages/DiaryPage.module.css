@@ -3,31 +3,10 @@
   background: transparent;
 }
 
-.bannerContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem 2rem;
-  width: 100%;
-  box-sizing: border-box; /* keeps padding inside parent bounds */
-}
-
-.bannerWrapper {
-  width: 100%;
-  max-width: 750px; /* Maximum image size */
-}
-
-.bannerImage {
-  display: block; /* Removes unwanted inline spacing at the bottom */
-  width: 100%; /* Image shrinks when wrapper gets smaller than the image */
-  height: auto; /* Maintains the original aspect ratio to prevent squishing */
-}
-
-.textContainer {
-  text-align: left;
-}
-
-.textContainer p {
-  margin: 0.6rem 0 0;
-  line-height: 1.68;
+.diaryEntry p {
+  text-align: justify;
+  font-size: clamp(0.65rem, 0.5vw + 0.75rem, 1rem);
+  margin-top: 0;
+  margin-bottom: 1rem;
+  line-height: 1.6em;
 }

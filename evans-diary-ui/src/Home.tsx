@@ -2,12 +2,12 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { homeTiles } from "./homeTiles";
 import type { HomeSchema } from "./types";
-import styles from "./App.module.css";
+import styles from "./Home.module.css";
 
 const homeContentUrl =
   import.meta.env.VITE_HOME_CONTENT_URL || "/content/home.json";
 
-function App() {
+function Home() {
   const [content, setContent] = useState<HomeSchema | null>(null);
   const [carouselIndex, setCarouselIndex] = useState<number>(0);
   const [flipbookIndex, setFlipbookIndex] = useState<number>(0);
@@ -150,4 +150,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;
