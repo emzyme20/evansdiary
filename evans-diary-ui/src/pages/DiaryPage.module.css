@@ -2,6 +2,20 @@
   padding: clamp(1.25rem, 2vw + 1rem, 2.5rem);
   background: transparent;
 }
+.diaryEntry h1,
+.diaryEntry h2,
+.diaryEntry h3 {
+  text-align: left;
+}
+
+.diaryEntry h1,
+.diaryEntry h2 {
+  font-weight: 400;
+}
+
+.diaryEntry h3 {
+  font-weight: 300;
+}
 
 .diaryEntry p {
   text-align: justify;

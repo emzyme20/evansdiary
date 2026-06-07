@@ -4,21 +4,16 @@ import { useLocation, useParams } from "react-router-dom";
 import { DIARY_CONTENT_REGISTRY, DIARY_REGISTRY } from "../data/diaryStructure";
 import ReactMarkdown from "react-markdown";
 import { useEffect, useState } from "react";
+import ImageReel from "../components/ImageReel";
 
 interface DiaryPageLocationState {
   caption?: string;
-}
-
-interface DiaryPageLoadError {
-  key: string;
-  message: string;
 }
 
 function DiaryPage() {
   const [contentA, setContentA] = useState<string>("");
   const [contentB, setContentB] = useState<string>("");
   const [loadedKey, setLoadedKey] = useState<string>("");
-  const [loadError, setLoadError] = useState<DiaryPageLoadError | null>(null);
 
   const location = useLocation();
   const { year, week, month } = useParams<{
@@ -51,11 +46,21 @@ function DiaryPage() {
 
   // Look up the specific meta asset paths instantly
   const diaryEntry = key ? DIARY_CONTENT_REGISTRY[key] : null;
-  const errorMessage =
-    loadError && loadError?.key === key ? loadError.message : null;
-  const loading = Boolean(
-    diaryEntry && key && loadedKey !== key && !errorMessage,
-  );
+  const loading = Boolean(diaryEntry && key && loadedKey !== key);
+
+  const imagesPerReel = 4;
+  const imageReelCount = diaryEntry
+    ? diaryEntry.images.length / imagesPerReel
+    : 0;
+
+  const showPerson = diaryEntry?.markdownPaths.length === 2;
+
+  const getEntryLoadMessage = (entryName: string) =>
+    `_${entryName} could not be loaded._`;
+
+  console.log("imageReelCount", imageReelCount);
+  console.log("total images", diaryEntry?.images.length);
+  console.log("showPerson", showPerson);
 
   useEffect(() => {
     if (!diaryEntry || !key) return;
@@ -63,42 +68,59 @@ function DiaryPage() {
     let cancelled = false;
 
     const loadContent = async () => {
-      try {
-        const fetchMarkdown = async (path: string) => {
+      const fetchMarkdown = async (path: string, entryName: string) => {
+        try {
           const response = await fetch(path);
 
           if (!response.ok) {
-            throw new Error(`Failed to load content (${response.status})`);
+            return getEntryLoadMessage(entryName);
           }
 
-          return response.text();
-        };
+          const contentType =
+            response.headers.get("content-type")?.toLowerCase() ?? "";
+          const text = await response.text();
 
-        const [textA, textB] = await Promise.all([
-          fetchMarkdown(diaryEntry.markdownPaths[0]),
-          diaryEntry.markdownPaths[1]
-            ? fetchMarkdown(diaryEntry.markdownPaths[1])
-            : Promise.resolve(""),
-        ]);
+          // Some static servers return index.html with a 200 status for missing files.
+          const isHtmlFallback =
+            contentType.includes("text/html") ||
+            /^\s*<!doctype html/i.test(text) ||
+            /^\s*<html[\s>]/i.test(text);
+
+          if (isHtmlFallback) {
+            return getEntryLoadMessage(entryName);
+          }
+
+          return text;
+        } catch {
+          return getEntryLoadMessage(entryName);
+        }
+      };
+
+      try {
+        const textA = await fetchMarkdown(
+          diaryEntry.markdownPaths[0],
+          "Emma's entry",
+        );
+        const textB = diaryEntry.markdownPaths[1]
+          ? await fetchMarkdown(diaryEntry.markdownPaths[1], "Caroline's entry")
+          : "";
+        const safeTextA = textA || getEntryLoadMessage("Emma's entry");
 
         if (cancelled) return;
 
-        setContentA(textA);
+        setContentA(safeTextA);
         setContentB(textB);
         setLoadedKey(key);
-        setLoadError(null);
-      } catch (error) {
+      } catch {
         if (cancelled) return;
 
-        setContentA("");
-        setContentB("");
-        setLoadError({
-          key,
-          message:
-            error instanceof Error
-              ? error.message
-              : "Unable to load this diary entry.",
-        });
+        setContentA(getEntryLoadMessage("Emma's entry"));
+        setContentB(
+          diaryEntry.markdownPaths[1]
+            ? getEntryLoadMessage("Caroline's entry")
+            : "",
+        );
+        setLoadedKey(key);
       }
     };
 
@@ -130,38 +152,52 @@ function DiaryPage() {
 
   if (loading) return <div>Loading diary entries...</div>;
 
-  if (errorMessage) {
-    return (
-      <main className={styles.page}>
-        <section>
-          <h1>{getDiaryHeading(Number(year), caption)}</h1>
-          <h2>{diaryEntry.period}</h2>
-          <p>{errorMessage}</p>
-        </section>
-      </main>
-    );
-  }
-
   return (
     <main className={styles.page}>
       <section className={styles.diaryEntry} aria-label="Diary entry content">
         <h1>{getDiaryHeading(Number(year), caption)}</h1>
         <h2>{diaryEntry.period}</h2>
+        {imageReelCount > 1 || diaryEntry.markdownPaths.length === 1 ? (
+          <ImageReel
+            images={diaryEntry.images.slice(0, imagesPerReel).map((image) => ({
+              image: image,
+            }))}
+          />
+        ) : null}
         <div>
-          <h3>Emma's Entry</h3>
+          {showPerson ? <h3>Emma's Entry</h3> : null}
           <div className="markdown-body">
             <ReactMarkdown>{contentA}</ReactMarkdown>
           </div>
         </div>
 
-        {diaryEntry.markdownPaths.length === 2 && (
+        {diaryEntry.markdownPaths.length === 2 && imageReelCount === 1 && (
           <div>
-            <h3>Caroline's Entry</h3>
-            <div className="markdown-body">
-              <ReactMarkdown>{contentB}</ReactMarkdown>
+            <ImageReel
+              images={diaryEntry.images
+                .slice(0, imagesPerReel)
+                .map((image) => ({
+                  image: image,
+                }))}
+            />
+            <div>
+              {showPerson ? <h3>Caroline's Entry</h3> : null}
+              <div className="markdown-body">
+                <ReactMarkdown>{contentB}</ReactMarkdown>
+              </div>
             </div>
           </div>
         )}
+
+        {imageReelCount > 1 ? (
+          <ImageReel
+            images={diaryEntry.images
+              .slice(imagesPerReel, imagesPerReel * 2)
+              .map((image) => ({
+                image: image,
+              }))}
+          />
+        ) : null}
       </section>
     </main>
   );

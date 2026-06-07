@@ -21,6 +21,7 @@ export interface DiaryEntry {
   period: string; // e.g., "26th December 2004 - 1st January 2005"
   markdownPaths: string[]; // Array of paths to markdown files for this entry, e.g., ["/assets/diary-content/2026/month-01-a.md", "/assets/diary-content/2005-00-a.md"]
   images: Media[]; // Array of up to 12 image objects
+  type?: "standard" | "calendar";
 }
 
 /*
@@ -425,6 +426,1206 @@ export const DIARY_CONTENT_REGISTRY: Record<string, DiaryEntry> = {
       {
         source: "w2_resting_nyyjod",
         caption: "Both of us having a rest",
+      },
+    ],
+  },
+  "2005-03": {
+    period: "9th - 15th January 2005",
+    markdownPaths: [
+      "/content/diary/2005/2005-03-a.md",
+      "/content/diary/2005/2005-03-b.md",
+    ],
+    images: [
+      {
+        source: "w3_zonked_k3isgq",
+        caption: "Completely zonked out! Too much boob! :-)",
+      },
+      {
+        source: "w3_matching_socks_aj3lgg",
+        caption: "Outfit includes matching socks",
+      },
+      {
+        source: "w3_playgym_ruptaf",
+        caption: "A rare moment amusing himself on the play gym",
+      },
+      {
+        source: "w3_wind_struggles_s7c6zt",
+        caption: "Practicing different winding techniques",
+      },
+    ],
+  },
+  "2005-04": {
+    period: "16th - 22nd January 2005",
+    markdownPaths: [
+      "/content/diary/2005/2005-04-a.md",
+      "/content/diary/2005/2005-04-b.md",
+    ],
+    images: [
+      {
+        source: "w4_keep_rocking_d66fey",
+        caption:
+          "Evan letting Grandma know that she'll need to rock him for longer!",
+      },
+      {
+        source: "w4_right_mitt_zgtpu1",
+        caption: "Have you seen my left mitt?",
+      },
+      {
+        source: "w4_mindy_slamce",
+        caption:
+          "Emma's mums dog Mindy is very intrigued by this new creature!",
+      },
+      {
+        source: "w4_left_mitt_cflghg",
+        caption: "Where's my right mitt now?!?",
+      },
+    ],
+  },
+  "2005-05": {
+    period: "23rd - 29th January 2005",
+    markdownPaths: [
+      "/content/diary/2005/2005-05-a.md",
+      "/content/diary/2005/2005-05-b.md",
+    ],
+    images: [
+      {
+        source: "w5_smiling_now_kukeoj",
+        caption: "Look Mummy, I can smile now",
+      },
+      {
+        source: "w5_sofa_snooze_q63dnp",
+        caption: "No trouble sleeping on the sofa",
+      },
+      {
+        source: "w5_baldy_g3x6t4",
+        caption: "I know you're looking at my bald patch, stop it!",
+      },
+      {
+        source: "w5_nice_and_warm_bhs0up",
+        caption: "All nice and warm in here",
+      },
+    ],
+  },
+  "2005-06": {
+    period: "30th January - 5th February 2005",
+    markdownPaths: [
+      "/content/diary/2005/2005-06-a.md",
+      "/content/diary/2005/2005-06-b.md",
+    ],
+    images: [
+      {
+        source: "w6_giggles_z4qpas",
+        caption: "Evan likes his change mat a lot for some reason!",
+      },
+      {
+        source: "w6_jazz_hands_y85uhg",
+        caption: "Evan doing his 'Jazz Hands'",
+      },
+      {
+        source: "w6_tootsies_n76p7e",
+        caption: "Thumbs Up! Oh no, that's tootsies!",
+      },
+      {
+        source: "w6_cutest_sleeper_oqsqt0",
+        caption: "Just the cutest little sleeper",
+      },
+    ],
+  },
+  "2005-07": {
+    period: "6th - 12th February 2005",
+    markdownPaths: [
+      "/content/diary/2005/2005-07-a.md",
+      "/content/diary/2005/2005-07-b.md",
+    ],
+    images: [
+      {
+        source: "w7_whats_this_idgt3s",
+        caption: "Hmmm... what's this?",
+      },
+      {
+        source: "w7_cute_with_tears_jio5m1",
+        caption: "So cute, even with tears!",
+      },
+      {
+        source: "w7_smiling_for_nan_kqzbuf",
+        caption: "Yep, I can hold it Mum!",
+      },
+      {
+        source: "w7_holding_bottle_tafgcb",
+        caption: "Evan smiling at Caroline's mum",
+      },
+    ],
+  },
+  "2005-08": {
+    period: "13th - 19th February 2005",
+    markdownPaths: [
+      "/content/diary/2005/2005-08-a.md",
+      "/content/diary/2005/2005-08-b.md",
+    ],
+    images: [
+      {
+        source: "w8_are_you_sure_awndbi",
+        caption: "Are you sure you want me to pick you up?",
+      },
+      {
+        source: "w8_yes_i_am_sure_dr33f1",
+        caption: "Yes, I'm sure!",
+      },
+      {
+        source: "w8_tummy_time_v4fjqp",
+        caption: "Evan, demonstrating the benefits of tummy time",
+      },
+      {
+        source: "w8_stuffed_xjmydd",
+        caption: "Stuffed from a good feed",
+      },
+    ],
+  },
+  "2005-09": {
+    period: "20th - 26th February 2005",
+    markdownPaths: [
+      "/content/diary/2005/2005-09-a.md",
+      "/content/diary/2005/2005-09-b.md",
+    ],
+    images: [
+      {
+        source: "w9_getting_stronger_wl8hdm",
+        caption: "Getting stronger",
+      },
+      {
+        source: "w9_peekaboo_kt3yit",
+        caption: "Peek-a-boo",
+      },
+      {
+        source: "w9_hello_billy_d63gj4",
+        caption: "Hello Billy, my name's Evan!",
+      },
+      {
+        source: "w9_all_smiles_whnfl4",
+        caption: "All smiles",
+      },
+    ],
+  },
+  "2005-10": {
+    period: "27th February - 5th March 2005",
+    markdownPaths: [
+      "/content/diary/2005/2005-10-a.md",
+      "/content/diary/2005/2005-10-b.md",
+    ],
+    images: [
+      {
+        source: "w10_tight_trousers_de4ppk",
+        caption:
+          "Yes, my trousers are far too tight, and No, I'm not happy about it!",
+      },
+      {
+        source: "w10_lovely_eyes_wigbd3",
+        caption: "Lovely eyes with long lashes",
+      },
+      {
+        source: "w10_new_hat_enqoxo",
+        caption: "Do you like my new hat?",
+      },
+      {
+        source: "w10_double_tummy_time_ewooft",
+        caption: "Double tummy time",
+      },
+    ],
+  },
+  "2005-11": {
+    period: "6th - 12th March 2005",
+    markdownPaths: [
+      "/content/diary/2005/2005-11-a.md",
+      "/content/diary/2005/2005-11-b.md",
+    ],
+    images: [
+      {
+        source: "w11_bath_time_i3xdve",
+        caption: "Evan, showing his happy face during bath time",
+      },
+      {
+        source: "w11_grumpy_face_dzz339",
+        caption:
+          "Evan, doing his best impression of Emma with his grumpy face!",
+      },
+      {
+        source: "w11_munching_molly_s1svkk",
+        caption: "Evan about to munch on Molly Moo Moo (a toy cow!)",
+      },
+      {
+        source: "w11_less_sick_hsczcl",
+        caption: "Finally, the milk reflux has subsided",
+      },
+    ],
+  },
+  "2005-12": {
+    period: "13th - 19th March 2005",
+    markdownPaths: [
+      "/content/diary/2005/2005-12-a.md",
+      "/content/diary/2005/2005-12-b.md",
+    ],
+    images: [
+      {
+        source: "w12_chewing_fist_cu9d4x",
+        caption: "Evan demonstrating his new fist-chewing ability",
+      },
+      {
+        source: "w12_frown_drq2oi",
+        caption: "Loving the frown",
+      },
+      {
+        source: "w12_holding_billy_ba5n5x",
+        caption: "Evan likes to carry his toys around with him these days",
+      },
+      {
+        source: "w12_just_hanging_iuh1s1",
+        caption: "Just hanging...",
+      },
+    ],
+  },
+  "2005-13": {
+    period: "20th - 26th March 2005",
+    markdownPaths: [
+      "/content/diary/2005/2005-13-a.md",
+      "/content/diary/2005/2005-13-b.md",
+    ],
+    images: [
+      {
+        source: "w13_examining_fish_pbg7at",
+        caption: "Hmmm, interesting species of fish!",
+      },
+      {
+        source: "w13_wee_protection_kztpy9",
+        caption: "Protection from wee!",
+      },
+      {
+        source: "w13_muslin_z2hfny",
+        caption: "I'm hiding, you can't see me :)",
+      },
+      {
+        source: "w13_lick_db3e9b",
+        caption: "Tasty!",
+      },
+    ],
+  },
+  "2005-14": {
+    period: "27th March - 2nd April 2005",
+    markdownPaths: [
+      "/content/diary/2005/2005-14-a.md",
+      "/content/diary/2005/2005-14-b.md",
+    ],
+    images: [
+      {
+        source: "w14_new_cap_q3wsat",
+        caption: "Ok, I do like my new cap after all...",
+      },
+      {
+        source: "w14_sleep_shoulder_x5uzhv",
+        caption: "Oh, it's a hard life!",
+      },
+      {
+        source: "w14_bath_robe_nkua21",
+        caption: "Showing a bit of leg :)",
+      },
+      {
+        source: "w14_hide_seek_uaznzr",
+        caption: "Pillow Den",
+      },
+    ],
+  },
+  "2005-15": {
+    period: "3rd - 9th April 2005",
+    markdownPaths: [
+      "/content/diary/2005/2005-15-a.md",
+      "/content/diary/2005/2005-15-b.md",
+    ],
+    images: [
+      {
+        source: "w15_sleeping_beauty_ejmpu8",
+        caption: "Sleeping Beauty?",
+      },
+      {
+        source: "w15_splish_splash_uaca8r",
+        caption: "Splish! Splash!",
+      },
+      {
+        source: "w15_teddies_ws1y3j",
+        caption: "Teddy zone",
+      },
+      {
+        source: "w15_baby_hidden_cs7wqc",
+        caption: "There's a baby in there",
+      },
+    ],
+  },
+  "2005-16": {
+    period: "10th - 16th April 2005",
+    markdownPaths: [
+      "/content/diary/2005/2005-16-a.md",
+      "/content/diary/2005/2005-16-b.md",
+    ],
+    images: [
+      {
+        source: "w16_sunday_best_klwkyn",
+        caption: "Evan looking all smart",
+      },
+      {
+        source: "w16_grandmas_swing_l8v2ub",
+        caption: "I still like my swing Grandma",
+      },
+      {
+        source: "w16_commando_bsghhv",
+        caption: "Practicing for the Commandos!",
+      },
+      {
+        source: "w16_best_seller_rievif",
+        caption: "Reading the latest best seller",
+      },
+    ],
+  },
+  "2005-17": {
+    period: "17th - 23rd April 2005",
+    markdownPaths: [
+      "/content/diary/2005/2005-17-a.md",
+      "/content/diary/2005/2005-17-b.md",
+    ],
+    images: [
+      {
+        source: "w17_look_dillon_rbwcgo",
+        caption: "Evan watching Dillon Donkey",
+      },
+      {
+        source: "w17_very_happy_qesqd0",
+        caption: "Happy Baby",
+      },
+      {
+        source: "w17_cot_cry_yrpylz",
+        caption: "Evan didn't like his cot at first...",
+      },
+      {
+        source: "w17_zonko_bpk8od",
+        caption: "... but he likes his cot now :)",
+      },
+    ],
+  },
+  "2005-18": {
+    period: "24th - 30th April 2005",
+    markdownPaths: [
+      "/content/diary/2005/2005-18-a.md",
+      "/content/diary/2005/2005-18-b.md",
+    ],
+    images: [
+      {
+        source: "w18_ooh_whassat_jittzh",
+        caption: "Evan with his curious expression",
+      },
+      {
+        source: "w18_sitting_strong_zrpg5r",
+        caption: "How does that Tottenham song go?",
+      },
+      {
+        source: "w18_sitting_grass_r6jvp9",
+        caption: "Sitting on the grass with Mummy",
+      },
+      {
+        source: "w18_chubby_chops_evqmns",
+        caption: "Look at his cute chubby cheeks!",
+      },
+    ],
+  },
+  "2005-19": {
+    period: "1st - 7th May 2005",
+    markdownPaths: [
+      "/content/diary/2005/2005-19-a.md",
+      "/content/diary/2005/2005-19-b.md",
+    ],
+    images: [
+      {
+        source: "w19_baby_banz_apdzte",
+        caption: "Evan in his cool new baby banz",
+      },
+      {
+        source: "w19_book_mxcl2d",
+        caption: "Story time :)",
+      },
+      {
+        source: "w19_tummy_riueyz",
+        caption: "Look at this tummy strength!",
+      },
+      {
+        source: "w19_fist_d5xvmb",
+        caption: "Oh wait!? There's my fist.",
+      },
+    ],
+  },
+  "2005-20": {
+    period: "8th - 14th May 2005",
+    markdownPaths: [
+      "/content/diary/2005/2005-20-a.md",
+      "/content/diary/2005/2005-20-b.md",
+    ],
+    images: [
+      {
+        source: "w20_gorgeous_d9u34v",
+        caption: "Gorgeous Mummy and baby",
+      },
+      {
+        source: "w20_standing_j46kzd",
+        caption: "Look Mum! I'm standing up!",
+      },
+      {
+        source: "w20_cats_bn4gtj",
+        caption: "Evan playing with the cats",
+      },
+      {
+        source: "w20_cats_unsure_lqgtez",
+        caption: "Poppy thinks twice",
+      },
+    ],
+  },
+  "2005-21": {
+    period: "15th - 21st May 2005",
+    markdownPaths: [
+      "/content/diary/2005/2005-21-a.md",
+      "/content/diary/2005/2005-21-b.md",
+    ],
+    images: [
+      {
+        source: "w21_uncle_neil_ctggxg",
+        caption: "Evan and his Uncle Neil",
+      },
+      {
+        source: "w21_foot_or_toy_xznisk",
+        caption: "Toy or Foot?.... It's a hard life",
+      },
+      {
+        source: "w21_cup_drinking_godb3l",
+        caption: "Evan learning to drink from a cup",
+      },
+      {
+        source: "w21_yes_its_me_qitgew",
+        caption: "Yes, you keep looking at me",
+      },
+    ],
+  },
+  "2005-22": {
+    period: "22nd - 28th May 2005",
+    markdownPaths: [
+      "/content/diary/2005/2005-22-a.md",
+      "/content/diary/2005/2005-22-b.md",
+    ],
+    images: [
+      {
+        source: "w22_swim_trunks_jl2sra",
+        caption: "hmm... now what do I play with?",
+      },
+      {
+        source: "w22_bumbo_jgmwki",
+        caption: "Oooh what's this? - Evan in his new 'Bumbo Seat'",
+      },
+      {
+        source: "w22_nekkid_rgonxc",
+        caption: "Evan letting it all hang out",
+      },
+      {
+        source: "w22_baby_rice_sblciy",
+        caption: "Mmmmm, baby rice & formula :/",
+      },
+    ],
+  },
+  "2005-23": {
+    period: "29th May - 4th June 2005",
+    markdownPaths: [
+      "/content/diary/2005/2005-23-a.md",
+      "/content/diary/2005/2005-23-b.md",
+    ],
+    images: [
+      {
+        source: "w23_cheeky_bottom_q56d1e",
+        caption: "I can see that bottom!",
+      },
+      {
+        source: "w23_great_grandmother_gf1v8x",
+        caption: "This is my great nanny!",
+      },
+      {
+        source: "w23_carrot_zxoikn",
+        caption: "Evan even managed to get carrot on his nose!",
+      },
+      {
+        source: "w23_computer_uqnsjh",
+        caption: "Quiet please, I'm concentrating!",
+      },
+    ],
+  },
+  "2005-24": {
+    period: "5th - 11th June 2005",
+    markdownPaths: [
+      "/content/diary/2005/2005-24-a.md",
+      "/content/diary/2005/2005-24-b.md",
+    ],
+    images: [
+      {
+        source: "w24_happy_baby_oiy5jd",
+        caption: "Yes... the grass tickles my toes!",
+      },
+      {
+        source: "w24_big_cuddles_tzpglv",
+        caption: "Evan sharing a big cuddle with Grandma",
+      },
+      {
+        source: "w24_mel_fcltsy",
+        caption: "Evan with Caroline's best friend Mel",
+      },
+      {
+        source: "w24_vicky_wuquwh",
+        caption: "Evan asleep on Vicky's shoulder",
+      },
+    ],
+  },
+  "2005-25": {
+    period: "12th - 18th June 2005",
+    markdownPaths: ["/content/diary/2005/2005-25-a.md"],
+    images: [
+      {
+        source: "w25_pushchair_j8jwf0",
+        caption: "Mmm tasty pushchair, it gets the 'Toes-Up' from me Mum!",
+      },
+      { source: "w25_trendy_qkqe3b", caption: "Trendy boy" },
+      { source: "w25_car_ywwm5f", caption: "Still prefers to eat his toys" },
+      {
+        source: "w25_asleep_at_dinner_l8yf2g",
+        caption: "Boob or bottle, both seem to send him to sleep",
+      },
+    ],
+  },
+  "2005-26": {
+    period: "19th - 25th June 2005",
+    markdownPaths: [
+      "/content/diary/2005/2005-26-a.md",
+      "/content/diary/2005/2005-26-b.md",
+    ],
+    images: [
+      {
+        source: "w26_lazy_sunday_scsegh",
+        caption: "Lazy Sunday morning...",
+      },
+      {
+        source: "w26_lazy_sunday2_y0sket",
+        caption: "...LOVE...",
+      },
+      {
+        source: "w26_lazy_sunday4_qyr2pc",
+        caption: "...him...",
+      },
+      {
+        source: "w26_lazy_sunday3_nq0pfk",
+        caption: "...SO MUCH!",
+      },
+    ],
+  },
+  "2005-27": {
+    period: "26th June - 2nd July 2005",
+    markdownPaths: [
+      "/content/diary/2005/2005-27-a.md",
+      "/content/diary/2005/2005-27-b.md",
+    ],
+    images: [
+      {
+        source: "w27_carolines_new_hair_ojubpp",
+        caption:
+          "Caroline has a hair cut - 'Bout time we had a pic of her again!",
+      },
+      {
+        source: "w27_zonked_nggrge",
+        caption: "It's a hard life",
+      },
+      {
+        source: "w27_sitting_up_kht5ey",
+        caption: "I don't need Mummy's support",
+      },
+      {
+        source: "w27_ice-cream_hsbgwt",
+        caption: "Gimme dat ice-cream!",
+      },
+    ],
+  },
+  "2005-28": {
+    period: "3rd - 9th July 2005",
+    markdownPaths: [
+      "/content/diary/2005/2005-28-a.md",
+      "/content/diary/2005/2005-28-b.md",
+    ],
+    images: [
+      {
+        source: "w28_hair_style_l17b0p",
+        caption: "Yes! Mummy has put stuff in my hair...",
+      },
+      {
+        source: "w28_cool_dude_rulh6a",
+        caption:
+          "Evan showing how well he sits up. He'll sit and play for ages now",
+      },
+      {
+        source: "w28_how_many_fingers_bwdctt",
+        caption: "How many fingers?",
+      },
+      {
+        source: "w28_lush_baby_qhjcvs",
+        caption: "Fluffy blonde hair and gorgeous blue eyes",
+      },
+    ],
+  },
+  "2005-29": {
+    period: "10th - 16th July 2005",
+    markdownPaths: [
+      "/content/diary/2005/2005-29-a.md",
+      "/content/diary/2005/2005-29-b.md",
+    ],
+    images: [
+      {
+        source: "w29_heat_wave_ei51wp",
+        caption: "Amidst all the horror - Evan enjoys the heat wave",
+      },
+      {
+        source: "w29_new_toys_hogwev",
+        caption: "Evan enjoying his new big boy toys",
+      },
+      {
+        source: "w29_any_resemblance_dxdezk",
+        caption: "Any resemblance?",
+      },
+      {
+        source: "w29_power_nap_frz6fk",
+        caption: "Power nap",
+      },
+    ],
+  },
+  "2005-30": {
+    period: "17th - 23rd July 2005",
+    markdownPaths: [
+      "/content/diary/2005/2005-30-a.md",
+      "/content/diary/2005/2005-30-b.md",
+    ],
+    images: [
+      {
+        source: "w30_high_chair_tewerx",
+        caption: "hmmm... definitely room to grow",
+      },
+      {
+        source: "w30_stacking_cups_ja7edn",
+        caption: "Evan getting psyched up for the collapse",
+      },
+      {
+        source: "w30_tower_crash_iwchah",
+        caption: "...Boom!",
+      },
+      {
+        source: "w30_always_happy_ixfs0s",
+        caption: "Love how happy he is.",
+      },
+    ],
+  },
+  "2005-31": {
+    period: "24th - 30th July 2005",
+    markdownPaths: ["/content/diary/2005/2005-31-a.md"],
+    images: [
+      {
+        source: "w31_dribble_kiss_fenbqm",
+        caption: "Kiss?",
+      },
+      {
+        source: "w31_euuw_dribble_ztdyis",
+        caption: "I show my affection to mummy with lots of dribble",
+      },
+      {
+        source: "w31_got_you_bcnkko",
+        caption: "Got you...",
+      },
+      {
+        source: "w31_want_one_ghn1i7",
+        caption: "Now you!",
+      },
+    ],
+  },
+  "2005-32": {
+    period: "31st July - 6th August 2005",
+    markdownPaths: ["/content/diary/2005/2005-32-a.md"],
+    images: [
+      {
+        source: "w32_bottle_feed_g0arjp",
+        caption: "Evan is self-sufficient when it comes to the bottle",
+      },
+      {
+        source: "w32_team_mascot_wzzzom",
+        caption: "So... is this team any good Mum?",
+      },
+      {
+        source: "w32_all_fall_down_lgepyu",
+        caption: "eep! here they come!",
+      },
+      {
+        source: "w32_scrambled_egg_qts8bm",
+        caption: "Evan is not a fan of scrambled egg",
+      },
+    ],
+  },
+  "2005-33": {
+    period: "7th - 13th August 2005",
+    markdownPaths: ["/content/diary/2005/2005-33-a.md"],
+    images: [
+      {
+        source: "w33_evan_and_friends_hhtoly",
+        caption: "Evan enjoying a fun afternoon with his friends",
+      },
+      {
+        source: "w33_sucking_toast_gpc1cn",
+        caption: "Evan having a good suck on his first ever piece of toast",
+      },
+      {
+        source: "w33_biceps_f9jvp7",
+        caption: "Look at those biceps!",
+      },
+      {
+        source: "w33_funny_boy_ybn0ik",
+        caption: "Funny boy",
+      },
+    ],
+  },
+  "2005-34": {
+    period: "14th - 20th August 2005",
+    markdownPaths: ["/content/diary/2005/2005-34-a.md"],
+    images: [
+      {
+        source: "w34_cheeky_chappy_a2nuvv",
+        caption: "Evan is eyeing up the camera for dinner",
+      },
+      {
+        source: "w34_hello_fluffy_trjpfd",
+        caption: "Hello fluffy cat",
+      },
+      {
+        source: "w34_hello_xwpf0i",
+        caption: "Hello!",
+      },
+      {
+        source: "w34_tongue_xrramj",
+        caption: "Evan can stick out his tongue",
+      },
+    ],
+  },
+  "2005-35": {
+    period: "21st - 27th August 2005",
+    markdownPaths: ["/content/diary/2005/2005-35-a.md"],
+    images: [
+      {
+        source: "w35_professional_pose_ipy73z",
+        caption:
+          "Evan posing for the camera, or is he eyeing up a sleeping cat?",
+      },
+      {
+        source: "w35_nice_n_clean_aninsf",
+        caption: "Evan showing an increasing desire to grab the camera",
+      },
+      {
+        source: "w35_hiding_m4egb7",
+        caption: "I'm hiding",
+      },
+      {
+        source: "w35_big_boy_msmi6v",
+        caption: "35 weeks and he's almost as big as Emma",
+      },
+    ],
+  },
+  "2005-36": {
+    period: "28th August - 3rd September 2005",
+    markdownPaths: ["/content/diary/2005/2005-36-a.md"],
+    images: [
+      {
+        source: "w36_where_are_we_quu52z",
+        caption: "Where are we?",
+      },
+      {
+        source: "w36_what_is_this_h7axdv",
+        caption: "What is this?",
+      },
+      {
+        source: "w36_strange_feeling_c9j0p2",
+        caption: "The sand feels cold on Evan's toes",
+      },
+      {
+        source: "w36_sand_feels_good_j7aiut",
+        caption: "Evan loves it",
+      },
+    ],
+  },
+  "2005-37": {
+    period: "4th - 10th September 2005",
+    markdownPaths: ["/content/diary/2005/2005-37-a.md"],
+    images: [
+      {
+        source: "w37_tickle_time_asant7",
+        caption: "It's tickle time",
+      },
+      {
+        source: "w37_choosing_toys_ig6gm4",
+        caption: "Let me choose the toys today",
+      },
+      {
+        source: "w37_yummy_bath_water_z2kve2",
+        caption: "Yummy bath water",
+      },
+      {
+        source: "w37_all_fours_ccyvlq",
+        caption: "Almost ready to crawl",
+      },
+    ],
+  },
+  "2005-38": {
+    period: "11th - 17th September 2005",
+    markdownPaths: ["/content/diary/2005/2005-38-a.md"],
+    images: [
+      {
+        source: "w38_new_seat_eq5mvb",
+        caption: "Evan sprawling out in his new seat",
+      },
+      {
+        source: "w38_dintons_pastures_e0ezn0",
+        caption: "Having a break from picking blackberries",
+      },
+      {
+        source: "w38_cutest_foot_ykdjq1",
+        caption: "I could just eat his feet",
+      },
+      {
+        source: "w38_play_pen_ul242g",
+        caption: "Staying safe in the play pen",
+      },
+    ],
+  },
+  "2005-39": {
+    period: "18th - 24th September 2005",
+    markdownPaths: ["/content/diary/2005/2005-39-a.md"],
+    images: [
+      {
+        source: "w39_crawling_e3mwdr",
+        caption: "I can crawl!",
+      },
+      {
+        source: "w39_camera_hunt_bhsm9p",
+        caption: "Taking pictures is tricky now he crawls",
+      },
+      {
+        source: "w39_my_seat_d8deak",
+        caption: "It's my seat now",
+      },
+      {
+        source: "w39_where_is_on_nmkwd7",
+        caption: "How do I turn this back on?",
+      },
+    ],
+  },
+  "2005-40": {
+    period: "25th September - 1st October 2005",
+    markdownPaths: ["/content/diary/2005/2005-40-a.md"],
+    images: [
+      {
+        source: "w40_new_toys_e5qgoh",
+        caption: "But I want these toys mummy...",
+      },
+      {
+        source: "w40_finger_foods_pbfi5h",
+        caption:
+          "Teaching Evan how to eat finger foods - this was before he mashed them everywhere!",
+      },
+      {
+        source: "w40_finger_foods2_dzrkuz",
+        caption: "This biscuit is as big as him",
+      },
+      { source: "w40_tears_i6lxzq", caption: "Tears of freedom?" },
+    ],
+  },
+  "2005-41": {
+    period: "2nd - 8th October 2005",
+    markdownPaths: ["/content/diary/2005/2005-41-a.md"],
+    images: [
+      {
+        source: "w41_standing_alone_z3uxwb",
+        caption: "Woohoo - Look at him now",
+      },
+      {
+        source: "w41_activity_table_bwfft8",
+        caption:
+          "Evan enjoying his new found freedom at his new activity table",
+      },
+      {
+        source: "w41_keys_hq79mh",
+        caption: "So, that's where my keys are",
+      },
+      {
+        source: "w41_picture_for_mummy_owhjcs",
+        caption:
+          "Our first picture that Evan made at nursery (pasta shapes glued to paper) ",
+      },
+    ],
+  },
+  "2005-42": {
+    period: "9th - 15th October 2005",
+    markdownPaths: ["/content/diary/2005/2005-42-a.md"],
+    images: [
+      {
+        source: "w42_evan_impression_yiqifo",
+        caption: "My impression of Evan",
+      },
+      {
+        source: "w42_play_biting_uorafp",
+        caption: "Play biting or fighting?",
+      },
+      {
+        source: "w42_mischievious_xsvaz4",
+        caption: "What are you up to?",
+      },
+      {
+        source: "w42_ball_pit_n2zbsz",
+        caption: "Playing with friends",
+      },
+    ],
+  },
+  "2005-43": {
+    period: "16th - 22nd October 2005",
+    markdownPaths: ["/content/diary/2005/2005-43-a.md"],
+    images: [
+      {
+        source: "w43_first_shoes_bshqhe",
+        caption: "Evan's first pair of shoes",
+      },
+      {
+        source: "w43_first_shoes_closeup_eapus4",
+        caption: "So cute!",
+      },
+      {
+        source: "w43_need_a_haircut_ssnf8f",
+        caption: "Someone needs a hair cut",
+      },
+      {
+        source: "w43_tired_baby_zsn1s0",
+        caption: "Aww bless him",
+      },
+    ],
+  },
+  "2005-44": {
+    period: "23rd - 29th October 2005",
+    markdownPaths: ["/content/diary/2005/2005-44-a.md"],
+    images: [
+      {
+        source: "w44_sept_filler_image2_lyzh69",
+        caption: "Healthy baby",
+      },
+      {
+        source: "w44_poorly_baby_lpm7e3",
+        caption: "Poorly baby",
+      },
+      {
+        source: "w44_double_poorly_c7yadn",
+        caption: "Everyone is ill this week",
+      },
+      {
+        source: "w44_sept_filler_image_gdncec",
+        caption: "A lot of baths this week",
+      },
+    ],
+  },
+  "2005-45": {
+    period: "30th October - 5th November 2005",
+    markdownPaths: ["/content/diary/2005/2005-45-a.md"],
+    images: [
+      {
+        source: "w45_is_this_bath_i0ajg7",
+        caption: "Is this bath for me?",
+      },
+      {
+        source: "w45_for_me_qwnnsz",
+        caption: "Evan loves to peer into the bath as it is filling up",
+      },
+      {
+        source: "w45_new_trick_vea4az",
+        caption:
+          "Evan's new trick is to drink from the cups as the water trickles through!",
+      },
+      {
+        source: "w45_loves_a_bath_samclj",
+        caption: "Delightful :)",
+      },
+    ],
+  },
+  "2005-46": {
+    period: "6th - 12th November 2005",
+    markdownPaths: ["/content/diary/2005/2005-46-a.md"],
+    images: [
+      {
+        source: "w46_camera_fascination_uxdn1v",
+        caption:
+          "Evan proving how difficult it is to photograph him these days",
+      },
+      {
+        source: "w46_prebath_play_time_dg67bx",
+        caption: "Pre-bath play time",
+      },
+      {
+        source: "w46_what_ya_doing_rnyvlh",
+        caption: "Evan is interested in everything we do",
+      },
+      {
+        source: "w46_hurry_up_eljfo8",
+        caption: "Hurry up bath!",
+      },
+    ],
+  },
+  "2005-47": {
+    period: "13th - 19th November 2005",
+    markdownPaths: ["/content/diary/2005/2005-47-a.md"],
+    images: [
+      {
+        source: "w47_before_haircut_j2zw4h",
+        caption: "Before hair cut",
+      },
+      {
+        source: "w47_after_haircut_xx0jno",
+        caption: "After hair cut",
+      },
+      {
+        source: "w47_wax_duawul",
+        caption: "Showing interest in some product",
+      },
+      {
+        source: "w47_lush_crphqu",
+        caption: "Just beautiful",
+      },
+    ],
+  },
+  "2005-48": {
+    period: "20th - 26th November 2005",
+    markdownPaths: ["/content/diary/2005/2005-48-a.md"],
+    images: [
+      {
+        source: "w48_inquisitive_toilet_pdhvoc",
+        caption: "A toilet lock is now a necessity",
+      },
+      {
+        source: "w48_cheeky_ryelxx",
+        caption: "Cheeky look",
+      },
+      {
+        source: "w48_dribbler_paoede",
+        caption: "Dribbletastic",
+      },
+      {
+        source: "w48_not_a_toy_qfkpc8",
+        caption: "Obsessed much with the camera Evan?",
+      },
+    ],
+  },
+  "2005-49": {
+    period: "27th November - 3rd December 2005",
+    markdownPaths: ["/content/diary/2005/2005-49-a.md"],
+    images: [
+      {
+        source: "w49_strong_legs_vmkxth",
+        caption: "Strong legs",
+      },
+      {
+        source: "w49_stocky_chap_jfrghp",
+        caption: "Stocky chappy",
+      },
+      {
+        source: "w49_peek-a-boo_lhftfm",
+        caption: "Playing peek-a-boo",
+      },
+      {
+        source: "w49_shopping_tkyka2",
+        caption: "Helping to unpack, does not mean eat it first!",
+      },
+    ],
+  },
+  "2005-50": {
+    period: "4th - 10th December 2005",
+    markdownPaths: ["/content/diary/2005/2005-50-a.md"],
+    images: [
+      {
+        source: "w50_introducing_gpr8ea",
+        caption: "Introducing Noodle, the new addition to our growing family",
+      },
+      {
+        source: "w50_first_nativity_nrxnue",
+        caption: "Getting ready for Evan's first nativity performance",
+      },
+      {
+        source: "w50_first_nativity2_ccscue",
+        caption: "Evan is the second one in from the left on the front row",
+      },
+      {
+        source: "w50_noodle_tphfpt",
+        caption: "Settling in very well",
+      },
+    ],
+  },
+  "2005-51": {
+    period: "11th - 17th December 2005",
+    markdownPaths: ["/content/diary/2005/2005-51-a.md"],
+    images: [
+      {
+        source: "w51_swings_esidsz",
+        caption: "Loves the swings in the park",
+      },
+      {
+        source: "w51_matching_hair_uroew9",
+        caption: "Evan's new haircut gets styled like Mummy's",
+      },
+      {
+        source: "w51_grandma_babysits_x0mubc",
+        caption: "Evan loves it when Grandma feeds him",
+      },
+      {
+        source: "w51_bathroom_fun_yjodxh",
+        caption: "Evan loves bathroom time",
+      },
+    ],
+  },
+  "2005-52": {
+    period: "18th - 24th December 2005",
+    markdownPaths: ["/content/diary/2005/2005-52-a.md"],
+    images: [
+      {
+        source: "w52_first_christmas_nyb97g",
+        caption: "Evan gets his hands on his presents",
+      },
+      {
+        source: "w52_noisy_toys_gkbvik",
+        caption: "New toys seem to be going down well",
+      },
+      {
+        source: "w52_christmas_dinner_c7crk7",
+        caption: "Evan is not sure about the crackers and hats",
+      },
+      {
+        source: "w52_it_snows_pndpsj",
+        caption: "It snows at Christmas!",
+      },
+      {
+        source: "w52_happy_birthday_oo4k25",
+        caption: "Happy 1st Birthday Evan",
+      },
+      {
+        source: "w52_end_of_the_year_db7zqg",
+        caption: "Birthday hug",
+      },
+      {
+        source: "w52_birthday_presents_e3y3pr",
+        caption: "You are supposed to push it Evan, not climb it",
+      },
+      {
+        source: "w52_still_loves_camera_a1quy1",
+        caption: "Yes, Yes, we all know you still love the camera",
       },
     ],
   },

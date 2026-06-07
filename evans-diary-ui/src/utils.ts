@@ -14,5 +14,5 @@ export const getMonthName = (monthNumber: number) => {
 };
 
 export const getDiaryHeading = (year: number, imageCaption: string) => {
-  return `Year ${year - 2004} - ${imageCaption}`;
+  return `Year ${year - 2004} - ${imageCaption} (${year})`;
 };
