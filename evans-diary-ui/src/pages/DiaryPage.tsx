@@ -13,6 +13,9 @@ interface DiaryPageLocationState {
 function DiaryPage() {
   const [contentA, setContentA] = useState<string>("");
   const [contentB, setContentB] = useState<string>("");
+  const [calendarContent, setCalendarContent] = useState<
+    Record<number, string>
+  >({});
   const [loadedKey, setLoadedKey] = useState<string>("");
 
   const location = useLocation();
@@ -60,13 +63,18 @@ function DiaryPage() {
   // Look up the specific meta asset paths instantly
   const diaryEntry = key ? DIARY_CONTENT_REGISTRY[key] : null;
   const loading = Boolean(diaryEntry && key && loadedKey !== key);
+  const isCalendarEntry = diaryEntry?.type === "calendar";
 
   const imagesPerReel = 4;
-  const imageReelCount = diaryEntry
-    ? diaryEntry.images.length / imagesPerReel
-    : 0;
+  const imageReelCount =
+    diaryEntry && "images" in diaryEntry
+      ? diaryEntry.images.length / imagesPerReel
+      : 0;
 
-  const showPerson = diaryEntry?.markdownPaths.length === 2;
+  const showPerson =
+    diaryEntry && "markdownPaths" in diaryEntry
+      ? diaryEntry.markdownPaths.length === 2
+      : false;
 
   const getEntryLoadMessage = (entryName: string) =>
     `_${entryName} could not be loaded._`;
@@ -76,36 +84,54 @@ function DiaryPage() {
 
     let cancelled = false;
 
-    const loadContent = async () => {
-      const fetchMarkdown = async (path: string, entryName: string) => {
-        try {
-          const response = await fetch(path);
+    const fetchMarkdown = async (path: string, entryName: string) => {
+      try {
+        const response = await fetch(path);
 
-          if (!response.ok) {
-            return getEntryLoadMessage(entryName);
-          }
-
-          const contentType =
-            response.headers.get("content-type")?.toLowerCase() ?? "";
-          const text = await response.text();
-
-          // Some static servers return index.html with a 200 status for missing files.
-          const isHtmlFallback =
-            contentType.includes("text/html") ||
-            /^\s*<!doctype html/i.test(text) ||
-            /^\s*<html[\s>]/i.test(text);
-
-          if (isHtmlFallback) {
-            return getEntryLoadMessage(entryName);
-          }
-
-          return text;
-        } catch {
+        if (!response.ok) {
           return getEntryLoadMessage(entryName);
         }
-      };
 
+        const contentType =
+          response.headers.get("content-type")?.toLowerCase() ?? "";
+        const text = await response.text();
+
+        // Some static servers return index.html with a 200 status for missing files.
+        const isHtmlFallback =
+          contentType.includes("text/html") ||
+          /^\s*<!doctype html/i.test(text) ||
+          /^\s*<html[\s>]/i.test(text);
+
+        if (isHtmlFallback) {
+          return getEntryLoadMessage(entryName);
+        }
+
+        return text;
+      } catch {
+        return getEntryLoadMessage(entryName);
+      }
+    };
+
+    const loadContent = async () => {
       try {
+        if (diaryEntry.type === "calendar") {
+          const resolvedEntries = await Promise.all(
+            diaryEntry.calendarEntries.map(async (entry, index) => {
+              const content = await fetchMarkdown(
+                entry.markdownPath,
+                `Calendar entry ${index + 1}`,
+              );
+              return [index, content] as const;
+            }),
+          );
+
+          if (cancelled) return;
+
+          setCalendarContent(Object.fromEntries(resolvedEntries));
+          setLoadedKey(key);
+          return;
+        }
+
         const textA = await fetchMarkdown(
           diaryEntry.markdownPaths[0],
           "Emma's entry",
@@ -123,12 +149,22 @@ function DiaryPage() {
       } catch {
         if (cancelled) return;
 
-        setContentA(getEntryLoadMessage("Emma's entry"));
-        setContentB(
-          diaryEntry.markdownPaths[1]
-            ? getEntryLoadMessage("Caroline's entry")
-            : "",
-        );
+        if (diaryEntry.type === "calendar") {
+          const fallbackEntries = Object.fromEntries(
+            diaryEntry.calendarEntries.map((entry, index) => [
+              index,
+              getEntryLoadMessage(entry.heading),
+            ]),
+          );
+          setCalendarContent(fallbackEntries);
+        } else {
+          setContentA(getEntryLoadMessage("Emma's entry"));
+          setContentB(
+            diaryEntry.markdownPaths[1]
+              ? getEntryLoadMessage("Caroline's entry")
+              : "",
+          );
+        }
         setLoadedKey(key);
       }
     };
@@ -171,6 +207,43 @@ function DiaryPage() {
   }
 
   if (loading) return <div>Loading diary entries...</div>;
+
+  if (isCalendarEntry) {
+    return (
+      <main className={styles.page}>
+        <section className={styles.diaryEntry} aria-label="Diary entry content">
+          <h1>{getDiaryHeading(Number(year), caption)}</h1>
+          {diaryEntry.calendarEntries.map((entry, index) => (
+            <div key={`${key}-calendar-entry-${index}`}>
+              <h3>{entry.heading}</h3>
+              {entry.images.length > 0 ? (
+                <ImageReel
+                  images={entry.images.slice(0, imagesPerReel).map((image) => ({
+                    image: image,
+                  }))}
+                />
+              ) : null}
+              <div className="markdown-body">
+                <ReactMarkdown>
+                  {calendarContent[index] || getEntryLoadMessage(entry.heading)}
+                </ReactMarkdown>
+              </div>
+
+              {entry.images.length > 4 ? (
+                <ImageReel
+                  images={entry.images
+                    .slice(4, imagesPerReel * 2)
+                    .map((image) => ({
+                      image: image,
+                    }))}
+                />
+              ) : null}
+            </div>
+          ))}
+        </section>
+      </main>
+    );
+  }
 
   return (
     <main className={styles.page}>
