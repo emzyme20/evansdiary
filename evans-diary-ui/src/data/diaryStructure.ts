@@ -349,6 +349,24 @@ export const DIARY_REGISTRY: Record<string, YearStructure> = {
       },
     ],
   },
+  "2006": {
+    year: "2006",
+    mode: "month",
+    items: [
+      { source: "jan_cheeky_chappy_ba0a3v", caption: "January" },
+      { source: "feb_feeding_himself_czqamd", caption: "February" },
+      { source: "mar_bed_hair_okw5lp", caption: "March" },
+      { source: "apr_odds_farm_lwwlpz", caption: "April" },
+      { source: "may_world_cup_ready_zmfxpi", caption: "May" },
+      { source: "jun_lovely_smile_wpgwv8", caption: "June" },
+      { source: "jul_legoland_nu9upk", caption: "July" },
+      { source: "aug_doggy_kiss_giqhhv", caption: "August" },
+      { source: "sept_legoland_i4elmf", caption: "September" },
+      { source: "oct_nanny_smiles_yznloa", caption: "October" },
+      { source: "nov_cute_hair_bypigp", caption: "November" },
+      { source: "dec_xmas_dinner_xnarez", caption: "December" },
+    ],
+  },
 };
 
 // A map containing paths to heavy content, queried only on the Entry Page
@@ -1626,6 +1644,400 @@ export const DIARY_CONTENT_REGISTRY: Record<string, DiaryEntry> = {
       {
         source: "w52_still_loves_camera_a1quy1",
         caption: "Yes, Yes, we all know you still love the camera",
+      },
+    ],
+  },
+  "2006-01": {
+    period: "January 2006",
+    markdownPaths: ["/content/diary/2006/2006-01.md"],
+    images: [
+      {
+        source: "jan_sleepy_kxpchv",
+        caption: "Tired Mummy and Baby",
+      },
+      {
+        source: "jan_scary_funny_waqh1t",
+        caption: "Scary? No... funny",
+      },
+      {
+        source: "jan_quiet_time_dyhr4d",
+        caption: "Red cheeks evidence of Evan's new teeth coming through",
+      },
+      {
+        source: "jan_cheeky_chappy_ba0a3v",
+        caption: "Adorable cheeky chappy",
+      },
+    ],
+  },
+  "2006-02": {
+    period: "February 2006",
+    markdownPaths: ["/content/diary/2006/2006-02.md"],
+    images: [
+      {
+        source: "feb_watching_outside_cyga8y",
+        caption: "More interested in the dogs outside",
+      },
+      {
+        source: "feb_retro_toys_jpbboc",
+        caption: "Evan has found Caroline's Commodore 64 joy sticks!",
+      },
+      {
+        source: "feb_pillow_play_aopnwg",
+        caption: "Creature Comforts! Evan likes to have his pillows near by",
+      },
+      {
+        source: "feb_feeding_himself_czqamd",
+        caption: "Evan sitting on his stool demonstrating self-service",
+      },
+      {
+        source: "feb_gorgeous_bodvdk",
+        caption: "Evan with his mummy",
+      },
+      {
+        source: "feb_cat_play_foutjz",
+        caption: "Noodle play??",
+      },
+      {
+        source: "feb_camera_vwotzt",
+        caption: "Evan is still clearly obssessed with the camera",
+      },
+      {
+        source: "feb_playing_x12wj5",
+        caption: "Catching a sneaky picture of Evan whilst he is unaware",
+      },
+    ],
+  },
+  "2006-03": {
+    period: "March 2006",
+    markdownPaths: ["/content/diary/2006/2006-03.md"],
+    images: [
+      {
+        source: "mar_bed_hair_okw5lp",
+        caption: "Good morning scruffy head!",
+      },
+      {
+        source: "mar_feeds_himself_lx8ykc",
+        caption: "Evan likes to feed himself when he is not being lazy",
+      },
+      {
+        source: "mar_domesticated_zduspx",
+        caption: "Now where did I put that washing?",
+      },
+      {
+        source: "mar_food_tasting_a8zy63",
+        caption: "Evan is very keen to try new foods",
+      },
+      {
+        source: "mar_indoor_car_vt6pev",
+        caption: "Getting the car ready",
+      },
+      {
+        source: "mar_congestion_i0xewu",
+        caption: "Congestion ahead",
+      },
+      {
+        source: "mar_winding_wbxdkb",
+        caption: "Getting the burps out!",
+      },
+      {
+        source: "mar_pants_yqzalg",
+        caption: "You are supposed to hang out the washing, not wear it!",
+      },
+    ],
+  },
+  "2006-04": {
+    period: "April 2006",
+    markdownPaths: ["/content/diary/2006/2006-04.md"],
+    images: [
+      {
+        source: "apr_england_hat_insurn",
+        caption: "Start supporting young",
+      },
+      {
+        source: "apr_odds_farm_lwwlpz",
+        caption: "Evan enjoying a ride about at Odds Farm Park",
+      },
+      {
+        source: "apr_stacking_bricks_pofhr3",
+        caption: "Evan showing off his stacking skills - his max is 10 so far!",
+      },
+      {
+        source: "apr_piggy_back_z8kqdb",
+        caption: "Evan loves Mummy's piggy back ride",
+      },
+      {
+        source: "apr_tower_osvpmv",
+        caption: "Evan needs help to complete his duplo towers",
+      },
+      {
+        source: "apr_collecting_stones_q43xld",
+        caption: "Collecting stones in the garden",
+      },
+      {
+        source: "apr_climbing_frame_fkaokm",
+        caption: "The swing doubles up as a climbing frame",
+      },
+      {
+        source: "apr_swing_high_kuskoo",
+        caption: "A trip to the park swing is necessary for maximum height",
+      },
+    ],
+  },
+  "2006-05": {
+    period: "May 2006",
+    markdownPaths: ["/content/diary/2006/2006-05.md"],
+    images: [
+      {
+        source: "may_pink_hair_l9hz3t",
+        caption: "Maybe he wants to be patriotic by dying his hair!",
+      },
+      {
+        source: "may_sleepy_lunch_vfvko5",
+        caption:
+          "Oh such a hard life! Evan couldn't even wait for pudding this day...",
+      },
+      {
+        source: "may_world_cup_ready_zmfxpi",
+        caption: "Evan's all ready for the World Cup!",
+      },
+      {
+        source: "may_plane_spotting_vhyoq2",
+        caption: "Spotting some planes (Evan says pwane)",
+      },
+      {
+        source: "may_make_shift_chair_snngxc",
+        caption: "Our makeshift chair for Evan",
+      },
+      {
+        source: "may_new_car_cinicp",
+        caption: "Evan finally gets out in his new car",
+      },
+      {
+        source: "may_happy_in_car_mcotp3",
+        caption: "Beep! Beep!",
+      },
+      {
+        source: "may_play_for_country_fo1amv",
+        caption: "Love a baby in a football kit",
+      },
+    ],
+  },
+  "2006-06": {
+    period: "June 2006",
+    markdownPaths: ["/content/diary/2006/2006-06.md"],
+    images: [
+      {
+        source: "jun_lovely_smile_wpgwv8",
+        caption: "Evan being just a happy chappy!",
+      },
+      {
+        source: "jun_wellplace_zoo_nc4rrt",
+        caption: "Evan loved his trip to see all the animals at the Zoo!",
+      },
+      {
+        source: "jun_beach_ball_m5tdye",
+        caption: "The beach ball was a huge success at the beach",
+      },
+      {
+        source: "jun_seaside_sedn5o",
+        caption: "Playing against the waves",
+      },
+      {
+        source: "jun_road_trip_qkepix",
+        caption: "Going on a road trip",
+      },
+      {
+        source: "jun_rice_krispies_da6oqs",
+        caption: "That's one way to eat your cereal",
+      },
+      {
+        source: "jun_gardener_cq1oim",
+        caption: "Checking on the strawberries",
+      },
+      {
+        source: "jun_football_skills_jbl0tp",
+        caption: "Football skills!",
+      },
+    ],
+  },
+  "2006-07": {
+    period: "July 2006",
+    markdownPaths: ["/content/diary/2006/2006-07.md"],
+    images: [
+      {
+        source: "jul_trampoline_uq0bnv",
+        caption: "Evan loves his new trampoline",
+      },
+      {
+        source: "july_booster_tut8vf",
+        caption: "Evan loves eating at the table with us",
+      },
+      {
+        source: "july_slide_p5ywyv",
+        caption: "'Wow!' was Evan's reaction to his new slide",
+      },
+      {
+        source: "jul_legoland_nu9upk",
+        caption: "Oooh! look at this Mummy",
+      },
+      {
+        source: "jul_slide_done_da9wel",
+        caption: "Little rest after sliding",
+      },
+      {
+        source: "jul_queue_entertainment_fklxze",
+        caption: "Keeping a child entertained in a queue is a challenge",
+      },
+      {
+        source: "jul_paddling_pool_jgtlzh",
+        caption: "This is more fun than swimming!",
+      },
+      {
+        source: "jul_legoland_ride_kmoimp",
+        caption: "Enjoying the train ride",
+      },
+    ],
+  },
+  "2006-08": {
+    period: "August 2006",
+    markdownPaths: ["/content/diary/2006/2006-08.md"],
+    images: [
+      {
+        source: "aug_doggy_kiss_giqhhv",
+        caption: "errghh yuk... Doggy kiss!",
+      },
+      {
+        source: "aug_flying_closeup_pb8c59",
+        caption:
+          "Evan decides to launch himself on Mummy whilst she's not looking!",
+      },
+      {
+        source: "aug_group_photo_mie4pd",
+        caption: "Evan and his friends - this scene took only one attempt",
+      },
+      {
+        source: "aug_water_feature_ukzkha",
+        caption: "Playing with the water feature at Nanny's",
+      },
+      {
+        source: "aug_new_tower_ahqnzs",
+        caption: "A new way to build a tower",
+      },
+      {
+        source: "aug_model_pose_z5nus5",
+        caption: "Always has such a cheeky look",
+      },
+      {
+        source: "aug_concentration_mqgaye",
+        caption: "His little tongue sneaks out when he is concentrating",
+      },
+      {
+        source: "aug_ball_on_slide_yypv84",
+        caption: "Even balls can have fun on the slide",
+      },
+    ],
+  },
+  "2006-09": {
+    period: "September 2006",
+    markdownPaths: ["/content/diary/2006/2006-09.md"],
+    images: [
+      {
+        source: "sept_ikea_chair_ngv3tq",
+        caption: "At last! we have a chair",
+      },
+      {
+        source: "sept_slippers_jp3gak",
+        caption: "See Mum, I told you these were the right size",
+      },
+      {
+        source: "sept_legoland_i4elmf",
+        caption: "Come on, you know you want to get closer...",
+      },
+      {
+        source: "sept_hello_dog_ke8a5d",
+        caption: "Evan likes to watch Holly the dog next door",
+      },
+    ],
+  },
+  "2006-10": {
+    period: "October 2006",
+    markdownPaths: ["/content/diary/2006/2006-10.md"],
+    images: [
+      {
+        source: "oct_ball_play_ga0ai6",
+        caption: "Isn't he just adorable?!?!",
+      },
+      {
+        source: "oct_who_needs_toys_p063d8",
+        caption: "Who needs toys, when we have Nanny's potatoes and spoons?",
+      },
+      {
+        source: "oct_serious_ektnmc",
+        caption: "Evan enjoying a rare sit down moment....",
+      },
+      {
+        source: "oct_nanny_smiles_yznloa",
+        caption: "....always ends up laughing",
+      },
+    ],
+  },
+  "2006-11": {
+    period: "November 2006",
+    markdownPaths: ["/content/diary/2006/2006-11.md"],
+    images: [
+      {
+        source: "nov_bin_pose_irwlwl",
+        caption: "Ignore the bin mummy, just look at me!",
+      },
+      {
+        source: "nov_cute_hair_bypigp",
+        caption: "Mummy always finds Evan when he is hiding",
+      },
+      {
+        source: "nov_ice_cream_jprryw",
+        caption: "Sharing some ice-cream",
+      },
+      {
+        source: "nov_casual_cpxiw9",
+        caption: "Hello cutie",
+      },
+    ],
+  },
+  "2006-12": {
+    period: "December 2006",
+    markdownPaths: ["/content/diary/2006/2006-12.md"],
+    images: [
+      {
+        source: "dec_cooking_lhxk9l",
+        caption: "Alex, I really think we're missing the point here",
+      },
+      {
+        source: "dec_xmas_dinner_xnarez",
+        caption: "Don't think we're wearing these hats all day!",
+      },
+      {
+        source: "dec_xmas_presents_p61qix",
+        caption: "I don't need any help this year",
+      },
+      {
+        source: "dec_together_glpge0",
+        caption: "Another amazing year",
+      },
+      {
+        source: "dec_pudding_fnskvu",
+        caption: "Evan loves a pudding!",
+      },
+      {
+        source: "dec_neil_look_e8jmkv",
+        caption: "Discussing presents with Neil",
+      },
+      {
+        source: "dec_computer_ic6pbj",
+        caption: "Playing on the computer",
+      },
+      {
+        source: "dec_birthday_grandma_nva09e",
+        caption: "Grandma helping Evan open presents",
       },
     ],
   },

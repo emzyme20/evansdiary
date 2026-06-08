@@ -23,15 +23,26 @@ function DiaryPage() {
   }>();
 
   const yearData = year ? DIARY_REGISTRY[year] : undefined;
+
+  console.log("Year data:", yearData?.items);
+  console.log("Route params - year:", year, "week:", week, "month:", month);
+
   const selectedIndex =
     week !== undefined
       ? Number(week)
-      : yearData?.items.findIndex(
-          (_, index) =>
-            month !== undefined &&
-            getMonthName(index - 1).toLowerCase() === month.toLowerCase(),
-        );
+      : (() => {
+          const monthIndex = yearData?.items.findIndex(
+            (_, index) =>
+              month !== undefined &&
+              getMonthName(index).toLowerCase() === month.toLowerCase(),
+          );
 
+          return monthIndex !== undefined && monthIndex >= 0
+            ? monthIndex + 1
+            : monthIndex;
+        })();
+
+  console.log("Selected index:", selectedIndex);
   const normalizedEntryIndex =
     selectedIndex !== undefined &&
     Number.isFinite(selectedIndex) &&
@@ -43,6 +54,8 @@ function DiaryPage() {
     year && normalizedEntryIndex
       ? `${year}-${normalizedEntryIndex}`
       : undefined;
+
+  console.log("key", key);
 
   // Look up the specific meta asset paths instantly
   const diaryEntry = key ? DIARY_CONTENT_REGISTRY[key] : null;
@@ -57,10 +70,6 @@ function DiaryPage() {
 
   const getEntryLoadMessage = (entryName: string) =>
     `_${entryName} could not be loaded._`;
-
-  console.log("imageReelCount", imageReelCount);
-  console.log("total images", diaryEntry?.images.length);
-  console.log("showPerson", showPerson);
 
   useEffect(() => {
     if (!diaryEntry || !key) return;
@@ -132,10 +141,21 @@ function DiaryPage() {
   }, [diaryEntry, key]);
 
   const routeState = location.state as DiaryPageLocationState | null;
+  const captionIndex =
+    week !== undefined && selectedIndex !== undefined
+      ? selectedIndex
+      : undefined;
+  const monthCaptionIndex =
+    week === undefined && selectedIndex !== undefined
+      ? selectedIndex - 1
+      : undefined;
   const caption =
     routeState?.caption ??
-    (selectedIndex !== undefined && selectedIndex >= 0
-      ? yearData?.items[selectedIndex]?.caption
+    (captionIndex !== undefined && captionIndex >= 0
+      ? yearData?.items[captionIndex]?.caption
+      : undefined) ??
+    (monthCaptionIndex !== undefined && monthCaptionIndex >= 0
+      ? yearData?.items[monthCaptionIndex]?.caption
       : undefined) ??
     "Diary Entry";
 
@@ -156,7 +176,7 @@ function DiaryPage() {
     <main className={styles.page}>
       <section className={styles.diaryEntry} aria-label="Diary entry content">
         <h1>{getDiaryHeading(Number(year), caption)}</h1>
-        <h2>{diaryEntry.period}</h2>
+        {yearData?.mode === "week" ? <h2>{diaryEntry.period}</h2> : null}
         {imageReelCount > 1 || diaryEntry.markdownPaths.length === 1 ? (
           <ImageReel
             images={diaryEntry.images.slice(0, imagesPerReel).map((image) => ({

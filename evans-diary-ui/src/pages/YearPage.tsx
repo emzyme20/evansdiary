@@ -11,7 +11,7 @@ function YearPage() {
 
   const linkedTiles = yearData.items.map((item, index) => ({
     image: item,
-    location: `/diary/year/${year}/${yearData.mode === "month" ? getMonthName(index - 1) : `week/${index}`}`,
+    location: `/diary/year/${year}/${yearData.mode === "month" ? getMonthName(index) : `week/${index}`}`,
     state: { caption: item.caption },
   }));
 
