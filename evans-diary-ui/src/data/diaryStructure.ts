@@ -3,13 +3,6 @@ import type { Media } from "../types";
 /*
  * Diary Structure and Dynamic Content Types
  */
-// 1. Navigation/Header Structure (Lightweight)
-export interface DiaryNodeIndex {
-  id: string;
-  source: string;
-  caption: string;
-}
-
 export interface YearStructure {
   year: string;
   mode: "week" | "month"; // Determines how the content is structured
@@ -365,6 +358,33 @@ export const DIARY_REGISTRY: Record<string, YearStructure> = {
       { source: "oct_nanny_smiles_yznloa", caption: "October" },
       { source: "nov_cute_hair_bypigp", caption: "November" },
       { source: "dec_xmas_dinner_xnarez", caption: "December" },
+    ],
+  },
+  "2007": {
+    year: "2007",
+    mode: "month",
+    items: [
+      { source: "jan_play_watching_oyeyxq", caption: "January" },
+      { source: "feb_well_done_vnnj4p", caption: "February" },
+      { source: "mar_relaxed_i5sjsy", caption: "March" },
+      { source: "apr_scar_smile_uvwdy9", caption: "April" },
+      { source: "may_head_first_m1dbyd", caption: "May" },
+      { source: "june_evan_boat_yjnkvf", caption: "June" },
+      { source: "july_cardboard_bob_uiq3bg", caption: "July" },
+      { source: "aug_block_stacking_v2tddw", caption: "August" },
+      { source: "sept_meeting_roary_f2dfbj", caption: "September" },
+      { source: "oct_nanny_giggles_bxg4gn", caption: "October" },
+      { source: "nov_abbie2_tghfxe", caption: "November" },
+      { source: "dec_king_evan_r3inur", caption: "December" },
+    ],
+  },
+  "2008": {
+    year: "2008",
+    mode: "month",
+    items: [
+      { source: "jj-celebrate_aorigs", caption: "January" },
+      { source: "feb_messy_face_g1hzs4", caption: "February" },
+      { source: "mar_ice-cream_m0p0fd", caption: "March" },
     ],
   },
 };
@@ -2041,4 +2061,180 @@ export const DIARY_CONTENT_REGISTRY: Record<string, DiaryEntry> = {
       },
     ],
   },
+  "2007-01": {
+    period: "January 2007",
+    markdownPaths: ["/content/diary/2007/2007-01.md"],
+    images: [
+      {
+        source: "jan_train_play_bixet6",
+        caption: "Mummy helps build it, but only Evan gets to play!",
+      },
+      {
+        source: "jan_play_watching_oyeyxq",
+        caption: "Evan finally notices he's being watched",
+      },
+      {
+        source: "jan_tv_zeybwf",
+        caption: "Catching up on some TV before bed time",
+      },
+      {
+        source: "jan_noodle_cuddle_t46wrd",
+        caption: "Having a cuddle with Noodle",
+      },
+    ],
+  },
+  "2007-02": {
+    period: "February 2007",
+    markdownPaths: ["/content/diary/2007/2007-02.md"],
+    images: [
+      {
+        source: "feb_wellies_indoors_rxgddv",
+        caption: "Can you spot the other obsession?... Wellies indoors!?",
+      },
+      {
+        source: "feb_puzzles_r4pbgf",
+        caption: "No trouble finding all the pieces",
+      },
+      {
+        source: "feb_all_done_ty8yfi",
+        caption: "One completed puzzle",
+      },
+      {
+        source: "feb_well_done_vnnj4p",
+        caption:
+          "Evan always congratulates himself with a clap and a 'Well Done'",
+      },
+    ],
+  },
+  "2007-03": {
+    period: "March 2007",
+    markdownPaths: ["/content/diary/2007/2007-03.md"],
+    images: [
+      {
+        source: "mar_beale_park_whikyc",
+        caption: "Evan enjoys a picnic at Beale Park",
+      },
+      {
+        source: "mar_relaxed_i5sjsy",
+        caption: "Evan knows how to get comfy in his chair",
+      },
+      {
+        source: "mar_bath_friends_fjlfm2",
+        caption: "Evan has some bath friends",
+      },
+      {
+        source: "mar_bath_smiles_ki9lfz",
+        caption: "Look at the face!",
+      },
+    ],
+  },
+  "2007-04": {
+    period: "April 2007",
+    markdownPaths: ["/content/diary/2007/2007-04.md"],
+    images: [
+      {
+        source: "apr_exploring_ln1dfq",
+        caption: "Exploring the countryside",
+      },
+      {
+        source: "apr_long_grass_tywo0a",
+        caption: "Evan experiences the fun of playing in long grass",
+      },
+      {
+        source: "apr_monopoly_gy4ad9",
+        caption: "Not quite ready to play monopoly to the rules",
+      },
+      {
+        source: "apr_scar_smile_uvwdy9",
+        caption:
+          "As you can see Evan's lip is recovering well - still a cutie!",
+      },
+      {
+        source: "apr_fridge_magnets_hm1nsn",
+        caption: "Evan's favourite toy at Nanny's is her fridge magnets!",
+      },
+      {
+        source: "apr_legoland_castle_h1c4uv",
+        caption: "Can you see us?",
+      },
+      {
+        source: "apr_safari_car_bjfohi",
+        caption: "We've just been spotting dinosaurs",
+      },
+      {
+        source: "apr_passing_time_moczuk",
+        caption: "Evan finds something to do whilst waiting in the ride queues",
+      },
+    ],
+  },
+  "2007-05": {
+    period: "May 2007",
+    markdownPaths: ["/content/diary/2007/2007-05.md"],
+    images: [
+      {
+        source: "may_footy_skills_yxh9ic",
+        caption: "Evan demonstrating his much improved football skills",
+      },
+      {
+        source: "may_head_first_m1dbyd",
+        caption: "This way is much more fun for Evan, and more scary for me!",
+      },
+      {
+        source: "may_sore_thumb_cmn4rh",
+        caption:
+          "Evan's experience with a plaster for the bit of finger nail he pulled off",
+      },
+      {
+        source: "may_patio_seat_nsu0nb",
+        caption: "Garden bench?!? No Thanks, this is far more comfortable",
+      },
+    ],
+  },
+  "2007-06": {
+    period: "June 2007",
+    type: "calendar",
+    calendarEntries:
+    [
+      {
+        heading: "1st June 2007 - Family Reunion BBQ",
+        markdownPath: "/content/diary/2007/2007-06-01.md",
+        images: [
+          {
+            source: "june_small_group_btzxlk",
+            caption: "Caroline's mum with her relatives from France",
+          },
+          {
+            source: "june_carlsberg_ualapc",
+            caption: "Anyone for Carlsberg?",
+          },
+          {
+            source: "june_evan_dances_fb8ydf",
+            caption: "Evan playing on the dance mat",
+          },
+          {
+            source: "june_large_group_uzxayy",
+            caption: "BBQ reunion group photo",
+          },
+        },
+        {
+          heading: "10th June 2007 - Marwell Zoo",
+          markdownPath: "/content/diary/2007/2007-06-10.md",
+          images: [
+            { source: "june_zoo_day_out_kaz8d7", caption: "All set for our day at the zoo"},
+            {source: "june_snow_leopard_a2zru3", caption: "Beautiful Endangered Snow Leopard"},
+            {source: "june_giraffe_height_ozas7a", caption: "Still a long way to go"},
+            {source: "june_penguin_uid4kz", caption: "Poor little penguin looking far too hot"},            
+          ],
+        }
+      ]
+    ],
+  }
 };
+
+    /*markdownPaths: [
+      "/content/diary/2007/2007-06-01.md",
+      "/content/diary/2007/2007-06-10.md",
+      "/content/diary/2007/2007-06-22.md",
+      "/content/diary/2007/2007-06-29.md"
+    ],
+    images: [*/
