@@ -55,18 +55,6 @@ export interface MediaLink {
   location: string;
 }
 
-export interface DiaryEntry {
-  heading: string;
-  contentKey: string;
-  images?: Media[];
-}
-
-export interface DiarySection {
-  tag: string;
-  headline: string;
-  entries: DiaryEntry[];
-}
-
 export interface YearPageParams {
   year: string;
   mode: "week" | "month";

@@ -1,7 +1,14 @@
 import styles from "./DiaryPage.module.css";
 import { getDiaryHeading, getMonthNumber } from "../utils";
 import { useLocation, useParams } from "react-router-dom";
-import { DIARY_CONTENT_REGISTRY, DIARY_REGISTRY } from "../data/diaryStructure";
+import {
+  DIARY_CONTENT_REGISTRY,
+  DIARY_REGISTRY,
+  type CalendarDiaryEntry,
+  type CalendarDiaryEntryItem,
+  type DiaryEntry,
+  type StandardDiaryEntry,
+} from "../data/diaryStructure";
 import ReactMarkdown from "react-markdown";
 import { useEffect, useState } from "react";
 import ImageReel from "../components/ImageReel";
@@ -9,6 +16,10 @@ import type { Media } from "../types";
 
 interface DiaryPageLocationState {
   caption?: string;
+}
+
+function isCalendarDiaryEntry(entry: DiaryEntry): entry is CalendarDiaryEntry {
+  return entry.type === "calendar";
 }
 
 function DiaryPage() {
@@ -84,6 +95,61 @@ function DiaryPage() {
     <div className="markdown-body">
       <ReactMarkdown>{content}</ReactMarkdown>
     </div>
+  );
+
+  const renderCalendarLayout = (entry: CalendarDiaryEntry) => (
+    <main className={styles.page}>
+      <section className={styles.diaryEntry} aria-label="Diary entry content">
+        <h1>{getDiaryHeading(Number(year), caption)}</h1>
+        {entry.calendarEntries.map(
+          (calendarEntry: CalendarDiaryEntryItem, index: number) => (
+            <div key={`${key}-calendar-entry-${index}`}>
+              <h3>{calendarEntry.heading}</h3>
+              {renderImageReel(calendarEntry.images.slice(0, imagesPerReel))}
+              {renderMarkdown(
+                calendarContent[index] ||
+                  getEntryLoadMessage(calendarEntry.heading),
+              )}
+              {renderImageReel(
+                calendarEntry.images.slice(imagesPerReel, imagesPerReel * 2),
+              )}
+            </div>
+          ),
+        )}
+      </section>
+    </main>
+  );
+
+  const renderStandardLayout = (entry: StandardDiaryEntry) => (
+    <main className={styles.page}>
+      <section className={styles.diaryEntry} aria-label="Diary entry content">
+        <h1>{getDiaryHeading(Number(year), caption)}</h1>
+        {yearData?.mode === "week" ? <h2>{entry.period}</h2> : null}
+        {imageReelCount > 1 || entry.markdownPaths.length === 1
+          ? renderImageReel(entry.images.slice(0, imagesPerReel))
+          : null}
+        <div>
+          {showPerson ? <h3>Emma's Entry</h3> : null}
+          {renderMarkdown(contentA)}
+        </div>
+
+        {entry.markdownPaths.length === 2 && imageReelCount === 1 && (
+          <div>
+            {renderImageReel(entry.images.slice(0, imagesPerReel))}
+            <div>
+              {showPerson ? <h3>Caroline's Entry</h3> : null}
+              {renderMarkdown(contentB)}
+            </div>
+          </div>
+        )}
+
+        {imageReelCount > 1
+          ? renderImageReel(
+              entry.images.slice(imagesPerReel, imagesPerReel * 2),
+            )
+          : null}
+      </section>
+    </main>
   );
 
   const getEntryLoadMessage = (entryName: string) =>
@@ -204,59 +270,11 @@ function DiaryPage() {
 
   if (loading) return <div>Loading diary entries...</div>;
 
-  if (isCalendarEntry) {
-    return (
-      <main className={styles.page}>
-        <section className={styles.diaryEntry} aria-label="Diary entry content">
-          <h1>{getDiaryHeading(Number(year), caption)}</h1>
-          {diaryEntry.calendarEntries.map((entry, index) => (
-            <div key={`${key}-calendar-entry-${index}`}>
-              <h3>{entry.heading}</h3>
-              {renderImageReel(entry.images.slice(0, imagesPerReel))}
-              {renderMarkdown(
-                calendarContent[index] || getEntryLoadMessage(entry.heading),
-              )}
-              {renderImageReel(
-                entry.images.slice(imagesPerReel, imagesPerReel * 2),
-              )}
-            </div>
-          ))}
-        </section>
-      </main>
-    );
+  if (isCalendarDiaryEntry(diaryEntry)) {
+    return renderCalendarLayout(diaryEntry);
   }
 
-  return (
-    <main className={styles.page}>
-      <section className={styles.diaryEntry} aria-label="Diary entry content">
-        <h1>{getDiaryHeading(Number(year), caption)}</h1>
-        {yearData?.mode === "week" ? <h2>{diaryEntry.period}</h2> : null}
-        {imageReelCount > 1 || diaryEntry.markdownPaths.length === 1
-          ? renderImageReel(diaryEntry.images.slice(0, imagesPerReel))
-          : null}
-        <div>
-          {showPerson ? <h3>Emma's Entry</h3> : null}
-          {renderMarkdown(contentA)}
-        </div>
-
-        {diaryEntry.markdownPaths.length === 2 && imageReelCount === 1 && (
-          <div>
-            {renderImageReel(diaryEntry.images.slice(0, imagesPerReel))}
-            <div>
-              {showPerson ? <h3>Caroline's Entry</h3> : null}
-              {renderMarkdown(contentB)}
-            </div>
-          </div>
-        )}
-
-        {imageReelCount > 1
-          ? renderImageReel(
-              diaryEntry.images.slice(imagesPerReel, imagesPerReel * 2),
-            )
-          : null}
-      </section>
-    </main>
-  );
+  return renderStandardLayout(diaryEntry);
 }
 
 export default DiaryPage;
