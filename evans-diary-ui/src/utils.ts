@@ -13,8 +13,14 @@ export const getImageUrl = (
 };
 
 export const getMonthName = (monthNumber: number) => {
+  console.log("getMonthName called with monthNumber:", monthNumber);
   const date = new Date(2000, monthNumber, 1);
   return date.toLocaleString("en-GB", { month: "long" }).toLocaleLowerCase();
+};
+
+export const getMonthNumber = (monthName: string) => {
+  const date = new Date(`${monthName} 1, 2000`);
+  return date.getMonth() + 1;
 };
 
 export const getDiaryHeading = (year: number, imageCaption: string) => {

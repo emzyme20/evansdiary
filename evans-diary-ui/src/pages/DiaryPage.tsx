@@ -1,5 +1,5 @@
 import styles from "./DiaryPage.module.css";
-import { getDiaryHeading, getMonthName } from "../utils";
+import { getDiaryHeading, getMonthNumber } from "../utils";
 import { useLocation, useParams } from "react-router-dom";
 import { DIARY_CONTENT_REGISTRY, DIARY_REGISTRY } from "../data/diaryStructure";
 import ReactMarkdown from "react-markdown";
@@ -18,47 +18,34 @@ function DiaryPage() {
   >({});
   const [loadedKey, setLoadedKey] = useState<string>("");
 
-  const location = useLocation();
+  // Extract the year, week, and month parameters from the URL
   const { year, week, month } = useParams<{
     year: string;
     week: string;
     month: string;
   }>();
 
+  // Build the key to look up the diary entry in the content registry based on the URL parameters
+  const key =
+    week !== undefined
+      ? (() => {
+          const weekNumber = Number(week);
+          if (Number.isFinite(weekNumber)) {
+            return `${year}-${String(weekNumber).padStart(2, "0")}`;
+          }
+        })()
+      : month !== undefined
+        ? (() => {
+            return `${year}-${String(getMonthNumber(month)).padStart(2, "0")}`;
+          })()
+        : undefined;
+
+  // Look up the year data from the registry based on the year parameter
   const yearData = year ? DIARY_REGISTRY[year] : undefined;
 
-  console.log("Year data:", yearData?.items);
-  console.log("Route params - year:", year, "week:", week, "month:", month);
+  console.log("DiaryPage render:", { year, week, month, yearData });
 
-  const selectedIndex =
-    week !== undefined
-      ? Number(week)
-      : (() => {
-          const monthIndex = yearData?.items.findIndex(
-            (_, index) =>
-              month !== undefined &&
-              getMonthName(index).toLowerCase() === month.toLowerCase(),
-          );
-
-          return monthIndex !== undefined && monthIndex >= 0
-            ? monthIndex + 1
-            : monthIndex;
-        })();
-
-  console.log("Selected index:", selectedIndex);
-  const normalizedEntryIndex =
-    selectedIndex !== undefined &&
-    Number.isFinite(selectedIndex) &&
-    selectedIndex >= 0
-      ? String(selectedIndex).padStart(2, "0")
-      : undefined;
-
-  const key =
-    year && normalizedEntryIndex
-      ? `${year}-${normalizedEntryIndex}`
-      : undefined;
-
-  console.log("key", key);
+  console.log("Constructed key for content lookup:", key);
 
   // Look up the specific meta asset paths instantly
   const diaryEntry = key ? DIARY_CONTENT_REGISTRY[key] : null;
@@ -119,7 +106,7 @@ function DiaryPage() {
             diaryEntry.calendarEntries.map(async (entry, index) => {
               const content = await fetchMarkdown(
                 entry.markdownPath,
-                `Calendar entry ${index + 1}`,
+                entry.heading,
               );
               return [index, content] as const;
             }),
@@ -176,24 +163,10 @@ function DiaryPage() {
     };
   }, [diaryEntry, key]);
 
+  // Access the location state to retrieve the caption passed from the year page navigation image
+  const location = useLocation();
   const routeState = location.state as DiaryPageLocationState | null;
-  const captionIndex =
-    week !== undefined && selectedIndex !== undefined
-      ? selectedIndex
-      : undefined;
-  const monthCaptionIndex =
-    week === undefined && selectedIndex !== undefined
-      ? selectedIndex - 1
-      : undefined;
-  const caption =
-    routeState?.caption ??
-    (captionIndex !== undefined && captionIndex >= 0
-      ? yearData?.items[captionIndex]?.caption
-      : undefined) ??
-    (monthCaptionIndex !== undefined && monthCaptionIndex >= 0
-      ? yearData?.items[monthCaptionIndex]?.caption
-      : undefined) ??
-    "Diary Entry";
+  const caption = routeState?.caption ?? "";
 
   if (!diaryEntry) {
     return (
