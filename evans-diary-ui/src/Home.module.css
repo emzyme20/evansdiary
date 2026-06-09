@@ -136,13 +136,17 @@ body {
 .tileOverlay {
   position: absolute;
   inset: 0; /* replaces top/left/width/height */
+  left: -1px; /* Rendering quirk found that causes a subpixel rounding issue when using fractional grid tracks */
+  width: calc(
+    100% + 1px
+  ); /* the left and width adjustments stop the yellow overlay seam from showing but when triggered, will overlay to the correct width */
   box-sizing: border-box; /* keeps padding inside parent bounds */
   padding: 3rem;
   background: rgba(253, 224, 0, 0.92);
   display: flex; /* if you're using flex-direction/justify-content */
   flex-direction: column;
   justify-content: flex-end;
-  transform: translateX(-100%);
+  transform: translateX(calc(-100% - 1px));
   transition: transform 0.25s ease-in-out;
   overflow: hidden;
 }
