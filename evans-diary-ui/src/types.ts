@@ -30,7 +30,7 @@ export interface Media {
   width?: number;
   height?: number;
   quality?: number;
-  fill?: number;
+  fill?: string;
 }
 
 export interface FamilyTile {
@@ -53,7 +53,23 @@ export interface TimelineEntry {
 export interface MediaLink {
   image: Media;
   location: string;
+  external?: boolean;
 }
+
+export interface EmbeddedMedia {
+  type: "Embedded";
+  url: string;
+  title: string;
+}
+
+export interface ExternalMedia {
+  type: "External";
+  image: Media;
+  url: string;
+  title: string;
+}
+
+export type VideoMedia = EmbeddedMedia | ExternalMedia;
 
 export interface YearPageParams {
   year: string;

@@ -24,3 +24,21 @@
   margin-bottom: 1rem;
   line-height: 1.6em;
 }
+
+.video {
+  margin: 1.25rem 0;
+}
+
+.video iframe {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+}
+
+.video img {
+  display: block;
+  width: 100%;
+  height: auto;
+}

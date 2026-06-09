@@ -1,5 +1,5 @@
 import styles from "./DiaryPage.module.css";
-import { getDiaryHeading, getMonthNumber } from "../utils";
+import { getDiaryHeading, getImageUrl, getMonthNumber } from "../utils";
 import { useLocation, useParams } from "react-router-dom";
 import {
   DIARY_CONTENT_REGISTRY,
@@ -12,7 +12,7 @@ import {
 import ReactMarkdown from "react-markdown";
 import { useEffect, useState } from "react";
 import ImageReel from "../components/ImageReel";
-import type { Media } from "../types";
+import type { EmbeddedMedia, ExternalMedia, Media } from "../types";
 
 interface DiaryPageLocationState {
   caption?: string;
@@ -91,17 +91,45 @@ function DiaryPage() {
       />
     ) : null;
 
+  const renderVideos = (videos?: Array<EmbeddedMedia | ExternalMedia>) =>
+    videos && videos.length > 0
+      ? videos.map((video, index) => (
+          <figure className={styles.video} key={index}>
+            {video.type === "External" ? (
+              <a
+                href={video.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                title={video.title}
+              >
+                <img
+                  src={getImageUrl(video.image.source)}
+                  alt={video.image.caption}
+                />
+              </a>
+            ) : (
+              <iframe
+                src={video.url}
+                title={video.title}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            )}
+          </figure>
+        ))
+      : null;
+
   const renderMarkdown = (content: string) => (
     <div className="markdown-body">
       <ReactMarkdown>{content}</ReactMarkdown>
     </div>
   );
 
-  const renderCalendarLayout = (entry: CalendarDiaryEntry) => (
+  const renderCalendarLayout = (calendarEntry: CalendarDiaryEntry) => (
     <main className={styles.page}>
       <section className={styles.diaryEntry} aria-label="Diary entry content">
         <h1>{getDiaryHeading(Number(year), caption)}</h1>
-        {entry.calendarEntries.map(
+        {calendarEntry.calendarEntries.map(
           (calendarEntry: CalendarDiaryEntryItem, index: number) => (
             <div key={`${key}-calendar-entry-${index}`}>
               <h3>{calendarEntry.heading}</h3>
@@ -113,6 +141,7 @@ function DiaryPage() {
               {renderImageReel(
                 calendarEntry.images.slice(imagesPerReel, imagesPerReel * 2),
               )}
+              {renderVideos(calendarEntry.videos)}
             </div>
           ),
         )}

@@ -2,14 +2,24 @@ export const getImageUrl = (
   path: string,
   width?: number,
   height?: number,
-  fill?: number,
+  fill?: string,
   quality?: number,
 ) => {
   // Check if path has an explicit file extension
   const hasExtension = /\.\w+$/.test(path);
   const addExtension = hasExtension ? "" : ".webp";
 
-  return `https://res.cloudinary.com/dqg9nkccw/image/upload/${fill ? fill : "c_fill"}${height ? `,h_${height}` : ""}${quality ? `,q_${quality}` : ",q_80"}${width ? `,w_${width}` : ",w_251"}/${path}${addExtension}`;
+  // If no transformations are needed, return the original URL
+  if (
+    width === undefined &&
+    height === undefined &&
+    fill === undefined &&
+    quality === undefined
+  ) {
+    return `https://res.cloudinary.com/dqg9nkccw/image/upload/${path}${addExtension}`;
+  }
+
+  return `https://res.cloudinary.com/dqg9nkccw/image/upload/${fill ? `c_${fill}` : "c_fill"}${height ? `,h_${height}` : ""}${quality ? `,q_${quality}` : ",q_80"}${width ? `,w_${width}` : ",w_251"}/${path}${addExtension}`;
 };
 
 export const getMonthName = (monthNumber: number) => {

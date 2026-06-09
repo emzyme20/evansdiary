@@ -1,4 +1,4 @@
-import type { Media } from "../types";
+import type { Media, VideoMedia } from "../types";
 
 /*
  * Diary Structure and Dynamic Content Types
@@ -14,6 +14,7 @@ export interface CalendarDiaryEntryItem {
   heading: string;
   markdownPath: string;
   images: Media[];
+  videos?: VideoMedia[];
 }
 
 export interface StandardDiaryEntry {
@@ -2150,14 +2151,320 @@ export const DIARY_CONTENT_REGISTRY: Record<string, DiaryEntry> = {
           },
         ],
       },
+      {
+        heading: "22nd June 2007 - Neil & Pascale's Wedding",
+        markdownPath: "/content/diary/2007/2007-06-22.md",
+        images: [
+          {
+            source: "june_exploring_ln2mar",
+            caption: "Exploring the grounds keeping out of trouble",
+          },
+          {
+            source: "june_suit_plyo8l",
+            caption: "The suit is on the large side!",
+          },
+          {
+            source: "june_happily_married_gbkhzq",
+            caption:
+              "Evan shows his smart side (if you ignore the black eye that is)",
+          },
+          {
+            source: "june_joke_with_grandma_vzltsk",
+            caption: "Evan shares a joke with Grandma",
+          },
+        ],
+      },
+      {
+        heading: "29th June 2007 - Holiday in France",
+        markdownPath: "/content/diary/2007/2007-06-29.md",
+        images: [
+          {
+            source: "june_river_washing_kddazo",
+            caption:
+              "The private river came in handy for washing the car seat cover",
+          },
+          {
+            source: "june_jacques_bbq_kaexau",
+            caption:
+              "Jacques prepares a natural fire for the BBQ. The sausages were yummy!",
+          },
+          {
+            source: "june_pleasant_walk_mowq7b",
+            caption:
+              "Those little legs get tired easy, luckily Caroline saves the day",
+          },
+          {
+            source: "june_evan_boat_yjnkvf",
+            caption: "Evan is not sure what to think of the life jacket",
+          },
+          {
+            source: "june_pascale_carry_hdrmwq",
+            caption: "Pascale helped with the carrying when Evan got tired",
+          },
+          {
+            source: "june_wind_tears_urt1tn",
+            caption: "The wind was so strong it made Evan cry",
+          },
+          {
+            source: "june_strong_arms_sb0gss",
+            caption: "Evan makes up a new ball game, with a tree!",
+          },
+          {
+            source: "june_room_to_run_cru2mp",
+            caption: "So much space for Evan to run around in",
+          },
+        ],
+      },
+    ],
+  },
+  "2007-07": {
+    period: "July 2007",
+    type: "calendar",
+    calendarEntries: [
+      {
+        heading: "7th July 2007",
+        markdownPath: "/content/diary/2007/2007-07-07.md",
+        images: [
+          {
+            source: "july_lego_fun_scje8g",
+            caption:
+              "Evan is starting to appreciate his lego more now he is older",
+          },
+          {
+            source: "july_sleepy_boys_w2zysu",
+            caption:
+              "Evan and Noodle decide that they just can't go on anymore",
+          },
+          {
+            source: "july_water_feature_eot3vq",
+            caption: "Fascinated by Nanny's garden water feature",
+          },
+          {
+            source: "july_rearrange_garden_thgon0",
+            caption: "Evan's new game—rearranging the garden ornaments",
+          },
+        ],
+      },
+      {
+        heading: "10th July 2007",
+        markdownPath: "/content/diary/2007/2007-07-10.md",
+        images: [
+          {
+            source: "july_bubble_machine_gbsipw",
+            caption: "Introducing the bubble machine...",
+          },
+          {
+            source: "july_make_bubbles_xjrjbv",
+            caption: "...getting used to how you turn the maker...",
+          },
+          {
+            source: "july_watch_bubbles_c9jjdx",
+            caption: "...huge bubbles start to float away...",
+          },
+          {
+            source: "july_bubbles_fly_away_uiykbt",
+            caption: "...Evan has mastered the art of making giant bubbles",
+          },
+        ],
+      },
+      {
+        heading: "14th July 2007 - Legoland Live Festival",
+        markdownPath: "/content/diary/2007/2007-07-14.md",
+        images: [
+          {
+            source: "july_first_festival_lvhhix",
+            caption: "Evan's first festival!",
+          },
+          {
+            source: "july_cardboard_bob_uiq3bg",
+            caption: "Evan shows off his cardboard Bob the Builder!",
+          },
+          {
+            source: "july_singing_along_jvjwzc",
+            caption: "Singing along to all the songs",
+          },
+          {
+            source: "july_legoland_swings_shugch",
+            caption: "Evan can now ride the swings solo",
+          },
+        ],
+      },
+      {
+        heading: "30th July 2007",
+        markdownPath: "/content/diary/2007/2007-07-30.md",
+        images: [
+          {
+            source: "july_which_one_jo64x4",
+            caption: "Time to choose... hat, dog or ship",
+          },
+          {
+            source: "july_this_one_lycv1t",
+            caption: "The ship it is",
+          },
+          {
+            source: "july_lets_play_tpgbbz",
+            caption:
+              "Just like Caroline, Evan is going to be ruthless at Monopoly...",
+          },
+          {
+            source: "july_cheating_czygop",
+            caption: "... or he might steal from the bank like his Mum!",
+          },
+        ],
+      },
+    ],
+  },
+  "2007-08": {
+    period: "August 2007",
+    type: "calendar",
+    calendarEntries: [
+      {
+        heading: "2nd August 2007",
+        markdownPath: "/content/diary/2007/2007-08-02.md",
+        images: [
+          {
+            source: "aug_flowers_e3dbku",
+            caption:
+              "Any image like this saddens me, but it's worse when you know the person",
+          },
+          {
+            source: "aug_becky_trevor_h4cqcn",
+            caption: "Becky and Trevor having a laugh at the pub",
+          },
+          {
+            source: "aug_becky_clare_sousme",
+            caption: "Becky was very popular and friendly to everyone",
+          },
+          {
+            source: "aug_crossroad_ogbuq0",
+            caption: "The cross road showing the signs of the accident",
+          },
+        ],
+      },
+      {
+        heading: "18th August 2007",
+        markdownPath: "/content/diary/2007/2007-08-18.md",
+        images: [
+          {
+            source: "aug-bouncy-castle_y0cxna",
+            caption: "Finally Evan enjoys the bouncy castle",
+          },
+          {
+            source: "aug_play_dough_e7rg46",
+            caption: "Enjoying the texture, not quite making shapes yet",
+          },
+          {
+            source: "aug_nap_time_l6g2hx",
+            caption: "Nap time for Evan!",
+          },
+          {
+            source: "aug_block_stacking_v2tddw",
+            caption: "Stacking blocks successfully",
+          },
+        ],
+      },
+    ],
+  },
+  "2007-09": {
+    period: "September 2007",
+    type: "calendar",
+    calendarEntries: [
+      {
+        heading: "18th September 2007",
+        markdownPath: "/content/diary/2007/2007-09-18.md",
+        images: [
+          {
+            source: "sept_peanut_playdough_dxoncx",
+            caption: "Evan has fun making edible playdough",
+          },
+          {
+            source: "sept_dribbling_kncsrn",
+            caption:
+              "Evan demonstrates where Tottenham have been going wrong this season",
+          },
+          {
+            source: "sept_football_rjsyho",
+            caption: "Not bad for a 2 year old",
+          },
+          {
+            source: "sept_swing_divjqo",
+            caption: "Evan still loves his swing in the garden",
+          },
+        ],
+      },
+      {
+        heading: "23rd September 2007 - Meeting the famous Roary",
+        markdownPath: "/content/diary/2007/2007-09-23.md",
+        images: [
+          {
+            source: "sept_meeting_roary_f2dfbj",
+            caption: "Evan finally gets to meet Roary!",
+          },
+          {
+            source: "sept_playing_fireman_w9uu6t",
+            caption:
+              "Head to head fire challenge at Legoland.. Uncle Frank Won!",
+          },
+          {
+            source: "sept_solo_zngtje",
+            caption: "More swing action",
+          },
+          {
+            source: "sept_lego_rides_wfp7hj",
+            caption: "Enjoying the big wheel ride",
+          },
+        ],
+      },
+    ],
+  },
+  "2007-10": {
+    period: "October 2007",
+    type: "calendar",
+    calendarEntries: [
+      {
+        heading: "5th October 2007 - Potty Training",
+        markdownPath: "/content/diary/2007/2007-10-05.md",
+        images: [
+          {
+            source: "oct_book_uh3jx6",
+            caption: "Evan sharing a story with his nanny",
+          },
+          {
+            source: "oct_nanny_giggles_bxg4gn",
+            caption:
+              "I'm not sure they are getting much of the story read there",
+          },
+          {
+            source: "oct_cheeky_boy_uv8rqz",
+            caption: "Evan shows off his typical cheeky look",
+          },
+          {
+            source: "oct_exploring_bveyej",
+            caption: "Evan is fascinated by the long grass",
+          },
+        ],
+      },
+      {
+        heading: "27th October 2007 - Cadbury's Gorilla",
+        markdownPath: "/content/diary/2007/2007-10-27.md",
+        images: [],
+        videos: [
+          {
+            type: "External",
+            image: {
+              source: "gorilla_ttc8qz.jpg",
+              caption: "Cadbury Gorilla Drummer",
+            },
+            url: "https://www.youtube.com/watch?v=NNerJzj1kjU",
+            title: "Phil Collins 'Gorilla Drummer' Cadbury's Dairy Milk Advert",
+          },
+          {
+            type: "Embedded",
+            url: "https://www.youtube.com/embed/wOBum0TaOXQ",
+            title: "Evan impersonating the Gorilla Drummer",
+          },
+        ],
+      },
     ],
   },
 };
-
-/*markdownPaths: [
-      "/content/diary/2007/2007-06-01.md",
-      "/content/diary/2007/2007-06-10.md",
-      "/content/diary/2007/2007-06-22.md",
-      "/content/diary/2007/2007-06-29.md"
-    ],
-    images: [*/
