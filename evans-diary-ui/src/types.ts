@@ -50,10 +50,10 @@ export interface TimelineEntry {
   type: "Event" | "Video" | "Blog" | "Image";
 }
 
+// MediaLink is used to define an image that navigates to a specific location when clicked
 export interface MediaLink {
   image: Media;
   location: string;
-  external?: boolean;
 }
 
 export interface EmbeddedMedia {
@@ -69,6 +69,8 @@ export interface ExternalMedia {
   title: string;
 }
 
+// VideoMedia is a union type that can represent either an embedded video or an external video link.
+// The external video link contains an image thumbnail, URL, and title.
 export type VideoMedia = EmbeddedMedia | ExternalMedia;
 
 export interface YearPageParams {
