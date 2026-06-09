@@ -5,6 +5,7 @@ import { DIARY_CONTENT_REGISTRY, DIARY_REGISTRY } from "../data/diaryStructure";
 import ReactMarkdown from "react-markdown";
 import { useEffect, useState } from "react";
 import ImageReel from "../components/ImageReel";
+import type { Media } from "../types";
 
 interface DiaryPageLocationState {
   caption?: string;
@@ -52,6 +53,13 @@ function DiaryPage() {
   const loading = Boolean(diaryEntry && key && loadedKey !== key);
   const isCalendarEntry = diaryEntry?.type === "calendar";
 
+  console.log("Diary entry lookup:", {
+    key,
+    diaryEntry,
+    loading,
+    isCalendarEntry,
+  });
+
   const imagesPerReel = 4;
   const imageReelCount =
     diaryEntry && "images" in diaryEntry
@@ -62,6 +70,21 @@ function DiaryPage() {
     diaryEntry && "markdownPaths" in diaryEntry
       ? diaryEntry.markdownPaths.length === 2
       : false;
+
+  const renderImageReel = (images: Media[]) =>
+    images.length > 0 ? (
+      <ImageReel
+        images={images.map((image) => ({
+          image,
+        }))}
+      />
+    ) : null;
+
+  const renderMarkdown = (content: string) => (
+    <div className="markdown-body">
+      <ReactMarkdown>{content}</ReactMarkdown>
+    </div>
+  );
 
   const getEntryLoadMessage = (entryName: string) =>
     `_${entryName} could not be loaded._`;
@@ -189,28 +212,13 @@ function DiaryPage() {
           {diaryEntry.calendarEntries.map((entry, index) => (
             <div key={`${key}-calendar-entry-${index}`}>
               <h3>{entry.heading}</h3>
-              {entry.images.length > 0 ? (
-                <ImageReel
-                  images={entry.images.slice(0, imagesPerReel).map((image) => ({
-                    image: image,
-                  }))}
-                />
-              ) : null}
-              <div className="markdown-body">
-                <ReactMarkdown>
-                  {calendarContent[index] || getEntryLoadMessage(entry.heading)}
-                </ReactMarkdown>
-              </div>
-
-              {entry.images.length > 4 ? (
-                <ImageReel
-                  images={entry.images
-                    .slice(4, imagesPerReel * 2)
-                    .map((image) => ({
-                      image: image,
-                    }))}
-                />
-              ) : null}
+              {renderImageReel(entry.images.slice(0, imagesPerReel))}
+              {renderMarkdown(
+                calendarContent[index] || getEntryLoadMessage(entry.heading),
+              )}
+              {renderImageReel(
+                entry.images.slice(imagesPerReel, imagesPerReel * 2),
+              )}
             </div>
           ))}
         </section>
@@ -223,47 +231,29 @@ function DiaryPage() {
       <section className={styles.diaryEntry} aria-label="Diary entry content">
         <h1>{getDiaryHeading(Number(year), caption)}</h1>
         {yearData?.mode === "week" ? <h2>{diaryEntry.period}</h2> : null}
-        {imageReelCount > 1 || diaryEntry.markdownPaths.length === 1 ? (
-          <ImageReel
-            images={diaryEntry.images.slice(0, imagesPerReel).map((image) => ({
-              image: image,
-            }))}
-          />
-        ) : null}
+        {imageReelCount > 1 || diaryEntry.markdownPaths.length === 1
+          ? renderImageReel(diaryEntry.images.slice(0, imagesPerReel))
+          : null}
         <div>
           {showPerson ? <h3>Emma's Entry</h3> : null}
-          <div className="markdown-body">
-            <ReactMarkdown>{contentA}</ReactMarkdown>
-          </div>
+          {renderMarkdown(contentA)}
         </div>
 
         {diaryEntry.markdownPaths.length === 2 && imageReelCount === 1 && (
           <div>
-            <ImageReel
-              images={diaryEntry.images
-                .slice(0, imagesPerReel)
-                .map((image) => ({
-                  image: image,
-                }))}
-            />
+            {renderImageReel(diaryEntry.images.slice(0, imagesPerReel))}
             <div>
               {showPerson ? <h3>Caroline's Entry</h3> : null}
-              <div className="markdown-body">
-                <ReactMarkdown>{contentB}</ReactMarkdown>
-              </div>
+              {renderMarkdown(contentB)}
             </div>
           </div>
         )}
 
-        {imageReelCount > 1 ? (
-          <ImageReel
-            images={diaryEntry.images
-              .slice(imagesPerReel, imagesPerReel * 2)
-              .map((image) => ({
-                image: image,
-              }))}
-          />
-        ) : null}
+        {imageReelCount > 1
+          ? renderImageReel(
+              diaryEntry.images.slice(imagesPerReel, imagesPerReel * 2),
+            )
+          : null}
       </section>
     </main>
   );
