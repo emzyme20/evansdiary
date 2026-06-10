@@ -2467,4 +2467,333 @@ export const DIARY_CONTENT_REGISTRY: Record<string, DiaryEntry> = {
       },
     ],
   },
+  "2007-11": {
+    period: "November 2007",
+    type: "calendar",
+    calendarEntries: [
+      {
+        heading: "2nd November - Amber turns 2",
+        markdownPath: "/content/diary/2007/2007-11-02.md",
+        images: [
+          {
+            source: "nov_growing_up_drs1cb",
+            caption: "Growing up fast!",
+          },
+          {
+            source: "nov_amber_vxwop2",
+            caption: "Nice and cosy on the sofa",
+          },
+          {
+            source: "nov_evan_izzy_f9wplf",
+            caption: "Evan adores Izzy, I'm sure he wants his own dog!",
+          },
+          {
+            source: "nov_ice-cream_rn6d2j",
+            caption: "Showing some cute baby belly for ice-cream????",
+          },
+        ],
+      },
+      {
+        heading: "11th November - More birthday party fun",
+        markdownPath: "/content/diary/2007/2007-11-11.md",
+        images: [
+          {
+            source: "nov_abbie1_sfkeb1",
+            caption:
+              "Evan finally settles in the soft play area with his friends",
+          },
+          {
+            source: "nov_abbie2_tghfxe",
+            caption: "Evan attempts to barracade Beth in",
+          },
+          {
+            source: "nov_abbie3_tkorbs",
+            caption: "These huge objects were a huge hit!",
+          },
+          {
+            source: "nov_abbie4_pzvppo",
+            caption: "All quiet when the children sit down to eat",
+          },
+        ],
+      },
+      {
+        heading: "18th November - No raisins for you",
+        markdownPath: "/content/diary/2007/2007-11-18.md",
+        images: [],
+      },
+    ],
+  },
+  "2007-12": {
+    period: "December 2007",
+    type: "calendar",
+    calendarEntries: [
+      {
+        heading: "2nd December - 3 become 2",
+        markdownPath: "/content/diary/2007/2007-12-02.md",
+        images: [
+          {
+            source: "dec_slide_start_at8kmg",
+            caption: "Is this going to have a happy ending?",
+          },
+          {
+            source: "dec_slide_finish_wi9hpm",
+            caption: "They seemed to like it!",
+          },
+          {
+            source: "dec_garden_krn8sm",
+            caption: "Not sure who is having the most fun!",
+          },
+          {
+            source: "dec_sofa_sleeps_njm4fc",
+            caption: "Having a sneaky little nap",
+          },
+        ],
+      },
+      {
+        heading: "14th December - King Evan",
+        markdownPath: "/content/diary/2007/2007-12-14.md",
+        images: [
+          {
+            source: "dec_king_evan_r3inur",
+            caption: "Evan models his nativity outfit",
+          },
+          {
+            source: "dec_king_myrrh_c4wa7a",
+            caption: "Evan with his gift of myrrh",
+          },
+          {
+            source: "dec_nativity_dinner_hosxdi",
+            caption: "Nativity done, now onto the food!",
+          },
+          {
+            source: "dec_evan_and_lucy_sv76a9",
+            caption: "This is Lucy, Evan adores her",
+          },
+        ],
+      },
+      {
+        heading: "24th December - Birthday cake fun!",
+        markdownPath: "/content/diary/2007/2007-12-24.md",
+        images: [
+          {
+            source: "dec_grandma_hosts_ajylpj",
+            caption: "It's Christmas at Grandma's this year",
+          },
+          {
+            source: "dec_cake_flat_cvps03",
+            caption: "Is that a cake?",
+          },
+          {
+            source: "dec_cake_rise_xextb2",
+            caption: "Now that's more like it!",
+          },
+          {
+            source: "lego_fire_engine_q597xb",
+            caption: "Evan's fire engine from legoland is still in one piece",
+          },
+        ],
+      },
+      {
+        heading: "25th December - Evan remembers Christmas",
+        markdownPath: "/content/diary/2007/2007-12-25.md",
+        images: [
+          {
+            source: "dec_xmas_na9oui",
+            caption: "Finally the waiting is over!",
+          },
+          {
+            source: "dec_uncle_matt_pcdnhi",
+            caption: "Uncle Matt watches on",
+          },
+          {
+            source: "dec_playing_mrj2fg",
+            caption: "Presents all opened, now time to play",
+          },
+          {
+            source: "dec_toys_hrbyg8",
+            caption: "Chirpy the Spurs mascot has a look at the new cars",
+          },
+        ],
+      },
+      {
+        heading: "26th December - Evan turns 3",
+        markdownPath: "/content/diary/2007/2007-12-26.md",
+        images: [
+          {
+            source: "dec_birthday_eh7fsc",
+            caption: "It's birthday time!",
+          },
+          {
+            source: "dec_more_presents_ozltbn",
+            caption: "Happy 3rd birthday",
+          },
+          {
+            source: "dec_lego_fan_mnkcob",
+            caption: "Lego features heavily again this year",
+          },
+          {
+            source: "dec_whos_toys_soqilm",
+            caption: "My my Evan, haven't you grown",
+          },
+        ],
+      },
+    ],
+  },
+  "2008-01": {
+    period: "January 2008",
+    type: "calendar",
+    calendarEntries: [
+      {
+        heading: "1st January - A new start for us!",
+        markdownPath: "/content/diary/2008/2008-01-01.md",
+        images: [],
+      },
+      {
+        heading: "22nd January - Tottenham vs Arsenal Carling Cup Semi Final",
+        markdownPath: "/content/diary/2008/2008-01-22.md",
+        images: [],
+        videos: [
+          {
+            type: "External",
+            image: {
+              source: "jj-celebrate_aorigs.jpg",
+              caption: "Jermaine Jenas celebrates scoring against Arsenal",
+            },
+            url: "https://www.skysports.com/football/video/19508/10001626/sky-sports-vault-tottenham-5-1-arsenal",
+            title:
+              "Sky Sports Vault | Tottenham 5-1 Arsenal - Carling Cup Semi Final",
+          },
+        ],
+      },
+    ],
+  },
+  "2008-02": {
+    period: "February 2008",
+    type: "calendar",
+    calendarEntries: [
+      {
+        heading: "5th February - Introducing the latest Middlebrook",
+        markdownPath: "/content/diary/2008/2008-02-05.md",
+        images: [
+          {
+            source: "feb_ryan_alex_eywe7b",
+            caption: "Introducing Ryan Alex Middlebrook",
+          },
+          {
+            source: "feb_park_rechvc",
+            caption: "Evan loves playing at the park!",
+          },
+          {
+            source: "feb_interesting_hqbqzq",
+            caption:
+              "Evan contemplates how to get across this new piece of play equipment",
+          },
+          {
+            source: "feb_dog_obsession_cagvyc",
+            caption: "Evan's love of dogs has not diminished!",
+          },
+        ],
+      },
+      {
+        heading: "9th February - Day out feeding the ducks",
+        markdownPath: "/content/diary/2008/2008-02-09.md",
+        images: [
+          {
+            source: "feb_sam_rgy9ig",
+            caption: "Sam watches on as Evan plays with his toys",
+          },
+          {
+            source: "feb_baby_toys_chp7tm",
+            caption: "Evan playing nicely with Sam's toys",
+          },
+          {
+            source: "feb_mel_james_eyhv13",
+            caption: "Doesn't James just look like a cool dude!",
+          },
+          {
+            source: "feb_evan_running_bv1ghz",
+            caption: "Mind the slippery patches!",
+          },
+        ],
+      },
+      {
+        heading: "17th February - A visit from Caroline",
+        markdownPath: "/content/diary/2008/2008-02-17.md",
+        images: [
+          {
+            source: "feb_piano_mat_ueqv5j",
+            caption: "Evan making his music",
+          },
+          {
+            source: "feb_head_injury_lu3rzf",
+            caption: "Check out the bandage mummy!!",
+          },
+          {
+            source: "feb_plasticine_picture_rfivch",
+            caption: "Evan playing with his plasticine picture maker",
+          },
+          {
+            source: "feb_cute_face_sye5xj",
+            caption: "Caught taking a picture—cutie!",
+          },
+        ],
+      },
+      {
+        heading: "23rd February - Celebrating another birthday",
+        markdownPath: "/content/diary/2008/2008-02-23.md",
+        images: [
+          {
+            source: "feb_baby_slide_hepyfz",
+            caption: "This was just the baby slide!",
+          },
+          {
+            source: "feb_flying_balls_cetwvp",
+            caption:
+              "Balls placed here would be taken by the air flowing out of the holes...",
+          },
+          {
+            source: "feb_more_balls_jqkcgw",
+            caption: "...So Evan found a way to get lots of balls!",
+          },
+          {
+            source: "feb_party_food_sn99p5",
+            caption: "Why do we all do that with hula hoops as children?",
+          },
+        ],
+      },
+    ],
+  },
+  "2008-03": {
+    period: "March 2008",
+    type: "calendar",
+    calendarEntries: [
+      {
+        heading: "9th March - Our London Adventure",
+        markdownPath: "/content/diary/2008/2008-03-09.md",
+        images: [
+          {
+            source: "mar_train_wpmds6",
+            caption: "Evan's first trip on a train",
+          },
+          {
+            source: "mar_craig_hyxvav",
+            caption: "This is Craig, he's an amazing friend",
+          },
+          { source: "mar_in_london_n3cavw", caption: "London Baby!" },
+          { source: "mar_london_eye_xrb0on", caption: "The London Eye" },
+          { source: "mar_shark_h0xo5c", caption: "Evan loved the sharks!" },
+          {
+            source: "mar_ice-cream_m0p0fd",
+            caption: "Such a nice day for an ice-cream",
+          },
+          { source: "mar_hannah_m4gldr", caption: "Hannah had one too!" },
+          {
+            source: "mar_new_shark_kobubt",
+            caption:
+              "Evan's new shark teddy gets introduced to the racing track—literally!!",
+          },
+        ],
+      },
+    ],
+  },
 };

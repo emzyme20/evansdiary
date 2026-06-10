@@ -10,7 +10,11 @@ function YearPage() {
   const yearData = DIARY_REGISTRY[year!];
 
   const linkedTiles = yearData.items.map((item, index) => ({
-    image: item,
+    image: {
+      ...item,
+      width: 251,
+      quality: 80,
+    },
     location: `/diary/year/${year}/${yearData.mode === "month" ? getMonthName(index) : `week/${index}`}`,
     state: { caption: item.caption },
   }));

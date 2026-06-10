@@ -6,7 +6,13 @@ export function PolaroidImage({ image }: { image: Media }) {
   return (
     <figure className={styles.polaroid}>
       <img
-        src={getImageUrl(image.source, image.width, image.height)}
+        src={getImageUrl(
+          image.source,
+          image.width,
+          image.height,
+          image.fill,
+          image.quality,
+        )}
         alt={image.caption}
         width={image.width}
         className={styles.polaroidImage}
