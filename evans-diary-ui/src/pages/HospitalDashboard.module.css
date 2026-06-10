@@ -12,22 +12,22 @@
   padding: 0;
 }
 
-h1,
-h2,
-h3 {
+.page h1,
+.page h2,
+.page h3 {
   text-align: left;
 }
 
-h1,
-h2 {
+.page h1,
+.page h2 {
   font-weight: 400;
 }
 
-h3 {
+.page h3 {
   font-weight: 300;
 }
 
-p {
+.page p {
   text-align: justify;
   font-size: clamp(0.65rem, 0.5vw + 0.75rem, 1rem);
   margin-top: 0;
@@ -35,6 +35,6 @@ p {
   line-height: 1.6em;
 }
 
-a:hover {
+.page a:hover {
   color: var(--webkit-link-hover);
 }

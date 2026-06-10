@@ -1,10 +1,10 @@
-## Something has gone wrong!
+### Something has gone wrong!
 
 I had a hard night. I was feeling like crap and by the early hours of the morning I was convinced I couldn't breathe. I called the nurse who propped me up in bed and seemed to just leave me there. Something was seriously up with my chest.
 
 Turns out that she hadn't left me there - she had called the intensive care unit! I was suddenly surrounded by three scary looking doctors all having a good prod. I didn't really know where I was going - I was dazed. I was hooked up to an oxygen mask and a load of probes and wheeled off. I was worried. I knew I should be sore after post-op but what happened, where was I going?
 
-## Intensive Care Unit
+### Intensive Care Unit
 
 As we went down a corridor to a set of large double doors I was told this was the ITU - Intensive Care (apparently officially known as Intensive Therapy). The doors opened and the lights hit me, bright white, stark, brilliantly clean, equipment everywhere and I had like five people around me. I attempted to take in a breath and was pretty scared. _"Scary? This is state of the art!"_, said Carmen when I said the unit was scary.
 
@@ -14,13 +14,13 @@ A man called Dr James said that I needed the oxygen to breathe because I couldn'
 
 Dr James said they needed to put in a new kind of line into my wrist - not just a simple canula that they use in A&E. He started poking me with needles - I didn't care. I didn't really mind that kind of pain and I was concentrating on breathing with that mask. But he spent ages, trying two places before giving up. I looked at his watch, it was now 10.25 and I had been on the mask for 15 minutes. Ok not long I thought.
 
-## Visitors to the ITU
+### Visitors to the ITU
 
 At last, something nice! I suddenly saw my mum and my brother Frank! Boy was I surprised to see them! I had no idea they were going to come all the way from Essex. I saw the look on Mum's face - she looked shocked. I didn't know what the mask looked like but it covered most of my face and had straps all around so I can imagine it was nasty. The unit terrified me when I first saw it so combine that mask with all that equipment, drips etc and it must have been a scary sight. I am so sorry that I have had to put all my family through the experience of seeing me like that.
 
 Emma had said she was coming to visit but she wasn't there yet. I asked for some paper and a pen and I wrote down that I didn't want Emma to see me like this; I knew how much it would upset her. However Mum said it would be a really bad idea not to let her in - she wants to see me and it would only make her really worried. I was actually thrilled to see Emma when she arrived a few minutes later. The worst part of this time was the lack of communication. I lay there, Mum held my hand and I didn't know what to do. She'd chat a bit to the nurses and occasionally I wrote something down but I remember how awful it must have been to be my visitor that day. (Apparently not as bad as the next days...)
 
-## Putting in a Central Line
+### Putting in a Central Line
 
 A central line is a tube in the neck or clavicle area! When they told me they needed to stick a tube in my neck I really worried. Needles in the arms, hands, wrists I can handle but in my neck? Are you crazy?? I was right to worry - it was fucking painful and No, I will not excuse my language.
 
@@ -28,6 +28,6 @@ One of the doctors who had been with me on the day I was brought down to ITU was
 
 Dr James failed a further five times. By this time I was just crying. This was worse than I had feared it would be. This is intensive care, why are these people so fucking incompetent? Dr James wanted to start again on the other side, somebody else kept suggesting the clavicle which is just underneath the shoulder blade - this sounded like the least painful option to me. And guess what? That little gem of a doctor managed it in just three attempts! They put a large sticker thing on my neck to cover up their botch-up. No wonder they send relatives and visitors into a waiting room when a patient is being worked on as they would probably make the situation worse by seeing their loved ones going through procedures like this. This was the second of the really nasty ITU incidents.
 
-## The CT Scan
+### The CT Scan
 
 Over the next hour or two I had various doctors come around listening to my chest, testing stuff. They needed to find out what went wrong after my operation. I was told that I was going to have a CT Scan which is an x-ray technology that they were going to use to look at my chest. They could not transport me to the CT Lab with the oxygen mask as it was quite a journey and therefore they were going to have to intubate me (put a tube down my throat). _Oh my god!_ I quickly scrabbled for my paper _"Do you have to put a tube down my throat while I am awake??"_, _"No"_, he reassured, _"So I'll be asleep first?"_ I confirmed. The idea of a tube sounded nasty but the idea of being put under general anaesthetic again sounded like heaven! Respite at last...

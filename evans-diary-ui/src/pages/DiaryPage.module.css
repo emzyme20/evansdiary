@@ -9,12 +9,9 @@
 }
 
 .diaryEntry h1,
-.diaryEntry h2 {
-  font-weight: 400;
-}
-
+.diaryEntry h2,
 .diaryEntry h3 {
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .diaryEntry p {

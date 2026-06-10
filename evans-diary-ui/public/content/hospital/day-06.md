@@ -1,22 +1,22 @@
-## Out of CT
+### Out of CT
 
 I awoke from CT _(pah!)_ to find a very uncomfortable tube down my throat, my lips were sore and numb, and of course I couldn't speak. No change there then. Some nurses were around. _"Hi Caroline, it's Tuesday"_. What the fuck?? Where the hell did the weekend just go? I went down to CT on Saturday!!! Man if you've never lost time like that, let me tell you what a head-screw it is!
 
 I had either Emma or Mum with me, I don't remember which. I know I spent a lot of time with Emma that afternoon. Apparently my condition worsened and I had been sedated for two days. The strange thing though is that Emma told me some of the things that she had said to me and I could remember that. Herve had been up to visit me on Monday and I have absolutely no recollection of seeing him. It was truly weird.
 
-## Communication Breakdown
+### Communication Breakdown
 
 I wanted to try and write stuff to ask questions and I was given the clipboard but I was dazed as hell. I could hardly see the paper. A few days later the nurse Alex showed me the scrawls I had attempted - they were just that, scrawls. She came to the rescue though, they had an alphabet board which I could use my pointing to letters. We established a routine where I would point to each letter and then pass my hand along the top of the board to signify a new word. _(That in itself was a really hard thing to communicate. Emma was really rubbish at guessing words and in the end I managed to communicate the end of word plan to her by scrawling on paper with a felt tip pen!)_ The problem though was that my eyesight and coordination were whack, half the time I couldn't see the letter I wanted and the other time I was pointing to something completely different. Add to that the agony of trying to spell when drugged up to the eyeballs and you can imagine the frustration!
 
 It was hard for Emma too. She was concentrating on what I was trying to say that she'd forget to repeat the letters out to me. This meant that when I got it wrong she would have the word wrong and we had to keep starting again. Emma kept trying to guess what I was trying to say and then not looking at what I was trying to point at. It was exhausting. _At one point I was pointing, Emma was calling the letter and my mum was writing the letter down onto paper because Emma was having a hard time working out the letter I was pointing to, Memorising the letters in the current word and then also remembering the sentence we were constructing. It was taking so long to communicate that one time Emma actually forgot some of the words and made me start from scratch again!_
 
-## Op Shock
+### Op Shock
 
 When Emma had come in to visit me she was telling me of the mix-up with consent forms for my operation. I had put Emma as my next of kin even though I know that technically it is my mum. The problem is that I didn't know my mum would be coming up here so I thought it was just easier to put Emma's name down. But apparently this caused a problem. Mum was staying with Emma and they had issues with consent and then also with relaying information over the phone afterwards. Emma was angry.
 
 Now when Emma was telling me all this I was still very dazed and tired and I thought she was just talking about the op I had had on Thursday when I came in. But apparently not! On Monday after my condition had continued to worsen for two days they suspected that an injury had occurred as a result of the first operation and wanted to operate again to double check and see if they could find anything wrong. This operation was a Laparotomy and they had opened up my stomach from top to bottom! Man!! This was a real shock, two major operations in just a few days? What was my recovery going to be like? I remember the pain of my appendisectomy ten years earlier which was a two inch cut and now I had an 8-inch one and a 7 inch one! The worst thing about it is that they found nothing wrong and could still offer me no explanation as to why I had developed the breathing problem in the first place.
 
-## Extubation
+### Extubation
 
 The tube was really uncomfortable and my lips were so sore. The only brief respite that I had were cotton swabs. These little marshmallow-looking sticks that were dipped in water and wiped around my lips. One of them was going numb. I know the tube was my breathing apparatus and that I had to have it for the CT scan but how long did I need it for? The only thing that scared me was that I'd have to go back to that oxygen mask. Hmm, red raw lips or suffocating gas? What a choice.
 

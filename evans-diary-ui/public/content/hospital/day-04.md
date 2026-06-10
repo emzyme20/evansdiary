@@ -1,6 +1,6 @@
 _huh?_
 
-## (Written by Emma)
+### (Written by Emma)
 
 Last night we left Caroline just before she was going off to the CT Lab. I did return later that evening (twice) with my mum. I am so glad I had my mum with me as none of us were still expecting Caroline to be intubated. The Doctors hadn't told us that she would likely remain intubated until her condition stabilised.
 

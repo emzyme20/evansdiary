@@ -1,10 +1,10 @@
-## A Bloody Awakening
+### A Bloody Awakening
 
 After finally managing to get back off to sleep again I was rudely awakened by the nurse at only 6am, she was giving me blood! I was to be given two units of blood. Apparently the main reason that my sats weren't quite tip-top was that my haemoglobin levels were low and that was restricting the oxygen I could take in.
 
 The blood needed around 2 hours per bag and it was a thick ol' tube so I was a bit restricted. I sat up so I could read and I must have dislodged the line. The nurse came over and pointed out that my line had twisted and the flow had stopped. She tried to kick it off again but it just wouldn't start so she told me she'd have to call the doctor to insert a new one.
 
-## Lines of Pain!
+### Lines of Pain!
 
 In the ITU I had loads of lines, they kept flipping around on my wrists. With the exception of the neck one, they hadn't been too bad. The doctor came to visit me and decided to try the back of my right hand where I had a large black scab from an earlier line but a puffy looking vein. Backs of the hands hurt so this was painful. She just couldn't get it. She made four bloody attempts before giving up and calling for an anaesthetist.
 
@@ -14,7 +14,7 @@ The anaesthetist prodded around my arms for ages before deciding to try right in
 
 He tried the other forearm and got it immediately. Phew! It was sore but I just put up with it and pretty much stayed put for the next few hours. That earlier line attempt would develop into a huge black bruise over the next few days.
 
-## Get This Mask Off Me!
+### Get This Mask Off Me!
 
 I had now been back on the Oxygen for 24 hours and I was getting really frustrated. They had made no attempt to lower the oxygen level or to measure me without it and I hadn't seen the doctor. I spoke to the nurse about it and she just said _"Oh it's good for you, we've had instructions that you are supposed to have it at all times"_.
 
@@ -24,15 +24,15 @@ They checked me a couple of hours later and it was 96% which I was very happy wi
 
 Later in the evening it dropped to 93% (big deal) and everybody including Emma insisted I put it back on. This thing was starting to drive me crazy and my frustration was starting to come through.
 
-## Mask On, Socks On, Jeez!
+### Mask On, Socks On, Jeez!
 
 To add to my frustration another nurse came over and insisted that I wear bed socks. I had already had them removed in ITU two days ago so why on earth would I need them now when I spent more time sitting in the chair then in the bed? _"All post-op patients need them"_, she lied. I didn't see any other patients at all in the ward who had them! This day was really starting to grate...
 
-## Losing the Frame
+### Losing the Frame
 
 Until now any movement had been with the help of the zimmer frame for support but I noticed that I didn't seem to be leaning quite so heavily on it. After lunch I went to the toilet and decided to try without it - I just carried my bag with me and walked normally. What was nice was that I came back to my bed to find my mum and both my brothers waiting for me so mum was thrilled to see me walking around without support.
 
-## My Brothers Come to Visit
+### My Brothers Come to Visit
 
 It was nice to see my brothers. Those two can always be relied upon to make plenty of jokes :) I must admit Frank did actually manage to come up with a witty one: _"That's what you call taking the piss!"_, in response to seeing me walking around with my wee bag in my hand!
 
@@ -42,7 +42,7 @@ Emma had told me that her mum was coming over to have Evan for the day so she co
 
 Mum stayed until Emma arrived and then Emma said she was staying until kicking out time 8pm which was really nice. We had a loooooong chat about our plans for the future and started talking house improvements! It was really nice.
 
-## Hammer Night of Horrors
+### Hammer Night of Horrors
 
 After Emma left I read my magazines and watched lots of TV until quite late - I was not looking forward to the night time again. This was the worst one for noise! I managed to sleep for 2 hours and woke up at 2.30 to the sound of the girl in the bed next to me groaning. She promptly puked her guts up, poor love!
 

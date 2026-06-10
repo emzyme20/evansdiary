@@ -1,6 +1,6 @@
 _hello??_
 
-## (Written by Emma)
+### (Written by Emma)
 
 This was probably the worst day of all for me. I had felt in control since Thursday and today Caroline's mum had arrived because she was ever so worried and she wanted to be able to visit Caroline everyday. I wasn't able to go to the hospital in the day because you are restricted to two visitors and today Caroline's mum and her brother Herve went. I spent the day with Evan at home. We made a collage of Caroline's pictures so that we could see her all the time and Evan actually liked to look at them whilst I fed him.
 
