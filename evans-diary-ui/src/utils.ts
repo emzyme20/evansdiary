@@ -36,3 +36,37 @@ export const getMonthNumber = (monthName: string) => {
 export const getDiaryHeading = (year: number, imageCaption: string) => {
   return `Year ${year - 2004} - ${imageCaption} (${year})`;
 };
+
+export const getEntryLoadMessage = (entryName: string) =>
+  `_${entryName} could not be loaded._`;
+
+export const fetchMarkdown = async (
+  path: string,
+  entryName: string,
+): Promise<string> => {
+  try {
+    const response = await fetch(path);
+
+    if (!response.ok) {
+      return getEntryLoadMessage(entryName);
+    }
+
+    const contentType =
+      response.headers.get("content-type")?.toLowerCase() ?? "";
+    const text = await response.text();
+
+    // Some static servers return index.html with a 200 status for missing files.
+    const isHtmlFallback =
+      contentType.includes("text/html") ||
+      /^\s*<!doctype html/i.test(text) ||
+      /^\s*<html[\s>]/i.test(text);
+
+    if (isHtmlFallback) {
+      return getEntryLoadMessage(entryName);
+    }
+
+    return text;
+  } catch {
+    return getEntryLoadMessage(entryName);
+  }
+};

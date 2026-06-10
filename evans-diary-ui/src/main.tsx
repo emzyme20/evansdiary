@@ -9,6 +9,8 @@ import DiaryPage from "./pages/DiaryPage.tsx";
 import DiaryDashboard from "./pages/DiaryDashboard.tsx";
 import FamilyPage from "./pages/FamilyPage.tsx";
 import YearPage from "./pages/YearPage.tsx";
+import HospitalDashboard from "./pages/HospitalDashboard.tsx";
+import HospitalPage from "./pages/HospitalPage.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -20,6 +22,10 @@ createRoot(document.getElementById("root")!).render(
 
           <Route path="/family" element={<FamilyPage />} />
           <Route path="/athletics" element={<AthleticsPage />} />
+
+          {/* Hospital Sub-routes */}
+          <Route path="/hospital" element={<HospitalDashboard />} />
+          <Route path="/hospital/day/:day" element={<HospitalPage />} />
 
           {/* Diary Sub-routes */}
           <Route path="/diary" element={<DiaryDashboard />} />

@@ -1,5 +1,11 @@
 import styles from "./DiaryPage.module.css";
-import { getDiaryHeading, getImageUrl, getMonthNumber } from "../utils";
+import {
+  getDiaryHeading,
+  getImageUrl,
+  getMonthNumber,
+  fetchMarkdown,
+  getEntryLoadMessage,
+} from "../utils";
 import { useLocation, useParams } from "react-router-dom";
 import {
   DIARY_CONTENT_REGISTRY,
@@ -55,21 +61,9 @@ function DiaryPage() {
   // Look up the year data from the registry based on the year parameter
   const yearData = year ? DIARY_REGISTRY[year] : undefined;
 
-  console.log("DiaryPage render:", { year, week, month, yearData });
-
-  console.log("Constructed key for content lookup:", key);
-
   // Look up the specific meta asset paths instantly
   const diaryEntry = key ? DIARY_CONTENT_REGISTRY[key] : null;
   const loading = Boolean(diaryEntry && key && loadedKey !== key);
-  const isCalendarEntry = diaryEntry?.type === "calendar";
-
-  console.log("Diary entry lookup:", {
-    key,
-    diaryEntry,
-    loading,
-    isCalendarEntry,
-  });
 
   const imagesPerReel = 4;
   const imageReelCount =
@@ -181,41 +175,10 @@ function DiaryPage() {
     </main>
   );
 
-  const getEntryLoadMessage = (entryName: string) =>
-    `_${entryName} could not be loaded._`;
-
   useEffect(() => {
     if (!diaryEntry || !key) return;
 
     let cancelled = false;
-
-    const fetchMarkdown = async (path: string, entryName: string) => {
-      try {
-        const response = await fetch(path);
-
-        if (!response.ok) {
-          return getEntryLoadMessage(entryName);
-        }
-
-        const contentType =
-          response.headers.get("content-type")?.toLowerCase() ?? "";
-        const text = await response.text();
-
-        // Some static servers return index.html with a 200 status for missing files.
-        const isHtmlFallback =
-          contentType.includes("text/html") ||
-          /^\s*<!doctype html/i.test(text) ||
-          /^\s*<html[\s>]/i.test(text);
-
-        if (isHtmlFallback) {
-          return getEntryLoadMessage(entryName);
-        }
-
-        return text;
-      } catch {
-        return getEntryLoadMessage(entryName);
-      }
-    };
 
     const loadContent = async () => {
       try {
