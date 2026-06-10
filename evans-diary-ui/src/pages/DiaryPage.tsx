@@ -76,8 +76,14 @@ function DiaryPage() {
       ? diaryEntry.markdownPaths.length === 2
       : false;
 
-  const renderImageReel = (images: Media[]) =>
-    images.length > 0 ? (
+  const renderImageReel = (
+    images: Media[],
+    position?: "top" | "bottom",
+    layout?: "top" | "bottom",
+    totalImages?: number,
+  ) =>
+    images.length > 0 &&
+    (layout === undefined || (layout === position && totalImages === 4)) ? (
       <ImageReel
         images={images.map((image) => ({
           image,
@@ -148,8 +154,15 @@ function DiaryPage() {
       <section className={styles.diaryEntry} aria-label="Diary entry content">
         <h1>{getDiaryHeading(Number(year), caption)}</h1>
         {yearData?.mode === "week" ? <h2>{entry.period}</h2> : null}
-        {imageReelCount > 1 || entry.markdownPaths.length === 1
-          ? renderImageReel(entry.images.slice(0, imagesPerReel))
+        {imageReelCount > 1 ||
+        entry.markdownPaths.length === 1 ||
+        entry.options?.imageReelLayout === "top"
+          ? renderImageReel(
+              entry.images.slice(0, imagesPerReel),
+              "top",
+              entry.options?.imageReelLayout,
+              entry.images.length,
+            )
           : null}
         <div>
           {showPerson ? <h3>Emma's Entry</h3> : null}
@@ -158,7 +171,12 @@ function DiaryPage() {
 
         {entry.markdownPaths.length === 2 && imageReelCount === 1 && (
           <div>
-            {renderImageReel(entry.images.slice(0, imagesPerReel))}
+            {renderImageReel(
+              entry.images.slice(0, imagesPerReel),
+              undefined,
+              entry.options?.imageReelLayout,
+              entry.images.length,
+            )}
             <div>
               {showPerson ? <h3>Caroline's Entry</h3> : null}
               {renderMarkdown(contentB)}
@@ -166,14 +184,25 @@ function DiaryPage() {
           </div>
         )}
 
-        {imageReelCount > 1
+        {imageReelCount > 1 || entry.options?.imageReelLayout === "bottom"
           ? renderImageReel(
               entry.images.slice(imagesPerReel, imagesPerReel * 2),
+              "bottom",
+              entry.options?.imageReelLayout,
+              entry.images.length,
             )
           : null}
       </section>
     </main>
   );
+
+  if (diaryEntry && !isCalendarDiaryEntry(diaryEntry)) {
+    console.log(
+      "Standard diary entry data:",
+      diaryEntry.options,
+      diaryEntry.images.length,
+    );
+  }
 
   useEffect(() => {
     if (!diaryEntry || !key) return;

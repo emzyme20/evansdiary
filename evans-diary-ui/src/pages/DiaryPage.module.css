@@ -22,6 +22,11 @@
   line-height: 1.6em;
 }
 
+.diaryEntry p img {
+  display: block;
+  margin: 0 auto;
+}
+
 .video {
   margin: 1.25rem 0;
 }

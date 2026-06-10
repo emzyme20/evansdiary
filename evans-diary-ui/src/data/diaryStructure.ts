@@ -22,6 +22,7 @@ export interface StandardDiaryEntry {
   markdownPaths: string[]; // Array of paths to markdown files for this entry, e.g., ["/assets/diary-content/2026/month-01-a.md", "/assets/diary-content/2005-00-a.md"]
   images: Media[]; // Array of up to 12 image objects
   type?: "standard";
+  options?: { imageReelLayout?: "top" | "bottom" }; // Optional layout override for single group of image reels, more than 4 images will have no effect.
 }
 
 export interface CalendarDiaryEntry {
@@ -890,6 +891,9 @@ export const DIARY_CONTENT_REGISTRY: Record<string, DiaryEntry> = {
       "/content/diary/2005/2005-23-a.md",
       "/content/diary/2005/2005-23-b.md",
     ],
+    options: {
+      imageReelLayout: "top",
+    },
     images: [
       {
         source: "w23_cheeky_bottom_q56d1e",
