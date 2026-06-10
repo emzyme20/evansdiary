@@ -6,6 +6,7 @@ import {
   fetchMarkdown,
   getEntryLoadMessage,
 } from "../utils";
+import { DocumentViewer } from "../components/DocumentPopout";
 import { useLocation, useParams } from "react-router-dom";
 import {
   DIARY_CONTENT_REGISTRY,
@@ -192,17 +193,21 @@ function DiaryPage() {
               entry.images.length,
             )
           : null}
+
+        {entry.documents && entry.documents.length > 0 && (
+          <div>
+            {entry.documents.map((document, index) => (
+              <DocumentViewer
+                key={`${key}-document-${index}`}
+                buttonText={document.buttonText}
+                documentUrl={document.documentUrl}
+              />
+            ))}
+          </div>
+        )}
       </section>
     </main>
   );
-
-  if (diaryEntry && !isCalendarDiaryEntry(diaryEntry)) {
-    console.log(
-      "Standard diary entry data:",
-      diaryEntry.options,
-      diaryEntry.images.length,
-    );
-  }
 
   useEffect(() => {
     if (!diaryEntry || !key) return;

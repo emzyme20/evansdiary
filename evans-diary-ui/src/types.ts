@@ -73,6 +73,10 @@ export interface ExternalMedia {
 // The external video link contains an image thumbnail, URL, and title.
 export type VideoMedia = EmbeddedMedia | ExternalMedia;
 
+export interface DocumentReference {
+  buttonText: string;
+  documentUrl: string;
+}
 export interface YearPageParams {
   year: string;
   mode: "week" | "month";

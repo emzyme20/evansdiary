@@ -1,4 +1,4 @@
-import type { Media, VideoMedia } from "../types";
+import type { Media, VideoMedia, DocumentReference } from "../types";
 
 /*
  * Diary Structure and Dynamic Content Types
@@ -21,8 +21,11 @@ export interface StandardDiaryEntry {
   period: string; // e.g., "26th December 2004 - 1st January 2005"
   markdownPaths: string[]; // Array of paths to markdown files for this entry, e.g., ["/assets/diary-content/2026/month-01-a.md", "/assets/diary-content/2005-00-a.md"]
   images: Media[]; // Array of up to 12 image objects
+  documents?: DocumentReference[]; // Any associated documents to open in a popout viewer
   type?: "standard";
-  options?: { imageReelLayout?: "top" | "bottom" }; // Optional layout override for single group of image reels, more than 4 images will have no effect.
+  options?: {
+    imageReelLayout?: "top" | "bottom"; // Optional layout override for single group of image reels, more than 4 images will have no effect.
+  };
 }
 
 export interface CalendarDiaryEntry {
@@ -891,9 +894,16 @@ export const DIARY_CONTENT_REGISTRY: Record<string, DiaryEntry> = {
       "/content/diary/2005/2005-23-a.md",
       "/content/diary/2005/2005-23-b.md",
     ],
-    options: {
-      imageReelLayout: "top",
-    },
+    documents: [
+      {
+        buttonText: "Evan's first letter to his Mummy",
+        documentUrl: "/content/documents/evans_first_letter.pdf",
+      },
+      {
+        buttonText: "Evan's second letter to his Mummy",
+        documentUrl: "/content/documents/evans_second_letter.pdf",
+      },
+    ],
     images: [
       {
         source: "w23_cheeky_bottom_q56d1e",
@@ -910,6 +920,22 @@ export const DIARY_CONTENT_REGISTRY: Record<string, DiaryEntry> = {
       {
         source: "w23_computer_uqnsjh",
         caption: "Quiet please, I'm concentrating!",
+      },
+      {
+        source: "w23_esther_c8pkge",
+        caption: "Esther minus her son James who couldn't make it",
+      },
+      {
+        source: "w23_rachel_megan_cake_vmtcug",
+        caption: "Rachel and Megan with the infamous Cherry and Almond cake",
+      },
+      {
+        source: "w23_nathalie_tumwga",
+        caption: "Nathalie",
+      },
+      {
+        source: "w23_alex_aryce4",
+        caption: "Nathalie's son Alex",
       },
     ],
   },
