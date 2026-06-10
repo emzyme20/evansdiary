@@ -1,4 +1,13 @@
-import type { YearPageParams } from "./types";
+import type { Media } from "../types";
+
+export interface YearPageParams {
+  year: string;
+  mode: "week" | "month";
+  title: string;
+  subtitle: string;
+  content: string;
+  image: Media;
+}
 
 export const yearTiles: YearPageParams[] = [
   {

@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { familyTiles } from "../familyTiles";
+import { familyTiles } from "../data/familyTiles";
 import { getImageUrl } from "../utils";
 import styles from "./FamilyPage.module.css";
 
@@ -17,19 +17,16 @@ function FamilyPage() {
         <ul className={styles.grid}>
           {familyTiles.map((tile) => {
             return (
-              <li
-                key={`family-tile-${tile.image.source}`}
-                className={styles.item}
-              >
+              <li key={`family-tile-${tile.source}`} className={styles.item}>
                 <figure className={styles.polaroid}>
                   <img
-                    src={getImageUrl(tile.image.source, tile.image.width)}
-                    alt={tile.image.caption}
-                    width={tile.image.width}
+                    src={getImageUrl(tile.source, tile.width)}
+                    alt={tile.caption}
+                    width={tile.width}
                     className={styles.image}
                   />
                   <figcaption className={styles.caption}>
-                    {tile.image.caption}
+                    {tile.caption}
                   </figcaption>
                 </figure>
               </li>

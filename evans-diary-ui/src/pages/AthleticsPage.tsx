@@ -6,8 +6,7 @@ import {
   Image,
   type LucideIcon,
 } from "lucide-react";
-import { athleticsTimeline } from "../timelineEntries";
-import type { TimelineEntry } from "../types";
+import { athleticsTimeline, type TimelineEntry } from "../data/timelineEntries";
 import { getImageUrl } from "../utils";
 import styles from "./AthleticsPage.module.css";
 

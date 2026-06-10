@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { homeTiles } from "./homeTiles";
-import type { HomeSchema } from "./types";
+import { homeTiles, type HomeSchema } from "../data/homeTiles";
 import styles from "./Home.module.css";
 
 const homeContentUrl =
