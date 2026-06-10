@@ -977,10 +977,7 @@ export const DIARY_CONTENT_REGISTRY: Record<string, DiaryEntry> = {
   },
   "2005-27": {
     period: "26th June - 2nd July 2005",
-    markdownPaths: [
-      "/content/diary/2005/2005-27-a.md",
-      "/content/diary/2005/2005-27-b.md",
-    ],
+    markdownPaths: ["/content/diary/2005/2005-27-a.md"],
     images: [
       {
         source: "w27_carolines_new_hair_ojubpp",
@@ -1003,10 +1000,7 @@ export const DIARY_CONTENT_REGISTRY: Record<string, DiaryEntry> = {
   },
   "2005-28": {
     period: "3rd - 9th July 2005",
-    markdownPaths: [
-      "/content/diary/2005/2005-28-a.md",
-      "/content/diary/2005/2005-28-b.md",
-    ],
+    markdownPaths: ["/content/diary/2005/2005-28-a.md"],
     images: [
       {
         source: "w28_hair_style_l17b0p",
