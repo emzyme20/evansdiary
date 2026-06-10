@@ -27,34 +27,36 @@ TODO:
 
 web.config that needs to be put in IIS:
 
+```
 <?xml version="1.0" encoding="utf-8"?>
 <configuration>
   <system.webServer>
+    <staticContent>
+      <remove fileExtension=".webp" />
+      <mimeMap fileExtension=".webp" mimeType="image/webp" />
+      <remove fileExtension=".json" />
+      <mimeMap fileExtension=".json" mimeType="application/json" />
+      <remove fileExtension=".md" />
+      <mimeMap fileExtension=".md" mimeType="text/markdown" />
+    </staticContent>
+
     <rewrite>
       <rules>
-        <rule name="React SPA Fallback" stopProcessing="true">
+        <rule name="SPA Fallback" stopProcessing="true">
           <match url=".*" />
           <conditions logicalGrouping="MatchAll">
+            <add input="{REQUEST_URI}" pattern="^/(assets|content|images)/" negate="true" />
+            <add input="{REQUEST_URI}" pattern="^/(favicon\.ico|icons\.svg)$" negate="true" />
             <add input="{REQUEST_FILENAME}" matchType="IsFile" negate="true" />
             <add input="{REQUEST_FILENAME}" matchType="IsDirectory" negate="true" />
           </conditions>
-          <action type="Rewrite" url="index.html" />
+          <action type="Rewrite" url="/index.html" />
         </rule>
       </rules>
     </rewrite>
-
-    <staticContent>
-      <mimeMap fileExtension=".webp" mimeType="image/webp" />
-    </staticContent>
-
-    <httpProtocol>
-      <customHeaders>
-        <add name="X-Content-Type-Options" value="nosniff" />
-      </customHeaders>
-    </httpProtocol>
-
-</system.webServer>
+  </system.webServer>
 </configuration>
+```
 
 Recommended deployment flow:
 

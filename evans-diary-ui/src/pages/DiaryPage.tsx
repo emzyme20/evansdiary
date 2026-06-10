@@ -106,8 +106,7 @@ function DiaryPage() {
               <iframe
                 src={video.url}
                 title={video.title}
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; fullscreen"
               ></iframe>
             )}
           </figure>

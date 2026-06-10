@@ -247,8 +247,7 @@ function AthleticsPage() {
                           <iframe
                             src={entry.video.source}
                             title={entry.video.caption}
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowFullScreen
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; fullscreen"
                           ></iframe>
                           <figcaption className={styles.polaroidCaption}>
                             {entry.video.caption}
