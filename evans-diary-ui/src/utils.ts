@@ -22,6 +22,17 @@ export const getImageUrl = (
   return `https://res.cloudinary.com/dqg9nkccw/image/upload/${fill ? `c_${fill}` : "c_fill"}${height ? `,h_${height}` : ""}${quality ? `,q_${quality}` : ",q_80"}${width ? `,w_${width}` : ",w_251"}/${path}${addExtension}`;
 };
 
+// Diary pages have specific heigh and width requirements.
+// A transformation has been saved in Cloudinary that can support serving images
+// with the correct dimensions, fill and quality.
+// https://res.cloudinary.com/dqg9nkccw/image/upload/t_diary-image-reel/{imageId}
+export const getTransformationImageUrl = (
+  transformName: string,
+  imageId: string,
+) => {
+  return `https://res.cloudinary.com/dqg9nkccw/image/upload/t_${transformName}/${imageId}`;
+};
+
 export const getMonthName = (monthNumber: number) => {
   console.log("getMonthName called with monthNumber:", monthNumber);
   const date = new Date(2000, monthNumber, 1);

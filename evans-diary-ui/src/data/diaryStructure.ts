@@ -23,9 +23,6 @@ export interface StandardDiaryEntry {
   images: Media[]; // Array of up to 12 image objects
   documents?: DocumentReference[]; // Any associated documents to open in a popout viewer
   type?: "standard";
-  options?: {
-    imageReelLayout?: "top" | "bottom"; // Optional layout override for single group of image reels, more than 4 images will have no effect.
-  };
 }
 
 export interface CalendarDiaryEntry {

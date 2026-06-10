@@ -1,6 +1,6 @@
 import styles from "./ImageReel.module.css";
 import type { Media } from "../types";
-import { getImageUrl } from "../utils";
+import { getTransformationImageUrl } from "../utils";
 
 interface ImageReelData {
   image: Media;
@@ -23,7 +23,10 @@ export function ImageReel<T extends ImageReelData>({
           >
             <img
               className={styles.photo}
-              src={getImageUrl(image.image.source, 285, 214)}
+              src={getTransformationImageUrl(
+                "diary-image-reel",
+                image.image.source,
+              )}
               alt={image.image.caption}
             />
             <aside className={styles.caption}>

@@ -77,14 +77,8 @@ function DiaryPage() {
       ? diaryEntry.markdownPaths.length === 2
       : false;
 
-  const renderImageReel = (
-    images: Media[],
-    position?: "top" | "bottom",
-    layout?: "top" | "bottom",
-    totalImages?: number,
-  ) =>
-    images.length > 0 &&
-    (layout === undefined || (layout === position && totalImages === 4)) ? (
+  const renderImageReel = (images: Media[]) =>
+    images.length > 0 ? (
       <ImageReel
         images={images.map((image) => ({
           image,
@@ -155,29 +149,19 @@ function DiaryPage() {
       <section className={styles.diaryEntry} aria-label="Diary entry content">
         <h1>{getDiaryHeading(Number(year), caption)}</h1>
         {yearData?.mode === "week" ? <h2>{entry.period}</h2> : null}
-        {imageReelCount > 1 ||
-        entry.markdownPaths.length === 1 ||
-        entry.options?.imageReelLayout === "top"
-          ? renderImageReel(
-              entry.images.slice(0, imagesPerReel),
-              "top",
-              entry.options?.imageReelLayout,
-              entry.images.length,
-            )
+        {imageReelCount > 1 || entry.markdownPaths.length === 1
+          ? renderImageReel(entry.images.slice(0, imagesPerReel))
           : null}
         <div>
           {showPerson ? <h3>Emma's Entry</h3> : null}
           {renderMarkdown(contentA)}
         </div>
 
-        {entry.markdownPaths.length === 2 && imageReelCount === 1 && (
+        {entry.markdownPaths.length === 2 && (
           <div>
-            {renderImageReel(
-              entry.images.slice(0, imagesPerReel),
-              undefined,
-              entry.options?.imageReelLayout,
-              entry.images.length,
-            )}
+            {imageReelCount === 1
+              ? renderImageReel(entry.images.slice(0, imagesPerReel))
+              : null}
             <div>
               {showPerson ? <h3>Caroline's Entry</h3> : null}
               {renderMarkdown(contentB)}
@@ -185,17 +169,8 @@ function DiaryPage() {
           </div>
         )}
 
-        {imageReelCount > 1 || entry.options?.imageReelLayout === "bottom"
-          ? renderImageReel(
-              entry.images.slice(imagesPerReel, imagesPerReel * 2),
-              "bottom",
-              entry.options?.imageReelLayout,
-              entry.images.length,
-            )
-          : null}
-
         {entry.documents && entry.documents.length > 0 && (
-          <div>
+          <div className={styles.documents}>
             {entry.documents.map((document, index) => (
               <DocumentViewer
                 key={`${key}-document-${index}`}
@@ -205,6 +180,12 @@ function DiaryPage() {
             ))}
           </div>
         )}
+
+        {imageReelCount > 1
+          ? renderImageReel(
+              entry.images.slice(imagesPerReel, imagesPerReel * 2),
+            )
+          : null}
       </section>
     </main>
   );
