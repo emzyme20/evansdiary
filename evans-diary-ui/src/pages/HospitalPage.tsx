@@ -42,7 +42,6 @@ function HospitalPage() {
       try {
         const text = await fetchMarkdown(key, "Hospital diary entry");
 
-        console.log("Fetched content for key:", { key, text });
         const safeText = text || getEntryLoadMessage("Hospital diary entry");
 
         if (cancelled) return;

@@ -34,7 +34,6 @@ export const getTransformationImageUrl = (
 };
 
 export const getMonthName = (monthNumber: number) => {
-  console.log("getMonthName called with monthNumber:", monthNumber);
   const date = new Date(2000, monthNumber, 1);
   return date.toLocaleString("en-GB", { month: "long" }).toLocaleLowerCase();
 };
