@@ -1,0 +1,25 @@
+.reel {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.reelItem {
+  width: 25%;
+  box-sizing: border-box;
+}
+
+.photo {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.caption {
+  padding: 1em 0.5em;
+  font-size: 80%;
+  text-align: center;
+  color: var(--text);
+  display: block;
+}

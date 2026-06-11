@@ -1,1 +1,0 @@
-﻿var ed = window.ed || {};

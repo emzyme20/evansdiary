@@ -1,0 +1,54 @@
+.page {
+  padding: clamp(1.25rem, 2vw + 1rem, 2.5rem);
+  background: transparent;
+}
+
+.diaryEntry h2,
+.diaryEntry h3 {
+  text-align: left;
+}
+
+.diaryEntry h1,
+.diaryEntry h2,
+.diaryEntry h3 {
+  font-weight: 400;
+  color: var(--text-h);
+}
+
+.diaryEntry h3 {
+  font-style: italic;
+}
+
+.diaryEntry p {
+  text-align: justify;
+  font-size: clamp(0.65rem, 0.5vw + 0.75rem, 1rem);
+  margin-top: 0;
+  margin-bottom: 1rem;
+  line-height: 1.6em;
+}
+
+.pageNav {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.navLink {
+  display: inline-block;
+  border: 1px solid var(--color-border, #4f4f4f);
+  border-radius: 999px;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: var(--color-text, #222);
+  font-weight: 600;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.navLink:hover,
+.navLink:focus-visible {
+  background-color: #1f2937;
+  color: #fff;
+}

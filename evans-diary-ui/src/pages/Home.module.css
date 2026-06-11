@@ -1,0 +1,260 @@
+body {
+  font-family: var(--sans);
+}
+
+.homePage {
+  display: grid;
+  grid-template-rows: auto auto;
+}
+
+.heroSection {
+  position: relative;
+  width: 100%;
+  min-height: 52vh;
+  overflow: hidden;
+  border-bottom: 1px solid var(--border);
+}
+
+.heroTrack {
+  position: absolute;
+  inset: 0;
+}
+
+.heroImage {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 900ms ease;
+}
+
+.heroImage.active {
+  opacity: 1;
+}
+
+.heroCaptionWrap {
+  position: relative;
+  z-index: 2;
+  min-height: 52vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 32px;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.7) 0%,
+    rgba(0, 0, 0, 0.06) 62%
+  );
+}
+
+.pageTitle {
+  margin: 0;
+  color: #ffffff;
+  font-size: clamp(2rem, 3.6vw, 3rem);
+  letter-spacing: 0.02em;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
+}
+
+.heroCaption {
+  color: #f0f4f8;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px 0;
+}
+
+.carouselNav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.carouselNavButton {
+  width: 36px;
+  height: 10px;
+  border: none;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.45);
+  cursor: pointer;
+  transition:
+    background-color 180ms ease,
+    transform 180ms ease;
+}
+
+.carouselNavButton:hover {
+  background: rgba(255, 255, 255, 0.75);
+  transform: translateY(-1px);
+}
+
+.carouselNavButton:focus-visible {
+  outline: 2px solid #ffffff;
+  outline-offset: 2px;
+}
+
+.carouselNavButton.active {
+  background: #ffffff;
+}
+
+.tilesSection {
+  padding: 24px;
+  background: linear-gradient(135deg, #f8fbff 0%, #fefaf3 100%);
+}
+
+.tilesSection img {
+  width: 100%;
+  max-width: 110%;
+  display: block;
+  -webkit-transition: all 0.25s ease-in;
+  -moz-transition: all 0.25s ease-in;
+  -o-transition: all 0.25s ease-in;
+  transition: all 0.25s ease-in;
+  height: auto;
+}
+
+.tilesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.tile {
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+  height: auto;
+}
+
+.tileOverlay {
+  position: absolute;
+  inset: 0; /* replaces top/left/width/height */
+  left: -1px; /* Rendering quirk found that causes a subpixel rounding issue when using fractional grid tracks */
+  width: calc(
+    100% + 1px
+  ); /* the left and width adjustments stop the yellow overlay seam from showing but when triggered, will overlay to the correct width */
+  box-sizing: border-box; /* keeps padding inside parent bounds */
+  padding: 3rem;
+  background: rgba(253, 224, 0, 0.92);
+  display: flex; /* if you're using flex-direction/justify-content */
+  flex-direction: column;
+  justify-content: flex-end;
+  transform: translateX(calc(-100% - 1px));
+  transition: transform 0.25s ease-in-out;
+  overflow: hidden;
+}
+
+.navTile {
+  text-decoration: none;
+  display: block;
+  aspect-ratio: 1 / 1;
+  background: #ffffff;
+  box-shadow: 0 8px 20px rgba(18, 28, 45, 0.08);
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: left;
+  text-decoration: none;
+  color: #1e2b3b;
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.navTile:hover .tileOverlay,
+.navTile:focus-within .tileOverlay {
+  transform: translateX(0);
+}
+
+.navTile h2 {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.2;
+  color: #58595b;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.navTile p {
+  margin-top: 16px;
+  line-height: 1.35;
+  color: #58595b;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: unset;
+}
+
+.flipbookViewport {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  overflow: hidden;
+  background-color: #f0f4f8;
+}
+
+.card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.45s ease-in-out;
+}
+
+.card.active {
+  opacity: 1;
+}
+
+/* Responsive Styles */
+@media (max-width: 960px) {
+  .heroSection,
+  .heroCaptionWrap {
+    min-height: 42vh;
+  }
+
+  .navTile h2 {
+    font-size: 26px;
+  }
+
+  .navTile p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 640px) {
+  .tilesGrid {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .tilesSection {
+    padding: 14px;
+  }
+
+  .heroCaptionWrap {
+    padding: 18px;
+  }
+
+  .navTile {
+    padding: 14px;
+  }
+
+  .navTile h2 {
+    font-size: 36px;
+  }
+
+  .navTile p {
+    font-size: 16px;
+  }
+}
