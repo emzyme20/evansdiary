@@ -42,6 +42,14 @@ web.config that needs to be put in IIS:
 
     <rewrite>
       <rules>
+        <rule name="Force HTTPS" stopProcessing="true">
+          <match url="(.*)" />
+          <conditions>
+            <add input="{HTTPS}" pattern="^OFF$" />
+          </conditions>
+          <action type="Redirect" url="https://{HTTP_HOST}{REQUEST_URI}" redirectType="Permanent" />
+        </rule>
+
         <rule name="SPA Fallback" stopProcessing="true">
           <match url=".*" />
           <conditions logicalGrouping="MatchAll">
@@ -54,6 +62,15 @@ web.config that needs to be put in IIS:
         </rule>
       </rules>
     </rewrite>
+
+    <!-- Security headers for HTTPS -->
+    <httpProtocol>
+      <customHeaders>
+        <add name="Strict-Transport-Security" value="max-age=31536000; includeSubDomains" />
+        <add name="X-Content-Type-Options" value="nosniff" />
+        <add name="X-Frame-Options" value="SAMEORIGIN" />
+      </customHeaders>
+    </httpProtocol>
   </system.webServer>
 </configuration>
 ```
