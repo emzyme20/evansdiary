@@ -4,24 +4,22 @@ Evan's Diary
 
 # API
 
-Nav to evans-diary-api
-
-> go run main.go
+1. cd evans-diary-api
+2. go run main.go
 
 # UI
 
-Nav to evans-diary-ui
-
-> npm run dev
+1. cd evans-diary-ui
+2. npm run dev
 
 # For edit and continue, using vite for UI and air for API
 
-From the UI folder evans-diary-ui
+It will run both and listen for edits and recompile and load as necessary
 
-> npm start
-> It will run both and listen for edits and recompile and load as necessary
+1. cd evans-diary-ui
+2. npm start
 
 # For just the static website (excluding dev api)
 
-> cd evans-diary-ui
-> npm run dev:static
+1. cd evans-diary-ui
+2. npm run dev:static
