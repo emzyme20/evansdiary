@@ -243,12 +243,18 @@ function AthleticsPage() {
                         key={`${entry.heading}-${entry.video.source}`}
                         className={styles.mediaItem}
                       >
-                        <figure className={styles.polaroid}>
-                          <iframe
-                            src={entry.video.source}
-                            title={entry.video.caption}
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; fullscreen"
-                          ></iframe>
+                        <figure
+                          className={`${styles.polaroid} ${styles.videoPolaroid}`}
+                        >
+                          <div className={styles.videoWrapper}>
+                            <iframe
+                              src={entry.video.source}
+                              title={entry.video.caption}
+                              allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                              referrerPolicy="strict-origin-when-cross-origin"
+                            ></iframe>
+                          </div>
+                          <script src="https://player.vimeo.com/api/player.js"></script>
                           <figcaption className={styles.polaroidCaption}>
                             {entry.video.caption}
                           </figcaption>

@@ -2481,7 +2481,7 @@ export const DIARY_CONTENT_REGISTRY: Record<string, DiaryEntry> = {
           },
           {
             type: "Embedded",
-            url: "https://www.youtube.com/embed/wOBum0TaOXQ",
+            url: "https://player.vimeo.com/video/1200445597?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
             title: "Evan impersonating the Gorilla Drummer",
           },
         ],

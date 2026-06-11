@@ -180,7 +180,8 @@ He did exceptionally well and raised over £100 for them and he also raced very 
       },
     ],
     video: {
-      source: "http://www.youtube.com/embed/LUgBYkUAnn8",
+      source:
+        "https://player.vimeo.com/video/1200440268?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
       caption: "Sprint Race Video",
       width: 350,
     },
@@ -221,7 +222,8 @@ His house team 'Sharks' overall performed poorly against the other house teams b
       },
     ],
     video: {
-      source: "http://www.youtube.com/embed/myLbwK4oh74",
+      source:
+        "https://player.vimeo.com/video/1200440269?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
       caption: "Sprint Race Video",
       width: 350,
     },

@@ -284,10 +284,28 @@
     box-shadow 220ms ease;
 }
 
-.polaroid iframe {
-  display: block;
-  width: 100%;
+.videoPolaroid {
+  width: min(100%, 560px);
   max-width: 100%;
+}
+
+.mediaItem .videoWrapper {
+  width: min(100%, 540px);
+  padding: 75% 0 0 0;
+  position: relative;
+  margin-inline: auto;
+  overflow: hidden;
+}
+
+.mediaItem iframe {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  aspect-ratio: 16 / 9;
   border: 0;
 }
 
@@ -521,6 +539,10 @@
     width: 100%;
     max-width: 85%;
     overflow: hidden;
+  }
+
+  .videoPolaroid {
+    max-width: 100%;
   }
 
   .polaroid iframe {

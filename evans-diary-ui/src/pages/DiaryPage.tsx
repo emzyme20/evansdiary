@@ -103,11 +103,17 @@ function DiaryPage() {
                 />
               </a>
             ) : (
-              <iframe
-                src={video.url}
-                title={video.title}
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; fullscreen"
-              ></iframe>
+              <div>
+                <div className={styles.videoWrapper}>
+                  <iframe
+                    src={video.url}
+                    title={video.title}
+                    allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                    referrerPolicy="strict-origin-when-cross-origin"
+                  ></iframe>
+                </div>
+                <script src="https://player.vimeo.com/api/player.js"></script>
+              </div>
             )}
           </figure>
         ))
