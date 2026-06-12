@@ -106,7 +106,7 @@ body {
 }
 
 .tilesSection {
-  padding: 24px;
+  padding: 12px;
   background: linear-gradient(135deg, #f8fbff 0%, #fefaf3 100%);
 }
 
@@ -195,8 +195,7 @@ body {
 .flipbookViewport {
   position: relative;
   width: 100%;
-  height: 100%;
-  min-height: 0;
+  aspect-ratio: 1 / 1;
   overflow: hidden;
   background-color: #f0f4f8;
 }
@@ -238,16 +237,8 @@ body {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 
-  .tilesSection {
-    padding: 14px;
-  }
-
   .heroCaptionWrap {
     padding: 18px;
-  }
-
-  .navTile {
-    padding: 14px;
   }
 
   .navTile h2 {
