@@ -2,12 +2,13 @@ import styles from "./DiaryPage.module.css";
 import {
   getDiaryHeading,
   getImageUrl,
+  getMonthName,
   getMonthNumber,
   fetchMarkdown,
   getEntryLoadMessage,
 } from "../utils";
 import { DocumentViewer } from "../components/DocumentPopout";
-import { useLocation, useParams } from "react-router-dom";
+import { Link, useLocation, useParams } from "react-router-dom";
 import {
   DIARY_CONTENT_REGISTRY,
   DIARY_REGISTRY,
@@ -23,6 +24,11 @@ import type { EmbeddedMedia, ExternalMedia, Media } from "../types";
 
 interface DiaryPageLocationState {
   caption?: string;
+}
+
+interface DiaryNavigationLink {
+  to: string;
+  label: string;
 }
 
 function isCalendarDiaryEntry(entry: DiaryEntry): entry is CalendarDiaryEntry {
@@ -44,20 +50,25 @@ function DiaryPage() {
     month: string;
   }>();
 
-  // Build the key to look up the diary entry in the content registry based on the URL parameters
-  const key =
-    week !== undefined
-      ? (() => {
-          const weekNumber = Number(week);
-          if (Number.isFinite(weekNumber)) {
-            return `${year}-${String(weekNumber).padStart(2, "0")}`;
-          }
-        })()
-      : month !== undefined
-        ? (() => {
-            return `${year}-${String(getMonthNumber(month)).padStart(2, "0")}`;
-          })()
-        : undefined;
+  // Build the key and currentIndex to look up the diary entry in the content registry
+  const { key, currentIndex } = (() => {
+    if (week !== undefined) {
+      const weekNumber = Number(week);
+      if (Number.isFinite(weekNumber)) {
+        return {
+          key: `${year}-${String(weekNumber).padStart(2, "0")}`,
+          currentIndex: weekNumber,
+        };
+      }
+    } else if (month !== undefined) {
+      const monthNumber = getMonthNumber(month);
+      return {
+        key: `${year}-${String(monthNumber).padStart(2, "0")}`,
+        currentIndex: monthNumber - 1,
+      };
+    }
+    return { key: undefined, currentIndex: NaN };
+  })();
 
   // Look up the year data from the registry based on the year parameter
   const yearData = year ? DIARY_REGISTRY[year] : undefined;
@@ -72,10 +83,78 @@ function DiaryPage() {
       ? diaryEntry.images.length / imagesPerReel
       : 0;
 
+  const currentItem =
+    Number.isFinite(currentIndex) &&
+    yearData &&
+    currentIndex >= 0 &&
+    currentIndex < yearData.items.length
+      ? yearData.items[currentIndex]
+      : undefined;
+
+  const getEntryPath = (index: number) => {
+    if (!year || !yearData) return "";
+
+    return yearData.mode === "week"
+      ? `/diary/year/${year}/week/${index}`
+      : `/diary/year/${year}/${getMonthName(index)}`;
+  };
+
+  const buildNavLink = (index: number, direction: "previous" | "next") => {
+    if (!yearData || !Number.isFinite(currentIndex)) return null;
+    if (index < 0 || index >= yearData.items.length) return null;
+
+    const item = yearData.items[index];
+    const prefix = direction === "previous" ? "Previous" : "Next";
+    const periodType = yearData.mode === "week" ? "week" : "month";
+
+    const label = `Go to ${prefix.toLowerCase()} ${periodType}: ${item.caption}`;
+    const to = getEntryPath(index);
+
+    return {
+      to,
+      label,
+    } satisfies DiaryNavigationLink;
+  };
+
+  const previousLink = buildNavLink(currentIndex - 1, "previous");
+  const nextLink = buildNavLink(currentIndex + 1, "next");
+
   const showPerson =
     diaryEntry && "markdownPaths" in diaryEntry
       ? diaryEntry.markdownPaths.length === 2
       : false;
+
+  const renderEdgeTriggers = () => {
+    if (!yearData || (!previousLink && !nextLink)) return null;
+
+    return (
+      <>
+        {previousLink ? (
+          <Link
+            className={`${styles.edgeTrigger} ${styles.edgeTriggerLeft}`}
+            to={previousLink.to}
+            aria-label={previousLink.label}
+          >
+            <span className={styles.edgeTriggerArrow} aria-hidden="true">
+              {"<"}
+            </span>
+          </Link>
+        ) : null}
+
+        {nextLink ? (
+          <Link
+            className={`${styles.edgeTrigger} ${styles.edgeTriggerRight}`}
+            to={nextLink.to}
+            aria-label={nextLink.label}
+          >
+            <span className={styles.edgeTriggerArrow} aria-hidden="true">
+              {">"}
+            </span>
+          </Link>
+        ) : null}
+      </>
+    );
+  };
 
   const renderImageReel = (images: Media[]) =>
     images.length > 0 ? (
@@ -127,6 +206,7 @@ function DiaryPage() {
 
   const renderCalendarLayout = (calendarEntry: CalendarDiaryEntry) => (
     <main className={styles.page}>
+      {renderEdgeTriggers()}
       <section className={styles.diaryEntry} aria-label="Diary entry content">
         <h1>{getDiaryHeading(Number(year), caption)}</h1>
         {calendarEntry.calendarEntries.map(
@@ -151,6 +231,7 @@ function DiaryPage() {
 
   const renderStandardLayout = (entry: StandardDiaryEntry) => (
     <main className={styles.page}>
+      {renderEdgeTriggers()}
       <section className={styles.diaryEntry} aria-label="Diary entry content">
         <h1>{getDiaryHeading(Number(year), caption)}</h1>
         {yearData?.mode === "week" ? <h2>{entry.period}</h2> : null}
@@ -267,7 +348,7 @@ function DiaryPage() {
   // Access the location state to retrieve the caption passed from the year page navigation image
   const location = useLocation();
   const routeState = location.state as DiaryPageLocationState | null;
-  const caption = routeState?.caption ?? "";
+  const caption = routeState?.caption ?? currentItem?.caption ?? "";
 
   if (!diaryEntry) {
     return (
