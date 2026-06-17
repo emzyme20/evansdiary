@@ -3,7 +3,6 @@ package content
 import (
 	"encoding/json"
 	"fmt"
-	"log"
 	"os"
 	"path/filepath"
 )
@@ -101,8 +100,6 @@ func GenerateImageUrls(section ImageSection, images []ImageItem) {
 				Source:  "https://res.cloudinary.com/" + cloudName + "/image/upload/c_fill,g_" + gravity + ",h_380,q_80,w_380/" + path + ".webp",
 			}
 		}
-
-		log.Println(image.Source)
 		builtImages = append(builtImages, image)
 	}
 
