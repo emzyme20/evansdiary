@@ -9,6 +9,12 @@
   box-sizing: border-box;
 }
 
+@media (max-width: 768px) {
+  .reelItem {
+    width: 50%;
+  }
+}
+
 .photo {
   width: 100%;
   max-width: 100%;
